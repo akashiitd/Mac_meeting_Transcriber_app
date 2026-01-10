@@ -1,0 +1,3003 @@
+{
+  "session_name": "live_20260110_000205",
+  "started": "2026-01-10T11:40:06.036030",
+  "segments": [
+    {
+      "text": "Hello.",
+      "start_time": 0.2745267391204834,
+      "end_time": 1.2745267391204833,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.6791161800685682,
+      "timestamp": "2026-01-10T00:02:12.380046"
+    },
+    {
+      "text": "Okay.",
+      "start_time": 1.2745267391204833,
+      "end_time": 2.2745267391204833,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.6791161800685682,
+      "timestamp": "2026-01-10T00:02:12.380498"
+    },
+    {
+      "text": "Imagine you are given an audit asset.",
+      "start_time": 2.2745267391204833,
+      "end_time": 3.2745267391204833,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.6791161800685682,
+      "timestamp": "2026-01-10T00:02:12.380659"
+    },
+    {
+      "text": "like the button, do the line if there's a pattern to the missing data. Is it random or is it missing for a reason?",
+      "start_time": 5.199980993270874,
+      "end_time": 9.199980993270874,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6595108393699892,
+      "timestamp": "2026-01-10T00:02:17.556335"
+    },
+    {
+      "text": "If the data is missing a pronoun, the methods you use might be different than if the data is missing systematically.",
+      "start_time": 16.108352966308594,
+      "end_time": 21.108352966308594,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3819350439768571,
+      "timestamp": "2026-01-10T00:02:27.602737"
+    },
+    {
+      "text": "Let's see the next method, that is choosing method for imburation, so if the missing data is numeric, you might replace missing values with them.",
+      "start_time": 25.38855767250061,
+      "end_time": 31.38855767250061,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5916793396075567,
+      "timestamp": "2026-01-10T00:02:37.769051"
+    },
+    {
+      "text": "Okay",
+      "start_time": 32.05061491966248,
+      "end_time": 34.05061491966248,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.24817561358213425,
+      "timestamp": "2026-01-10T00:02:42.608184"
+    },
+    {
+      "text": "This is simple and effective, but can be used primarily when the data is mentioned completely",
+      "start_time": 35.53102087974548,
+      "end_time": 39.53102087974548,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6341690108889625,
+      "timestamp": "2026-01-10T00:02:47.884706"
+    },
+    {
+      "text": "This is simple and effective when the data is mentioned completely",
+      "start_time": 39.53102087974548,
+      "end_time": 43.53102087974548,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8560252359935215,
+      "timestamp": "2026-01-10T00:02:48.198450"
+    },
+    {
+      "text": "In value, using a regression model.",
+      "start_time": 167.84272487640382,
+      "end_time": 169.3827248764038,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7539132325088277,
+      "timestamp": "2026-01-10T00:04:59.131947"
+    },
+    {
+      "text": "This can be more accurate but is also more complex.",
+      "start_time": 169.3827248764038,
+      "end_time": 171.62272487640382,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7539132325088277,
+      "timestamp": "2026-01-10T00:04:59.132537"
+    },
+    {
+      "text": "That will use the keynotes.",
+      "start_time": 171.62272487640382,
+      "end_time": 172.8827248764038,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7539132325088277,
+      "timestamp": "2026-01-10T00:04:59.132737"
+    },
+    {
+      "text": "algorithm. But before that, we have a course number here that could be used for the implementation",
+      "start_time": 176.876394033432,
+      "end_time": 180.936394033432,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.48171965054103305,
+      "timestamp": "2026-01-10T00:05:09.225712"
+    },
+    {
+      "text": "of implementation. You could use Python or a lot.",
+      "start_time": 180.936394033432,
+      "end_time": 182.636394033432,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.48171965054103305,
+      "timestamp": "2026-01-10T00:05:09.226155"
+    },
+    {
+      "text": "We'll see the key nearest neighbors algorithm.",
+      "start_time": 186.9750108718872,
+      "end_time": 188.5750108718872,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.54472911648634,
+      "timestamp": "2026-01-10T00:05:19.415219"
+    },
+    {
+      "text": "So this method predicts the missing values based on how closely related the data points are to each other.",
+      "start_time": 188.5750108718872,
+      "end_time": 192.5750108718872,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.54472911648634,
+      "timestamp": "2026-01-10T00:05:19.415681"
+    },
+    {
+      "text": "So, ah...",
+      "start_time": 192.5750108718872,
+      "end_time": 193.0750108718872,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.54472911648634,
+      "timestamp": "2026-01-10T00:05:19.415917"
+    },
+    {
+      "text": "to check how your changes have affected the auto data set and mono performance.",
+      "start_time": 197.0484058856964,
+      "end_time": 200.00840588569642,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6719817846052109,
+      "timestamp": "2026-01-10T00:05:29.394019"
+    },
+    {
+      "text": "Sometimes playing in too many missing values can introduce bias.",
+      "start_time": 200.00840588569642,
+      "end_time": 202.4884058856964,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6719817846052109,
+      "timestamp": "2026-01-10T00:05:29.394561"
+    },
+    {
+      "text": "I need to impute the data we can use mean data.",
+      "start_time": 202.3491768836975,
+      "end_time": 205.3891768836975,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.6508417055010796,
+      "timestamp": "2026-01-10T00:05:34.360862"
+    },
+    {
+      "text": "Come back here.",
+      "start_time": 212.2697239971161,
+      "end_time": 213.2697239971161,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9258483818599156,
+      "timestamp": "2026-01-10T00:05:39.335887"
+    },
+    {
+      "text": "to visualize we can use Power BI.",
+      "start_time": 214.4439968585968,
+      "end_time": 216.4439968585968,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.6442289460789073,
+      "timestamp": "2026-01-10T00:05:44.430601"
+    },
+    {
+      "text": "And as time before and after the invitation, you will realize the distribution of the-",
+      "start_time": 341.4317848777771,
+      "end_time": 344.2317848777771,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5788710862398148,
+      "timestamp": "2026-01-10T00:07:50.455541"
+    },
+    {
+      "text": "or both modes. This helps in seeing how the emulation has changed the stenistical",
+      "start_time": 348.27194380760193,
+      "end_time": 351.6119438076019,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6514249294996262,
+      "timestamp": "2026-01-10T00:08:00.667208"
+    },
+    {
+      "text": "properties of the data. And by following these steps, you will learn the same data.",
+      "start_time": 351.6119438076019,
+      "end_time": 354.27194380760193,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6514249294996262,
+      "timestamp": "2026-01-10T00:08:00.667768"
+    },
+    {
+      "text": "and maintain the integrity of the predictive moral.",
+      "start_time": 358.2808108329773,
+      "end_time": 360.2808108329773,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5210779772864448,
+      "timestamp": "2026-01-10T00:08:10.747190"
+    },
+    {
+      "text": "Now, I'm going to the question number two,",
+      "start_time": 360.2808108329773,
+      "end_time": 361.2808108329773,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5210779772864448,
+      "timestamp": "2026-01-10T00:08:10.747771"
+    },
+    {
+      "text": "that is, based on evaluating moral overfitting.",
+      "start_time": 361.2808108329773,
+      "end_time": 363.9608108329773,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5210779772864448,
+      "timestamp": "2026-01-10T00:08:10.748104"
+    },
+    {
+      "text": "So, the question.",
+      "start_time": 363.9608108329773,
+      "end_time": 365.2808108329773,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5210779772864448,
+      "timestamp": "2026-01-10T00:08:10.748390"
+    },
+    {
+      "text": "break the moral, but do suspect it might be also in the bringing data. How do this and address",
+      "start_time": 368.67055675506595,
+      "end_time": 372.5905567550659,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7151784703538224,
+      "timestamp": "2026-01-10T00:08:20.818864"
+    },
+    {
+      "text": "the issue? Please explain your steps and the technique.",
+      "start_time": 372.5905567550659,
+      "end_time": 374.43055675506594,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7151784703538224,
+      "timestamp": "2026-01-10T00:08:20.819386"
+    },
+    {
+      "text": "So you would start dancing by explaining what is all fitting so all fitting is a comment",
+      "start_time": 378.55653500556946,
+      "end_time": 382.07653500556944,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4886822473435175,
+      "timestamp": "2026-01-10T00:08:30.950186"
+    },
+    {
+      "text": "So you would start dancing by explaining what is all fitting so all fitting is a comment",
+      "start_time": 382.07653500556944,
+      "end_time": 389.07653500556944,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8246363818645477,
+      "timestamp": "2026-01-10T00:08:31.311156"
+    },
+    {
+      "text": "it's too close if you did do the printing data as if it is a noise.",
+      "start_time": 388.6118609905243,
+      "end_time": 391.3718609905243,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6482767551503283,
+      "timestamp": "2026-01-10T00:08:41.151990"
+    },
+    {
+      "text": "So now we'll see a step by step guide on how to address this.",
+      "start_time": 391.3718609905243,
+      "end_time": 393.7718609905243,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6482767551503283,
+      "timestamp": "2026-01-10T00:08:41.152532"
+    },
+    {
+      "text": "The number one step is...",
+      "start_time": 393.7718609905243,
+      "end_time": 394.57186099052427,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6482767551503283,
+      "timestamp": "2026-01-10T00:08:41.152867"
+    },
+    {
+      "text": "So one effective way to test for all threading is by using cross validation technique.",
+      "start_time": 398.69981384277344,
+      "end_time": 402.05981384277345,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6220522195100784,
+      "timestamp": "2026-01-10T00:08:51.174703"
+    },
+    {
+      "text": "Cross validation in most spitting out threading data into multi-punch molars.",
+      "start_time": 402.05981384277345,
+      "end_time": 404.93981384277345,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6220522195100784,
+      "timestamp": "2026-01-10T00:08:51.175271"
+    },
+    {
+      "text": "for cross validation and for over",
+      "start_time": 411.631954870224,
+      "end_time": 414.071954870224,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.6027013460795084,
+      "timestamp": "2026-01-10T00:09:01.142232"
+    },
+    {
+      "text": "Thanks for being a model, also on Bset, and by leading it on the others, so this helps you let's...",
+      "start_time": 409.3747808933258,
+      "end_time": 413.3747808933258,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6972857672592689,
+      "timestamp": "2026-01-10T00:09:01.717719"
+    },
+    {
+      "text": "Ten of the murders, good performance is consistent across different types of video.",
+      "start_time": 419.5047788619995,
+      "end_time": 422.4047788619995,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7312285563884637,
+      "timestamp": "2026-01-10T00:09:11.433103"
+    },
+    {
+      "text": "For example, in Python you can use that close on the score, value on the score.",
+      "start_time": 422.4047788619995,
+      "end_time": 424.9047788619995,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7312285563884637,
+      "timestamp": "2026-01-10T00:09:11.433817"
+    },
+    {
+      "text": "SQL Android model on a school selection.",
+      "start_time": 429.3984968948364,
+      "end_time": 431.35849689483643,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5071141842084054,
+      "timestamp": "2026-01-10T00:09:21.535251"
+    },
+    {
+      "text": "So this is the code, and this is a code snippet of Python",
+      "start_time": 431.35849689483643,
+      "end_time": 433.9984968948364,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5071141842084054,
+      "timestamp": "2026-01-10T00:09:21.535917"
+    },
+    {
+      "text": "that you can use for the course validation.",
+      "start_time": 433.9984968948364,
+      "end_time": 435.9984968948364,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5071141842084054,
+      "timestamp": "2026-01-10T00:09:21.536506"
+    },
+    {
+      "text": "We are importing some escalant, that is the module,",
+      "start_time": 439.20660305023193,
+      "end_time": 441.9666030502319,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9696388485885802,
+      "timestamp": "2026-01-10T00:09:31.651665"
+    },
+    {
+      "text": "and we are importing, goes on a scroll,",
+      "start_time": 441.9666030502319,
+      "end_time": 443.2866030502319,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9696388485885802,
+      "timestamp": "2026-01-10T00:09:31.652291"
+    },
+    {
+      "text": "and on a scroll scroll.",
+      "start_time": 443.2866030502319,
+      "end_time": 444.20660305023193,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9696388485885802,
+      "timestamp": "2026-01-10T00:09:31.652712"
+    },
+    {
+      "text": "And here we have...",
+      "start_time": 444.20660305023193,
+      "end_time": 445.20660305023193,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9696388485885802,
+      "timestamp": "2026-01-10T00:09:31.653123"
+    },
+    {
+      "text": "as core function and then we are going to get the average core validation score and the",
+      "start_time": 449.29280281066895,
+      "end_time": 452.85280281066895,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9700936751487927,
+      "timestamp": "2026-01-10T00:09:41.963255"
+    },
+    {
+      "text": "next time we will do this, we are going to be in core validation order.",
+      "start_time": 452.85280281066895,
+      "end_time": 455.05280281066894,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9700936751487927,
+      "timestamp": "2026-01-10T00:09:41.963896"
+    },
+    {
+      "text": "I get it.",
+      "start_time": 655.8838908672333,
+      "end_time": 656.8838908672333,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -1.0903893496309007,
+      "timestamp": "2026-01-10T00:13:09.042669"
+    },
+    {
+      "text": "What the fuck are you doing?",
+      "start_time": 656.8838908672333,
+      "end_time": 658.1838908672332,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -1.0903893496309007,
+      "timestamp": "2026-01-10T00:13:09.043355"
+    },
+    {
+      "text": "The party is going to be over, right?",
+      "start_time": 658.1838908672332,
+      "end_time": 660.1838908672332,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -1.0903893496309007,
+      "timestamp": "2026-01-10T00:13:09.043790"
+    },
+    {
+      "text": "This is a predictive model that we have already built using scikit-lead.",
+      "start_time": 811.7363209724426,
+      "end_time": 813.7363209724426,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6911547211713569,
+      "timestamp": "2026-01-10T00:15:44.185846"
+    },
+    {
+      "text": "And here's the X-string.",
+      "start_time": 813.7363209724426,
+      "end_time": 814.7363209724426,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6911547211713569,
+      "timestamp": "2026-01-10T00:15:44.186606"
+    },
+    {
+      "text": "These are the X input features of a tiny problem.",
+      "start_time": 814.7363209724426,
+      "end_time": 817.7363209724426,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6911547211713569,
+      "timestamp": "2026-01-10T00:15:44.187071"
+    },
+    {
+      "text": "To the question number two, that is...",
+      "start_time": 826.0798890590668,
+      "end_time": 828.0798890590668,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.751266822218895,
+      "timestamp": "2026-01-10T00:15:54.044979"
+    },
+    {
+      "text": "So the question is, you have developed a predictive model, but to suspect it might be all",
+      "start_time": 832.8652479457855,
+      "end_time": 836.3852479457855,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4409843434890111,
+      "timestamp": "2026-01-10T00:16:04.212808"
+    },
+    {
+      "text": "fitting the training data.",
+      "start_time": 836.3852479457855,
+      "end_time": 837.3852479457855,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4409843434890111,
+      "timestamp": "2026-01-10T00:16:04.213525"
+    },
+    {
+      "text": "How do you test?",
+      "start_time": 837.3852479457855,
+      "end_time": 837.9052479457855,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4409843434890111,
+      "timestamp": "2026-01-10T00:16:04.214046"
+    },
+    {
+      "text": "So",
+      "start_time": 846.6291367530823,
+      "end_time": 848.6291367530823,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.8602255582809448,
+      "timestamp": "2026-01-10T00:16:14.082254"
+    },
+    {
+      "text": "these X-Men of Devs and the techniques you would use.",
+      "start_time": 842.3082768917084,
+      "end_time": 844.3082768917084,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6197772285212642,
+      "timestamp": "2026-01-10T00:16:14.596923"
+    },
+    {
+      "text": "So you would see",
+      "start_time": 844.3082768917084,
+      "end_time": 845.3082768917084,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6197772285212642,
+      "timestamp": "2026-01-10T00:16:14.597627"
+    },
+    {
+      "text": "and L1 and L2 Rackerel Rization technique.",
+      "start_time": 852.0872230529785,
+      "end_time": 856.0872230529785,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.8065119199454784,
+      "timestamp": "2026-01-10T00:16:24.333917"
+    },
+    {
+      "text": "L1 and L2 regularization technique.",
+      "start_time": 865.5926179122924,
+      "end_time": 868.3926179122925,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.5512135773897171,
+      "timestamp": "2026-01-10T00:16:34.381309"
+    },
+    {
+      "text": "free and it is based on real time data, stream processing and question is, you are tasked",
+      "start_time": 882.4279298782349,
+      "end_time": 886.0679298782348,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.356030124757025,
+      "timestamp": "2026-01-10T00:16:54.815255"
+    },
+    {
+      "text": "with building a model to predict stock prices in real time.",
+      "start_time": 886.0679298782348,
+      "end_time": 888.3079298782349,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.356030124757025,
+      "timestamp": "2026-01-10T00:16:54.816130"
+    },
+    {
+      "text": "second and you need to have radio predictions accordingly.",
+      "start_time": 892.5188808441162,
+      "end_time": 894.4388808441162,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5613641738891602,
+      "timestamp": "2026-01-10T00:17:05.018013"
+    },
+    {
+      "text": "Describe how you would set up your system to handle this type of data",
+      "start_time": 894.4388808441162,
+      "end_time": 896.9188808441162,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5613641738891602,
+      "timestamp": "2026-01-10T00:17:05.018765"
+    },
+    {
+      "text": "is up to you.",
+      "start_time": 896.9188808441162,
+      "end_time": 897.4388808441162,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5613641738891602,
+      "timestamp": "2026-01-10T00:17:05.019287"
+    },
+    {
+      "text": "And what tools and techniques you need to do.",
+      "start_time": 897.4388808441162,
+      "end_time": 898.6388808441162,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5613641738891602,
+      "timestamp": "2026-01-10T00:17:05.019814"
+    },
+    {
+      "text": "so with the technique which we can use for",
+      "start_time": 899.4968750286102,
+      "end_time": 903.4968750286102,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.41272957623004913,
+      "timestamp": "2026-01-10T00:17:09.761712"
+    },
+    {
+      "text": "using LST models or RNN models since we are using",
+      "start_time": 907.6211829185486,
+      "end_time": 912.4411829185486,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.4132711410522461,
+      "timestamp": "2026-01-10T00:17:19.859983"
+    },
+    {
+      "text": "stream process.",
+      "start_time": 917.9960427856445,
+      "end_time": 919.9960427856445,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.8385101954142252,
+      "timestamp": "2026-01-10T00:17:29.869027"
+    },
+    {
+      "text": "We can use Kafka here as well.",
+      "start_time": 929.9324579048157,
+      "end_time": 931.9324579048157,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.2885507182641463,
+      "timestamp": "2026-01-10T00:17:39.904828"
+    },
+    {
+      "text": "must come and get my",
+      "start_time": 959.6862909507752,
+      "end_time": 963.1062909507751,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.7035194709897041,
+      "timestamp": "2026-01-10T00:18:10.133486"
+    },
+    {
+      "text": "So, let's start our next discussion with Hanling Beda.",
+      "start_time": 35766.504704017636,
+      "end_time": 35768.504704017636,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7681527389929845,
+      "timestamp": "2026-01-10T09:58:16.286801"
+    },
+    {
+      "text": "So, Hanling Beda.",
+      "start_time": 35768.504704017636,
+      "end_time": 35769.504704017636,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7681527389929845,
+      "timestamp": "2026-01-10T09:58:16.287798"
+    },
+    {
+      "text": "Let me know if you have any questions.",
+      "start_time": 35789.18444500923,
+      "end_time": 35791.18444500923,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.1123810311158497,
+      "timestamp": "2026-01-10T09:58:36.869234"
+    },
+    {
+      "text": "be all-fitting the training data.",
+      "start_time": 35804.26240205765,
+      "end_time": 35805.26240205765,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6572814569916836,
+      "timestamp": "2026-01-10T09:58:56.712101"
+    },
+    {
+      "text": "How do we do the question number two that is based on evaluating, model, all-fitting?",
+      "start_time": 35805.26240205765,
+      "end_time": 35809.26240205765,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6572814569916836,
+      "timestamp": "2026-01-10T09:58:56.713246"
+    },
+    {
+      "text": "So, the question is.",
+      "start_time": 35809.26240205765,
+      "end_time": 35810.26240205765,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6572814569916836,
+      "timestamp": "2026-01-10T09:58:56.713853"
+    },
+    {
+      "text": "Read it tomorrow.",
+      "start_time": 35814.36661195755,
+      "end_time": 35815.36661195755,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5660015005956996,
+      "timestamp": "2026-01-10T09:59:06.832138"
+    },
+    {
+      "text": "But you suspect it might be all fitting the training data.",
+      "start_time": 35815.36661195755,
+      "end_time": 35817.36661195755,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5660015005956996,
+      "timestamp": "2026-01-10T09:59:06.833027"
+    },
+    {
+      "text": "How do tests and address the issue?",
+      "start_time": 35817.36661195755,
+      "end_time": 35818.36661195755,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5660015005956996,
+      "timestamp": "2026-01-10T09:59:06.833668"
+    },
+    {
+      "text": "These explain your steps and the techniques you would do.",
+      "start_time": 35818.36661195755,
+      "end_time": 35820.36661195755,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5660015005956996,
+      "timestamp": "2026-01-10T09:59:06.834273"
+    },
+    {
+      "text": "and answer by explaining what is all fitting.",
+      "start_time": 36332.161300973894,
+      "end_time": 36334.161300973894,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6127918584006173,
+      "timestamp": "2026-01-10T10:07:43.458174"
+    },
+    {
+      "text": "So all fitting is a comment program",
+      "start_time": 36334.161300973894,
+      "end_time": 36335.36130097389,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6127918584006173,
+      "timestamp": "2026-01-10T10:07:43.459230"
+    },
+    {
+      "text": "then more that becomes valid on training data but wouldn't.",
+      "start_time": 36335.36130097389,
+      "end_time": 36337.36130097389,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6127918584006173,
+      "timestamp": "2026-01-10T10:07:43.459845"
+    },
+    {
+      "text": "label using histograms or both blocks. This helps in seeing how the emulation has changed.",
+      "start_time": 36484.81384084702,
+      "end_time": 36488.81384084702,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7510731436989524,
+      "timestamp": "2026-01-10T10:10:15.132256"
+    },
+    {
+      "text": "the data. And by following these steps, you will be missing data,",
+      "start_time": 36492.94569706917,
+      "end_time": 36495.42569706917,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6834878845417753,
+      "timestamp": "2026-01-10T10:10:25.414238"
+    },
+    {
+      "text": "carefully and maintain the integrity of the predictive model.",
+      "start_time": 36495.42569706917,
+      "end_time": 36497.70569706917,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6834878845417753,
+      "timestamp": "2026-01-10T10:10:25.415135"
+    },
+    {
+      "text": "Now, move on to the question number two.",
+      "start_time": 36497.70569706917,
+      "end_time": 36498.825697069165,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6834878845417753,
+      "timestamp": "2026-01-10T10:10:25.415791"
+    },
+    {
+      "text": "Let's...",
+      "start_time": 36498.825697069165,
+      "end_time": 36499.825697069165,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6834878845417753,
+      "timestamp": "2026-01-10T10:10:25.416432"
+    },
+    {
+      "text": "So the question is you have developed a predictive model but you suspect it might be offsetting the training data.",
+      "start_time": 36503.16046696663,
+      "end_time": 36509.16046696663,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.529584903717041,
+      "timestamp": "2026-01-10T10:10:35.456237"
+    },
+    {
+      "text": "these explain your steps and the techniques you would use so you would start",
+      "start_time": 36513.26132774353,
+      "end_time": 36516.64132774353,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6075882977909512,
+      "timestamp": "2026-01-10T10:10:45.517542"
+    },
+    {
+      "text": "It's all fitting. So all fitting is a comment program.",
+      "start_time": 36940.36610487938,
+      "end_time": 36942.36610487938,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7165693332409037,
+      "timestamp": "2026-01-10T10:17:50.691926"
+    },
+    {
+      "text": "When Moda performs well into any data but poorly.",
+      "start_time": 36942.36610487938,
+      "end_time": 36944.36610487938,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7165693332409037,
+      "timestamp": "2026-01-10T10:17:50.693257"
+    },
+    {
+      "text": "and you're getting it's too close if you did do the printing data, especially if it is a noise.",
+      "start_time": 36948.476205825806,
+      "end_time": 36951.476205825806,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6229176825168086,
+      "timestamp": "2026-01-10T10:18:01.026717"
+    },
+    {
+      "text": "So now we'll see a step by step guide on how to address this.",
+      "start_time": 36951.476205825806,
+      "end_time": 36953.976205825806,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6229176825168086,
+      "timestamp": "2026-01-10T10:18:01.027763"
+    },
+    {
+      "text": "The number one step.",
+      "start_time": 36953.976205825806,
+      "end_time": 36954.476205825806,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6229176825168086,
+      "timestamp": "2026-01-10T10:18:01.028915"
+    },
+    {
+      "text": "So what in fact a way to test for all threading is by using close validation technique.",
+      "start_time": 36958.67829590797,
+      "end_time": 36961.95829590797,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6457227613867783,
+      "timestamp": "2026-01-10T10:18:11.129731"
+    },
+    {
+      "text": "Close validation in most spitting or threading data into multi-punt small-",
+      "start_time": 36961.95829590797,
+      "end_time": 36964.67829590797,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6457227613867783,
+      "timestamp": "2026-01-10T10:18:11.130704"
+    },
+    {
+      "text": "Welcome to Depth Office. This is Adi Hachin.",
+      "start_time": 37941.540994644165,
+      "end_time": 37943.540994644165,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8384030846988454,
+      "timestamp": "2026-01-10T10:34:33.782264"
+    },
+    {
+      "text": "to the lot of matrix that is getting written by the one of the working node memory that cannot get, you know.",
+      "start_time": 40380.90955495834,
+      "end_time": 40386.90955495834,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6088001109935619,
+      "timestamp": "2026-01-10T11:15:13.513827"
+    },
+    {
+      "text": "which is to get consummate.",
+      "start_time": 40391.09823489189,
+      "end_time": 40392.45823489189,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4599444408749425,
+      "timestamp": "2026-01-10T11:15:24.064754"
+    },
+    {
+      "text": "So that is the reason based upon my experience",
+      "start_time": 40392.45823489189,
+      "end_time": 40394.29823489189,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4599444408749425,
+      "timestamp": "2026-01-10T11:15:24.065970"
+    },
+    {
+      "text": "when we have a larger enrollment.",
+      "start_time": 40394.29823489189,
+      "end_time": 40395.45823489189,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4599444408749425,
+      "timestamp": "2026-01-10T11:15:24.067229"
+    },
+    {
+      "text": "I think I would suggest we'll take a minute.",
+      "start_time": 40395.45823489189,
+      "end_time": 40397.538234891894,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4599444408749425,
+      "timestamp": "2026-01-10T11:15:24.068180"
+    },
+    {
+      "text": "There we do have a lot of compatibility and feasibility and a lot of customers options to",
+      "start_time": 40401.146033763885,
+      "end_time": 40405.54603376389,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3874020720973159,
+      "timestamp": "2026-01-10T11:15:34.028413"
+    },
+    {
+      "text": "we can do it for the, you know,",
+      "start_time": 40405.54603376389,
+      "end_time": 40406.90603376389,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3874020720973159,
+      "timestamp": "2026-01-10T11:15:34.029744"
+    },
+    {
+      "text": "the previous set of metrics we can move to the object storage and there we can make it like",
+      "start_time": 40411.3217818737,
+      "end_time": 40415.3217818737,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5500155362215909,
+      "timestamp": "2026-01-10T11:15:44.249069"
+    },
+    {
+      "text": "in the graph on our dashboard we can integrate",
+      "start_time": 40415.3217818737,
+      "end_time": 40417.3217818737,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5500155362215909,
+      "timestamp": "2026-01-10T11:15:44.251202"
+    },
+    {
+      "text": "story with the previous matrix and it's like the scalable would be the better option",
+      "start_time": 40421.3379650116,
+      "end_time": 40426.85796501159,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5088868230581284,
+      "timestamp": "2026-01-10T11:15:53.743504"
+    },
+    {
+      "text": "and I would",
+      "start_time": 40426.85796501159,
+      "end_time": 40428.85796501159,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.3267733653386433,
+      "timestamp": "2026-01-10T11:15:55.123648"
+    },
+    {
+      "text": "Be sure to like you.",
+      "start_time": 40431.55546909332,
+      "end_time": 40433.55546909332,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.0649278428819444,
+      "timestamp": "2026-01-10T11:16:06.405676"
+    },
+    {
+      "text": "Sorry, I'm not across about this, like this situation.",
+      "start_time": 40447.27761287689,
+      "end_time": 40450.75761287689,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5955157242715359,
+      "timestamp": "2026-01-10T11:16:18.852979"
+    },
+    {
+      "text": "uh, uh, uh, promise store retention, uh, in the course.",
+      "start_time": 40459.94886399269,
+      "end_time": 40462.74886399269,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.2479363115210282,
+      "timestamp": "2026-01-10T11:16:30.788356"
+    },
+    {
+      "text": "Okay, basically the retention would be...",
+      "start_time": 40469.127993869784,
+      "end_time": 40472.28799386978,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5341255122965033,
+      "timestamp": "2026-01-10T11:16:38.990009"
+    },
+    {
+      "text": "Um.",
+      "start_time": 40476.98395586014,
+      "end_time": 40477.98395586014,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.1421682357788085,
+      "timestamp": "2026-01-10T11:16:49.559386"
+    },
+    {
+      "text": "So, I mean to say that in the Prometheus main code database, how many days of retention data are being used?",
+      "start_time": 40487.647577762604,
+      "end_time": 40493.647577762604,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5143358707427979,
+      "timestamp": "2026-01-10T11:16:59.509605"
+    },
+    {
+      "text": "I would be very very for the environment because we have various environments for bad production.",
+      "start_time": 40507.39898395538,
+      "end_time": 40512.39898395538,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7308795481920243,
+      "timestamp": "2026-01-10T11:17:20.311514"
+    },
+    {
+      "text": "strategy for the 30 days because of the various audit and various issues, but still we will",
+      "start_time": 40517.41533589363,
+      "end_time": 40521.41533589363,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.47202525331693534,
+      "timestamp": "2026-01-10T11:17:30.729551"
+    },
+    {
+      "text": "be since we are using mood to the Thanos, but",
+      "start_time": 40521.41533589363,
+      "end_time": 40523.41533589363,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.47202525331693534,
+      "timestamp": "2026-01-10T11:17:30.731991"
+    },
+    {
+      "text": "since we are object storage also we have a retention of the like we will be keeping the",
+      "start_time": 40527.53047180176,
+      "end_time": 40531.71047180176,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5981496707959608,
+      "timestamp": "2026-01-10T11:17:40.472584"
+    },
+    {
+      "text": "re-act",
+      "start_time": 40531.71047180176,
+      "end_time": 40533.71047180176,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.3738841811815898,
+      "timestamp": "2026-01-10T11:17:42.519825"
+    },
+    {
+      "text": "So, due to that perspective, we will be keeping for production metrics for the 3 months.",
+      "start_time": 40542.65208482742,
+      "end_time": 40546.49208482742,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5078697455556769,
+      "timestamp": "2026-01-10T11:17:56.660596"
+    },
+    {
+      "text": "That will be the object storage, again, we will be having.",
+      "start_time": 40546.49208482742,
+      "end_time": 40548.692084827424,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5078697455556769,
+      "timestamp": "2026-01-10T11:17:56.661962"
+    },
+    {
+      "text": "from, you know, strategies for taking up the date of a, you know, integrating for the",
+      "start_time": 40552.80639791489,
+      "end_time": 40556.78639791489,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5311635837835424,
+      "timestamp": "2026-01-10T11:18:05.163747"
+    },
+    {
+      "text": "life cycle, there is a different case.",
+      "start_time": 40556.78639791489,
+      "end_time": 40558.10639791489,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5311635837835424,
+      "timestamp": "2026-01-10T11:18:05.164851"
+    },
+    {
+      "text": "The lower end one must be keeping as a 7 days and the production will be keeping as minimum 3 months.",
+      "start_time": 40562.97005987167,
+      "end_time": 40566.97005987167,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.48757410049438477,
+      "timestamp": "2026-01-10T11:18:15.307073"
+    },
+    {
+      "text": "Yeah, we do have a lot of management components.",
+      "start_time": 40577.63181900978,
+      "end_time": 40579.63181900978,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7172174666609082,
+      "timestamp": "2026-01-10T11:18:25.436964"
+    },
+    {
+      "text": "So, we have to write the rules of the alerts based upon the metrics which are getting from the Prometheus.",
+      "start_time": 40583.36883696556,
+      "end_time": 40587.92883696556,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.384482693977845,
+      "timestamp": "2026-01-10T11:18:35.854068"
+    },
+    {
+      "text": "So, we have to write the prompt query.",
+      "start_time": 40587.92883696556,
+      "end_time": 40589.42883696556,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.384482693977845,
+      "timestamp": "2026-01-10T11:18:35.855310"
+    },
+    {
+      "text": "In order to set up that alert, which alert is wanted to get triggered, that could be the",
+      "start_time": 40593.3484017849,
+      "end_time": 40596.868401784894,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.48736154784758884,
+      "timestamp": "2026-01-10T11:18:45.959073"
+    },
+    {
+      "text": "In order to set up that alert, which alert is wanted to get triggered, that could be the",
+      "start_time": 40596.868401784894,
+      "end_time": 40603.868401784894,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6449550286583279,
+      "timestamp": "2026-01-10T11:18:46.531480"
+    },
+    {
+      "text": "that could be get a baritone for the",
+      "start_time": 40603.471022844315,
+      "end_time": 40606.471022844315,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7434087264828566,
+      "timestamp": "2026-01-10T11:18:56.073641"
+    },
+    {
+      "text": "problem at X-quari we can write in",
+      "start_time": 40606.471022844315,
+      "end_time": 40607.471022844315,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7434087264828566,
+      "timestamp": "2026-01-10T11:18:56.074939"
+    },
+    {
+      "text": "all our manager rules so that would",
+      "start_time": 40607.471022844315,
+      "end_time": 40609.471022844315,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7434087264828566,
+      "timestamp": "2026-01-10T11:18:56.075978"
+    },
+    {
+      "text": "able to help us.",
+      "start_time": 40609.471022844315,
+      "end_time": 40610.471022844315,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7434087264828566,
+      "timestamp": "2026-01-10T11:18:56.076952"
+    },
+    {
+      "text": "And also we'll be integrating with the various communication channels like Slack and emails",
+      "start_time": 40613.50275397301,
+      "end_time": 40617.422753973005,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4539547957041684,
+      "timestamp": "2026-01-10T11:19:06.852738"
+    },
+    {
+      "text": "so that when it is alert, get triggered, it is good.",
+      "start_time": 40617.422753973005,
+      "end_time": 40619.50275397301,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4539547957041684,
+      "timestamp": "2026-01-10T11:19:06.855404"
+    },
+    {
+      "text": "and as well as the email for the respective stakeholders which we are configuring on the",
+      "start_time": 40623.521271944046,
+      "end_time": 40626.201271944046,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6490674156409043,
+      "timestamp": "2026-01-10T11:19:15.817574"
+    },
+    {
+      "text": "ad ad match.",
+      "start_time": 40626.201271944046,
+      "end_time": 40626.92127194405,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6490674156409043,
+      "timestamp": "2026-01-10T11:19:15.818796"
+    },
+    {
+      "text": "So yeah, frankly, using cash like, you need to say for the customized one,",
+      "start_time": 40643.68870592117,
+      "end_time": 40647.168705921176,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6796581149101257,
+      "timestamp": "2026-01-10T11:19:36.083517"
+    },
+    {
+      "text": "or it can work like, basically, I have it involved for that.",
+      "start_time": 40647.168705921176,
+      "end_time": 40649.64870592117,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6796581149101257,
+      "timestamp": "2026-01-10T11:19:36.084719"
+    },
+    {
+      "text": "What are the components, what are the dashboards doing required for the",
+      "start_time": 40653.81386899948,
+      "end_time": 40657.81386899948,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.66275711523162,
+      "timestamp": "2026-01-10T11:19:46.178396"
+    },
+    {
+      "text": "that would be the question.",
+      "start_time": 40657.81386899948,
+      "end_time": 40659.81386899948,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7760113610161675,
+      "timestamp": "2026-01-10T11:19:46.451187"
+    },
+    {
+      "text": "Yeah, basically, we would need the entire very grander",
+      "start_time": 40664.39643088341,
+      "end_time": 40667.67643088341,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7012092713956479,
+      "timestamp": "2026-01-10T11:19:56.657242"
+    },
+    {
+      "text": "Letty of the all the intro components of the",
+      "start_time": 40667.67643088341,
+      "end_time": 40669.436430883405,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7012092713956479,
+      "timestamp": "2026-01-10T11:19:56.659675"
+    },
+    {
+      "text": "in for conference to get monitor and visualize in the graph on the coming to the",
+      "start_time": 40674.1165459156,
+      "end_time": 40677.236545915606,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6054291586543239,
+      "timestamp": "2026-01-10T11:20:06.918732"
+    },
+    {
+      "text": "Kubernetes.",
+      "start_time": 40677.236545915606,
+      "end_time": 40678.236545915606,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6054291586543239,
+      "timestamp": "2026-01-10T11:20:06.920111"
+    },
+    {
+      "text": "Of course, we do have a pre-defined dashboard, but we will be making.",
+      "start_time": 40678.236545915606,
+      "end_time": 40680.1165459156,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6054291586543239,
+      "timestamp": "2026-01-10T11:20:06.921265"
+    },
+    {
+      "text": "one based upon a requirement in terms of the board, node and also each services that we have discussed before.",
+      "start_time": 40684.240664720535,
+      "end_time": 40690.240664720535,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.509919490814209,
+      "timestamp": "2026-01-10T11:20:16.848390"
+    },
+    {
+      "text": "some statements and applications which are dedicated to the EC2 missions.",
+      "start_time": 40694.393167734146,
+      "end_time": 40697.65316773415,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9579469158368952,
+      "timestamp": "2026-01-10T11:20:26.990217"
+    },
+    {
+      "text": "There we are deplying with the Promotage Agents like Mangut.",
+      "start_time": 40697.65316773415,
+      "end_time": 40700.453167734144,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9579469158368952,
+      "timestamp": "2026-01-10T11:20:26.991694"
+    },
+    {
+      "text": "These will also get created the customers dashboards in Kerafana to get monitored and",
+      "start_time": 40704.49439096451,
+      "end_time": 40708.85439096451,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5480597506869923,
+      "timestamp": "2026-01-10T11:20:37.077620"
+    },
+    {
+      "text": "visualise the easy dimensions.",
+      "start_time": 40708.85439096451,
+      "end_time": 40709.85439096451,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.0967593722873263,
+      "timestamp": "2026-01-10T11:20:38.754697"
+    },
+    {
+      "text": "have way most of like a few of the cloud services which are not compatible and",
+      "start_time": 40714.79305887222,
+      "end_time": 40718.49305887222,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5628795782725017,
+      "timestamp": "2026-01-10T11:20:47.218514"
+    },
+    {
+      "text": "feasible directly to get integrated to the graph.",
+      "start_time": 40718.49305887222,
+      "end_time": 40721.99305887222,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5628795782725017,
+      "timestamp": "2026-01-10T11:20:47.219900"
+    },
+    {
+      "text": "we are available for the CloudWatch matrix okay. So that CloudWatch matrix has a data source",
+      "start_time": 40724.89311480522,
+      "end_time": 40729.45311480522,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5426348033158676,
+      "timestamp": "2026-01-10T11:20:57.448493"
+    },
+    {
+      "text": "to the graph on it. So that",
+      "start_time": 40729.45311480522,
+      "end_time": 40754.45311480522,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.96333308653398,
+      "timestamp": "2026-01-10T11:20:58.361759"
+    },
+    {
+      "text": "services which are very crucial for us to get visualized, so we will be creating the",
+      "start_time": 40734.93361592293,
+      "end_time": 40738.93361592293,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.43268939544414653,
+      "timestamp": "2026-01-10T11:21:07.518562"
+    },
+    {
+      "text": "dashboard by using the cloud.",
+      "start_time": 40738.93361592293,
+      "end_time": 40740.93361592293,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.43268939544414653,
+      "timestamp": "2026-01-10T11:21:07.519908"
+    },
+    {
+      "text": "getting coming from the various cloud resources.",
+      "start_time": 40745.19818687439,
+      "end_time": 40747.31818687439,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.38206708514028126,
+      "timestamp": "2026-01-10T11:21:17.828080"
+    },
+    {
+      "text": "So example, I would say that a few of the SAS products,",
+      "start_time": 40747.31818687439,
+      "end_time": 40750.47818687439,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.38206708514028126,
+      "timestamp": "2026-01-10T11:21:17.829770"
+    },
+    {
+      "text": "we could not able to get.",
+      "start_time": 40750.47818687439,
+      "end_time": 40751.47818687439,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.38206708514028126,
+      "timestamp": "2026-01-10T11:21:17.831086"
+    },
+    {
+      "text": "and apply the help on these edges to scrap.",
+      "start_time": 40755.256539821625,
+      "end_time": 40757.37653982163,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8416492833031548,
+      "timestamp": "2026-01-10T11:21:28.060747"
+    },
+    {
+      "text": "There we have an example for the CloudWatch",
+      "start_time": 40757.37653982163,
+      "end_time": 40758.53653982162,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8416492833031548,
+      "timestamp": "2026-01-10T11:21:28.062344"
+    },
+    {
+      "text": "and the CloudWatch to graph on a",
+      "start_time": 40758.53653982162,
+      "end_time": 40759.576539821624,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8416492833031548,
+      "timestamp": "2026-01-10T11:21:28.063535"
+    },
+    {
+      "text": "there we will dash most of the edges.",
+      "start_time": 40759.576539821624,
+      "end_time": 40761.49653982162,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8416492833031548,
+      "timestamp": "2026-01-10T11:21:28.064706"
+    },
+    {
+      "text": "to get visualized which are critical for us so that is also will build the",
+      "start_time": 40765.34199690819,
+      "end_time": 40768.14199690819,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5425603934696742,
+      "timestamp": "2026-01-10T11:21:37.871900"
+    },
+    {
+      "text": "grapharon dashboards in terms of the diverse point of view.",
+      "start_time": 40768.14199690819,
+      "end_time": 40772.34199690819,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5425603934696742,
+      "timestamp": "2026-01-10T11:21:37.873277"
+    },
+    {
+      "text": "Y'en!",
+      "start_time": 40780.59289075851,
+      "end_time": 40781.09289075851,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.0320630414145333,
+      "timestamp": "2026-01-10T11:21:48.165784"
+    },
+    {
+      "text": "See that everything will be maintained over the core repository for the configuration.",
+      "start_time": 40786.706647052764,
+      "end_time": 40791.18664705277,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5637817943797392,
+      "timestamp": "2026-01-10T11:21:57.945367"
+    },
+    {
+      "text": "So every data is as unique, so that we'll be making available and structure wise, so that I do not, I don't know.",
+      "start_time": 40795.6713347435,
+      "end_time": 40801.6713347435,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.577068405225873,
+      "timestamp": "2026-01-10T11:22:08.145077"
+    },
+    {
+      "text": "which we are going to use it.",
+      "start_time": 40805.86786985397,
+      "end_time": 40807.02786985398,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5191883559410388,
+      "timestamp": "2026-01-10T11:22:18.449222"
+    },
+    {
+      "text": "So when we are writing the any prompting",
+      "start_time": 40807.02786985398,
+      "end_time": 40808.307869853976,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5191883559410388,
+      "timestamp": "2026-01-10T11:22:18.450585"
+    },
+    {
+      "text": "this matters, we will be having a label",
+      "start_time": 40808.307869853976,
+      "end_time": 40809.46786985397,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5191883559410388,
+      "timestamp": "2026-01-10T11:22:18.451707"
+    },
+    {
+      "text": "that we will call the respect to data source",
+      "start_time": 40809.46786985397,
+      "end_time": 40811.267869853975,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5191883559410388,
+      "timestamp": "2026-01-10T11:22:18.452809"
+    },
+    {
+      "text": "to get to the map.",
+      "start_time": 40811.267869853975,
+      "end_time": 40812.10786985397,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5191883559410388,
+      "timestamp": "2026-01-10T11:22:18.454129"
+    },
+    {
+      "text": "like this.",
+      "start_time": 40815.85942983627,
+      "end_time": 40816.85942983627,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.12641841173172,
+      "timestamp": "2026-01-10T11:22:28.579710"
+    },
+    {
+      "text": "Okay, so in the graphana dashboard only we'll have the admin, you know, a very...",
+      "start_time": 40826.29314499855,
+      "end_time": 40832.05314499855,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.87437654286623,
+      "timestamp": "2026-01-10T11:22:38.424965"
+    },
+    {
+      "text": "for our internal so that we can visualize the all the people's you know",
+      "start_time": 40836.14918088913,
+      "end_time": 40840.94918088913,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6413697799046835,
+      "timestamp": "2026-01-10T11:22:48.540608"
+    },
+    {
+      "text": "so that we would create the, whenever any user, we will create a groups set of rules set",
+      "start_time": 40846.65443465233,
+      "end_time": 40851.454434652325,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5278537441045046,
+      "timestamp": "2026-01-10T11:22:58.821726"
+    },
+    {
+      "text": "so it will be attaching all the",
+      "start_time": 40851.454434652325,
+      "end_time": 40853.65443465233,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5278537441045046,
+      "timestamp": "2026-01-10T11:22:58.823230"
+    },
+    {
+      "text": "get manage over the code repository I am not saying over the manual so based upon the groups",
+      "start_time": 40856.556555986404,
+      "end_time": 40859.71655598641,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4190086890489627,
+      "timestamp": "2026-01-10T11:23:08.966255"
+    },
+    {
+      "text": "which we created will be as I will be keeping that person over the under the",
+      "start_time": 40859.71655598641,
+      "end_time": 40863.556555986404,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4190086890489627,
+      "timestamp": "2026-01-10T11:23:08.967764"
+    },
+    {
+      "text": "So, any new person come, any new person has joined, you have to get, you know, that particular,",
+      "start_time": 40866.63763179779,
+      "end_time": 40870.63763179779,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4704496342884867,
+      "timestamp": "2026-01-10T11:23:19.037802"
+    },
+    {
+      "text": "just, you have to add that member.",
+      "start_time": 40870.63763179779,
+      "end_time": 40872.63763179779,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4704496342884867,
+      "timestamp": "2026-01-10T11:23:19.039245"
+    },
+    {
+      "text": "that will be the PR get revealed by is he's getting added by the base upon the role he's getting an appropriate role.",
+      "start_time": 40876.712179899216,
+      "end_time": 40882.712179899216,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4515503480516631,
+      "timestamp": "2026-01-10T11:23:29.061264"
+    },
+    {
+      "text": "that we will get review and get approved because we are not giving access to them, what are the",
+      "start_time": 40886.760076999664,
+      "end_time": 40890.24007699967,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4422987009349622,
+      "timestamp": "2026-01-10T11:23:39.254407"
+    },
+    {
+      "text": "you know roles and permissions over the UI, just will be.",
+      "start_time": 40890.24007699967,
+      "end_time": 40892.72007699966,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4422987009349622,
+      "timestamp": "2026-01-10T11:23:39.255943"
+    },
+    {
+      "text": "you will be able to use the name in which, yeah.",
+      "start_time": 40896.85966992378,
+      "end_time": 40899.35966992378,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9699376299977303,
+      "timestamp": "2026-01-10T11:23:49.207188"
+    },
+    {
+      "text": "Ah, okay.",
+      "start_time": 40910.67851202011,
+      "end_time": 40911.878512020114,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8695258910839374,
+      "timestamp": "2026-01-10T11:23:59.310096"
+    },
+    {
+      "text": "It's not-",
+      "start_time": 40911.878512020114,
+      "end_time": 40912.878512020114,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8695258910839374,
+      "timestamp": "2026-01-10T11:23:59.311739"
+    },
+    {
+      "text": "Okay",
+      "start_time": 40917.352365102764,
+      "end_time": 40922.81236510277,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4647679477930069,
+      "timestamp": "2026-01-10T11:24:09.350111"
+    },
+    {
+      "text": "but for the various moments okay so as I said right so we have the everything in the",
+      "start_time": 40927.14501595497,
+      "end_time": 40932.68501595497,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6739299637930733,
+      "timestamp": "2026-01-10T11:24:19.595803"
+    },
+    {
+      "text": "So, if any changes there will have a it would not have to get deployed.",
+      "start_time": 40937.22314071655,
+      "end_time": 40943.22314071655,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7953409492969513,
+      "timestamp": "2026-01-10T11:24:29.643876"
+    },
+    {
+      "text": "every time the mass is going to the production, there would be a lot of approval, then only",
+      "start_time": 40947.25764298439,
+      "end_time": 40951.07764298439,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4374100936425699,
+      "timestamp": "2026-01-10T11:24:39.797498"
+    },
+    {
+      "text": "it will get pushed in the main branch of the production.",
+      "start_time": 40951.07764298439,
+      "end_time": 40953.31764298439,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4374100936425699,
+      "timestamp": "2026-01-10T11:24:39.799415"
+    },
+    {
+      "text": "So in that particular water, what are the future branches which get deployed into the main",
+      "start_time": 40957.38237595558,
+      "end_time": 40960.38237595558,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4786952047637015,
+      "timestamp": "2026-01-10T11:24:49.853981"
+    },
+    {
+      "text": "branch, that is all main branches get integrated with the",
+      "start_time": 40960.38237595558,
+      "end_time": 40963.38237595558,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4786952047637015,
+      "timestamp": "2026-01-10T11:24:49.855467"
+    },
+    {
+      "text": "while doing the CACD pipeline, there we are always a",
+      "start_time": 40967.52489500999,
+      "end_time": 40970.56489500999,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8768531574922449,
+      "timestamp": "2026-01-10T11:24:59.934521"
+    },
+    {
+      "text": "changes then it is successfully tested once there is no issues then the changes will",
+      "start_time": 40977.57398605347,
+      "end_time": 40981.813986053465,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.44282289913722445,
+      "timestamp": "2026-01-10T11:25:10.062193"
+    },
+    {
+      "text": "get promoted in the next another environment.",
+      "start_time": 40981.813986053465,
+      "end_time": 40983.533986053466,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.44282289913722445,
+      "timestamp": "2026-01-10T11:25:10.064127"
+    },
+    {
+      "text": "Once everything is done, then we will be creating necessary CRs",
+      "start_time": 40987.673276901245,
+      "end_time": 40990.673276901245,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.22600596632276262,
+      "timestamp": "2026-01-10T11:25:20.188708"
+    },
+    {
+      "text": "Then get reviewed by the manager, then we will be promoting the same changes to get",
+      "start_time": 40990.673276901245,
+      "end_time": 40993.673276901245,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.22600596632276262,
+      "timestamp": "2026-01-10T11:25:20.190191"
+    },
+    {
+      "text": "from the staging to the production. So I think there isn't any manual intervention for making the changes dynamically over that everything will get.",
+      "start_time": 40997.79620885849,
+      "end_time": 41003.79620885849,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.37947429716587067,
+      "timestamp": "2026-01-10T11:25:30.247390"
+    },
+    {
+      "text": "So, if there is any, you know, if you move to the staging of production, if there is any",
+      "start_time": 41008.008920688626,
+      "end_time": 41015.008920688626,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5259912747603196,
+      "timestamp": "2026-01-10T11:25:40.554467"
+    },
+    {
+      "text": "should come immediately we will have a roll back plan. It means that what was the previous",
+      "start_time": 41018.05338072777,
+      "end_time": 41021.53338072777,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.41851498569761003,
+      "timestamp": "2026-01-10T11:25:50.494265"
+    },
+    {
+      "text": "committee it was there so that we can do the roll.",
+      "start_time": 41021.53338072777,
+      "end_time": 41024.09338072777,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.41851498569761003,
+      "timestamp": "2026-01-10T11:25:50.495844"
+    },
+    {
+      "text": "by over the CACD pipeline as well in the production so that it would not impact that is where we are managing all the",
+      "start_time": 41028.07674908638,
+      "end_time": 41032.87674908638,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.37818527122338613,
+      "timestamp": "2026-01-10T11:26:00.973990"
+    },
+    {
+      "text": "the visioning and get a",
+      "start_time": 41032.87674908638,
+      "end_time": 41034.87674908638,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.1475228203667536,
+      "timestamp": "2026-01-10T11:26:02.711079"
+    },
+    {
+      "text": "and we are not allowed even only if the super user is able to access and make the changes",
+      "start_time": 41043.12183403969,
+      "end_time": 41047.12183403969,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.356786516495049,
+      "timestamp": "2026-01-10T11:26:15.988141"
+    },
+    {
+      "text": "other than that no one can have the",
+      "start_time": 41047.12183403969,
+      "end_time": 41049.12183403969,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.356786516495049,
+      "timestamp": "2026-01-10T11:26:15.990065"
+    },
+    {
+      "text": "of the gson file to get published.",
+      "start_time": 41053.28722405434,
+      "end_time": 41055.28722405434,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7218614816665649,
+      "timestamp": "2026-01-10T11:26:25.845098"
+    },
+    {
+      "text": "Everything that you have to come over.",
+      "start_time": 41055.28722405434,
+      "end_time": 41057.28722405434,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7218614816665649,
+      "timestamp": "2026-01-10T11:26:25.846754"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 41064.433280925754,
+      "end_time": 41065.433280925754,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7258516311645508,
+      "timestamp": "2026-01-10T11:26:35.839721"
+    },
+    {
+      "text": "Repent the question please.",
+      "start_time": 41088.17198401451,
+      "end_time": 41090.17198401451,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6810004976060655,
+      "timestamp": "2026-01-10T11:26:56.110828"
+    },
+    {
+      "text": "Okay, yeah, I think I might not, I'll just, I might not face it, but uh...",
+      "start_time": 41114.05772687912,
+      "end_time": 41120.05772687912,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5308574781968043,
+      "timestamp": "2026-01-10T11:27:26.698440"
+    },
+    {
+      "text": "There are the chances like when you do the data from play, do the network connectivity,",
+      "start_time": 41124.240189790726,
+      "end_time": 41128.240189790726,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6526362511419481,
+      "timestamp": "2026-01-10T11:27:36.865417"
+    },
+    {
+      "text": "do the internet network connectivity very well.",
+      "start_time": 41128.240189790726,
+      "end_time": 41130.240189790726,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6526362511419481,
+      "timestamp": "2026-01-10T11:27:36.867102"
+    },
+    {
+      "text": "connect the cloud from the",
+      "start_time": 41134.3961288929,
+      "end_time": 41139.2161288929,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9523262232542038,
+      "timestamp": "2026-01-10T11:27:46.739131"
+    },
+    {
+      "text": "that might be one of the cause that it is going to get a",
+      "start_time": 41144.552825689316,
+      "end_time": 41148.552825689316,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5154291028561799,
+      "timestamp": "2026-01-10T11:27:57.108056"
+    },
+    {
+      "text": "broadly disrupted to get",
+      "start_time": 41148.552825689316,
+      "end_time": 41151.552825689316,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5154291028561799,
+      "timestamp": "2026-01-10T11:27:57.109663"
+    },
+    {
+      "text": "loss of connectivity that might be one of the cause for the data for our planet did not",
+      "start_time": 41154.79968094826,
+      "end_time": 41158.79968094826,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6836305992169813,
+      "timestamp": "2026-01-10T11:28:07.201305"
+    },
+    {
+      "text": "No, okay. Yeah, I guess go with",
+      "start_time": 41164.97325074196,
+      "end_time": 41170.553250741956,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7338302135467529,
+      "timestamp": "2026-01-10T11:28:17.217568"
+    },
+    {
+      "text": "because I did not get across the situation but I'll go with the steps with the plan like",
+      "start_time": 41174.98080992699,
+      "end_time": 41181.98080992699,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5429792241616682,
+      "timestamp": "2026-01-10T11:28:27.521748"
+    },
+    {
+      "text": "platform apply did not went well first I would go with the first salary do with the",
+      "start_time": 41185.033354997635,
+      "end_time": 41189.11335499764,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5515241055261522,
+      "timestamp": "2026-01-10T11:28:37.672850"
+    },
+    {
+      "text": "platform plan basically what it does",
+      "start_time": 41189.11335499764,
+      "end_time": 41191.11335499764,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7173784044053819,
+      "timestamp": "2026-01-10T11:28:38.110389"
+    },
+    {
+      "text": "they be as applied it is getting get everything will get captured on the state",
+      "start_time": 41195.238935709,
+      "end_time": 41197.738935709,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5129465920584543,
+      "timestamp": "2026-01-10T11:28:47.916892"
+    },
+    {
+      "text": "fund on the world is a currently which is available in the live and",
+      "start_time": 41197.738935709,
+      "end_time": 41200.318935709,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5129465920584543,
+      "timestamp": "2026-01-10T11:28:47.918907"
+    },
+    {
+      "text": "what are the resources having created, what are it is not active to create it and also there",
+      "start_time": 41205.46444487572,
+      "end_time": 41208.36444487572,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.504920482635498,
+      "timestamp": "2026-01-10T11:28:58.203919"
+    },
+    {
+      "text": "might be some resources it has been created partially that might not.",
+      "start_time": 41208.36444487572,
+      "end_time": 41211.32444487572,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.504920482635498,
+      "timestamp": "2026-01-10T11:28:58.205919"
+    },
+    {
+      "text": "that might not get be identified over the telephone plant but because I would say that example",
+      "start_time": 41215.54212188721,
+      "end_time": 41220.3821218872,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3536147730691092,
+      "timestamp": "2026-01-10T11:29:08.099062"
+    },
+    {
+      "text": "I like, suppose I would have created this.",
+      "start_time": 41220.3821218872,
+      "end_time": 41222.3821218872,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8385866788717417,
+      "timestamp": "2026-01-10T11:29:08.521028"
+    },
+    {
+      "text": "But there might be chances that a few of the configurations is not done properly.",
+      "start_time": 41225.72430682182,
+      "end_time": 41229.00430682182,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3843679931014776,
+      "timestamp": "2026-01-10T11:29:18.370725"
+    },
+    {
+      "text": "It might not get captured very linear part of you.",
+      "start_time": 41229.00430682182,
+      "end_time": 41231.484306821825,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3843679931014776,
+      "timestamp": "2026-01-10T11:29:18.372575"
+    },
+    {
+      "text": "perspective what I would do that I would go with the reapply, like before going the reapply",
+      "start_time": 41235.78868985176,
+      "end_time": 41240.268689851764,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4077685789929496,
+      "timestamp": "2026-01-10T11:29:28.418379"
+    },
+    {
+      "text": "it would not work out, because only the resource...",
+      "start_time": 41240.268689851764,
+      "end_time": 41241.78868985176,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4077685789929496,
+      "timestamp": "2026-01-10T11:29:28.420207"
+    },
+    {
+      "text": "So what I'll do first, I'll take in the resources, whatever the resources which are created,",
+      "start_time": 41245.952427864075,
+      "end_time": 41249.19242786407,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4519442882802751,
+      "timestamp": "2026-01-10T11:29:38.567271"
+    },
+    {
+      "text": "it was uprooted, it was valued...",
+      "start_time": 41249.19242786407,
+      "end_time": 41251.992427864076,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4519442882802751,
+      "timestamp": "2026-01-10T11:29:38.569089"
+    },
+    {
+      "text": "When I said taint right, what it would does, if I tainted the resources, when I do the",
+      "start_time": 41256.095601797104,
+      "end_time": 41260.315601797105,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5625990541969857,
+      "timestamp": "2026-01-10T11:29:48.885063"
+    },
+    {
+      "text": "next error from apply, what it will does, it will...",
+      "start_time": 41260.315601797105,
+      "end_time": 41262.1556017971,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5625990541969857,
+      "timestamp": "2026-01-10T11:29:48.886975"
+    },
+    {
+      "text": "which are tempted before me because I am sure that it might get created properly, it might get partially created but I am not sure.",
+      "start_time": 41266.19610595703,
+      "end_time": 41272.19610595703,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.37669968207677207,
+      "timestamp": "2026-01-10T11:29:58.736064"
+    },
+    {
+      "text": "of the combination of music.",
+      "start_time": 41276.34653496742,
+      "end_time": 41277.34653496742,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7165499650515043,
+      "timestamp": "2026-01-10T11:30:08.649280"
+    },
+    {
+      "text": "Okay.",
+      "start_time": 41277.34653496742,
+      "end_time": 41280.40653496742,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7165499650515043,
+      "timestamp": "2026-01-10T11:30:08.651318"
+    },
+    {
+      "text": "When you say long, don't pick me instance in the first stage of",
+      "start_time": 41286.50555682182,
+      "end_time": 41289.14555682182,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8096303244431814,
+      "timestamp": "2026-01-10T11:30:19.118106"
+    },
+    {
+      "text": "I'm glad you're not failing, yeah.",
+      "start_time": 41296.68002295494,
+      "end_time": 41299.27002295494,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9651743448697604,
+      "timestamp": "2026-01-10T11:30:28.964434"
+    },
+    {
+      "text": "Because the network connectivity, which is not in control by me or by DevOps name, then",
+      "start_time": 41316.88471198082,
+      "end_time": 41321.88471198082,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5998069331759498,
+      "timestamp": "2026-01-10T11:30:49.320610"
+    },
+    {
+      "text": "happen, it no happen. But other than the S3 and locking system, everything is...",
+      "start_time": 41327.08945989609,
+      "end_time": 41334.509459896086,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7773654488000002,
+      "timestamp": "2026-01-10T11:30:59.545344"
+    },
+    {
+      "text": "any questions like there's a lot of",
+      "start_time": 41337.191552877426,
+      "end_time": 41341.331552877426,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.773814781145616,
+      "timestamp": "2026-01-10T11:31:09.674508"
+    },
+    {
+      "text": "locking mechanism when I'm going to use some",
+      "start_time": 41341.331552877426,
+      "end_time": 41343.331552877426,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.773814781145616,
+      "timestamp": "2026-01-10T11:31:09.676423"
+    },
+    {
+      "text": "do by the log file and there also we can do one more thing we can not store the",
+      "start_time": 41347.2553730011,
+      "end_time": 41350.775373001095,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5251123853351759,
+      "timestamp": "2026-01-10T11:31:19.861139"
+    },
+    {
+      "text": "in my stuff.",
+      "start_time": 41350.775373001095,
+      "end_time": 41352.775373001095,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.8608481543404716,
+      "timestamp": "2026-01-10T11:31:21.117880"
+    },
+    {
+      "text": "make it fit some pieces of the state fund that could be a very good way to get it",
+      "start_time": 41357.435537815094,
+      "end_time": 41361.435537815094,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7715801452768261,
+      "timestamp": "2026-01-10T11:31:29.962641"
+    },
+    {
+      "text": "of some extent down.",
+      "start_time": 41361.435537815094,
+      "end_time": 41362.435537815094,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7715801452768261,
+      "timestamp": "2026-01-10T11:31:29.965256"
+    },
+    {
+      "text": "components and other that will have a lot of VPCs.",
+      "start_time": 41367.6131567955,
+      "end_time": 41370.9731567955,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5742188650986244,
+      "timestamp": "2026-01-10T11:31:40.181919"
+    },
+    {
+      "text": "So if we segregate the state files in pizza...",
+      "start_time": 41370.9731567955,
+      "end_time": 41373.6531567955,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5742188650986244,
+      "timestamp": "2026-01-10T11:31:40.183887"
+    },
+    {
+      "text": "that",
+      "start_time": 41377.86623096466,
+      "end_time": 41380.55623096466,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8211412131786346,
+      "timestamp": "2026-01-10T11:31:50.068556"
+    },
+    {
+      "text": "Yeah, that is it in every way I think which I worked on.",
+      "start_time": 41400.826700983045,
+      "end_time": 41402.826700983045,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7860349845886231,
+      "timestamp": "2026-01-10T11:32:10.516395"
+    },
+    {
+      "text": "Uh, but uh...",
+      "start_time": 41402.826700983045,
+      "end_time": 41403.826700983045,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7860349845886231,
+      "timestamp": "2026-01-10T11:32:10.518231"
+    },
+    {
+      "text": "I would say that I would not make them to 100% get optimized, get well maintained that is for sure because that is not...",
+      "start_time": 41407.92259979248,
+      "end_time": 41413.92259979248,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3567381888628006,
+      "timestamp": "2026-01-10T11:32:20.664156"
+    },
+    {
+      "text": "there might be a lot of dependencies which are content resources which are not get disturbed",
+      "start_time": 41418.07620668411,
+      "end_time": 41422.07620668411,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6104881831577846,
+      "timestamp": "2026-01-10T11:32:30.726594"
+    },
+    {
+      "text": "not get re-created.",
+      "start_time": 41422.07620668411,
+      "end_time": 41423.07620668411,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6104881831577846,
+      "timestamp": "2026-01-10T11:32:30.728604"
+    },
+    {
+      "text": "Due to the dependence.",
+      "start_time": 41423.07620668411,
+      "end_time": 41424.07620668411,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6104881831577846,
+      "timestamp": "2026-01-10T11:32:30.730229"
+    },
+    {
+      "text": "to reframing, but I would say that where I have used for the Tehran thread because",
+      "start_time": 41428.15114188194,
+      "end_time": 41435.15114188194,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7414046923319498,
+      "timestamp": "2026-01-10T11:32:40.772645"
+    },
+    {
+      "text": "We are using a lot of Garfiles and a lot of Terraform models get repeated and keep on for the each and the wrong man and each I know.",
+      "start_time": 41438.34918284416,
+      "end_time": 41444.34918284416,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.801404101981057,
+      "timestamp": "2026-01-10T11:32:51.025093"
+    },
+    {
+      "text": "So there what I came up in one of the solution",
+      "start_time": 41448.46864485741,
+      "end_time": 41450.46864485741,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4276788565847609,
+      "timestamp": "2026-01-10T11:33:01.205088"
+    },
+    {
+      "text": "and not I would say that where we did the banks",
+      "start_time": 41450.46864485741,
+      "end_time": 41452.46864485741,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4276788565847609,
+      "timestamp": "2026-01-10T11:33:01.207589"
+    },
+    {
+      "text": "for the use the problem safe.",
+      "start_time": 41452.46864485741,
+      "end_time": 41454.46864485741,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4276788565847609,
+      "timestamp": "2026-01-10T11:33:01.209392"
+    },
+    {
+      "text": "the tarragon. So, what we propose them and",
+      "start_time": 41458.61993789673,
+      "end_time": 41465.61993789673,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8409063262598855,
+      "timestamp": "2026-01-10T11:33:11.070401"
+    },
+    {
+      "text": "need to do any, you know, the models that are for models get, you know, copied and maintained",
+      "start_time": 41468.629467725754,
+      "end_time": 41472.90946772575,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5043457649849556,
+      "timestamp": "2026-01-10T11:33:21.397508"
+    },
+    {
+      "text": "in the various, you know, various fold.",
+      "start_time": 41472.90946772575,
+      "end_time": 41474.669467725755,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5043457649849556,
+      "timestamp": "2026-01-10T11:33:21.399597"
+    },
+    {
+      "text": "So we can keep all these things in one place as a terraform mode as we are written but we can by using the terragrate as a wrap.",
+      "start_time": 41478.70463895798,
+      "end_time": 41484.70463895798,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.47786684547151836,
+      "timestamp": "2026-01-10T11:33:31.532473"
+    },
+    {
+      "text": "various environments, various projects, various, various finds, just we can refer it the",
+      "start_time": 41488.752439022064,
+      "end_time": 41492.05243902207,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6761115744709969,
+      "timestamp": "2026-01-10T11:33:41.630531"
+    },
+    {
+      "text": "terraform modules by terragrant, the terragrant just sing it, it is",
+      "start_time": 41492.05243902207,
+      "end_time": 41495.752439022064,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6761115744709969,
+      "timestamp": "2026-01-10T11:33:41.632786"
+    },
+    {
+      "text": "of input file, it was like so we can just play around it and it should not get the",
+      "start_time": 41498.92183184624,
+      "end_time": 41502.74183184624,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5384574323087126,
+      "timestamp": "2026-01-10T11:33:51.716908"
+    },
+    {
+      "text": "terraform model get depended in all the places so that",
+      "start_time": 41502.74183184624,
+      "end_time": 41505.92183184624,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5384574323087126,
+      "timestamp": "2026-01-10T11:33:51.719591"
+    },
+    {
+      "text": "table and get manageable in terms of the terra form code, so that is where one of the problem",
+      "start_time": 41509.02259397507,
+      "end_time": 41514.302593975066,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5222218235333761,
+      "timestamp": "2026-01-10T11:34:01.748737"
+    },
+    {
+      "text": "and implemented on the Tehran in one of the projects.",
+      "start_time": 41519.120701789856,
+      "end_time": 41522.60070178986,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.633216742426157,
+      "timestamp": "2026-01-10T11:34:11.660313"
+    },
+    {
+      "text": "Yeah, yeah, yeah.",
+      "start_time": 41549.95165175438,
+      "end_time": 41553.15165175438,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6612997055053711,
+      "timestamp": "2026-01-10T11:34:42.049864"
+    },
+    {
+      "text": "Okay, so basically, um, in-kind project, uh, bye.",
+      "start_time": 41569.74462008476,
+      "end_time": 41574.95462008476,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7946385835346422,
+      "timestamp": "2026-01-10T11:35:02.415387"
+    },
+    {
+      "text": "So you want me to explain like about a tilt production what kind of the",
+      "start_time": 41581.67331579208,
+      "end_time": 41584.17331579208,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.44298015941273083,
+      "timestamp": "2026-01-10T11:35:12.712300"
+    },
+    {
+      "text": "blanking strategies are going to use it.",
+      "start_time": 41584.17331579208,
+      "end_time": 41585.67331579208,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.44298015941273083,
+      "timestamp": "2026-01-10T11:35:12.714462"
+    },
+    {
+      "text": "Okay.",
+      "start_time": 41585.67331579208,
+      "end_time": 41586.17331579208,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.44298015941273083,
+      "timestamp": "2026-01-10T11:35:12.716396"
+    },
+    {
+      "text": "I think that could be very based upon the requirement and based upon the project.",
+      "start_time": 41590.44715374947,
+      "end_time": 41595.80715374947,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4640193361985056,
+      "timestamp": "2026-01-10T11:35:22.689132"
+    },
+    {
+      "text": "So in current what we are doing in every release, win the release starts.",
+      "start_time": 41600.19683790207,
+      "end_time": 41605.86683790207,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7337478085568077,
+      "timestamp": "2026-01-10T11:35:32.792817"
+    },
+    {
+      "text": "creating all release bankings, release bankings, release bankers so that the people, all the",
+      "start_time": 41610.30009484291,
+      "end_time": 41614.90009484291,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5521702766418457,
+      "timestamp": "2026-01-10T11:35:43.215180"
+    },
+    {
+      "text": "development peoples and everything will get",
+      "start_time": 41614.90009484291,
+      "end_time": 41616.30009484291,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5521702766418457,
+      "timestamp": "2026-01-10T11:35:43.217278"
+    },
+    {
+      "text": "So, we will have every one month release, we will not have, because that is a...",
+      "start_time": 41620.39835071564,
+      "end_time": 41626.39835071564,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7468390464782715,
+      "timestamp": "2026-01-10T11:35:53.168601"
+    },
+    {
+      "text": "choose this kind of balancing strategy that could be accommodate and feasible and compatible",
+      "start_time": 41630.610514936445,
+      "end_time": 41634.610514936445,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5151181646755764,
+      "timestamp": "2026-01-10T11:36:03.269222"
+    },
+    {
+      "text": "based upon our working age and get ready.",
+      "start_time": 41634.610514936445,
+      "end_time": 41636.610514936445,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5151181646755764,
+      "timestamp": "2026-01-10T11:36:03.271560"
+    },
+    {
+      "text": "so that whenever we created the release bench when the release starts, so that all the",
+      "start_time": 41640.88177368164,
+      "end_time": 41644.88177368164,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5696255882581075,
+      "timestamp": "2026-01-10T11:36:13.357316"
+    },
+    {
+      "text": "element will get pushed as it changes.",
+      "start_time": 41644.88177368164,
+      "end_time": 41646.88177368164,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5696255882581075,
+      "timestamp": "2026-01-10T11:36:13.359349"
+    },
+    {
+      "text": "we will have a free period like locking period and before going to release for the 3-4 days",
+      "start_time": 41650.758598804474,
+      "end_time": 41655.07859880447,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.510406897914025,
+      "timestamp": "2026-01-10T11:36:23.574494"
+    },
+    {
+      "text": "back so that all the changes",
+      "start_time": 41655.07859880447,
+      "end_time": 41656.758598804474,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.510406897914025,
+      "timestamp": "2026-01-10T11:36:23.576810"
+    },
+    {
+      "text": "and then get deployed into the staging. Once everything is just done done then we'll be getting",
+      "start_time": 41660.85290789604,
+      "end_time": 41666.37290789604,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5604893798413484,
+      "timestamp": "2026-01-10T11:36:33.582265"
+    },
+    {
+      "text": "that still the release batch will be alive until everything get you know",
+      "start_time": 41671.00289487839,
+      "end_time": 41675.48289487839,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.535255937015309,
+      "timestamp": "2026-01-10T11:36:43.650714"
+    },
+    {
+      "text": "production why because once we go to the production there might be a chances we have to do the hot fixes so the not fixes will be",
+      "start_time": 41681.17415499687,
+      "end_time": 41686.98415499687,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3831579774618149,
+      "timestamp": "2026-01-10T11:36:53.887837"
+    },
+    {
+      "text": "take him from the branch from the release branch. So, they will fix it that release branch",
+      "start_time": 41691.27186584473,
+      "end_time": 41695.27186584473,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.39659974703917633,
+      "timestamp": "2026-01-10T11:37:04.186943"
+    },
+    {
+      "text": "again will go get merged into the master band get depleted.",
+      "start_time": 41695.27186584473,
+      "end_time": 41697.27186584473,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.39659974703917633,
+      "timestamp": "2026-01-10T11:37:04.189097"
+    },
+    {
+      "text": "so that we will not get overlap and get confused again, get created by the Autic",
+      "start_time": 41701.81689685822,
+      "end_time": 41706.49689685822,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5421557778661902,
+      "timestamp": "2026-01-10T11:37:14.018795"
+    },
+    {
+      "text": "So the release bench, whatever the one which we created from the starting of the release, will be there still",
+      "start_time": 41711.53764772415,
+      "end_time": 41715.13764772415,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5648108017750275,
+      "timestamp": "2026-01-10T11:37:24.378755"
+    },
+    {
+      "text": "and down the release get live until get certified by the...",
+      "start_time": 41715.13764772415,
+      "end_time": 41717.53764772415,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5648108017750275,
+      "timestamp": "2026-01-10T11:37:24.380862"
+    },
+    {
+      "text": "and uses, once it's done then we'll get wiped out that particular expression, so this cycle",
+      "start_time": 41721.66513586044,
+      "end_time": 41725.26513586044,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5635870521267256,
+      "timestamp": "2026-01-10T11:37:34.412484"
+    },
+    {
+      "text": "we'll get a bit of everything.",
+      "start_time": 41725.26513586044,
+      "end_time": 41727.635135860444,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7706648111343384,
+      "timestamp": "2026-01-10T11:37:34.917583"
+    },
+    {
+      "text": "It's much more complex than it was.",
+      "start_time": 41756.61862770081,
+      "end_time": 41758.61862770081,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.0493681530157726,
+      "timestamp": "2026-01-10T11:38:05.409027"
+    },
+    {
+      "text": "when the context games which one would need it which would not be get merged with the",
+      "start_time": 41762.1383869648,
+      "end_time": 41766.4583869648,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5075924169449579,
+      "timestamp": "2026-01-10T11:38:14.771997"
+    },
+    {
+      "text": "of the nature of the conflict, that I would take a call which would not require to get",
+      "start_time": 41772.28505086899,
+      "end_time": 41776.345050868986,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3765489459037781,
+      "timestamp": "2026-01-10T11:38:25.038642"
+    },
+    {
+      "text": "much without a tool, you know.",
+      "start_time": 41776.345050868986,
+      "end_time": 41778.345050868986,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7863284241069447,
+      "timestamp": "2026-01-10T11:38:25.473103"
+    },
+    {
+      "text": "So accordingly, I'll just go and resolve all the conflicts wherever it comes",
+      "start_time": 41782.43368077278,
+      "end_time": 41785.95368077278,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3229833905185972,
+      "timestamp": "2026-01-10T11:38:35.188970"
+    },
+    {
+      "text": "and then I'll be resolving everything.",
+      "start_time": 41785.95368077278,
+      "end_time": 41787.47368077278,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3229833905185972,
+      "timestamp": "2026-01-10T11:38:35.191482"
+    },
+    {
+      "text": "So when you say configuration file that could be application configuration right yeah see application configuration we'll have a separate",
+      "start_time": 41802.902642812725,
+      "end_time": 41808.13264281273,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.43497248614827794,
+      "timestamp": "2026-01-10T11:38:55.197414"
+    },
+    {
+      "text": "I would say one of the UI, that would be everything",
+      "start_time": 41812.68906903267,
+      "end_time": 41814.44906903267,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.41806299511979267,
+      "timestamp": "2026-01-10T11:39:05.660714"
+    },
+    {
+      "text": "get managed and getting all the Kubernetes microservices",
+      "start_time": 41814.44906903267,
+      "end_time": 41817.00906903267,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.41806299511979267,
+      "timestamp": "2026-01-10T11:39:05.663017"
+    },
+    {
+      "text": "getting fetched by from there.",
+      "start_time": 41817.00906903267,
+      "end_time": 41818.32906903267,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.41806299511979267,
+      "timestamp": "2026-01-10T11:39:05.664977"
+    },
+    {
+      "text": "So that is.",
+      "start_time": 41818.32906903267,
+      "end_time": 41819.16906903267,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.41806299511979267,
+      "timestamp": "2026-01-10T11:39:05.666906"
+    },
+    {
+      "text": "they could write it and that could be also get, you know, monitor and manage who has and",
+      "start_time": 41822.82559275627,
+      "end_time": 41826.06559275627,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.40654431134462354,
+      "timestamp": "2026-01-10T11:39:15.818305"
+    },
+    {
+      "text": "who has not done.",
+      "start_time": 41826.06559275627,
+      "end_time": 41827.06559275627,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.40654431134462354,
+      "timestamp": "2026-01-10T11:39:15.821456"
+    },
+    {
+      "text": "Why?",
+      "start_time": 41827.06559275627,
+      "end_time": 41828.06559275627,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.40654431134462354,
+      "timestamp": "2026-01-10T11:39:15.823493"
+    },
+    {
+      "text": "Because these configurations-",
+      "start_time": 41828.06559275627,
+      "end_time": 41829.06559275627,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.40654431134462354,
+      "timestamp": "2026-01-10T11:39:15.826080"
+    },
+    {
+      "text": "as a dynamically so that it is not get stored.",
+      "start_time": 41833.144149923326,
+      "end_time": 41835.144149923326,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.37292922156698566,
+      "timestamp": "2026-01-10T11:39:25.805774"
+    },
+    {
+      "text": "The back-on piece of the code is there, but we have created an application.",
+      "start_time": 41835.144149923326,
+      "end_time": 41839.144149923326,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.37292922156698566,
+      "timestamp": "2026-01-10T11:39:25.808226"
+    },
+    {
+      "text": "into the fly on the dashboard so that the Kubernetes will get fresh from there and get",
+      "start_time": 41843.091503858566,
+      "end_time": 41846.371503858565,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5083932070171132,
+      "timestamp": "2026-01-10T11:39:35.994009"
+    },
+    {
+      "text": "you know, adapt and running it. So in the Kubernetes",
+      "start_time": 41846.371503858565,
+      "end_time": 41848.971503858564,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5083932070171132,
+      "timestamp": "2026-01-10T11:39:35.996414"
+    },
+    {
+      "text": "kept config reloader so if there is any new config changes that automatically is getting",
+      "start_time": 41853.18147087097,
+      "end_time": 41857.10147087097,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6136771500110626,
+      "timestamp": "2026-01-10T11:39:46.044033"
+    },
+    {
+      "text": "the config maps. So, basically they would not want to keep very tightly, you know.",
+      "start_time": 41863.30059170723,
+      "end_time": 41868.66059170723,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6024902733889493,
+      "timestamp": "2026-01-10T11:39:55.841824"
+    },
+    {
+      "text": "all the config maps, all the application configuration.",
+      "start_time": 41873.41345310211,
+      "end_time": 41876.29345310211,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5246342745694247,
+      "timestamp": "2026-01-10T11:40:06.031300"
+    },
+    {
+      "text": "So that will application team can, whenever they want,",
+      "start_time": 41876.29345310211,
+      "end_time": 41878.97345310211,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5246342745694247,
+      "timestamp": "2026-01-10T11:40:06.033893"
+    },
+    {
+      "text": "they could able to.",
+      "start_time": 41878.97345310211,
+      "end_time": 41879.97345310211,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5246342745694247,
+      "timestamp": "2026-01-10T11:40:06.035946"
+    }
+  ]
+}

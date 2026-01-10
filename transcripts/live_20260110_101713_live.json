@@ -1,0 +1,87 @@
+{
+  "session_name": "live_20260110_101713",
+  "started": "2026-01-10T10:18:26.215015",
+  "segments": [
+    {
+      "text": "Hello?",
+      "start_time": 2.2586821365356444,
+      "end_time": 4.258682136535644,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.6911020278930664,
+      "timestamp": "2026-01-10T10:17:20.621472"
+    },
+    {
+      "text": "Thank you.",
+      "start_time": 30.83760910987854,
+      "end_time": 31.33760910987854,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9703805049260458,
+      "timestamp": "2026-01-10T10:17:45.775620"
+    },
+    {
+      "text": "The fitting is a common program where model performs well on training data but poorly on unseen data, indicating it's too closely fitted to the training data specific data.",
+      "start_time": 35.34521412849426,
+      "end_time": 41.34521412849426,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.43936071055276055,
+      "timestamp": "2026-01-10T10:17:56.307179"
+    },
+    {
+      "text": "You",
+      "start_time": 48.71398591995239,
+      "end_time": 50.71398591995239,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.9576559066772461,
+      "timestamp": "2026-01-10T10:18:05.997531"
+    },
+    {
+      "text": "step light on how to address this, the number one step is cross validation. So one effective",
+      "start_time": 46.739333152770996,
+      "end_time": 50.259333152771,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.43995029910614614,
+      "timestamp": "2026-01-10T10:18:07.521819"
+    },
+    {
+      "text": "way to test for overfitting is by using cross validation techniques.",
+      "start_time": 50.259333152771,
+      "end_time": 52.499333152770994,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.43995029910614614,
+      "timestamp": "2026-01-10T10:18:07.522250"
+    },
+    {
+      "text": "To cross-validation is a good text.",
+      "start_time": 59.51460210800171,
+      "end_time": 61.51460210800171,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.5688201359340123,
+      "timestamp": "2026-01-10T10:18:16.221883"
+    },
+    {
+      "text": "modes, splitting open data into multiple smaller sets.",
+      "start_time": 56.71446108818054,
+      "end_time": 59.03446108818054,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6564063108884372,
+      "timestamp": "2026-01-10T10:18:17.343759"
+    },
+    {
+      "text": "understanding.",
+      "start_time": 65.7403211593628,
+      "end_time": 66.62032115936279,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.7734317779541016,
+      "timestamp": "2026-01-10T10:18:26.214790"
+    }
+  ]
+}

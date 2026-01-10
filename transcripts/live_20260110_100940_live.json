@@ -1,0 +1,96 @@
+{
+  "session_name": "live_20260110_100940",
+  "started": "2026-01-10T10:10:44.173728",
+  "segments": [
+    {
+      "text": "using histograms on both blocks.",
+      "start_time": 28.753865938186646,
+      "end_time": 30.753865938186646,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7714718699455261,
+      "timestamp": "2026-01-10T10:10:13.518294"
+    },
+    {
+      "text": "and have changed the statistical properties of the data.",
+      "start_time": 35.3355770111084,
+      "end_time": 37.3755770111084,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.27710461035007383,
+      "timestamp": "2026-01-10T10:10:24.018498"
+    },
+    {
+      "text": "And by following these steps,",
+      "start_time": 37.3755770111084,
+      "end_time": 38.2155770111084,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.27710461035007383,
+      "timestamp": "2026-01-10T10:10:24.018884"
+    },
+    {
+      "text": "you can handle missing data thoughtfully",
+      "start_time": 38.2155770111084,
+      "end_time": 39.6155770111084,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.27710461035007383,
+      "timestamp": "2026-01-10T10:10:24.019140"
+    },
+    {
+      "text": "and maintain the integrity of your predictive model.",
+      "start_time": 39.6155770111084,
+      "end_time": 41.8155770111084,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.27710461035007383,
+      "timestamp": "2026-01-10T10:10:24.019313"
+    },
+    {
+      "text": "that is based on evaluating model overfitting.",
+      "start_time": 45.73463496208191,
+      "end_time": 48.41463496208191,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3560585919767618,
+      "timestamp": "2026-01-10T10:10:33.987599"
+    },
+    {
+      "text": "So the question is, you have developed a predictive model",
+      "start_time": 48.41463496208191,
+      "end_time": 50.53463496208191,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3560585919767618,
+      "timestamp": "2026-01-10T10:10:33.988173"
+    },
+    {
+      "text": "but you suspect.",
+      "start_time": 50.53463496208191,
+      "end_time": 51.37463496208191,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3560585919767618,
+      "timestamp": "2026-01-10T10:10:33.988510"
+    },
+    {
+      "text": "training data. How would you test and address the issue? Please explain your steps and the",
+      "start_time": 55.50902009010315,
+      "end_time": 58.669020090103146,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.37272264146142536,
+      "timestamp": "2026-01-10T10:10:44.173170"
+    },
+    {
+      "text": "techniques you would use. So you could start the answer by...",
+      "start_time": 58.669020090103146,
+      "end_time": 61.22902009010315,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.37272264146142536,
+      "timestamp": "2026-01-10T10:10:44.173630"
+    }
+  ]
+}

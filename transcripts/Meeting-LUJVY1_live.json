@@ -1,0 +1,96 @@
+{
+  "session_name": "Meeting-LUJVY1",
+  "started": "2026-01-10T00:09:21.393838",
+  "segments": [
+    {
+      "text": "program.",
+      "start_time": 5.283620834350586,
+      "end_time": 6.283620834350586,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5378926895760201,
+      "timestamp": "2026-01-10T00:08:36.042299"
+    },
+    {
+      "text": "The model performs talent training data but poorly on unseen data, indicating it's too",
+      "start_time": 6.283620834350586,
+      "end_time": 9.283620834350586,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5378926895760201,
+      "timestamp": "2026-01-10T00:08:36.042742"
+    },
+    {
+      "text": "closely fitted to the training data specific to days and noise.",
+      "start_time": 9.283620834350586,
+      "end_time": 11.283620834350586,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5378926895760201,
+      "timestamp": "2026-01-10T00:08:36.042915"
+    },
+    {
+      "text": "see a step west of light on how to address this, the number one step is close validation.",
+      "start_time": 15.377920866012573,
+      "end_time": 18.857920866012574,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.49637298434972765,
+      "timestamp": "2026-01-10T00:08:46.206590"
+    },
+    {
+      "text": "So what effective way to test for all reading is by using close validation?",
+      "start_time": 18.857920866012574,
+      "end_time": 21.417920866012572,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.49637298434972765,
+      "timestamp": "2026-01-10T00:08:46.206929"
+    },
+    {
+      "text": "close validation in most, spitting or trying data into multiple smaller sets that is forged,",
+      "start_time": 25.39657187461853,
+      "end_time": 28.99657187461853,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6756079712429562,
+      "timestamp": "2026-01-10T00:08:56.251467"
+    },
+    {
+      "text": "and then playing a model also on B set, and well getting.",
+      "start_time": 28.99657187461853,
+      "end_time": 31.39657187461853,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6756079712429562,
+      "timestamp": "2026-01-10T00:08:56.251898"
+    },
+    {
+      "text": "for cross validation and for over",
+      "start_time": 33.07093592643738,
+      "end_time": 40.07093592643738,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.410238160027398,
+      "timestamp": "2026-01-10T00:09:01.121167"
+    },
+    {
+      "text": "So this has to be the end of my life, good moments, and it's time to go.",
+      "start_time": 35.44089865684509,
+      "end_time": 41.37089865684509,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.0449586510658264,
+      "timestamp": "2026-01-10T00:09:09.610322"
+    },
+    {
+      "text": "So this is the code and this is the code snippet of Python that you can use for the code",
+      "start_time": 51.05353593826294,
+      "end_time": 56.31353593826294,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.516976375579834,
+      "timestamp": "2026-01-10T00:09:21.393585"
+    }
+  ]
+}

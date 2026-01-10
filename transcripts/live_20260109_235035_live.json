@@ -1,0 +1,24 @@
+{
+  "session_name": "live_20260109_235035",
+  "started": "2026-01-09T23:50:52.285387",
+  "segments": [
+    {
+      "text": "Hello, hello, my voice audible.",
+      "start_time": 1.580776891708374,
+      "end_time": 4.540776891708374,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.7345305247740312,
+      "timestamp": "2026-01-09T23:50:42.265473"
+    },
+    {
+      "text": "Hello",
+      "start_time": 14.686543912887572,
+      "end_time": 16.686543912887572,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.39624452590942383,
+      "timestamp": "2026-01-09T23:50:52.285145"
+    }
+  ]
+}

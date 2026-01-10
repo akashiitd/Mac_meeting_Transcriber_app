@@ -1,0 +1,123 @@
+{
+  "session_name": "Meeting-ZUXA89",
+  "started": "2026-01-10T00:17:37.126079",
+  "segments": [
+    {
+      "text": "that is based on evaluating model or fitting.",
+      "start_time": 5.233003969192505,
+      "end_time": 7.953003969192505,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.525581942871213,
+      "timestamp": "2026-01-10T00:16:01.806863"
+    },
+    {
+      "text": "So the question is, you have developed a predictive model, but you suspect it might...",
+      "start_time": 7.953003969192505,
+      "end_time": 11.153003969192504,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.525581942871213,
+      "timestamp": "2026-01-10T00:16:01.807297"
+    },
+    {
+      "text": "how to test an address station, these explain of steps and the techniques you would use, so you would",
+      "start_time": 15.839694890975952,
+      "end_time": 19.839694890975952,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6473540291190147,
+      "timestamp": "2026-01-10T00:16:11.801156"
+    },
+    {
+      "text": "so for overfitting the data we can",
+      "start_time": 22.619626893997193,
+      "end_time": 26.619626893997193,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.44252987454334897,
+      "timestamp": "2026-01-10T00:16:16.529196"
+    },
+    {
+      "text": "documentation technique.",
+      "start_time": 30.2826087474823,
+      "end_time": 31.2826087474823,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -1.2224313616752625,
+      "timestamp": "2026-01-10T00:16:26.988706"
+    },
+    {
+      "text": "L1 and L2 regularization technique we can use.",
+      "start_time": 41.46573390007019,
+      "end_time": 44.98573390007019,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.43851209481557213,
+      "timestamp": "2026-01-10T00:16:36.654551"
+    },
+    {
+      "text": "3 and it is based on real-time data, stream processing, and question is, you are tasked with building",
+      "start_time": 57.3181849193573,
+      "end_time": 61.478184919357304,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.38269219490197987,
+      "timestamp": "2026-01-10T00:16:52.045172"
+    },
+    {
+      "text": "prices in real time. The data comes in every second and you need to update your predictions accordingly.",
+      "start_time": 65.72037291526794,
+      "end_time": 69.72037291526794,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3921084590256214,
+      "timestamp": "2026-01-10T00:17:02.188247"
+    },
+    {
+      "text": "Describe how you would set up your system to handle this type of...",
+      "start_time": 69.72037291526794,
+      "end_time": 71.72037291526794,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3921084590256214,
+      "timestamp": "2026-01-10T00:17:02.188690"
+    },
+    {
+      "text": "So with the technique which we can use for building",
+      "start_time": 75.64948201179504,
+      "end_time": 80.86948201179504,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.3064035360629742,
+      "timestamp": "2026-01-10T00:17:11.963297"
+    },
+    {
+      "text": "like tools and techniques for the use and life.",
+      "start_time": 76.11675691604614,
+      "end_time": 77.91675691604614,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7402507341825045,
+      "timestamp": "2026-01-10T00:17:12.452190"
+    },
+    {
+      "text": "or RNN model since we are using real-time data we can use.",
+      "start_time": 86.23646870613098,
+      "end_time": 92.23646870613098,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.368402876352009,
+      "timestamp": "2026-01-10T00:17:22.160969"
+    },
+    {
+      "text": "We can use Cough.",
+      "start_time": 104.82683392524719,
+      "end_time": 106.82683392524719,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.91171752081977,
+      "timestamp": "2026-01-10T00:17:37.125852"
+    }
+  ]
+}

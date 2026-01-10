@@ -581,6 +581,126 @@
             color: #888;
         }
         
+        /* Live transcript panel (shown during recording) */
+        .live-transcript-panel {
+            padding: 24px;
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            background: #0a0a0a;
+        }
+
+        .live-transcript-panel.show {
+            display: flex;
+        }
+
+        .live-transcript-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #333;
+        }
+
+        .live-transcript-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .live-transcript-title h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .live-indicator {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(239, 68, 68, 0.2);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            color: #ef4444;
+        }
+
+        .live-indicator-dot {
+            width: 8px;
+            height: 8px;
+            background: #ef4444;
+            border-radius: 50%;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        .live-transcript-content {
+            flex: 1;
+            overflow-y: auto;
+            background: #111;
+            border-radius: 8px;
+            padding: 16px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .transcript-segment {
+            margin-bottom: 12px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            background: #1a1a1a;
+        }
+
+        .transcript-segment.speaker-you {
+            border-left: 3px solid #22c55e;
+        }
+
+        .transcript-segment.speaker-other {
+            border-left: 3px solid #3b82f6;
+        }
+
+        .transcript-speaker {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .transcript-speaker.you {
+            color: #22c55e;
+        }
+
+        .transcript-speaker.other {
+            color: #3b82f6;
+        }
+
+        .transcript-text {
+            color: #e5e5e5;
+        }
+
+        .transcript-time {
+            font-size: 10px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .live-transcript-empty {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #666;
+            text-align: center;
+        }
+
+        .live-transcript-empty-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
         /* Meeting detail view */
         .meeting-detail {
             padding: 32px;
@@ -588,7 +708,7 @@
             overflow-y: auto;
             display: none;
         }
-        
+
         .meeting-detail.show {
             display: block;
         }
@@ -1293,6 +1413,27 @@
 
         <!-- Main content -->
         <div class="content">
+            <!-- Live transcript panel (shown during recording) -->
+            <div class="live-transcript-panel" id="live-transcript-panel">
+                <div class="live-transcript-header">
+                    <div class="live-transcript-title">
+                        <h2>Live Transcript</h2>
+                        <div class="live-indicator">
+                            <div class="live-indicator-dot"></div>
+                            <span>LIVE</span>
+                        </div>
+                    </div>
+                    <span id="live-transcript-time">00:00</span>
+                </div>
+                <div class="live-transcript-content" id="live-transcript-content">
+                    <div class="live-transcript-empty" id="live-transcript-empty">
+                        <div class="live-transcript-empty-icon">🎙️</div>
+                        <h3>Listening...</h3>
+                        <p>Transcript will appear here as you speak</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Empty state -->
             <div class="content-empty" id="empty-state">
                 <div class="content-empty-icon">📝</div>
@@ -1649,6 +1790,12 @@ Session started - waiting for activity...
         const emptyState = document.getElementById('empty-state');
         const meetingDetail = document.getElementById('meeting-detail');
         const dropZone = document.getElementById('drop-zone');
+
+        // Live transcript elements
+        const liveTranscriptPanel = document.getElementById('live-transcript-panel');
+        const liveTranscriptContent = document.getElementById('live-transcript-content');
+        const liveTranscriptEmpty = document.getElementById('live-transcript-empty');
+        const liveTranscriptTime = document.getElementById('live-transcript-time');
         
         // Update elements
         const updateBanner = document.getElementById('update-banner');
@@ -1731,7 +1878,7 @@ Session started - waiting for activity...
         function setUIState(state) {
             uiState = state;
             log(`UI State: ${state}`);
-            
+
             // Update UI elements based on state
             switch(state) {
                 case 'ready':
@@ -1741,8 +1888,10 @@ Session started - waiting for activity...
                     sessionNameInput.disabled = false;
                     stopRecordingTimer();
                     setStatus('ready', 'Ready');
+                    // Hide live transcript panel
+                    hideLiveTranscript();
                     break;
-                    
+
                 case 'recording':
                     startBtn.style.display = 'none';
                     stopBtn.style.display = 'inline-flex';
@@ -1750,8 +1899,10 @@ Session started - waiting for activity...
                     sessionNameInput.disabled = true;
                     stopBtn.disabled = false;
                     startRecordingTimer();
+                    // Show live transcript panel
+                    showLiveTranscript();
                     break;
-                    
+
                 case 'processing':
                     startBtn.style.display = 'inline-flex';
                     stopBtn.style.display = 'none';
@@ -1759,9 +1910,84 @@ Session started - waiting for activity...
                     sessionNameInput.disabled = true;
                     stopRecordingTimer();
                     setStatus('processing', 'Processing...');
+                    // Hide live transcript panel
+                    hideLiveTranscript();
                     break;
             }
         }
+
+        // Live transcript functions
+        function showLiveTranscript() {
+            emptyState.style.display = 'none';
+            meetingDetail.classList.remove('show');
+            liveTranscriptPanel.classList.add('show');
+            clearLiveTranscript();
+        }
+
+        function hideLiveTranscript() {
+            liveTranscriptPanel.classList.remove('show');
+            if (!meetingDetail.classList.contains('show')) {
+                emptyState.style.display = 'flex';
+            }
+        }
+
+        function clearLiveTranscript() {
+            // Reset to empty state
+            liveTranscriptContent.innerHTML = `
+                <div class="live-transcript-empty" id="live-transcript-empty">
+                    <div class="live-transcript-empty-icon">🎙️</div>
+                    <h3>Listening...</h3>
+                    <p>Transcript will appear here as you speak</p>
+                </div>
+            `;
+        }
+
+        function addTranscriptSegment(text, speaker = 'Unknown', timestamp = null) {
+            // Remove empty state if present
+            const emptyEl = liveTranscriptContent.querySelector('.live-transcript-empty');
+            if (emptyEl) {
+                emptyEl.remove();
+            }
+
+            const speakerClass = speaker.toLowerCase() === 'you' ? 'you' : 'other';
+            const segmentClass = speaker.toLowerCase() === 'you' ? 'speaker-you' : 'speaker-other';
+
+            const segment = document.createElement('div');
+            segment.className = `transcript-segment ${segmentClass}`;
+            segment.innerHTML = `
+                <div class="transcript-speaker ${speakerClass}">${speaker}</div>
+                <div class="transcript-text">${text}</div>
+                ${timestamp ? `<div class="transcript-time">${timestamp}</div>` : ''}
+            `;
+
+            liveTranscriptContent.appendChild(segment);
+
+            // Auto-scroll to bottom
+            liveTranscriptContent.scrollTop = liveTranscriptContent.scrollHeight;
+        }
+
+        // Listen for real-time transcript updates from main process
+        ipcRenderer.on('realtime-transcript', (event, data) => {
+            if (data.text && data.speaker) {
+                // New format: { speaker, text, timestamp }
+                addTranscriptSegment(data.text, data.speaker, data.timestamp);
+            } else if (data.text) {
+                // Fallback: parse old format or just add text
+                const match = data.text.match(/\[([^\]]+)\]\s*\[([^\]]+)\]:\s*(.+)/);
+                if (match) {
+                    const timestamp = match[1];
+                    const speaker = match[2];
+                    const text = match[3];
+                    addTranscriptSegment(text, speaker, timestamp);
+                } else {
+                    addTranscriptSegment(data.text);
+                }
+            }
+        });
+
+        ipcRenderer.on('realtime-transcription-stopped', () => {
+            log('Real-time transcription stopped');
+        });
         
         function startStatusMonitoring() {
             // Only check status when we think we're recording
@@ -2176,6 +2402,14 @@ Session started - waiting for activity...
                 if (result.success) {
                     log(`Recording started: ${result.message}`);
                     startStatusMonitoring();
+
+                    // Start real-time transcription
+                    const rtResult = await ipcRenderer.invoke('start-realtime-transcription');
+                    if (rtResult.success) {
+                        log('Real-time transcription started');
+                    } else {
+                        log(`Real-time transcription failed: ${rtResult.error}`);
+                    }
                 } else {
                     log(`Failed to start: ${result.error}`);
                     setUIState('ready');
@@ -2185,11 +2419,19 @@ Session started - waiting for activity...
                 setUIState('ready');
             }
         });
-        
+
         stopBtn.addEventListener('click', async () => {
             log('⏹️ Stopping recording...');
             setUIState('processing');
             stopStatusMonitoring();
+
+            // Stop real-time transcription
+            try {
+                await ipcRenderer.invoke('stop-realtime-transcription');
+                log('Real-time transcription stopped');
+            } catch (error) {
+                log(`Failed to stop real-time transcription: ${error.message}`);
+            }
             
             // Add current session to processing list immediately
             const currentSessionName = sessionNameInput.value.trim() || 'Meeting';

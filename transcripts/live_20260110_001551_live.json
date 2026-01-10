@@ -1,0 +1,132 @@
+{
+  "session_name": "live_20260110_001551",
+  "started": "2026-01-10T00:17:39.203288",
+  "segments": [
+    {
+      "text": "So the question is, you have developed a predictive model, but you suspect it might be",
+      "start_time": 5.189896106719971,
+      "end_time": 9.68989610671997,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.541785453927928,
+      "timestamp": "2026-01-10T00:16:03.862619"
+    },
+    {
+      "text": "all fitting the training data.",
+      "start_time": 9.68989610671997,
+      "end_time": 11.18989610671997,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.541785453927928,
+      "timestamp": "2026-01-10T00:16:03.863053"
+    },
+    {
+      "text": "These explainer steps and techniques you would use.",
+      "start_time": 15.19692611694336,
+      "end_time": 17.19692611694336,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7003313567903307,
+      "timestamp": "2026-01-10T00:16:13.619007"
+    },
+    {
+      "text": "So you would",
+      "start_time": 17.19692611694336,
+      "end_time": 18.19692611694336,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7003313567903307,
+      "timestamp": "2026-01-10T00:16:13.619394"
+    },
+    {
+      "text": "so for overfitting the data we can use the technique like regularization",
+      "start_time": 20.569677171707152,
+      "end_time": 25.369677171707153,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.3927256746424569,
+      "timestamp": "2026-01-10T00:16:18.725136"
+    },
+    {
+      "text": "L1 and L2 regularize.",
+      "start_time": 38.37587788581848,
+      "end_time": 40.37587788581848,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.6296374039216475,
+      "timestamp": "2026-01-10T00:16:33.757820"
+    },
+    {
+      "text": "3. And it is based on real-time data, stream processing, and question is, you are tasked with building a model to predict stock prices in...",
+      "start_time": 55.974284086227414,
+      "end_time": 61.974284086227414,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4388528551374163,
+      "timestamp": "2026-01-10T00:16:54.153802"
+    },
+    {
+      "text": "in every second and you need to obey your predictions accordingly.",
+      "start_time": 65.63736414909363,
+      "end_time": 67.63736414909363,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4110083146528764,
+      "timestamp": "2026-01-10T00:17:04.269996"
+    },
+    {
+      "text": "Describe how you would set up your system to handle this type of data",
+      "start_time": 67.63736414909363,
+      "end_time": 70.63736414909363,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4110083146528764,
+      "timestamp": "2026-01-10T00:17:04.270398"
+    },
+    {
+      "text": "So, the technique which we can use.",
+      "start_time": 73.2352848815918,
+      "end_time": 75.6352848815918,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.7953208386898041,
+      "timestamp": "2026-01-10T00:17:09.040247"
+    },
+    {
+      "text": "and light.",
+      "start_time": 75.6587061882019,
+      "end_time": 76.6587061882019,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6841034690539042,
+      "timestamp": "2026-01-10T00:17:14.032935"
+    },
+    {
+      "text": "prizes using LST models or RNN models since we are using",
+      "start_time": 80.66130089759827,
+      "end_time": 86.63130089759827,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.3883318416774273,
+      "timestamp": "2026-01-10T00:17:19.083854"
+    },
+    {
+      "text": "little time data stream processing.",
+      "start_time": 90.80296492576599,
+      "end_time": 92.80296492576599,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.5975334379408095,
+      "timestamp": "2026-01-10T00:17:29.176555"
+    },
+    {
+      "text": "We can use Kafka here as well.",
+      "start_time": 103.67143901824952,
+      "end_time": 105.67143901824952,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.3121557289903814,
+      "timestamp": "2026-01-10T00:17:39.203033"
+    }
+  ]
+}

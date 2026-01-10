@@ -1,0 +1,420 @@
+{
+  "session_name": "live_20260110_111551",
+  "started": "2026-01-10T11:19:44.021289",
+  "segments": [
+    {
+      "text": "Okay, okay. Yeah, yeah, yeah, that is fine",
+      "start_time": 1.550252809524536,
+      "end_time": 4.870252809524536,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.3755560889840126,
+      "timestamp": "2026-01-10T11:15:58.948295"
+    },
+    {
+      "text": "because it's up on my XQ.",
+      "start_time": 5.140426874160767,
+      "end_time": 7.140426874160767,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7246605555216471,
+      "timestamp": "2026-01-10T11:16:05.168809"
+    },
+    {
+      "text": "in prontus.",
+      "start_time": 10.230998039245605,
+      "end_time": 11.230998039245605,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.9324507266283035,
+      "timestamp": "2026-01-10T11:16:08.900720"
+    },
+    {
+      "text": "High Cardinal Dimetrics",
+      "start_time": 15.30071496963501,
+      "end_time": 17.30071496963501,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6348296894746668,
+      "timestamp": "2026-01-10T11:16:14.760044"
+    },
+    {
+      "text": "Sorry, I did not across",
+      "start_time": 17.30071496963501,
+      "end_time": 20.50071496963501,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6348296894746668,
+      "timestamp": "2026-01-10T11:16:14.760670"
+    },
+    {
+      "text": "Okay, okay",
+      "start_time": 22.272034826278688,
+      "end_time": 24.782034826278686,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.27721842130025226,
+      "timestamp": "2026-01-10T11:16:19.178516"
+    },
+    {
+      "text": "situation.",
+      "start_time": 25.3661048412323,
+      "end_time": 27.3661048412323,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.706705904006958,
+      "timestamp": "2026-01-10T11:16:24.334003"
+    },
+    {
+      "text": "To",
+      "start_time": 35.90892504692078,
+      "end_time": 37.90892504692078,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.6638467311859131,
+      "timestamp": "2026-01-10T11:16:29.234607"
+    },
+    {
+      "text": "Pramitha store retention in the core Pramitha's storage right?",
+      "start_time": 35.44883990287781,
+      "end_time": 39.608839902877804,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5586048692464829,
+      "timestamp": "2026-01-10T11:16:35.044296"
+    },
+    {
+      "text": "Basically, the retention would be, I think,",
+      "start_time": 45.96331993103027,
+      "end_time": 49.763319931030274,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5986590385437012,
+      "timestamp": "2026-01-10T11:16:44.880279"
+    },
+    {
+      "text": "So I mean to say that uh",
+      "start_time": 59.370709915161136,
+      "end_time": 61.37070991516113,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4203586935997009,
+      "timestamp": "2026-01-10T11:16:55.670326"
+    },
+    {
+      "text": "I mean",
+      "start_time": 68.23931173324586,
+      "end_time": 70.78931173324585,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.27096948623657224,
+      "timestamp": "2026-01-10T11:17:05.009597"
+    },
+    {
+      "text": "how many days of retention data you've been using or how you're managing it.",
+      "start_time": 67.35467982292175,
+      "end_time": 70.35467982292175,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.333426171541214,
+      "timestamp": "2026-01-10T11:17:07.478818"
+    },
+    {
+      "text": "15 days or a month",
+      "start_time": 75.76611685752869,
+      "end_time": 77.76611685752869,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.4198911190032959,
+      "timestamp": "2026-01-10T11:17:14.613676"
+    },
+    {
+      "text": "Okay, that is would be very for the enrollment literally because we have a couple various environments for but",
+      "start_time": 81.2533659362793,
+      "end_time": 86.7533659362793,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5289900199226711,
+      "timestamp": "2026-01-10T11:17:20.782620"
+    },
+    {
+      "text": "the 30 days because of the various audit and various issues but still will be since we",
+      "start_time": 90.87012195587158,
+      "end_time": 95.03012195587158,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4434305848898711,
+      "timestamp": "2026-01-10T11:17:31.135423"
+    },
+    {
+      "text": "are moving to the Thanos",
+      "start_time": 95.03012195587158,
+      "end_time": 96.03012195587158,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4434305848898711,
+      "timestamp": "2026-01-10T11:17:31.135961"
+    },
+    {
+      "text": "Since we have an object storage also, we will be keeping the metrics because...",
+      "start_time": 101.08815383911133,
+      "end_time": 106.08815383911133,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5009903405842028,
+      "timestamp": "2026-01-10T11:17:41.560390"
+    },
+    {
+      "text": "So, due to that perspective, we'll be keeping the production matrix for the three months.",
+      "start_time": 116.23922874450683,
+      "end_time": 120.23922874450683,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4433328816667199,
+      "timestamp": "2026-01-10T11:17:57.795610"
+    },
+    {
+      "text": "That will be the object storage again.",
+      "start_time": 120.23922874450683,
+      "end_time": 122.23922874450683,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4433328816667199,
+      "timestamp": "2026-01-10T11:17:57.796822"
+    },
+    {
+      "text": "data for integrating for the life cycle that is a different case but lower",
+      "start_time": 131.3613178730011,
+      "end_time": 135.3213178730011,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4432195383926918,
+      "timestamp": "2026-01-10T11:18:11.857815"
+    },
+    {
+      "text": "environments will be keeping as a seven days and production",
+      "start_time": 135.3213178730011,
+      "end_time": 139.2813178730011,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4432195383926918,
+      "timestamp": "2026-01-10T11:18:11.858905"
+    },
+    {
+      "text": "Okay",
+      "start_time": 140.31603996276854,
+      "end_time": 142.31603996276854,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.2982060983777046,
+      "timestamp": "2026-01-10T11:18:15.271429"
+    },
+    {
+      "text": "figure, alerting rules and promethers.",
+      "start_time": 146.56123280525208,
+      "end_time": 149.40123280525208,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.5531343863560603,
+      "timestamp": "2026-01-10T11:18:25.747868"
+    },
+    {
+      "text": "Yeah, we do have a alert management component in the Prometheus.",
+      "start_time": 152.0468308544159,
+      "end_time": 154.0468308544159,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3075002448426353,
+      "timestamp": "2026-01-10T11:18:27.396973"
+    },
+    {
+      "text": "of the metrics which are getting from the Prometheus.",
+      "start_time": 161.68095684051514,
+      "end_time": 163.56095684051513,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4269833034939236,
+      "timestamp": "2026-01-10T11:18:41.520920"
+    },
+    {
+      "text": "So we have to add the prompt queries",
+      "start_time": 163.56095684051513,
+      "end_time": 165.52095684051514,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4269833034939236,
+      "timestamp": "2026-01-10T11:18:41.521429"
+    },
+    {
+      "text": "in order to set up that alert",
+      "start_time": 165.52095684051514,
+      "end_time": 166.60095684051512,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4269833034939236,
+      "timestamp": "2026-01-10T11:18:41.521725"
+    },
+    {
+      "text": "which alert is wanted to go into get.",
+      "start_time": 166.60095684051512,
+      "end_time": 168.40095684051514,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4269833034939236,
+      "timestamp": "2026-01-10T11:18:41.522015"
+    },
+    {
+      "text": "no rate limits, errors of the microservices,",
+      "start_time": 171.737872838974,
+      "end_time": 174.017872838974,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4522674506710422,
+      "timestamp": "2026-01-10T11:18:51.093937"
+    },
+    {
+      "text": "our example for the CPU threshold, memory threshold,",
+      "start_time": 174.017872838974,
+      "end_time": 176.497872838974,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4522674506710422,
+      "timestamp": "2026-01-10T11:18:51.094569"
+    },
+    {
+      "text": "that could be...",
+      "start_time": 176.497872838974,
+      "end_time": 177.337872838974,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4522674506710422,
+      "timestamp": "2026-01-10T11:18:51.095371"
+    },
+    {
+      "text": "We can write in a lot manager rules so that would able to help us to get bigger the and also will be integrating with the",
+      "start_time": 181.82326889038086,
+      "end_time": 186.32326889038086,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3986359999097627,
+      "timestamp": "2026-01-10T11:19:01.123091"
+    },
+    {
+      "text": "Mm-hmm",
+      "start_time": 189.01992672920227,
+      "end_time": 191.01992672920227,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.47508349021275836,
+      "timestamp": "2026-01-10T11:19:06.464643"
+    },
+    {
+      "text": "and emails so that when it is alert get triggered it is going to get notified over the Slack",
+      "start_time": 191.8529188632965,
+      "end_time": 195.65291886329652,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.36952899864741734,
+      "timestamp": "2026-01-10T11:19:11.284786"
+    },
+    {
+      "text": "and as well as the email for the respective stakeholders which",
+      "start_time": 195.65291886329652,
+      "end_time": 197.4929188632965,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.36952899864741734,
+      "timestamp": "2026-01-10T11:19:11.286345"
+    },
+    {
+      "text": "Okay.",
+      "start_time": 201.35311889648438,
+      "end_time": 202.19311889648438,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.8176348686218262,
+      "timestamp": "2026-01-10T11:19:15.710494"
+    },
+    {
+      "text": "my channel.",
+      "start_time": 201.93074989318848,
+      "end_time": 202.43074989318848,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8841498692830404,
+      "timestamp": "2026-01-10T11:19:21.327279"
+    },
+    {
+      "text": "Let me know like, how do you design Grafana dashboard",
+      "start_time": 207.01139283180237,
+      "end_time": 209.81139283180238,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.47249415746101964,
+      "timestamp": "2026-01-10T11:19:26.154501"
+    },
+    {
+      "text": "tailored for DevOps monitoring or SRE?",
+      "start_time": 209.81139283180238,
+      "end_time": 213.17139283180236,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.47249415746101964,
+      "timestamp": "2026-01-10T11:19:26.155137"
+    },
+    {
+      "text": "Okay, so, yeah, frankly saying, kind of like,",
+      "start_time": 214.97131175041199,
+      "end_time": 217.13131175041198,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7765796408057213,
+      "timestamp": "2026-01-10T11:19:32.043652"
+    },
+    {
+      "text": "You",
+      "start_time": 224.37635097503662,
+      "end_time": 226.37635097503662,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.8870924413204193,
+      "timestamp": "2026-01-10T11:19:41.993279"
+    },
+    {
+      "text": "Basically, I did involve for the, okay,",
+      "start_time": 224.343279838562,
+      "end_time": 226.74327983856202,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5253558039665223,
+      "timestamp": "2026-01-10T11:19:44.019817"
+    },
+    {
+      "text": "in terms of the device monitoring,",
+      "start_time": 226.74327983856202,
+      "end_time": 228.02327983856202,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5253558039665223,
+      "timestamp": "2026-01-10T11:19:44.020472"
+    },
+    {
+      "text": "what are the components,",
+      "start_time": 228.02327983856202,
+      "end_time": 229.223279838562,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5253558039665223,
+      "timestamp": "2026-01-10T11:19:44.020853"
+    },
+    {
+      "text": "what are the dashboards doing required for.",
+      "start_time": 229.223279838562,
+      "end_time": 231.02327983856202,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5253558039665223,
+      "timestamp": "2026-01-10T11:19:44.021226"
+    }
+  ]
+}

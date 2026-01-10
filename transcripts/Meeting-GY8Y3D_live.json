@@ -1,0 +1,78 @@
+{
+  "session_name": "Meeting-GY8Y3D",
+  "started": "2026-01-10T10:10:47.107033",
+  "segments": [
+    {
+      "text": "They will be using HISTORLAMS.",
+      "start_time": 30.07671097755432,
+      "end_time": 32.07671097755432,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.0384021316255843,
+      "timestamp": "2026-01-10T10:10:13.712933"
+    },
+    {
+      "text": "And by forming these steps, you can handle missing data thoughtfully and maintain the integrity of your predictive model.",
+      "start_time": 40.37508678436279,
+      "end_time": 44.37508678436279,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.32184537863120055,
+      "timestamp": "2026-01-10T10:10:26.955679"
+    },
+    {
+      "text": "Now, moving to the question number two, that is...",
+      "start_time": 44.37508678436279,
+      "end_time": 46.37508678436279,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.32184537863120055,
+      "timestamp": "2026-01-10T10:10:26.956041"
+    },
+    {
+      "text": "So the question is, you have developed a predictive model, but you suspect it might be overfitting",
+      "start_time": 50.77220684051514,
+      "end_time": 54.972206840515135,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4075182225253131,
+      "timestamp": "2026-01-10T10:10:37.049291"
+    },
+    {
+      "text": "the training data.",
+      "start_time": 54.972206840515135,
+      "end_time": 55.972206840515135,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4075182225253131,
+      "timestamp": "2026-01-10T10:10:37.049683"
+    },
+    {
+      "text": "How do you test?",
+      "start_time": 55.972206840515135,
+      "end_time": 56.17220684051514,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4075182225253131,
+      "timestamp": "2026-01-10T10:10:37.049851"
+    },
+    {
+      "text": "please explain your steps and the techniques you would use.",
+      "start_time": 60.568763732910156,
+      "end_time": 62.76876373291016,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.47080098152160643,
+      "timestamp": "2026-01-10T10:10:47.106548"
+    },
+    {
+      "text": "So you could start the answer by explaining,",
+      "start_time": 62.76876373291016,
+      "end_time": 64.48876373291016,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.47080098152160643,
+      "timestamp": "2026-01-10T10:10:47.106951"
+    }
+  ]
+}

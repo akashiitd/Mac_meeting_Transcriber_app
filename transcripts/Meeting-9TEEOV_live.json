@@ -1,0 +1,123 @@
+{
+  "session_name": "Meeting-9TEEOV",
+  "started": "2026-01-10T10:18:19.408028",
+  "segments": [
+    {
+      "text": "Hello",
+      "start_time": 0.44414501190185546,
+      "end_time": 4.9741450119018555,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.4875056594610214,
+      "timestamp": "2026-01-10T10:17:18.758470"
+    },
+    {
+      "text": "This is audible, right?",
+      "start_time": 10.214292049407959,
+      "end_time": 12.214292049407959,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.503381093343099,
+      "timestamp": "2026-01-10T10:17:28.843780"
+    },
+    {
+      "text": "How are you doing Akash?",
+      "start_time": 20.77981698036194,
+      "end_time": 22.77981698036194,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.251317298412323,
+      "timestamp": "2026-01-10T10:17:39.077501"
+    },
+    {
+      "text": "all fitting. So all fitting is a common program where model performs well on training data but",
+      "start_time": 35.68424790382385,
+      "end_time": 38.96424790382385,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4317248972023235,
+      "timestamp": "2026-01-10T10:17:54.606231"
+    },
+    {
+      "text": "poorly on unseen data indicating it's too closely fitted.",
+      "start_time": 38.96424790382385,
+      "end_time": 41.52424790382385,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4317248972023235,
+      "timestamp": "2026-01-10T10:17:54.606622"
+    },
+    {
+      "text": "So now we will see a step by step guide on how to address this, the number one step is",
+      "start_time": 45.58160710334778,
+      "end_time": 49.58160710334778,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4546627029776573,
+      "timestamp": "2026-01-10T10:18:04.625931"
+    },
+    {
+      "text": "cross validation.",
+      "start_time": 49.58160710334778,
+      "end_time": 50.58160710334778,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4546627029776573,
+      "timestamp": "2026-01-10T10:18:04.626387"
+    },
+    {
+      "text": "So one effective way.",
+      "start_time": 50.58160710334778,
+      "end_time": 51.08160710334778,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4546627029776573,
+      "timestamp": "2026-01-10T10:18:04.626584"
+    },
+    {
+      "text": "by using cross-validation technique.",
+      "start_time": 55.59174680709839,
+      "end_time": 57.031746807098386,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.465046965306805,
+      "timestamp": "2026-01-10T10:18:14.831559"
+    },
+    {
+      "text": "Cross-validation involves splitting your training data",
+      "start_time": 57.031746807098386,
+      "end_time": 58.751746807098385,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.465046965306805,
+      "timestamp": "2026-01-10T10:18:14.832003"
+    },
+    {
+      "text": "into multiple smaller sets.",
+      "start_time": 58.751746807098385,
+      "end_time": 60.19174680709839,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.465046965306805,
+      "timestamp": "2026-01-10T10:18:14.832196"
+    },
+    {
+      "text": "to cross validation is our good technique",
+      "start_time": 60.59257102012634,
+      "end_time": 62.99257102012634,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.43199926264145794,
+      "timestamp": "2026-01-10T10:18:19.407466"
+    },
+    {
+      "text": "which we can use.",
+      "start_time": 63.78257102012634,
+      "end_time": 65.18257102012635,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": -0.43199926264145794,
+      "timestamp": "2026-01-10T10:18:19.407947"
+    }
+  ]
+}

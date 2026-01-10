@@ -31,14 +31,21 @@ except ImportError:
     AudioRecorder = None
 
 try:
-    from src.transcriber import WhisperTranscriber  
+    from src.transcriber import WhisperTranscriber
 except ImportError:
     WhisperTranscriber = None
-    
+
 try:
     from src.summarizer import OllamaSummarizer
 except ImportError:
     OllamaSummarizer = None
+
+try:
+    from src.realtime_transcriber import RealtimeTranscriber, create_realtime_transcriber, TranscriptSegment
+except ImportError:
+    RealtimeTranscriber = None
+    create_realtime_transcriber = None
+    TranscriptSegment = None
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -601,84 +608,224 @@ def status():
 @click.argument('duration', type=int, default=10)
 @click.argument('session_name', default='Recording')
 def record(duration, session_name):
-    """Record audio for specified duration and process it"""
+    """Record audio for specified duration with real-time transcription (system audio + mic)"""
     import signal
-    
+
     print(f"🎤 Recording {duration} seconds of audio for '{session_name}'...")
-    
+
+    # Check if RealtimeTranscriber is available
+    if RealtimeTranscriber is None:
+        print("❌ RealtimeTranscriber not available - falling back to basic recording")
+        print("   Install faster-whisper: pip install faster-whisper")
+        # Fall back to basic recording
+        _record_basic(duration, session_name)
+        return
+
     recorder = SimpleRecorder()
-    recording_path = None
+    transcriber = None
+    live_logger = None
     recording_started = False
-    
+    start_time = None
+
+    # Generate file paths
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    transcript_path = recorder.transcripts_dir / f"{timestamp}_{session_name}_transcript.txt"
+    summary_path = recorder.output_dir / f"{timestamp}_{session_name}_summary.json"
+
+    def on_transcript_segment(segment):
+        """Callback for real-time transcript updates"""
+        print(f"  [{segment.speaker}]: {segment.text}")
+
+    def process_and_save(transcript_text: str, segments: list, duration_seconds: float):
+        """Process transcript and save results"""
+        print("🔄 Processing transcript...")
+
+        # Save transcript file
+        with open(transcript_path, 'w') as f:
+            f.write(f"# Meeting Transcript: {session_name}\n")
+            f.write(f"# Date: {datetime.now().isoformat()}\n")
+            f.write(f"# Duration: {duration_seconds:.1f} seconds\n")
+            f.write("# " + "=" * 50 + "\n\n")
+
+            for seg in sorted(segments, key=lambda s: s.start_time):
+                speaker = seg.speaker or "Unknown"
+                f.write(f"[{seg.start_time:.2f}s] [{speaker}]: {seg.text}\n")
+
+        print(f"📄 Transcript saved: {transcript_path}")
+
+        # Get plain text for summarization
+        plain_transcript = "\n".join([
+            f"[{seg.speaker or 'Unknown'}]: {seg.text}"
+            for seg in sorted(segments, key=lambda s: s.start_time)
+        ])
+
+        if not plain_transcript.strip():
+            plain_transcript = "No speech detected in audio"
+
+        # Summarize with Ollama
+        print("🧠 Generating summary...")
+        try:
+            import asyncio
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+
+            async def do_summarize():
+                return await recorder.summarize_transcript(plain_transcript, session_name)
+
+            summary_data = loop.run_until_complete(do_summarize())
+
+            # Build final result
+            result = {
+                "session_info": {
+                    "name": session_name,
+                    "audio_file": None,  # No audio file saved in real-time mode
+                    "transcript_file": str(transcript_path),
+                    "summary_file": str(summary_path),
+                    "processed_at": datetime.now().isoformat(),
+                    "duration_seconds": int(duration_seconds),
+                    "duration_minutes": max(1, int(duration_seconds / 60))
+                },
+                **summary_data,
+                "transcript": plain_transcript
+            }
+
+            # Save summary
+            with open(summary_path, 'w') as f:
+                json.dump(result, f, indent=2)
+
+            print(f"✅ Complete processing saved: {summary_path}")
+
+            # Clean up state
+            if recorder.state_file.exists():
+                recorder.state_file.unlink()
+                print("🧹 Cleared recording state")
+
+            print("📋 Processing complete - meeting available in list")
+            return result
+
+        except Exception as e:
+            print(f"❌ Summarization failed: {e}")
+            import traceback
+            traceback.print_exc()
+
+            # Save basic result without summary
+            result = {
+                "session_info": {
+                    "name": session_name,
+                    "transcript_file": str(transcript_path),
+                    "summary_file": str(summary_path),
+                    "processed_at": datetime.now().isoformat(),
+                    "duration_seconds": int(duration_seconds),
+                },
+                "summary": "Summarization failed - transcript available",
+                "transcript": plain_transcript
+            }
+            with open(summary_path, 'w') as f:
+                json.dump(result, f, indent=2)
+            return result
+
     def signal_handler(signum, frame):
-        """Handle SIGTERM gracefully by stopping recording and processing"""
+        """Handle SIGTERM gracefully by stopping and processing"""
+        nonlocal transcriber, start_time
+
         print(f"\n🛑 Received termination signal ({signum})")
-        if recording_started and recorder:
-            print("⏹️ Stopping recording and starting processing pipeline...")
+        print("⏹️ Stopping recording and starting processing pipeline...")
+
+        if transcriber and recording_started:
             try:
-                final_path = recorder.stop_recording()
-                if final_path:
-                    print(f"✅ Recording saved: {final_path}")
-                    
-                    # Check file size
-                    from pathlib import Path
-                    file_size = Path(final_path).stat().st_size
-                    print(f"📏 File size: {file_size / 1024:.1f} KB")
-                    
-                    if file_size >= 1000:  # At least 1KB of audio data
-                        print("🔄 Starting transcription and summarization pipeline...")
-                        
-                        # Create new event loop for signal handler
-                        try:
-                            # Process recording synchronously in signal handler
-                            import asyncio
-                            if hasattr(asyncio, '_get_running_loop') and asyncio._get_running_loop():
-                                loop = asyncio._get_running_loop()
-                            else:
-                                loop = asyncio.new_event_loop()
-                                asyncio.set_event_loop(loop)
-                            
-                            print("📝 Starting transcription...")
-                            result = loop.run_until_complete(recorder.process_recording(final_path, session_name))
-                            
-                            print("✅ Complete processing finished!")
-                            print(f"📄 Transcript: {result['session_info']['transcript_file']}")  
-                            print(f"📋 Summary: {result['session_info']['summary_file']}")
-                            print(f"📊 Meeting: {result['session_info']['name']}")
-                            
-                        except Exception as e:
-                            print(f"❌ Processing pipeline failed: {e}")
-                            import traceback
-                            traceback.print_exc()
-                    else:
-                        print("⚠️ Recording too short - skipping processing")
+                # Calculate duration
+                duration_seconds = time.time() - start_time if start_time else 0
+                print(f"📏 Recording duration: {duration_seconds:.1f} seconds")
+
+                # Stop transcriber and get segments
+                segments = transcriber.stop()
+                print(f"📝 Captured {len(segments)} transcript segments")
+
+                # Get full transcript
+                transcript_text = transcriber.get_full_transcript()
+
+                if segments:
+                    print("🔄 Starting summarization pipeline...")
+                    result = process_and_save(transcript_text, segments, duration_seconds)
+
+                    print("✅ Complete processing finished!")
+                    print(f"📄 Transcript: {result['session_info']['transcript_file']}")
+                    print(f"📋 Summary: {result['session_info']['summary_file']}")
+                    print(f"📊 Meeting: {result['session_info']['name']}")
                 else:
-                    print("❌ No recording data to save")
+                    print("⚠️ No speech detected - saving empty transcript")
+                    process_and_save("No speech detected", [], duration_seconds)
+
             except Exception as e:
                 print(f"❌ Error during signal handling: {e}")
                 import traceback
                 traceback.print_exc()
-        
+
         print("🏁 Recording session ended - process complete")
+        print(f"\n🎉 Recording and processing completed for: {session_name}")
         exit(0)
-    
+
     # Register signal handlers
     signal.signal(signal.SIGTERM, signal_handler)
     signal.signal(signal.SIGINT, signal_handler)
-    
+
     try:
-        # Start recording
-        recording_path = recorder.start_recording(session_name)
+        print("🎤 Starting recording: " + session_name)
+
+        # Save state for status command
+        state = {
+            "recording": True,
+            "session_name": session_name,
+            "start_time": datetime.now().isoformat(),
+            "mode": "realtime"
+        }
+        recorder.save_state(state)
+
+        # Create realtime transcriber with dual audio capture
+        print("🔊 Initializing dual audio capture (system + microphone)...")
+        transcriber, live_logger = create_realtime_transcriber(
+            model_size="small",  # Use small model for better accuracy
+            language="en",
+            enable_system_audio=True,
+            enable_microphone=True,
+            callback=on_transcript_segment,
+            session_name=session_name,
+            enable_live_logging=True
+        )
+
+        # Start real-time transcription
+        if not transcriber.start():
+            print("❌ Failed to start real-time transcription")
+            print("   Make sure SystemAudioDump is available for system audio capture")
+            # Try microphone-only fallback
+            print("🎤 Trying microphone-only mode...")
+            transcriber, live_logger = create_realtime_transcriber(
+                model_size="small",
+                language="en",
+                enable_system_audio=False,
+                enable_microphone=True,
+                callback=on_transcript_segment,
+                session_name=session_name,
+                enable_live_logging=True
+            )
+            if not transcriber.start():
+                print("❌ Failed to start transcription - check audio devices")
+                exit(1)
+
         recording_started = True
-        print(f"📁 Recording to: {recording_path}")
+        start_time = time.time()
+
+        print(f"📁 Recording to: {transcript_path}")
         print("📢 Speak into your microphone now!")
-        
-        # For very long durations (like 999999), just wait indefinitely until signal
-        if duration > 86400:  # More than a day
+        print("🔊 System audio will also be captured (meetings, videos, etc.)")
+        print("=" * 50)
+
+        # For very long durations, wait indefinitely
+        if duration > 86400:
             print("🔄 Recording indefinitely (until stopped)...")
             try:
                 while True:
-                    time.sleep(5)  # Check every 5 seconds
+                    time.sleep(5)
             except KeyboardInterrupt:
                 signal_handler(signal.SIGINT, None)
         else:
@@ -686,44 +833,69 @@ def record(duration, session_name):
             for i in range(duration, 0, -1):
                 print(f"   {i}...")
                 time.sleep(1)
-        
+
         # Normal completion (if not interrupted)
-        final_path = recorder.stop_recording()
-        if not final_path:
-            print("❌ Recording failed - no audio data collected")
-            return
-            
-        print(f"✅ Recording saved: {final_path}")
-        
-        # Check file size
-        from pathlib import Path
-        file_size = Path(final_path).stat().st_size
-        print(f"📏 File size: {file_size / 1024:.1f} KB")
-        
-        if file_size < 1000:  # Less than 1KB indicates empty recording
-            print("⚠️ Recording appears to be empty - check microphone")
-            return
-        
-        # Process recording
-        print("🔄 Processing recording (transcribe + summarize)...")
-        
-        async def process_recording():
-            result = await recorder.process_recording(final_path, session_name)
-            print("✅ Processing complete!")
-            print(f"📄 Transcript: {result['session_info']['transcript_file']}")  
-            print(f"📋 Summary: {result['session_info']['summary_file']}")
-            
-            # Show quick preview
-            if result.get('transcript'):
-                preview = result['transcript'][:200] + "..." if len(result['transcript']) > 200 else result['transcript']
-                print(f"📝 Preview: {preview}")
-        
-        asyncio.run(process_recording())
-        
+        signal_handler(signal.SIGTERM, None)
+
     except Exception as e:
         print(f"❌ Recording failed: {e}")
         import traceback
         traceback.print_exc()
+        if transcriber:
+            transcriber.stop()
+        exit(1)
+
+
+def _record_basic(duration, session_name):
+    """Fallback basic recording without real-time transcription"""
+    import signal
+
+    recorder = SimpleRecorder()
+    recording_started = False
+
+    def signal_handler(signum, frame):
+        print(f"\n🛑 Received termination signal ({signum})")
+        if recording_started:
+            try:
+                final_path = recorder.stop_recording()
+                if final_path:
+                    print(f"✅ Recording saved: {final_path}")
+                    file_size = Path(final_path).stat().st_size
+                    if file_size >= 1000:
+                        print("🔄 Starting transcription...")
+                        import asyncio
+                        loop = asyncio.new_event_loop()
+                        asyncio.set_event_loop(loop)
+                        result = loop.run_until_complete(recorder.process_recording(final_path, session_name))
+                        print("✅ Complete processing finished!")
+                        print(f"📄 Transcript: {result['session_info']['transcript_file']}")
+                        print(f"📋 Summary: {result['session_info']['summary_file']}")
+            except Exception as e:
+                print(f"❌ Error: {e}")
+        print("🏁 Recording session ended")
+        exit(0)
+
+    signal.signal(signal.SIGTERM, signal_handler)
+    signal.signal(signal.SIGINT, signal_handler)
+
+    try:
+        recording_path = recorder.start_recording(session_name)
+        recording_started = True
+        print(f"📁 Recording to: {recording_path}")
+        print("📢 Speak into your microphone now!")
+
+        if duration > 86400:
+            while True:
+                time.sleep(5)
+        else:
+            for i in range(duration, 0, -1):
+                print(f"   {i}...")
+                time.sleep(1)
+
+        signal_handler(signal.SIGTERM, None)
+
+    except Exception as e:
+        print(f"❌ Recording failed: {e}")
         exit(1)
 
 

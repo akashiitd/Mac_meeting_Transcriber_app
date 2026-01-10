@@ -1,0 +1,714 @@
+"""
+Real-time transcription module with dual audio capture and speaker diarization.
+Captures both system audio (via SystemAudioDump) and microphone audio,
+transcribes in real-time using faster-whisper, and identifies speakers.
+"""
+
+import logging
+import threading
+import queue
+import time
+import subprocess
+import os
+import wave
+import io
+from pathlib import Path
+from typing import Optional, Callable, List, Dict, Any
+from dataclasses import dataclass, field
+from datetime import datetime
+
+try:
+    import numpy as np
+    NUMPY_AVAILABLE = True
+except ImportError:
+    np = None
+    NUMPY_AVAILABLE = False
+
+try:
+    import sounddevice as sd
+    SOUNDDEVICE_AVAILABLE = True
+except ImportError:
+    sd = None
+    SOUNDDEVICE_AVAILABLE = False
+
+logger = logging.getLogger(__name__)
+
+
+@dataclass
+class TranscriptSegment:
+    """A segment of transcribed text with metadata."""
+    text: str
+    start_time: float
+    end_time: float
+    speaker: Optional[str] = None
+    source: str = "unknown"  # "microphone", "system", or "mixed"
+    confidence: float = 0.0
+    timestamp: datetime = field(default_factory=datetime.now)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "text": self.text,
+            "start_time": self.start_time,
+            "end_time": self.end_time,
+            "speaker": self.speaker,
+            "source": self.source,
+            "confidence": self.confidence,
+            "timestamp": self.timestamp.isoformat()
+        }
+
+    def format_log_entry(self) -> str:
+        """Format as a log entry with timestamp and speaker."""
+        time_str = f"[{self.start_time:.2f}s - {self.end_time:.2f}s]"
+        speaker_str = f"[{self.speaker}]" if self.speaker else "[Unknown]"
+        return f"{time_str} {speaker_str}: {self.text}"
+
+
+class AudioBuffer:
+    """Thread-safe audio buffer for accumulating audio chunks."""
+
+    def __init__(self, sample_rate: int = 16000, max_duration: float = 30.0):
+        self.sample_rate = sample_rate
+        self.max_samples = int(sample_rate * max_duration)
+        self.buffer = np.array([], dtype=np.float32) if NUMPY_AVAILABLE else []
+        self.lock = threading.Lock()
+        self.start_time = time.time()
+
+    def add_chunk(self, chunk: np.ndarray) -> None:
+        """Add audio chunk to buffer."""
+        with self.lock:
+            if NUMPY_AVAILABLE:
+                self.buffer = np.concatenate([self.buffer, chunk.flatten()])
+                # Trim if exceeds max duration
+                if len(self.buffer) > self.max_samples:
+                    self.buffer = self.buffer[-self.max_samples:]
+            else:
+                self.buffer.extend(chunk.flatten().tolist())
+                if len(self.buffer) > self.max_samples:
+                    self.buffer = self.buffer[-self.max_samples:]
+
+    def get_audio(self, duration: Optional[float] = None) -> np.ndarray:
+        """Get audio from buffer, optionally limited to duration."""
+        with self.lock:
+            if duration:
+                samples = int(self.sample_rate * duration)
+                return np.array(self.buffer[-samples:], dtype=np.float32)
+            return np.array(self.buffer, dtype=np.float32)
+
+    def clear(self) -> None:
+        """Clear the buffer."""
+        with self.lock:
+            self.buffer = np.array([], dtype=np.float32) if NUMPY_AVAILABLE else []
+            self.start_time = time.time()
+
+    def duration(self) -> float:
+        """Get current buffer duration in seconds."""
+        with self.lock:
+            return len(self.buffer) / self.sample_rate
+
+
+class SystemAudioCapture:
+    """Captures system audio using BlackHole virtual audio device on macOS."""
+
+    def __init__(self, sample_rate: int = 16000):
+        self.sample_rate = sample_rate
+        self.running = False
+        self.audio_queue: queue.Queue = queue.Queue()
+        self.stream: Optional[Any] = None
+        self.device_id: Optional[int] = None
+
+        # Find BlackHole device
+        self.device_id = self._find_blackhole_device()
+
+    def _find_blackhole_device(self) -> Optional[int]:
+        """Find BlackHole virtual audio device."""
+        if not SOUNDDEVICE_AVAILABLE:
+            logger.warning("sounddevice not available for system audio capture")
+            return None
+
+        try:
+            devices = sd.query_devices()
+            for i, device in enumerate(devices):
+                device_name = device.get('name', '').lower()
+                # Look for BlackHole or other virtual audio devices
+                if 'blackhole' in device_name:
+                    if device.get('max_input_channels', 0) > 0:
+                        logger.info(f"Found BlackHole device: {device['name']} (ID: {i})")
+                        return i
+
+            logger.warning("BlackHole device not found. Install BlackHole for system audio capture.")
+            logger.warning("Download from: https://existential.audio/blackhole/")
+            logger.warning("After installing, create a Multi-Output Device in Audio MIDI Setup")
+            return None
+        except Exception as e:
+            logger.error(f"Error finding BlackHole device: {e}")
+            return None
+
+    def _audio_callback(self, indata, frames, time_info, status):
+        """Callback for audio stream."""
+        if status:
+            logger.warning(f"System audio callback status: {status}")
+        if NUMPY_AVAILABLE and self.running:
+            self.audio_queue.put(indata.copy())
+
+    def start(self) -> bool:
+        """Start capturing system audio via BlackHole."""
+        if self.device_id is None:
+            logger.error("BlackHole device not available")
+            logger.error("To capture system audio:")
+            logger.error("  1. Install BlackHole: brew install blackhole-2ch")
+            logger.error("  2. Open Audio MIDI Setup")
+            logger.error("  3. Create Multi-Output Device with your speakers + BlackHole")
+            logger.error("  4. Set Multi-Output as your system output")
+            return False
+
+        if not SOUNDDEVICE_AVAILABLE:
+            logger.error("sounddevice not available")
+            return False
+
+        if self.running:
+            logger.warning("System audio capture already running")
+            return True
+
+        try:
+            self.stream = sd.InputStream(
+                samplerate=self.sample_rate,
+                channels=1,
+                dtype='float32',
+                device=self.device_id,
+                callback=self._audio_callback,
+                blocksize=int(self.sample_rate * 0.2)  # 200ms blocks
+            )
+            self.stream.start()
+            self.running = True
+            logger.info(f"System audio capture started via BlackHole (device {self.device_id})")
+            return True
+        except Exception as e:
+            logger.error(f"Failed to start system audio capture: {e}")
+            return False
+
+    def stop(self) -> None:
+        """Stop capturing system audio."""
+        self.running = False
+        if self.stream:
+            try:
+                self.stream.stop()
+                self.stream.close()
+            except Exception as e:
+                logger.warning(f"Error stopping system audio stream: {e}")
+            self.stream = None
+        logger.info("System audio capture stopped")
+
+    def get_audio_chunk(self, timeout: float = 0.1) -> Optional[np.ndarray]:
+        """Get next audio chunk from queue."""
+        try:
+            return self.audio_queue.get(timeout=timeout)
+        except queue.Empty:
+            return None
+
+
+class MicrophoneCapture:
+    """Captures microphone audio using sounddevice."""
+
+    def __init__(self, sample_rate: int = 16000, device: Optional[int] = None):
+        self.sample_rate = sample_rate
+        self.device = device
+        self.running = False
+        self.audio_queue: queue.Queue = queue.Queue()
+        self.stream: Optional[Any] = None
+
+    def _audio_callback(self, indata, frames, time_info, status):
+        """Callback for audio stream."""
+        if status:
+            logger.warning(f"Audio callback status: {status}")
+        if NUMPY_AVAILABLE:
+            self.audio_queue.put(indata.copy())
+
+    def start(self) -> bool:
+        """Start capturing microphone audio."""
+        if not SOUNDDEVICE_AVAILABLE:
+            logger.error("sounddevice not available")
+            return False
+
+        if self.running:
+            logger.warning("Microphone capture already running")
+            return True
+
+        try:
+            self.stream = sd.InputStream(
+                samplerate=self.sample_rate,
+                channels=1,
+                dtype='float32',
+                device=self.device,
+                callback=self._audio_callback,
+                blocksize=int(self.sample_rate * 0.2)  # 200ms blocks
+            )
+            self.stream.start()
+            self.running = True
+            logger.info("Microphone capture started")
+            return True
+        except Exception as e:
+            logger.error(f"Failed to start microphone capture: {e}")
+            return False
+
+    def stop(self) -> None:
+        """Stop capturing microphone audio."""
+        self.running = False
+        if self.stream:
+            self.stream.stop()
+            self.stream.close()
+            self.stream = None
+        logger.info("Microphone capture stopped")
+
+    def get_audio_chunk(self, timeout: float = 0.1) -> Optional[np.ndarray]:
+        """Get next audio chunk from queue."""
+        try:
+            return self.audio_queue.get(timeout=timeout)
+        except queue.Empty:
+            return None
+
+
+
+class RealtimeTranscriber:
+    """
+    Real-time transcription engine with dual audio capture.
+    Captures system audio and microphone, transcribes using faster-whisper,
+    and provides speaker diarization.
+    """
+
+    def __init__(
+        self,
+        model_size: str = "small",
+        language: str = "en",
+        mic_device: Optional[int] = None,
+        enable_system_audio: bool = True,
+        enable_microphone: bool = True,
+        transcription_callback: Optional[Callable[[TranscriptSegment], None]] = None,
+        chunk_duration: float = 5.0,  # Transcribe every N seconds
+        overlap_duration: float = 1.0,  # Overlap between chunks
+    ):
+        self.model_size = model_size
+        self.language = language
+        self.enable_system_audio = enable_system_audio
+        self.enable_microphone = enable_microphone
+        self.transcription_callback = transcription_callback
+        self.chunk_duration = chunk_duration
+        self.overlap_duration = overlap_duration
+
+        # Audio capture
+        self.system_capture: Optional[SystemAudioCapture] = None
+        self.mic_capture: Optional[MicrophoneCapture] = None
+
+        # Audio buffers
+        self.system_buffer = AudioBuffer(sample_rate=24000)
+        self.mic_buffer = AudioBuffer(sample_rate=16000)
+
+        # Transcription model
+        self.model = None
+        self.model_loaded = False
+
+        # State
+        self.running = False
+        self.transcription_thread: Optional[threading.Thread] = None
+        self.audio_thread: Optional[threading.Thread] = None
+        self.segments: List[TranscriptSegment] = []
+        self.segments_lock = threading.Lock()
+
+        # Timing
+        self.start_time: float = 0
+        self.last_transcription_time: float = 0
+
+    def load_model(self) -> bool:
+        """Load the faster-whisper model."""
+        try:
+            from faster_whisper import WhisperModel
+
+            logger.info(f"Loading faster-whisper model: {self.model_size}")
+
+            # Use CPU for now, can add GPU support later
+            self.model = WhisperModel(
+                self.model_size,
+                device="cpu",
+                compute_type="int8"
+            )
+            self.model_loaded = True
+            logger.info("Model loaded successfully")
+            return True
+        except ImportError:
+            logger.error("faster-whisper not installed. Install with: pip install faster-whisper")
+            return False
+        except Exception as e:
+            logger.error(f"Failed to load model: {e}")
+            return False
+
+    def start(self) -> bool:
+        """Start real-time transcription."""
+        if self.running:
+            logger.warning("Transcription already running")
+            return True
+
+        # Load model if not loaded
+        if not self.model_loaded:
+            if not self.load_model():
+                return False
+
+        # Start audio capture
+        if self.enable_system_audio:
+            self.system_capture = SystemAudioCapture()
+            if not self.system_capture.start():
+                logger.warning("System audio capture not available")
+                self.system_capture = None
+
+        if self.enable_microphone:
+            self.mic_capture = MicrophoneCapture()
+            if not self.mic_capture.start():
+                logger.warning("Microphone capture not available")
+                self.mic_capture = None
+
+        if not self.system_capture and not self.mic_capture:
+            logger.error("No audio capture available")
+            return False
+
+        self.running = True
+        self.start_time = time.time()
+        self.last_transcription_time = 0
+
+        # Start audio collection thread
+        self.audio_thread = threading.Thread(target=self._audio_loop, daemon=True)
+        self.audio_thread.start()
+
+        # Start transcription thread
+        self.transcription_thread = threading.Thread(target=self._transcription_loop, daemon=True)
+        self.transcription_thread.start()
+
+        logger.info("Real-time transcription started")
+        return True
+
+    def stop(self) -> List[TranscriptSegment]:
+        """Stop transcription and return all segments."""
+        self.running = False
+
+        # Stop audio capture
+        if self.system_capture:
+            self.system_capture.stop()
+        if self.mic_capture:
+            self.mic_capture.stop()
+
+        # Wait for threads
+        if self.audio_thread:
+            self.audio_thread.join(timeout=2)
+        if self.transcription_thread:
+            self.transcription_thread.join(timeout=5)
+
+        logger.info("Real-time transcription stopped")
+
+        with self.segments_lock:
+            return list(self.segments)
+
+    def _audio_loop(self) -> None:
+        """Collect audio from capture sources."""
+        while self.running:
+            # Collect system audio
+            if self.system_capture:
+                chunk = self.system_capture.get_audio_chunk(timeout=0.05)
+                if chunk is not None:
+                    self.system_buffer.add_chunk(chunk)
+
+            # Collect microphone audio
+            if self.mic_capture:
+                chunk = self.mic_capture.get_audio_chunk(timeout=0.05)
+                if chunk is not None:
+                    self.mic_buffer.add_chunk(chunk)
+
+    def _transcription_loop(self) -> None:
+        """Periodically transcribe accumulated audio."""
+        while self.running:
+            current_time = time.time() - self.start_time
+
+            # Wait for enough audio to accumulate
+            if current_time - self.last_transcription_time < self.chunk_duration:
+                time.sleep(0.1)
+                continue
+
+            # Transcribe microphone audio (primary source for "You")
+            if self.mic_buffer.duration() >= self.chunk_duration:
+                self._transcribe_buffer(
+                    self.mic_buffer,
+                    source="microphone",
+                    speaker="You"
+                )
+
+            # Transcribe system audio (for "Others")
+            if self.system_buffer.duration() >= self.chunk_duration:
+                self._transcribe_buffer(
+                    self.system_buffer,
+                    source="system",
+                    speaker="Other"
+                )
+
+            self.last_transcription_time = current_time
+
+    def _transcribe_buffer(
+        self,
+        buffer: AudioBuffer,
+        source: str,
+        speaker: str
+    ) -> None:
+        """Transcribe audio from a buffer."""
+        if not self.model:
+            return
+
+        # Get audio and resample to 16kHz if needed
+        audio = buffer.get_audio(duration=self.chunk_duration + self.overlap_duration)
+
+        if len(audio) < 1600:  # Less than 0.1s of audio
+            return
+
+        # Resample if needed (system audio is 24kHz)
+        if source == "system" and NUMPY_AVAILABLE:
+            # Simple resampling from 24kHz to 16kHz
+            audio = self._resample(audio, 24000, 16000)
+
+        try:
+            # Transcribe with source-specific VAD settings
+            # Use less aggressive VAD for microphone to capture more speech
+            if source == "microphone":
+                segments, info = self.model.transcribe(
+                    audio,
+                    language=self.language,
+                    vad_filter=True,
+                    vad_parameters=dict(
+                        min_silence_duration_ms=300,  # Shorter silence threshold
+                        speech_pad_ms=400,  # More padding around speech
+                        threshold=0.3  # Lower threshold to detect quieter speech
+                    )
+                )
+            else:
+                segments, info = self.model.transcribe(
+                    audio,
+                    language=self.language,
+                    vad_filter=True,
+                    vad_parameters=dict(
+                        min_silence_duration_ms=500,
+                        speech_pad_ms=200
+                    )
+                )
+
+            current_time = time.time() - self.start_time
+
+            for segment in segments:
+                # Skip empty or very short segments
+                if not segment.text.strip() or len(segment.text.strip()) < 2:
+                    continue
+
+                transcript_segment = TranscriptSegment(
+                    text=segment.text.strip(),
+                    start_time=current_time - self.chunk_duration + segment.start,
+                    end_time=current_time - self.chunk_duration + segment.end,
+                    speaker=speaker,
+                    source=source,
+                    confidence=segment.avg_logprob if hasattr(segment, 'avg_logprob') else 0.0
+                )
+
+                with self.segments_lock:
+                    self.segments.append(transcript_segment)
+
+                # Call callback if provided
+                if self.transcription_callback:
+                    try:
+                        self.transcription_callback(transcript_segment)
+                    except Exception as e:
+                        logger.error(f"Callback error: {e}")
+
+                logger.info(f"[{source}] {speaker}: {segment.text.strip()}")
+
+        except Exception as e:
+            logger.error(f"Transcription error: {e}")
+
+        # Clear processed audio (keep overlap)
+        buffer.clear()
+
+    def _resample(self, audio: np.ndarray, orig_sr: int, target_sr: int) -> np.ndarray:
+        """Simple resampling using linear interpolation."""
+        if orig_sr == target_sr:
+            return audio
+
+        duration = len(audio) / orig_sr
+        target_length = int(duration * target_sr)
+
+        if NUMPY_AVAILABLE:
+            indices = np.linspace(0, len(audio) - 1, target_length)
+            return np.interp(indices, np.arange(len(audio)), audio).astype(np.float32)
+        return audio
+
+    def get_segments(self) -> List[TranscriptSegment]:
+        """Get all transcribed segments."""
+        with self.segments_lock:
+            return list(self.segments)
+
+    def get_full_transcript(self) -> str:
+        """Get full transcript as formatted text."""
+        with self.segments_lock:
+            lines = []
+            for seg in sorted(self.segments, key=lambda s: s.start_time):
+                lines.append(seg.format_log_entry())
+            return "\n".join(lines)
+
+    def save_transcript(self, filepath: str) -> None:
+        """Save transcript to file."""
+        with open(filepath, 'w') as f:
+            f.write(self.get_full_transcript())
+        logger.info(f"Transcript saved to {filepath}")
+
+
+class LiveTranscriptLogger:
+    """
+    Logs transcript segments incrementally to a file during recording.
+    Provides real-time persistence of transcription.
+    """
+
+    def __init__(self, output_dir: str = "transcripts", session_name: Optional[str] = None):
+        self.output_dir = Path(output_dir)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+
+        if session_name:
+            self.session_name = session_name
+        else:
+            self.session_name = f"live_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+
+        self.log_file = self.output_dir / f"{self.session_name}_live.txt"
+        self.json_file = self.output_dir / f"{self.session_name}_live.json"
+        self.segments: List[Dict[str, Any]] = []
+        self.lock = threading.Lock()
+
+        # Initialize files
+        self._init_files()
+
+    def _init_files(self) -> None:
+        """Initialize log files with headers."""
+        with open(self.log_file, 'w') as f:
+            f.write(f"# Live Transcript - {self.session_name}\n")
+            f.write(f"# Started: {datetime.now().isoformat()}\n")
+            f.write("# " + "=" * 50 + "\n\n")
+
+    def log_segment(self, segment: TranscriptSegment) -> None:
+        """Log a transcript segment to files."""
+        with self.lock:
+            # Append to text log
+            with open(self.log_file, 'a') as f:
+                f.write(segment.format_log_entry() + "\n")
+
+            # Add to JSON segments
+            self.segments.append(segment.to_dict())
+
+            # Update JSON file
+            with open(self.json_file, 'w') as f:
+                import json
+                json.dump({
+                    "session_name": self.session_name,
+                    "started": datetime.now().isoformat(),
+                    "segments": self.segments
+                }, f, indent=2)
+
+    def finalize(self) -> str:
+        """Finalize the log and return the file path."""
+        with self.lock:
+            with open(self.log_file, 'a') as f:
+                f.write("\n# " + "=" * 50 + "\n")
+                f.write(f"# Ended: {datetime.now().isoformat()}\n")
+                f.write(f"# Total segments: {len(self.segments)}\n")
+
+        logger.info(f"Live transcript finalized: {self.log_file}")
+        return str(self.log_file)
+
+
+
+def create_realtime_transcriber(
+    model_size: str = "small",
+    language: str = "en",
+    enable_system_audio: bool = True,
+    enable_microphone: bool = True,
+    callback: Optional[Callable[[TranscriptSegment], None]] = None,
+    session_name: Optional[str] = None,
+    enable_live_logging: bool = True
+) -> tuple:
+    """
+    Factory function to create a configured RealtimeTranscriber with optional live logging.
+
+    Returns:
+        tuple: (transcriber, live_logger) - live_logger may be None if disabled
+    """
+    live_logger = None
+
+    if enable_live_logging:
+        live_logger = LiveTranscriptLogger(session_name=session_name)
+
+        # Wrap callback to also log to file
+        original_callback = callback
+
+        def logging_callback(segment: TranscriptSegment):
+            live_logger.log_segment(segment)
+            if original_callback:
+                original_callback(segment)
+
+        callback = logging_callback
+
+    transcriber = RealtimeTranscriber(
+        model_size=model_size,
+        language=language,
+        enable_system_audio=enable_system_audio,
+        enable_microphone=enable_microphone,
+        transcription_callback=callback
+    )
+
+    return transcriber, live_logger
+
+
+# CLI for testing
+if __name__ == "__main__":
+    import sys
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
+
+    def on_transcript(segment: TranscriptSegment):
+        print(f"\n{segment.format_log_entry()}")
+
+    print("Starting real-time transcription with live logging...")
+    print("Press Ctrl+C to stop\n")
+
+    transcriber, live_logger = create_realtime_transcriber(
+        model_size="small",
+        enable_system_audio=True,
+        enable_microphone=True,
+        callback=on_transcript,
+        enable_live_logging=True
+    )
+
+    if not transcriber.start():
+        print("Failed to start transcription")
+        sys.exit(1)
+
+    try:
+        while True:
+            time.sleep(0.1)
+    except KeyboardInterrupt:
+        print("\n\nStopping transcription...")
+        segments = transcriber.stop()
+
+        print(f"\n\nTotal segments: {len(segments)}")
+        print("\n--- Full Transcript ---")
+        print(transcriber.get_full_transcript())
+
+        # Finalize live log
+        if live_logger:
+            log_path = live_logger.finalize()
+            print(f"\nLive transcript saved to: {log_path}")
+
+        # Also save final transcript
+        output_path = f"transcripts/realtime_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        os.makedirs("transcripts", exist_ok=True)
+        transcriber.save_transcript(output_path)
+        print(f"Final transcript saved to: {output_path}")
+

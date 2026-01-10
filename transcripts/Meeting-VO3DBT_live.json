@@ -1,0 +1,24 @@
+{
+  "session_name": "Meeting-VO3DBT",
+  "started": "2026-01-10T10:07:45.797781",
+  "segments": [
+    {
+      "text": "the answer by explaining that it is overfitting. So overfitting is a common program where model",
+      "start_time": 46.001598033905026,
+      "end_time": 49.52159803390503,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.47247039154171944,
+      "timestamp": "2026-01-10T10:07:45.797111"
+    },
+    {
+      "text": "performs style-on-training data but poorly on unseen data.",
+      "start_time": 49.52159803390503,
+      "end_time": 51.60159803390503,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.47247039154171944,
+      "timestamp": "2026-01-10T10:07:45.797672"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "session_name": "live_20260110_100653",
+  "started": "2026-01-10T10:07:47.112078",
+  "segments": [
+    {
+      "text": "explaining what is all-fitting. So all-fitting is a common program where model performs well on",
+      "start_time": 45.61041178703308,
+      "end_time": 48.81041178703308,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4703182230393092,
+      "timestamp": "2026-01-10T10:07:47.111567"
+    },
+    {
+      "text": "training data, but poorly on unseen data.",
+      "start_time": 48.81041178703308,
+      "end_time": 53.21041178703308,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4703182230393092,
+      "timestamp": "2026-01-10T10:07:47.111994"
+    }
+  ]
+}

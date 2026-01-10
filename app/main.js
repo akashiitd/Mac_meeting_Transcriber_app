@@ -615,10 +615,27 @@ ipcMain.handle('start-recording-ui', async (_, sessionName) => {
     currentRecordingProcess.stderr.on('data', (data) => {
       const output = data.toString();
       console.log('Recording stderr:', output);
-      
+
       // Send real-time stderr to debug panel (same as runPythonScript)
       output.split('\n').forEach(line => {
-        if (line.trim()) sendDebugLog('STDERR: ' + line.trim());
+        if (line.trim()) {
+          sendDebugLog('STDERR: ' + line.trim());
+
+          // Parse real-time transcript segments from log output
+          // Format: "2026-01-10 00:08:36,042 - INFO - [system] Other: text here"
+          // or: "2026-01-10 00:09:01,121 - INFO - [microphone] You: text here"
+          const transcriptMatch = line.match(/\[(?:system|microphone)\]\s*(You|Other):\s*(.+)/);
+          if (transcriptMatch && mainWindow && !mainWindow.isDestroyed()) {
+            const speaker = transcriptMatch[1];
+            const text = transcriptMatch[2];
+            const timestamp = new Date().toLocaleTimeString();
+            mainWindow.webContents.send('realtime-transcript', {
+              speaker: speaker,
+              text: text,
+              timestamp: timestamp
+            });
+          }
+        }
       });
     });
 
@@ -1783,4 +1800,71 @@ ipcMain.handle('open-release-page', async (event, url) => {
   } catch (error) {
     return { success: false, error: error.message };
   }
+});
+
+// Real-time transcription handlers
+let realtimeTranscriptionProcess = null;
+
+ipcMain.handle('start-realtime-transcription', async (event, options = {}) => {
+  try {
+    if (realtimeTranscriptionProcess) {
+      return { success: false, error: 'Real-time transcription already running' };
+    }
+
+    const pythonPath = path.join(__dirname, '..', 'venv', 'bin', 'python');
+    const scriptPath = path.join(__dirname, '..', 'src', 'realtime_transcriber.py');
+
+    sendDebugLog('Starting real-time transcription...');
+
+    realtimeTranscriptionProcess = spawn(pythonPath, [scriptPath], {
+      cwd: path.join(__dirname, '..'),
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+
+    realtimeTranscriptionProcess.stdout.on('data', (data) => {
+      const output = data.toString();
+      // Parse transcript segments and send to frontend
+      if (output.includes('[') && output.includes(']:')) {
+        mainWindow.webContents.send('realtime-transcript', { text: output.trim() });
+      }
+      sendDebugLog(output.trim());
+    });
+
+    realtimeTranscriptionProcess.stderr.on('data', (data) => {
+      sendDebugLog('RT-STDERR: ' + data.toString().trim());
+    });
+
+    realtimeTranscriptionProcess.on('close', (code) => {
+      sendDebugLog(`Real-time transcription ended with code: ${code}`);
+      realtimeTranscriptionProcess = null;
+      mainWindow.webContents.send('realtime-transcription-stopped');
+    });
+
+    return { success: true, message: 'Real-time transcription started' };
+  } catch (error) {
+    sendDebugLog(`Real-time transcription error: ${error.message}`);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('stop-realtime-transcription', async () => {
+  try {
+    if (!realtimeTranscriptionProcess) {
+      return { success: false, error: 'No real-time transcription running' };
+    }
+
+    realtimeTranscriptionProcess.kill('SIGINT');
+    realtimeTranscriptionProcess = null;
+
+    return { success: true, message: 'Real-time transcription stopped' };
+  } catch (error) {
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('get-realtime-status', async () => {
+  return {
+    success: true,
+    isRunning: realtimeTranscriptionProcess !== null
+  };
 });
