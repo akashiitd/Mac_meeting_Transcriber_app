@@ -1,6 +1,6 @@
 {
   "session_name": "live_20260110_111009",
-  "started": "2026-01-10T11:40:07.004797",
+  "started": "2026-01-10T11:56:07.070429",
   "segments": [
     {
       "text": "Okay.",
@@ -1972,6 +1972,807 @@
       "source": "system",
       "confidence": -0.5419353266557058,
       "timestamp": "2026-01-10T11:40:07.004722"
+    },
+    {
+      "text": "in that configuration changes, but these configuration changes will not be accessible for everyone.",
+      "start_time": 1799.666678905487,
+      "end_time": 1804.3066789054872,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5769174906515306,
+      "timestamp": "2026-01-10T11:40:17.205351"
+    },
+    {
+      "text": "That is also we will have some RBI.",
+      "start_time": 1804.3066789054872,
+      "end_time": 1805.506678905487,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5769174906515306,
+      "timestamp": "2026-01-10T11:40:17.207464"
+    },
+    {
+      "text": "who else can go and update it and in the production only the release engineering team will have the access to update the concept.",
+      "start_time": 1809.7631947994232,
+      "end_time": 1815.7631947994232,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3999298076544489,
+      "timestamp": "2026-01-10T11:40:27.192824"
+    },
+    {
+      "text": "changes until if you have a CR. See the lower environment, all the leads and whoever, they",
+      "start_time": 1819.9455170631409,
+      "end_time": 1823.9455170631409,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.43615076276991105,
+      "timestamp": "2026-01-10T11:40:37.520362"
+    },
+    {
+      "text": "have a free hand to get updated so that there is",
+      "start_time": 1823.9455170631409,
+      "end_time": 1825.9455170631409,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.43615076276991105,
+      "timestamp": "2026-01-10T11:40:37.522056"
+    },
+    {
+      "text": "to get involved, you know, to help them for the conflict changes.",
+      "start_time": 1829.977765083313,
+      "end_time": 1833.437765083313,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5994986227580479,
+      "timestamp": "2026-01-10T11:40:47.458826"
+    },
+    {
+      "text": "So, whenever they change, automatically get started, get applied into the...",
+      "start_time": 1833.437765083313,
+      "end_time": 1835.697765083313,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5994986227580479,
+      "timestamp": "2026-01-10T11:40:47.460387"
+    },
+    {
+      "text": "I'm coming to the infrastructure as a code so basically we'll have any releases for the infrastructure as a code whenever there is a need.",
+      "start_time": 1840.1827090644836,
+      "end_time": 1845.7827090644837,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.31119704246520996,
+      "timestamp": "2026-01-10T11:40:57.613357"
+    },
+    {
+      "text": "We'll be creating a task and creating a future branch once it gets certified in the lower",
+      "start_time": 1850.2015018463135,
+      "end_time": 1853.8715018463135,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.508298295916933,
+      "timestamp": "2026-01-10T11:41:07.871806"
+    },
+    {
+      "text": "environments.",
+      "start_time": 1853.8715018463135,
+      "end_time": 1854.8715018463135,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.508298295916933,
+      "timestamp": "2026-01-10T11:41:07.873648"
+    },
+    {
+      "text": "Then we'll be moving.",
+      "start_time": 1854.8715018463135,
+      "end_time": 1856.0715018463134,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.508298295916933,
+      "timestamp": "2026-01-10T11:41:07.875408"
+    },
+    {
+      "text": "the production.",
+      "start_time": 1860.2715661525726,
+      "end_time": 1860.7715661525726,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5569057663281759,
+      "timestamp": "2026-01-10T11:41:17.344683"
+    },
+    {
+      "text": "I would say both are equal, I think.",
+      "start_time": 1874.0516438007355,
+      "end_time": 1876.0516438007355,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6290888236119196,
+      "timestamp": "2026-01-10T11:41:27.550920"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1880.5189890861511,
+      "end_time": 1884.9889890861512,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9421847343444825,
+      "timestamp": "2026-01-10T11:41:37.500560"
+    },
+    {
+      "text": "Hope you're able to see my skin.",
+      "start_time": 1892.0174249362944,
+      "end_time": 1894.0174249362944,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.385919210811456,
+      "timestamp": "2026-01-10T11:41:47.796520"
+    },
+    {
+      "text": "Okay.",
+      "start_time": 1903.5863669776916,
+      "end_time": 1905.5863669776916,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6703418731689453,
+      "timestamp": "2026-01-10T11:41:57.837842"
+    },
+    {
+      "text": "Mm-hmm",
+      "start_time": 1923.191562013626,
+      "end_time": 1927.111562013626,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7815576593081156,
+      "timestamp": "2026-01-10T11:42:18.008109"
+    },
+    {
+      "text": "Okay",
+      "start_time": 1931.6788959884643,
+      "end_time": 1935.4288959884643,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7861492931842804,
+      "timestamp": "2026-01-10T11:42:27.974733"
+    },
+    {
+      "text": "Thank you.",
+      "start_time": 1942.0409258174896,
+      "end_time": 1944.0409258174896,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8816760778427124,
+      "timestamp": "2026-01-10T11:42:38.074936"
+    },
+    {
+      "text": "Send an alert, send an alert.",
+      "start_time": 2016.1882719039918,
+      "end_time": 2018.1882719039918,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5823717334053733,
+      "timestamp": "2026-01-10T11:43:49.217087"
+    },
+    {
+      "text": "mail or something or okay I'll just understand",
+      "start_time": 2022.187129020691,
+      "end_time": 2028.207129020691,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.900641679763794,
+      "timestamp": "2026-01-10T11:43:59.366597"
+    },
+    {
+      "text": "Thank you.",
+      "start_time": 2034.635678129196,
+      "end_time": 2035.635678129196,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.761113166809082,
+      "timestamp": "2026-01-10T11:44:09.370981"
+    },
+    {
+      "text": "Yes.",
+      "start_time": 2044.037056055069,
+      "end_time": 2044.537056055069,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.96087646484375,
+      "timestamp": "2026-01-10T11:44:19.475766"
+    },
+    {
+      "text": "So, what I would say that since it's a python, I think...",
+      "start_time": 2053.0344189453126,
+      "end_time": 2058.6244189453123,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.38859923262345164,
+      "timestamp": "2026-01-10T11:44:29.937733"
+    },
+    {
+      "text": "She, there is a some library, I'm unable to...",
+      "start_time": 2062.786964893341,
+      "end_time": 2068.846964893341,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6992405466735363,
+      "timestamp": "2026-01-10T11:44:40.068966"
+    },
+    {
+      "text": "Can I just explain while writing the code?",
+      "start_time": 2084.006197910309,
+      "end_time": 2086.006197910309,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.368429663280646,
+      "timestamp": "2026-01-10T11:45:00.317353"
+    },
+    {
+      "text": "I'll see you in the next video.",
+      "start_time": 2093.176326751709,
+      "end_time": 2097.906326751709,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6955763623118401,
+      "timestamp": "2026-01-10T11:45:10.552816"
+    },
+    {
+      "text": "Bye.",
+      "start_time": 2097.906326751709,
+      "end_time": 2098.906326751709,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6955763623118401,
+      "timestamp": "2026-01-10T11:45:10.554680"
+    },
+    {
+      "text": "Bye.",
+      "start_time": 2098.906326751709,
+      "end_time": 2099.906326751709,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6955763623118401,
+      "timestamp": "2026-01-10T11:45:10.556347"
+    },
+    {
+      "text": "Bye.",
+      "start_time": 2099.906326751709,
+      "end_time": 2100.906326751709,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6955763623118401,
+      "timestamp": "2026-01-10T11:45:10.557745"
+    },
+    {
+      "text": "Four. Three.",
+      "start_time": 2136.579028959274,
+      "end_time": 2137.619028959274,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.0281230040958949,
+      "timestamp": "2026-01-10T11:45:51.864563"
+    },
+    {
+      "text": "So the reason why I have taken this model so it will just rejects like",
+      "start_time": 2166.10081196785,
+      "end_time": 2169.4608119678496,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.2791729538064254,
+      "timestamp": "2026-01-10T11:46:21.417883"
+    },
+    {
+      "text": "because we are using for 404 that is reason RE I have taken for this model and the counter",
+      "start_time": 2174.1998357772827,
+      "end_time": 2178.7998357772826,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.520388291728112,
+      "timestamp": "2026-01-10T11:46:31.751382"
+    },
+    {
+      "text": "which I took for because use",
+      "start_time": 2178.7998357772826,
+      "end_time": 2180.1998357772827,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.520388291728112,
+      "timestamp": "2026-01-10T11:46:31.753142"
+    },
+    {
+      "text": "getting repeated messages, right?",
+      "start_time": 2184.21404004097,
+      "end_time": 2185.8140400409698,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.46475120782852175,
+      "timestamp": "2026-01-10T11:46:41.588512"
+    },
+    {
+      "text": "We would like to see, I mean,",
+      "start_time": 2185.8140400409698,
+      "end_time": 2188.17404004097,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.46475120782852175,
+      "timestamp": "2026-01-10T11:46:41.590304"
+    },
+    {
+      "text": "the messages in the last 24 hours so those are mostly frequently occurring so that is",
+      "start_time": 2194.3877189731597,
+      "end_time": 2197.18771897316,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3148566351996528,
+      "timestamp": "2026-01-10T11:46:51.922916"
+    },
+    {
+      "text": "the reason I am just going with the counter for how many times it caused",
+      "start_time": 2197.18771897316,
+      "end_time": 2200.0677189731596,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3148566351996528,
+      "timestamp": "2026-01-10T11:46:51.924665"
+    },
+    {
+      "text": "last 24 hours so since we are going with the time need to you know in last 24 hours that is",
+      "start_time": 2204.4671218395233,
+      "end_time": 2210.2271218395235,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.34349281589190167,
+      "timestamp": "2026-01-10T11:47:01.865855"
+    },
+    {
+      "text": "need to fetch with the 24 hours.",
+      "start_time": 2214.5316548347473,
+      "end_time": 2216.9916548347474,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.38532701056254537,
+      "timestamp": "2026-01-10T11:47:12.141631"
+    },
+    {
+      "text": "That is the reason I'm just using with the daytime",
+      "start_time": 2216.9916548347474,
+      "end_time": 2218.731654834747,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.38532701056254537,
+      "timestamp": "2026-01-10T11:47:12.143517"
+    },
+    {
+      "text": "of the model to filter the log from the last 20.",
+      "start_time": 2218.731654834747,
+      "end_time": 2220.8316548347475,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.38532701056254537,
+      "timestamp": "2026-01-10T11:47:12.145040"
+    },
+    {
+      "text": "in order to make it define the window.",
+      "start_time": 2224.839950056076,
+      "end_time": 2226.239950056076,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4098583161830902,
+      "timestamp": "2026-01-10T11:47:21.804026"
+    },
+    {
+      "text": "Okay.",
+      "start_time": 2249.2797249221803,
+      "end_time": 2249.7797249221803,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.694895076751709,
+      "timestamp": "2026-01-10T11:47:41.976513"
+    },
+    {
+      "text": "I'm going to say that, um, no, I'm just, I'm just, I'm just, okay.",
+      "start_time": 2254.949996948242,
+      "end_time": 2260.3899969482422,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6483227759599686,
+      "timestamp": "2026-01-10T11:47:52.378964"
+    },
+    {
+      "text": "Yeah and I think the log file, I think you are given the path of log file",
+      "start_time": 2265.6435041427612,
+      "end_time": 2271.013504142761,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.44197477045513334,
+      "timestamp": "2026-01-10T11:48:02.640442"
+    },
+    {
+      "text": "for just now.",
+      "start_time": 2275.390619869232,
+      "end_time": 2278.140619869232,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.957254239491054,
+      "timestamp": "2026-01-10T11:48:12.551760"
+    },
+    {
+      "text": "I'm gonna look for the pot.",
+      "start_time": 2289.2466021347045,
+      "end_time": 2291.1566021347044,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8090339787304401,
+      "timestamp": "2026-01-10T11:48:22.877576"
+    },
+    {
+      "text": "Then I...",
+      "start_time": 2291.1566021347044,
+      "end_time": 2291.9966021347045,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8090339787304401,
+      "timestamp": "2026-01-10T11:48:22.879538"
+    },
+    {
+      "text": "I mentioned the cut off equal to",
+      "start_time": 2295.4337100982666,
+      "end_time": 2298.3137100982667,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8120837330818176,
+      "timestamp": "2026-01-10T11:48:32.766795"
+    },
+    {
+      "text": "day is gone.",
+      "start_time": 2337.3274449920655,
+      "end_time": 2339.3274449920655,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.180121796471732,
+      "timestamp": "2026-01-10T11:49:15.126036"
+    },
+    {
+      "text": "then which I would need to look at.",
+      "start_time": 2352.1032548999788,
+      "end_time": 2354.1032548999788,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.42300988485415775,
+      "timestamp": "2026-01-10T11:49:28.386781"
+    },
+    {
+      "text": "Bye.",
+      "start_time": 2361.5811310386657,
+      "end_time": 2363.091131038666,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.0301547348499298,
+      "timestamp": "2026-01-10T11:49:39.801541"
+    },
+    {
+      "text": "Yeah, come play.",
+      "start_time": 2363.091131038666,
+      "end_time": 2364.2911310386658,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.0301547348499298,
+      "timestamp": "2026-01-10T11:49:39.803575"
+    },
+    {
+      "text": "and see.",
+      "start_time": 2381.6763917732237,
+      "end_time": 2382.516391773224,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9099167585372925,
+      "timestamp": "2026-01-10T11:49:58.604677"
+    },
+    {
+      "text": "I think these two are, I think this one is",
+      "start_time": 2395.3169409179686,
+      "end_time": 2397.7169409179687,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4433747785431998,
+      "timestamp": "2026-01-10T11:50:08.899621"
+    },
+    {
+      "text": "This is the cut-off date of last 24 hours and here I'm going to define the pattern of looking for the locks for the 4G.",
+      "start_time": 2401.74538898468,
+      "end_time": 2407.74538898468,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.3202585451530688,
+      "timestamp": "2026-01-10T11:50:19.259451"
+    },
+    {
+      "text": "Hmm",
+      "start_time": 2414.0280870342253,
+      "end_time": 2416.0280870342253,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7575927972793579,
+      "timestamp": "2026-01-10T11:50:28.920099"
+    },
+    {
+      "text": "This might be, I might not be sure, the pattern which I am...",
+      "start_time": 2425.761616868973,
+      "end_time": 2428.161616868973,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5682916515751889,
+      "timestamp": "2026-01-10T11:50:39.416771"
+    },
+    {
+      "text": "I might need some assistance to Google or something, but based on my knowledge I'm defining.",
+      "start_time": 2432.624481048584,
+      "end_time": 2437.264481048584,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.47951855713670904,
+      "timestamp": "2026-01-10T11:50:49.550344"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 2453.5780389118195,
+      "end_time": 2454.0780389118195,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6107752530471139,
+      "timestamp": "2026-01-10T11:51:09.965230"
+    },
+    {
+      "text": "4-0-4.",
+      "start_time": 2454.0780389118195,
+      "end_time": 2456.7580389118193,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6107752530471139,
+      "timestamp": "2026-01-10T11:51:09.967282"
+    },
+    {
+      "text": "Okay.",
+      "start_time": 2456.7580389118193,
+      "end_time": 2458.0180389118195,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6107752530471139,
+      "timestamp": "2026-01-10T11:51:09.969105"
+    },
+    {
+      "text": "4-0.",
+      "start_time": 2458.0180389118195,
+      "end_time": 2458.5180389118195,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6107752530471139,
+      "timestamp": "2026-01-10T11:51:09.970697"
+    },
+    {
+      "text": "Forty-four.",
+      "start_time": 2462.7186727523804,
+      "end_time": 2464.0986727523805,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.171040341258049,
+      "timestamp": "2026-01-10T11:51:25.481591"
+    },
+    {
+      "text": "Thank you.",
+      "start_time": 2482.786342086792,
+      "end_time": 2485.306342086792,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8761238413197654,
+      "timestamp": "2026-01-10T11:51:36.788330"
+    },
+    {
+      "text": "Bye.",
+      "start_time": 2485.306342086792,
+      "end_time": 2486.306342086792,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8761238413197654,
+      "timestamp": "2026-01-10T11:51:36.790257"
+    },
+    {
+      "text": "Bye.",
+      "start_time": 2486.306342086792,
+      "end_time": 2486.806342086792,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8761238413197654,
+      "timestamp": "2026-01-10T11:51:36.791957"
+    },
+    {
+      "text": "to like set it up the pattern just I'll mention for your phone.",
+      "start_time": 2489.6664350032806,
+      "end_time": 2492.5464350032807,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.698799279001024,
+      "timestamp": "2026-01-10T11:51:46.918025"
+    },
+    {
+      "text": "So.",
+      "start_time": 2515.5932699775694,
+      "end_time": 2516.0932699775694,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8536141395568848,
+      "timestamp": "2026-01-10T11:52:07.003691"
+    },
+    {
+      "text": "then we need to see eras",
+      "start_time": 2520.08300113678,
+      "end_time": 2524.88300113678,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8096321940422058,
+      "timestamp": "2026-01-10T11:52:17.224186"
+    },
+    {
+      "text": "so that no one",
+      "start_time": 2575.827013063431,
+      "end_time": 2578.2270130634306,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6879240274429321,
+      "timestamp": "2026-01-10T11:53:07.629981"
+    },
+    {
+      "text": "I will go with the pattern search which we have defined it every line by line, the pattern which I have defined",
+      "start_time": 2580.619071006775,
+      "end_time": 2586.829071006775,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.44318288564682007,
+      "timestamp": "2026-01-10T11:53:17.946865"
+    },
+    {
+      "text": "and I'm using the search function.",
+      "start_time": 2590.7941818237305,
+      "end_time": 2591.9341818237303,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.33170288971492223,
+      "timestamp": "2026-01-10T11:53:28.251928"
+    },
+    {
+      "text": "I'm going with each of the one by line of the pattern of 404.",
+      "start_time": 2591.9341818237303,
+      "end_time": 2596.1341818237306,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.33170288971492223,
+      "timestamp": "2026-01-10T11:53:28.253863"
+    },
+    {
+      "text": "So if...",
+      "start_time": 2596.1341818237306,
+      "end_time": 2596.9741818237303,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.33170288971492223,
+      "timestamp": "2026-01-10T11:53:28.255515"
+    },
+    {
+      "text": "Thank you.",
+      "start_time": 2601.9713039875032,
+      "end_time": 2619.9713039875032,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -1.4013245701789856,
+      "timestamp": "2026-01-10T11:53:44.500165"
+    },
+    {
+      "text": "Bye.",
+      "start_time": 2618.61663105011,
+      "end_time": 2619.11663105011,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.843015480041504,
+      "timestamp": "2026-01-10T11:53:55.645928"
+    },
+    {
+      "text": "Next, I have to check the time stamp of the 24 hours because we need to wait for the last 24 hours.",
+      "start_time": 2628.7006549835205,
+      "end_time": 2634.7006549835205,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4060091906123691,
+      "timestamp": "2026-01-10T11:54:06.394006"
+    },
+    {
+      "text": "Then I'll just see the log time of this pattern, the time.",
+      "start_time": 2638.820302963257,
+      "end_time": 2644.430302963257,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4942500624391768,
+      "timestamp": "2026-01-10T11:54:16.426938"
+    },
+    {
+      "text": "S.T.",
+      "start_time": 2649.4878499889373,
+      "end_time": 2655.147849988937,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9876225675855365,
+      "timestamp": "2026-01-10T11:54:26.259444"
+    },
+    {
+      "text": "Thank you.",
+      "start_time": 2671.98320892334,
+      "end_time": 2672.98320892334,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.9970869620641073,
+      "timestamp": "2026-01-10T11:54:46.873596"
+    },
+    {
+      "text": "Okay, there is a light because of the way it works.",
+      "start_time": 2683.129038887024,
+      "end_time": 2685.129038887024,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8265353366732597,
+      "timestamp": "2026-01-10T11:54:56.531720"
+    },
+    {
+      "text": "that the timestamp is going to consider as a like, you know,",
+      "start_time": 2689.3962438106537,
+      "end_time": 2693.3962438106537,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7031036576917095,
+      "timestamp": "2026-01-10T11:55:06.848951"
+    },
+    {
+      "text": "B, B, B, Y, however many...",
+      "start_time": 2693.3962438106537,
+      "end_time": 2695.3962438106537,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7031036576917095,
+      "timestamp": "2026-01-10T11:55:06.851049"
+    },
+    {
+      "text": "and I am just by using it during the log time of when we are capturing that line.",
+      "start_time": 2699.4418489933014,
+      "end_time": 2702.0818489933013,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4657122479243712,
+      "timestamp": "2026-01-10T11:55:16.780556"
+    },
+    {
+      "text": "Ah, no, gosh, I didn't... I don't think that's it.",
+      "start_time": 2731.106157026291,
+      "end_time": 2733.506157026291,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.7683069365365165,
+      "timestamp": "2026-01-10T11:55:47.000944"
+    },
+    {
+      "text": "and currently working with Metellin.",
+      "start_time": 2743.1659248828887,
+      "end_time": 2745.1659248828887,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.8672241731123491,
+      "timestamp": "2026-01-10T11:55:56.995172"
+    },
+    {
+      "text": "Yeah, thank you.",
+      "start_time": 2754.1939549446106,
+      "end_time": 2755.1939549446106,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.785370945930481,
+      "timestamp": "2026-01-10T11:56:07.070134"
     }
   ]
 }

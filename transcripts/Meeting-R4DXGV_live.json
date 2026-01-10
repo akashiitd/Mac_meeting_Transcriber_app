@@ -1,6 +1,6 @@
 {
   "session_name": "Meeting-R4DXGV",
-  "started": "2026-01-10T11:40:01.649276",
+  "started": "2026-01-10T11:41:12.285871",
   "segments": [
     {
       "text": "Mm-hmm",
@@ -2053,6 +2053,123 @@
       "source": "system",
       "confidence": -0.5494367317719893,
       "timestamp": "2026-01-10T11:40:01.648998"
+    },
+    {
+      "text": "application team can whenever they want,",
+      "start_time": 2087.79398393631,
+      "end_time": 2089.71398393631,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.426596645798002,
+      "timestamp": "2026-01-10T11:40:11.841178"
+    },
+    {
+      "text": "they could able to do and dynamically get updated",
+      "start_time": 2089.71398393631,
+      "end_time": 2091.9539839363097,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.426596645798002,
+      "timestamp": "2026-01-10T11:40:11.842809"
+    },
+    {
+      "text": "in that configuration changes.",
+      "start_time": 2091.9539839363097,
+      "end_time": 2093.83398393631,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.426596645798002,
+      "timestamp": "2026-01-10T11:40:11.844165"
+    },
+    {
+      "text": "will not be accessible for everyone. That is also we will have some R-back rules who",
+      "start_time": 2097.8394639492035,
+      "end_time": 2100.9994639492033,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4733491666389234,
+      "timestamp": "2026-01-10T11:40:21.964822"
+    },
+    {
+      "text": "want who else can go and update it.",
+      "start_time": 2100.9994639492033,
+      "end_time": 2103.5994639492037,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4733491666389234,
+      "timestamp": "2026-01-10T11:40:21.966642"
+    },
+    {
+      "text": "Only the release engineering team will have the access to update the config maps,",
+      "start_time": 2107.908381757736,
+      "end_time": 2110.908381757736,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.24079702640401907,
+      "timestamp": "2026-01-10T11:40:31.871235"
+    },
+    {
+      "text": "configuration changes until if you have a CR.",
+      "start_time": 2110.908381757736,
+      "end_time": 2112.908381757736,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.24079702640401907,
+      "timestamp": "2026-01-10T11:40:31.873192"
+    },
+    {
+      "text": "they have a free hand to get updated so that there is no any dependency from the DevOps team to get involved",
+      "start_time": 2117.961754798889,
+      "end_time": 2123.461754798889,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4747907638549805,
+      "timestamp": "2026-01-10T11:40:41.931337"
+    },
+    {
+      "text": "changes so whenever they change automatically get started get applied into the configurations and",
+      "start_time": 2128.104740858078,
+      "end_time": 2132.104740858078,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5720685124397278,
+      "timestamp": "2026-01-10T11:40:52.179547"
+    },
+    {
+      "text": "coming to the infrastructure as a code so basically",
+      "start_time": 2132.104740858078,
+      "end_time": 2136.104740858078,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.5720685124397278,
+      "timestamp": "2026-01-10T11:40:52.181307"
+    },
+    {
+      "text": "any releases right for the infrastructure as a code whenever the reason need will be just",
+      "start_time": 2138.2514748573303,
+      "end_time": 2141.8114748573303,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6431375618638664,
+      "timestamp": "2026-01-10T11:41:02.290418"
+    },
+    {
+      "text": "we'll be creating a task and create",
+      "start_time": 2141.8114748573303,
+      "end_time": 2144.1914748573304,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.6431375618638664,
+      "timestamp": "2026-01-10T11:41:02.292425"
+    },
+    {
+      "text": "the lower environments, then we will be moving all these changes till the production.",
+      "start_time": 2148.3562507629395,
+      "end_time": 2152.5962507629392,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": -0.4651925344216196,
+      "timestamp": "2026-01-10T11:41:12.285643"
     }
   ]
 }

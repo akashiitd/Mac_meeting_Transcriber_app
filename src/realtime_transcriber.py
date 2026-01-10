@@ -1,7 +1,8 @@
 """
 Real-time transcription module with dual audio capture and speaker diarization.
 Captures both system audio (via SystemAudioDump) and microphone audio,
-transcribes in real-time using faster-whisper, and identifies speakers.
+transcribes in real-time using mlx-whisper (GPU accelerated on Apple Silicon),
+and identifies speakers.
 """
 
 import logging
@@ -318,26 +319,61 @@ class RealtimeTranscriber:
         self.last_transcription_time: float = 0
 
     def load_model(self) -> bool:
-        """Load the faster-whisper model."""
+        """Initialize mlx-whisper for GPU-accelerated transcription on Apple Silicon."""
+        try:
+            import mlx_whisper
+
+            # Map model sizes to mlx-community HuggingFace repos
+            # Note: Models need "-mlx" suffix except for "tiny"
+            model_map = {
+                "tiny": "mlx-community/whisper-tiny",
+                "base": "mlx-community/whisper-base-mlx",
+                "small": "mlx-community/whisper-small-mlx",
+                "medium": "mlx-community/whisper-medium-mlx",
+                "large": "mlx-community/whisper-large-v3-mlx",
+                "large-v2": "mlx-community/whisper-large-v2-mlx",
+                "large-v3": "mlx-community/whisper-large-v3-mlx",
+            }
+
+            self.mlx_model_path = model_map.get(self.model_size, f"mlx-community/whisper-{self.model_size}-mlx")
+
+            logger.info(f"Loading mlx-whisper model: {self.mlx_model_path} (GPU accelerated on Apple Silicon)")
+
+            # mlx-whisper doesn't require pre-loading, it loads on first transcribe call
+            # But we store the reference to the module for transcription
+            self.mlx_whisper = mlx_whisper
+            self.model = True  # Flag to indicate model is ready
+            self.model_loaded = True
+            logger.info("mlx-whisper initialized successfully (GPU accelerated)")
+            return True
+        except ImportError:
+            logger.warning("mlx-whisper not available, falling back to faster-whisper (CPU)")
+            return self._load_faster_whisper_fallback()
+        except Exception as e:
+            logger.error(f"Failed to initialize mlx-whisper: {e}")
+            return self._load_faster_whisper_fallback()
+
+    def _load_faster_whisper_fallback(self) -> bool:
+        """Fallback to faster-whisper if mlx-whisper is not available."""
         try:
             from faster_whisper import WhisperModel
 
-            logger.info(f"Loading faster-whisper model: {self.model_size}")
+            logger.info(f"Loading faster-whisper model (CPU fallback): {self.model_size}")
 
-            # Use CPU for now, can add GPU support later
             self.model = WhisperModel(
                 self.model_size,
                 device="cpu",
                 compute_type="int8"
             )
+            self.mlx_whisper = None  # Indicate we're using faster-whisper
             self.model_loaded = True
-            logger.info("Model loaded successfully")
+            logger.info("faster-whisper model loaded successfully (CPU)")
             return True
         except ImportError:
-            logger.error("faster-whisper not installed. Install with: pip install faster-whisper")
+            logger.error("Neither mlx-whisper nor faster-whisper installed.")
             return False
         except Exception as e:
-            logger.error(f"Failed to load model: {e}")
+            logger.error(f"Failed to load faster-whisper: {e}")
             return False
 
     def start(self) -> bool:
@@ -453,7 +489,7 @@ class RealtimeTranscriber:
         source: str,
         speaker: str
     ) -> None:
-        """Transcribe audio from a buffer."""
+        """Transcribe audio from a buffer using mlx-whisper (GPU) or faster-whisper (CPU fallback)."""
         if not self.model:
             return
 
@@ -469,63 +505,121 @@ class RealtimeTranscriber:
             audio = self._resample(audio, 24000, 16000)
 
         try:
-            # Transcribe with source-specific VAD settings
-            # Use less aggressive VAD for microphone to capture more speech
-            if source == "microphone":
-                segments, info = self.model.transcribe(
-                    audio,
-                    language=self.language,
-                    vad_filter=True,
-                    vad_parameters=dict(
-                        min_silence_duration_ms=300,  # Shorter silence threshold
-                        speech_pad_ms=400,  # More padding around speech
-                        threshold=0.3  # Lower threshold to detect quieter speech
-                    )
-                )
-            else:
-                segments, info = self.model.transcribe(
-                    audio,
-                    language=self.language,
-                    vad_filter=True,
-                    vad_parameters=dict(
-                        min_silence_duration_ms=500,
-                        speech_pad_ms=200
-                    )
-                )
-
             current_time = time.time() - self.start_time
 
-            for segment in segments:
-                # Skip empty or very short segments
-                if not segment.text.strip() or len(segment.text.strip()) < 2:
-                    continue
-
-                transcript_segment = TranscriptSegment(
-                    text=segment.text.strip(),
-                    start_time=current_time - self.chunk_duration + segment.start,
-                    end_time=current_time - self.chunk_duration + segment.end,
-                    speaker=speaker,
-                    source=source,
-                    confidence=segment.avg_logprob if hasattr(segment, 'avg_logprob') else 0.0
-                )
-
-                with self.segments_lock:
-                    self.segments.append(transcript_segment)
-
-                # Call callback if provided
-                if self.transcription_callback:
-                    try:
-                        self.transcription_callback(transcript_segment)
-                    except Exception as e:
-                        logger.error(f"Callback error: {e}")
-
-                logger.info(f"[{source}] {speaker}: {segment.text.strip()}")
+            # Use mlx-whisper if available (GPU accelerated)
+            if hasattr(self, 'mlx_whisper') and self.mlx_whisper is not None:
+                result = self._transcribe_with_mlx(audio, source)
+                if result:
+                    self._process_mlx_result(result, current_time, source, speaker)
+            else:
+                # Fallback to faster-whisper (CPU)
+                self._transcribe_with_faster_whisper(audio, current_time, source, speaker)
 
         except Exception as e:
             logger.error(f"Transcription error: {e}")
 
         # Clear processed audio (keep overlap)
         buffer.clear()
+
+    def _transcribe_with_mlx(self, audio, source: str):
+        """Transcribe using mlx-whisper (GPU accelerated on Apple Silicon)."""
+        try:
+            result = self.mlx_whisper.transcribe(
+                audio,
+                path_or_hf_repo=self.mlx_model_path,
+                language=self.language,
+                verbose=False,
+                condition_on_previous_text=False,  # Better for real-time
+            )
+            return result
+        except Exception as e:
+            logger.error(f"mlx-whisper transcription error: {e}")
+            return None
+
+    def _process_mlx_result(self, result, current_time: float, source: str, speaker: str):
+        """Process mlx-whisper transcription result."""
+        if not result or "segments" not in result:
+            return
+
+        for segment in result["segments"]:
+            text = segment.get("text", "").strip()
+
+            # Skip empty or very short segments
+            if not text or len(text) < 2:
+                continue
+
+            transcript_segment = TranscriptSegment(
+                text=text,
+                start_time=current_time - self.chunk_duration + segment.get("start", 0),
+                end_time=current_time - self.chunk_duration + segment.get("end", 0),
+                speaker=speaker,
+                source=source,
+                confidence=segment.get("avg_logprob", 0.0)
+            )
+
+            with self.segments_lock:
+                self.segments.append(transcript_segment)
+
+            # Call callback if provided
+            if self.transcription_callback:
+                try:
+                    self.transcription_callback(transcript_segment)
+                except Exception as e:
+                    logger.error(f"Callback error: {e}")
+
+            logger.info(f"[{source}] {speaker}: {text}")
+
+    def _transcribe_with_faster_whisper(self, audio, current_time: float, source: str, speaker: str):
+        """Fallback transcription using faster-whisper (CPU)."""
+        # Transcribe with source-specific VAD settings
+        if source == "microphone":
+            segments, _ = self.model.transcribe(
+                audio,
+                language=self.language,
+                vad_filter=True,
+                vad_parameters=dict(
+                    min_silence_duration_ms=300,
+                    speech_pad_ms=400,
+                    threshold=0.3
+                )
+            )
+        else:
+            segments, _ = self.model.transcribe(
+                audio,
+                language=self.language,
+                vad_filter=True,
+                vad_parameters=dict(
+                    min_silence_duration_ms=500,
+                    speech_pad_ms=200
+                )
+            )
+
+        for segment in segments:
+            # Skip empty or very short segments
+            if not segment.text.strip() or len(segment.text.strip()) < 2:
+                continue
+
+            transcript_segment = TranscriptSegment(
+                text=segment.text.strip(),
+                start_time=current_time - self.chunk_duration + segment.start,
+                end_time=current_time - self.chunk_duration + segment.end,
+                speaker=speaker,
+                source=source,
+                confidence=segment.avg_logprob if hasattr(segment, 'avg_logprob') else 0.0
+            )
+
+            with self.segments_lock:
+                self.segments.append(transcript_segment)
+
+            # Call callback if provided
+            if self.transcription_callback:
+                try:
+                    self.transcription_callback(transcript_segment)
+                except Exception as e:
+                    logger.error(f"Callback error: {e}")
+
+            logger.info(f"[{source}] {speaker}: {segment.text.strip()}")
 
     def _resample(self, audio: np.ndarray, orig_sr: int, target_sr: int) -> np.ndarray:
         """Simple resampling using linear interpolation."""
