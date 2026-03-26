@@ -35,6 +35,95 @@ except ImportError:
 logger = logging.getLogger(__name__)
 
 
+# Common Whisper hallucination phrases on silence/noise
+HALLUCINATION_PHRASES = {
+    "you", "thank you", "thanks", "thanks for watching",
+    "bye", "goodbye", "see you", "okay", "ok",
+    "hmm", "um", "uh", "ah", "oh", "mm-hmm", "mm",
+    ".", "..", "...", "!", "?",
+    "thanks for watching.", "thank you for watching.",
+    "subscribe", "like and subscribe",
+    "i love you", "i like you", "bye, little girl",
+    "team team", "hello", "hi", "yes", "no",
+}
+
+# Phrases that are hallucinations when repeated
+REPETITION_TRIGGER_WORDS = {
+    "okay", "ok", "thank you", "thanks", "hello", "hi",
+    "yes", "no", "bye", "mm-hmm", "uh-huh", "right",
+    "i love you", "i like you", "team", "you",
+}
+
+
+def is_repetitive_hallucination(text: str) -> bool:
+    """
+    Detect repetitive hallucination patterns like 'okay, okay, okay...'
+    or 'thank you. thank you.' etc.
+
+    Returns True if the text appears to be a repetitive hallucination.
+    """
+    text_lower = text.lower().strip()
+
+    # Remove common punctuation for analysis
+    cleaned = text_lower.replace(",", " ").replace(".", " ").replace("!", " ").replace("?", " ")
+    words = [w.strip() for w in cleaned.split() if w.strip()]
+
+    if not words:
+        return True
+
+    # Check for single word/phrase repeated multiple times
+    if len(words) >= 3:
+        # Count unique words
+        unique_words = set(words)
+
+        # If very few unique words compared to total, likely repetition
+        # e.g., "okay okay okay okay" = 1 unique word, 4 total
+        if len(unique_words) <= 2 and len(words) >= 4:
+            # Check if the dominant word is a trigger word
+            for word in unique_words:
+                if word in REPETITION_TRIGGER_WORDS:
+                    word_count = words.count(word)
+                    if word_count >= 3:  # Same word repeated 3+ times
+                        logger.debug(f"Detected repetitive hallucination: '{text}' ('{word}' x{word_count})")
+                        return True
+
+    # Check for phrase repetition patterns like "thank you. thank you."
+    # Split by common phrase boundaries
+    phrases = [p.strip() for p in text_lower.replace(".", ",").split(",") if p.strip()]
+    if len(phrases) >= 2:
+        # Check if all phrases are the same or very similar
+        unique_phrases = set(phrases)
+        if len(unique_phrases) == 1 and phrases[0] in HALLUCINATION_PHRASES:
+            logger.debug(f"Detected repeated phrase hallucination: '{text}'")
+            return True
+
+        # Check for high phrase repetition rate
+        if len(unique_phrases) <= 2 and len(phrases) >= 3:
+            most_common = max(unique_phrases, key=lambda p: phrases.count(p))
+            if phrases.count(most_common) >= 3:
+                logger.debug(f"Detected phrase repetition: '{text}'")
+                return True
+
+    return False
+
+
+def is_hallucination(text: str) -> bool:
+    """
+    Check if text is a known hallucination or repetitive pattern.
+    """
+    text_lower = text.lower().strip()
+
+    # Check direct hallucination phrases
+    if text_lower in HALLUCINATION_PHRASES:
+        return True
+
+    # Check for repetitive patterns
+    if is_repetitive_hallucination(text):
+        return True
+
+    return False
+
+
 @dataclass
 class TranscriptSegment:
     """A segment of transcribed text with metadata."""
@@ -545,8 +634,13 @@ class RealtimeTranscriber:
         for segment in result["segments"]:
             text = segment.get("text", "").strip()
 
-            # Skip empty or very short segments
-            if not text or len(text) < 2:
+            # Skip empty or very short segments (less than 4 chars)
+            if not text or len(text) < 4:
+                continue
+
+            # Skip known hallucination phrases and repetitive patterns
+            if is_hallucination(text):
+                logger.debug(f"Skipping hallucination: '{text}'")
                 continue
 
             transcript_segment = TranscriptSegment(
@@ -591,17 +685,25 @@ class RealtimeTranscriber:
                 vad_filter=True,
                 vad_parameters=dict(
                     min_silence_duration_ms=500,
-                    speech_pad_ms=200
+                    speech_pad_ms=200,
+                    threshold=0.5  # Higher threshold for system audio to reduce noise
                 )
             )
 
         for segment in segments:
-            # Skip empty or very short segments
-            if not segment.text.strip() or len(segment.text.strip()) < 2:
+            text = segment.text.strip()
+
+            # Skip empty or very short segments (less than 4 chars)
+            if not text or len(text) < 4:
+                continue
+
+            # Skip known hallucination phrases and repetitive patterns
+            if is_hallucination(text):
+                logger.debug(f"Skipping hallucination: '{text}'")
                 continue
 
             transcript_segment = TranscriptSegment(
-                text=segment.text.strip(),
+                text=text,
                 start_time=current_time - self.chunk_duration + segment.start,
                 end_time=current_time - self.chunk_duration + segment.end,
                 speaker=speaker,
