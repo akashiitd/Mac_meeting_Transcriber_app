@@ -6,6 +6,7 @@ and identifies speakers.
 """
 
 import logging
+import re
 import threading
 import queue
 import time
@@ -45,14 +46,38 @@ HALLUCINATION_PHRASES = {
     "subscribe", "like and subscribe",
     "i love you", "i like you", "bye, little girl",
     "team team", "hello", "hi", "yes", "no",
+    "we'll start in a minute",
+    "we are going to produce what we produce",
+    "this week we produce what we produce",
+    "this week we are going to produce what we produce",
 }
 
 # Phrases that are hallucinations when repeated
 REPETITION_TRIGGER_WORDS = {
     "okay", "ok", "thank you", "thanks", "hello", "hi",
     "yes", "no", "bye", "mm-hmm", "uh-huh", "right",
-    "i love you", "i like you", "team", "you",
+    "i love you", "i like you", "team", "you", "we", "we'll",
+    "produce", "host",
 }
+
+
+def normalize_transcript_text(text: str) -> str:
+    """Normalize transcript text for hallucination and duplicate checks."""
+    text = text.lower().strip()
+    text = text.replace("’", "'")
+    text = re.sub(r"[^a-z0-9'\s-]", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip(" -")
+
+
+NORMALIZED_HALLUCINATION_PHRASES = {
+    normalize_transcript_text(phrase) for phrase in HALLUCINATION_PHRASES
+}
+
+
+def transcript_words(text: str) -> List[str]:
+    """Extract normalized words while preserving contractions."""
+    return re.findall(r"[a-z0-9]+(?:'[a-z0-9]+)?", normalize_transcript_text(text))
 
 
 def is_repetitive_hallucination(text: str) -> bool:
@@ -62,19 +87,40 @@ def is_repetitive_hallucination(text: str) -> bool:
 
     Returns True if the text appears to be a repetitive hallucination.
     """
-    text_lower = text.lower().strip()
+    normalized = normalize_transcript_text(text)
 
-    # Remove common punctuation for analysis
-    cleaned = text_lower.replace(",", " ").replace(".", " ").replace("!", " ").replace("?", " ")
-    words = [w.strip() for w in cleaned.split() if w.strip()]
+    words = transcript_words(text)
 
     if not words:
+        return True
+
+    if len(words) <= 3 and normalized in NORMALIZED_HALLUCINATION_PHRASES:
+        return True
+
+    # Catch loops like "we we we", "we'll we'll we'll", or "the the the".
+    max_run = 1
+    current_run = 1
+    for previous, current in zip(words, words[1:]):
+        if current == previous:
+            current_run += 1
+            max_run = max(max_run, current_run)
+        else:
+            current_run = 1
+
+    if max_run >= 3:
+        logger.debug(f"Detected repeated word run hallucination: '{text}'")
         return True
 
     # Check for single word/phrase repeated multiple times
     if len(words) >= 3:
         # Count unique words
         unique_words = set(words)
+        most_common_count = max(words.count(word) for word in unique_words)
+
+        # If one or two words dominate a segment, Whisper is usually looping on silence/noise.
+        if len(words) >= 5 and len(unique_words) <= 3 and most_common_count / len(words) >= 0.5:
+            logger.debug(f"Detected low-diversity repetition hallucination: '{text}'")
+            return True
 
         # If very few unique words compared to total, likely repetition
         # e.g., "okay okay okay okay" = 1 unique word, 4 total
@@ -87,13 +133,27 @@ def is_repetitive_hallucination(text: str) -> bool:
                         logger.debug(f"Detected repetitive hallucination: '{text}' ('{word}' x{word_count})")
                         return True
 
+        # Catch repeated short n-grams like "we produce what we produce what..."
+        for size in range(2, min(5, len(words) // 2 + 1)):
+            ngrams = [tuple(words[i:i + size]) for i in range(len(words) - size + 1)]
+            if not ngrams:
+                continue
+            most_common_ngram_count = max(ngrams.count(ngram) for ngram in set(ngrams))
+            if most_common_ngram_count >= 3:
+                logger.debug(f"Detected repeated phrase hallucination: '{text}'")
+                return True
+
     # Check for phrase repetition patterns like "thank you. thank you."
     # Split by common phrase boundaries
-    phrases = [p.strip() for p in text_lower.replace(".", ",").split(",") if p.strip()]
+    phrases = [
+        normalize_transcript_text(p)
+        for p in re.split(r"[,.!?;:\n]+", text)
+        if normalize_transcript_text(p)
+    ]
     if len(phrases) >= 2:
         # Check if all phrases are the same or very similar
         unique_phrases = set(phrases)
-        if len(unique_phrases) == 1 and phrases[0] in HALLUCINATION_PHRASES:
+        if len(unique_phrases) == 1 and phrases[0] in NORMALIZED_HALLUCINATION_PHRASES:
             logger.debug(f"Detected repeated phrase hallucination: '{text}'")
             return True
 
@@ -111,10 +171,10 @@ def is_hallucination(text: str) -> bool:
     """
     Check if text is a known hallucination or repetitive pattern.
     """
-    text_lower = text.lower().strip()
+    normalized = normalize_transcript_text(text)
 
     # Check direct hallucination phrases
-    if text_lower in HALLUCINATION_PHRASES:
+    if normalized in NORMALIZED_HALLUCINATION_PHRASES:
         return True
 
     # Check for repetitive patterns
@@ -183,6 +243,25 @@ class AudioBuffer:
                 samples = int(self.sample_rate * duration)
                 return np.array(self.buffer[-samples:], dtype=np.float32)
             return np.array(self.buffer, dtype=np.float32)
+
+    def pop_ready_audio(self, duration: float, context_duration: float = 0.0) -> np.ndarray:
+        """Return the next ready audio window and remove only processed samples."""
+        with self.lock:
+            processed_samples = int(self.sample_rate * duration)
+            if len(self.buffer) < processed_samples:
+                return np.array([], dtype=np.float32)
+
+            context_samples = int(self.sample_rate * context_duration)
+            window_samples = min(len(self.buffer), processed_samples + context_samples)
+            audio = np.array(self.buffer[:window_samples], dtype=np.float32)
+
+            if NUMPY_AVAILABLE:
+                self.buffer = self.buffer[processed_samples:]
+            else:
+                self.buffer = self.buffer[processed_samples:]
+
+            self.start_time = time.time() - (len(self.buffer) / self.sample_rate)
+            return audio
 
     def clear(self) -> None:
         """Clear the buffer."""
@@ -266,7 +345,7 @@ class SystemAudioCapture:
                 dtype='float32',
                 device=self.device_id,
                 callback=self._audio_callback,
-                blocksize=int(self.sample_rate * 0.2)  # 200ms blocks
+                blocksize=int(self.sample_rate * 0.1)  # 100ms blocks for lower live latency
             )
             self.stream.start()
             self.running = True
@@ -330,7 +409,7 @@ class MicrophoneCapture:
                 dtype='float32',
                 device=self.device,
                 callback=self._audio_callback,
-                blocksize=int(self.sample_rate * 0.2)  # 200ms blocks
+                blocksize=int(self.sample_rate * 0.1)  # 100ms blocks for lower live latency
             )
             self.stream.start()
             self.running = True
@@ -373,8 +452,9 @@ class RealtimeTranscriber:
         enable_system_audio: bool = True,
         enable_microphone: bool = True,
         transcription_callback: Optional[Callable[[TranscriptSegment], None]] = None,
-        chunk_duration: float = 5.0,  # Transcribe every N seconds
-        overlap_duration: float = 1.0,  # Overlap between chunks
+        chunk_duration: float = 2.0,  # Transcribe every N seconds
+        overlap_duration: float = 0.25,  # Small context window between chunks
+        transcription_backend: str = "whisper",
     ):
         self.model_size = model_size
         self.language = language
@@ -383,6 +463,7 @@ class RealtimeTranscriber:
         self.transcription_callback = transcription_callback
         self.chunk_duration = chunk_duration
         self.overlap_duration = overlap_duration
+        self.transcription_backend = transcription_backend
 
         # Audio capture
         self.system_capture: Optional[SystemAudioCapture] = None
@@ -394,6 +475,8 @@ class RealtimeTranscriber:
 
         # Transcription model
         self.model = None
+        self.lfm2_transcriber = None
+        self.apple_speech_transcriber = None
         self.model_loaded = False
 
         # State
@@ -409,6 +492,12 @@ class RealtimeTranscriber:
 
     def load_model(self) -> bool:
         """Initialize mlx-whisper for GPU-accelerated transcription on Apple Silicon."""
+        if self.transcription_backend == "apple-speech":
+            return self._load_apple_speech()
+
+        if self.transcription_backend == "lfm2-audio":
+            return self._load_lfm2_audio()
+
         try:
             import mlx_whisper
 
@@ -465,6 +554,43 @@ class RealtimeTranscriber:
             logger.error(f"Failed to load faster-whisper: {e}")
             return False
 
+    def _load_lfm2_audio(self) -> bool:
+        """Initialize Liquid AI LFM2-Audio backend."""
+        try:
+            from src.lfm2_audio_transcriber import LFM2AudioTranscriber
+
+            logger.info("Loading LFM2-Audio-1.5B backend")
+            self.lfm2_transcriber = LFM2AudioTranscriber()
+            self.lfm2_transcriber.ensure_available()
+            self.mlx_whisper = None
+            self.model = True
+            self.model_loaded = True
+            logger.info("LFM2-Audio backend initialized successfully")
+            return True
+        except Exception as e:
+            logger.error(f"Failed to initialize LFM2-Audio backend: {e}")
+            return False
+
+    def _load_apple_speech(self) -> bool:
+        """Initialize Apple's native macOS Speech backend."""
+        try:
+            from src.apple_speech_transcriber import AppleSpeechTranscriber
+
+            self.apple_speech_transcriber = AppleSpeechTranscriber(
+                language=self.language,
+                enable_system_audio=self.enable_system_audio,
+                enable_microphone=self.enable_microphone,
+                callback=self._handle_external_transcript_segment,
+            )
+            self.mlx_whisper = None
+            self.model = True
+            self.model_loaded = True
+            logger.info("Apple Speech backend initialized successfully")
+            return True
+        except Exception as e:
+            logger.error(f"Failed to initialize Apple Speech backend: {e}")
+            return False
+
     def start(self) -> bool:
         """Start real-time transcription."""
         if self.running:
@@ -475,6 +601,9 @@ class RealtimeTranscriber:
         if not self.model_loaded:
             if not self.load_model():
                 return False
+
+        if self.transcription_backend == "apple-speech":
+            return self._start_apple_speech()
 
         # Start audio capture
         if self.enable_system_audio:
@@ -512,6 +641,13 @@ class RealtimeTranscriber:
         """Stop transcription and return all segments."""
         self.running = False
 
+        if self.transcription_backend == "apple-speech":
+            if self.apple_speech_transcriber:
+                self.apple_speech_transcriber.stop()
+            logger.info("Apple Speech real-time transcription stopped")
+            with self.segments_lock:
+                return list(self.segments)
+
         # Stop audio capture
         if self.system_capture:
             self.system_capture.stop()
@@ -528,6 +664,54 @@ class RealtimeTranscriber:
 
         with self.segments_lock:
             return list(self.segments)
+
+    def _start_apple_speech(self) -> bool:
+        """Start native Apple Speech helper process."""
+        if not self.apple_speech_transcriber:
+            logger.error("Apple Speech backend is not initialized")
+            return False
+
+        self.running = True
+        self.start_time = time.time()
+        self.last_transcription_time = 0
+
+        if not self.apple_speech_transcriber.start():
+            self.running = False
+            return False
+
+        logger.info("Apple Speech real-time transcription started")
+        return True
+
+    def _handle_external_transcript_segment(self, segment: TranscriptSegment) -> None:
+        """Accept transcript segments produced by an external backend."""
+        current_time = segment.end_time or (time.time() - self.start_time)
+
+        if is_hallucination(segment.text):
+            logger.debug(f"Skipping hallucination: '{segment.text}'")
+            return
+
+        if self._is_recent_duplicate(
+            segment.text,
+            current_time,
+            segment.source,
+            segment.speaker or ""
+        ):
+            return
+
+        if segment.end_time <= segment.start_time:
+            segment.end_time = current_time
+            segment.start_time = max(0.0, current_time - self.chunk_duration)
+
+        with self.segments_lock:
+            self.segments.append(segment)
+
+        if self.transcription_callback:
+            try:
+                self.transcription_callback(segment)
+            except Exception as e:
+                logger.error(f"Callback error: {e}")
+
+        logger.info(f"[{segment.source}] {segment.speaker}: {segment.text}")
 
     def _audio_loop(self) -> None:
         """Collect audio from capture sources."""
@@ -547,12 +731,7 @@ class RealtimeTranscriber:
     def _transcription_loop(self) -> None:
         """Periodically transcribe accumulated audio."""
         while self.running:
-            current_time = time.time() - self.start_time
-
-            # Wait for enough audio to accumulate
-            if current_time - self.last_transcription_time < self.chunk_duration:
-                time.sleep(0.1)
-                continue
+            did_transcribe = False
 
             # Transcribe microphone audio (primary source for "You")
             if self.mic_buffer.duration() >= self.chunk_duration:
@@ -561,6 +740,7 @@ class RealtimeTranscriber:
                     source="microphone",
                     speaker="You"
                 )
+                did_transcribe = True
 
             # Transcribe system audio (for "Others")
             if self.system_buffer.duration() >= self.chunk_duration:
@@ -569,8 +749,10 @@ class RealtimeTranscriber:
                     source="system",
                     speaker="Other"
                 )
+                did_transcribe = True
 
-            self.last_transcription_time = current_time
+            if not did_transcribe:
+                time.sleep(0.05)
 
     def _transcribe_buffer(
         self,
@@ -578,12 +760,13 @@ class RealtimeTranscriber:
         source: str,
         speaker: str
     ) -> None:
-        """Transcribe audio from a buffer using mlx-whisper (GPU) or faster-whisper (CPU fallback)."""
+        """Transcribe audio from a buffer using the selected real-time backend."""
         if not self.model:
             return
 
-        # Get audio and resample to 16kHz if needed
-        audio = buffer.get_audio(duration=self.chunk_duration + self.overlap_duration)
+        # Get audio and resample to 16kHz if needed. Only remove the processed
+        # chunk, so audio captured during inference remains queued.
+        audio = buffer.pop_ready_audio(self.chunk_duration, self.overlap_duration)
 
         if len(audio) < 1600:  # Less than 0.1s of audio
             return
@@ -596,8 +779,12 @@ class RealtimeTranscriber:
         try:
             current_time = time.time() - self.start_time
 
+            if self.transcription_backend == "lfm2-audio":
+                text = self._transcribe_with_lfm2(audio, 16000)
+                if text:
+                    self._process_text_result(text, current_time, source, speaker)
             # Use mlx-whisper if available (GPU accelerated)
-            if hasattr(self, 'mlx_whisper') and self.mlx_whisper is not None:
+            elif hasattr(self, 'mlx_whisper') and self.mlx_whisper is not None:
                 result = self._transcribe_with_mlx(audio, source)
                 if result:
                     self._process_mlx_result(result, current_time, source, speaker)
@@ -608,8 +795,16 @@ class RealtimeTranscriber:
         except Exception as e:
             logger.error(f"Transcription error: {e}")
 
-        # Clear processed audio (keep overlap)
-        buffer.clear()
+    def _transcribe_with_lfm2(self, audio, sample_rate: int) -> Optional[str]:
+        """Transcribe using Liquid AI LFM2-Audio through llama.cpp."""
+        if not self.lfm2_transcriber:
+            return None
+
+        try:
+            return self.lfm2_transcriber.transcribe(audio, sample_rate=sample_rate)
+        except Exception as e:
+            logger.error(f"LFM2-Audio transcription error: {e}")
+            return None
 
     def _transcribe_with_mlx(self, audio, source: str):
         """Transcribe using mlx-whisper (GPU accelerated on Apple Silicon)."""
@@ -626,6 +821,92 @@ class RealtimeTranscriber:
             logger.error(f"mlx-whisper transcription error: {e}")
             return None
 
+    def _has_poor_segment_quality(
+        self,
+        text: str,
+        avg_logprob: Optional[float] = None,
+        no_speech_prob: Optional[float] = None,
+        compression_ratio: Optional[float] = None
+    ) -> bool:
+        """Use Whisper metadata to reject likely silence/noise hallucinations."""
+        words = transcript_words(text)
+
+        if no_speech_prob is not None and no_speech_prob >= 0.8:
+            logger.debug(f"Skipping likely silence segment: '{text}'")
+            return True
+
+        if compression_ratio is not None and compression_ratio >= 2.4 and len(words) >= 6:
+            logger.debug(f"Skipping high-compression repetitive segment: '{text}'")
+            return True
+
+        if avg_logprob is not None and avg_logprob <= -1.2 and len(words) <= 5:
+            logger.debug(f"Skipping low-confidence short segment: '{text}'")
+            return True
+
+        return False
+
+    def _is_recent_duplicate(
+        self,
+        text: str,
+        current_time: float,
+        source: str,
+        speaker: str,
+        window_seconds: float = 12.0
+    ) -> bool:
+        """Skip repeated segments from the same speaker/source in a short window."""
+        normalized = normalize_transcript_text(text)
+        if not normalized:
+            return True
+
+        with self.segments_lock:
+            for previous in reversed(self.segments[-12:]):
+                if previous.source != source or previous.speaker != speaker:
+                    continue
+
+                if current_time - previous.end_time > window_seconds:
+                    break
+
+                previous_normalized = normalize_transcript_text(previous.text)
+                if normalized == previous_normalized:
+                    logger.debug(f"Skipping recent duplicate segment: '{text}'")
+                    return True
+
+        return False
+
+    def _process_text_result(self, text: str, current_time: float, source: str, speaker: str):
+        """Process a backend result that returns plain text for the whole chunk."""
+        text = text.strip()
+
+        if not text or len(text) < 4:
+            return
+
+        if is_hallucination(text):
+            logger.debug(f"Skipping hallucination: '{text}'")
+            return
+
+        if self._is_recent_duplicate(text, current_time, source, speaker):
+            return
+
+        transcript_segment = TranscriptSegment(
+            text=text,
+            start_time=max(0.0, current_time - self.chunk_duration),
+            end_time=current_time,
+            speaker=speaker,
+            source=source,
+            confidence=0.0
+        )
+
+        with self.segments_lock:
+            self.segments.append(transcript_segment)
+
+        if self.transcription_callback:
+            try:
+                self.transcription_callback(transcript_segment)
+            except Exception as e:
+                logger.error(f"Callback error: {e}")
+
+        logger.info(f"[{source}] {speaker}: {text}")
+
     def _process_mlx_result(self, result, current_time: float, source: str, speaker: str):
         """Process mlx-whisper transcription result."""
         if not result or "segments" not in result:
@@ -633,6 +914,9 @@ class RealtimeTranscriber:
 
         for segment in result["segments"]:
             text = segment.get("text", "").strip()
+            avg_logprob = segment.get("avg_logprob")
+            no_speech_prob = segment.get("no_speech_prob")
+            compression_ratio = segment.get("compression_ratio")
 
             # Skip empty or very short segments (less than 4 chars)
             if not text or len(text) < 4:
@@ -643,13 +927,19 @@ class RealtimeTranscriber:
                 logger.debug(f"Skipping hallucination: '{text}'")
                 continue
 
+            if self._has_poor_segment_quality(text, avg_logprob, no_speech_prob, compression_ratio):
+                continue
+
+            if self._is_recent_duplicate(text, current_time, source, speaker):
+                continue
+
             transcript_segment = TranscriptSegment(
                 text=text,
                 start_time=current_time - self.chunk_duration + segment.get("start", 0),
                 end_time=current_time - self.chunk_duration + segment.get("end", 0),
                 speaker=speaker,
                 source=source,
-                confidence=segment.get("avg_logprob", 0.0)
+                confidence=avg_logprob or 0.0
             )
 
             with self.segments_lock:
@@ -692,6 +982,9 @@ class RealtimeTranscriber:
 
         for segment in segments:
             text = segment.text.strip()
+            avg_logprob = getattr(segment, "avg_logprob", None)
+            no_speech_prob = getattr(segment, "no_speech_prob", None)
+            compression_ratio = getattr(segment, "compression_ratio", None)
 
             # Skip empty or very short segments (less than 4 chars)
             if not text or len(text) < 4:
@@ -702,13 +995,19 @@ class RealtimeTranscriber:
                 logger.debug(f"Skipping hallucination: '{text}'")
                 continue
 
+            if self._has_poor_segment_quality(text, avg_logprob, no_speech_prob, compression_ratio):
+                continue
+
+            if self._is_recent_duplicate(text, current_time, source, speaker):
+                continue
+
             transcript_segment = TranscriptSegment(
                 text=text,
                 start_time=current_time - self.chunk_duration + segment.start,
                 end_time=current_time - self.chunk_duration + segment.end,
                 speaker=speaker,
                 source=source,
-                confidence=segment.avg_logprob if hasattr(segment, 'avg_logprob') else 0.0
+                confidence=avg_logprob or 0.0
             )
 
             with self.segments_lock:
@@ -825,7 +1124,8 @@ def create_realtime_transcriber(
     enable_microphone: bool = True,
     callback: Optional[Callable[[TranscriptSegment], None]] = None,
     session_name: Optional[str] = None,
-    enable_live_logging: bool = True
+    enable_live_logging: bool = True,
+    transcription_backend: str = "whisper"
 ) -> tuple:
     """
     Factory function to create a configured RealtimeTranscriber with optional live logging.
@@ -853,7 +1153,8 @@ def create_realtime_transcriber(
         language=language,
         enable_system_audio=enable_system_audio,
         enable_microphone=enable_microphone,
-        transcription_callback=callback
+        transcription_callback=callback,
+        transcription_backend=transcription_backend
     )
 
     return transcriber, live_logger
@@ -869,7 +1170,7 @@ if __name__ == "__main__":
     )
 
     def on_transcript(segment: TranscriptSegment):
-        print(f"\n{segment.format_log_entry()}")
+        print(f"\n{segment.format_log_entry()}", flush=True)
 
     print("Starting real-time transcription with live logging...")
     print("Press Ctrl+C to stop\n")
@@ -907,4 +1208,3 @@ if __name__ == "__main__":
         os.makedirs("transcripts", exist_ok=True)
         transcriber.save_transcript(output_path)
         print(f"Final transcript saved to: {output_path}")
-

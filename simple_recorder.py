@@ -622,6 +622,11 @@ def record(duration, session_name):
         return
 
     recorder = SimpleRecorder()
+    from src.config import get_config
+    app_config = get_config()
+    realtime_model = app_config.get_realtime_transcription_model()
+    realtime_model_info = app_config.get_realtime_transcription_model_info(realtime_model) or {}
+    realtime_backend = realtime_model_info.get("backend", "whisper")
     transcriber = None
     live_logger = None
     recording_started = False
@@ -634,7 +639,7 @@ def record(duration, session_name):
 
     def on_transcript_segment(segment):
         """Callback for real-time transcript updates"""
-        print(f"  [{segment.speaker}]: {segment.text}")
+        print(f"  [{segment.speaker}]: {segment.text}", flush=True)
 
     def process_and_save(transcript_text: str, segments: list, duration_seconds: float):
         """Process transcript and save results"""
@@ -783,6 +788,7 @@ def record(duration, session_name):
 
         # Create realtime transcriber with dual audio capture
         print("🔊 Initializing dual audio capture (system + microphone)...")
+        print(f"🧠 Real-time transcription model: {realtime_model_info.get('name', realtime_model)}")
         transcriber, live_logger = create_realtime_transcriber(
             model_size="small",  # Use small model for better accuracy
             language="en",
@@ -790,13 +796,17 @@ def record(duration, session_name):
             enable_microphone=True,
             callback=on_transcript_segment,
             session_name=session_name,
-            enable_live_logging=True
+            enable_live_logging=True,
+            transcription_backend=realtime_backend
         )
 
         # Start real-time transcription
         if not transcriber.start():
             print("❌ Failed to start real-time transcription")
-            print("   Make sure SystemAudioDump is available for system audio capture")
+            if realtime_backend == "apple-speech":
+                print("   Check Microphone and Screen & System Audio Recording permissions in macOS System Settings")
+            else:
+                print("   Make sure the selected audio backend and capture devices are available")
             # Try microphone-only fallback
             print("🎤 Trying microphone-only mode...")
             transcriber, live_logger = create_realtime_transcriber(
@@ -806,7 +816,8 @@ def record(duration, session_name):
                 enable_microphone=True,
                 callback=on_transcript_segment,
                 session_name=session_name,
-                enable_live_logging=True
+                enable_live_logging=True,
+                transcription_backend=realtime_backend
             )
             if not transcriber.start():
                 print("❌ Failed to start transcription - check audio devices")
@@ -1330,6 +1341,55 @@ def set_model(model_name):
     else:
         print(f"ERROR: Failed to save model configuration")
         print(json.dumps({"success": False, "error": "Failed to save config"}))
+
+
+@cli.command()
+def list_realtime_transcription_models():
+    """List supported real-time transcription models with metadata"""
+    from src.config import get_config
+
+    config = get_config()
+    current_model = config.get_realtime_transcription_model()
+
+    result = {
+        "current_model": current_model,
+        "supported_models": config.list_supported_realtime_transcription_models()
+    }
+
+    print(json.dumps(result, indent=2))
+
+
+@cli.command()
+def get_realtime_transcription_model():
+    """Get the currently configured real-time transcription model"""
+    from src.config import get_config
+
+    config = get_config()
+    current_model = config.get_realtime_transcription_model()
+
+    result = {
+        "model": current_model,
+        "info": config.get_realtime_transcription_model_info(current_model)
+    }
+
+    print(json.dumps(result, indent=2))
+
+
+@cli.command()
+@click.argument('model_name')
+def set_realtime_transcription_model(model_name):
+    """Set the preferred model for real-time transcription"""
+    from src.config import get_config
+
+    config = get_config()
+    success = config.set_realtime_transcription_model(model_name)
+
+    if success:
+        print(f"SUCCESS: Real-time transcription model set to {model_name}")
+        print(json.dumps({"success": True, "model": model_name}))
+    else:
+        print(f"ERROR: Unsupported real-time transcription model: {model_name}")
+        print(json.dumps({"success": False, "error": "Unsupported real-time transcription model"}))
 
 
 @cli.command()

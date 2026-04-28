@@ -552,7 +552,7 @@ ipcMain.handle('start-recording-ui', async (_, sessionName) => {
     
     console.log('Starting long recording process...');
     sendDebugLog(`Starting recording process: ${sessionName || 'Meeting'}`);
-    sendDebugLog('$ python simple_recorder.py record 3600');
+    sendDebugLog('$ python -u simple_recorder.py record 3600');
     
     const pythonPath = path.join(__dirname, '..', 'venv', 'bin', 'python');
     const scriptPath = path.join(__dirname, '..', 'simple_recorder.py');
@@ -560,8 +560,9 @@ ipcMain.handle('start-recording-ui', async (_, sessionName) => {
     const actualSessionName = sessionName || 'Meeting';
     
     // Start background recording with 60-minute limit
-    currentRecordingProcess = spawn(pythonPath, [scriptPath, 'record', '3600', actualSessionName], {
-      cwd: path.join(__dirname, '..')
+    currentRecordingProcess = spawn(pythonPath, ['-u', scriptPath, 'record', '3600', actualSessionName], {
+      cwd: path.join(__dirname, '..'),
+      env: { ...process.env, PYTHONUNBUFFERED: '1' }
     });
 
     let hasStarted = false;
@@ -1536,6 +1537,38 @@ ipcMain.handle('set-model', async (event, modelName) => {
   }
 });
 
+ipcMain.handle('list-realtime-transcription-models', async () => {
+  try {
+    const result = await runPythonScript('simple_recorder.py', ['list-realtime-transcription-models']);
+    const jsonData = JSON.parse(result);
+
+    return {
+      success: true,
+      ...jsonData
+    };
+  } catch (error) {
+    sendDebugLog(`Error listing real-time transcription models: ${error.message}`);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('set-realtime-transcription-model', async (event, modelName) => {
+  try {
+    sendDebugLog(`Setting real-time transcription model to: ${modelName}`);
+    const result = await runPythonScript('simple_recorder.py', ['set-realtime-transcription-model', modelName]);
+
+    const jsonMatch = result.match(/\{.*\}/s);
+    if (jsonMatch) {
+      return JSON.parse(jsonMatch[0]);
+    }
+
+    return { success: true, model: modelName };
+  } catch (error) {
+    sendDebugLog(`Error setting real-time transcription model: ${error.message}`);
+    return { success: false, error: error.message };
+  }
+});
+
 ipcMain.handle('get-notifications', async () => {
   try {
     const result = await runPythonScript('simple_recorder.py', ['get-notifications']);
@@ -1816,8 +1849,9 @@ ipcMain.handle('start-realtime-transcription', async (event, options = {}) => {
 
     sendDebugLog('Starting real-time transcription...');
 
-    realtimeTranscriptionProcess = spawn(pythonPath, [scriptPath], {
+    realtimeTranscriptionProcess = spawn(pythonPath, ['-u', scriptPath], {
       cwd: path.join(__dirname, '..'),
+      env: { ...process.env, PYTHONUNBUFFERED: '1' },
       stdio: ['pipe', 'pipe', 'pipe']
     });
 

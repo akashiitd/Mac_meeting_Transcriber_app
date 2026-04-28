@@ -16,6 +16,7 @@ class Config:
     """Manages application configuration with file persistence."""
 
     DEFAULT_MODEL = "llama3.2:3b"
+    DEFAULT_REALTIME_TRANSCRIPTION_MODEL = "apple-speech"
 
     # Supported models with metadata (organized by parameter size, ascending)
     SUPPORTED_MODELS = {
@@ -50,6 +51,33 @@ class Config:
             "description": "Strong reasoning and analysis capabilities",
             "speed": "medium",
             "quality": "excellent"
+        }
+    }
+
+    SUPPORTED_REALTIME_TRANSCRIPTION_MODELS = {
+        "apple-speech": {
+            "name": "Apple Speech (macOS Built-in)",
+            "backend": "apple-speech",
+            "size": "system",
+            "description": "Native macOS SpeechAnalyzer with built-in microphone and system audio capture",
+            "speed": "live",
+            "quality": "system"
+        },
+        "whisper-small": {
+            "name": "Whisper Small MLX",
+            "backend": "whisper",
+            "size": "small",
+            "description": "Current Apple Silicon accelerated Whisper backend",
+            "speed": "fast",
+            "quality": "good"
+        },
+        "lfm2-audio-1.5b-q8": {
+            "name": "LFM2-Audio 1.5B Q8",
+            "backend": "lfm2-audio",
+            "size": "1.5B",
+            "description": "Liquid AI local ASR through specialized llama.cpp runner",
+            "speed": "experimental",
+            "quality": "experimental"
         }
     }
 
@@ -106,6 +134,7 @@ class Config:
         """Get default configuration."""
         return {
             "model": self.DEFAULT_MODEL,
+            "realtime_transcription_model": self.DEFAULT_REALTIME_TRANSCRIPTION_MODEL,
             "notifications_enabled": True,
             "version": "1.0"
         }
@@ -146,6 +175,30 @@ class Config:
     def list_supported_models(self) -> Dict[str, Dict[str, str]]:
         """Get all supported models with their metadata."""
         return self.SUPPORTED_MODELS.copy()
+
+    def get_realtime_transcription_model(self) -> str:
+        """Get the configured real-time transcription model."""
+        return self._config.get(
+            "realtime_transcription_model",
+            self.DEFAULT_REALTIME_TRANSCRIPTION_MODEL
+        )
+
+    def set_realtime_transcription_model(self, model_name: str) -> bool:
+        """Set the model to use for real-time transcription."""
+        if model_name not in self.SUPPORTED_REALTIME_TRANSCRIPTION_MODELS:
+            logger.warning(f"Real-time transcription model {model_name} not in supported list")
+            return False
+
+        self._config["realtime_transcription_model"] = model_name
+        return self._save()
+
+    def get_realtime_transcription_model_info(self, model_name: str) -> Optional[Dict[str, str]]:
+        """Get metadata about a specific real-time transcription model."""
+        return self.SUPPORTED_REALTIME_TRANSCRIPTION_MODELS.get(model_name)
+
+    def list_supported_realtime_transcription_models(self) -> Dict[str, Dict[str, str]]:
+        """Get all supported real-time transcription models with metadata."""
+        return self.SUPPORTED_REALTIME_TRANSCRIPTION_MODELS.copy()
 
     def get_notifications_enabled(self) -> bool:
         """Get whether desktop notifications are enabled."""

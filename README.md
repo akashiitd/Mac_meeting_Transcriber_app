@@ -6,7 +6,7 @@
   *Your very own Stenographer for every meeting*
 </div>
 
-AI-powered meeting notes assistant that runs entirely on your device using small language models locally hosted. Privacy first approach & zero service costs.
+Mac meeting transcription app that captures your microphone and Mac system audio, transcribes meetings locally with Apple Speech or Whisper, and generates structured summaries with local LLMs through Ollama. Privacy first approach & zero service costs.
 
 <div align="center">
   <img src="website/public/app-demo.png" alt="StenoAI Interface" width="600">
@@ -19,6 +19,7 @@ AI-powered meeting notes assistant that runs entirely on your device using small
 ## Features
 
 - **Local transcription** using OpenAI Whisper
+- **Native Apple Speech live transcription** using macOS SpeechAnalyzer and ScreenCaptureKit for microphone plus system audio
 - **AI summarization** with Ollama models
 - **Multiple AI models** - Choose from 4 models optimized for different use cases
 - **Privacy-first** - no cloud dependencies
@@ -27,7 +28,8 @@ AI-powered meeting notes assistant that runs entirely on your device using small
 ## Models & Performance
 
 **Transcription Models** (Whisper):
-- `small`: Default model - good accuracy and speed on Apple Silicon **(default)**
+- `apple-speech`: Default live backend - uses Apple's built-in macOS Speech framework with microphone and system audio capture **(default)**
+- `small`: Good accuracy and speed on Apple Silicon when using the Whisper backend
 - `base`: Faster but lower accuracy for basic meetings
 - `medium`: High accuracy for important meetings (slower)
 
@@ -77,6 +79,7 @@ You can run it locally as well (see below) if you dont want to install a dmg.
 - Python 3.8+
 - Node.js 18+
 - Homebrew
+- Xcode 26+ or matching Command Line Tools for building the Apple Speech helper
 
 ### Setup
 ```bash
@@ -101,6 +104,15 @@ cd app
 npm install
 npm start
 ```
+
+### Apple Speech live transcription
+
+The `apple-speech` backend uses Apple's Speech framework (`SpeechAnalyzer` and `SpeechTranscriber`) and ScreenCaptureKit. It captures:
+
+- `microphone` as `You`
+- `system` audio as `Other`
+
+On first use, macOS may request Microphone, Speech Recognition, and Screen & System Audio Recording permissions. If system audio capture is denied, enable it in **System Settings > Privacy & Security > Screen & System Audio Recording**, then restart StenoAI.
 
 ### Build
 ```bash

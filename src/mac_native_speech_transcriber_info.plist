@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.stenoai.recorder.apple-speech-helper</string>
+	<key>CFBundleName</key>
+	<string>StenoAI Apple Speech Helper</string>
+	<key>CFBundleExecutable</key>
+	<string>mac_native_speech_transcriber</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>StenoAI needs microphone access to transcribe your voice during meetings.</string>
+	<key>NSAudioCaptureUsageDescription</key>
+	<string>StenoAI needs system audio capture access to transcribe other speakers from meeting apps.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>StenoAI uses Apple Speech recognition to transcribe meeting audio locally.</string>
+</dict>
+</plist>

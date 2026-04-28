@@ -132,6 +132,7 @@ transcripts/*.txt
 output/*.json
 recorder_state*.json
 audio_buffer.npy
+app/native/mac_native_speech_transcriber
 
 # Node.js
 node_modules/

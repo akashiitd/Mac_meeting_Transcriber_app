@@ -1763,6 +1763,23 @@ Session started - waiting for activity...
             </div>
 
             <div class="settings-section">
+                <h3>🎙️ Real-time Transcription</h3>
+                <p>Choose which local model to use while recording live meetings.</p>
+
+                <div style="margin-top: 15px;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Current Transcription Model:</label>
+                    <div id="current-transcription-model-display" style="padding: 10px; background: #2a2a2a; border-radius: 4px; margin-bottom: 15px;">
+                        <span style="font-family: Monaco, monospace; color: #4CAF50;">Loading...</span>
+                    </div>
+
+                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Select Transcription Model:</label>
+                    <div id="transcription-model-list" style="display: flex; flex-direction: column; gap: 10px; max-height: 260px; overflow-y: auto; padding-right: 5px;">
+                        Loading transcription models...
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-section">
                 <h3>🧠 AI Prompts</h3>
                 <p>View the prompts used for meeting summarization and analysis.</p>
 
@@ -2403,13 +2420,7 @@ Session started - waiting for activity...
                     log(`Recording started: ${result.message}`);
                     startStatusMonitoring();
 
-                    // Start real-time transcription
-                    const rtResult = await ipcRenderer.invoke('start-realtime-transcription');
-                    if (rtResult.success) {
-                        log('Real-time transcription started');
-                    } else {
-                        log(`Real-time transcription failed: ${rtResult.error}`);
-                    }
+                    log('Real-time transcription started');
                 } else {
                     log(`Failed to start: ${result.error}`);
                     setUIState('ready');
@@ -2425,14 +2436,6 @@ Session started - waiting for activity...
             setUIState('processing');
             stopStatusMonitoring();
 
-            // Stop real-time transcription
-            try {
-                await ipcRenderer.invoke('stop-realtime-transcription');
-                log('Real-time transcription stopped');
-            } catch (error) {
-                log(`Failed to stop real-time transcription: ${error.message}`);
-            }
-            
             // Add current session to processing list immediately
             const currentSessionName = sessionNameInput.value.trim() || 'Meeting';
             processingMeetings.add(currentSessionName);
@@ -3249,6 +3252,7 @@ Session started - waiting for activity...
                 aiSettingsPanel.style.right = '0';
                 loadPrompts();
                 loadModels();
+                loadRealtimeTranscriptionModels();
             } else {
                 aiSettingsPanel.style.right = '-400px';
             }
@@ -3366,6 +3370,106 @@ Session started - waiting for activity...
                 }
 
                 modelListDiv.appendChild(modelCard);
+            }
+        }
+
+        async function loadRealtimeTranscriptionModels() {
+            try {
+                const result = await ipcRenderer.invoke('list-realtime-transcription-models');
+
+                if (result.success) {
+                    displayCurrentTranscriptionModel(result.current_model);
+                    displayTranscriptionModelList(result.supported_models, result.current_model);
+                } else {
+                    document.getElementById('current-transcription-model-display').innerHTML = '<span style="color: #f44336;">Failed to load transcription model</span>';
+                    document.getElementById('transcription-model-list').innerHTML = '<span style="color: #f44336;">Failed to load transcription models</span>';
+                }
+            } catch (error) {
+                console.error('Error loading transcription models:', error);
+                document.getElementById('current-transcription-model-display').innerHTML = '<span style="color: #f44336;">Error loading transcription model</span>';
+                document.getElementById('transcription-model-list').innerHTML = '<span style="color: #f44336;">Error loading transcription models</span>';
+            }
+        }
+
+        function displayCurrentTranscriptionModel(modelName) {
+            const currentModelDisplay = document.getElementById('current-transcription-model-display');
+            currentModelDisplay.innerHTML = `<span style="font-family: Monaco, monospace; color: #4CAF50;">${modelName}</span>`;
+        }
+
+        function displayTranscriptionModelList(models, currentModel) {
+            const modelListDiv = document.getElementById('transcription-model-list');
+            modelListDiv.innerHTML = '';
+
+            for (const [modelName, modelInfo] of Object.entries(models)) {
+                const isCurrentModel = modelName === currentModel;
+                const modelCard = document.createElement('div');
+                modelCard.style.cssText = `
+                    padding: 12px;
+                    background: ${isCurrentModel ? '#2a4a2a' : '#2a2a2a'};
+                    border: 2px solid ${isCurrentModel ? '#4CAF50' : '#444'};
+                    border-radius: 6px;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                `;
+
+                modelCard.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+                        <div style="flex: 1;">
+                            <div style="font-weight: 600; margin-bottom: 4px; font-family: Monaco, monospace;">
+                                ${modelInfo.name || modelName}
+                                ${isCurrentModel ? '<span style="color: #4CAF50; margin-left: 8px;">✓ Active</span>' : ''}
+                            </div>
+                            <div style="font-size: 12px; color: #aaa;">
+                                Backend: ${modelInfo.backend} | Size: ${modelInfo.size} | Speed: ${modelInfo.speed}
+                            </div>
+                            <div style="font-size: 12px; color: #bbb; margin-top: 4px;">${modelInfo.description}</div>
+                        </div>
+                        <div>
+                            ${isCurrentModel ?
+                                '<span style="color: #4CAF50; font-size: 24px;">●</span>' :
+                                '<button class="btn" onclick="selectRealtimeTranscriptionModel(\'' + modelName + '\')" style="margin: 0; padding: 6px 12px; font-size: 12px;">Select</button>'
+                            }
+                        </div>
+                    </div>
+                `;
+
+                if (!isCurrentModel) {
+                    modelCard.onmouseenter = () => {
+                        modelCard.style.borderColor = '#4CAF50';
+                        modelCard.style.background = '#2a3a2a';
+                    };
+                    modelCard.onmouseleave = () => {
+                        modelCard.style.borderColor = '#444';
+                        modelCard.style.background = '#2a2a2a';
+                    };
+                }
+
+                modelListDiv.appendChild(modelCard);
+            }
+        }
+
+        async function selectRealtimeTranscriptionModel(modelName) {
+            try {
+                const confirmMsg = modelName === 'lfm2-audio-1.5b-q8'
+                    ? `Switch real-time transcription to ${modelName}?\n\nThe first recording with this model will download Liquid AI's LFM2-Audio files and llama.cpp runner locally.`
+                    : `Switch real-time transcription to ${modelName}?`;
+
+                if (!confirm(confirmMsg)) {
+                    return;
+                }
+
+                const result = await ipcRenderer.invoke('set-realtime-transcription-model', modelName);
+
+                if (!result.success) {
+                    alert(`Failed to set transcription model: ${result.error}`);
+                    return;
+                }
+
+                showModelNotification(`Real-time transcription switched to ${modelName}!`, 'success');
+                loadRealtimeTranscriptionModels();
+            } catch (error) {
+                console.error('Error selecting transcription model:', error);
+                alert(`Error selecting transcription model: ${error.message}`);
             }
         }
 
