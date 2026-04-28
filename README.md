@@ -1,17 +1,15 @@
 <div align="center">
-  <img src="website/public/stenoai-logo-512.svg" alt="StenoAI Logo" width="120" height="120">
+  <img src="website/public/app-logo-512.svg" alt="Mac Meeting Transcriber Logo" width="120" height="120">
 
-  # StenoAI
+  # Mac Meeting Transcriber
 
-  *Your very own Stenographer for every meeting*
+  *Your very own transcriber for every meeting*
 </div>
 
 Mac meeting transcription app that captures your microphone and Mac system audio, transcribes meetings locally with Apple Speech or Whisper, and generates structured summaries with local LLMs through Ollama. Privacy first approach & zero service costs.
 
 <div align="center">
-  <img src="website/public/app-demo.png" alt="StenoAI Interface" width="600">
-
-  [![Twitter Follow](https://img.shields.io/twitter/follow/ruzin?style=social)](https://x.com/ruzin_saleem)
+  <img src="website/public/app-demo.png" alt="Mac Meeting Transcriber Interface" width="600">
 </div>
 
 <p align="center"><sub><i>Disclaimer: This is an independent open-source project for meeting-notes productivity and is not affiliated with, endorsed by, or associated with any similarly named company.</i></sub></p>
@@ -27,8 +25,8 @@ Mac meeting transcription app that captures your microphone and Mac system audio
 
 ## Models & Performance
 
-**Transcription Models** (Whisper):
-- `apple-speech`: Default live backend - uses Apple's built-in macOS Speech framework with microphone and system audio capture **(default)**
+**Transcription Backends:**
+- `apple-speech`: Default backend. Uses the Mac built-in Apple Speech framework with microphone and system audio capture. No BlackHole or multi-output device is required. **(default)**
 - `small`: Good accuracy and speed on Apple Silicon when using the Whisper backend
 - `base`: Faster but lower accuracy for basic meetings
 - `medium`: High accuracy for important meetings (slower)
@@ -55,8 +53,8 @@ Mac meeting transcription app that captures your microphone and Mac system audio
 
 Download the latest release for your Mac:
 
-- [Apple Silicon (M1/M2/M3/M4)](https://github.com/ruzin/stenoai/releases/latest/download/stenoAI-macos-arm64.dmg)
-- [Intel Macs](https://github.com/ruzin/stenoai/releases/latest/download/stenoAI-macos-x64.dmg) Performance on Intel Macs is limited due to lack of dedicated AI inference capabilities on these older chips.
+- [Apple Silicon (M1/M2/M3/M4)](https://github.com/akashiitd/Mac_meeting_Transcriber_app/releases/latest/download/mac-meeting-transcriber-macos-arm64.dmg)
+- [Intel Macs](https://github.com/akashiitd/Mac_meeting_Transcriber_app/releases/latest/download/mac-meeting-transcriber-macos-x64.dmg) Performance on Intel Macs is limited due to lack of dedicated AI inference capabilities on these older chips.
 
 ### Installing on macOS
 
@@ -67,8 +65,8 @@ Download the latest release for your Mac:
    - Go to **System Settings > Privacy & Security** and click **"Open Anyway"**
 
    **Alternatively:**
-   - Right-click StenoAI in Applications and select **"Open"**
-   - Or run in Terminal: `xattr -cr /Applications/StenoAI.app`
+   - Right-click Mac Meeting Transcriber in Applications and select **"Open"**
+   - Or run in Terminal: `xattr -cr /Applications/Mac Meeting Transcriber.app`
 5. **The app will work normally on subsequent launches**
 
 You can run it locally as well (see below) if you dont want to install a dmg.
@@ -83,8 +81,8 @@ You can run it locally as well (see below) if you dont want to install a dmg.
 
 ### Setup
 ```bash
-git clone https://github.com/ruzin/stenoai.git
-cd stenoai
+git clone https://github.com/akashiitd/Mac_meeting_Transcriber_app.git
+cd Mac_meeting_Transcriber_app
 
 # Backend
 python3 -m venv venv
@@ -112,7 +110,7 @@ The `apple-speech` backend uses Apple's Speech framework (`SpeechAnalyzer` and `
 - `microphone` as `You`
 - `system` audio as `Other`
 
-On first use, macOS may request Microphone, Speech Recognition, and Screen & System Audio Recording permissions. If system audio capture is denied, enable it in **System Settings > Privacy & Security > Screen & System Audio Recording**, then restart StenoAI.
+On first use, macOS may request Microphone, Speech Recognition, and Screen & System Audio Recording permissions. If system audio capture is denied, enable it in **System Settings > Privacy & Security > Screen & System Audio Recording**, then restart Mac Meeting Transcriber.
 
 ### Build
 ```bash
@@ -163,7 +161,7 @@ git push origin v$(node -p "require('./package.json').version")
 ## Project Structure
 
 ```
-stenoai/
+mac-meeting-transcriber/
 ├── app/                  # Electron desktop app
 ├── src/                  # Python backend
 ├── website/              # Marketing site
@@ -176,18 +174,18 @@ stenoai/
 
 ### Debug Logs
 
-StenoAI includes a built-in debug panel for troubleshooting issues:
+Mac Meeting Transcriber includes a built-in debug panel for troubleshooting issues:
 
 **In-App Debug Panel:**
-1. Launch StenoAI
+1. Launch Mac Meeting Transcriber
 2. Click the 🔨 hammer icon (next to settings)
 3. The debug panel shows real-time logs of all operations
 
 **Terminal Logging (Advanced):**
 For detailed system-level logs, run the app from Terminal:
 ```bash
-# Launch StenoAI with full logging
-/Applications/StenoAI.app/Contents/MacOS/StenoAI
+# Launch Mac Meeting Transcriber with full logging
+/Applications/Mac Meeting Transcriber.app/Contents/MacOS/Mac Meeting Transcriber
 ```
 
 This displays comprehensive logs including:
@@ -201,11 +199,11 @@ This displays comprehensive logs including:
 **System Console Logs:**
 For system-level debugging:
 ```bash
-# View recent StenoAI-related logs
-log show --last 10m --predicate 'process CONTAINS "StenoAI" OR eventMessage CONTAINS "ollama"' --info
+# View recent Mac Meeting Transcriber-related logs
+log show --last 10m --predicate 'process CONTAINS "Mac Meeting Transcriber" OR eventMessage CONTAINS "ollama"' --info
 
 # Monitor live logs
-log stream --predicate 'eventMessage CONTAINS "ollama" OR process CONTAINS "StenoAI"' --level info
+log stream --predicate 'eventMessage CONTAINS "ollama" OR process CONTAINS "Mac Meeting Transcriber"' --level info
 ```
 
 **Common Issues:**
@@ -215,13 +213,13 @@ log stream --predicate 'eventMessage CONTAINS "ollama" OR process CONTAINS "Sten
 - **Slow processing**: Normal for longer recordings - Ollama processing is CPU-intensive especially on older intel Macs
 
 ### Logs Location
-- **User Data**: `~/Library/Application Support/stenoai/`
-- **Recordings**: `~/Library/Application Support/stenoai/recordings/`
-- **Transcripts**: `~/Library/Application Support/stenoai/transcripts/`
-- **Summaries**: `~/Library/Application Support/stenoai/output/`
+- **User Data**: `~/Library/Application Support/mac-meeting-transcriber/`
+- **Recordings**: `~/Library/Application Support/mac-meeting-transcriber/recordings/`
+- **Transcripts**: `~/Library/Application Support/mac-meeting-transcriber/transcripts/`
+- **Summaries**: `~/Library/Application Support/mac-meeting-transcriber/output/`
 
 ## License
 
-**StenoAI is free for personal, non-commercial use.**
+**Mac Meeting Transcriber is free for personal, non-commercial use.**
 
 CC BY-NC 4.0 (Creative Commons Attribution-NonCommercial 4.0 International)

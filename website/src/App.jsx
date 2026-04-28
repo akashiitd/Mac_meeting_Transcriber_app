@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { Mic, ShieldCheck, Zap, Sparkles, Cpu, FileText, Lock, Download, Github } from "lucide-react";
 
 // Update with actual GitHub repo URL
-const GITHUB_URL = "https://github.com/ruzin/stenoai";
+const GITHUB_URL = "https://github.com/akashiitd/Mac_meeting_Transcriber_app";
 
 // Download URLs pointing to latest release assets
 // GitHub's /latest/download/ automatically finds the correct versioned file
-const DOWNLOAD_URL_MAC_SILICON = "https://github.com/ruzin/stenoai/releases/latest/download/stenoAI-macos-arm64.dmg";
-const DOWNLOAD_URL_MAC_INTEL = "https://github.com/ruzin/stenoai/releases/latest/download/stenoAI-macos-x64.dmg";
+const DOWNLOAD_URL_MAC_SILICON = "https://github.com/akashiitd/Mac_meeting_Transcriber_app/releases/latest/download/mac-meeting-transcriber-macos-arm64.dmg";
+const DOWNLOAD_URL_MAC_INTEL = "https://github.com/akashiitd/Mac_meeting_Transcriber_app/releases/latest/download/mac-meeting-transcriber-macos-x64.dmg";
 
 const features = [
   {
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "How do I install on macOS?",
-    a: "(1) Download and open the DMG file, (2) Drag the app to Applications, (3) When you first launch the app, macOS may show a security warning, (4) To fix this: Go to System Settings > Privacy & Security, scroll down and click 'Open Anyway'. Alternatively, run in Terminal: 'xattr -cr /Applications/StenoAI.app' (5) The app will work normally on subsequent launches.",
+    a: "(1) Download and open the DMG file, (2) Drag the app to Applications, (3) When you first launch the app, macOS may show a security warning, (4) To fix this: Go to System Settings > Privacy & Security, scroll down and click 'Open Anyway'. Alternatively, run in Terminal: 'xattr -cr /Applications/Mac Meeting Transcriber.app' (5) The app will work normally on subsequent launches.",
   },
   {
     q: "What AI models are available?",
@@ -52,11 +52,11 @@ const faqs = [
   },
   {
     q: "Is my data private and secure?",
-    a: "Absolutely. stenoAI runs 100% locally with zero cloud dependencies. Your meeting recordings and transcripts stay on your Mac and are never uploaded anywhere.",
+    a: "Absolutely. Mac Meeting Transcriber runs 100% locally with zero cloud dependencies. Your meeting recordings and transcripts stay on your Mac and are never uploaded anywhere.",
   },
   {
     q: "How accurate is the meeting transcription?",
-    a: "StenoAI uses OpenAI's Whisper model to generate accurate text from meeting recordings across accents and languages. Results depend on audio clarity — quiet rooms and good microphones produce the best outcomes.",
+    a: "Mac Meeting Transcriber uses OpenAI's Whisper model to generate accurate text from meeting recordings across accents and languages. Results depend on audio clarity — quiet rooms and good microphones produce the best outcomes.",
   },
   {
     q: "What platforms are supported?",
@@ -72,7 +72,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="p-2 rounded-xl bg-slate-800 border border-white/10"><Mic className="w-5 h-5" aria-hidden="true" /></div>
-            <span className="text-lg font-semibold tracking-tight">stenoAI</span>
+            <span className="text-lg font-semibold tracking-tight">Mac Meeting Transcriber</span>
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300">
             <a href="#features" className="hover:text-white">Features</a>
@@ -101,7 +101,7 @@ export default function App() {
               <span className="block bg-gradient-to-r from-indigo-400 via-sky-400 to-cyan-300 text-transparent bg-clip-text">Private. Fast. Accurate.</span>
             </motion.h1>
             <p className="mt-6 text-slate-300 text-lg leading-relaxed max-w-prose">
-              StenoAI is an AI-powered meeting notes assistant that runs locally on your device. Engineered for privacy - your data never leaves your device. No cloud accounts, no bots joining calls, and free to use.
+              Mac Meeting Transcriber is an AI-powered meeting notes assistant that runs locally on your device. Engineered for privacy - your data never leaves your device. No cloud accounts, no bots joining calls, and free to use.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a href="#download" className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white text-slate-900 px-5 py-3 font-semibold hover:bg-slate-100">
@@ -168,7 +168,7 @@ export default function App() {
       <section id="faq" className="max-w-6xl mx-auto px-4 py-12 md:py-20">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold">Frequently asked questions</h2>
-          <p className="mt-4 text-slate-300">Everything you need to know about stenoAI.</p>
+          <p className="mt-4 text-slate-300">Everything you need to know about Mac Meeting Transcriber.</p>
         </div>
         <div className="mt-10 grid md:grid-cols-2 gap-6">
           {faqs.map((f) => (
@@ -196,14 +196,14 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-4 py-10 text-sm text-slate-400">
           <div className="flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
             <div className="flex items-center gap-2 text-slate-300">
-              <Mic className="w-4 h-4" aria-hidden="true" /> <span className="font-semibold">stenoAI</span>
+              <Mic className="w-4 h-4" aria-hidden="true" /> <span className="font-semibold">Mac Meeting Transcriber</span>
             </div>
             <div className="flex gap-4">
               <a href="#" className="hover:text-white">Privacy</a>
               <a href="#" className="hover:text-white">Terms</a>
               <a href="#" className="hover:text-white">Contact</a>
             </div>
-            <div>© 2026 stenoAI</div>
+            <div>© 2026 Mac Meeting Transcriber</div>
           </div>
           <div className="mt-6 text-center text-xs text-slate-500">
             <i>Disclaimer: This is an independent open-source project for meeting-notes productivity and is not affiliated with, endorsed by, or associated with any similarly named company.</i>

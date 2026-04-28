@@ -59,8 +59,8 @@ class LFM2AudioTranscriber:
 
     @staticmethod
     def _default_cache_dir() -> Path:
-        if "StenoAI.app" in str(Path(__file__)) or "Applications" in str(Path(__file__)):
-            base_dir = Path.home() / "Library" / "Application Support" / "stenoai"
+        if "Mac Meeting Transcriber.app" in str(Path(__file__)) or "Applications" in str(Path(__file__)):
+            base_dir = Path.home() / "Library" / "Application Support" / "mac-meeting-transcriber"
         else:
             base_dir = Path(__file__).parent.parent
         return base_dir / "models" / "LFM2-Audio-1.5B-GGUF"

@@ -1,6 +1,6 @@
 # Contributor License Agreement
 
-Thank you for your interest in contributing to StenoAI (the "Project").
+Thank you for your interest in contributing to Mac Meeting Transcriber (the "Project").
 
 This Contributor License Agreement ("Agreement") documents the rights granted by contributors to the Project maintainer.
 

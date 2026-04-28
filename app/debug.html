@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StenoAI Debug Logs</title>
+    <title>Mac Meeting Transcriber Debug Logs</title>
     <style>
         body {
             margin: 0;
@@ -157,7 +157,7 @@
     </div>
 
     <div class="debug-console" id="debug-console">
-🐛 StenoAI Debug Console
+🐛 Mac Meeting Transcriber Debug Console
 📅 Session started at: [timestamp]
 🔄 Waiting for debug messages...
 
@@ -210,7 +210,7 @@
 
         // Controls
         document.getElementById('clear-logs-btn').addEventListener('click', () => {
-            debugConsole.textContent = `🐛 StenoAI Debug Console\n📅 Session cleared at: ${new Date().toLocaleString()}\n🔄 Waiting for debug messages...\n\n`;
+            debugConsole.textContent = `🐛 Mac Meeting Transcriber Debug Console\n📅 Session cleared at: ${new Date().toLocaleString()}\n🔄 Waiting for debug messages...\n\n`;
             logCount = 0;
             updateStatus();
             statusText.textContent = 'Cleared';
@@ -228,7 +228,7 @@
 
         document.getElementById('save-logs-btn').addEventListener('click', () => {
             const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-            const filename = `stenoai-debug-${timestamp}.log`;
+            const filename = `mac-meeting-transcriber-debug-${timestamp}.log`;
             const filepath = path.join(os.homedir(), 'Desktop', filename);
             
             try {

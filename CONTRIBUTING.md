@@ -1,6 +1,6 @@
-# Contributing to StenoAI
+# Contributing to Mac Meeting Transcriber
 
-Thank you for your interest in contributing to StenoAI! This guide will help you get started.
+Thank you for your interest in contributing to Mac Meeting Transcriber! This guide will help you get started.
 
 ## Getting Started
 
@@ -15,8 +15,8 @@ Thank you for your interest in contributing to StenoAI! This guide will help you
 
 1. **Fork and clone the repository**
    ```bash
-   git clone https://github.com/your-username/stenoai.git
-   cd stenoai
+   git clone https://github.com/your-username/mac-meeting-transcriber.git
+   cd mac-meeting-transcriber
    ```
 
 2. **Set up Python environment**
@@ -156,7 +156,7 @@ Help improve our documentation:
 ## Project Structure
 
 ```
-stenoai/
+mac-meeting-transcriber/
 ├── app/                  # Electron desktop app
 │   ├── main.js          # Main process
 │   ├── index.html       # Renderer process
@@ -173,13 +173,13 @@ stenoai/
 
 ## Getting Help
 
-- Check existing [issues](https://github.com/ruzin/stenoai/issues)
+- Check existing [issues](https://github.com/akashiitd/Mac_meeting_Transcriber_app/issues)
 - Create a new issue for bugs or feature requests
 - Join discussions in the repository
 
 ## Contributor License Agreement
 
-By contributing to StenoAI, you agree to our [Contributor License Agreement (CLA)](CLA.md).
+By contributing to Mac Meeting Transcriber, you agree to our [Contributor License Agreement (CLA)](CLA.md).
 
 **What this means:**
 - You retain ownership of your contributions
@@ -195,4 +195,4 @@ The project itself is licensed under CC BY-NC 4.0. See [LICENSE](LICENSE) for de
 
 ## Recognition
 
-Contributors will be recognized in our releases and README. Thank you for helping make StenoAI better!
+Contributors will be recognized in our releases and README. Thank you for helping make Mac Meeting Transcriber better!

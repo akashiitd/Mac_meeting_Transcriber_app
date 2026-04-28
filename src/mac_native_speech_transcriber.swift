@@ -90,7 +90,7 @@ final class SpeechSource {
     private let analyzer: SpeechAnalyzer
     private let inputContinuation: AsyncStream<AnalyzerInput>.Continuation
     private let inputStream: AsyncStream<AnalyzerInput>
-    private let converterQueue = DispatchQueue(label: "stenoai.apple-speech.converter")
+    private let converterQueue = DispatchQueue(label: "macmeetingtranscriber.apple-speech.converter")
 
     private var resultsTask: Task<Void, Never>?
     private var analyzerTask: Task<Void, Never>?
@@ -105,14 +105,14 @@ final class SpeechSource {
         self.inputFormat = inputFormat
 
         guard SpeechTranscriber.isAvailable else {
-            throw NSError(domain: "StenoAIAppleSpeech", code: 10, userInfo: [
+            throw NSError(domain: "MacMeetingTranscriberAppleSpeech", code: 10, userInfo: [
                 NSLocalizedDescriptionKey: "SpeechTranscriber is not available on this Mac."
             ])
         }
 
         let requestedLocale = Locale(identifier: localeIdentifier)
         guard let locale = await SpeechTranscriber.supportedLocale(equivalentTo: requestedLocale) else {
-            throw NSError(domain: "StenoAIAppleSpeech", code: 11, userInfo: [
+            throw NSError(domain: "MacMeetingTranscriberAppleSpeech", code: 11, userInfo: [
                 NSLocalizedDescriptionKey: "Apple Speech does not support locale \(localeIdentifier)."
             ])
         }
@@ -282,7 +282,7 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
     private let localeIdentifier: String
     private let captureSystemAudio: Bool
     private let captureMicrophone: Bool
-    private let queue = DispatchQueue(label: "stenoai.apple-speech.capture")
+    private let queue = DispatchQueue(label: "macmeetingtranscriber.apple-speech.capture")
 
     private var stream: SCStream?
     private var systemSource: SpeechSource?
@@ -302,7 +302,7 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
 
         let content = try await SCShareableContent.excludingDesktopWindows(false, onScreenWindowsOnly: true)
         guard let display = content.displays.first else {
-            throw NSError(domain: "StenoAIAppleSpeech", code: 20, userInfo: [
+            throw NSError(domain: "MacMeetingTranscriberAppleSpeech", code: 20, userInfo: [
                 NSLocalizedDescriptionKey: "No display is available for ScreenCaptureKit audio capture."
             ])
         }
@@ -387,8 +387,8 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
         emitter.status("Requesting Screen Recording permission for system audio capture.")
         let granted = CGRequestScreenCaptureAccess()
         if !granted {
-            throw NSError(domain: "StenoAIAppleSpeech", code: 30, userInfo: [
-                NSLocalizedDescriptionKey: "Screen Recording permission is required to capture system audio. Enable it in System Settings > Privacy & Security > Screen & System Audio Recording, then restart StenoAI."
+            throw NSError(domain: "MacMeetingTranscriberAppleSpeech", code: 30, userInfo: [
+                NSLocalizedDescriptionKey: "Screen Recording permission is required to capture system audio. Enable it in System Settings > Privacy & Security > Screen & System Audio Recording, then restart Mac Meeting Transcriber."
             ])
         }
     }

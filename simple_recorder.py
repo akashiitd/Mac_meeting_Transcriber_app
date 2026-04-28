@@ -67,9 +67,9 @@ class SimpleRecorder:
         
         # Detect if running from app bundle (DMG install) or development
         current_path = Path(__file__).parent
-        if "StenoAI.app" in str(current_path) or "Applications" in str(current_path):
+        if "Mac Meeting Transcriber.app" in str(current_path) or "Applications" in str(current_path):
             # DMG/Production: Use Application Support folder
-            app_support = Path.home() / "Library" / "Application Support" / "stenoai"
+            app_support = Path.home() / "Library" / "Application Support" / "mac-meeting-transcriber"
             self.recordings_dir = app_support / "recordings"
             self.transcripts_dir = app_support / "transcripts" 
             self.output_dir = app_support / "output"
@@ -970,9 +970,9 @@ def list_meetings():
     """List all processed meetings - optimized for fast loading"""
     # Don't initialize SimpleRecorder to avoid Ollama checks - just get the output directory
     current_path = Path(__file__).parent
-    if "StenoAI.app" in str(current_path) or "Applications" in str(current_path):
+    if "Mac Meeting Transcriber.app" in str(current_path) or "Applications" in str(current_path):
         # DMG/Production: Use Application Support folder
-        app_support = Path.home() / "Library" / "Application Support" / "stenoai"
+        app_support = Path.home() / "Library" / "Application Support" / "mac-meeting-transcriber"
         output_dir = app_support / "output"
     else:
         # Development: Use project relative paths
@@ -1087,9 +1087,9 @@ def list_failed():
     import json
     # Don't initialize SimpleRecorder to avoid Ollama checks - just get the output directory
     current_path = Path(__file__).parent
-    if "StenoAI.app" in str(current_path) or "Applications" in str(current_path):
+    if "Mac Meeting Transcriber.app" in str(current_path) or "Applications" in str(current_path):
         # DMG/Production: Use Application Support folder
-        app_support = Path.home() / "Library" / "Application Support" / "stenoai"
+        app_support = Path.home() / "Library" / "Application Support" / "mac-meeting-transcriber"
         output_dir = app_support / "output"
     else:
         # Development: Use project relative paths
@@ -1152,7 +1152,7 @@ def setup_check():
     import sys
     import os
     
-    print("🔧 StenoAI Setup Check")
+    print("🔧 Mac Meeting Transcriber Setup Check")
     print("=" * 25)
     
     checks = []
@@ -1169,9 +1169,9 @@ def setup_check():
     
     # Check required directories - use same logic as SimpleRecorder.__init__
     current_path = Path(__file__).parent
-    if "StenoAI.app" in str(current_path) or "Applications" in str(current_path):
+    if "Mac Meeting Transcriber.app" in str(current_path) or "Applications" in str(current_path):
         # DMG/Production: Use Application Support folder
-        app_support = Path.home() / "Library" / "Application Support" / "stenoai"
+        app_support = Path.home() / "Library" / "Application Support" / "mac-meeting-transcriber"
         base_dirs = {
             "recordings": app_support / "recordings",
             "transcripts": app_support / "transcripts", 

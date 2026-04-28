@@ -249,7 +249,7 @@ class AppleSpeechTranscriber:
         if bundled:
             return bundled
 
-        cache_dir = Path.home() / "Library" / "Application Support" / "stenoai" / "helpers"
+        cache_dir = Path.home() / "Library" / "Application Support" / "mac-meeting-transcriber" / "helpers"
         cache_dir.mkdir(parents=True, exist_ok=True)
         binary = cache_dir / "mac_native_speech_transcriber"
 

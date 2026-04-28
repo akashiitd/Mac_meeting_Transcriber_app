@@ -1368,7 +1368,7 @@
                 <path d="M16 10c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2s2-.9 2-2v-4c0-1.1-.9-2-2-2z" fill="white"/>
                 <path d="M12 15v1c0 2.2 1.8 4 4 4s4-1.8 4-4v-1h1v1c0 2.7-1.9 4.9-4.5 5.4v1.6h2v1h-5v-1h2v-1.6c-2.6-.5-4.5-2.7-4.5-5.4v-1h1z" fill="white"/>
             </svg>
-            <h1>StenoAI</h1>
+            <h1>Mac Meeting Transcriber</h1>
         </div>
         
         <div class="record-controls">
@@ -1548,7 +1548,7 @@
     <div class="setup-modal" id="setup-overlay" style="display: none;">
         <div class="setup-content">
             <div class="setup-header">
-                <h2>🚀 Welcome to StenoAI</h2>
+                <h2>🚀 Welcome to Mac Meeting Transcriber</h2>
                 <p>Setting up your system for meeting transcription...</p>
                 <p style="font-size: 14px; color: #aaa; margin-top: 12px;">💡 Scroll down to see logs</p>
             </div>
@@ -1645,7 +1645,7 @@
                     <span>🐛 Debug Console</span>
                     <button onclick="toggleDebugConsole()" style="background: none; border: 1px solid #444; color: #888; padding: 4px 8px; border-radius: 4px; font-size: 11px; cursor: pointer;">Toggle</button>
                 </h3>
-                <div id="debug-console" style="background: #000; border: 1px solid #333; border-radius: 6px; padding: 12px; font-family: 'Monaco', 'Menlo', monospace; font-size: 11px; line-height: 1.4; color: #a0a0a0; height: 200px; overflow-y: auto; white-space: pre-wrap;">Welcome to StenoAI Setup Debug Console
+                <div id="debug-console" style="background: #000; border: 1px solid #333; border-radius: 6px; padding: 12px; font-family: 'Monaco', 'Menlo', monospace; font-size: 11px; line-height: 1.4; color: #a0a0a0; height: 200px; overflow-y: auto; white-space: pre-wrap;">Welcome to Mac Meeting Transcriber Setup Debug Console
 Commands and output will appear here...
 
 </div>
@@ -1714,7 +1714,7 @@ Commands and output will appear here...
             
             <div class="settings-section">
                 <h3>🔄 Updates</h3>
-                <p>Check for the latest version of StenoAI. After installing, if macOS shows a security warning, go to <strong>System Settings > Privacy & Security</strong>, scroll down and click <strong>'Open Anyway'</strong>.</p>
+                <p>Check for the latest version of Mac Meeting Transcriber. After installing, if macOS shows a security warning, go to <strong>System Settings > Privacy & Security</strong>, scroll down and click <strong>'Open Anyway'</strong>.</p>
                 
                 <button class="btn" id="test-update-btn" onclick="testUpdateCheck()">
                     Check for Updates
@@ -1731,7 +1731,7 @@ Commands and output will appear here...
             <button class="close-settings" onclick="toggleDebug()">✕</button>
         </div>
 
-        <div class="debug-console" id="debug-console-panel">StenoAI Debug Console
+        <div class="debug-console" id="debug-console-panel">Mac Meeting Transcriber Debug Console
 Session started - waiting for activity...
 
 </div>
@@ -2392,7 +2392,7 @@ Session started - waiting for activity...
                     
                     // Show clear error message
                     const micStatus = micResult.status || 'unknown';
-                    alert(`❌ Recording blocked: Microphone permission is ${micStatus}.\n\nStenoAI requires microphone access to record meetings. Please grant permission and try again.`);
+                    alert(`❌ Recording blocked: Microphone permission is ${micStatus}.\n\nMac Meeting Transcriber requires microphone access to record meetings. Please grant permission and try again.`);
                     
                     // Force show setup wizard to fix the issue
                     showSetupOverlay([]);
@@ -2668,7 +2668,7 @@ Session started - waiting for activity...
                     log('✅ Meeting reprocessed successfully');
                     
                     // Send notification for reprocessing completion
-                    showDesktopNotification('StenoAI - Reprocessing Complete', {
+                    showDesktopNotification('Mac Meeting Transcriber - Reprocessing Complete', {
                         body: `"${meetingBeingProcessed.session_info?.name || 'Meeting'}" has been reanalyzed`,
                         requireInteraction: false
                     });
@@ -2929,7 +2929,7 @@ Session started - waiting for activity...
             
             // Clear and initialize debug console
             const debugConsole = document.getElementById('debug-console');
-            debugConsole.textContent = 'StenoAI Setup Debug Console - Setup Started\n';
+            debugConsole.textContent = 'Mac Meeting Transcriber Setup Debug Console - Setup Started\n';
             debugLog('='.repeat(50));
             debugLog('Starting First-Time Setup Process');
             debugLog('='.repeat(50));
@@ -3196,7 +3196,7 @@ Session started - waiting for activity...
                 }
                 
                 // Show native notification
-                showDesktopNotification('StenoAI - Meeting Notes Ready', {
+                showDesktopNotification('Mac Meeting Transcriber - Meeting Notes Ready', {
                     body: `"${data.sessionName}" has been transcribed and summarized`,
                     requireInteraction: false
                 });
@@ -3698,12 +3698,12 @@ Session started - waiting for activity...
             // Clear both debug consoles
             const setupConsole = document.getElementById('debug-console');
             if (setupConsole) {
-                setupConsole.textContent = 'StenoAI Setup Debug Console\nCommands and output will appear here...\n\n';
+                setupConsole.textContent = 'Mac Meeting Transcriber Setup Debug Console\nCommands and output will appear here...\n\n';
             }
             
             const debugPanel = document.getElementById('debug-console-panel');
             if (debugPanel) {
-                debugPanel.textContent = 'StenoAI Debug Console\nSession started - ready for activity...\n\n';
+                debugPanel.textContent = 'Mac Meeting Transcriber Debug Console\nSession started - ready for activity...\n\n';
             }
         }
 

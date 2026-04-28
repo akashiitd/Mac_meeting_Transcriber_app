@@ -1,5 +1,5 @@
 """
-Configuration management for StenoAI.
+Configuration management for Mac Meeting Transcriber.
 
 Handles storing and loading user preferences like model selection.
 """
@@ -90,9 +90,9 @@ class Config:
         """
         if config_path is None:
             # Use same directory logic as recorder state
-            if "StenoAI.app" in str(Path(__file__)) or "Applications" in str(Path(__file__)):
-                # Production: ~/Library/Application Support/stenoai
-                base_dir = Path.home() / "Library" / "Application Support" / "stenoai"
+            if "Mac Meeting Transcriber.app" in str(Path(__file__)) or "Applications" in str(Path(__file__)):
+                # Production: ~/Library/Application Support/mac-meeting-transcriber
+                base_dir = Path.home() / "Library" / "Application Support" / "mac-meeting-transcriber"
             else:
                 # Development: project root
                 base_dir = Path(__file__).parent.parent

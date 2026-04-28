@@ -325,7 +325,7 @@ ipcMain.handle('update-meeting', async (event, summaryFilePath, updates) => {
     // Define allowed base directories for file operations
     const allowedBaseDirs = [
       projectRoot,
-      path.join(os.homedir(), 'Library', 'Application Support', 'stenoai')
+      path.join(os.homedir(), 'Library', 'Application Support', 'mac-meeting-transcriber')
     ];
 
     // Convert to absolute path if needed
@@ -402,7 +402,7 @@ ipcMain.handle('delete-meeting', async (event, meetingData) => {
     // Define allowed base directories for file operations
     const allowedBaseDirs = [
       projectRoot,
-      path.join(os.homedir(), 'Library', 'Application Support', 'stenoai')
+      path.join(os.homedir(), 'Library', 'Application Support', 'mac-meeting-transcriber')
     ];
 
     const summaryFile = meeting.session_info?.summary_file;
@@ -750,9 +750,9 @@ ipcMain.handle('setup-system-check', async () => {
     let baseDir;
     
     // Detect if running from app bundle (DMG install) or development
-    if (currentPath.includes('StenoAI.app') || currentPath.includes('Applications')) {
+    if (currentPath.includes('Mac Meeting Transcriber.app') || currentPath.includes('Applications')) {
       // DMG/Production: Use Application Support folder
-      baseDir = path.join(os.homedir(), 'Library', 'Application Support', 'stenoai');
+      baseDir = path.join(os.homedir(), 'Library', 'Application Support', 'mac-meeting-transcriber');
     } else {
       // Development: Use project relative paths  
       baseDir = path.join(__dirname, '..');
@@ -1724,10 +1724,10 @@ async function checkForUpdates() {
   return new Promise((resolve) => {
     const options = {
       hostname: 'api.github.com',
-      path: '/repos/ruzin/stenoai/releases/latest',
+      path: '/repos/akashiitd/Mac_meeting_Transcriber_app/releases/latest',
       method: 'GET',
       headers: {
-        'User-Agent': 'StenoAI-Updater'
+        'User-Agent': 'Mac Meeting Transcriber-Updater'
       }
     };
 

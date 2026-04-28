@@ -13,7 +13,7 @@ This is a local meeting transcription service:
 
 ## Project Structure
 ```
-steno-poc/
+Mac_meeting_Transcriber_app/
 ├── app/                  # Electron desktop app
 ├── src/                  # Python backend
 │   ├── audio_recorder.py      # Local audio recording

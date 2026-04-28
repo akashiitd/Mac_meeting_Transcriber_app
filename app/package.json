@@ -1,5 +1,5 @@
 {
-  "name": "stenoai",
+  "name": "mac-meeting-transcriber",
   "version": "0.1.3",
   "description": "Mac meeting transcriber with Apple Speech, system audio capture, local Whisper fallback, and local LLM summaries",
   "main": "main.js",
@@ -34,7 +34,7 @@
     "ai",
     "meetings"
   ],
-  "author": "StenoAI Team",
+  "author": "Mac Meeting Transcriber Team",
   "license": "CC-BY-NC-4.0",
   "devDependencies": {
     "electron": "^28.0.0",
@@ -44,8 +44,8 @@
     "axios": "^1.6.0"
   },
   "build": {
-    "appId": "com.stenoai.recorder",
-    "productName": "StenoAI",
+    "appId": "com.akashiitd.macmeetingtranscriber",
+    "productName": "Mac Meeting Transcriber",
     "directories": {
       "output": "dist",
       "buildResources": "build"
@@ -87,13 +87,13 @@
       "identity": "Skrape Limited (HSDX294RG4)",
       "notarize": false,
       "extendInfo": {
-        "NSMicrophoneUsageDescription": "StenoAI needs microphone access to record and transcribe meetings.",
-        "NSAudioCaptureUsageDescription": "StenoAI needs system audio capture access to transcribe other speakers from meeting apps.",
-        "NSSpeechRecognitionUsageDescription": "StenoAI uses Apple Speech recognition to transcribe meeting audio locally."
+        "NSMicrophoneUsageDescription": "Mac Meeting Transcriber needs microphone access to record and transcribe meetings.",
+        "NSAudioCaptureUsageDescription": "Mac Meeting Transcriber needs system audio capture access to transcribe other speakers from meeting apps.",
+        "NSSpeechRecognitionUsageDescription": "Mac Meeting Transcriber uses Apple Speech recognition to transcribe meeting audio locally."
       }
     },
     "dmg": {
-      "title": "StenoAI Installer",
+      "title": "Mac Meeting Transcriber Installer",
       "contents": [
         {
           "x": 130,
@@ -111,7 +111,7 @@
         "width": 540,
         "height": 380
       },
-      "artifactName": "stenoAI-macos-${version}-${arch}.${ext}",
+      "artifactName": "mac-meeting-transcriber-macos-${version}-${arch}.${ext}",
       "sign": true
     },
     "publish": {
