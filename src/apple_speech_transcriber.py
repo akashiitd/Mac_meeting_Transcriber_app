@@ -16,8 +16,11 @@ from pathlib import Path
 from typing import Callable, Optional
 
 from src.realtime_transcriber import TranscriptSegment, is_hallucination
+from src.config import get_config
 
 logger = logging.getLogger(__name__)
+
+MIN_CONFIDENCE_THRESHOLD = 0.3
 
 
 class AppleSpeechTranscriber:
@@ -29,11 +32,16 @@ class AppleSpeechTranscriber:
         enable_system_audio: bool = True,
         enable_microphone: bool = True,
         callback: Optional[Callable[[TranscriptSegment], None]] = None,
+        context_terms: Optional[list] = None,
+        quality_mode: Optional[str] = None,
     ):
+        config = get_config()
         self.language = language
         self.enable_system_audio = enable_system_audio
         self.enable_microphone = enable_microphone
         self.callback = callback
+        self.context_terms = context_terms if context_terms is not None else config.get_context_terms()
+        self.quality_mode = quality_mode or config.get_transcription_quality_mode()
 
         self.process: Optional[subprocess.Popen] = None
         self.stdout_thread: Optional[threading.Thread] = None
@@ -62,7 +70,12 @@ class AppleSpeechTranscriber:
             self._locale_identifier(),
             "--source",
             source,
+            "--quality",
+            self.quality_mode,
         ]
+
+        if self.context_terms:
+            command.extend(["--context-terms", ",".join(self.context_terms)])
 
         logger.info("Starting Apple Speech helper: %s", " ".join(command))
 
@@ -211,6 +224,11 @@ class AppleSpeechTranscriber:
         if len(text) < 4 or is_hallucination(text):
             return
 
+        confidence = float(payload.get("confidence") or 0.0)
+        if confidence > 0.0 and confidence < MIN_CONFIDENCE_THRESHOLD:
+            logger.debug("Skipping low-confidence segment (%.2f): %s", confidence, text[:50])
+            return
+
         source = payload.get("source") or "unknown"
         now = time.time()
         previous_text, previous_time = self.last_text_by_source.get(source, ("", 0.0))
@@ -224,7 +242,7 @@ class AppleSpeechTranscriber:
             end_time=float(payload.get("end_time") or 0.0),
             speaker=payload.get("speaker") or ("You" if source == "microphone" else "Other"),
             source=source,
-            confidence=float(payload.get("confidence") or 0.0),
+            confidence=confidence,
         )
 
         if self.callback:
@@ -313,6 +331,11 @@ class AppleSpeechTranscriber:
         return None
 
     def _locale_identifier(self) -> str:
+        config = get_config()
+        config_locale = config.get_transcription_locale()
+        if config_locale and config_locale != "en_US":
+            return config_locale
+
         language = (self.language or "en").replace("-", "_")
         if "_" in language:
             return language

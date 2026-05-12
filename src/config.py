@@ -217,6 +217,32 @@ class Config:
         self._config["notifications_enabled"] = enabled
         return self._save()
 
+    def get_transcription_context(self) -> Dict[str, Any]:
+        """Get transcription context config (domain terms, names, locale, quality)."""
+        return self._config.get("transcription_context", {})
+
+    def get_transcription_locale(self) -> str:
+        """Get the configured locale for Apple Speech transcription."""
+        ctx = self.get_transcription_context()
+        return ctx.get("locale", "en_US")
+
+    def get_transcription_quality_mode(self) -> str:
+        """Get quality mode: 'fast' or 'balanced'."""
+        ctx = self.get_transcription_context()
+        return ctx.get("quality_mode", "balanced")
+
+    def get_context_terms(self) -> list:
+        """Get combined domain terms and participant names for vocabulary hints."""
+        ctx = self.get_transcription_context()
+        terms = list(ctx.get("domain_terms", []))
+        terms.extend(ctx.get("participant_names", []))
+        return terms
+
+    def set_transcription_context(self, context: Dict[str, Any]) -> bool:
+        """Set transcription context config."""
+        self._config["transcription_context"] = context
+        return self._save()
+
     def get(self, key: str, default: Any = None) -> Any:
         """Get a configuration value."""
         return self._config.get(key, default)

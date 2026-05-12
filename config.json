@@ -2,5 +2,11 @@
   "model": "llama3.2:3b",
   "realtime_transcription_model": "apple-speech",
   "notifications_enabled": true,
+  "transcription_context": {
+    "domain_terms": [],
+    "participant_names": [],
+    "locale": "en_US",
+    "quality_mode": "balanced"
+  },
   "version": "1.0"
 }

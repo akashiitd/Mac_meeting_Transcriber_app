@@ -98,7 +98,7 @@ final class SpeechSource {
     private var lastText = ""
     private var lastEmissionTime = Date.distantPast
 
-    init(source: String, speaker: String, localeIdentifier: String, inputFormat: AVAudioFormat, emitter: JSONEmitter) async throws {
+    init(source: String, speaker: String, localeIdentifier: String, contextTerms: [String], qualityMode: String, inputFormat: AVAudioFormat, emitter: JSONEmitter) async throws {
         self.source = source
         self.speaker = speaker
         self.emitter = emitter
@@ -117,10 +117,18 @@ final class SpeechSource {
             ])
         }
 
+        let reportingOptions: Set<SpeechTranscriber.ReportingOption>
+        switch qualityMode {
+        case "balanced":
+            reportingOptions = [.volatileResults]
+        default:
+            reportingOptions = [.fastResults]
+        }
+
         self.transcriber = SpeechTranscriber(
             locale: locale,
             transcriptionOptions: [],
-            reportingOptions: [.fastResults],
+            reportingOptions: reportingOptions,
             attributeOptions: [.audioTimeRange, .transcriptionConfidence]
         )
 
@@ -144,6 +152,13 @@ final class SpeechSource {
         )
 
         try await analyzer.prepareToAnalyze(in: analysisFormat)
+
+        if !contextTerms.isEmpty {
+            let context = AnalysisContext()
+            context.contextualStrings[.general] = contextTerms
+            try await analyzer.setContext(context)
+            emitter.status("Set \(contextTerms.count) contextual vocabulary terms.")
+        }
     }
 
     func start() {
@@ -198,6 +213,16 @@ final class SpeechSource {
         lastText = text
         lastEmissionTime = now
 
+        var totalConfidence = 0.0
+        var wordCount = 0
+        for run in result.text.runs {
+            if let conf = run.transcriptionConfidence {
+                totalConfidence += conf
+                wordCount += 1
+            }
+        }
+        let avgConfidence = wordCount > 0 ? totalConfidence / Double(wordCount) : 0.0
+
         emitter.transcript(TranscriptEvent(
             event: "transcript",
             source: source,
@@ -205,7 +230,7 @@ final class SpeechSource {
             text: text,
             start_time: result.range.start.seconds.isFinite ? result.range.start.seconds : 0,
             end_time: result.range.end.seconds.isFinite ? result.range.end.seconds : 0,
-            confidence: 0.0,
+            confidence: avgConfidence,
             is_final: result.isFinal
         ))
     }
@@ -280,6 +305,8 @@ final class SpeechSource {
 final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
     private let emitter: JSONEmitter
     private let localeIdentifier: String
+    private let contextTerms: [String]
+    private let qualityMode: String
     private let captureSystemAudio: Bool
     private let captureMicrophone: Bool
     private let queue = DispatchQueue(label: "macmeetingtranscriber.apple-speech.capture")
@@ -288,8 +315,10 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
     private var systemSource: SpeechSource?
     private var microphoneSource: SpeechSource?
 
-    init(localeIdentifier: String, captureSystemAudio: Bool, captureMicrophone: Bool, emitter: JSONEmitter) {
+    init(localeIdentifier: String, contextTerms: [String], qualityMode: String, captureSystemAudio: Bool, captureMicrophone: Bool, emitter: JSONEmitter) {
         self.localeIdentifier = localeIdentifier
+        self.contextTerms = contextTerms
+        self.qualityMode = qualityMode
         self.captureSystemAudio = captureSystemAudio
         self.captureMicrophone = captureMicrophone
         self.emitter = emitter
@@ -330,6 +359,8 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
                 source: "system",
                 speaker: "Other",
                 localeIdentifier: localeIdentifier,
+                contextTerms: contextTerms,
+                qualityMode: qualityMode,
                 inputFormat: systemInputFormat,
                 emitter: emitter
             )
@@ -342,6 +373,8 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
                 source: "microphone",
                 speaker: "You",
                 localeIdentifier: localeIdentifier,
+                contextTerms: contextTerms,
+                qualityMode: qualityMode,
                 inputFormat: microphoneInputFormat,
                 emitter: emitter
             )
@@ -409,6 +442,10 @@ struct MacNativeSpeechTranscriber {
         let locale = value(after: "--locale", in: arguments) ?? "en_US"
         let source = value(after: "--source", in: arguments) ?? "both"
         let duration = Double(value(after: "--duration", in: arguments) ?? "")
+        let qualityMode = value(after: "--quality", in: arguments) ?? "fast"
+        let contextTermsRaw = value(after: "--context-terms", in: arguments) ?? ""
+        let contextTerms = contextTermsRaw.isEmpty ? [String]() :
+            contextTermsRaw.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
 
         let captureSystemAudio = source == "both" || source == "system"
         let captureMicrophone = source == "both" || source == "microphone"
@@ -420,6 +457,8 @@ struct MacNativeSpeechTranscriber {
 
         let coordinator = CaptureCoordinator(
             localeIdentifier: locale,
+            contextTerms: contextTerms,
+            qualityMode: qualityMode,
             captureSystemAudio: captureSystemAudio,
             captureMicrophone: captureMicrophone,
             emitter: emitter
