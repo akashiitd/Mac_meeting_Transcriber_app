@@ -194,6 +194,7 @@ class TranscriptSegment:
     source: str = "unknown"  # "microphone", "system", or "mixed"
     confidence: float = 0.0
     timestamp: datetime = field(default_factory=datetime.now)
+    is_partial: bool = False
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -455,6 +456,7 @@ class RealtimeTranscriber:
         chunk_duration: float = 2.0,  # Transcribe every N seconds
         overlap_duration: float = 0.25,  # Small context window between chunks
         transcription_backend: str = "whisper",
+        save_audio_path: Optional[str] = None,
     ):
         self.model_size = model_size
         self.language = language
@@ -464,6 +466,7 @@ class RealtimeTranscriber:
         self.chunk_duration = chunk_duration
         self.overlap_duration = overlap_duration
         self.transcription_backend = transcription_backend
+        self.save_audio_path = save_audio_path
 
         # Audio capture
         self.system_capture: Optional[SystemAudioCapture] = None
@@ -581,6 +584,7 @@ class RealtimeTranscriber:
                 enable_system_audio=self.enable_system_audio,
                 enable_microphone=self.enable_microphone,
                 callback=self._handle_external_transcript_segment,
+                save_audio_path=self.save_audio_path,
             )
             self.mlx_whisper = None
             self.model = True
@@ -690,6 +694,17 @@ class RealtimeTranscriber:
             logger.debug(f"Skipping hallucination: '{segment.text}'")
             return
 
+        # For final segments, check if they supersede a stored partial
+        if not segment.is_partial:
+            replaced = self._replace_partial_with_final(segment, current_time)
+            if replaced:
+                if self.transcription_callback:
+                    try:
+                        self.transcription_callback(segment)
+                    except Exception as e:
+                        logger.error(f"Callback error: {e}")
+                return
+
         if self._is_recent_duplicate(
             segment.text,
             current_time,
@@ -711,7 +726,8 @@ class RealtimeTranscriber:
             except Exception as e:
                 logger.error(f"Callback error: {e}")
 
-        logger.info(f"[{segment.source}] {segment.speaker}: {segment.text}")
+        partial_tag = " [partial]" if segment.is_partial else ""
+        logger.info(f"[{segment.source}] {segment.speaker}: {segment.text}{partial_tag}")
 
     def _audio_loop(self) -> None:
         """Collect audio from capture sources."""
@@ -845,6 +861,50 @@ class RealtimeTranscriber:
 
         return False
 
+    def _replace_partial_with_final(
+        self,
+        segment: TranscriptSegment,
+        current_time: float,
+        window_seconds: float = 12.0
+    ) -> bool:
+        """Replace a stored partial segment with the final version. Returns True if replaced."""
+        normalized = normalize_transcript_text(segment.text)
+        if not normalized:
+            return False
+
+        new_words = transcript_words(segment.text)
+        if not new_words:
+            return False
+
+        with self.segments_lock:
+            for previous in reversed(self.segments[-12:]):
+                if not previous.is_partial:
+                    continue
+                if previous.source != segment.source or previous.speaker != segment.speaker:
+                    continue
+                if current_time - previous.end_time > window_seconds:
+                    break
+
+                previous_normalized = normalize_transcript_text(previous.text)
+                prev_words = transcript_words(previous.text)
+
+                # Check if texts overlap: prefix match, or first few words match
+                is_match = (
+                    normalized.startswith(previous_normalized) or
+                    previous_normalized.startswith(normalized) or
+                    normalized == previous_normalized or
+                    (len(prev_words) >= 3 and prev_words[:3] == new_words[:3])
+                )
+
+                if is_match:
+                    previous.text = segment.text
+                    previous.end_time = segment.end_time or current_time
+                    previous.is_partial = False
+                    previous.confidence = segment.confidence
+                    return True
+
+        return False
+
     def _is_recent_duplicate(
         self,
         text: str,
@@ -853,10 +913,12 @@ class RealtimeTranscriber:
         speaker: str,
         window_seconds: float = 12.0
     ) -> bool:
-        """Skip repeated segments from the same speaker/source in a short window."""
+        """Skip repeated or incremental-prefix segments from the same speaker/source."""
         normalized = normalize_transcript_text(text)
         if not normalized:
             return True
+
+        new_words = transcript_words(text)
 
         with self.segments_lock:
             for previous in reversed(self.segments[-12:]):
@@ -867,8 +929,30 @@ class RealtimeTranscriber:
                     break
 
                 previous_normalized = normalize_transcript_text(previous.text)
+                prev_words = transcript_words(previous.text)
+
                 if normalized == previous_normalized:
                     logger.debug(f"Skipping recent duplicate segment: '{text}'")
+                    return True
+
+                # Check if new text extends the previous (prefix or first-words match)
+                is_extension = (
+                    normalized.startswith(previous_normalized) or
+                    (len(prev_words) >= 3 and len(new_words) >= 3 and prev_words[:3] == new_words[:3] and len(new_words) > len(prev_words))
+                )
+                if is_extension:
+                    previous.text = text
+                    previous.end_time = current_time
+                    logger.debug(f"Replaced shorter segment with longer version: '{text[:60]}'")
+                    return True
+
+                # Check if previous already contains this text
+                is_subset = (
+                    previous_normalized.startswith(normalized) or
+                    (len(prev_words) >= 3 and len(new_words) >= 3 and prev_words[:3] == new_words[:3] and len(prev_words) >= len(new_words))
+                )
+                if is_subset:
+                    logger.debug(f"Skipping shorter incremental: '{text[:60]}'")
                     return True
 
         return False
@@ -1086,14 +1170,42 @@ class LiveTranscriptLogger:
             f.write("# " + "=" * 50 + "\n\n")
 
     def log_segment(self, segment: TranscriptSegment) -> None:
-        """Log a transcript segment to files."""
+        """Log a transcript segment, replacing previous if it's an updated version."""
         with self.lock:
-            # Append to text log
-            with open(self.log_file, 'a') as f:
-                f.write(segment.format_log_entry() + "\n")
+            new_words = transcript_words(segment.text)
+            replaced = False
 
-            # Add to JSON segments
-            self.segments.append(segment.to_dict())
+            # Check if this supersedes a recent segment from the same speaker
+            if new_words and len(new_words) >= 3:
+                for i in range(len(self.segments) - 1, max(len(self.segments) - 8, -1), -1):
+                    prev = self.segments[i]
+                    if prev.get("speaker") != segment.speaker:
+                        continue
+                    prev_words = transcript_words(prev.get("text", ""))
+                    if len(prev_words) < 3:
+                        continue
+                    # Same first 3 words = same utterance, keep the longer one
+                    if prev_words[:3] == new_words[:3]:
+                        if len(segment.text) >= len(prev.get("text", "")):
+                            self.segments[i] = segment.to_dict()
+                            replaced = True
+                        else:
+                            # Previous is already longer, skip this segment
+                            return
+                        break
+
+            if not replaced:
+                self.segments.append(segment.to_dict())
+
+            # Rewrite text log from segments (ensures no stale entries)
+            with open(self.log_file, 'w') as f:
+                f.write(f"# Live Transcript - {self.session_name}\n")
+                f.write(f"# Started: {datetime.now().isoformat()}\n")
+                f.write("# " + "=" * 50 + "\n\n")
+                for seg in self.segments:
+                    speaker = seg.get("speaker") or "Unknown"
+                    text = seg.get("text", "")
+                    f.write(f"[{speaker}]: {text}\n")
 
             # Update JSON file
             with open(self.json_file, 'w') as f:
@@ -1125,7 +1237,8 @@ def create_realtime_transcriber(
     callback: Optional[Callable[[TranscriptSegment], None]] = None,
     session_name: Optional[str] = None,
     enable_live_logging: bool = True,
-    transcription_backend: str = "whisper"
+    transcription_backend: str = "whisper",
+    save_audio_path: Optional[str] = None,
 ) -> tuple:
     """
     Factory function to create a configured RealtimeTranscriber with optional live logging.
@@ -1142,7 +1255,8 @@ def create_realtime_transcriber(
         original_callback = callback
 
         def logging_callback(segment: TranscriptSegment):
-            live_logger.log_segment(segment)
+            if not segment.is_partial:
+                live_logger.log_segment(segment)
             if original_callback:
                 original_callback(segment)
 
@@ -1154,7 +1268,8 @@ def create_realtime_transcriber(
         enable_system_audio=enable_system_audio,
         enable_microphone=enable_microphone,
         transcription_callback=callback,
-        transcription_backend=transcription_backend
+        transcription_backend=transcription_backend,
+        save_audio_path=save_audio_path,
     )
 
     return transcriber, live_logger

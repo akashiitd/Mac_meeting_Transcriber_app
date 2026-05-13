@@ -34,6 +34,7 @@ class AppleSpeechTranscriber:
         callback: Optional[Callable[[TranscriptSegment], None]] = None,
         context_terms: Optional[list] = None,
         quality_mode: Optional[str] = None,
+        save_audio_path: Optional[str] = None,
     ):
         config = get_config()
         self.language = language
@@ -42,16 +43,21 @@ class AppleSpeechTranscriber:
         self.callback = callback
         self.context_terms = context_terms if context_terms is not None else config.get_context_terms()
         self.quality_mode = quality_mode or config.get_transcription_quality_mode()
+        self.save_audio_path = save_audio_path
 
         self.process: Optional[subprocess.Popen] = None
         self.stdout_thread: Optional[threading.Thread] = None
         self.stderr_thread: Optional[threading.Thread] = None
         self.running = False
-        self.last_text_by_source: dict[str, tuple[str, float]] = {}
+        self.last_text_by_source: dict[str, tuple[str, float, bool]] = {}
         self.pending_by_source: dict[str, dict] = {}
         self.pending_timers: dict[str, threading.Timer] = {}
         self.pending_lock = threading.Lock()
-        self.partial_flush_delay = 1.2
+        self.partial_flush_delay = 3.0
+        # Sentence accumulation: collect finals until a pause indicates sentence boundary
+        self.sentence_buffer: dict[str, dict] = {}  # source -> accumulated payload
+        self.sentence_timers: dict[str, threading.Timer] = {}
+        self.sentence_flush_delay = 2.5  # seconds of silence = sentence boundary
 
     def start(self) -> bool:
         """Compile if needed, then start the helper process."""
@@ -76,6 +82,9 @@ class AppleSpeechTranscriber:
 
         if self.context_terms:
             command.extend(["--context-terms", ",".join(self.context_terms)])
+
+        if self.save_audio_path:
+            command.extend(["--save-audio", self.save_audio_path])
 
         logger.info("Starting Apple Speech helper: %s", " ".join(command))
 
@@ -165,7 +174,74 @@ class AppleSpeechTranscriber:
             return
 
         source = payload.get("source") or "unknown"
-        self._schedule_pending_flush(source, payload)
+        is_final = payload.get("is_final", False)
+
+        if is_final:
+            self._cancel_pending_flush(source)
+            self._accumulate_final(source, payload)
+        else:
+            self._schedule_pending_flush(source, payload)
+
+    def _accumulate_final(self, source: str, payload: dict) -> None:
+        """Accumulate final fragments into complete sentences before emitting."""
+        with self.pending_lock:
+            existing_timer = self.sentence_timers.get(source)
+            if existing_timer:
+                existing_timer.cancel()
+
+            existing_buffer = self.sentence_buffer.get(source)
+            if existing_buffer:
+                existing_text = (existing_buffer.get("text") or "").strip().lower()
+                new_text = (payload.get("text") or "").strip()
+                new_text_lower = new_text.lower()
+
+                buffer_end = float(existing_buffer.get("end_time") or 0)
+                new_start = float(payload.get("start_time") or 0)
+
+                # Determine if this is an UPDATE (overlapping/extending) or CONTINUATION
+                is_update = (
+                    new_text_lower.startswith(existing_text[:20]) or
+                    existing_text.startswith(new_text_lower[:20]) or
+                    new_start <= buffer_end + 0.5
+                )
+
+                if is_update:
+                    # Replace with the longer/newer version
+                    if len(new_text) >= len(existing_text):
+                        existing_buffer["text"] = new_text
+                    existing_buffer["end_time"] = payload.get("end_time", existing_buffer.get("end_time"))
+                    existing_buffer["confidence"] = payload.get("confidence", existing_buffer.get("confidence"))
+                else:
+                    # True continuation — new sentence fragment after a gap
+                    existing_buffer["text"] = f"{existing_buffer['text']} {new_text}".strip()
+                    existing_buffer["end_time"] = payload.get("end_time", existing_buffer.get("end_time"))
+            else:
+                self.sentence_buffer[source] = dict(payload)
+
+            # Emit partial preview of accumulated text so far (grey/italic in UI)
+            preview_payload = dict(self.sentence_buffer[source])
+
+            # Schedule final emission after a pause
+            timer = threading.Timer(
+                self.sentence_flush_delay,
+                self._flush_sentence,
+                args=(source,),
+            )
+            timer.daemon = True
+            self.sentence_timers[source] = timer
+            timer.start()
+
+        # Show accumulated text as partial preview immediately
+        self._emit_payload(preview_payload, is_partial=True)
+
+    def _flush_sentence(self, source: str) -> None:
+        """Emit the accumulated sentence as final after silence detected."""
+        with self.pending_lock:
+            payload = self.sentence_buffer.pop(source, None)
+            self.sentence_timers.pop(source, None)
+
+        if payload:
+            self._emit_payload(payload, is_partial=False)
 
     def _schedule_pending_flush(self, source: str, payload: dict) -> None:
         flush_now = None
@@ -190,7 +266,7 @@ class AppleSpeechTranscriber:
             timer.start()
 
         if flush_now:
-            self._emit_payload(flush_now)
+            self._emit_payload(flush_now, is_partial=True)
 
     def _cancel_pending_flush(self, source: str) -> None:
         with self.pending_lock:
@@ -205,7 +281,7 @@ class AppleSpeechTranscriber:
             self.pending_timers.pop(source, None)
 
         if payload:
-            self._emit_payload(payload)
+            self._emit_payload(payload, is_partial=True)
 
     def _flush_all_pending(self) -> None:
         with self.pending_lock:
@@ -214,12 +290,22 @@ class AppleSpeechTranscriber:
             self.pending_by_source.clear()
             self.pending_timers.clear()
 
+            # Also flush accumulated sentence buffers as final
+            sentence_pending = list(self.sentence_buffer.values())
+            sentence_timers = list(self.sentence_timers.values())
+            self.sentence_buffer.clear()
+            self.sentence_timers.clear()
+
         for timer in timers:
             timer.cancel()
+        for timer in sentence_timers:
+            timer.cancel()
         for payload in pending:
-            self._emit_payload(payload)
+            self._emit_payload(payload, is_partial=True)
+        for payload in sentence_pending:
+            self._emit_payload(payload, is_partial=False)
 
-    def _emit_payload(self, payload: dict) -> None:
+    def _emit_payload(self, payload: dict, is_partial: bool = False) -> None:
         text = (payload.get("text") or "").strip()
         if len(text) < 4 or is_hallucination(text):
             return
@@ -231,10 +317,12 @@ class AppleSpeechTranscriber:
 
         source = payload.get("source") or "unknown"
         now = time.time()
-        previous_text, previous_time = self.last_text_by_source.get(source, ("", 0.0))
+        previous_text, previous_time, previous_partial = self.last_text_by_source.get(source, ("", 0.0, False))
         if text == previous_text and now - previous_time < 1.5:
-            return
-        self.last_text_by_source[source] = (text, now)
+            # Allow final to pass even if we just emitted this text as partial
+            if not (previous_partial and not is_partial):
+                return
+        self.last_text_by_source[source] = (text, now, is_partial)
 
         segment = TranscriptSegment(
             text=text,
@@ -243,6 +331,7 @@ class AppleSpeechTranscriber:
             speaker=payload.get("speaker") or ("You" if source == "microphone" else "Other"),
             source=source,
             confidence=confidence,
+            is_partial=is_partial,
         )
 
         if self.callback:

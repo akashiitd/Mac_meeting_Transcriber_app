@@ -625,15 +625,14 @@ ipcMain.handle('start-recording-ui', async (_, sessionName) => {
           // Parse real-time transcript segments from log output
           // Format: "2026-01-10 00:08:36,042 - INFO - [system] Other: text here"
           // or: "2026-01-10 00:09:01,121 - INFO - [microphone] You: text here"
-          const transcriptMatch = line.match(/\[(?:system|microphone)\]\s*(You|Other):\s*(.+)/);
+          const transcriptMatch = line.match(/\[(?:system|microphone)\]\s*([^:]+):\s*(.+?)(\s*\[partial\])?$/);
           if (transcriptMatch && mainWindow && !mainWindow.isDestroyed()) {
             const speaker = transcriptMatch[1];
             const text = transcriptMatch[2];
+            const isPartial = !!transcriptMatch[3];
             const timestamp = new Date().toLocaleTimeString();
             mainWindow.webContents.send('realtime-transcript', {
-              speaker: speaker,
-              text: text,
-              timestamp: timestamp
+              speaker, text, timestamp, isPartial
             });
           }
         }
@@ -1857,11 +1856,22 @@ ipcMain.handle('start-realtime-transcription', async (event, options = {}) => {
 
     realtimeTranscriptionProcess.stdout.on('data', (data) => {
       const output = data.toString();
-      // Parse transcript segments and send to frontend
-      if (output.includes('[') && output.includes(']:')) {
-        mainWindow.webContents.send('realtime-transcript', { text: output.trim() });
-      }
-      sendDebugLog(output.trim());
+      output.split('\n').forEach(line => {
+        const trimmed = line.trim();
+        if (!trimmed) return;
+        sendDebugLog(trimmed);
+
+        const segMatch = trimmed.match(/^\[([^\]]+)\]:\s*(.+?)(\s*\[partial\])?$/);
+        if (segMatch && mainWindow && !mainWindow.isDestroyed()) {
+          const speaker = segMatch[1];
+          const text = segMatch[2];
+          const isPartial = !!segMatch[3];
+          const timestamp = new Date().toLocaleTimeString();
+          mainWindow.webContents.send('realtime-transcript', {
+            speaker, text, timestamp, isPartial
+          });
+        }
+      });
     });
 
     realtimeTranscriptionProcess.stderr.on('data', (data) => {
