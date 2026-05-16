@@ -21,6 +21,7 @@ from src.config import get_config
 logger = logging.getLogger(__name__)
 
 MIN_CONFIDENCE_THRESHOLD = 0.3
+PARTIAL_FLUSH_DELAY_SECONDS = 4.5
 
 
 class AppleSpeechTranscriber:
@@ -51,7 +52,7 @@ class AppleSpeechTranscriber:
         self.pending_by_source: dict[str, dict] = {}
         self.pending_timers: dict[str, threading.Timer] = {}
         self.pending_lock = threading.Lock()
-        self.partial_flush_delay = 1.2
+        self.partial_flush_delay = PARTIAL_FLUSH_DELAY_SECONDS
 
     def start(self) -> bool:
         """Compile if needed, then start the helper process."""
@@ -165,7 +166,12 @@ class AppleSpeechTranscriber:
             return
 
         source = payload.get("source") or "unknown"
-        self._schedule_pending_flush(source, payload)
+        if payload.get("is_final") is False:
+            self._schedule_pending_flush(source, payload)
+            return
+
+        self._cancel_pending_flush(source)
+        self._emit_payload(payload)
 
     def _schedule_pending_flush(self, source: str, payload: dict) -> None:
         flush_now = None

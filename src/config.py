@@ -17,6 +17,7 @@ class Config:
 
     DEFAULT_MODEL = "llama3.2:3b"
     DEFAULT_REALTIME_TRANSCRIPTION_MODEL = "apple-speech"
+    DEFAULT_TRANSCRIPTION_QUALITY_MODE = "fast"
 
     # Supported models with metadata (organized by parameter size, ascending)
     SUPPORTED_MODELS = {
@@ -136,6 +137,12 @@ class Config:
             "model": self.DEFAULT_MODEL,
             "realtime_transcription_model": self.DEFAULT_REALTIME_TRANSCRIPTION_MODEL,
             "notifications_enabled": True,
+            "transcription_context": {
+                "domain_terms": [],
+                "participant_names": [],
+                "locale": "en_US",
+                "quality_mode": self.DEFAULT_TRANSCRIPTION_QUALITY_MODE
+            },
             "version": "1.0"
         }
 
@@ -229,7 +236,7 @@ class Config:
     def get_transcription_quality_mode(self) -> str:
         """Get quality mode: 'fast' or 'balanced'."""
         ctx = self.get_transcription_context()
-        return ctx.get("quality_mode", "balanced")
+        return ctx.get("quality_mode", self.DEFAULT_TRANSCRIPTION_QUALITY_MODE)
 
     def get_context_terms(self) -> list:
         """Get combined domain terms and participant names for vocabulary hints."""

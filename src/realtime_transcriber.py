@@ -14,6 +14,7 @@ import subprocess
 import os
 import wave
 import io
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Optional, Callable, List, Dict, Any
 from dataclasses import dataclass, field
@@ -182,6 +183,72 @@ def is_hallucination(text: str) -> bool:
         return True
 
     return False
+
+
+def _segment_value(segment: Any, name: str, default: Any = None) -> Any:
+    if isinstance(segment, dict):
+        return segment.get(name, default)
+    return getattr(segment, name, default)
+
+
+def _same_speaker_source(previous: Any, current: Any) -> bool:
+    return (
+        _segment_value(previous, "source") == _segment_value(current, "source")
+        and _segment_value(previous, "speaker") == _segment_value(current, "speaker")
+    )
+
+
+def _segments_overlap(previous: Any, current: Any, slack_seconds: float = 0.5) -> bool:
+    previous_start = float(_segment_value(previous, "start_time", 0.0) or 0.0)
+    previous_end = float(_segment_value(previous, "end_time", previous_start) or previous_start)
+    current_start = float(_segment_value(current, "start_time", 0.0) or 0.0)
+    current_end = float(_segment_value(current, "end_time", current_start) or current_start)
+    return (
+        current_start <= previous_end + slack_seconds
+        and current_end >= previous_start - slack_seconds
+    )
+
+
+def is_replacement_segment(previous: Any, current: Any) -> bool:
+    """Detect Apple Speech interim text replaced by a later overlapping result."""
+    if not _same_speaker_source(previous, current):
+        return False
+
+    if not _segments_overlap(previous, current):
+        return False
+
+    previous_text = normalize_transcript_text(str(_segment_value(previous, "text", "") or ""))
+    current_text = normalize_transcript_text(str(_segment_value(current, "text", "") or ""))
+    if not previous_text or not current_text or previous_text == current_text:
+        return False
+
+    if current_text.startswith(previous_text) or previous_text.startswith(current_text):
+        return True
+
+    shorter_text, longer_text = (
+        (previous_text, current_text)
+        if len(previous_text) <= len(current_text)
+        else (current_text, previous_text)
+    )
+    if len(shorter_text) < 20:
+        return False
+
+    previous_words = set(transcript_words(previous_text))
+    current_words = set(transcript_words(current_text))
+    if not previous_words or not current_words:
+        return False
+
+    overlap = len(previous_words & current_words) / min(len(previous_words), len(current_words))
+    if overlap < 0.7:
+        return False
+
+    prefix_window = longer_text[:len(shorter_text) + 20]
+    prefix_similarity = SequenceMatcher(None, shorter_text, prefix_window).ratio()
+    if prefix_similarity >= 0.8:
+        return True
+
+    similarity = SequenceMatcher(None, previous_text, current_text).ratio()
+    return similarity >= 0.78
 
 
 @dataclass
@@ -703,6 +770,10 @@ class RealtimeTranscriber:
             segment.start_time = max(0.0, current_time - self.chunk_duration)
 
         with self.segments_lock:
+            self.segments = [
+                previous for previous in self.segments
+                if not is_replacement_segment(previous, segment)
+            ]
             self.segments.append(segment)
 
         if self.transcription_callback:
@@ -1070,6 +1141,7 @@ class LiveTranscriptLogger:
         else:
             self.session_name = f"live_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
+        self.started_at = datetime.now().isoformat()
         self.log_file = self.output_dir / f"{self.session_name}_live.txt"
         self.json_file = self.output_dir / f"{self.session_name}_live.json"
         self.segments: List[Dict[str, Any]] = []
@@ -1082,27 +1154,43 @@ class LiveTranscriptLogger:
         """Initialize log files with headers."""
         with open(self.log_file, 'w') as f:
             f.write(f"# Live Transcript - {self.session_name}\n")
-            f.write(f"# Started: {datetime.now().isoformat()}\n")
+            f.write(f"# Started: {self.started_at}\n")
             f.write("# " + "=" * 50 + "\n\n")
 
     def log_segment(self, segment: TranscriptSegment) -> None:
         """Log a transcript segment to files."""
         with self.lock:
-            # Append to text log
-            with open(self.log_file, 'a') as f:
-                f.write(segment.format_log_entry() + "\n")
+            segment_dict = segment.to_dict()
+            self.segments = [
+                previous for previous in self.segments
+                if not is_replacement_segment(previous, segment_dict)
+            ]
+            self.segments.append(segment_dict)
+            self._write_logs()
 
-            # Add to JSON segments
-            self.segments.append(segment.to_dict())
+    def _write_logs(self) -> None:
+        with open(self.log_file, 'w') as f:
+            f.write(f"# Live Transcript - {self.session_name}\n")
+            f.write(f"# Started: {self.started_at}\n")
+            f.write("# " + "=" * 50 + "\n\n")
+            for segment in self.segments:
+                f.write(self._format_segment_dict(segment) + "\n")
 
-            # Update JSON file
-            with open(self.json_file, 'w') as f:
-                import json
-                json.dump({
-                    "session_name": self.session_name,
-                    "started": datetime.now().isoformat(),
-                    "segments": self.segments
-                }, f, indent=2)
+        with open(self.json_file, 'w') as f:
+            import json
+            json.dump({
+                "session_name": self.session_name,
+                "started": self.started_at,
+                "segments": self.segments
+            }, f, indent=2)
+
+    @staticmethod
+    def _format_segment_dict(segment: Dict[str, Any]) -> str:
+        start_time = float(segment.get("start_time") or 0.0)
+        end_time = float(segment.get("end_time") or 0.0)
+        speaker = segment.get("speaker") or "Unknown"
+        text = segment.get("text") or ""
+        return f"[{start_time:.2f}s - {end_time:.2f}s] [{speaker}]: {text}"
 
     def finalize(self) -> str:
         """Finalize the log and return the file path."""
