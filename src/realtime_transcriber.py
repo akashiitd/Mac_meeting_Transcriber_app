@@ -522,6 +522,7 @@ class RealtimeTranscriber:
         chunk_duration: float = 2.0,  # Transcribe every N seconds
         overlap_duration: float = 0.25,  # Small context window between chunks
         transcription_backend: str = "whisper",
+        save_audio_path: Optional[str] = None,
     ):
         self.model_size = model_size
         self.language = language
@@ -531,6 +532,7 @@ class RealtimeTranscriber:
         self.chunk_duration = chunk_duration
         self.overlap_duration = overlap_duration
         self.transcription_backend = transcription_backend
+        self.save_audio_path = save_audio_path
 
         # Audio capture
         self.system_capture: Optional[SystemAudioCapture] = None
@@ -648,6 +650,7 @@ class RealtimeTranscriber:
                 enable_system_audio=self.enable_system_audio,
                 enable_microphone=self.enable_microphone,
                 callback=self._handle_external_transcript_segment,
+                save_audio_path=self.save_audio_path,
             )
             self.mlx_whisper = None
             self.model = True
@@ -1213,7 +1216,8 @@ def create_realtime_transcriber(
     callback: Optional[Callable[[TranscriptSegment], None]] = None,
     session_name: Optional[str] = None,
     enable_live_logging: bool = True,
-    transcription_backend: str = "whisper"
+    transcription_backend: str = "whisper",
+    save_audio_path: Optional[str] = None,
 ) -> tuple:
     """
     Factory function to create a configured RealtimeTranscriber with optional live logging.
@@ -1242,7 +1246,8 @@ def create_realtime_transcriber(
         enable_system_audio=enable_system_audio,
         enable_microphone=enable_microphone,
         transcription_callback=callback,
-        transcription_backend=transcription_backend
+        transcription_backend=transcription_backend,
+        save_audio_path=save_audio_path,
     )
 
     return transcriber, live_logger

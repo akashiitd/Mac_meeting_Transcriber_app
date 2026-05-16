@@ -625,7 +625,7 @@ ipcMain.handle('start-recording-ui', async (_, sessionName) => {
           // Parse real-time transcript segments from log output
           // Format: "2026-01-10 00:08:36,042 - INFO - [system] Other: text here"
           // or: "2026-01-10 00:09:01,121 - INFO - [microphone] You: text here"
-          const transcriptMatch = line.match(/\[(?:system|microphone)\]\s*(You|Other):\s*(.+)/);
+          const transcriptMatch = line.match(/\[(?:system|microphone)\]\s*([^:]+):\s*(.+)/);
           if (transcriptMatch && mainWindow && !mainWindow.isDestroyed()) {
             const speaker = transcriptMatch[1];
             const text = transcriptMatch[2];

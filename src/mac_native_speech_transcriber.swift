@@ -301,6 +301,58 @@ final class SpeechSource {
     }
 }
 
+final class AudioFileWriter {
+    private let audioFile: AVAudioFile
+    private let lock = NSLock()
+    private let writeFormat: AVAudioFormat
+
+    init(path: String, sampleRate: Double = 48_000, channels: UInt32 = 1) throws {
+        let url = URL(fileURLWithPath: path)
+        writeFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: sampleRate, channels: channels, interleaved: false)!
+        let settings: [String: Any] = [
+            AVFormatIDKey: kAudioFormatLinearPCM,
+            AVSampleRateKey: sampleRate,
+            AVNumberOfChannelsKey: channels,
+            AVLinearPCMBitDepthKey: 16,
+            AVLinearPCMIsFloatKey: false,
+            AVLinearPCMIsBigEndianKey: false,
+        ]
+        audioFile = try AVAudioFile(forWriting: url, settings: settings)
+    }
+
+    func write(sampleBuffer: CMSampleBuffer) {
+        let frameCount = CMSampleBufferGetNumSamples(sampleBuffer)
+        guard frameCount > 0 else { return }
+
+        let format: AVAudioFormat
+        if let formatDescription = CMSampleBufferGetFormatDescription(sampleBuffer),
+           let streamDescription = CMAudioFormatDescriptionGetStreamBasicDescription(formatDescription),
+           let sampleFormat = AVAudioFormat(streamDescription: streamDescription) {
+            format = sampleFormat
+        } else {
+            format = writeFormat
+        }
+
+        guard let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: AVAudioFrameCount(frameCount)) else { return }
+        buffer.frameLength = AVAudioFrameCount(frameCount)
+
+        let status = CMSampleBufferCopyPCMDataIntoAudioBufferList(
+            sampleBuffer, at: 0, frameCount: Int32(frameCount), into: buffer.mutableAudioBufferList
+        )
+        guard status == noErr else { return }
+
+        lock.lock()
+        defer { lock.unlock() }
+        try? audioFile.write(from: buffer)
+    }
+
+    func close() {
+        lock.lock()
+        defer { lock.unlock() }
+        // AVAudioFile flushes on dealloc
+    }
+}
+
 @available(macOS 26.0, *)
 final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
     private let emitter: JSONEmitter
@@ -309,22 +361,34 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
     private let qualityMode: String
     private let captureSystemAudio: Bool
     private let captureMicrophone: Bool
+    private let saveAudioPath: String?
     private let queue = DispatchQueue(label: "macmeetingtranscriber.apple-speech.capture")
 
     private var stream: SCStream?
     private var systemSource: SpeechSource?
     private var microphoneSource: SpeechSource?
+    private var audioWriter: AudioFileWriter?
 
-    init(localeIdentifier: String, contextTerms: [String], qualityMode: String, captureSystemAudio: Bool, captureMicrophone: Bool, emitter: JSONEmitter) {
+    init(localeIdentifier: String, contextTerms: [String], qualityMode: String, captureSystemAudio: Bool, captureMicrophone: Bool, saveAudioPath: String?, emitter: JSONEmitter) {
         self.localeIdentifier = localeIdentifier
         self.contextTerms = contextTerms
         self.qualityMode = qualityMode
         self.captureSystemAudio = captureSystemAudio
         self.captureMicrophone = captureMicrophone
+        self.saveAudioPath = saveAudioPath
         self.emitter = emitter
     }
 
     func start() async throws {
+        if let path = saveAudioPath {
+            do {
+                audioWriter = try AudioFileWriter(path: path, sampleRate: 48_000, channels: 1)
+                emitter.status("Saving system audio to: \(path)")
+            } catch {
+                emitter.error("Failed to create audio file writer: \(error.localizedDescription)")
+            }
+        }
+
         if captureSystemAudio {
             try await requestScreenCaptureAccess()
         }
@@ -392,6 +456,7 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
         }
         await systemSource?.finish()
         await microphoneSource?.finish()
+        audioWriter?.close()
         emitter.status("Apple Speech capture stopped.")
     }
 
@@ -401,6 +466,7 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
         switch type {
         case .audio:
             systemSource?.append(sampleBuffer: sampleBuffer)
+            audioWriter?.write(sampleBuffer: sampleBuffer)
         case .microphone:
             microphoneSource?.append(sampleBuffer: sampleBuffer)
         default:
@@ -443,6 +509,7 @@ struct MacNativeSpeechTranscriber {
         let source = value(after: "--source", in: arguments) ?? "both"
         let duration = Double(value(after: "--duration", in: arguments) ?? "")
         let qualityMode = value(after: "--quality", in: arguments) ?? "fast"
+        let saveAudioPath = value(after: "--save-audio", in: arguments)
         let contextTermsRaw = value(after: "--context-terms", in: arguments) ?? ""
         let contextTerms = contextTermsRaw.isEmpty ? [String]() :
             contextTermsRaw.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
@@ -461,6 +528,7 @@ struct MacNativeSpeechTranscriber {
             qualityMode: qualityMode,
             captureSystemAudio: captureSystemAudio,
             captureMicrophone: captureMicrophone,
+            saveAudioPath: saveAudioPath,
             emitter: emitter
         )
 

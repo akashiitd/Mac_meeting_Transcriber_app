@@ -291,6 +291,92 @@ Transcript:
                 "action_items": []
             }
     
+    def _run_batch_diarization(self, audio_path: Path, transcript_data: dict) -> dict:
+        """Run speaker diarization on audio file and relabel transcript segments."""
+        from src.config import get_config
+        config = get_config()
+
+        if not config.is_diarization_enabled():
+            return transcript_data
+
+        hf_token = config.get_hf_token()
+        if not hf_token:
+            print("⚠️ Diarization enabled but no HuggingFace token configured")
+            return transcript_data
+
+        if not audio_path.exists():
+            return transcript_data
+
+        try:
+            from src.speaker_diarizer import SpeakerDiarizer
+            diar_config = config.get_diarization_config()
+
+            print("🔊 Running speaker diarization...")
+            diarizer = SpeakerDiarizer(
+                hf_token=hf_token,
+                num_speakers=diar_config.get("num_speakers"),
+                min_speakers=diar_config.get("min_speakers", 2),
+                max_speakers=diar_config.get("max_speakers", 10),
+                use_mps=diar_config.get("use_mps", True),
+            )
+
+            diarization_segments = diarizer.diarize_audio(audio_path)
+            if not diarization_segments:
+                print("⚠️ No speakers detected by diarization")
+                return transcript_data
+
+            num_speakers = len(set(s.speaker_label for s in diarization_segments))
+            print(f"✅ Diarization complete: {num_speakers} speakers identified")
+
+            speaker_names = config.get_speaker_names()
+            label_map = diarizer._build_label_map(diarization_segments, speaker_names)
+
+            transcript_data["transcript_text"] = self._rebuild_transcript_with_speakers(
+                transcript_data["transcript_text"], diarization_segments, label_map
+            )
+
+            return transcript_data
+
+        except Exception as e:
+            print(f"⚠️ Diarization failed (continuing without): {e}")
+            return transcript_data
+
+    def _rebuild_transcript_with_speakers(
+        self, transcript_text: str, diarization_segments, label_map: dict
+    ) -> str:
+        """Rebuild transcript text replacing [Other] with diarized speaker labels."""
+        import re
+        lines = transcript_text.split("\n")
+        result = []
+
+        pattern = re.compile(r'\[(\d+\.?\d*)s\]\s*\[([^\]]+)\]:\s*(.*)')
+
+        for line in lines:
+            match = pattern.match(line)
+            if match:
+                timestamp = float(match.group(1))
+                speaker = match.group(2)
+                text = match.group(3)
+
+                if speaker != "You":
+                    best_speaker = None
+                    best_overlap = 0.0
+                    for d_seg in diarization_segments:
+                        if d_seg.start_time <= timestamp <= d_seg.end_time:
+                            overlap = d_seg.end_time - d_seg.start_time
+                            if overlap > best_overlap:
+                                best_overlap = overlap
+                                best_speaker = d_seg.speaker_label
+
+                    if best_speaker and best_speaker in label_map:
+                        speaker = label_map[best_speaker]
+
+                result.append(f"[{timestamp:.2f}s] [{speaker}]: {text}")
+            else:
+                result.append(line)
+
+        return "\n".join(result)
+
     async def process_recording(self, audio_file: str, session_name: str = "Recording") -> dict:
         """Complete processing: transcribe + summarize."""
         print(f"🔄 Processing recording: {audio_file}")
@@ -340,10 +426,13 @@ Transcript:
         
         # Step 1: Transcribe
         transcript_data = await self.transcribe_audio(audio_file, session_name)
-        
+
+        # Step 1.5: Speaker diarization (if enabled)
+        transcript_data = self._run_batch_diarization(audio_path, transcript_data)
+
         # Step 2: Summarize with actual duration
         summary_data = await self.summarize_transcript(
-            transcript_data["transcript_text"], 
+            transcript_data["transcript_text"],
             session_name
         )
         
@@ -604,6 +693,52 @@ def status():
             print(f"  • {recording.name} ({size_mb:.1f}MB)")
 
 
+def _run_post_recording_diarization(segments: list, app_config, recorder) -> list:
+    """Run diarization on saved system audio after recording stops."""
+    if not app_config.is_diarization_enabled():
+        return segments
+
+    hf_token = app_config.get_hf_token()
+    if not hf_token:
+        return segments
+
+    diar_config = app_config.get_diarization_config()
+    system_audio_path = getattr(recorder, '_system_audio_path', None)
+    if not system_audio_path or not Path(system_audio_path).exists():
+        return segments
+
+    try:
+        from src.speaker_diarizer import SpeakerDiarizer
+
+        print("🔊 Running speaker diarization on recorded audio...")
+        diarizer = SpeakerDiarizer(
+            hf_token=hf_token,
+            num_speakers=diar_config.get("num_speakers"),
+            min_speakers=diar_config.get("min_speakers", 2),
+            max_speakers=diar_config.get("max_speakers", 10),
+            use_mps=diar_config.get("use_mps", True),
+        )
+
+        diarization_segments = diarizer.diarize_audio(Path(system_audio_path))
+        if diarization_segments:
+            speaker_names = app_config.get_speaker_names()
+            segments = diarizer.assign_speakers_to_segments(
+                segments, diarization_segments, speaker_names
+            )
+            num_speakers = len(set(s.speaker_label for s in diarization_segments))
+            print(f"✅ Identified {num_speakers} distinct speakers")
+
+        try:
+            Path(system_audio_path).unlink()
+        except Exception:
+            pass
+
+    except Exception as e:
+        print(f"⚠️ Diarization failed (continuing without): {e}")
+
+    return segments
+
+
 @cli.command()
 @click.argument('duration', type=int, default=10)
 @click.argument('session_name', default='Recording')
@@ -624,6 +759,7 @@ def record(duration, session_name):
     recorder = SimpleRecorder()
     from src.config import get_config
     app_config = get_config()
+    diar_config = app_config.get_diarization_config()
     realtime_model = app_config.get_realtime_transcription_model()
     realtime_model_info = app_config.get_realtime_transcription_model_info(realtime_model) or {}
     realtime_backend = realtime_model_info.get("backend", "whisper")
@@ -631,6 +767,7 @@ def record(duration, session_name):
     live_logger = None
     recording_started = False
     start_time = None
+    incremental_diarizer = None
 
     # Generate file paths
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -731,10 +868,14 @@ def record(duration, session_name):
 
     def signal_handler(signum, frame):
         """Handle SIGTERM gracefully by stopping and processing"""
-        nonlocal transcriber, start_time
+        nonlocal transcriber, start_time, incremental_diarizer
 
         print(f"\n🛑 Received termination signal ({signum})")
         print("⏹️ Stopping recording and starting processing pipeline...")
+
+        if incremental_diarizer:
+            incremental_diarizer.stop()
+            incremental_diarizer = None
 
         if transcriber and recording_started:
             try:
@@ -745,6 +886,9 @@ def record(duration, session_name):
                 # Stop transcriber and get segments
                 segments = transcriber.stop()
                 print(f"📝 Captured {len(segments)} transcript segments")
+
+                # Run post-recording diarization if enabled
+                segments = _run_post_recording_diarization(segments, app_config, recorder)
 
                 # Get full transcript
                 transcript_text = transcriber.get_full_transcript()
@@ -786,6 +930,13 @@ def record(duration, session_name):
         }
         recorder.save_state(state)
 
+        # Generate save_audio_path for diarization if enabled
+        system_audio_path = None
+        if app_config.is_diarization_enabled() and app_config.get_hf_token():
+            system_audio_path = str(recorder.transcripts_dir / f"{timestamp}_{session_name}_system_audio.wav")
+            recorder._system_audio_path = system_audio_path
+            print("🔊 Diarization enabled - system audio will be saved for speaker identification")
+
         # Create realtime transcriber with dual audio capture
         print("🔊 Initializing dual audio capture (system + microphone)...")
         print(f"🧠 Real-time transcription model: {realtime_model_info.get('name', realtime_model)}")
@@ -797,7 +948,8 @@ def record(duration, session_name):
             callback=on_transcript_segment,
             session_name=session_name,
             enable_live_logging=True,
-            transcription_backend=realtime_backend
+            transcription_backend=realtime_backend,
+            save_audio_path=system_audio_path,
         )
 
         # Start real-time transcription
@@ -825,6 +977,30 @@ def record(duration, session_name):
 
         recording_started = True
         start_time = time.time()
+
+        # Start incremental diarization if mode is "realtime"
+        if system_audio_path and diar_config.get("mode") == "realtime":
+            try:
+                from src.speaker_diarizer import SpeakerDiarizer, IncrementalDiarizer
+                diarizer = SpeakerDiarizer(
+                    hf_token=app_config.get_hf_token(),
+                    num_speakers=diar_config.get("num_speakers"),
+                    min_speakers=diar_config.get("min_speakers", 2),
+                    max_speakers=diar_config.get("max_speakers", 10),
+                    use_mps=diar_config.get("use_mps", True),
+                )
+                incremental_diarizer = IncrementalDiarizer(
+                    diarizer=diarizer,
+                    audio_path=system_audio_path,
+                    segments_list=transcriber.segments,
+                    segments_lock=transcriber.segments_lock,
+                    interval_seconds=30.0,
+                    speaker_names=app_config.get_speaker_names(),
+                )
+                incremental_diarizer.start()
+                print("🔊 Near-real-time speaker diarization active (updates every 30s)")
+            except Exception as e:
+                print(f"⚠️ Could not start incremental diarization: {e}")
 
         print(f"📁 Recording to: {transcript_path}")
         print("📢 Speak into your microphone now!")
@@ -1422,6 +1598,102 @@ def set_notifications(enabled):
     else:
         print(f"ERROR: Failed to save notification preference")
         print(json.dumps({"success": False, "error": "Failed to save config"}))
+
+
+@cli.command()
+@click.argument('token')
+def set_hf_token(token):
+    """Set HuggingFace auth token for speaker diarization"""
+    from src.config import get_config
+
+    config = get_config()
+    success = config.set_hf_token(token)
+
+    if success:
+        print("SUCCESS: HuggingFace token saved")
+        print(json.dumps({"success": True}))
+    else:
+        print("ERROR: Failed to save token")
+        print(json.dumps({"success": False, "error": "Failed to save config"}))
+
+
+@cli.command()
+@click.argument('enabled', type=bool)
+def set_diarization(enabled):
+    """Enable or disable speaker diarization (True/False)"""
+    from src.config import get_config
+
+    config = get_config()
+    success = config.set_diarization_enabled(enabled)
+
+    if success:
+        state = "enabled" if enabled else "disabled"
+        print(f"SUCCESS: Speaker diarization {state}")
+        print(json.dumps({"success": True, "diarization_enabled": enabled}))
+    else:
+        print("ERROR: Failed to save diarization preference")
+        print(json.dumps({"success": False, "error": "Failed to save config"}))
+
+
+@cli.command()
+def get_diarization_config():
+    """Get the current diarization configuration"""
+    from src.config import get_config
+
+    config = get_config()
+    diar_config = config.get_diarization_config()
+    if diar_config.get("hf_token"):
+        diar_config["hf_token"] = "***configured***"
+    print(json.dumps(diar_config, indent=2))
+
+
+@cli.command()
+@click.argument('audio_file', type=click.Path(exists=True))
+def diarize(audio_file):
+    """Run standalone speaker diarization on an audio file"""
+    from src.config import get_config
+    from src.speaker_diarizer import SpeakerDiarizer
+
+    config = get_config()
+    hf_token = config.get_hf_token()
+    if not hf_token:
+        print("ERROR: No HuggingFace token configured. Run: set-hf-token <token>")
+        return
+
+    diar_config = config.get_diarization_config()
+    diarizer = SpeakerDiarizer(
+        hf_token=hf_token,
+        num_speakers=diar_config.get("num_speakers"),
+        min_speakers=diar_config.get("min_speakers", 2),
+        max_speakers=diar_config.get("max_speakers", 10),
+        use_mps=diar_config.get("use_mps", True),
+    )
+
+    print(f"🔊 Running diarization on {audio_file}...")
+    segments = diarizer.diarize_audio(Path(audio_file))
+
+    speaker_names = config.get_speaker_names()
+    label_map = diarizer._build_label_map(segments, speaker_names)
+
+    num_speakers = len(set(s.speaker_label for s in segments))
+    print(f"✅ Detected {num_speakers} speakers\n")
+
+    for seg in segments:
+        friendly = label_map.get(seg.speaker_label, seg.speaker_label)
+        print(f"  [{seg.start_time:6.1f}s - {seg.end_time:6.1f}s] {friendly}")
+
+    result = {
+        "speakers_detected": num_speakers,
+        "segments": [
+            {
+                "speaker": label_map.get(s.speaker_label, s.speaker_label),
+                "start_time": s.start_time,
+                "end_time": s.end_time
+            }
+            for s in segments
+        ]
+    }
+    print(f"\n{json.dumps(result, indent=2)}")
 
 
 if __name__ == '__main__':

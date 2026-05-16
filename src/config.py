@@ -143,7 +143,17 @@ class Config:
                 "locale": "en_US",
                 "quality_mode": self.DEFAULT_TRANSCRIPTION_QUALITY_MODE
             },
-            "version": "1.0"
+            "version": "1.0",
+            "diarization": {
+                "enabled": False,
+                "hf_token": "",
+                "num_speakers": None,
+                "min_speakers": 2,
+                "max_speakers": 10,
+                "use_mps": True,
+                "mode": "batch",
+                "speaker_names": {}
+            }
         }
 
     def get_model(self) -> str:
@@ -248,6 +258,66 @@ class Config:
     def set_transcription_context(self, context: Dict[str, Any]) -> bool:
         """Set transcription context config."""
         self._config["transcription_context"] = context
+        return self._save()
+
+    # --- Diarization config ---
+
+    def get_diarization_config(self) -> Dict[str, Any]:
+        """Get the full diarization configuration."""
+        defaults = {
+            "enabled": False,
+            "hf_token": "",
+            "num_speakers": None,
+            "min_speakers": 2,
+            "max_speakers": 10,
+            "use_mps": True,
+            "mode": "batch",
+            "speaker_names": {}
+        }
+        config = self._config.get("diarization", {})
+        defaults.update(config)
+        return defaults
+
+    def is_diarization_enabled(self) -> bool:
+        """Check if speaker diarization is enabled."""
+        return self.get_diarization_config().get("enabled", False)
+
+    def set_diarization_enabled(self, enabled: bool) -> bool:
+        """Enable or disable speaker diarization."""
+        if "diarization" not in self._config:
+            self._config["diarization"] = {}
+        self._config["diarization"]["enabled"] = enabled
+        return self._save()
+
+    def get_hf_token(self) -> str:
+        """Get HuggingFace auth token (from config or HF_TOKEN env var)."""
+        import os
+        token = self.get_diarization_config().get("hf_token", "")
+        if not token:
+            token = os.environ.get("HF_TOKEN", "")
+        return token
+
+    def set_hf_token(self, token: str) -> bool:
+        """Store HuggingFace auth token in config."""
+        if "diarization" not in self._config:
+            self._config["diarization"] = {}
+        self._config["diarization"]["hf_token"] = token
+        return self._save()
+
+    def get_speaker_names(self) -> Dict[str, str]:
+        """Get speaker name mappings (e.g. {'Speaker 1': 'Alice'})."""
+        return self.get_diarization_config().get("speaker_names", {})
+
+    def set_speaker_names(self, mapping: Dict[str, str]) -> bool:
+        """Set speaker name mappings."""
+        if "diarization" not in self._config:
+            self._config["diarization"] = {}
+        self._config["diarization"]["speaker_names"] = mapping
+        return self._save()
+
+    def set_diarization_config(self, config: Dict[str, Any]) -> bool:
+        """Set the full diarization configuration."""
+        self._config["diarization"] = config
         return self._save()
 
     def get(self, key: str, default: Any = None) -> Any:

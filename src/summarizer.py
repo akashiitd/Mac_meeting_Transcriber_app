@@ -346,9 +346,23 @@ Return ONLY the response in this exact JSON format:
         Create an enhanced prompt with discussion_areas and improved extraction.
         Uses more examples in schema to permit more detailed summaries.
         """
+        speaker_note = ""
+        try:
+            from src.config import get_config
+            config = get_config()
+            speaker_names = config.get_speaker_names()
+            if speaker_names:
+                mapping_str = ", ".join(f"{k} = {v}" for k, v in speaker_names.items())
+                speaker_note = f"\nKnown participants: {mapping_str}\n"
+        except Exception:
+            pass
+
         return f"""You are a helpful meeting assistant. Summarise this meeting transcript into participants, discussion areas, key points and any next steps mentioned. Only base your summary on what was explicitly discussed in the transcript.
 
 IMPORTANT: Do not infer or assume information that wasn't directly mentioned.
+
+Each line in the transcript is attributed to a specific speaker (e.g. [You], [Speaker 1], [Speaker 2]). Use these speaker attributions to correctly identify participants and assign action items and decisions to the right person.
+{speaker_note}
 
 Include a brief overview so someone can quickly understand what happened in the meeting, who were the participants, what areas/topics were discussed, what were the key points, and what are the next steps if any were mentioned.
 

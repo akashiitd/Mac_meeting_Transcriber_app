@@ -35,6 +35,7 @@ class AppleSpeechTranscriber:
         callback: Optional[Callable[[TranscriptSegment], None]] = None,
         context_terms: Optional[list] = None,
         quality_mode: Optional[str] = None,
+        save_audio_path: Optional[str] = None,
     ):
         config = get_config()
         self.language = language
@@ -43,6 +44,7 @@ class AppleSpeechTranscriber:
         self.callback = callback
         self.context_terms = context_terms if context_terms is not None else config.get_context_terms()
         self.quality_mode = quality_mode or config.get_transcription_quality_mode()
+        self.save_audio_path = save_audio_path
 
         self.process: Optional[subprocess.Popen] = None
         self.stdout_thread: Optional[threading.Thread] = None
@@ -77,6 +79,9 @@ class AppleSpeechTranscriber:
 
         if self.context_terms:
             command.extend(["--context-terms", ",".join(self.context_terms)])
+
+        if self.save_audio_path:
+            command.extend(["--save-audio", self.save_audio_path])
 
         logger.info("Starting Apple Speech helper: %s", " ".join(command))
 

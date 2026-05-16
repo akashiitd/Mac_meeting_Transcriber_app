@@ -660,6 +660,14 @@
             border-left: 3px solid #3b82f6;
         }
 
+        .transcript-segment.speaker-2 { border-left: 3px solid #a855f7; }
+        .transcript-segment.speaker-3 { border-left: 3px solid #f97316; }
+        .transcript-segment.speaker-4 { border-left: 3px solid #ec4899; }
+        .transcript-segment.speaker-5 { border-left: 3px solid #14b8a6; }
+        .transcript-segment.speaker-6 { border-left: 3px solid #eab308; }
+        .transcript-segment.speaker-7 { border-left: 3px solid #ef4444; }
+        .transcript-segment.speaker-8 { border-left: 3px solid #6366f1; }
+
         .transcript-speaker {
             font-size: 11px;
             font-weight: 600;
@@ -674,6 +682,14 @@
         .transcript-speaker.other {
             color: #3b82f6;
         }
+
+        .transcript-speaker.speaker-2 { color: #a855f7; }
+        .transcript-speaker.speaker-3 { color: #f97316; }
+        .transcript-speaker.speaker-4 { color: #ec4899; }
+        .transcript-speaker.speaker-5 { color: #14b8a6; }
+        .transcript-speaker.speaker-6 { color: #eab308; }
+        .transcript-speaker.speaker-7 { color: #ef4444; }
+        .transcript-speaker.speaker-8 { color: #6366f1; }
 
         .transcript-text {
             color: #e5e5e5;
@@ -1959,6 +1975,23 @@ Session started - waiting for activity...
             `;
         }
 
+        const speakerColorMap = {};
+        const SPEAKER_COLORS = ['other', 'speaker-2', 'speaker-3', 'speaker-4', 'speaker-5', 'speaker-6', 'speaker-7', 'speaker-8'];
+        let nextColorIndex = 0;
+
+        function getSpeakerClass(speaker) {
+            const lower = speaker.toLowerCase();
+            if (lower === 'you') return { segment: 'speaker-you', label: 'you' };
+            if (lower === 'other') return { segment: 'speaker-other', label: 'other' };
+
+            if (!speakerColorMap[lower]) {
+                speakerColorMap[lower] = SPEAKER_COLORS[nextColorIndex % SPEAKER_COLORS.length];
+                nextColorIndex++;
+            }
+            const cls = speakerColorMap[lower];
+            return { segment: cls, label: cls };
+        }
+
         function addTranscriptSegment(text, speaker = 'Unknown', timestamp = null) {
             // Remove empty state if present
             const emptyEl = liveTranscriptContent.querySelector('.live-transcript-empty');
@@ -1966,8 +1999,7 @@ Session started - waiting for activity...
                 emptyEl.remove();
             }
 
-            const speakerClass = speaker.toLowerCase() === 'you' ? 'you' : 'other';
-            const segmentClass = speaker.toLowerCase() === 'you' ? 'speaker-you' : 'speaker-other';
+            const { segment: segmentClass, label: speakerClass } = getSpeakerClass(speaker);
 
             const segment = document.createElement('div');
             segment.className = `transcript-segment ${segmentClass}`;
