@@ -4,6 +4,7 @@ const { spawn, exec } = require('child_process');
 const fs = require('fs');
 const https = require('https');
 const os = require('os');
+const { buildRecordingArgs } = require('./recording-command');
 
 let mainWindow;
 let settingsWindow = null;
@@ -542,7 +543,7 @@ function addToProcessingQueue(audioFile, sessionName) {
   processNextInQueue();
 }
 
-ipcMain.handle('start-recording-ui', async (_, sessionName) => {
+ipcMain.handle('start-recording-ui', async (_, sessionName, options = {}) => {
   try {
     if (currentRecordingProcess) {
       return { success: false, error: 'Recording already in progress' };
@@ -552,15 +553,23 @@ ipcMain.handle('start-recording-ui', async (_, sessionName) => {
     
     console.log('Starting long recording process...');
     sendDebugLog(`Starting recording process: ${sessionName || 'Meeting'}`);
-    sendDebugLog('$ python -u simple_recorder.py record 3600');
+    sendDebugLog(
+      `$ python -u simple_recorder.py record 3600 ${sessionName || 'Meeting'}${options.summarize === true ? ' --summarize' : ''}`
+    );
     
     const pythonPath = path.join(__dirname, '..', 'venv', 'bin', 'python');
     const scriptPath = path.join(__dirname, '..', 'simple_recorder.py');
     
     const actualSessionName = sessionName || 'Meeting';
+    const summarize = options.summarize === true;
+    const recordingArgs = buildRecordingArgs({
+      scriptPath,
+      sessionName: actualSessionName,
+      summarize,
+    });
     
     // Start background recording with 60-minute limit
-    currentRecordingProcess = spawn(pythonPath, ['-u', scriptPath, 'record', '3600', actualSessionName], {
+    currentRecordingProcess = spawn(pythonPath, recordingArgs, {
       cwd: path.join(__dirname, '..'),
       env: { ...process.env, PYTHONUNBUFFERED: '1' }
     });
@@ -650,7 +659,12 @@ ipcMain.handle('start-recording-ui', async (_, sessionName) => {
     await new Promise(resolve => setTimeout(resolve, 2000));
     
     if (currentRecordingProcess) {
-      return { success: true, message: 'Recording started successfully' };
+      return {
+        success: true,
+        message: summarize
+          ? 'Recording started; Ollama summary enabled for this meeting'
+          : 'Recording started in transcript-only mode',
+      };
     } else {
       return { success: false, error: 'Failed to start recording process' };
     }

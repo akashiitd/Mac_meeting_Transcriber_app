@@ -53,6 +53,14 @@ logger = logging.getLogger(__name__)
 
 class SimpleRecorder:
     """Simple audio recorder and transcriber."""
+
+    TRANSCRIPT_ONLY_SUMMARY = {
+        "summary": "Ollama summary is off for this meeting.",
+        "participants": [],
+        "discussion_areas": [],
+        "key_points": [],
+        "action_items": [],
+    }
     
     def __init__(self):
         # Only initialize if dependencies are available
@@ -266,7 +274,7 @@ Transcript:
                 "key_points": [],
                 "action_items": []
             }
-        
+
         # Defensive extraction from summary_result
         try:
             return {
@@ -290,9 +298,28 @@ Transcript:
                 "key_points": [],
                 "action_items": []
             }
+
+    async def summarize_if_enabled(
+        self,
+        transcript_text: str,
+        session_name: str,
+        enabled: bool,
+    ) -> dict:
+        """Generate an Ollama summary only when the meeting opted in."""
+        if enabled:
+            print("🧠 Generating summary with Ollama...")
+            return await self.summarize_transcript(transcript_text, session_name)
+
+        print("📝 Ollama summary disabled - saving transcript only")
+        return self.TRANSCRIPT_ONLY_SUMMARY
     
-    async def process_recording(self, audio_file: str, session_name: str = "Recording") -> dict:
-        """Complete processing: transcribe + summarize."""
+    async def process_recording(
+        self,
+        audio_file: str,
+        session_name: str = "Recording",
+        summarize: bool = False,
+    ) -> dict:
+        """Transcribe a recording and optionally summarize it with Ollama."""
         print(f"🔄 Processing recording: {audio_file}")
         
         # If no audio file provided, use the last recording
@@ -341,10 +368,11 @@ Transcript:
         # Step 1: Transcribe
         transcript_data = await self.transcribe_audio(audio_file, session_name)
         
-        # Step 2: Summarize with actual duration
-        summary_data = await self.summarize_transcript(
-            transcript_data["transcript_text"], 
-            session_name
+        # Step 2: Start Ollama only when this meeting explicitly opts in.
+        summary_data = await self.summarize_if_enabled(
+            transcript_data["transcript_text"],
+            session_name,
+            summarize,
         )
         
         # Step 3: Save complete summary
@@ -358,7 +386,8 @@ Transcript:
                 "summary_file": str(summary_path),
                 "processed_at": datetime.now().isoformat(),
                 "duration_seconds": int(duration_seconds) if 'duration_seconds' in locals() else None,
-                "duration_minutes": duration_minutes
+                "duration_minutes": duration_minutes,
+                "summarization_enabled": summarize,
             },
             "summary": summary_data.get("summary", "") or "",
             "participants": summary_data.get("participants", []) or [],
@@ -557,14 +586,19 @@ def stop():
 @cli.command()
 @click.argument('audio_file', default='')
 @click.option('--name', '-n', default='Recording', help='Session name for the recording')
-def process(audio_file, name):
-    """Process audio file: transcribe + summarize"""
+@click.option(
+    '--summarize/--no-summarize',
+    default=False,
+    help='Generate an Ollama summary',
+)
+def process(audio_file, name, summarize):
+    """Transcribe an audio file and optionally summarize it."""
     
     async def run_process():
         recorder = SimpleRecorder()
         
         try:
-            result = await recorder.process_recording(audio_file, name)
+            result = await recorder.process_recording(audio_file, name, summarize=summarize)
             
             print("SUCCESS: Processing complete!")
             print(f"Transcript: {result['session_info']['transcript_file']}")
@@ -607,7 +641,12 @@ def status():
 @cli.command()
 @click.argument('duration', type=int, default=10)
 @click.argument('session_name', default='Recording')
-def record(duration, session_name):
+@click.option(
+    '--summarize/--no-summarize',
+    default=False,
+    help='Generate an Ollama summary after transcription',
+)
+def record(duration, session_name, summarize):
     """Record audio for specified duration with real-time transcription (system audio + mic)"""
     import signal
 
@@ -618,7 +657,7 @@ def record(duration, session_name):
         print("❌ RealtimeTranscriber not available - falling back to basic recording")
         print("   Install faster-whisper: pip install faster-whisper")
         # Fall back to basic recording
-        _record_basic(duration, session_name)
+        _record_basic(duration, session_name, summarize)
         return
 
     recorder = SimpleRecorder()
@@ -667,17 +706,20 @@ def record(duration, session_name):
         if not plain_transcript.strip():
             plain_transcript = "No speech detected in audio"
 
-        # Summarize with Ollama
-        print("🧠 Generating summary...")
         try:
             import asyncio
             loop = asyncio.new_event_loop()
             asyncio.set_event_loop(loop)
 
-            async def do_summarize():
-                return await recorder.summarize_transcript(plain_transcript, session_name)
+            async def finalize_summary():
+                return await recorder.summarize_if_enabled(
+                    plain_transcript,
+                    session_name,
+                    summarize,
+                )
 
-            summary_data = loop.run_until_complete(do_summarize())
+            summary_data = loop.run_until_complete(finalize_summary())
+            loop.close()
 
             # Build final result
             result = {
@@ -688,7 +730,8 @@ def record(duration, session_name):
                     "summary_file": str(summary_path),
                     "processed_at": datetime.now().isoformat(),
                     "duration_seconds": int(duration_seconds),
-                    "duration_minutes": max(1, int(duration_seconds / 60))
+                    "duration_minutes": max(1, int(duration_seconds / 60)),
+                    "summarization_enabled": summarize,
                 },
                 **summary_data,
                 "transcript": plain_transcript
@@ -750,7 +793,7 @@ def record(duration, session_name):
                 transcript_text = transcriber.get_full_transcript()
 
                 if segments:
-                    print("🔄 Starting summarization pipeline...")
+                    print("🔄 Finalizing transcript and meeting notes...")
                     result = process_and_save(transcript_text, segments, duration_seconds)
 
                     print("✅ Complete processing finished!")
@@ -857,7 +900,7 @@ def record(duration, session_name):
         exit(1)
 
 
-def _record_basic(duration, session_name):
+def _record_basic(duration, session_name, summarize=False):
     """Fallback basic recording without real-time transcription"""
     import signal
 
@@ -877,7 +920,13 @@ def _record_basic(duration, session_name):
                         import asyncio
                         loop = asyncio.new_event_loop()
                         asyncio.set_event_loop(loop)
-                        result = loop.run_until_complete(recorder.process_recording(final_path, session_name))
+                        result = loop.run_until_complete(
+                            recorder.process_recording(
+                                final_path,
+                                session_name,
+                                summarize=summarize,
+                            )
+                        )
                         print("✅ Complete processing finished!")
                         print(f"📄 Transcript: {result['session_info']['transcript_file']}")
                         print(f"📋 Summary: {result['session_info']['summary_file']}")
@@ -940,24 +989,8 @@ def test():
             print(f"ERROR: {e}")
             return
         
-        # Test Ollama availability (lightweight check)
-        print("🧠 Testing Ollama availability...")
-        if not OllamaSummarizer:
-            print("❌ Ollama summarizer not available")
-            print("ERROR: Ollama dependencies missing")
-            return
-            
-        try:
-            # Just check if we can initialize without making API calls
-            summarizer = OllamaSummarizer()
-            print("✅ Ollama summarizer ready")
-        except Exception as e:
-            print(f"❌ Ollama initialization failed: {e}")
-            print(f"ERROR: {e}")
-            return
-        
         print("🎉 System check passed!")
-        print("SUCCESS: All components are working correctly")
+        print("SUCCESS: Transcription components are working correctly")
         
     except Exception as e:
         print(f"❌ System test failed: {e}")
@@ -1192,34 +1225,6 @@ def setup_check():
             dir_path.mkdir(parents=True, exist_ok=True)
             checks.append((f"✅ {dir_name}/", f"created at {dir_path}"))
     
-    # Check Ollama - use same path resolution as summarizer
-    try:
-        ollama_found = False
-        ollama_path = None
-        possible_paths = [
-            'ollama',  # Try PATH first
-            '/opt/homebrew/bin/ollama',  # Homebrew on Apple Silicon
-            '/usr/local/bin/ollama',     # Homebrew on Intel
-            '/usr/bin/ollama',           # System installation
-        ]
-        
-        for path in possible_paths:
-            try:
-                result = subprocess.run([path, '--version'], 
-                                      capture_output=True, timeout=5)
-                if result.returncode == 0:
-                    checks.append(("✅ Ollama", f"found at {path}"))
-                    ollama_found = True
-                    ollama_path = path
-                    break
-            except (subprocess.TimeoutExpired, FileNotFoundError):
-                continue
-        
-        if not ollama_found:
-            checks.append(("❌ Ollama", "not found - run: brew install ollama"))
-    except Exception as e:
-        checks.append(("❌ Ollama", f"Error: {e}"))
-    
     # Check ffmpeg
     try:
         ffmpeg_found = False
@@ -1246,10 +1251,6 @@ def setup_check():
     except Exception as e:
         checks.append(("❌ ffmpeg", f"Error: {e}"))
     
-    # Skip Ollama model check during setup - service starts automatically when needed
-    # Just verify Ollama binary is installed
-    # The model will be downloaded during setup if needed
-    
     # Check Python dependencies
     try:
         import sounddevice
@@ -1262,12 +1263,6 @@ def setup_check():
         checks.append(("✅ whisper", "speech transcription"))
     except ImportError:
         checks.append(("❌ whisper", "pip install openai-whisper"))
-    
-    try:
-        import ollama
-        checks.append(("✅ ollama-python", "LLM client"))
-    except ImportError:
-        checks.append(("❌ ollama-python", "pip install ollama"))
     
     # Print results
     all_good = True

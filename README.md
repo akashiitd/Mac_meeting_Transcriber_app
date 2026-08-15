@@ -18,7 +18,7 @@ Mac meeting transcription app that captures your microphone and Mac system audio
 
 - **Local transcription** using OpenAI Whisper
 - **Native Apple Speech live transcription** using macOS SpeechAnalyzer and ScreenCaptureKit for microphone plus system audio
-- **AI summarization** with Ollama models
+- **Opt-in AI summarization** with Ollama models; recording defaults to transcription only
 - **Multiple AI models** - Choose from 4 models optimized for different use cases
 - **Privacy-first** - no cloud dependencies
 - **macOS desktop app** with intuitive interface
@@ -42,6 +42,11 @@ Mac meeting transcription app that captures your microphone and Mac system audio
 - Select your preferred model
 - Models download automatically when selected
 - ⚠️ Note: Downloads will pause any active summarization
+
+**Summarizing a meeting:**
+- `Ollama Summary: Off` is the default for every meeting
+- Turn the button on before recording when you want an Ollama summary
+- With the button off, the app saves the transcript without starting Ollama
 
 ## Future Roadmap
 
@@ -89,9 +94,8 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-# Install Ollama
+# Optional: install Ollama only if you want meeting summaries
 brew install ollama
-ollama serve &
 ollama pull llama3.2:3b
 
 # Install ffmpeg (required for audio processing)
