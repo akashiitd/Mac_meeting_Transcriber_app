@@ -55,11 +55,11 @@ class OptInSummarizationTests(unittest.IsolatedAsyncioTestCase):
 
             recorder.summarize_transcript.assert_not_awaited()
             self.assertFalse(result["session_info"]["summarization_enabled"])
-            self.assertEqual("Ollama summary is off for this meeting.", result["summary"])
+            self.assertEqual("", result["summary"])
             self.assertEqual("A useful meeting transcript", result["transcript"])
 
-    async def test_processing_calls_ollama_only_when_summarization_is_enabled(self):
-        """Call Ollama once when processing explicitly enables summarization."""
+    async def test_legacy_summary_option_does_not_start_ollama(self):
+        """Old callers cannot turn summaries back on."""
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             recorder = self.make_recorder(root)
@@ -84,11 +84,9 @@ class OptInSummarizationTests(unittest.IsolatedAsyncioTestCase):
                 str(audio_path), "Planning", summarize=True
             )
 
-            recorder.summarize_transcript.assert_awaited_once_with(
-                "A useful meeting transcript", "Planning"
-            )
-            self.assertTrue(result["session_info"]["summarization_enabled"])
-            self.assertEqual("The generated summary", result["summary"])
+            recorder.summarize_transcript.assert_not_awaited()
+            self.assertFalse(result["session_info"]["summarization_enabled"])
+            self.assertEqual("", result["summary"])
 
 
 if __name__ == "__main__":

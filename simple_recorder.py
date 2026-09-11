@@ -31,16 +31,6 @@ except ImportError:
     AudioRecorder = None
 
 try:
-    from src.transcriber import WhisperTranscriber
-except ImportError:
-    WhisperTranscriber = None
-
-try:
-    from src.summarizer import OllamaSummarizer
-except ImportError:
-    OllamaSummarizer = None
-
-try:
     from src.realtime_transcriber import RealtimeTranscriber, create_realtime_transcriber, TranscriptSegment
 except ImportError:
     RealtimeTranscriber = None
@@ -55,7 +45,7 @@ class SimpleRecorder:
     """Simple audio recorder and transcriber."""
 
     TRANSCRIPT_ONLY_SUMMARY = {
-        "summary": "Ollama summary is off for this meeting.",
+        "summary": "",
         "participants": [],
         "discussion_areas": [],
         "key_points": [],
@@ -198,6 +188,7 @@ class SimpleRecorder:
         
         # Initialize transcriber only when needed
         if self.transcriber is None:
+            from src.transcriber import WhisperTranscriber
             self.transcriber = WhisperTranscriber()
         
         # Transcribe (pass Path object, not string)
@@ -239,80 +230,13 @@ Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
         }
     
     async def summarize_transcript(self, transcript_text: str, session_name: str = "Recording") -> dict:
-        """Summarize transcript text."""
-        print("🧠 Generating summary...")
-        
-        # Initialize summarizer only when needed
-        if self.summarizer is None:
-            self.summarizer = OllamaSummarizer()
-        
-        # Create summary prompt
-        prompt = f"""
-Please analyze and summarize this audio transcript from a recording session.
-
-Session: {session_name}
-
-Please provide:
-1. Brief overview of the content
-2. Key points discussed
-3. Important decisions or conclusions
-4. Action items (if any)
-5. Notable quotes or insights
-
-Transcript:
-{transcript_text}
-"""
-        
-        # Generate summary (using correct method name and parameters)
-        summary_result = self.summarizer.summarize_transcript(transcript_text, 10)  # 10 minutes duration estimate
-        
-        if summary_result is None:
-            return {
-                "summary": "Failed to generate summary",
-                "participants": [],
-                "discussion_areas": [],
-                "key_points": [],
-                "action_items": []
-            }
-
-        # Defensive extraction from summary_result
-        try:
-            return {
-                "summary": getattr(summary_result, 'overview', '') or '',
-                "participants": getattr(summary_result, 'participants', []) or [],
-                "discussion_areas": [
-                    {
-                        "title": getattr(area, 'title', ''),
-                        "analysis": getattr(area, 'analysis', '')
-                    } for area in getattr(summary_result, 'discussion_areas', [])
-                ],
-                "key_points": [getattr(decision, 'decision', '') for decision in getattr(summary_result, 'key_points', [])],
-                "action_items": [getattr(action, 'description', '') for action in getattr(summary_result, 'next_steps', [])]
-            }
-        except Exception as e:
-            print(f"⚠️ Error extracting summary data: {e}")
-            return {
-                "summary": "Summary extraction failed",
-                "participants": [],
-                "discussion_areas": [],
-                "key_points": [],
-                "action_items": []
-            }
-
-    async def summarize_if_enabled(
-        self,
-        transcript_text: str,
-        session_name: str,
-        enabled: bool,
-    ) -> dict:
-        """Generate an Ollama summary only when the meeting opted in."""
-        if enabled:
-            print("🧠 Generating summary with Ollama...")
-            return await self.summarize_transcript(transcript_text, session_name)
-
-        print("📝 Ollama summary disabled - saving transcript only")
+        """Keep legacy callers compatible without running a summary model."""
         return self.TRANSCRIPT_ONLY_SUMMARY
-    
+
+    async def summarize_if_enabled(self, transcript_text: str, session_name: str, enabled: bool) -> dict:
+        """Meeting transcription never starts a summary model."""
+        return self.TRANSCRIPT_ONLY_SUMMARY
+
     async def process_recording(
         self,
         audio_file: str,
@@ -320,6 +244,7 @@ Transcript:
         summarize: bool = False,
     ) -> dict:
         """Transcribe a recording and optionally summarize it with Ollama."""
+        summarize = False
         print(f"🔄 Processing recording: {audio_file}")
         
         # If no audio file provided, use the last recording
@@ -663,9 +588,10 @@ def record(duration, session_name, summarize):
     recorder = SimpleRecorder()
     from src.config import get_config
     app_config = get_config()
-    realtime_model = app_config.get_realtime_transcription_model()
+    realtime_model = "apple-speech"
     realtime_model_info = app_config.get_realtime_transcription_model_info(realtime_model) or {}
-    realtime_backend = realtime_model_info.get("backend", "whisper")
+    realtime_backend = "apple-speech"
+    summarize = False  # Meeting recording is transcription-only.
     transcriber = None
     live_logger = None
     recording_started = False
@@ -744,7 +670,7 @@ def record(duration, session_name, summarize):
             print(f"✅ Complete processing saved: {summary_path}")
 
             # Clean up state
-            if recorder.state_file.exists():
+            if recorder.get_state().get("session_name") == session_name and recorder.state_file.exists():
                 recorder.state_file.unlink()
                 print("🧹 Cleared recording state")
 
@@ -809,6 +735,9 @@ def record(duration, session_name, summarize):
                 import traceback
                 traceback.print_exc()
 
+        if transcriber and not recording_started:
+            transcriber.stop()
+
         print("🏁 Recording session ended - process complete")
         print(f"\n🎉 Recording and processing completed for: {session_name}")
         exit(0)
@@ -868,6 +797,7 @@ def record(duration, session_name, summarize):
 
         recording_started = True
         start_time = time.time()
+        print(json.dumps({"event": "recording-ready"}), flush=True)
 
         print(f"📁 Recording to: {transcript_path}")
         print("📢 Speak into your microphone now!")
@@ -961,41 +891,8 @@ def _record_basic(duration, session_name, summarize=False):
 
 @cli.command()
 def test():
-    """Quick system test - check components can initialize"""
-    print("🧪 Quick system test...")
-    
-    try:
-        # Test audio recording capability
-        print("🎤 Testing audio recording...")
-        recorder = SimpleRecorder()
-        if not recorder.audio_recorder:
-            print("❌ Audio recording not available")
-            print("ERROR: Audio dependencies missing")
-            return
-        print("✅ Audio recording ready")
-        
-        # Test transcriber availability
-        print("🗣️ Testing Whisper transcriber...")
-        if not WhisperTranscriber:
-            print("❌ Whisper transcriber not available")
-            print("ERROR: Whisper not installed")
-            return
-            
-        try:
-            transcriber = WhisperTranscriber()
-            print("✅ Whisper transcriber ready")
-        except Exception as e:
-            print(f"❌ Whisper initialization failed: {e}")
-            print(f"ERROR: {e}")
-            return
-        
-        print("🎉 System check passed!")
-        print("SUCCESS: Transcription components are working correctly")
-        
-    except Exception as e:
-        print(f"❌ System test failed: {e}")
-        print(f"ERROR: {e}")
-        return
+    """Verify the transcription-only setup without loading a Python AI model."""
+    setup_check.callback()
 
 
 @cli.command()
@@ -1057,61 +954,8 @@ def list_meetings():
 @cli.command()
 @click.argument('summary_file', required=True)
 def reprocess(summary_file):
-    """Reprocess a failed summary by re-running Ollama analysis on existing transcript"""
-    import json
-    from pathlib import Path
-    
-    async def run_reprocess():
-        recorder = SimpleRecorder()
-        summary_path = Path(summary_file)
-        
-        if not summary_path.exists():
-            print(f"ERROR: Summary file not found: {summary_file}")
-            return
-        
-        try:
-            # Load existing summary file
-            with open(summary_path, 'r') as f:
-                existing_data = json.load(f)
-            
-            # Get transcript from the data
-            transcript = existing_data.get('transcript', '')
-            if not transcript:
-                print("ERROR: No transcript found in summary file")
-                return
-            
-            session_name = existing_data.get('session_info', {}).get('name', 'Reprocessed')
-            duration_minutes = existing_data.get('session_info', {}).get('duration_minutes', 10)
-            
-            print(f"🔄 Reprocessing summary for: {session_name}")
-            print(f"📝 Transcript length: {len(transcript)} characters")
-            
-            # Re-run summarization
-            summary_data = await recorder.summarize_transcript(transcript, session_name)
-            
-            # Update the existing data with new summary
-            existing_data.update({
-                "summary": summary_data.get("summary", "") or "",
-                "participants": summary_data.get("participants", []) or [],
-                "discussion_areas": summary_data.get("discussion_areas", []) or [],
-                "key_points": summary_data.get("key_points", []) or [],
-                "action_items": summary_data.get("action_items", []) or [],
-            })
-            
-            # Add reprocess timestamp
-            existing_data["session_info"]["reprocessed_at"] = datetime.now().isoformat()
-            
-            # Save updated summary
-            with open(summary_path, 'w') as f:
-                json.dump(existing_data, f, indent=2)
-            
-            print(f"✅ Summary reprocessed successfully: {summary_path}")
-            print(f"📋 New summary: {existing_data['summary'][:100]}...")
-            
-        except Exception as e:
-            print(f"ERROR: Failed to reprocess summary: {e}")
-    
-    asyncio.run(run_reprocess())
+    """Reject obsolete summary requests without changing saved meetings."""
+    raise click.ClickException("Summaries are no longer supported; the saved transcript is unchanged.")
 
 
 @cli.command()
@@ -1193,10 +1037,10 @@ def setup_check():
     # Check Python version
     try:
         version = sys.version_info
-        if version.major >= 3 and version.minor >= 8:
+        if version >= (3, 10):
             checks.append(("✅ Python", f"{version.major}.{version.minor}.{version.micro}"))
         else:
-            checks.append(("❌ Python", f"{version.major}.{version.minor}.{version.micro} (need 3.8+)"))
+            checks.append(("❌ Python", f"{version.major}.{version.minor}.{version.micro} (need 3.10+)"))
     except Exception as e:
         checks.append(("❌ Python", f"Error: {e}"))
     
@@ -1225,45 +1069,19 @@ def setup_check():
             dir_path.mkdir(parents=True, exist_ok=True)
             checks.append((f"✅ {dir_name}/", f"created at {dir_path}"))
     
-    # Check ffmpeg
+    # Apple Speech is provided by macOS; no Python AI model is needed.
+    import platform
+    if platform.system() == "Darwin" and int(platform.mac_ver()[0].split(".")[0]) >= 26:
+        checks.append(("✅ macOS", "Apple Speech supported"))
+    else:
+        checks.append(("❌ macOS", "Apple Speech requires macOS 26 or newer"))
     try:
-        ffmpeg_found = False
-        possible_ffmpeg_paths = [
-            'ffmpeg',  # Try PATH first
-            '/opt/homebrew/bin/ffmpeg',  # Homebrew on Apple Silicon
-            '/usr/local/bin/ffmpeg',     # Homebrew on Intel
-            '/usr/bin/ffmpeg',           # System installation
-        ]
-        
-        for path in possible_ffmpeg_paths:
-            try:
-                result = subprocess.run([path, '-version'], 
-                                      capture_output=True, timeout=5)
-                if result.returncode == 0:
-                    checks.append(("✅ ffmpeg", f"found at {path}"))
-                    ffmpeg_found = True
-                    break
-            except (subprocess.TimeoutExpired, FileNotFoundError):
-                continue
-        
-        if not ffmpeg_found:
-            checks.append(("❌ ffmpeg", "not found - run: brew install ffmpeg"))
-    except Exception as e:
-        checks.append(("❌ ffmpeg", f"Error: {e}"))
-    
-    # Check Python dependencies
-    try:
-        import sounddevice
-        checks.append(("✅ sounddevice", "audio recording"))
-    except ImportError:
-        checks.append(("❌ sounddevice", "pip install sounddevice"))
-    
-    try:
-        import whisper
-        checks.append(("✅ whisper", "speech transcription"))
-    except ImportError:
-        checks.append(("❌ whisper", "pip install openai-whisper"))
-    
+        from src.apple_speech_transcriber import AppleSpeechTranscriber
+        helper = AppleSpeechTranscriber(context_terms=[])._ensure_helper_binary()
+        checks.append(("✅ Apple Speech", str(helper)))
+    except Exception as error:
+        checks.append(("❌ Apple Speech", str(error)))
+
     # Print results
     all_good = True
     for status, detail in checks:

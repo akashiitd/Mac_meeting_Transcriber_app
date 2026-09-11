@@ -4,7 +4,8 @@ const { spawn, exec } = require('child_process');
 const fs = require('fs');
 const https = require('https');
 const os = require('os');
-const { buildRecordingArgs } = require('./recording-command');
+const { RecordingSessionManager } = require('./recording-session-manager');
+const { buildRecordingArgs, waitForRecordingReady } = require('./recording-command');
 
 let mainWindow;
 let settingsWindow = null;
@@ -51,7 +52,7 @@ function createWindow() {
     show: false
   });
 
-  mainWindow.loadFile('index.html');
+  mainWindow.loadFile(path.join(__dirname, 'index.html'));
   
   mainWindow.once('ready-to-show', () => {
     mainWindow.show();
@@ -244,27 +245,16 @@ ipcMain.handle('stop-recording', async () => {
   }
 });
 
-ipcMain.handle('get-status', async () => {
-  try {
-    const result = await runPythonScript('simple_recorder.py', ['status'], true); // Silent mode
-    return { success: true, status: result };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-});
+ipcMain.handle('get-status', () => ({
+  success: true,
+  status: recordingSessions.activeSession ? 'RECORDING' : 'IDLE',
+}));
 
-ipcMain.handle('process-recording', async (event, audioFile, sessionName) => {
-  try {
-    const result = await runPythonScript('simple_recorder.py', ['process', audioFile, '--name', sessionName]);
-    return { success: true, result: result };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-});
+
 
 ipcMain.handle('test-system', async () => {
   try {
-    const result = await runPythonScript('simple_recorder.py', ['test']);
+    const result = await runPythonScript('simple_recorder.py', ['setup-check']);
     return { success: true, result: result };
   } catch (error) {
     return { success: false, error: error.message };
@@ -304,20 +294,7 @@ ipcMain.handle('clear-state', async () => {
   }
 });
 
-ipcMain.handle('reprocess-meeting', async (event, summaryFile) => {
-  try {
-    sendDebugLog(`🔄 Reprocessing meeting: ${summaryFile}`);
-    sendDebugLog(`$ python simple_recorder.py reprocess "${summaryFile}"`);
-    
-    const result = await runPythonScript('simple_recorder.py', ['reprocess', summaryFile]);
-    
-    sendDebugLog('✅ Meeting reprocessed successfully');
-    return { success: true, message: result };
-  } catch (error) {
-    sendDebugLog(`❌ Reprocessing failed: ${error.message}`);
-    return { success: false, error: error.message };
-  }
-});
+
 
 ipcMain.handle('update-meeting', async (event, summaryFilePath, updates) => {
   try {
@@ -469,15 +446,31 @@ ipcMain.handle('get-queue-status', async () => {
     isProcessing,
     queueSize: processingQueue.length,
     currentJob: currentProcessingJob?.sessionName || null,
-    hasRecording: currentRecordingProcess !== null
+    hasRecording: recordingSessions.activeSession !== null,
+    finalizingRecordings: recordingSessions.finalizingCount,
   };
 });
 
 // Global recording state management
-let currentRecordingProcess = null;
 let processingQueue = [];
 let isProcessing = false;
 let currentProcessingJob = null;
+
+function sendProcessingComplete(data) {
+  if (mainWindow && !mainWindow.isDestroyed()) {
+    mainWindow.webContents.send('processing-complete', data);
+  }
+}
+
+const recordingSessions = new RecordingSessionManager({
+  async findCompletedMeeting(sessionName) {
+    const meetingsResult = await runPythonScript('simple_recorder.py', ['list-meetings']);
+    const allMeetings = JSON.parse(meetingsResult);
+    return allMeetings.find((meeting) => meeting.session_info?.name === sessionName);
+  },
+  onProcessingComplete: sendProcessingComplete,
+  log: console,
+});
 
 // Processing queue management
 async function processNextInQueue() {
@@ -543,9 +536,9 @@ function addToProcessingQueue(audioFile, sessionName) {
   processNextInQueue();
 }
 
-ipcMain.handle('start-recording-ui', async (_, sessionName, options = {}) => {
+ipcMain.handle('start-recording-ui', async (_, sessionName) => {
   try {
-    if (currentRecordingProcess) {
+    if (recordingSessions.activeSession) {
       return { success: false, error: 'Recording already in progress' };
     }
 
@@ -554,29 +547,31 @@ ipcMain.handle('start-recording-ui', async (_, sessionName, options = {}) => {
     console.log('Starting long recording process...');
     sendDebugLog(`Starting recording process: ${sessionName || 'Meeting'}`);
     sendDebugLog(
-      `$ python -u simple_recorder.py record 3600 ${sessionName || 'Meeting'}${options.summarize === true ? ' --summarize' : ''}`
+      `$ python -u simple_recorder.py record 3600 ${sessionName || 'Meeting'}`
     );
     
     const pythonPath = path.join(__dirname, '..', 'venv', 'bin', 'python');
     const scriptPath = path.join(__dirname, '..', 'simple_recorder.py');
     
     const actualSessionName = sessionName || 'Meeting';
-    const summarize = options.summarize === true;
     const recordingArgs = buildRecordingArgs({
       scriptPath,
       sessionName: actualSessionName,
-      summarize,
     });
     
     // Start background recording with 60-minute limit
-    currentRecordingProcess = spawn(pythonPath, recordingArgs, {
+    const recordingProcess = spawn(pythonPath, recordingArgs, {
       cwd: path.join(__dirname, '..'),
       env: { ...process.env, PYTHONUNBUFFERED: '1' }
     });
+    const ready = waitForRecordingReady(recordingProcess);
+    const startResult = recordingSessions.start(actualSessionName, recordingProcess);
+    if (!startResult.success) {
+      recordingProcess.kill();
+      return startResult;
+    }
 
-    let hasStarted = false;
-    
-    currentRecordingProcess.stdout.on('data', (data) => {
+    recordingProcess.stdout.on('data', (data) => {
       const output = data.toString();
       console.log('Recording stdout:', output);
       
@@ -585,44 +580,9 @@ ipcMain.handle('start-recording-ui', async (_, sessionName, options = {}) => {
         if (line.trim()) sendDebugLog(line.trim());
       });
       
-      // Background recording process handles complete pipeline - just notify when done
-      if (output.includes('✅ Complete processing finished!')) {
-        console.log(`🎉 Recording and processing completed for: ${actualSessionName}`);
-        // Notify frontend that everything is done
-        if (mainWindow) {
-          // Get the processed meeting data to send to frontend
-          runPythonScript('simple_recorder.py', ['list-meetings'])
-            .then(meetingsResult => {
-              const allMeetings = JSON.parse(meetingsResult);
-              const processedMeeting = allMeetings.find(m => m.session_info?.name === actualSessionName);
-              
-              mainWindow.webContents.send('processing-complete', { 
-                success: true, 
-                sessionName: actualSessionName,
-                message: 'Recording and processing completed successfully',
-                meetingData: processedMeeting
-              });
-            })
-            .catch(error => {
-              console.error('Error getting processed meeting data:', error);
-              // Fallback - send without meetingData, frontend will refresh
-              mainWindow.webContents.send('processing-complete', { 
-                success: true, 
-                sessionName: actualSessionName,
-                message: 'Recording and processing completed successfully'
-              });
-            });
-        }
-      }
-      
-      // Don't queue background recordings for additional processing - they handle it themselves!
-      
-      if (output.includes('Recording to:') && !hasStarted) {
-        hasStarted = true;
-      }
     });
 
-    currentRecordingProcess.stderr.on('data', (data) => {
+    recordingProcess.stderr.on('data', (data) => {
       const output = data.toString();
       console.log('Recording stderr:', output);
 
@@ -649,54 +609,40 @@ ipcMain.handle('start-recording-ui', async (_, sessionName, options = {}) => {
       });
     });
 
-    currentRecordingProcess.on('close', (code) => {
+    recordingProcess.on('close', (code) => {
       console.log(`Recording process closed with code ${code}`);
       sendDebugLog(`Recording process completed with exit code: ${code}`);
-      currentRecordingProcess = null;
     });
 
-    // Give it time to start
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    const readiness = await ready;
+    if (!readiness.success) return readiness;
     
-    if (currentRecordingProcess) {
+    if (recordingSessions.activeSession?.child === recordingProcess) {
       return {
         success: true,
-        message: summarize
-          ? 'Recording started; Ollama summary enabled for this meeting'
-          : 'Recording started in transcript-only mode',
+        message: 'Meeting transcription started',
       };
     } else {
       return { success: false, error: 'Failed to start recording process' };
     }
   } catch (error) {
     console.error('Start recording UI error:', error.message);
-    currentRecordingProcess = null;
     return { success: false, error: error.message };
   }
 });
 
 ipcMain.handle('stop-recording-ui', async () => {
   try {
-    if (!currentRecordingProcess) {
-      return { success: false, error: 'No recording in progress' };
-    }
-
     console.log('Stopping recording process...');
-    
-    // Send SIGTERM to trigger graceful stop and processing
-    currentRecordingProcess.kill('SIGTERM');
-    
-    // Don't wait - let the process complete independently
-    // The process will handle: stop recording → transcribe → summarize → exit
-    currentRecordingProcess = null;
-    
-    return { 
-      success: true, 
+    const result = recordingSessions.stop();
+    if (!result.success) return result;
+
+    return {
+      success: true,
       message: 'Recording stopped - processing will complete in background'
     };
   } catch (error) {
     console.error('Stop recording UI error:', error.message);
-    currentRecordingProcess = null;
     return { success: false, error: error.message };
   }
 });
@@ -808,213 +754,6 @@ ipcMain.handle('setup-system-check', async () => {
   }
 });
 
-ipcMain.handle('setup-ollama', async () => {
-  try {
-    // Check if Ollama is already installed - try multiple common paths
-    const ollamaPaths = ['ollama', '/opt/homebrew/bin/ollama', '/usr/local/bin/ollama'];
-    let ollamaFound = false;
-
-    for (const ollamaPath of ollamaPaths) {
-      try {
-        const checkResult = await new Promise((resolve) => {
-          const proc = spawn(ollamaPath, ['--version'], { timeout: 5000 });
-          proc.on('error', () => resolve(false));
-          proc.on('close', (code) => resolve(code === 0));
-        });
-
-        if (checkResult) {
-          ollamaFound = true;
-          break;
-        }
-      } catch (error) {
-        // Try next path
-        continue;
-      }
-    }
-
-    if (ollamaFound) {
-      // Start Ollama service if not running (use spawn instead of exec)
-      spawn('ollama', ['serve'], { detached: true, stdio: 'ignore' }).unref();
-      return { success: true, message: 'Ollama ready and service started' };
-    }
-
-    // Install Ollama using Homebrew - try common brew paths
-    const brewPaths = ['brew', '/opt/homebrew/bin/brew', '/usr/local/bin/brew'];
-
-    for (const brewPath of brewPaths) {
-      try {
-        const result = await new Promise((resolve) => {
-          const proc = spawn(brewPath, ['install', 'ollama'], { timeout: 300000 });
-
-          proc.on('error', (error) => {
-            resolve({ success: false, error: `Failed with ${brewPath}: ${error.message}` });
-          });
-
-          proc.on('close', (code) => {
-            if (code === 0) {
-              // Start Ollama service after installation
-              spawn('ollama', ['serve'], { detached: true, stdio: 'ignore' }).unref();
-              resolve({ success: true, message: 'Ollama installed and started' });
-            } else {
-              resolve({ success: false, error: `Failed with ${brewPath}: exit code ${code}` });
-            }
-          });
-        });
-
-        if (result.success) {
-          return result;
-        }
-      } catch (error) {
-        console.log(`Failed to install with ${brewPath}: ${error.message}`);
-      }
-    }
-
-    return { success: false, error: 'Failed to install Ollama. Please install Homebrew and try again.' };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-});
-
-ipcMain.handle('setup-ffmpeg', async () => {
-  try {
-    sendDebugLog('$ Checking for existing ffmpeg installation...');
-    sendDebugLog('$ Checking: ffmpeg -version, /opt/homebrew/bin/ffmpeg, /usr/local/bin/ffmpeg');
-
-    // Check if ffmpeg is already installed - try multiple common paths
-    const ffmpegPaths = ['ffmpeg', '/opt/homebrew/bin/ffmpeg', '/usr/local/bin/ffmpeg'];
-    let ffmpegPath = null;
-
-    for (const testPath of ffmpegPaths) {
-      try {
-        const found = await new Promise((resolve) => {
-          const proc = spawn(testPath, ['-version'], { timeout: 5000 });
-          proc.on('error', () => resolve(false));
-          proc.on('close', (code) => resolve(code === 0));
-        });
-
-        if (found) {
-          ffmpegPath = testPath;
-          sendDebugLog(`Found ffmpeg at: ${testPath}`);
-          break;
-        }
-      } catch (error) {
-        // Try next path
-        continue;
-      }
-    }
-
-    if (!ffmpegPath) {
-      sendDebugLog('ffmpeg not found in any common locations');
-    }
-    
-    // Install ffmpeg if not present
-    if (!ffmpegPath) {
-      sendDebugLog('ffmpeg not found, checking for Homebrew...');
-      sendDebugLog('$ Checking: brew, /opt/homebrew/bin/brew, /usr/local/bin/brew');
-
-      // First check if Homebrew is installed and get its path
-      const brewPaths = ['brew', '/opt/homebrew/bin/brew', '/usr/local/bin/brew'];
-      let brewPath = null;
-
-      for (const testPath of brewPaths) {
-        try {
-          const found = await new Promise((resolve) => {
-            const proc = spawn(testPath, ['--version'], { timeout: 5000 });
-            proc.on('error', () => resolve(false));
-            proc.on('close', (code) => resolve(code === 0));
-          });
-
-          if (found) {
-            brewPath = testPath;
-            sendDebugLog(`Found Homebrew at: ${testPath}`);
-            break;
-          }
-        } catch (error) {
-          // Try next path
-          continue;
-        }
-      }
-
-      if (!brewPath) {
-        sendDebugLog('Homebrew not found in any common locations');
-      }
-      
-      // Install Homebrew if missing
-      if (!brewPath) {
-        sendDebugLog('Homebrew not found, installing...');
-        sendDebugLog('$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"');
-
-        // Note: This uses the official Homebrew installation script
-        // Using exec here is intentional as this is the documented installation method
-        // The URL is hardcoded and not user-controlled
-        await new Promise((resolve, reject) => {
-          const process = exec('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"',
-               { timeout: 600000 });
-
-          process.stdout.on('data', (data) => {
-            sendDebugLog(data.toString().trim());
-          });
-
-          process.stderr.on('data', (data) => {
-            sendDebugLog('STDERR: ' + data.toString().trim());
-          });
-
-          process.on('close', (code) => {
-            if (code === 0) {
-              sendDebugLog('Homebrew installation completed successfully');
-              resolve();
-            } else {
-              sendDebugLog(`Homebrew installation failed with exit code: ${code}`);
-              reject(new Error('Failed to install Homebrew automatically'));
-            }
-          });
-        });
-
-        // After installing, set brewPath to the default location
-        brewPath = '/opt/homebrew/bin/brew';
-      } else {
-        sendDebugLog('Homebrew found, proceeding with ffmpeg installation...');
-      }
-
-      // Now install ffmpeg via Homebrew using spawn for security
-      sendDebugLog(`$ ${brewPath} install ffmpeg`);
-      await new Promise((resolve, reject) => {
-        const process = spawn(brewPath, ['install', 'ffmpeg'], { timeout: 300000 });
-
-        process.stdout.on('data', (data) => {
-          sendDebugLog(data.toString().trim());
-        });
-
-        process.stderr.on('data', (data) => {
-          sendDebugLog('STDERR: ' + data.toString().trim());
-        });
-
-        process.on('close', (code) => {
-          if (code === 0) {
-            sendDebugLog('ffmpeg installation completed successfully');
-            resolve();
-          } else {
-            sendDebugLog(`ffmpeg installation failed with exit code: ${code}`);
-            reject(new Error('Failed to install ffmpeg via Homebrew'));
-          }
-        });
-
-        process.on('error', (error) => {
-          sendDebugLog(`ffmpeg installation error: ${error.message}`);
-          reject(error);
-        });
-      });
-    } else {
-      sendDebugLog('ffmpeg already installed, skipping installation');
-    }
-    
-    return { success: true, message: 'ffmpeg ready' };
-  } catch (error) {
-    sendDebugLog(`ffmpeg setup failed: ${error.message}`);
-    return { success: false, error: error.message };
-  }
-});
-
 ipcMain.handle('setup-python', async () => {
   try {
     const projectRoot = path.join(__dirname, '..');
@@ -1060,13 +799,13 @@ ipcMain.handle('setup-python', async () => {
       sendDebugLog('Python virtual environment already exists');
     }
     
-    // Install requirements including Whisper
+    // Install requirements for Apple Speech
     sendDebugLog('Installing Python dependencies...');
-    sendDebugLog('$ pip install -r requirements.txt openai-whisper');
+    sendDebugLog('$ pip install -r requirements.txt');
     
     return new Promise((resolve) => {
       const pythonPath = path.join(venvPath, 'bin', 'python');
-      const process = spawn(pythonPath, ['-m', 'pip', 'install', '-r', 'requirements.txt', 'openai-whisper'], {
+      const process = spawn(pythonPath, ['-m', 'pip', 'install', '-r', 'requirements.txt'], {
         cwd: projectRoot,
         stdio: 'pipe'
       });
@@ -1092,7 +831,7 @@ ipcMain.handle('setup-python', async () => {
       process.on('close', (code) => {
         if (code === 0) {
           sendDebugLog('Python dependencies installation completed successfully');
-          resolve({ success: true, message: 'Python dependencies and Whisper installed' });
+          resolve({ success: true, message: 'Python dependencies installed' });
         } else {
           sendDebugLog(`Python dependencies installation failed with exit code: ${code}`);
           resolve({ success: false, error: `Installation failed: ${output}` });
@@ -1116,246 +855,13 @@ function sendDebugLog(message) {
   }
 }
 
-ipcMain.handle('setup-ollama-and-model', async () => {
-  try {
-    sendDebugLog('$ Checking for existing Ollama installation...');
-    sendDebugLog('$ which ollama || /opt/homebrew/bin/ollama --version || /usr/local/bin/ollama --version');
-    
-    // Check if Ollama is already installed and get its path
-    const ollamaPath = await new Promise((resolve) => {
-      exec('which ollama', { timeout: 5000 }, (error, stdout, stderr) => {
-        if (!error && stdout.trim()) {
-          const path = stdout.trim();
-          sendDebugLog(`Found Ollama at: ${path}`);
-          resolve(path);
-        } else {
-          // Try common Homebrew locations
-          exec('/opt/homebrew/bin/ollama --version', { timeout: 5000 }, (error2, stdout2) => {
-            if (!error2) {
-              sendDebugLog('Found Ollama at: /opt/homebrew/bin/ollama');
-              resolve('/opt/homebrew/bin/ollama');
-            } else {
-              exec('/usr/local/bin/ollama --version', { timeout: 5000 }, (error3, stdout3) => {
-                if (!error3) {
-                  sendDebugLog('Found Ollama at: /usr/local/bin/ollama');
-                  resolve('/usr/local/bin/ollama');
-                } else {
-                  sendDebugLog('Ollama not found in any common locations');
-                  resolve(null);
-                }
-              });
-            }
-          });
-        }
-      });
-    });
-    
-    // Install Ollama if not present
-    if (!ollamaPath) {
-      sendDebugLog('Ollama not found, checking for Homebrew...');
-      sendDebugLog('$ which brew || /opt/homebrew/bin/brew --version || /usr/local/bin/brew --version');
-      
-      // First check if Homebrew is installed and get its path
-      const brewPath = await new Promise((resolve) => {
-        exec('which brew', { timeout: 5000 }, (error, stdout, stderr) => {
-          if (!error && stdout.trim()) {
-            const path = stdout.trim();
-            sendDebugLog(`Found Homebrew at: ${path}`);
-            resolve(path);
-          } else {
-            // Try common Homebrew locations
-            exec('/opt/homebrew/bin/brew --version', { timeout: 5000 }, (error2, stdout2) => {
-              if (!error2) {
-                sendDebugLog('Found Homebrew at: /opt/homebrew/bin/brew');
-                resolve('/opt/homebrew/bin/brew');
-              } else {
-                exec('/usr/local/bin/brew --version', { timeout: 5000 }, (error3, stdout3) => {
-                  if (!error3) {
-                    sendDebugLog('Found Homebrew at: /usr/local/bin/brew');
-                    resolve('/usr/local/bin/brew');
-                  } else {
-                    sendDebugLog('Homebrew not found in any common locations');
-                    resolve(null);
-                  }
-                });
-              }
-            });
-          }
-        });
-      });
-      
-      // Install Homebrew if missing
-      if (!brewPath) {
-        sendDebugLog('Homebrew not found, installing...');
-        sendDebugLog('$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"');
-        await new Promise((resolve, reject) => {
-          const process = exec('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"', 
-               { timeout: 600000 });
-          
-          process.stdout.on('data', (data) => {
-            sendDebugLog(data.toString().trim());
-          });
-          
-          process.stderr.on('data', (data) => {
-            sendDebugLog('STDERR: ' + data.toString().trim());
-          });
-          
-          process.on('close', (code) => {
-            if (code === 0) {
-              sendDebugLog('Homebrew installation completed successfully');
-              resolve();
-            } else {
-              sendDebugLog(`Homebrew installation failed with exit code: ${code}`);
-              reject(new Error('Failed to install Homebrew automatically'));
-            }
-          });
-        });
-      } else {
-        sendDebugLog('Homebrew found, proceeding with Ollama installation...');
-      }
-      
-      // Determine final brew path (either found or newly installed)
-      const finalBrewPath = brewPath || '/opt/homebrew/bin/brew';
-      
-      // Now install Ollama via Homebrew
-      sendDebugLog(`$ ${finalBrewPath} install ollama`);
-      await new Promise((resolve, reject) => {
-        const process = exec(`${finalBrewPath} install ollama`, { timeout: 300000 });
-        
-        process.stdout.on('data', (data) => {
-          sendDebugLog(data.toString().trim());
-        });
-        
-        process.stderr.on('data', (data) => {
-          sendDebugLog('STDERR: ' + data.toString().trim());
-        });
-        
-        process.on('close', (code) => {
-          if (code === 0) {
-            sendDebugLog('Ollama installation completed successfully');
-            resolve();
-          } else {
-            sendDebugLog(`Ollama installation failed with exit code: ${code}`);
-            reject(new Error('Failed to install Ollama via Homebrew'));
-          }
-        });
-      });
-    } else {
-      sendDebugLog('Ollama already installed, skipping installation step');
-    }
-    
-    // Determine final ollama path (either found or newly installed)
-    const finalOllamaPath = ollamaPath || '/opt/homebrew/bin/ollama';
-    
-    // Start Ollama service
-    sendDebugLog('Starting Ollama service...');
-    sendDebugLog(`$ ${finalOllamaPath} serve &`);
-    exec(`${finalOllamaPath} serve`, { detached: true });
-    
-    // Wait for service to start then pull model
-    sendDebugLog('Waiting 3 seconds for Ollama service to start...');
-    await new Promise(resolve => setTimeout(resolve, 3000));
-    
-    sendDebugLog('Downloading AI model (this may take several minutes)...');
-    sendDebugLog(`$ ${finalOllamaPath} pull llama3.2:3b`);
-
-    return new Promise((resolve) => {
-      const process = exec(`${finalOllamaPath} pull llama3.2:3b`, { timeout: 600000 });
-      
-      process.stdout.on('data', (data) => {
-        sendDebugLog(data.toString().trim());
-      });
-      
-      process.stderr.on('data', (data) => {
-        sendDebugLog('STDERR: ' + data.toString().trim());
-      });
-      
-      process.on('close', (code) => {
-        if (code === 0) {
-          sendDebugLog('AI model download completed successfully');
-          resolve({ success: true, message: 'Ollama and AI model ready' });
-        } else {
-          sendDebugLog(`AI model download failed with exit code: ${code}`);
-          resolve({ 
-            success: false, 
-            error: 'Failed to download AI model', 
-            details: `Exit code: ${code}` 
-          });
-        }
-      });
-      
-      process.on('error', (error) => {
-        sendDebugLog(`Process error: ${error.message}`);
-        resolve({ 
-          success: false, 
-          error: 'Failed to download AI model', 
-          details: error.message 
-        });
-      });
-    });
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-});
-
-ipcMain.handle('setup-whisper', async () => {
-  try {
-    const projectRoot = path.join(__dirname, '..');
-    const pythonPath = path.join(projectRoot, 'venv', 'bin', 'python');
-    
-    sendDebugLog('Installing Whisper speech recognition...');
-    sendDebugLog(`$ ${pythonPath} -m pip install openai-whisper`);
-    
-    return new Promise((resolve) => {
-      const process = spawn(pythonPath, ['-m', 'pip', 'install', 'openai-whisper'], {
-        cwd: projectRoot,
-        stdio: 'pipe'
-      });
-      
-      let output = '';
-      
-      process.stdout.on('data', (data) => {
-        const text = data.toString().trim();
-        if (text) {
-          sendDebugLog(text);
-          output += text;
-        }
-      });
-      
-      process.stderr.on('data', (data) => {
-        const text = data.toString().trim();
-        if (text) {
-          sendDebugLog('STDERR: ' + text);
-          output += text;
-        }
-      });
-      
-      process.on('close', (code) => {
-        if (code === 0) {
-          sendDebugLog('Whisper installation completed successfully');
-          resolve({ success: true, message: 'Whisper installed successfully' });
-        } else {
-          sendDebugLog(`Whisper installation failed with exit code: ${code}`);
-          resolve({ success: false, error: `Whisper installation failed: ${output}` });
-        }
-      });
-      
-      process.on('error', (error) => {
-        resolve({ success: false, error: `Process error: ${error.message}` });
-      });
-    });
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-});
-
 ipcMain.handle('setup-test', async () => {
   try {
     sendDebugLog('Running system test...');
     sendDebugLog('$ python simple_recorder.py test');
     
     // Test the complete system
-    const result = await runPythonScript('simple_recorder.py', ['test']);
+    const result = await runPythonScript('simple_recorder.py', ['setup-check']);
     
     // Log the full result to debug console
     result.split('\n').forEach(line => {
@@ -1409,180 +915,6 @@ ipcMain.handle('get-app-version', async () => {
   }
 });
 
-ipcMain.handle('get-ai-prompts', async () => {
-  try {
-    // Read the summarization prompt from the Python backend
-    const summarizerPath = path.join(__dirname, '..', 'src', 'summarizer.py');
-    
-    if (fs.existsSync(summarizerPath)) {
-      const content = fs.readFileSync(summarizerPath, 'utf8');
-      
-      // Extract the full prompt from the _create_permissive_prompt method
-      const promptMatch = content.match(/def _create_permissive_prompt[\s\S]*?return f"""([\s\S]*?)"""/);
-      
-      if (promptMatch) {
-        return {
-          success: true,
-          summarization: promptMatch[1].trim()
-        };
-      }
-    }
-    
-    return {
-      success: true,
-      summarization: 'Prompt not found in summarizer.py'
-    };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-});
-
-// Helper function to ensure Ollama service is running
-async function ensureOllamaRunning() {
-  try {
-    // Check if Ollama service is responding
-    const { exec } = require('child_process');
-    const response = await new Promise((resolve) => {
-      exec('curl -s http://localhost:11434/api/version', (error, stdout) => {
-        resolve(!error && stdout);
-      });
-    });
-
-    if (response) {
-      return true; // Service is running
-    }
-
-    // Service not running, try to start it
-    const ollamaPath = await findOllamaExecutable();
-    if (!ollamaPath) {
-      return false;
-    }
-
-    // Start Ollama service in background
-    spawn(ollamaPath, ['serve'], { detached: true, stdio: 'ignore' }).unref();
-
-    // Wait for service to start
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    return true;
-  } catch (error) {
-    console.error('Error ensuring Ollama is running:', error);
-    return false;
-  }
-}
-
-// Model management handlers
-ipcMain.handle('check-model-installed', async (event, modelName) => {
-  try {
-    const ollamaPath = await findOllamaExecutable();
-    if (!ollamaPath) {
-      return { success: false, installed: false, error: 'Ollama not found. Please install Ollama first.' };
-    }
-
-    // Ensure Ollama service is running
-    const isRunning = await ensureOllamaRunning();
-    if (!isRunning) {
-      return { success: false, installed: false, error: 'Could not start Ollama service' };
-    }
-
-    return new Promise((resolve) => {
-      const { exec } = require('child_process');
-      exec(`${ollamaPath} list`, (error, stdout) => {
-        if (error) {
-          resolve({ success: false, installed: false, error: error.message });
-          return;
-        }
-
-        // Check if model name appears in the list
-        const installed = stdout.toLowerCase().includes(modelName.toLowerCase());
-        resolve({ success: true, installed: installed });
-      });
-    });
-  } catch (error) {
-    return { success: false, installed: false, error: error.message };
-  }
-});
-
-ipcMain.handle('list-models', async () => {
-  try {
-    const result = await runPythonScript('simple_recorder.py', ['list-models']);
-    const jsonData = JSON.parse(result);
-
-    return {
-      success: true,
-      ...jsonData
-    };
-  } catch (error) {
-    sendDebugLog(`Error listing models: ${error.message}`);
-    return { success: false, error: error.message };
-  }
-});
-
-ipcMain.handle('get-current-model', async () => {
-  try {
-    const result = await runPythonScript('simple_recorder.py', ['get-model']);
-    const jsonData = JSON.parse(result);
-
-    return {
-      success: true,
-      ...jsonData
-    };
-  } catch (error) {
-    sendDebugLog(`Error getting current model: ${error.message}`);
-    return { success: false, error: error.message };
-  }
-});
-
-ipcMain.handle('set-model', async (event, modelName) => {
-  try {
-    sendDebugLog(`Setting model to: ${modelName}`);
-    const result = await runPythonScript('simple_recorder.py', ['set-model', modelName]);
-
-    // Extract JSON from output (might have other text before it)
-    const jsonMatch = result.match(/\{.*\}/s);
-    if (jsonMatch) {
-      const jsonData = JSON.parse(jsonMatch[0]);
-      return jsonData;
-    }
-
-    return { success: true, model: modelName };
-  } catch (error) {
-    sendDebugLog(`Error setting model: ${error.message}`);
-    return { success: false, error: error.message };
-  }
-});
-
-ipcMain.handle('list-realtime-transcription-models', async () => {
-  try {
-    const result = await runPythonScript('simple_recorder.py', ['list-realtime-transcription-models']);
-    const jsonData = JSON.parse(result);
-
-    return {
-      success: true,
-      ...jsonData
-    };
-  } catch (error) {
-    sendDebugLog(`Error listing real-time transcription models: ${error.message}`);
-    return { success: false, error: error.message };
-  }
-});
-
-ipcMain.handle('set-realtime-transcription-model', async (event, modelName) => {
-  try {
-    sendDebugLog(`Setting real-time transcription model to: ${modelName}`);
-    const result = await runPythonScript('simple_recorder.py', ['set-realtime-transcription-model', modelName]);
-
-    const jsonMatch = result.match(/\{.*\}/s);
-    if (jsonMatch) {
-      return JSON.parse(jsonMatch[0]);
-    }
-
-    return { success: true, model: modelName };
-  } catch (error) {
-    sendDebugLog(`Error setting real-time transcription model: ${error.message}`);
-    return { success: false, error: error.message };
-  }
-});
-
 ipcMain.handle('get-notifications', async () => {
   try {
     const result = await runPythonScript('simple_recorder.py', ['get-notifications']);
@@ -1617,123 +949,6 @@ ipcMain.handle('set-notifications', async (event, enabled) => {
   }
 });
 
-ipcMain.handle('pull-model', async (event, modelName) => {
-  try {
-    sendDebugLog(`Pulling model: ${modelName}`);
-    sendDebugLog('This may take several minutes...');
-
-    // Find Ollama path
-    const ollamaPath = await findOllamaExecutable();
-    if (!ollamaPath) {
-      return { success: false, error: 'Ollama not found. Please install Ollama first.' };
-    }
-
-    return new Promise((resolve) => {
-      const { spawn } = require('child_process');
-      const process = spawn(ollamaPath, ['pull', modelName]);
-
-      process.stdout.on('data', (data) => {
-        const output = data.toString().trim();
-        sendDebugLog(output);
-
-        // Parse progress from ollama output (format: "pulling manifest... 45%")
-        // Send progress event to frontend
-        if (mainWindow && !mainWindow.isDestroyed()) {
-          mainWindow.webContents.send('model-pull-progress', {
-            model: modelName,
-            progress: output
-          });
-        }
-      });
-
-      process.stderr.on('data', (data) => {
-        const output = data.toString().trim();
-        sendDebugLog(output);
-
-        if (mainWindow && !mainWindow.isDestroyed()) {
-          mainWindow.webContents.send('model-pull-progress', {
-            model: modelName,
-            progress: output
-          });
-        }
-      });
-
-      process.on('close', (code) => {
-        if (code === 0) {
-          sendDebugLog(`Successfully pulled model: ${modelName}`);
-
-          // Send completion event
-          if (mainWindow && !mainWindow.isDestroyed()) {
-            mainWindow.webContents.send('model-pull-complete', {
-              model: modelName,
-              success: true
-            });
-          }
-
-          resolve({ success: true, model: modelName });
-        } else {
-          sendDebugLog(`Failed to pull model: ${modelName}`);
-
-          // Send failure event
-          if (mainWindow && !mainWindow.isDestroyed()) {
-            mainWindow.webContents.send('model-pull-complete', {
-              model: modelName,
-              success: false,
-              error: `Process exited with code ${code}`
-            });
-          }
-
-          resolve({ success: false, error: `Process exited with code ${code}` });
-        }
-      });
-
-      process.on('error', (error) => {
-        sendDebugLog(`Error pulling model: ${error.message}`);
-
-        if (mainWindow && !mainWindow.isDestroyed()) {
-          mainWindow.webContents.send('model-pull-complete', {
-            model: modelName,
-            success: false,
-            error: error.message
-          });
-        }
-
-        resolve({ success: false, error: error.message });
-      });
-    });
-  } catch (error) {
-    sendDebugLog(`Error in pull-model handler: ${error.message}`);
-    return { success: false, error: error.message };
-  }
-});
-
-// Helper function to find Ollama executable
-async function findOllamaExecutable() {
-  const { exec } = require('child_process');
-  const possiblePaths = [
-    '/opt/homebrew/bin/ollama',
-    '/usr/local/bin/ollama',
-    'ollama'
-  ];
-
-  for (const ollamaPath of possiblePaths) {
-    try {
-      await new Promise((resolve, reject) => {
-        exec(`${ollamaPath} --version`, (error) => {
-          if (error) reject(error);
-          else resolve();
-        });
-      });
-      return ollamaPath;
-    } catch (error) {
-      continue;
-    }
-  }
-
-  return null;
-}
-
-// Update checking functionality
 async function checkForUpdates() {
   return new Promise((resolve) => {
     const options = {

@@ -6,7 +6,7 @@
   *Your very own transcriber for every meeting*
 </div>
 
-Mac meeting transcription app that captures your microphone and Mac system audio, transcribes meetings locally with Apple Speech or Whisper, and generates structured summaries with local LLMs through Ollama. Privacy first approach & zero service costs.
+A local meeting transcription app that captures microphone and Mac system audio using Apple Speech. Recording saves transcripts only; no summaries or Python AI models are required.
 
 <div align="center">
   <img src="website/public/app-demo.png" alt="Mac Meeting Transcriber Interface" width="600">
@@ -16,43 +16,18 @@ Mac meeting transcription app that captures your microphone and Mac system audio
 
 ## Features
 
-- **Local transcription** using OpenAI Whisper
-- **Native Apple Speech live transcription** using macOS SpeechAnalyzer and ScreenCaptureKit for microphone plus system audio
-- **Opt-in AI summarization** with Ollama models; recording defaults to transcription only
-- **Multiple AI models** - Choose from 4 models optimized for different use cases
-- **Privacy-first** - no cloud dependencies
-- **macOS desktop app** with intuitive interface
+- Native Apple Speech transcription with microphone (`You`) and system audio (`Other`)
+- Local transcript storage, search, copy, and meeting names
+- Capture-ready feedback before the recording timer starts
+- No Ollama, PyTorch, Whisper, or model-selection setup in the desktop app
 
-## Models & Performance
+## Startup performance
 
-**Transcription Backends:**
-- `apple-speech`: Default backend. Uses the Mac built-in Apple Speech framework with microphone and system audio capture. No BlackHole or multi-output device is required. **(default)**
-- `small`: Good accuracy and speed on Apple Silicon when using the Whisper backend
-- `base`: Faster but lower accuracy for basic meetings
-- `medium`: High accuracy for important meetings (slower)
+The recorder previously imported unused Whisper/PyTorch/Ollama packages on every process launch. Imports are now deferred out of the meeting path. A local entry-import check measured 1.27 seconds before and 0.08 seconds after; this measures Python imports, not total capture latency.
 
-**Summarization Models** (Ollama):
-- `llama3.2:3b` (2GB): Fastest option for quick meetings **(default)**
-- `gemma3:4b` (2.5GB): Lightweight and efficient
-- `qwen3:8b` (4.7GB): Excellent at structured output and action items
-- `deepseek-r1:8b` (4.7GB): Strong reasoning and analysis capabilities
+The fixed two-second start wait and five-second stop wait have been removed. The UI shows “Starting audio capture…” until the native helper confirms capture, and surfaces startup failures. The native helper build is reused when its inputs have not changed.
 
-**Switching Models:**
-- Click the 🧠 AI Settings icon in the app
-- Select your preferred model
-- Models download automatically when selected
-- ⚠️ Note: Downloads will pause any active summarization
-
-**Summarizing a meeting:**
-- `Ollama Summary: Off` is the default for every meeting
-- Turn the button on before recording when you want an Ollama summary
-- With the button off, the app saves the transcript without starting Ollama
-
-## Future Roadmap
-
-### Enhanced Features
-- Custom summarization templates
-- Speaker Diarisation
+First use can still require macOS permissions and Apple Speech language assets. macOS 26 or newer is required. Existing meeting files remain readable; their historical `_summary.json` filenames contain transcript metadata and do not imply that a summary is generated.
 
 ## Installation
 
@@ -79,9 +54,9 @@ You can run it locally as well (see below) if you dont want to install a dmg.
 ## Local Development/Use Locally
 
 ### Prerequisites
-- Python 3.8+
+- macOS 26+
+- Python 3.10+
 - Node.js 18+
-- Homebrew
 - Xcode 26+ or matching Command Line Tools for building the Apple Speech helper
 
 ### Setup
@@ -93,13 +68,6 @@ cd Mac_meeting_Transcriber_app
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-
-# Optional: install Ollama only if you want meeting summaries
-brew install ollama
-ollama pull llama3.2:3b
-
-# Install ffmpeg (required for audio processing)
-brew install ffmpeg
 
 # Frontend
 cd app
@@ -194,8 +162,8 @@ For detailed system-level logs, run the app from Terminal:
 
 This displays comprehensive logs including:
 - Python subprocess output
-- Whisper transcription details  
-- Ollama API communication
+- Apple Speech startup and transcription details
+- Microphone and system audio capture errors
 - HTTP requests and responses
 - Error stack traces
 - Performance timing
@@ -204,17 +172,17 @@ This displays comprehensive logs including:
 For system-level debugging:
 ```bash
 # View recent Mac Meeting Transcriber-related logs
-log show --last 10m --predicate 'process CONTAINS "Mac Meeting Transcriber" OR eventMessage CONTAINS "ollama"' --info
+log show --last 10m --predicate 'process CONTAINS "Mac Meeting Transcriber"' --info
 
 # Monitor live logs
-log stream --predicate 'eventMessage CONTAINS "ollama" OR process CONTAINS "Mac Meeting Transcriber"' --level info
+log stream --predicate 'process CONTAINS "Mac Meeting Transcriber"' --level info
 ```
 
 **Common Issues:**
 - **Recording stops early**: Check microphone permissions and available disk space
-- **"Processing failed"**: Usually Ollama service or model issues - check terminal logs
-- **Empty transcripts**: Whisper couldn't detect speech - verify audio input levels
-- **Slow processing**: Normal for longer recordings - Ollama processing is CPU-intensive especially on older intel Macs
+- **"Capture failed to start"**: Check the native helper error and macOS microphone/system audio permissions
+- **Empty transcripts**: Verify audio input levels and the selected microphone
+- **Slow first recording**: macOS may need to prepare Speech assets; review the debug log for asset installation or permission requests
 
 ### Logs Location
 - **User Data**: `~/Library/Application Support/mac-meeting-transcriber/`

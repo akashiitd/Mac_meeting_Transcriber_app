@@ -7,6 +7,11 @@ INFO_PLIST="$ROOT_DIR/src/mac_native_speech_transcriber_info.plist"
 OUTPUT_DIR="$ROOT_DIR/app/native"
 OUTPUT_FILE="$OUTPUT_DIR/mac_native_speech_transcriber"
 
+if [[ -x "$OUTPUT_FILE" && "$OUTPUT_FILE" -nt "$SOURCE_FILE" && "$OUTPUT_FILE" -nt "$INFO_PLIST" && "$OUTPUT_FILE" -nt "${BASH_SOURCE[0]}" ]]; then
+  echo "Apple Speech helper is up to date: $OUTPUT_FILE"
+  exit 0
+fi
+
 mkdir -p "$OUTPUT_DIR"
 
 xcrun swiftc \

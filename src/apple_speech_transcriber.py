@@ -53,11 +53,17 @@ class AppleSpeechTranscriber:
         self.pending_timers: dict[str, threading.Timer] = {}
         self.pending_lock = threading.Lock()
         self.partial_flush_delay = PARTIAL_FLUSH_DELAY_SECONDS
+        self.startup_finished = threading.Event()
+        self.capture_ready = False
+        self.startup_timeout = 120
 
     def start(self) -> bool:
         """Compile if needed, then start the helper process."""
         if self.running:
-            return True
+            return self.capture_ready
+
+        self.startup_finished.clear()
+        self.capture_ready = False
 
         helper = self._ensure_helper_binary()
         source = self._source_argument()
@@ -97,7 +103,12 @@ class AppleSpeechTranscriber:
         self.stderr_thread = threading.Thread(target=self._read_stderr, daemon=True)
         self.stdout_thread.start()
         self.stderr_thread.start()
-        return True
+        self.startup_finished.wait(self.startup_timeout)
+        if self.capture_ready:
+            return True
+        logger.error("Apple Speech capture did not start; check native helper errors and macOS permissions")
+        self.stop()
+        return False
 
     def stop(self) -> None:
         """Stop the helper process and reader threads."""
@@ -128,6 +139,7 @@ class AppleSpeechTranscriber:
             if not self.running and not line:
                 break
             self._handle_line(line.strip())
+        self.startup_finished.set()
 
     def _read_stderr(self) -> None:
         if not self.process or not self.process.stderr:
@@ -151,9 +163,13 @@ class AppleSpeechTranscriber:
         event = payload.get("event")
         if event == "status":
             logger.info("Apple Speech: %s", payload.get("message", ""))
+            if payload.get("message") == "Apple Speech capture started.":
+                self.capture_ready = True
+                self.startup_finished.set()
             return
         if event == "error":
             logger.error("Apple Speech: %s", payload.get("message", ""))
+            self.startup_finished.set()
             return
         if event != "transcript":
             return
