@@ -6,7 +6,10 @@ const path = require('node:path');
 let finishStart;
 let starts = 0;
 const responses = {
-  'list-meetings': { success: true, meetings: [] },
+  'list-meetings': { success: true, meetings: Array.from({ length: 162 }, (_, index) => ({
+    session_info: { name: `Meeting ${index}`, processed_at: '2026-09-11T10:00:00' },
+    transcript: 'Saved transcript text. '.repeat(650),
+  })) },
   'clear-state': { success: true },
   'get-status': { success: true, status: 'IDLE' },
   'check-microphone-permission': { success: true, status: 'granted' },
@@ -42,6 +45,21 @@ app.whenReady().then(async () => {
   try {
     await window.loadFile(path.join(__dirname, '..', 'index.html'));
     await until('meetingsLastLoaded > 0 && uiState === "ready"');
+    const historyStats = await evaluate(`(() => {
+      const start = performance.now();
+      const payload = JSON.stringify(meetings);
+      for (let offset = 0; offset < payload.length; offset += 65536) {
+        debugLog(payload.slice(offset, offset + 65536));
+      }
+      return {
+        durationMs: Math.round(performance.now() - start),
+        debugCharacters: document.getElementById('debug-console-panel').textContent.length,
+        rows: document.querySelectorAll('.meeting-item').length,
+      };
+    })()`);
+    console.log('History UI fixture:', historyStats);
+    assert.equal(historyStats.rows, 162);
+    assert.ok(historyStats.debugCharacters <= 50000, 'Debug output must stay bounded');
     assert.equal(await evaluate('document.getElementById("summarize-toggle")'), null);
     await evaluate('toggleAISettings(); startBtn.click(); startBtn.click();');
     await until('uiState === "starting" && startBtn.disabled');

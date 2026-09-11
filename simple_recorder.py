@@ -915,18 +915,6 @@ def list_meetings():
     summaries = list(output_dir.glob("*_summary.json"))
     meetings = []
     
-    # Sort by actual meeting date, with fallback to modification time
-    def get_meeting_date(summary_file):
-        try:
-            with open(summary_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                return data.get('session_info', {}).get('processed_at', '')
-        except:
-            # Fallback to file modification time if JSON read fails
-            return summary_file.stat().st_mtime
-    
-    summaries.sort(key=get_meeting_date, reverse=True)
-    
     for summary_file in summaries:
         try:
             with open(summary_file, 'r', encoding='utf-8') as f:
@@ -941,14 +929,21 @@ def list_meetings():
                     "action_items": data.get("action_items", []),
                     "transcript": data.get("transcript", "")
                 }
-                meetings.append(essential_meeting)
+                try:
+                    meeting_date = datetime.fromisoformat(
+                        str(essential_meeting['session_info'].get('processed_at', '')).replace('Z', '+00:00')
+                    ).timestamp()
+                except ValueError:
+                    meeting_date = summary_file.stat().st_mtime
+                meetings.append((meeting_date, essential_meeting))
         except Exception as e:
             # Log warning but continue processing other files
             logger.warning(f"Failed to load {summary_file}: {e}")
             continue
     
     # Output as compact JSON for Electron (no indentation for speed)
-    print(json.dumps(meetings, separators=(',', ':')))
+    meetings.sort(key=lambda item: item[0], reverse=True)
+    print(json.dumps([meeting for _, meeting in meetings], separators=(',', ':')))
 
 
 @cli.command()

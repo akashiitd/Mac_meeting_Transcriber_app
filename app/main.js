@@ -147,6 +147,8 @@ ipcMain.handle('open-settings', () => {
 
 // Python backend communication
 function runPythonScript(script, args = [], silent = false) {
+  // Meeting JSON is data, not debug output; every history caller shares this path.
+  silent = silent || args[0] === 'list-meetings';
   return new Promise((resolve, reject) => {
     const pythonPath = path.join(__dirname, '..', 'venv', 'bin', 'python');
     const scriptPath = path.join(__dirname, '..', script);
@@ -168,7 +170,7 @@ function runPythonScript(script, args = [], silent = false) {
     process.stdout.on('data', (data) => {
       const output = data.toString();
       stdout += output;
-      console.log('Python stdout:', output);
+      if (!silent) console.log('Python stdout:', output);
       // Stream stdout to debug panel in real-time (unless silent)
       if (!silent) {
         output.split('\n').forEach(line => {

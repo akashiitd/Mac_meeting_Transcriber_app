@@ -2995,20 +2995,18 @@ Session started - waiting for activity...
 
         function debugLog(message) {
             const timestamp = new Date().toLocaleTimeString();
-            const formattedMessage = `[${timestamp}] ${message}\n`;
-            
-            // Log to setup wizard console if it exists (during setup)
-            const setupConsole = document.getElementById('debug-console');
-            if (setupConsole) {
-                setupConsole.textContent += formattedMessage;
-                setupConsole.scrollTop = setupConsole.scrollHeight;
-            }
-            
-            // Always log to debug panel
-            const debugPanel = document.getElementById('debug-console-panel');
-            if (debugPanel) {
-                debugPanel.textContent += formattedMessage;
-                debugPanel.scrollTop = debugPanel.scrollHeight;
+            const text = String(message);
+            const formattedMessage = `[${timestamp}] ${text.slice(0, 2000)}${text.length > 2000 ? '… [truncated]' : ''}\n`;
+            // ponytail: keep the latest 50K characters; use file logs if full history is needed.
+            for (const [id, visible] of [
+                ['debug-console', setupOverlay.style.display !== 'none'],
+                ['debug-console-panel', debugVisible],
+            ]) {
+                const panel = document.getElementById(id);
+                if (panel) {
+                    panel.textContent = (panel.textContent + formattedMessage).slice(-50000);
+                    if (visible) panel.scrollTop = panel.scrollHeight;
+                }
             }
         }
         
