@@ -78,8 +78,26 @@ func print(_ items: Any..., separator: String = " ", terminator: String = "\n", 
     }
 }
 
+/// Runs `operation`, giving up the wait once `seconds` elapse.
+///
+/// Shutdown work in the Speech framework can outlive the moment the user asked
+/// to stop, so every teardown step is bounded to keep stopping responsive.
+func withTimeLimit(_ seconds: Double, operation: @escaping @Sendable () async -> Void) async {
+    await withTaskGroup(of: Void.self) { group in
+        group.addTask { await operation() }
+        group.addTask {
+            try? await Task.sleep(nanoseconds: UInt64(seconds * 1_000_000_000))
+        }
+        _ = await group.next()
+        group.cancelAll()
+    }
+}
+
 @available(macOS 26.0, *)
 final class SpeechSource {
+    /// Longest wait for the analyzer to emit its trailing results on stop.
+    static let finalizeTimeoutSeconds = 1.25
+
     let source: String
     let speaker: String
 
@@ -205,7 +223,10 @@ final class SpeechSource {
 
     func finish() async {
         inputContinuation.finish()
-        try? await analyzer.finalizeAndFinishThroughEndOfInput()
+        let analyzer = self.analyzer
+        await withTimeLimit(Self.finalizeTimeoutSeconds) {
+            try? await analyzer.finalizeAndFinishThroughEndOfInput()
+        }
         analyzerTask?.cancel()
         resultsTask?.cancel()
     }
@@ -339,6 +360,9 @@ final class SpeechSource {
 
 @available(macOS 26.0, *)
 final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
+    /// Longest wait for ScreenCaptureKit to release the capture stream on stop.
+    static let captureStopTimeoutSeconds = 0.75
+
     private let emitter: JSONEmitter
     private let localeIdentifier: String
     private let contextTerms: [String]
@@ -352,6 +376,7 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate, AVCa
     private var systemSource: SpeechSource?
     private var microphoneSource: SpeechSource?
     private var selectedSystemAudioSession: AVCaptureSession?
+    private var isStopping = false
 
     init(localeIdentifier: String, contextTerms: [String], qualityMode: String, captureSystemAudio: Bool, captureMicrophone: Bool, systemAudioDeviceName: String?, emitter: JSONEmitter) {
         self.localeIdentifier = localeIdentifier
@@ -438,15 +463,30 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate, AVCa
     }
 
     func stop() async {
+        if isStopping {
+            return
+        }
+        isStopping = true
+
         if let stream {
-            try? await stream.stopCapture()
+            self.stream = nil
+            await withTimeLimit(Self.captureStopTimeoutSeconds) {
+                try? await stream.stopCapture()
+            }
         }
         if let selectedSystemAudioSession {
             selectedSystemAudioSession.stopRunning()
             self.selectedSystemAudioSession = nil
         }
-        await systemSource?.finish()
-        await microphoneSource?.finish()
+
+        // Both analyzers finalize in parallel; draining them one after another
+        // doubled the time between the stop request and process exit.
+        let sources = [systemSource, microphoneSource].compactMap { $0 }
+        await withTaskGroup(of: Void.self) { group in
+            for source in sources {
+                group.addTask { await source.finish() }
+            }
+        }
         emitter.status("Apple Speech capture stopped.")
     }
 
@@ -553,6 +593,10 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate, AVCa
 
 @main
 struct MacNativeSpeechTranscriber {
+    /// Upper bound on how long a stop request may take before the process exits.
+    /// Must stay below the parent's grace period so teardown can finish cleanly.
+    static let hardShutdownSeconds = 2.25
+
     static func main() async {
         let emitter = JSONEmitter()
 
@@ -592,22 +636,24 @@ struct MacNativeSpeechTranscriber {
         signal(SIGINT, SIG_IGN)
         signal(SIGTERM, SIG_IGN)
 
-        let interruptSource = DispatchSource.makeSignalSource(signal: SIGINT)
-        interruptSource.setEventHandler {
+        let shutdown: @Sendable () -> Void = {
+            // Guarantee the process exits even if teardown wedges; the parent
+            // keeps the transcript it has already received either way.
+            DispatchQueue.global().asyncAfter(deadline: .now() + hardShutdownSeconds) {
+                exit(0)
+            }
             Task {
                 await coordinator.stop()
                 exit(0)
             }
         }
+
+        let interruptSource = DispatchSource.makeSignalSource(signal: SIGINT)
+        interruptSource.setEventHandler(handler: shutdown)
         interruptSource.resume()
 
         let terminateSource = DispatchSource.makeSignalSource(signal: SIGTERM)
-        terminateSource.setEventHandler {
-            Task {
-                await coordinator.stop()
-                exit(0)
-            }
-        }
+        terminateSource.setEventHandler(handler: shutdown)
         terminateSource.resume()
 
         do {

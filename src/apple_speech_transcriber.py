@@ -23,6 +23,13 @@ logger = logging.getLogger(__name__)
 MIN_CONFIDENCE_THRESHOLD = 0.3
 PARTIAL_FLUSH_DELAY_SECONDS = 4.5
 
+# Stopping must feel immediate. The helper bounds its own shutdown, so these are
+# only guards against a wedged process; pending partials are flushed locally, so
+# a forced shutdown still keeps the last spoken words.
+SHUTDOWN_GRACE_SECONDS = 2.5
+SHUTDOWN_KILL_WAIT_SECONDS = 0.5
+READER_JOIN_SECONDS = 0.5
+
 
 class AppleSpeechTranscriber:
     """Run the native Swift Apple Speech helper as a subprocess."""
@@ -116,25 +123,46 @@ class AppleSpeechTranscriber:
         return False
 
     def stop(self) -> None:
-        """Stop the helper process and reader threads."""
+        """Stop the helper process and reader threads without stalling the caller."""
         self.running = False
 
-        if self.process and self.process.poll() is None:
-            self.process.terminate()
+        process = self.process
+        if process and process.poll() is None:
             try:
-                self.process.wait(timeout=5)
-            except subprocess.TimeoutExpired:
-                self.process.kill()
-                self.process.wait(timeout=2)
+                process.terminate()
+            except OSError as e:
+                logger.warning("Could not signal Apple Speech helper: %s", e)
 
-        if self.stdout_thread:
-            self.stdout_thread.join(timeout=2)
-        if self.stderr_thread:
-            self.stderr_thread.join(timeout=2)
+            if not self._wait_for_exit(process, SHUTDOWN_GRACE_SECONDS):
+                logger.warning(
+                    "Apple Speech helper did not exit within %.1fs; forcing shutdown",
+                    SHUTDOWN_GRACE_SECONDS,
+                )
+                try:
+                    process.kill()
+                except OSError as e:
+                    logger.warning("Could not kill Apple Speech helper: %s", e)
+                self._wait_for_exit(process, SHUTDOWN_KILL_WAIT_SECONDS)
+
+        for thread in (self.stdout_thread, self.stderr_thread):
+            if thread:
+                thread.join(timeout=READER_JOIN_SECONDS)
+
+        self.stdout_thread = None
+        self.stderr_thread = None
 
         self._flush_all_pending()
 
         self.process = None
+
+    @staticmethod
+    def _wait_for_exit(process: subprocess.Popen, timeout: float) -> bool:
+        """Wait for the helper to exit, returning False when it is still alive."""
+        try:
+            process.wait(timeout=timeout)
+            return True
+        except subprocess.TimeoutExpired:
+            return False
 
     def _read_stdout(self) -> None:
         if not self.process or not self.process.stdout:

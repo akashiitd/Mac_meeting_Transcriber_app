@@ -36,6 +36,9 @@ except ImportError:
 
 logger = logging.getLogger(__name__)
 
+# Upper bound on waiting for an in-flight transcription chunk when stopping.
+TRANSCRIPTION_THREAD_JOIN_SECONDS = 3.0
+
 
 # Common Whisper hallucination phrases on silence/noise
 HALLUCINATION_PHRASES = {
@@ -490,8 +493,11 @@ class MicrophoneCapture:
         """Stop capturing microphone audio."""
         self.running = False
         if self.stream:
-            self.stream.stop()
-            self.stream.close()
+            try:
+                self.stream.stop()
+                self.stream.close()
+            except Exception as e:
+                logger.warning(f"Error stopping microphone stream: {e}")
             self.stream = None
         logger.info("Microphone capture stopped")
 
@@ -746,11 +752,12 @@ class RealtimeTranscriber:
         if self.mic_capture:
             self.mic_capture.stop()
 
-        # Wait for threads
+        # Wait for threads. The audio loop polls in 50ms steps, so it only needs
+        # a short grace period; the transcription loop may be mid-inference.
         if self.audio_thread:
-            self.audio_thread.join(timeout=2)
+            self.audio_thread.join(timeout=0.5)
         if self.transcription_thread:
-            self.transcription_thread.join(timeout=5)
+            self.transcription_thread.join(timeout=TRANSCRIPTION_THREAD_JOIN_SECONDS)
 
         logger.info("Real-time transcription stopped")
 
