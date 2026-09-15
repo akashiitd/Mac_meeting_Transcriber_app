@@ -518,6 +518,7 @@ class RealtimeTranscriber:
         mic_device: Optional[int] = None,
         enable_system_audio: bool = True,
         enable_microphone: bool = True,
+        system_audio_device: Optional[str] = None,
         transcription_callback: Optional[Callable[[TranscriptSegment], None]] = None,
         chunk_duration: float = 2.0,  # Transcribe every N seconds
         overlap_duration: float = 0.25,  # Small context window between chunks
@@ -525,8 +526,10 @@ class RealtimeTranscriber:
     ):
         self.model_size = model_size
         self.language = language
+        self.mic_device = mic_device
         self.enable_system_audio = enable_system_audio
         self.enable_microphone = enable_microphone
+        self.system_audio_device = system_audio_device
         self.transcription_callback = transcription_callback
         self.chunk_duration = chunk_duration
         self.overlap_duration = overlap_duration
@@ -543,6 +546,7 @@ class RealtimeTranscriber:
         # Transcription model
         self.model = None
         self.lfm2_transcriber = None
+        self.lfm25_mlx_transcriber = None
         self.apple_speech_transcriber = None
         self.model_loaded = False
 
@@ -564,6 +568,9 @@ class RealtimeTranscriber:
 
         if self.transcription_backend == "lfm2-audio":
             return self._load_lfm2_audio()
+
+        if self.transcription_backend == "lfm25-audio-mlx":
+            return self._load_lfm25_audio_mlx()
 
         try:
             import mlx_whisper
@@ -638,6 +645,23 @@ class RealtimeTranscriber:
             logger.error(f"Failed to initialize LFM2-Audio backend: {e}")
             return False
 
+    def _load_lfm25_audio_mlx(self) -> bool:
+        """Initialize Liquid AI LFM2.5-Audio MLX backend."""
+        try:
+            from src.lfm25_audio_mlx_transcriber import LFM25AudioMLXTranscriber
+
+            logger.info("Loading LFM2.5-Audio MLX backend")
+            self.lfm25_mlx_transcriber = LFM25AudioMLXTranscriber()
+            self.lfm25_mlx_transcriber.ensure_available()
+            self.mlx_whisper = None
+            self.model = True
+            self.model_loaded = True
+            logger.info("LFM2.5-Audio MLX backend initialized successfully")
+            return True
+        except Exception as e:
+            logger.error(f"Failed to initialize LFM2.5-Audio MLX backend: {e}")
+            return False
+
     def _load_apple_speech(self) -> bool:
         """Initialize Apple's native macOS Speech backend."""
         try:
@@ -647,6 +671,7 @@ class RealtimeTranscriber:
                 language=self.language,
                 enable_system_audio=self.enable_system_audio,
                 enable_microphone=self.enable_microphone,
+                system_audio_device=self.system_audio_device,
                 callback=self._handle_external_transcript_segment,
             )
             self.mlx_whisper = None
@@ -674,13 +699,13 @@ class RealtimeTranscriber:
 
         # Start audio capture
         if self.enable_system_audio:
-            self.system_capture = SystemAudioCapture()
+            self.system_capture = SystemAudioCapture(sample_rate=self.system_buffer.sample_rate)
             if not self.system_capture.start():
                 logger.warning("System audio capture not available")
                 self.system_capture = None
 
         if self.enable_microphone:
-            self.mic_capture = MicrophoneCapture()
+            self.mic_capture = MicrophoneCapture(sample_rate=self.mic_buffer.sample_rate, device=self.mic_device)
             if not self.mic_capture.start():
                 logger.warning("Microphone capture not available")
                 self.mic_capture = None
@@ -842,16 +867,20 @@ class RealtimeTranscriber:
         if len(audio) < 1600:  # Less than 0.1s of audio
             return
 
-        # Resample if needed (system audio is 24kHz)
-        if source == "system" and NUMPY_AVAILABLE:
-            # Simple resampling from 24kHz to 16kHz
-            audio = self._resample(audio, 24000, 16000)
+        source_sample_rate = buffer.sample_rate
+        target_sample_rate = self._target_sample_rate_for_backend()
+        if source_sample_rate != target_sample_rate and NUMPY_AVAILABLE:
+            audio = self._resample(audio, source_sample_rate, target_sample_rate)
 
         try:
             current_time = time.time() - self.start_time
 
             if self.transcription_backend == "lfm2-audio":
-                text = self._transcribe_with_lfm2(audio, 16000)
+                text = self._transcribe_with_lfm2(audio, target_sample_rate)
+                if text:
+                    self._process_text_result(text, current_time, source, speaker)
+            elif self.transcription_backend == "lfm25-audio-mlx":
+                text = self._transcribe_with_lfm25_mlx(audio, target_sample_rate)
                 if text:
                     self._process_text_result(text, current_time, source, speaker)
             # Use mlx-whisper if available (GPU accelerated)
@@ -866,6 +895,12 @@ class RealtimeTranscriber:
         except Exception as e:
             logger.error(f"Transcription error: {e}")
 
+    def _target_sample_rate_for_backend(self) -> int:
+        """Return the audio sample rate expected by the selected backend."""
+        if self.transcription_backend == "lfm25-audio-mlx":
+            return 24000
+        return 16000
+
     def _transcribe_with_lfm2(self, audio, sample_rate: int) -> Optional[str]:
         """Transcribe using Liquid AI LFM2-Audio through llama.cpp."""
         if not self.lfm2_transcriber:
@@ -875,6 +910,17 @@ class RealtimeTranscriber:
             return self.lfm2_transcriber.transcribe(audio, sample_rate=sample_rate)
         except Exception as e:
             logger.error(f"LFM2-Audio transcription error: {e}")
+            return None
+
+    def _transcribe_with_lfm25_mlx(self, audio, sample_rate: int) -> Optional[str]:
+        """Transcribe using Liquid AI LFM2.5-Audio through MLX."""
+        if not self.lfm25_mlx_transcriber:
+            return None
+
+        try:
+            return self.lfm25_mlx_transcriber.transcribe(audio, sample_rate=sample_rate)
+        except Exception as e:
+            logger.error(f"LFM2.5-Audio MLX transcription error: {e}")
             return None
 
     def _transcribe_with_mlx(self, audio, source: str):
@@ -1210,6 +1256,7 @@ def create_realtime_transcriber(
     language: str = "en",
     enable_system_audio: bool = True,
     enable_microphone: bool = True,
+    system_audio_device: Optional[str] = None,
     callback: Optional[Callable[[TranscriptSegment], None]] = None,
     session_name: Optional[str] = None,
     enable_live_logging: bool = True,
@@ -1241,6 +1288,7 @@ def create_realtime_transcriber(
         language=language,
         enable_system_audio=enable_system_audio,
         enable_microphone=enable_microphone,
+        system_audio_device=system_audio_device,
         transcription_callback=callback,
         transcription_backend=transcription_backend
     )

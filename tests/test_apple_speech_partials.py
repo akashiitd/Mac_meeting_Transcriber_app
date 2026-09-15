@@ -177,6 +177,21 @@ class ConfigQualityModeTests(unittest.TestCase):
 
             self.assertEqual("balanced", Config(config_path).get_transcription_quality_mode())
 
+    def test_liquid_models_are_available_for_selection(self):
+        config = Config()
+
+        realtime_models = config.list_supported_realtime_transcription_models()
+        self.assertEqual(
+            "lfm25-audio-mlx",
+            realtime_models["lfm25-audio-1.5b-mlx"]["backend"],
+        )
+
+        summary_models = config.list_supported_models()
+        self.assertIn(
+            "hf.co/LiquidAI/LFM2-2.6B-Transcript-GGUF:Q4_K_M",
+            summary_models,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

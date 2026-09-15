@@ -468,6 +468,12 @@ Return ONLY the response in this exact JSON format:
                         # Recreate client connection
                         self.client = ollama.Client()
                         
+                    options = {
+                        'timeout': 1800  # 30 minute timeout for longer meetings
+                    }
+                    if "LFM2-2.6B-Transcript" in self.model_name:
+                        options["temperature"] = 0.3
+
                     ollama_response = self.client.chat(
                         model=self.model_name,
                         messages=[
@@ -476,9 +482,7 @@ Return ONLY the response in this exact JSON format:
                                 'content': prompt
                             }
                         ],
-                        options={
-                            'timeout': 1800  # 30 minute timeout for longer meetings
-                        }
+                        options=options
                     )
                     break  # Success, exit retry loop
                     

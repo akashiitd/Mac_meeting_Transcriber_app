@@ -188,9 +188,17 @@ final class SpeechSource {
             return
         }
 
+        append(pcmBuffer: pcmBuffer)
+    }
+
+    func append(pcmBuffer: AVAudioPCMBuffer) {
+        guard let ownedBuffer = Self.copyPCMBuffer(pcmBuffer) else {
+            return
+        }
+
         converterQueue.async { [weak self] in
             guard let self else { return }
-            guard let converted = self.convertIfNeeded(pcmBuffer) else { return }
+            guard let converted = self.convertIfNeeded(ownedBuffer) else { return }
             self.inputContinuation.yield(AnalyzerInput(buffer: converted))
         }
     }
@@ -299,34 +307,77 @@ final class SpeechSource {
 
         return status == noErr ? buffer : nil
     }
+
+    private static func copyPCMBuffer(_ buffer: AVAudioPCMBuffer) -> AVAudioPCMBuffer? {
+        guard let copy = AVAudioPCMBuffer(
+            pcmFormat: buffer.format,
+            frameCapacity: buffer.frameLength
+        ) else {
+            return nil
+        }
+
+        copy.frameLength = buffer.frameLength
+        let sourceBuffers = UnsafeMutableAudioBufferListPointer(
+            UnsafeMutablePointer(mutating: buffer.audioBufferList)
+        )
+        let destinationBuffers = UnsafeMutableAudioBufferListPointer(copy.mutableAudioBufferList)
+        guard sourceBuffers.count == destinationBuffers.count else { return nil }
+
+        for index in sourceBuffers.indices {
+            let source = sourceBuffers[index]
+            guard let sourceData = source.mData,
+                  let destinationData = destinationBuffers[index].mData else {
+                return nil
+            }
+            memcpy(destinationData, sourceData, Int(source.mDataByteSize))
+            destinationBuffers[index].mDataByteSize = source.mDataByteSize
+        }
+
+        return copy
+    }
 }
 
 @available(macOS 26.0, *)
-final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
+final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     private let emitter: JSONEmitter
     private let localeIdentifier: String
     private let contextTerms: [String]
     private let qualityMode: String
     private let captureSystemAudio: Bool
     private let captureMicrophone: Bool
+    private let systemAudioDeviceName: String?
     private let queue = DispatchQueue(label: "macmeetingtranscriber.apple-speech.capture")
 
     private var stream: SCStream?
     private var systemSource: SpeechSource?
     private var microphoneSource: SpeechSource?
+    private var selectedSystemAudioSession: AVCaptureSession?
 
-    init(localeIdentifier: String, contextTerms: [String], qualityMode: String, captureSystemAudio: Bool, captureMicrophone: Bool, emitter: JSONEmitter) {
+    init(localeIdentifier: String, contextTerms: [String], qualityMode: String, captureSystemAudio: Bool, captureMicrophone: Bool, systemAudioDeviceName: String?, emitter: JSONEmitter) {
         self.localeIdentifier = localeIdentifier
         self.contextTerms = contextTerms
         self.qualityMode = qualityMode
         self.captureSystemAudio = captureSystemAudio
         self.captureMicrophone = captureMicrophone
+        self.systemAudioDeviceName = systemAudioDeviceName
         self.emitter = emitter
     }
 
     func start() async throws {
-        if captureSystemAudio {
+        let usesSelectedSystemAudio = captureSystemAudio && systemAudioDeviceName != nil
+        let needsScreenCapture = captureMicrophone || (captureSystemAudio && !usesSelectedSystemAudio)
+
+        if captureSystemAudio && !usesSelectedSystemAudio {
             try await requestScreenCaptureAccess()
+        }
+
+        if let systemAudioDeviceName {
+            try await startSelectedSystemAudioCapture(named: systemAudioDeviceName)
+        }
+
+        guard needsScreenCapture else {
+            emitter.status("Apple Speech capture started.")
+            return
         }
 
         let content = try await SCShareableContent.excludingDesktopWindows(false, onScreenWindowsOnly: true)
@@ -342,7 +393,7 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
         configuration.height = 2
         configuration.minimumFrameInterval = CMTime(value: 1, timescale: 1)
         configuration.queueDepth = 3
-        configuration.capturesAudio = captureSystemAudio
+        configuration.capturesAudio = captureSystemAudio && !usesSelectedSystemAudio
         configuration.captureMicrophone = captureMicrophone
         configuration.excludesCurrentProcessAudio = true
         configuration.sampleRate = 48_000
@@ -354,7 +405,7 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
         let systemInputFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: 48_000, channels: 1, interleaved: false)!
         let microphoneInputFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: 48_000, channels: 1, interleaved: false)!
 
-        if captureSystemAudio {
+        if captureSystemAudio && !usesSelectedSystemAudio {
             systemSource = try await SpeechSource(
                 source: "system",
                 speaker: "Other",
@@ -390,6 +441,10 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
         if let stream {
             try? await stream.stopCapture()
         }
+        if let selectedSystemAudioSession {
+            selectedSystemAudioSession.stopRunning()
+            self.selectedSystemAudioSession = nil
+        }
         await systemSource?.finish()
         await microphoneSource?.finish()
         emitter.status("Apple Speech capture stopped.")
@@ -412,6 +467,14 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
         emitter.error("ScreenCaptureKit stopped: \(error.localizedDescription)")
     }
 
+    func captureOutput(
+        _ output: AVCaptureOutput,
+        didOutput sampleBuffer: CMSampleBuffer,
+        from connection: AVCaptureConnection
+    ) {
+        systemSource?.append(sampleBuffer: sampleBuffer)
+    }
+
     private func requestScreenCaptureAccess() async throws {
         if CGPreflightScreenCaptureAccess() {
             return
@@ -424,6 +487,66 @@ final class CaptureCoordinator: NSObject, SCStreamOutput, SCStreamDelegate {
                 NSLocalizedDescriptionKey: "Screen Recording permission is required to capture system audio. Enable it in System Settings > Privacy & Security > Screen & System Audio Recording, then restart Mac Meeting Transcriber."
             ])
         }
+    }
+
+    private func startSelectedSystemAudioCapture(named deviceName: String) async throws {
+        let discovery = AVCaptureDevice.DiscoverySession(
+            deviceTypes: [.microphone, .external],
+            mediaType: .audio,
+            position: .unspecified
+        )
+        guard let device = discovery.devices.first(where: {
+            $0.localizedName == deviceName
+        }) else {
+            throw NSError(domain: "MacMeetingTranscriberAppleSpeech", code: 40, userInfo: [
+                NSLocalizedDescriptionKey: "CoreAudio input device named \(deviceName) was not found."
+            ])
+        }
+
+        guard let streamDescription = CMAudioFormatDescriptionGetStreamBasicDescription(
+            device.activeFormat.formatDescription
+        ), let inputFormat = AVAudioFormat(streamDescription: streamDescription) else {
+            throw NSError(domain: "MacMeetingTranscriberAppleSpeech", code: 41, userInfo: [
+                NSLocalizedDescriptionKey: "Selected CoreAudio device \(deviceName) has no usable input format."
+            ])
+        }
+
+        systemSource = try await SpeechSource(
+            source: "system",
+            speaker: "Other",
+            localeIdentifier: localeIdentifier,
+            contextTerms: contextTerms,
+            qualityMode: qualityMode,
+            inputFormat: inputFormat,
+            emitter: emitter
+        )
+        systemSource?.start()
+
+        let session = AVCaptureSession()
+        let input = try AVCaptureDeviceInput(device: device)
+        guard session.canAddInput(input) else {
+            throw NSError(domain: "MacMeetingTranscriberAppleSpeech", code: 42, userInfo: [
+                NSLocalizedDescriptionKey: "Cannot add selected CoreAudio device \(deviceName) to capture session."
+            ])
+        }
+        session.addInput(input)
+
+        let output = AVCaptureAudioDataOutput()
+        guard session.canAddOutput(output) else {
+            throw NSError(domain: "MacMeetingTranscriberAppleSpeech", code: 43, userInfo: [
+                NSLocalizedDescriptionKey: "Cannot read audio from selected CoreAudio device \(deviceName)."
+            ])
+        }
+        session.addOutput(output)
+        output.setSampleBufferDelegate(self, queue: queue)
+        session.startRunning()
+        guard session.isRunning else {
+            throw NSError(domain: "MacMeetingTranscriberAppleSpeech", code: 44, userInfo: [
+                NSLocalizedDescriptionKey: "Selected CoreAudio device \(deviceName) did not start."
+            ])
+        }
+        selectedSystemAudioSession = session
+        emitter.status("Apple Speech capturing selected system audio device: \(deviceName).")
     }
 
 }
@@ -443,6 +566,7 @@ struct MacNativeSpeechTranscriber {
         let source = value(after: "--source", in: arguments) ?? "both"
         let duration = Double(value(after: "--duration", in: arguments) ?? "")
         let qualityMode = value(after: "--quality", in: arguments) ?? "fast"
+        let systemAudioDeviceName = value(after: "--system-audio-device", in: arguments)
         let contextTermsRaw = value(after: "--context-terms", in: arguments) ?? ""
         let contextTerms = contextTermsRaw.isEmpty ? [String]() :
             contextTermsRaw.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
@@ -461,6 +585,7 @@ struct MacNativeSpeechTranscriber {
             qualityMode: qualityMode,
             captureSystemAudio: captureSystemAudio,
             captureMicrophone: captureMicrophone,
+            systemAudioDeviceName: systemAudioDeviceName,
             emitter: emitter
         )
 

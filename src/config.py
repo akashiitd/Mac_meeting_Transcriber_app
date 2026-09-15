@@ -52,6 +52,14 @@ class Config:
             "description": "Strong reasoning and analysis capabilities",
             "speed": "medium",
             "quality": "excellent"
+        },
+        "hf.co/LiquidAI/LFM2-2.6B-Transcript-GGUF:Q4_K_M": {
+            "name": "Liquid AI LFM2 2.6B Transcript",
+            "size": "1.6GB",
+            "params": "2.6B",
+            "description": "Meeting transcript summarization model optimized for local private notes",
+            "speed": "fast",
+            "quality": "excellent"
         }
     }
 
@@ -77,6 +85,14 @@ class Config:
             "backend": "lfm2-audio",
             "size": "1.5B",
             "description": "Liquid AI local ASR through specialized llama.cpp runner",
+            "speed": "experimental",
+            "quality": "experimental"
+        },
+        "lfm25-audio-1.5b-mlx": {
+            "name": "Liquid AI LFM2.5 Audio 1.5B MLX",
+            "backend": "lfm25-audio-mlx",
+            "size": "3.6GB",
+            "description": "Apple Silicon MLX audio-to-text backend using mlx-community/LFM2.5-Audio-1.5B-bf16",
             "speed": "experimental",
             "quality": "experimental"
         }

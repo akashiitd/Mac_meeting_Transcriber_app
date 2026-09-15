@@ -32,6 +32,7 @@ class AppleSpeechTranscriber:
         language: str = "en",
         enable_system_audio: bool = True,
         enable_microphone: bool = True,
+        system_audio_device: Optional[str] = None,
         callback: Optional[Callable[[TranscriptSegment], None]] = None,
         context_terms: Optional[list] = None,
         quality_mode: Optional[str] = None,
@@ -40,6 +41,7 @@ class AppleSpeechTranscriber:
         self.language = language
         self.enable_system_audio = enable_system_audio
         self.enable_microphone = enable_microphone
+        self.system_audio_device = system_audio_device
         self.callback = callback
         self.context_terms = context_terms if context_terms is not None else config.get_context_terms()
         self.quality_mode = quality_mode or config.get_transcription_quality_mode()
@@ -80,6 +82,9 @@ class AppleSpeechTranscriber:
             "--quality",
             self.quality_mode,
         ]
+
+        if self.system_audio_device:
+            command.extend(["--system-audio-device", self.system_audio_device])
 
         if self.context_terms:
             command.extend(["--context-terms", ",".join(self.context_terms)])
@@ -325,6 +330,12 @@ class AppleSpeechTranscriber:
 
     def _find_bundled_helper(self) -> Optional[Path]:
         """Find a prebuilt helper in development or packaged Electron layouts."""
+        # A bundled helper may predate optional selected-device support. Compile
+        # the local Swift source for this explicit route so the caller cannot
+        # silently fall back to generic system capture.
+        if self.system_audio_device:
+            return None
+
         candidates = [
             Path(__file__).parent.parent / "app" / "native" / "mac_native_speech_transcriber",
             Path.cwd() / "app" / "native" / "mac_native_speech_transcriber",
