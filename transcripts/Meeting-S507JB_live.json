@@ -1,0 +1,1860 @@
+{
+  "session_name": "Meeting-S507JB",
+  "started": "2026-08-12T20:04:52.468578",
+  "segments": [
+    {
+      "text": "So, uh, I have developed these 2 strategies, so using machine learning, uh, data, uh, exploited data, data analysis, and also, uh, um, like end to end stakeholder management across intelligence market. It's to uh, uh, absorb those capabilities in the respective campaigns.",
+      "start_time": 0.0,
+      "end_time": 16.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6780697674418605,
+      "timestamp": "2026-08-12T20:05:10.725337"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 16.56,
+      "end_time": 17.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.686,
+      "timestamp": "2026-08-12T20:05:11.317094"
+    },
+    {
+      "text": "That is fine.",
+      "start_time": 18.72,
+      "end_time": 19.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6960000000000001,
+      "timestamp": "2026-08-12T20:05:13.281290"
+    },
+    {
+      "text": "So can you tell me like, uh, How would you deal with data drift in a, in any fraud detection model?",
+      "start_time": 19.98,
+      "end_time": 27.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8161904761904762,
+      "timestamp": "2026-08-12T20:05:21.999646"
+    },
+    {
+      "text": "Like, over time, like if you notice that the performance of your Ford detection model is declining.",
+      "start_time": 27.96,
+      "end_time": 33.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8465882352941176,
+      "timestamp": "2026-08-12T20:05:27.740227"
+    },
+    {
+      "text": "How would you suspect this due to a detailed drift and how would you handle this issue?",
+      "start_time": 33.72,
+      "end_time": 39.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9052941176470588,
+      "timestamp": "2026-08-12T20:05:33.488673"
+    },
+    {
+      "text": "So in model, once we deploy the model and once the model is live, there is a, like performance monitoring and also the feedback loop is there.",
+      "start_time": 41.76,
+      "end_time": 52.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8673333333333333,
+      "timestamp": "2026-08-12T20:05:45.984444"
+    },
+    {
+      "text": "So what happens, like, once once you develop the model, like, in one year, you pass to one year and the model is currently running in the market.",
+      "start_time": 52.26,
+      "end_time": 62.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8501428571428572,
+      "timestamp": "2026-08-12T20:05:56.535298"
+    },
+    {
+      "text": "But due to time, uh, the model might be uh, uh, the, the features that you have built to train the model, right?",
+      "start_time": 62.88,
+      "end_time": 71.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8009565217391305,
+      "timestamp": "2026-08-12T20:06:05.147222"
+    },
+    {
+      "text": "And you are getting the prediction score for those features.",
+      "start_time": 71.58,
+      "end_time": 74.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8785999999999999,
+      "timestamp": "2026-08-12T20:06:07.972808"
+    },
+    {
+      "text": "That variables might change over time, right?",
+      "start_time": 74.34,
+      "end_time": 77.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8839999999999998,
+      "timestamp": "2026-08-12T20:06:10.858361"
+    },
+    {
+      "text": "And due to the change of the training, uh, like, uh, like, prediction data, uh, the model performance might might be a different, uh, not as uh, compared to the uh, ones you you had developed that model, right?",
+      "start_time": 77.46,
+      "end_time": 90.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.728948717948718,
+      "timestamp": "2026-08-12T20:06:24.459959"
+    },
+    {
+      "text": "So that is symptom is known as data, like model drifting, and also the data drifting also, the data is drifting and the model performance is also.",
+      "start_time": 90.78,
+      "end_time": 100.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8697777777777775,
+      "timestamp": "2026-08-12T20:06:33.985503"
+    },
+    {
+      "text": "Okay, and if you have several model for fraud detection and you need to choose, you need to choose the best one for deployment.",
+      "start_time": 114.6,
+      "end_time": 123.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9303750000000001,
+      "timestamp": "2026-08-12T20:06:57.040790"
+    },
+    {
+      "text": "yeah",
+      "start_time": 123.78,
+      "end_time": 126.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.432,
+      "timestamp": "2026-08-12T20:06:59.800327"
+    },
+    {
+      "text": "What evaluation strategies and metrics would you use to make this decision?",
+      "start_time": 123.06,
+      "end_time": 127.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9290833333333333,
+      "timestamp": "2026-08-12T20:07:01.796417"
+    },
+    {
+      "text": "So Akash, since it's a fraud detection model, and if you talk about the fraud detection model, here, like if you in practical terms, the event rate is very less because not every customer, like not a significant number of chunks, we get like default or get like comes under the fraud category.",
+      "start_time": 129.42,
+      "end_time": 149.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8706603773584908,
+      "timestamp": "2026-08-12T20:07:23.217967"
+    },
+    {
+      "text": "So, and also, if you are not able to catch the fraudster, then your model is not doing well, even if it is very class and balance problem, right?",
+      "start_time": 149.46,
+      "end_time": 161.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8781034482758621,
+      "timestamp": "2026-08-12T20:07:34.465176"
+    },
+    {
+      "text": "So, uh, so here we have, we should look at the recall.",
+      "start_time": 161.28,
+      "end_time": 167.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8081666666666667,
+      "timestamp": "2026-08-12T20:07:41.108866"
+    },
+    {
+      "text": "So, you know, mean as a accuracy metrics, recall.",
+      "start_time": 167.46,
+      "end_time": 171.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6823333333333332,
+      "timestamp": "2026-08-12T20:07:44.948125"
+    },
+    {
+      "text": "Also, FNS score will also be beneficial to look at.",
+      "start_time": 171.3,
+      "end_time": 175.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8473,
+      "timestamp": "2026-08-12T20:07:49.745253"
+    },
+    {
+      "text": "But recall, I would suggest, is more focused for this for this use case for fraud detection because if you are not capturing the actual foster, you're losing a lot of revenue.",
+      "start_time": 175.86,
+      "end_time": 187.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9036250000000001,
+      "timestamp": "2026-08-12T20:08:01.380274"
+    },
+    {
+      "text": "So, and if you are known like, yeah.",
+      "start_time": 187.62,
+      "end_time": 191.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6555000000000001,
+      "timestamp": "2026-08-12T20:08:05.089828"
+    },
+    {
+      "text": "Okay, and Can you also tell me like, uh, yeah, yeah, uh, if you in this fraudland detection model, if you find any concept trip, like, so how would you handle concept drift in this and how would you detect and mitigate this particular issue?",
+      "start_time": 187.5,
+      "end_time": 206.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8445111111111113,
+      "timestamp": "2026-08-12T20:08:20.768650"
+    },
+    {
+      "text": "Sorry, Akash, can you come again?",
+      "start_time": 209.46,
+      "end_time": 211.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8403333333333335,
+      "timestamp": "2026-08-12T20:08:25.236516"
+    },
+    {
+      "text": "Like, did I understand this question?",
+      "start_time": 211.62,
+      "end_time": 214.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7675000000000001,
+      "timestamp": "2026-08-12T20:08:28.139341"
+    },
+    {
+      "text": "Okay, so Over time, fraudulent behavior keeps on changing light.",
+      "start_time": 211.5,
+      "end_time": 218.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8367000000000001,
+      "timestamp": "2026-08-12T20:08:32.053330"
+    },
+    {
+      "text": "So, Over time, fraudline detection.",
+      "start_time": 218.04,
+      "end_time": 220.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.651,
+      "timestamp": "2026-08-12T20:08:34.897102"
+    },
+    {
+      "text": "Yeah, thoughts.",
+      "start_time": 218.7,
+      "end_time": 221.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.534,
+      "timestamp": "2026-08-12T20:08:35.816134"
+    },
+    {
+      "text": "So this led to a phenomenon known as concept, right?",
+      "start_time": 220.98,
+      "end_time": 224.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9223999999999999,
+      "timestamp": "2026-08-12T20:08:37.788851"
+    },
+    {
+      "text": "So how would you detect and handle concept?",
+      "start_time": 224.28,
+      "end_time": 226.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9545,
+      "timestamp": "2026-08-12T20:08:40.653847"
+    },
+    {
+      "text": "Conservative.",
+      "start_time": 224.88,
+      "end_time": 228.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.586,
+      "timestamp": "2026-08-12T20:08:42.533340"
+    },
+    {
+      "text": "Yeah, how would you handle this concept drift and how would you mitigate this issue as well?",
+      "start_time": 226.74,
+      "end_time": 233.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9345882352941176,
+      "timestamp": "2026-08-12T20:08:47.419861"
+    },
+    {
+      "text": "So you are saying that every time like every year we are seeing a different way of fraud, right?",
+      "start_time": 235.08,
+      "end_time": 242.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9184210526315787,
+      "timestamp": "2026-08-12T20:08:56.005987"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 241.2,
+      "end_time": 243.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.767,
+      "timestamp": "2026-08-12T20:08:56.960404"
+    },
+    {
+      "text": "So, and do you have the fraud model?",
+      "start_time": 242.04,
+      "end_time": 245.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8432499999999999,
+      "timestamp": "2026-08-12T20:08:58.862175"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 249.36,
+      "end_time": 250.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7115,
+      "timestamp": "2026-08-12T20:09:04.642759"
+    },
+    {
+      "text": "So how to solve for those new fraud angles in your existing bottle, right?",
+      "start_time": 245.4,
+      "end_time": 251.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9304285714285714,
+      "timestamp": "2026-08-12T20:09:05.595051"
+    },
+    {
+      "text": "Do you know what is concept derivative is?",
+      "start_time": 250.92,
+      "end_time": 254.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8535,
+      "timestamp": "2026-08-12T20:09:08.498864"
+    },
+    {
+      "text": "Concept concept is drifting.",
+      "start_time": 254.64,
+      "end_time": 257.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6855,
+      "timestamp": "2026-08-12T20:09:10.363870"
+    },
+    {
+      "text": "Concept thrift, concept thrift in the martial learning model.",
+      "start_time": 257.52,
+      "end_time": 261.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7211111111111111,
+      "timestamp": "2026-08-12T20:09:15.230016"
+    },
+    {
+      "text": "Concept if.",
+      "start_time": 260.34,
+      "end_time": 264.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5635,
+      "timestamp": "2026-08-12T20:09:18.039192"
+    },
+    {
+      "text": "Um, sorry, I am, I even came across this terminology, Akash, uh, concept.",
+      "start_time": 264.12,
+      "end_time": 269.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.576923076923077,
+      "timestamp": "2026-08-12T20:09:22.895986"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 269.58,
+      "end_time": 269.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.725,
+      "timestamp": "2026-08-12T20:09:23.801886"
+    },
+    {
+      "text": "Right.",
+      "start_time": 275.94,
+      "end_time": 276.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.672,
+      "timestamp": "2026-08-12T20:09:30.524196"
+    },
+    {
+      "text": "And if you have a highly imbalanced data set, like in case of fraud detection model, how would you handle this imbalance when training?",
+      "start_time": 268.68,
+      "end_time": 277.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.885125,
+      "timestamp": "2026-08-12T20:09:31.620579"
+    },
+    {
+      "text": "How much you learning model?",
+      "start_time": 277.86,
+      "end_time": 278.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8423999999999999,
+      "timestamp": "2026-08-12T20:09:32.485847"
+    },
+    {
+      "text": "Can you work with?",
+      "start_time": 279.12,
+      "end_time": 282.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.62825,
+      "timestamp": "2026-08-12T20:09:36.328969"
+    },
+    {
+      "text": "So, Akash, uh, there are various, uh,",
+      "start_time": 280.26,
+      "end_time": 284.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5914285714285715,
+      "timestamp": "2026-08-12T20:09:38.228836"
+    },
+    {
+      "text": "Yeah, there are various techniques to use for the class imbalance problem.",
+      "start_time": 284.28,
+      "end_time": 291.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8355833333333335,
+      "timestamp": "2026-08-12T20:09:44.959641"
+    },
+    {
+      "text": "So the simplest way is to, like, if you have any samples for the like overall samples, enough samples for the +and turn negatives.",
+      "start_time": 291.0,
+      "end_time": 301.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.812625,
+      "timestamp": "2026-08-12T20:09:54.646081"
+    },
+    {
+      "text": "And uh, uh, like, when I'm saying NF samples, like, you have 1000000 customers, and suppose, uh, like, the 5000, 5000 is the, uh, 5000 to the customer, that uh, got our fosters, right?",
+      "start_time": 301.2,
+      "end_time": 316.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6523823529411765,
+      "timestamp": "2026-08-12T20:10:10.096010"
+    },
+    {
+      "text": "So it's still what you can do, like undersample rather than creating artificial artificial data points using a smart or any techniques, out or recommend to undersample your undersample your training data.",
+      "start_time": 316.26,
+      "end_time": 333.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8776875,
+      "timestamp": "2026-08-12T20:10:27.366634"
+    },
+    {
+      "text": "to keep the class balance in range, because anyway, if you are using smart like a synthetic minority over something technique, that uses can and find the data points.",
+      "start_time": 333.54,
+      "end_time": 347.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8544827586206897,
+      "timestamp": "2026-08-12T20:10:41.675775"
+    },
+    {
+      "text": "One sec.",
+      "start_time": 348.78,
+      "end_time": 350.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.439,
+      "timestamp": "2026-08-12T20:10:44.447477"
+    },
+    {
+      "text": "Lost plane video.",
+      "start_time": 351.42,
+      "end_time": 353.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6666666666666666,
+      "timestamp": "2026-08-12T20:10:47.325536"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 353.88,
+      "end_time": 354.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.699,
+      "timestamp": "2026-08-12T20:10:48.273652"
+    },
+    {
+      "text": "So here, anyway, it will be, it will use.",
+      "start_time": 354.36,
+      "end_time": 357.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7845555555555556,
+      "timestamp": "2026-08-12T20:10:51.184245"
+    },
+    {
+      "text": "Apart from, uh,",
+      "start_time": 354.78,
+      "end_time": 361.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5810000000000001,
+      "timestamp": "2026-08-12T20:10:55.050434"
+    },
+    {
+      "text": "Yeah, it will use ingredient distance to create the data artificial data sample points near to your exact data samples points.",
+      "start_time": 357.48,
+      "end_time": 365.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8918571428571427,
+      "timestamp": "2026-08-12T20:10:58.923185"
+    },
+    {
+      "text": "But anyway, it will be the artificial.",
+      "start_time": 365.34,
+      "end_time": 367.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.871857142857143,
+      "timestamp": "2026-08-12T20:11:00.780879"
+    },
+    {
+      "text": "So my 1st uh, technique will be like under sample the uh, um, undersemble the majority if you have the NF samples to train.",
+      "start_time": 367.08,
+      "end_time": 374.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8028333333333332,
+      "timestamp": "2026-08-12T20:11:08.567701"
+    },
+    {
+      "text": "And uh, you can also use class weight for positive positives.",
+      "start_time": 375.42,
+      "end_time": 380.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8389090909090907,
+      "timestamp": "2026-08-12T20:11:14.238298"
+    },
+    {
+      "text": "In case, if you are not, like, you don't have too much of training data, but still you want to, like, solve for the class imbalance problem.",
+      "start_time": 380.58,
+      "end_time": 390.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8262592592592592,
+      "timestamp": "2026-08-12T20:11:23.914026"
+    },
+    {
+      "text": "You can use mode for overscepting of the minority.",
+      "start_time": 390.42,
+      "end_time": 393.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7340000000000001,
+      "timestamp": "2026-08-12T20:11:27.663151"
+    },
+    {
+      "text": "And uh, let us suppose you have all of the transaction detail.",
+      "start_time": 400.14,
+      "end_time": 406.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8919166666666668,
+      "timestamp": "2026-08-12T20:11:40.198629"
+    },
+    {
+      "text": "So if users are making multiple making transaction from multiple locations.",
+      "start_time": 406.2,
+      "end_time": 412.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8988181818181821,
+      "timestamp": "2026-08-12T20:11:45.954310"
+    },
+    {
+      "text": "Simultaneously likes it may indicate like it is a fraud transaction.",
+      "start_time": 412.02,
+      "end_time": 417.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.94,
+      "timestamp": "2026-08-12T20:11:50.767108"
+    },
+    {
+      "text": "So given a transaction with location ID, how would you write a sequel query to find user with simultaneous transaction in different location within an hour time period?",
+      "start_time": 417.36,
+      "end_time": 428.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.947642857142857,
+      "timestamp": "2026-08-12T20:12:02.353277"
+    },
+    {
+      "text": "I will pay the question in the chat.",
+      "start_time": 432.0,
+      "end_time": 435.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8573750000000001,
+      "timestamp": "2026-08-12T20:12:08.977294"
+    },
+    {
+      "text": "Akash, can I share my?",
+      "start_time": 432.36,
+      "end_time": 436.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6679999999999999,
+      "timestamp": "2026-08-12T20:12:09.882566"
+    },
+    {
+      "text": "Yeah, that will be helpful.",
+      "start_time": 436.02,
+      "end_time": 437.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6,
+      "timestamp": "2026-08-12T20:12:10.855483"
+    },
+    {
+      "text": "Yeah, I will.",
+      "start_time": 435.0,
+      "end_time": 436.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8203333333333335,
+      "timestamp": "2026-08-12T20:12:10.886752"
+    },
+    {
+      "text": "also.",
+      "start_time": 437.46,
+      "end_time": 438.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.424,
+      "timestamp": "2026-08-12T20:12:11.809292"
+    },
+    {
+      "text": "You just tell me your approach and nothing else.",
+      "start_time": 436.92,
+      "end_time": 440.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9383333333333334,
+      "timestamp": "2026-08-12T20:12:13.779458"
+    },
+    {
+      "text": "You do not need to write the code for.",
+      "start_time": 440.16,
+      "end_time": 441.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8801111111111112,
+      "timestamp": "2026-08-12T20:12:15.696617"
+    },
+    {
+      "text": "No, no, that is not.",
+      "start_time": 444.9,
+      "end_time": 446.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8736,
+      "timestamp": "2026-08-12T20:12:20.491113"
+    },
+    {
+      "text": "So, shall I write the query in the chat box that I?",
+      "start_time": 441.78,
+      "end_time": 447.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8081666666666666,
+      "timestamp": "2026-08-12T20:12:21.431651"
+    },
+    {
+      "text": "No, that is not record.",
+      "start_time": 447.48,
+      "end_time": 449.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7736,
+      "timestamp": "2026-08-12T20:12:22.415110"
+    },
+    {
+      "text": "Just explain Europe.",
+      "start_time": 449.22,
+      "end_time": 450.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8099999999999999,
+      "timestamp": "2026-08-12T20:12:24.326504"
+    },
+    {
+      "text": "So users making transactions?",
+      "start_time": 448.68,
+      "end_time": 451.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8965,
+      "timestamp": "2026-08-12T20:12:25.235467"
+    },
+    {
+      "text": "Uh, Multiple locations, uh, Cementalissy may indicate fraud.",
+      "start_time": 451.92,
+      "end_time": 461.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5165,
+      "timestamp": "2026-08-12T20:12:34.903956"
+    },
+    {
+      "text": "Yeah, right.",
+      "start_time": 461.22,
+      "end_time": 461.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.785,
+      "timestamp": "2026-08-12T20:12:35.809482"
+    },
+    {
+      "text": "And this is one of the flags because while preparing preparing the independent features, feature engineering, you can also see like how many locations that has been used for those transactions.",
+      "start_time": 461.94,
+      "end_time": 474.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9095483870967743,
+      "timestamp": "2026-08-12T20:12:48.413879"
+    },
+    {
+      "text": "So, right?",
+      "start_time": 474.96,
+      "end_time": 475.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.433,
+      "timestamp": "2026-08-12T20:12:49.227801"
+    },
+    {
+      "text": "As people carry to find the users, With simultaneous transitions in different locations, within an hour.",
+      "start_time": 475.5,
+      "end_time": 481.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8038125,
+      "timestamp": "2026-08-12T20:12:55.057387"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 480.36,
+      "end_time": 483.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.584,
+      "timestamp": "2026-08-12T20:12:56.965145"
+    },
+    {
+      "text": "So, sequel query, right?",
+      "start_time": 484.08,
+      "end_time": 486.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.75175,
+      "timestamp": "2026-08-12T20:12:59.819623"
+    },
+    {
+      "text": "Yeah, yeah, see Calgary only.",
+      "start_time": 486.48,
+      "end_time": 489.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5504,
+      "timestamp": "2026-08-12T20:13:02.737903"
+    },
+    {
+      "text": "So, uh, so, uh, I'll just select, I'll just select the user ID.",
+      "start_time": 487.98,
+      "end_time": 495.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7428461538461538,
+      "timestamp": "2026-08-12T20:13:09.466896"
+    },
+    {
+      "text": "And uh, from transactions, uh, select secular user ID from transactions, um, reading the questions.",
+      "start_time": 496.02,
+      "end_time": 502.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7208000000000001,
+      "timestamp": "2026-08-12T20:13:16.193312"
+    },
+    {
+      "text": "Uh, from T1, okay?",
+      "start_time": 502.8,
+      "end_time": 505.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.52825,
+      "timestamp": "2026-08-12T20:13:19.006928"
+    },
+    {
+      "text": "Self-rejoin will be useful.",
+      "start_time": 505.32,
+      "end_time": 507.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.85025,
+      "timestamp": "2026-08-12T20:13:20.932630"
+    },
+    {
+      "text": "The different locations.",
+      "start_time": 524.4,
+      "end_time": 525.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5376666666666666,
+      "timestamp": "2026-08-12T20:13:39.171351"
+    },
+    {
+      "text": "And also like uh, the time is uh, absolute time stamp difference in minutes uh, in an hour, right?",
+      "start_time": 532.38,
+      "end_time": 539.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7474210526315789,
+      "timestamp": "2026-08-12T20:13:52.657614"
+    },
+    {
+      "text": "So, like you can take minutes from the T1 transition DT should be less than equal to 60.",
+      "start_time": 539.52,
+      "end_time": 545.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8870555555555554,
+      "timestamp": "2026-08-12T20:13:59.365467"
+    },
+    {
+      "text": "So it will be every user ID with making number of transactions across different.",
+      "start_time": 546.6,
+      "end_time": 555.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.915357142857143,
+      "timestamp": "2026-08-12T20:14:08.966630"
+    },
+    {
+      "text": "And how much comfortable you are in Python, may I know?",
+      "start_time": 556.68,
+      "end_time": 560.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.886090909090909,
+      "timestamp": "2026-08-12T20:14:13.793183"
+    },
+    {
+      "text": "Yep, Python, I'm also very comfortable, like if I rate my skills, um, like out of file skill, I'll give a 4.5.",
+      "start_time": 561.42,
+      "end_time": 570.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.781681818181818,
+      "timestamp": "2026-08-12T20:14:24.382591"
+    },
+    {
+      "text": "Can you share me on the screen now?",
+      "start_time": 570.78,
+      "end_time": 572.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.772375,
+      "timestamp": "2026-08-12T20:14:26.256213"
+    },
+    {
+      "text": "OK, sure.",
+      "start_time": 573.42,
+      "end_time": 576.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4175,
+      "timestamp": "2026-08-12T20:14:30.049109"
+    },
+    {
+      "text": "Yeah, yeah, just click on it.",
+      "start_time": 594.24,
+      "end_time": 596.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7626666666666666,
+      "timestamp": "2026-08-12T20:14:50.258508"
+    },
+    {
+      "text": "Sweet is showing me return to full screen energy interview.",
+      "start_time": 592.62,
+      "end_time": 597.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6816000000000001,
+      "timestamp": "2026-08-12T20:14:51.198798"
+    },
+    {
+      "text": "Yeah, just click on return to phone is good.",
+      "start_time": 596.7,
+      "end_time": 598.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6922222222222222,
+      "timestamp": "2026-08-12T20:14:52.181035"
+    },
+    {
+      "text": "Okay, I'm pasting one question here.",
+      "start_time": 599.1,
+      "end_time": 602.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9285000000000001,
+      "timestamp": "2026-08-12T20:14:56.021601"
+    },
+    {
+      "text": "So what you need to do is like you need to write a Python function.",
+      "start_time": 602.58,
+      "end_time": 606.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8881333333333333,
+      "timestamp": "2026-08-12T20:14:59.882378"
+    },
+    {
+      "text": "Uh, to build a law stick regression model that detect fraudulent transaction.",
+      "start_time": 606.3,
+      "end_time": 611.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7851666666666669,
+      "timestamp": "2026-08-12T20:15:04.689384"
+    },
+    {
+      "text": "And If you are given data set with features such as, yeah, I had pasted the question in the chat.",
+      "start_time": 611.28,
+      "end_time": 619.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8746500000000001,
+      "timestamp": "2026-08-12T20:15:13.344777"
+    },
+    {
+      "text": "such as transaction amount, transaction type, and merchandise.",
+      "start_time": 619.62,
+      "end_time": 623.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.80275,
+      "timestamp": "2026-08-12T20:15:17.157815"
+    },
+    {
+      "text": "Unity to assume the data set is preloaded into a data frame called DF and include binary target variable.",
+      "start_time": 623.64,
+      "end_time": 630.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.915578947368421,
+      "timestamp": "2026-08-12T20:15:23.907415"
+    },
+    {
+      "text": "You can tell me your approach regard.",
+      "start_time": 630.66,
+      "end_time": 633.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9374285714285715,
+      "timestamp": "2026-08-12T20:15:26.739060"
+    },
+    {
+      "text": "I have to write end to end, like, uh, logistic regurations.",
+      "start_time": 631.86,
+      "end_time": 635.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7278181818181818,
+      "timestamp": "2026-08-12T20:15:29.584059"
+    },
+    {
+      "text": "You can tell me your approach.",
+      "start_time": 636.42,
+      "end_time": 637.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9480000000000001,
+      "timestamp": "2026-08-12T20:15:31.533493"
+    },
+    {
+      "text": "That is also fine.",
+      "start_time": 637.74,
+      "end_time": 638.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8544999999999999,
+      "timestamp": "2026-08-12T20:15:32.488355"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 638.52,
+      "end_time": 638.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.693,
+      "timestamp": "2026-08-12T20:15:32.493477"
+    },
+    {
+      "text": "So, um, even this is a features transaction amount, transaction type.",
+      "start_time": 653.94,
+      "end_time": 659.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5693636363636364,
+      "timestamp": "2026-08-12T20:15:53.581174"
+    },
+    {
+      "text": "And merchandising, assume the data space is loaded into data from KF, is fraud.",
+      "start_time": 660.24,
+      "end_time": 667.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6801428571428572,
+      "timestamp": "2026-08-12T20:16:01.287887"
+    },
+    {
+      "text": "So, uh, in, uh, so here there are a lot of scope for feature engineering, uh, uh, Akash.",
+      "start_time": 668.4,
+      "end_time": 676.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7003888888888888,
+      "timestamp": "2026-08-12T20:16:09.937138"
+    },
+    {
+      "text": "And uh, Because, uh, so the most important will be the aggregated uh, feature engineering, like uh, for each user ID, how many transactions are that are doing, like each merchant, how many transitions are there, and what is the average transition amount? And was this, what is the, uh, like, each higher transactions amount flagged?",
+      "start_time": 676.44,
+      "end_time": 696.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.752428571428571,
+      "timestamp": "2026-08-12T20:16:30.425479"
+    },
+    {
+      "text": "Uh, and also, uh, you can uh, like uh, do uh, like from the transaction date.",
+      "start_time": 696.48,
+      "end_time": 703.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6204375000000001,
+      "timestamp": "2026-08-12T20:16:36.822081"
+    },
+    {
+      "text": "The transition date.",
+      "start_time": 703.26,
+      "end_time": 704.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.568,
+      "timestamp": "2026-08-12T20:16:38.684319"
+    },
+    {
+      "text": "Uh, pollution amount, if transition rate is there, then if it's, uh, like, uh, is weekend and et cetera.",
+      "start_time": 704.76,
+      "end_time": 711.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6786315789473685,
+      "timestamp": "2026-08-12T20:16:45.476871"
+    },
+    {
+      "text": "So, it's for the binary.",
+      "start_time": 711.84,
+      "end_time": 714.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.616,
+      "timestamp": "2026-08-12T20:16:47.333071"
+    },
+    {
+      "text": "So, a write a python function.",
+      "start_time": 714.12,
+      "end_time": 715.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6244999999999999,
+      "timestamp": "2026-08-12T20:16:49.242546"
+    },
+    {
+      "text": "I'll write the functions.",
+      "start_time": 715.92,
+      "end_time": 718.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.92225,
+      "timestamp": "2026-08-12T20:16:52.140390"
+    },
+    {
+      "text": "Just tell me your approach.",
+      "start_time": 717.42,
+      "end_time": 719.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8932,
+      "timestamp": "2026-08-12T20:16:53.136314"
+    },
+    {
+      "text": "So I guess you want me to tell the approach for?",
+      "start_time": 722.34,
+      "end_time": 728.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8072727272727271,
+      "timestamp": "2026-08-12T20:17:02.707392"
+    },
+    {
+      "text": "Yeah, just tell me your opera.",
+      "start_time": 727.62,
+      "end_time": 730.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7823333333333333,
+      "timestamp": "2026-08-12T20:17:03.702415"
+    },
+    {
+      "text": "Building a model, right, and do it.",
+      "start_time": 728.82,
+      "end_time": 730.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6285714285714287,
+      "timestamp": "2026-08-12T20:17:04.615988"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 730.38,
+      "end_time": 732.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.758,
+      "timestamp": "2026-08-12T20:17:05.607567"
+    },
+    {
+      "text": "Just tell me your approach.",
+      "start_time": 732.06,
+      "end_time": 733.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8664,
+      "timestamp": "2026-08-12T20:17:06.572637"
+    },
+    {
+      "text": "Okay, so I'll start with show, show.",
+      "start_time": 731.58,
+      "end_time": 735.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8075714285714286,
+      "timestamp": "2026-08-12T20:17:09.416633"
+    },
+    {
+      "text": "So 1st uh, in the data cleaning part, uh, I look into um, like uh, the box plot on the transition amount, uh, that, that might be like some our pliers there, 205 there are our players, how many outlets are there?",
+      "start_time": 735.54,
+      "end_time": 750.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7154523809523807,
+      "timestamp": "2026-08-12T20:17:24.049886"
+    },
+    {
+      "text": "So I'll do EDA basis on, like, uh, transaction amount.",
+      "start_time": 750.54,
+      "end_time": 756.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7135,
+      "timestamp": "2026-08-12T20:17:30.573048"
+    },
+    {
+      "text": "I also, there are various, like, we can mean max of the transaction among, um, describe transition amount or display will give me the overall picture of the transition amount.",
+      "start_time": 756.78,
+      "end_time": 768.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8077000000000002,
+      "timestamp": "2026-08-12T20:17:42.163824"
+    },
+    {
+      "text": "And the transition type and the merchandise, right?",
+      "start_time": 768.48,
+      "end_time": 771.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.865625,
+      "timestamp": "2026-08-12T20:17:44.938460"
+    },
+    {
+      "text": "And they have includes a bunny, trigger, film.",
+      "start_time": 771.36,
+      "end_time": 774.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5255000000000001,
+      "timestamp": "2026-08-12T20:17:47.831464"
+    },
+    {
+      "text": "So I'll do EDF 1st and also create uh features like I have told earlier.",
+      "start_time": 774.12,
+      "end_time": 781.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8683333333333333,
+      "timestamp": "2026-08-12T20:17:55.535788"
+    },
+    {
+      "text": "And is, uh, is, uh, fraud is my, uh, dependent variable, uh, that is B one and 0.",
+      "start_time": 781.74,
+      "end_time": 789.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5716666666666667,
+      "timestamp": "2026-08-12T20:18:03.244704"
+    },
+    {
+      "text": "And, uh, diction type.",
+      "start_time": 789.84,
+      "end_time": 793.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.448,
+      "timestamp": "2026-08-12T20:18:07.012689"
+    },
+    {
+      "text": "So if it's created under debit, right?",
+      "start_time": 793.74,
+      "end_time": 795.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6762857142857144,
+      "timestamp": "2026-08-12T20:18:08.935524"
+    },
+    {
+      "text": "you meant.",
+      "start_time": 795.78,
+      "end_time": 796.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6990000000000001,
+      "timestamp": "2026-08-12T20:18:09.866403"
+    },
+    {
+      "text": "Right?",
+      "start_time": 796.38,
+      "end_time": 797.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.698,
+      "timestamp": "2026-08-12T20:18:10.846996"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 796.62,
+      "end_time": 798.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.782,
+      "timestamp": "2026-08-12T20:18:11.848856"
+    },
+    {
+      "text": "So, uh, transition type is like level column.",
+      "start_time": 800.34,
+      "end_time": 803.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8268749999999998,
+      "timestamp": "2026-08-12T20:18:17.570959"
+    },
+    {
+      "text": "I will do in hot encoding also.",
+      "start_time": 803.94,
+      "end_time": 805.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9119999999999999,
+      "timestamp": "2026-08-12T20:18:19.502880"
+    },
+    {
+      "text": "Uh, And in the, in the feature engineering, I can also uh, write it like each user's uh, like total debit and credit transactions and the aggregate transactions, et cetera.",
+      "start_time": 805.86,
+      "end_time": 819.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7921999999999999,
+      "timestamp": "2026-08-12T20:18:33.094070"
+    },
+    {
+      "text": "Uh, create new columns, okay?",
+      "start_time": 819.24,
+      "end_time": 821.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6888,
+      "timestamp": "2026-08-12T20:18:34.862178"
+    },
+    {
+      "text": "Now, we have the independent features, uh, and also, um, We can also treat like a null value petitions and all, so even when required.",
+      "start_time": 821.64,
+      "end_time": 831.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.69916,
+      "timestamp": "2026-08-12T20:18:45.507944"
+    },
+    {
+      "text": "And once the my data is prepared, then uh, if I want, I will start with basic uh, 1st basic uh, logistic recreation, because uh, I always follow uh, accom razor store for uh, machine learning.",
+      "start_time": 831.6,
+      "end_time": 844.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.739527777777778,
+      "timestamp": "2026-08-12T20:18:58.043646"
+    },
+    {
+      "text": "So I'll create a logistic recreation and I'll look for recall here.",
+      "start_time": 844.44,
+      "end_time": 852.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.92325,
+      "timestamp": "2026-08-12T20:19:05.602524"
+    },
+    {
+      "text": "whether I'm capturing actual defaulters or not, and also looking at the FNS scores. And so other things like because since a fraudulent transition data, it might be the class imbalance, it will handle the class imbalance also.",
+      "start_time": 852.18,
+      "end_time": 868.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8589736842105259,
+      "timestamp": "2026-08-12T20:19:23.089795"
+    },
+    {
+      "text": "And before building logistic regreation or the leal irrigation, these are the distance dependent variables.",
+      "start_time": 868.92,
+      "end_time": 874.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8827999999999999,
+      "timestamp": "2026-08-12T20:19:28.664445"
+    },
+    {
+      "text": "I can also look for a standard scaling among the features, right?",
+      "start_time": 874.74,
+      "end_time": 879.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9327500000000001,
+      "timestamp": "2026-08-12T20:19:32.480429"
+    },
+    {
+      "text": "to keep the data points in similar data spaces to avoid cost for them to be higher.",
+      "start_time": 879.06,
+      "end_time": 887.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8400588235294117,
+      "timestamp": "2026-08-12T20:19:41.130923"
+    },
+    {
+      "text": "Yeah, yeah, that is fine.",
+      "start_time": 886.02,
+      "end_time": 887.46,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6714,
+      "timestamp": "2026-08-12T20:19:41.137226"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 887.46,
+      "end_time": 888.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.75975,
+      "timestamp": "2026-08-12T20:19:42.092855"
+    },
+    {
+      "text": "So, yeah.",
+      "start_time": 887.7,
+      "end_time": 889.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5175000000000001,
+      "timestamp": "2026-08-12T20:19:43.000143"
+    },
+    {
+      "text": "I'm giving you one.",
+      "start_time": 889.74,
+      "end_time": 891.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.87575,
+      "timestamp": "2026-08-12T20:19:44.974242"
+    },
+    {
+      "text": "So these are the steps, I'll start with love.",
+      "start_time": 889.26,
+      "end_time": 892.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7837777777777778,
+      "timestamp": "2026-08-12T20:19:45.888483"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 892.2,
+      "end_time": 892.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.626,
+      "timestamp": "2026-08-12T20:19:46.849129"
+    },
+    {
+      "text": "No problem.",
+      "start_time": 893.64,
+      "end_time": 894.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6375,
+      "timestamp": "2026-08-12T20:19:47.850705"
+    },
+    {
+      "text": "I'm giving you one sequel question as well. Just explain me your approach for this, okay?",
+      "start_time": 894.18,
+      "end_time": 898.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.855125,
+      "timestamp": "2026-08-12T20:19:52.696975"
+    },
+    {
+      "text": "So what you need to do is like you need to write a cycle query to identify users with an unusually high number of transactions.",
+      "start_time": 898.92,
+      "end_time": 906.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9321599999999998,
+      "timestamp": "2026-08-12T20:20:00.412933"
+    },
+    {
+      "text": "In a single day.",
+      "start_time": 906.78,
+      "end_time": 908.46,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7362500000000001,
+      "timestamp": "2026-08-12T20:20:02.251481"
+    },
+    {
+      "text": "You can assume a table transaction with column user ID transaction, ID, and transaction date.",
+      "start_time": 908.46,
+      "end_time": 914.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9186,
+      "timestamp": "2026-08-12T20:20:08.059526"
+    },
+    {
+      "text": "Okay, so, uh, write and sequel can identify users, and it's a, High number of transitions in a single day.",
+      "start_time": 916.08,
+      "end_time": 925.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6431000000000002,
+      "timestamp": "2026-08-12T20:20:19.584595"
+    },
+    {
+      "text": "Resume a table, transactions, with columns, user I, user ID, using table transitions, with columns, user ID, transition ID, transition rate.",
+      "start_time": 925.86,
+      "end_time": 934.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5778571428571428,
+      "timestamp": "2026-08-12T20:20:28.255572"
+    },
+    {
+      "text": "Only 3 columns are there, right?",
+      "start_time": 934.74,
+      "end_time": 935.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8601666666666666,
+      "timestamp": "2026-08-12T20:20:29.090432"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 935.28,
+      "end_time": 936.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5035,
+      "timestamp": "2026-08-12T20:20:30.090067"
+    },
+    {
+      "text": "The users unusually high number of transactions in a single day.",
+      "start_time": 935.76,
+      "end_time": 940.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8078181818181818,
+      "timestamp": "2026-08-12T20:20:33.901364"
+    },
+    {
+      "text": "So, I'll just, uh, what I'll do, uh, I'll write the questions.",
+      "start_time": 940.26,
+      "end_time": 949.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6920833333333333,
+      "timestamp": "2026-08-12T20:20:43.552357"
+    },
+    {
+      "text": "I'll uh select user ID.",
+      "start_time": 950.58,
+      "end_time": 953.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8166,
+      "timestamp": "2026-08-12T20:20:47.335777"
+    },
+    {
+      "text": "Uh, transition date, count of transaction IDs.",
+      "start_time": 954.36,
+      "end_time": 958.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7701428571428571,
+      "timestamp": "2026-08-12T20:20:52.152161"
+    },
+    {
+      "text": "That will be give me the number of transjections, okay?",
+      "start_time": 958.5,
+      "end_time": 960.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8029999999999999,
+      "timestamp": "2026-08-12T20:20:54.064207"
+    },
+    {
+      "text": "Five. Mm-hmm.",
+      "start_time": 970.68,
+      "end_time": 972.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.38649999999999995,
+      "timestamp": "2026-08-12T20:21:05.613260"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 975.12,
+      "end_time": 975.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6695,
+      "timestamp": "2026-08-12T20:21:09.450150"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 976.86,
+      "end_time": 978.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7992499999999999,
+      "timestamp": "2026-08-12T20:21:12.341550"
+    },
+    {
+      "text": "And uh, from transactions, uh, group by user ID, transition date, and just having count of uh, that transition ID should be greater than, like, um, uh, suppose 100 or uh, whatever the basis on the numbers that you are getting.",
+      "start_time": 961.08,
+      "end_time": 978.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7852195121951219,
+      "timestamp": "2026-08-12T20:21:12.513738"
+    },
+    {
+      "text": "So mainly Grupa and having, yeah, Grupa and having.",
+      "start_time": 978.36,
+      "end_time": 982.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6177777777777779,
+      "timestamp": "2026-08-12T20:21:16.160490"
+    },
+    {
+      "text": "Okay, okay, Sajid, that is fine.",
+      "start_time": 979.74,
+      "end_time": 983.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7925,
+      "timestamp": "2026-08-12T20:21:17.151952"
+    },
+    {
+      "text": "So, this is only for the screening part.",
+      "start_time": 983.28,
+      "end_time": 986.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.887875,
+      "timestamp": "2026-08-12T20:21:20.025968"
+    },
+    {
+      "text": "If you have any question, you can ask to me.",
+      "start_time": 986.04,
+      "end_time": 987.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9057000000000001,
+      "timestamp": "2026-08-12T20:21:20.984598"
+    },
+    {
+      "text": "Otherwise, I'm good to close the call.",
+      "start_time": 987.36,
+      "end_time": 989.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9265714285714287,
+      "timestamp": "2026-08-12T20:21:23.865521"
+    },
+    {
+      "text": "So, uh, like how the process looks like, uh, Akash.",
+      "start_time": 991.62,
+      "end_time": 996.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6907,
+      "timestamp": "2026-08-12T20:21:29.582462"
+    },
+    {
+      "text": "I'm quickly in like Akash is, right?",
+      "start_time": 996.24,
+      "end_time": 999.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6702857142857142,
+      "timestamp": "2026-08-12T20:21:33.417839"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 998.88,
+      "end_time": 999.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5845,
+      "timestamp": "2026-08-12T20:21:33.450783"
+    },
+    {
+      "text": "Akash?",
+      "start_time": 1000.08,
+      "end_time": 1001.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.672,
+      "timestamp": "2026-08-12T20:21:35.319064"
+    },
+    {
+      "text": "So there will be 2 more round, 2 to 3 more rounds of interview after this.",
+      "start_time": 999.9,
+      "end_time": 1003.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.892625,
+      "timestamp": "2026-08-12T20:21:37.322057"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1006.32,
+      "end_time": 1006.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.645,
+      "timestamp": "2026-08-12T20:21:40.174208"
+    },
+    {
+      "text": "And this is just for screening down.",
+      "start_time": 1006.32,
+      "end_time": 1008.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8828571428571428,
+      "timestamp": "2026-08-12T20:21:42.051808"
+    },
+    {
+      "text": "Yeah, this is only for the screening comics.",
+      "start_time": 1007.28,
+      "end_time": 1010.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.778625,
+      "timestamp": "2026-08-12T20:21:44.028976"
+    },
+    {
+      "text": "Okay, uh,",
+      "start_time": 1011.66,
+      "end_time": 1013.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.526,
+      "timestamp": "2026-08-12T20:21:47.852309"
+    },
+    {
+      "text": "Okay, Akash, I'll look forward for the next round if uh.",
+      "start_time": 1012.32,
+      "end_time": 1016.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8244545454545456,
+      "timestamp": "2026-08-12T20:21:50.713015"
+    },
+    {
+      "text": "I don't know, but yeah.",
+      "start_time": 1026.0,
+      "end_time": 1027.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8203999999999999,
+      "timestamp": "2026-08-12T20:22:01.239606"
+    },
+    {
+      "text": "So, I was just covering all of these action related to Python Secor and machine.",
+      "start_time": 1027.38,
+      "end_time": 1031.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8048,
+      "timestamp": "2026-08-12T20:22:05.184814"
+    },
+    {
+      "text": "Yeah, that is fine, no problem.",
+      "start_time": 1031.52,
+      "end_time": 1033.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8821666666666665,
+      "timestamp": "2026-08-12T20:22:07.060926"
+    },
+    {
+      "text": "Okay, got you.",
+      "start_time": 1034.7,
+      "end_time": 1036.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.45566666666666666,
+      "timestamp": "2026-08-12T20:22:09.872719"
+    },
+    {
+      "text": "I will provide the feedback to the team and they will reach out to you.",
+      "start_time": 1033.56,
+      "end_time": 1036.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9879999999999999,
+      "timestamp": "2026-08-12T20:22:09.959733"
+    },
+    {
+      "text": "Okay. Thank you.",
+      "start_time": 1036.56,
+      "end_time": 1038.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.51,
+      "timestamp": "2026-08-12T20:22:11.855324"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 1038.48,
+      "end_time": 1039.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7825,
+      "timestamp": "2026-08-12T20:22:13.774603"
+    },
+    {
+      "text": "Okay, I gotcha. Looking forward to it.",
+      "start_time": 1037.76,
+      "end_time": 1040.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6829999999999999,
+      "timestamp": "2026-08-12T20:22:14.700534"
+    },
+    {
+      "text": "Have a good day at us.",
+      "start_time": 1039.8,
+      "end_time": 1040.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8940000000000001,
+      "timestamp": "2026-08-12T20:22:14.736760"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 1040.82,
+      "end_time": 1041.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7655000000000001,
+      "timestamp": "2026-08-12T20:22:14.745134"
+    },
+    {
+      "text": "Thank you, Akash.",
+      "start_time": 1040.76,
+      "end_time": 1041.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6426666666666666,
+      "timestamp": "2026-08-12T20:22:15.643569"
+    },
+    {
+      "text": "Thank you, bye-bye.",
+      "start_time": 1041.24,
+      "end_time": 1043.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7709999999999999,
+      "timestamp": "2026-08-12T20:22:16.656634"
+    }
+  ]
+}

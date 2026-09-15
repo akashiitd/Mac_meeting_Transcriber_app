@@ -1,0 +1,1455 @@
+{
+  "session_name": "Meeting-XYHZUO",
+  "started": "2026-06-11T11:01:28.271910",
+  "segments": [
+    {
+      "text": "Say hi.",
+      "start_time": 15.12,
+      "end_time": 16.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.762,
+      "timestamp": "2026-06-11T11:01:46.725343"
+    },
+    {
+      "text": "Yeah, it's my voice audible team.",
+      "start_time": 15.6,
+      "end_time": 18.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6211666666666668,
+      "timestamp": "2026-06-11T11:01:47.755923"
+    },
+    {
+      "text": "Your voice is not very clear.",
+      "start_time": 19.68,
+      "end_time": 22.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8911666666666666,
+      "timestamp": "2026-06-11T11:01:52.503777"
+    },
+    {
+      "text": "Just give me one moment.",
+      "start_time": 21.18,
+      "end_time": 23.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.82,
+      "timestamp": "2026-06-11T11:01:53.499760"
+    },
+    {
+      "text": "Doctor.",
+      "start_time": 23.04,
+      "end_time": 24.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.571,
+      "timestamp": "2026-06-11T11:01:54.411532"
+    },
+    {
+      "text": "Now it is audible.",
+      "start_time": 26.64,
+      "end_time": 28.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.84875,
+      "timestamp": "2026-06-11T11:01:58.312314"
+    },
+    {
+      "text": "Yeah, it is clear.",
+      "start_time": 28.08,
+      "end_time": 30.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.84125,
+      "timestamp": "2026-06-11T11:02:00.196434"
+    },
+    {
+      "text": "Yeah, so I'm Akashiar, can you briefly introduce yourself?",
+      "start_time": 28.92,
+      "end_time": 33.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8426666666666667,
+      "timestamp": "2026-06-11T11:02:04.112336"
+    },
+    {
+      "text": "Then we will get tested.",
+      "start_time": 33.9,
+      "end_time": 35.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7314,
+      "timestamp": "2026-06-11T11:02:05.033939"
+    },
+    {
+      "text": "Yeah, I am correct. So myself, Sri Hupik.",
+      "start_time": 33.66,
+      "end_time": 37.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.508,
+      "timestamp": "2026-06-11T11:02:07.897801"
+    },
+    {
+      "text": "So I have been working as data engineer for the past 5 years.",
+      "start_time": 37.74,
+      "end_time": 41.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8936923076923076,
+      "timestamp": "2026-06-11T11:02:11.708021"
+    },
+    {
+      "text": "So my total experience is 5.2 years and then I have worked with a couple of organizations.",
+      "start_time": 41.46,
+      "end_time": 48.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9488235294117646,
+      "timestamp": "2026-06-11T11:02:18.480003"
+    },
+    {
+      "text": "Initially I work with input in as a dictated developer.",
+      "start_time": 48.12,
+      "end_time": 51.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8283000000000001,
+      "timestamp": "2026-06-11T11:02:21.339274"
+    },
+    {
+      "text": "So now I'm currently working with Tiger Analytics as a data engineer.",
+      "start_time": 51.36,
+      "end_time": 57.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9164166666666667,
+      "timestamp": "2026-06-11T11:02:27.097851"
+    },
+    {
+      "text": "So initially I've worked in InfoKend as a on-prim, on-prim data engineer like most of the setup, our data, data engineering setup was on print cloud era setup.",
+      "start_time": 57.12,
+      "end_time": 67.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7540357142857141,
+      "timestamp": "2026-06-11T11:02:37.781585"
+    },
+    {
+      "text": "And currently in this organization, I have been working as a Ascio data engine, Ascio Fabric data engine, basically. So mostly I've been working on Microsoft Fabric, and then So day-to-day tasks, like we have a framework, which is a medallion architecture.",
+      "start_time": 67.38,
+      "end_time": 83.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.771095238095238,
+      "timestamp": "2026-06-11T11:02:53.275260"
+    },
+    {
+      "text": "So what we follow is we follow metadata driven architecture.",
+      "start_time": 83.28,
+      "end_time": 88.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9362999999999999,
+      "timestamp": "2026-06-11T11:02:58.762669"
+    },
+    {
+      "text": "So all of our configurations are stored in as part of metadata tables inside the metadata EP.",
+      "start_time": 88.68,
+      "end_time": 94.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.881,
+      "timestamp": "2026-06-11T11:03:04.581791"
+    },
+    {
+      "text": "And we have parameterized pipelines.",
+      "start_time": 94.56,
+      "end_time": 97.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8310000000000001,
+      "timestamp": "2026-06-11T11:03:07.412499"
+    },
+    {
+      "text": "So from these conflict tables, we fix the parameters and then we run the pipelines accordingly.",
+      "start_time": 97.2,
+      "end_time": 102.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9136874999999999,
+      "timestamp": "2026-06-11T11:03:12.259011"
+    },
+    {
+      "text": "So those are reusable pipelines.",
+      "start_time": 102.48,
+      "end_time": 104.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9339999999999999,
+      "timestamp": "2026-06-11T11:03:15.068385"
+    },
+    {
+      "text": "And then, uh, so bad alien architecture, we have 3 states.",
+      "start_time": 104.76,
+      "end_time": 108.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6030909090909091,
+      "timestamp": "2026-06-11T11:03:18.931402"
+    },
+    {
+      "text": "Actually, we have 5 stages, 4 or 5.",
+      "start_time": 108.72,
+      "end_time": 111.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7930000000000001,
+      "timestamp": "2026-06-11T11:03:21.793232"
+    },
+    {
+      "text": "So 3 stairs, bronze, silver, and gold.",
+      "start_time": 111.48,
+      "end_time": 114.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8684285714285714,
+      "timestamp": "2026-06-11T11:03:24.696403"
+    },
+    {
+      "text": "So basically bronze, we extract the data from different sources using copy data activities.",
+      "start_time": 114.84,
+      "end_time": 119.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9077142857142857,
+      "timestamp": "2026-06-11T11:03:29.511916"
+    },
+    {
+      "text": "Uh, notebooks based on the data source cities, uh, data flows N2, and uh, so most of uh, everything is orchestrated through fabric data pipelines.",
+      "start_time": 119.22,
+      "end_time": 128.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7007599999999998,
+      "timestamp": "2026-06-11T11:03:38.208743"
+    },
+    {
+      "text": "And then we copy the data to Lake House.",
+      "start_time": 128.7,
+      "end_time": 132.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.915888888888889,
+      "timestamp": "2026-06-11T11:03:42.911323"
+    },
+    {
+      "text": "So basically inside fabric workspace, we have lake house warehouse similar to pipelines, right?",
+      "start_time": 132.6,
+      "end_time": 138.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8697857142857144,
+      "timestamp": "2026-06-11T11:03:47.752225"
+    },
+    {
+      "text": "We have those workspace items as well.",
+      "start_time": 138.0,
+      "end_time": 139.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9598571428571429,
+      "timestamp": "2026-06-11T11:03:49.653621"
+    },
+    {
+      "text": "So we copy the data to Lake House as part of files.",
+      "start_time": 139.98,
+      "end_time": 144.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9241666666666667,
+      "timestamp": "2026-06-11T11:03:54.458653"
+    },
+    {
+      "text": "So we mostly we store them as packet files.",
+      "start_time": 144.12,
+      "end_time": 146.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9266666666666666,
+      "timestamp": "2026-06-11T11:03:56.367354"
+    },
+    {
+      "text": "So again, it depends on the data source.",
+      "start_time": 146.58,
+      "end_time": 150.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.96425,
+      "timestamp": "2026-06-11T11:04:00.198475"
+    },
+    {
+      "text": "For example, if we are copying the data from API, right?",
+      "start_time": 150.0,
+      "end_time": 153.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9339090909090909,
+      "timestamp": "2026-06-11T11:04:03.071431"
+    },
+    {
+      "text": "So we intend to copy the data as Jason.",
+      "start_time": 153.24,
+      "end_time": 156.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9500000000000001,
+      "timestamp": "2026-06-11T11:04:05.959422"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 158.52,
+      "end_time": 159.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.82925,
+      "timestamp": "2026-06-11T11:04:09.838491"
+    },
+    {
+      "text": "That is fine.",
+      "start_time": 159.54,
+      "end_time": 160.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.797,
+      "timestamp": "2026-06-11T11:04:09.851919"
+    },
+    {
+      "text": "So, I do know, uh, regarding the uh, interview, right?",
+      "start_time": 160.08,
+      "end_time": 164.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6139000000000001,
+      "timestamp": "2026-06-11T11:04:14.675594"
+    },
+    {
+      "text": "Again, if it's, Hmm.",
+      "start_time": 156.54,
+      "end_time": 167.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7112499999999999,
+      "timestamp": "2026-06-11T11:04:17.471868"
+    },
+    {
+      "text": "I will try to cover section related to coding data breaks, JAI partners, Python and Pice Park.",
+      "start_time": 164.76,
+      "end_time": 170.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8198823529411765,
+      "timestamp": "2026-06-11T11:04:20.458857"
+    },
+    {
+      "text": "Mm hmm.",
+      "start_time": 171.0,
+      "end_time": 172.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.384,
+      "timestamp": "2026-06-11T11:04:22.255522"
+    },
+    {
+      "text": "Okay, can you tell me how would you use Python to implement and track custom evaluation metrics, such as rack, faithfulness, or insurance, specific accuracy? For our conversational AI agent during model development.",
+      "start_time": 170.16,
+      "end_time": 183.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8614242424242423,
+      "timestamp": "2026-06-11T11:04:34.017782"
+    },
+    {
+      "text": "Huh.",
+      "start_time": 184.26,
+      "end_time": 184.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.385,
+      "timestamp": "2026-06-11T11:04:34.726877"
+    },
+    {
+      "text": "So, uh, I will give my expertise uh, with AI and rack applications.",
+      "start_time": 185.7,
+      "end_time": 191.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7165384615384617,
+      "timestamp": "2026-06-11T11:04:41.504591"
+    },
+    {
+      "text": "So whatever applications we have worked on, I have used 2 frameworks, okay?",
+      "start_time": 191.28,
+      "end_time": 196.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9407692307692308,
+      "timestamp": "2026-06-11T11:04:46.295451"
+    },
+    {
+      "text": "One is Azure AI Foundry, which we get inbuilt agents, we just have to attach the LLM to it and the functions.",
+      "start_time": 196.2,
+      "end_time": 202.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9136363636363639,
+      "timestamp": "2026-06-11T11:04:53.080133"
+    },
+    {
+      "text": "That is one and another one is Lang Chen framework, which is open source.",
+      "start_time": 202.86,
+      "end_time": 207.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8975,
+      "timestamp": "2026-06-11T11:04:57.804621"
+    },
+    {
+      "text": "So I've used Lanchen framework.",
+      "start_time": 207.78,
+      "end_time": 210.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6998,
+      "timestamp": "2026-06-11T11:05:00.676381"
+    },
+    {
+      "text": "So basically orchestrating in the sense, I will tell my use case basically whatever I have hands on expertise on.",
+      "start_time": 221.22,
+      "end_time": 227.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9242499999999998,
+      "timestamp": "2026-06-11T11:05:18.014048"
+    },
+    {
+      "text": "So for this for this particular use case, wherein we were using.",
+      "start_time": 227.64,
+      "end_time": 231.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8261666666666666,
+      "timestamp": "2026-06-11T11:05:21.816445"
+    },
+    {
+      "text": "So as I mentioned, we have a metadata driven architecture.",
+      "start_time": 231.72,
+      "end_time": 234.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9529,
+      "timestamp": "2026-06-11T11:05:24.695681"
+    },
+    {
+      "text": "So in order to fill the metadata, right, we have so many number of tables.",
+      "start_time": 234.84,
+      "end_time": 238.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.936,
+      "timestamp": "2026-06-11T11:05:28.533648"
+    },
+    {
+      "text": "So for a new user, if at all someone on boats or if we are implementing it for a client rate, he might be confused with so many tables.",
+      "start_time": 238.86,
+      "end_time": 246.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9424137931034482,
+      "timestamp": "2026-06-11T11:05:37.260915"
+    },
+    {
+      "text": "So what we have used, we have written down functions.",
+      "start_time": 246.84,
+      "end_time": 250.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9248000000000001,
+      "timestamp": "2026-06-11T11:05:41.014002"
+    },
+    {
+      "text": "Uh, to insert the metadata to particular tables, and those functions are attached as tools to this particular agent, and then, uh, if you, if you give uh, underlayment, um, so basically I want to trigger this pipeline with this particular inputs.",
+      "start_time": 250.68,
+      "end_time": 266.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8162619047619047,
+      "timestamp": "2026-06-11T11:05:56.585297"
+    },
+    {
+      "text": "So it will be able to understand which table to fill the data into, and then it will trigger the pipeline accordingly.",
+      "start_time": 266.04,
+      "end_time": 272.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.954,
+      "timestamp": "2026-06-11T11:06:02.185744"
+    },
+    {
+      "text": "So anyways, we have attached functions, right?",
+      "start_time": 272.28,
+      "end_time": 274.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7457142857142858,
+      "timestamp": "2026-06-11T11:06:04.044118"
+    },
+    {
+      "text": "So, uh, for example, one of the function is to connect to the TB. Because uh, agent cannot directly uh, like connect to the DB and uh, insert the metadata, correct?",
+      "start_time": 274.08,
+      "end_time": 286.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8136451612903227,
+      "timestamp": "2026-06-11T11:06:16.655182"
+    },
+    {
+      "text": "So we write a function using PODBC connector, and then we give the uh, Yeah.",
+      "start_time": 286.32,
+      "end_time": 293.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8659333333333332,
+      "timestamp": "2026-06-11T11:06:23.289536"
+    },
+    {
+      "text": "Okay, uh, can you tell me like, how would you use Python to design a semantic layer for insurance data, ensuring accurate and consistent factors and matrics for downstream AI or BI application?",
+      "start_time": 293.22,
+      "end_time": 304.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8173030303030303,
+      "timestamp": "2026-06-11T11:06:34.942671"
+    },
+    {
+      "text": "Uh, again, uh, so in individually, I haven't used Python for doing these architectures, again, inside fabric workspace, right?",
+      "start_time": 305.34,
+      "end_time": 314.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8056315789473685,
+      "timestamp": "2026-06-11T11:06:44.470871"
+    },
+    {
+      "text": "We have semantic models.",
+      "start_time": 314.46,
+      "end_time": 315.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9032499999999999,
+      "timestamp": "2026-06-11T11:06:45.304566"
+    },
+    {
+      "text": "We can directly attach those semantic models to the power b.",
+      "start_time": 315.72,
+      "end_time": 320.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9260909090909092,
+      "timestamp": "2026-06-11T11:06:50.158868"
+    },
+    {
+      "text": "For example, we are creating aggregated tables so gold tables, correct?",
+      "start_time": 320.1,
+      "end_time": 323.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8436363636363637,
+      "timestamp": "2026-06-11T11:06:53.972631"
+    },
+    {
+      "text": "Those will be part of warehouse.",
+      "start_time": 323.94,
+      "end_time": 325.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8968333333333334,
+      "timestamp": "2026-06-11T11:06:55.869903"
+    },
+    {
+      "text": "So once you, once you create a semantic model by selecting the tables or the views which are required reporting views, uh, we can attach that semantic model to the power B file itself directly.",
+      "start_time": 325.62,
+      "end_time": 337.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9063714285714286,
+      "timestamp": "2026-06-11T11:07:07.544019"
+    },
+    {
+      "text": "And then the refresh can be either used either refreshed manually, or we can use semantic model refresh activity inside the pipeline or also we can use fabric rest API to trigger the refresh.",
+      "start_time": 337.38,
+      "end_time": 350.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9118823529411765,
+      "timestamp": "2026-06-11T11:07:20.981811"
+    },
+    {
+      "text": "And how would you use Spice Park to implement time-based when doing on insurance claim event for metric, such as ruling tidy days claim count, ensuring scalability for large data set.",
+      "start_time": 350.34,
+      "end_time": 363.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8484838709677416,
+      "timestamp": "2026-06-11T11:07:33.511680"
+    },
+    {
+      "text": "Okay, so basically, uh, for the large data set, right?",
+      "start_time": 363.12,
+      "end_time": 368.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7707999999999999,
+      "timestamp": "2026-06-11T11:07:38.121682"
+    },
+    {
+      "text": "And for this particular requirement, we can use rose between, we can apply a window on top of rose between an current row and the unpreceded bounding.",
+      "start_time": 372.66,
+      "end_time": 383.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8534074074074073,
+      "timestamp": "2026-06-11T11:07:53.580558"
+    },
+    {
+      "text": "So that we can apply and then we can group by basically the policy number or the customer on which we want to create the metric on top of it.",
+      "start_time": 383.1,
+      "end_time": 392.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9800333333333332,
+      "timestamp": "2026-06-11T11:08:02.176506"
+    },
+    {
+      "text": "And then we can create the KPA.",
+      "start_time": 392.4,
+      "end_time": 395.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8594285714285714,
+      "timestamp": "2026-06-11T11:08:05.949547"
+    },
+    {
+      "text": "Okay, and how would you design a Pice Park ETL pipeline to construct a semantically for insurance data, ensuring consistent factable metric for downstream AI and BI applications?",
+      "start_time": 396.36,
+      "end_time": 408.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8167142857142855,
+      "timestamp": "2026-06-11T11:08:18.634631"
+    },
+    {
+      "text": "Uh, okay, so again, uh, Pice Park, right?",
+      "start_time": 410.7,
+      "end_time": 413.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.44225000000000003,
+      "timestamp": "2026-06-11T11:08:24.201286"
+    },
+    {
+      "text": "We are having the ice park as part of the silver layer.",
+      "start_time": 413.88,
+      "end_time": 417.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7385833333333333,
+      "timestamp": "2026-06-11T11:08:28.027010"
+    },
+    {
+      "text": "We use notebooks, so basically, we use notebooks and then we have multiple approaches.",
+      "start_time": 427.56,
+      "end_time": 432.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9000714285714286,
+      "timestamp": "2026-06-11T11:08:42.472871"
+    },
+    {
+      "text": "One is direct merch and one is a Siri type to merch as well.",
+      "start_time": 432.36,
+      "end_time": 435.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7982857142857143,
+      "timestamp": "2026-06-11T11:08:46.282406"
+    },
+    {
+      "text": "So if the client requirement is to store the data, historic historical data of each record as well, right?",
+      "start_time": 435.96,
+      "end_time": 442.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9281052631578948,
+      "timestamp": "2026-06-11T11:08:53.061707"
+    },
+    {
+      "text": "Then we use a CD type to merge.",
+      "start_time": 442.68,
+      "end_time": 444.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7905000000000001,
+      "timestamp": "2026-06-11T11:08:54.927942"
+    },
+    {
+      "text": "All these functions are as part of modularized functionalities, which are parameters.",
+      "start_time": 444.6,
+      "end_time": 449.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9471666666666666,
+      "timestamp": "2026-06-11T11:08:59.759656"
+    },
+    {
+      "text": "So we will pass the merge columns, updates, at columns and all.",
+      "start_time": 449.4,
+      "end_time": 453.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8839999999999999,
+      "timestamp": "2026-06-11T11:09:02.639836"
+    },
+    {
+      "text": "So basically that code will be constructed dynamically, and then the merch merch will happen.",
+      "start_time": 453.0,
+      "end_time": 459.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8683333333333334,
+      "timestamp": "2026-06-11T11:09:09.332469"
+    },
+    {
+      "text": "And then we store the tables into the warehouse.",
+      "start_time": 459.24,
+      "end_time": 461.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9433333333333334,
+      "timestamp": "2026-06-11T11:09:11.230134"
+    },
+    {
+      "text": "So those warehouse, again, we create the semantic model on top of those warehouse tables or reporting views, whatever it is, and then we fade it to the downstream pipelines.",
+      "start_time": 461.4,
+      "end_time": 473.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8994333333333333,
+      "timestamp": "2026-06-11T11:09:23.857355"
+    },
+    {
+      "text": "Okay, and uh, uh, can you tell me like, how would you use Fandas to define it and for, enforce business friendly data types and semantic meaning for insurance metrics within a data claim, and why is this step critical in AI-turbin business intelligence?",
+      "start_time": 474.3,
+      "end_time": 492.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7944772727272725,
+      "timestamp": "2026-06-11T11:09:42.253394"
+    },
+    {
+      "text": "So, pandas, I mean, pandas is flexible with the cluster management as well.",
+      "start_time": 495.18,
+      "end_time": 502.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8613846153846154,
+      "timestamp": "2026-06-11T11:09:52.559529"
+    },
+    {
+      "text": "So if you have individual cluster, you can use Python Pandas to read the data, like uh, to process the data engineering work. And then, uh, one uses, which we use most of the time is, reading the uh, reading the Excel files using Pandas.",
+      "start_time": 502.44,
+      "end_time": 516.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7940444444444444,
+      "timestamp": "2026-06-11T11:10:07.138411"
+    },
+    {
+      "text": "So basically in Pice Park, it would be a pain to read and process the data for Excel formats.",
+      "start_time": 516.6,
+      "end_time": 524.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8695263157894737,
+      "timestamp": "2026-06-11T11:10:14.635183"
+    },
+    {
+      "text": "So we use pandas to read the Excel files as a source.",
+      "start_time": 524.28,
+      "end_time": 528.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9610833333333333,
+      "timestamp": "2026-06-11T11:10:18.436556"
+    },
+    {
+      "text": "And how would you structure factor dimension table and data bricks or a snowflake to handle evolving insurance product definition?",
+      "start_time": 534.36,
+      "end_time": 541.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8613499999999998,
+      "timestamp": "2026-06-11T11:10:31.991588"
+    },
+    {
+      "text": "And Regulatory changes without disrupting downstream analytics.",
+      "start_time": 541.62,
+      "end_time": 547.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8568571428571429,
+      "timestamp": "2026-06-11T11:10:37.685544"
+    },
+    {
+      "text": "So, basically, that is where we have this slowly changing dimension concept and we have this task human snowflake schema.",
+      "start_time": 549.6,
+      "end_time": 557.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8661999999999999,
+      "timestamp": "2026-06-11T11:10:47.320117"
+    },
+    {
+      "text": "So basically properly normalizing the data, a fact table, so just the name of it benches that it's affectable so that the data will not change.",
+      "start_time": 557.04,
+      "end_time": 567.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8318461538461537,
+      "timestamp": "2026-06-11T11:10:56.919155"
+    },
+    {
+      "text": "So whatever has happened has already happened.",
+      "start_time": 567.18,
+      "end_time": 569.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9705714285714285,
+      "timestamp": "2026-06-11T11:10:59.693497"
+    },
+    {
+      "text": "If at all, there are dependencies in between, if it is branching.",
+      "start_time": 576.48,
+      "end_time": 581.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8709166666666667,
+      "timestamp": "2026-06-11T11:11:11.284629"
+    },
+    {
+      "text": "So basically one dimension is dependent on another dimension as well.",
+      "start_time": 581.4,
+      "end_time": 585.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9590000000000001,
+      "timestamp": "2026-06-11T11:11:16.054056"
+    },
+    {
+      "text": "Then we tend to create a snowflake schema and then we store that data model.",
+      "start_time": 585.72,
+      "end_time": 590.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9197333333333332,
+      "timestamp": "2026-06-11T11:11:20.857353"
+    },
+    {
+      "text": "So basically when we create the warehouse tables, right, we create the modeling structure as in such that the normalization should be happening according to the table structure and the data.",
+      "start_time": 590.88,
+      "end_time": 600.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9693548387096773,
+      "timestamp": "2026-06-11T11:11:30.550443"
+    },
+    {
+      "text": "Okay, and how would you structure and maintain our knowledge base of insurance?",
+      "start_time": 600.36,
+      "end_time": 605.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.876,
+      "timestamp": "2026-06-11T11:11:36.271534"
+    },
+    {
+      "text": "Regulatory documents to optimize retrieval accuracy and compliance for a Gen AI powered assistant.",
+      "start_time": 606.48,
+      "end_time": 612.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8624285714285713,
+      "timestamp": "2026-06-11T11:11:43.009249"
+    },
+    {
+      "text": "Yeah, that.",
+      "start_time": 606.6,
+      "end_time": 614.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.505,
+      "timestamp": "2026-06-11T11:11:43.866238"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 616.08,
+      "end_time": 617.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8276666666666667,
+      "timestamp": "2026-06-11T11:11:47.733328"
+    },
+    {
+      "text": "No problem.",
+      "start_time": 617.76,
+      "end_time": 618.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7835000000000001,
+      "timestamp": "2026-06-11T11:11:48.696191"
+    },
+    {
+      "text": "Haven't worked on this kind of requirement, yeah.",
+      "start_time": 614.64,
+      "end_time": 619.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.934875,
+      "timestamp": "2026-06-11T11:11:49.670378"
+    },
+    {
+      "text": "And how would you architect a pipeline to detect and redact a PII from uninstructured insurance document before they are indexed for retrieval in a Gen AI powered chatpot?",
+      "start_time": 618.84,
+      "end_time": 630.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8857931034482758,
+      "timestamp": "2026-06-11T11:12:00.392597"
+    },
+    {
+      "text": "So, we use FPA handling, right?",
+      "start_time": 631.5,
+      "end_time": 634.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7013333333333334,
+      "timestamp": "2026-06-11T11:12:04.982508"
+    },
+    {
+      "text": "We have metadata tables.",
+      "start_time": 634.74,
+      "end_time": 636.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8605,
+      "timestamp": "2026-06-11T11:12:05.940899"
+    },
+    {
+      "text": "So basically whenever we sign the SOWR whenever, we put the requirements with the client itself, we will have the, we will add,",
+      "start_time": 636.12,
+      "end_time": 643.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8296521739130435,
+      "timestamp": "2026-06-11T11:12:13.718440"
+    },
+    {
+      "text": "It will have all the, uh, for each entity, for each source object, which we want to copy the data and then uh, do the uh, pre-processing data cleansing, and then create model on top of it.",
+      "start_time": 653.04,
+      "end_time": 667.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8582702702702703,
+      "timestamp": "2026-06-11T11:12:37.817752"
+    },
+    {
+      "text": "We have that masking functions and encryption function we use SHA 256 and then We also use one of the in-built functionality to so basically we give the sample data set.",
+      "start_time": 667.32,
+      "end_time": 682.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8834516129032258,
+      "timestamp": "2026-06-11T11:12:53.130451"
+    },
+    {
+      "text": "We don't give the direct data, we give the sample data set, and then we uh, We use this in-built engine to find out the uh, uh, PA columns for that entity.",
+      "start_time": 682.74,
+      "end_time": 696.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8356874999999998,
+      "timestamp": "2026-06-11T11:13:06.563383"
+    },
+    {
+      "text": "Okay, I'm giving you, can you share me our screen?",
+      "start_time": 696.36,
+      "end_time": 700.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8205,
+      "timestamp": "2026-06-11T11:13:10.327485"
+    },
+    {
+      "text": "How good you are in Python?",
+      "start_time": 700.32,
+      "end_time": 701.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7466666666666667,
+      "timestamp": "2026-06-11T11:13:11.264356"
+    },
+    {
+      "text": "Uh, I would say 6 out of 10.",
+      "start_time": 702.48,
+      "end_time": 705.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.84575,
+      "timestamp": "2026-06-11T11:13:16.024154"
+    },
+    {
+      "text": "If you are given a panda's data frame, I had twisted the question in the chat with columns, policy, IT, and claim text.",
+      "start_time": 710.64,
+      "end_time": 718.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8703478260869566,
+      "timestamp": "2026-06-11T11:13:28.655567"
+    },
+    {
+      "text": "You need to write Python code to extract all numbers, right amount dates or policy number from claim text, and add a new column extract number as a list of a string for each row.",
+      "start_time": 718.2,
+      "end_time": 729.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9099714285714284,
+      "timestamp": "2026-06-11T11:13:39.251467"
+    },
+    {
+      "text": "Do you want to find my state of health current, right? Go to extract all numbers, amounts, dates, or policy number from claim text.",
+      "start_time": 732.84,
+      "end_time": 742.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.695625,
+      "timestamp": "2026-06-11T11:13:52.597609"
+    },
+    {
+      "text": "And add a new column, extract a number as list of students.",
+      "start_time": 745.8,
+      "end_time": 752.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.69525,
+      "timestamp": "2026-06-11T11:14:03.112291"
+    },
+    {
+      "text": "Uh, actually, right, uh, most of the times I use Spice Park.",
+      "start_time": 753.0,
+      "end_time": 758.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7078333333333333,
+      "timestamp": "2026-06-11T11:14:07.887857"
+    },
+    {
+      "text": "So in Pice Park, I can write the code.",
+      "start_time": 758.04,
+      "end_time": 760.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8066666666666666,
+      "timestamp": "2026-06-11T11:14:09.803839"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 759.24,
+      "end_time": 760.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5355,
+      "timestamp": "2026-06-11T11:14:10.793585"
+    },
+    {
+      "text": "For the same requirement.",
+      "start_time": 760.08,
+      "end_time": 762.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7577499999999999,
+      "timestamp": "2026-06-11T11:14:11.704729"
+    },
+    {
+      "text": "write it down.",
+      "start_time": 760.74,
+      "end_time": 761.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7133333333333334,
+      "timestamp": "2026-06-11T11:14:11.732458"
+    },
+    {
+      "text": "Yeah, okay.",
+      "start_time": 762.36,
+      "end_time": 764.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.744,
+      "timestamp": "2026-06-11T11:14:13.625988"
+    },
+    {
+      "text": "First, uh, again, uh, this is, if this is a normal CSV highlight, then I can.",
+      "start_time": 782.1,
+      "end_time": 793.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6365625,
+      "timestamp": "2026-06-11T11:14:44.401762"
+    },
+    {
+      "text": "Can you tell me your approach?",
+      "start_time": 797.76,
+      "end_time": 799.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8633333333333334,
+      "timestamp": "2026-06-11T11:14:50.157420"
+    },
+    {
+      "text": "Yeah, so basically, 1st I will read the data frame, and then I will, uh, so basically I have to extract uh, uh, month, dates and policy numbers from this particular claim text.",
+      "start_time": 800.7,
+      "end_time": 812.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8113939393939393,
+      "timestamp": "2026-06-11T11:15:02.716898"
+    },
+    {
+      "text": "So I will use Regex pattern, Regexp extract, is a function inbuilt function, which we can use in PicePat.",
+      "start_time": 812.7,
+      "end_time": 819.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6377894736842104,
+      "timestamp": "2026-06-11T11:15:09.398240"
+    },
+    {
+      "text": "And then I will do with column, with column basically to create a new column from a derive a new column from an existing column, or we can give a little, give literance as well.",
+      "start_time": 819.06,
+      "end_time": 828.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8268571428571426,
+      "timestamp": "2026-06-11T11:15:19.064957"
+    },
+    {
+      "text": "So I will use with column to create new columns from this particular and the function which I will use is a reject extract.",
+      "start_time": 828.78,
+      "end_time": 836.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9107500000000001,
+      "timestamp": "2026-06-11T11:15:26.657798"
+    },
+    {
+      "text": "So basically for amounts or dates, we will have some particular pattern, right?",
+      "start_time": 836.52,
+      "end_time": 840.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9624615384615385,
+      "timestamp": "2026-06-11T11:15:30.472378"
+    },
+    {
+      "text": "This will be MMDD, Wi-Fi format or any format.",
+      "start_time": 840.12,
+      "end_time": 844.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8902222222222222,
+      "timestamp": "2026-06-11T11:15:34.303767"
+    },
+    {
+      "text": "So that will be the input for the tragic spectrum.",
+      "start_time": 844.44,
+      "end_time": 846.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9017,
+      "timestamp": "2026-06-11T11:15:37.186702"
+    },
+    {
+      "text": "So it will extract those patterns from this particular column.",
+      "start_time": 846.84,
+      "end_time": 849.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9791000000000001,
+      "timestamp": "2026-06-11T11:15:40.050061"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 850.68,
+      "end_time": 852.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.711,
+      "timestamp": "2026-06-11T11:15:41.932449"
+    },
+    {
+      "text": "It's fine.",
+      "start_time": 850.74,
+      "end_time": 853.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.419,
+      "timestamp": "2026-06-11T11:15:42.938401"
+    },
+    {
+      "text": "I'm giving you one more problem.",
+      "start_time": 853.14,
+      "end_time": 854.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9373333333333335,
+      "timestamp": "2026-06-11T11:15:44.865296"
+    },
+    {
+      "text": "Uh, you are given uh, panda's data frame with column, document ID and text.",
+      "start_time": 855.18,
+      "end_time": 862.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7800000000000001,
+      "timestamp": "2026-06-11T11:15:52.606819"
+    },
+    {
+      "text": "You need to write a Python code.",
+      "start_time": 862.32,
+      "end_time": 864.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8905714285714286,
+      "timestamp": "2026-06-11T11:15:54.479120"
+    },
+    {
+      "text": "Got the number of insurance specific keyword, example, premium claim underwriting deductible.",
+      "start_time": 864.24,
+      "end_time": 869.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8949166666666666,
+      "timestamp": "2026-06-11T11:15:59.327312"
+    },
+    {
+      "text": "Found a text for each row and add a new column, keyboard count with the account of it.",
+      "start_time": 869.76,
+      "end_time": 874.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8120555555555555,
+      "timestamp": "2026-06-11T11:16:04.119284"
+    },
+    {
+      "text": "I then could count number of insurance specific keywords, premium claim, underwriting deductible.",
+      "start_time": 874.5,
+      "end_time": 883.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7616923076923078,
+      "timestamp": "2026-06-11T11:16:13.710857"
+    },
+    {
+      "text": "found in text for each row.",
+      "start_time": 883.62,
+      "end_time": 887.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8210000000000001,
+      "timestamp": "2026-06-11T11:16:17.465884"
+    },
+    {
+      "text": "Um, again, uh, so basically if I have to use pandas, right, I only use it for reading Excel in our client requirements.",
+      "start_time": 887.16,
+      "end_time": 894.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8617391304347827,
+      "timestamp": "2026-06-11T11:16:24.278543"
+    },
+    {
+      "text": "Most mostly I only use Spice Park.",
+      "start_time": 894.48,
+      "end_time": 897.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7868571428571428,
+      "timestamp": "2026-06-11T11:16:28.027835"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 900.72,
+      "end_time": 901.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.737,
+      "timestamp": "2026-06-11T11:16:31.851774"
+    },
+    {
+      "text": "Uh, just can you walk me through your approach?",
+      "start_time": 904.44,
+      "end_time": 907.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8512222222222222,
+      "timestamp": "2026-06-11T11:16:37.689473"
+    },
+    {
+      "text": "Okay, so basically given the management, the colon, doc, ID, and text, a written pipel code, to count, uh, the number of ensure, and.",
+      "start_time": 907.98,
+      "end_time": 921.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.47175000000000006,
+      "timestamp": "2026-06-11T11:16:52.117948"
+    },
+    {
+      "text": "I can use count different pasthesis parameters.",
+      "start_time": 921.72,
+      "end_time": 924.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8537142857142859,
+      "timestamp": "2026-06-11T11:16:54.911132"
+    },
+    {
+      "text": "Then after it.",
+      "start_time": 927.66,
+      "end_time": 928.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5953333333333334,
+      "timestamp": "2026-06-11T11:16:58.794996"
+    },
+    {
+      "text": "I can use county functionality.",
+      "start_time": 927.96,
+      "end_time": 929.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8298,
+      "timestamp": "2026-06-11T11:16:59.714142"
+    },
+    {
+      "text": "Count it.",
+      "start_time": 929.16,
+      "end_time": 931.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.454,
+      "timestamp": "2026-06-11T11:17:01.668821"
+    },
+    {
+      "text": "Uh-huh.",
+      "start_time": 937.92,
+      "end_time": 939.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.818,
+      "timestamp": "2026-06-11T11:17:09.347961"
+    },
+    {
+      "text": "Uh, it will increment the counter.",
+      "start_time": 953.04,
+      "end_time": 955.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7416666666666666,
+      "timestamp": "2026-06-11T11:17:24.687119"
+    },
+    {
+      "text": "So I can create a new column out of that counter.",
+      "start_time": 955.14,
+      "end_time": 958.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8994545454545455,
+      "timestamp": "2026-06-11T11:17:27.587286"
+    },
+    {
+      "text": "For each record.",
+      "start_time": 958.02,
+      "end_time": 960.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.694,
+      "timestamp": "2026-06-11T11:17:30.430709"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 960.84,
+      "end_time": 962.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.83,
+      "timestamp": "2026-06-11T11:17:32.330030"
+    },
+    {
+      "text": "Yeah, I'm done with the interview.",
+      "start_time": 964.26,
+      "end_time": 965.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8715,
+      "timestamp": "2026-06-11T11:17:36.224058"
+    },
+    {
+      "text": "Uh, can I, uh, if you have any questions you can ask?",
+      "start_time": 965.88,
+      "end_time": 968.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7134166666666665,
+      "timestamp": "2026-06-11T11:17:39.114294"
+    },
+    {
+      "text": "No, I don't have any questions.",
+      "start_time": 969.36,
+      "end_time": 971.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9,
+      "timestamp": "2026-06-11T11:17:41.977292"
+    },
+    {
+      "text": "Thanks for your time then.",
+      "start_time": 973.02,
+      "end_time": 973.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7736000000000001,
+      "timestamp": "2026-06-11T11:17:43.912532"
+    },
+    {
+      "text": "Bye- bye.",
+      "start_time": 973.98,
+      "end_time": 974.46,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7155,
+      "timestamp": "2026-06-11T11:17:44.860856"
+    }
+  ]
+}

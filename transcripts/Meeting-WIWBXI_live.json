@@ -1,0 +1,969 @@
+{
+  "session_name": "Meeting-WIWBXI",
+  "started": "2026-05-26T21:29:59.224029",
+  "segments": [
+    {
+      "text": "Yeah, uh, Hello.",
+      "start_time": 45.3,
+      "end_time": 49.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.51,
+      "timestamp": "2026-05-26T21:30:49.849037"
+    },
+    {
+      "text": "Yeah, kill us, my voice audible.",
+      "start_time": 48.72,
+      "end_time": 51.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6631666666666667,
+      "timestamp": "2026-05-26T21:30:51.827040"
+    },
+    {
+      "text": "Uh, yes.",
+      "start_time": 52.2,
+      "end_time": 53.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5185,
+      "timestamp": "2026-05-26T21:30:53.679541"
+    },
+    {
+      "text": "Uh, I think I'm...",
+      "start_time": 53.04,
+      "end_time": 60.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.52925,
+      "timestamp": "2026-05-26T21:31:01.401455"
+    },
+    {
+      "text": "Uh, okay, I'm Akashir, uh, overall, I have 10 year of experience and did a science and machine learning.",
+      "start_time": 56.1,
+      "end_time": 63.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7485789473684211,
+      "timestamp": "2026-05-26T21:31:03.432821"
+    },
+    {
+      "text": "Can you briefly introduce yourself?",
+      "start_time": 63.3,
+      "end_time": 64.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9718,
+      "timestamp": "2026-05-26T21:31:05.264910"
+    },
+    {
+      "text": "Sure, uh, I have 4 years of experience as uh, uh, devob semolops and uh, recently Gennai application.",
+      "start_time": 65.04,
+      "end_time": 74.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6685555555555555,
+      "timestamp": "2026-05-26T21:31:14.878780"
+    },
+    {
+      "text": "So I have multi-domain experience along with the AWS and Azure Cloud.",
+      "start_time": 74.22,
+      "end_time": 79.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.85125,
+      "timestamp": "2026-05-26T21:31:20.612968"
+    },
+    {
+      "text": "I worked on mainly, uh, uh, publications and uh, CIG pipelines, implementation of uh, uh, terraform and infrastructure management across cloud, and uh, MLOps pipeline, uh, end to end model life cycle management.",
+      "start_time": 79.8,
+      "end_time": 96.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.652151515151515,
+      "timestamp": "2026-05-26T21:31:37.142539"
+    },
+    {
+      "text": "And also our rag system, internal AI Assistant, I worked on, built, built into a rag pipeline.",
+      "start_time": 96.12,
+      "end_time": 102.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6655294117647058,
+      "timestamp": "2026-05-26T21:31:43.682121"
+    },
+    {
+      "text": "and productionized heat, and also monitoring and absorbability, good with and integrate it, multiple tools for observability and monitoring of the production systems.",
+      "start_time": 102.9,
+      "end_time": 116.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8816521739130433,
+      "timestamp": "2026-05-26T21:31:57.168847"
+    },
+    {
+      "text": "So, Akil, regarding the interview process, I will try to cover.",
+      "start_time": 122.28,
+      "end_time": 125.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.786,
+      "timestamp": "2026-05-26T21:32:05.759811"
+    },
+    {
+      "text": "Section related to cloud.",
+      "start_time": 125.58,
+      "end_time": 128.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.77625,
+      "timestamp": "2026-05-26T21:32:09.591031"
+    },
+    {
+      "text": "CICD, Gen A I N, ML Ops.",
+      "start_time": 128.76,
+      "end_time": 132.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.4728571428571428,
+      "timestamp": "2026-05-26T21:32:12.502944"
+    },
+    {
+      "text": "Okay, can you let me know like how would you implement cost optimization for a cloud workload running on AWSRGR or GCP?",
+      "start_time": 135.48,
+      "end_time": 142.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9504999999999999,
+      "timestamp": "2026-05-26T21:32:23.100330"
+    },
+    {
+      "text": "While ensuring performance and security?",
+      "start_time": 142.62,
+      "end_time": 145.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.756,
+      "timestamp": "2026-05-26T21:32:25.903316"
+    },
+    {
+      "text": "Are not compromised.",
+      "start_time": 145.14,
+      "end_time": 147.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7799999999999999,
+      "timestamp": "2026-05-26T21:32:27.832987"
+    },
+    {
+      "text": "So, mainly for cost optimization, I definitely analyze the utilization, current utilization of the resource, which production applications or models are running.",
+      "start_time": 149.52,
+      "end_time": 166.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9332272727272727,
+      "timestamp": "2026-05-26T21:32:47.090806"
+    },
+    {
+      "text": "So I'll go through the utilization metrics.",
+      "start_time": 166.68,
+      "end_time": 169.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9432857142857143,
+      "timestamp": "2026-05-26T21:32:49.888344"
+    },
+    {
+      "text": "I would say, and analyze these metrics, and if, if, uh, I mean, like the past data, the resource utilization data, I analyze it across historical data if there is there, then I compare it. If most of the resource is not utilized much, or if it is less than 50% or less than 30%, then I would definitely scale up, scale down or scale up",
+      "start_time": 169.62,
+      "end_time": 200.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8886969696969695,
+      "timestamp": "2026-05-26T21:33:21.106909"
+    },
+    {
+      "text": "based on like like that.",
+      "start_time": 200.34,
+      "end_time": 201.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8608,
+      "timestamp": "2026-05-26T21:33:21.535956"
+    },
+    {
+      "text": "And I resize these particular resources, or instances of service, based on the use, use low.",
+      "start_time": 201.3,
+      "end_time": 209.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7923125,
+      "timestamp": "2026-05-26T21:33:30.217342"
+    },
+    {
+      "text": "And, uh, Yeah, this is the mostly the resource, specific utilization, we observe, and if it is not, or it's like over provision, I would say, then definitely downsize or reduce the resource.",
+      "start_time": 235.62,
+      "end_time": 260.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.853969696969697,
+      "timestamp": "2026-05-26T21:34:21.315652"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 260.28,
+      "end_time": 260.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.541,
+      "timestamp": "2026-05-26T21:34:21.316512"
+    },
+    {
+      "text": "Okay, can you let me like, uh, if you need to enable disaster recovery for a critical database?",
+      "start_time": 257.52,
+      "end_time": 266.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8216666666666668,
+      "timestamp": "2026-05-26T21:34:26.949087"
+    },
+    {
+      "text": "Posted in AWS Archiology, GCP, can you outline me or approach to ensure minimal data loss and quit failure?",
+      "start_time": 266.52,
+      "end_time": 273.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7979999999999999,
+      "timestamp": "2026-05-26T21:34:34.624073"
+    },
+    {
+      "text": "we can set up.",
+      "start_time": 292.26,
+      "end_time": 293.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.90825,
+      "timestamp": "2026-05-26T21:34:54.632274"
+    },
+    {
+      "text": "Uh, and uh, for, uh, From the, like, uh, azure side recovery, uh, we, uh, uh, I use side recovery and set up the multi-availabilities on, uh, backup, uh, disaster for disaster recovery in that way.",
+      "start_time": 293.88,
+      "end_time": 314.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6116111111111109,
+      "timestamp": "2026-05-26T21:35:16.050604"
+    },
+    {
+      "text": "We can immediately, if any major incident happens or to the system.",
+      "start_time": 314.94,
+      "end_time": 320.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8991666666666668,
+      "timestamp": "2026-05-26T21:35:20.592547"
+    },
+    {
+      "text": "unable to then it immediately implement that and take the systems back or enable it in another region.",
+      "start_time": 320.52,
+      "end_time": 332.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9700555555555557,
+      "timestamp": "2026-05-26T21:35:33.139256"
+    },
+    {
+      "text": "So, This is how we can do.",
+      "start_time": 332.28,
+      "end_time": 336.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8388571428571429,
+      "timestamp": "2026-05-26T21:35:36.904659"
+    },
+    {
+      "text": "Okay, and and how would you continuously optimize resource allocation in a cloud, cloud-based microservices architecture to control, post and maintain performance as user demand fluctuate.",
+      "start_time": 333.9,
+      "end_time": 347.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.805576923076923,
+      "timestamp": "2026-05-26T21:35:48.681369"
+    },
+    {
+      "text": "I mean, like, uh, it, it does it, uh, in terms of, uh, work, uh, network load or, uh, traffic load?",
+      "start_time": 351.12,
+      "end_time": 362.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5758095238095238,
+      "timestamp": "2026-05-26T21:36:02.893473"
+    },
+    {
+      "text": "Or how, how?",
+      "start_time": 362.16,
+      "end_time": 365.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.48466666666666663,
+      "timestamp": "2026-05-26T21:36:05.686963"
+    },
+    {
+      "text": "Oh, you can consider both of them.",
+      "start_time": 365.88,
+      "end_time": 367.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7085714285714285,
+      "timestamp": "2026-05-26T21:36:07.666092"
+    },
+    {
+      "text": "I mean, uh, we can implement auto scaling and uh, mainly auto scaling uh, we implement.",
+      "start_time": 368.76,
+      "end_time": 376.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7763749999999999,
+      "timestamp": "2026-05-26T21:36:17.302139"
+    },
+    {
+      "text": "And, uh, optimizing, uh, Like, Uh, Load balancing also we use and along with auto scaling, uh, Uh, do configure auto scaling on resource, and uh, then that's how uh, it can, uh,",
+      "start_time": 376.44,
+      "end_time": 403.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7025454545454545,
+      "timestamp": "2026-05-26T21:36:44.342133"
+    },
+    {
+      "text": "uh, implement this particular, yeah.",
+      "start_time": 403.32,
+      "end_time": 408.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6426000000000001,
+      "timestamp": "2026-05-26T21:36:48.906746"
+    },
+    {
+      "text": "Okay, and how would you integrate these or feedback and AV test result to into a continuous optimization too for a live software product?",
+      "start_time": 408.48,
+      "end_time": 418.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8213749999999999,
+      "timestamp": "2026-05-26T21:36:59.612293"
+    },
+    {
+      "text": "User feedback.",
+      "start_time": 423.12,
+      "end_time": 427.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6679999999999999,
+      "timestamp": "2026-05-26T21:37:08.084838"
+    },
+    {
+      "text": "And AB test.",
+      "start_time": 430.92,
+      "end_time": 433.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7076666666666666,
+      "timestamp": "2026-05-26T21:37:13.901397"
+    },
+    {
+      "text": "Like, uh, Yeah, we do.",
+      "start_time": 430.8,
+      "end_time": 436.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.307,
+      "timestamp": "2026-05-26T21:37:16.759426"
+    },
+    {
+      "text": "You can consider both of them, yeah.",
+      "start_time": 433.32,
+      "end_time": 436.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8234285714285713,
+      "timestamp": "2026-05-26T21:37:16.787013"
+    },
+    {
+      "text": "Can you let me know, like, how do you validate the effectiveness of a generative model in, in producing creative marketing content while maintaining brand consistency?",
+      "start_time": 440.58,
+      "end_time": 451.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.878423076923077,
+      "timestamp": "2026-05-26T21:37:32.267539"
+    },
+    {
+      "text": "Contact.",
+      "start_time": 469.38,
+      "end_time": 470.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.599,
+      "timestamp": "2026-05-26T21:37:51.331293"
+    },
+    {
+      "text": "Mhm.",
+      "start_time": 471.66,
+      "end_time": 473.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.571,
+      "timestamp": "2026-05-26T21:37:53.253428"
+    },
+    {
+      "text": "Uh... Actually, I'm not aware on the particular use case or uh, whatever, the marketing related, uh, uh, ternology or how they use, but I was a bit experienced on another domain, so.",
+      "start_time": 454.02,
+      "end_time": 479.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7712727272727273,
+      "timestamp": "2026-05-26T21:38:00.180121"
+    },
+    {
+      "text": "So how would you evaluate the effectiveness of a generative AI bottle?",
+      "start_time": 479.94,
+      "end_time": 484.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9188333333333335,
+      "timestamp": "2026-05-26T21:38:04.838887"
+    },
+    {
+      "text": "Can you just let me know regarding this?",
+      "start_time": 484.68,
+      "end_time": 486.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9761249999999999,
+      "timestamp": "2026-05-26T21:38:06.704100"
+    },
+    {
+      "text": "Like effectiveness, uh, Output quality, uh, then, uh,",
+      "start_time": 489.48,
+      "end_time": 501.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5774999999999999,
+      "timestamp": "2026-05-26T21:38:22.060990"
+    },
+    {
+      "text": "And the performance, I would say.",
+      "start_time": 501.24,
+      "end_time": 504.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8625000000000002,
+      "timestamp": "2026-05-26T21:38:24.924217"
+    },
+    {
+      "text": "Uh, And like hallucination, uh, also we can consider and the latency, how fast the responses are from the model. And, uh, Yeah, I think these are the evaluation metrics we can, uh, consider here for, uh,",
+      "start_time": 504.78,
+      "end_time": 530.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7937297297297297,
+      "timestamp": "2026-05-26T21:38:52.015141"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 530.94,
+      "end_time": 531.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.558,
+      "timestamp": "2026-05-26T21:38:52.016116"
+    },
+    {
+      "text": "Virgin A model.",
+      "start_time": 531.54,
+      "end_time": 533.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6033333333333334,
+      "timestamp": "2026-05-26T21:38:53.679703"
+    },
+    {
+      "text": "Okay, can you describe me a scenario where you have to find tuna large language model for a 2 minute specific application?",
+      "start_time": 533.88,
+      "end_time": 540.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8537272727272729,
+      "timestamp": "2026-05-26T21:39:00.500231"
+    },
+    {
+      "text": "What key step and challenges did you encounter in it?",
+      "start_time": 540.36,
+      "end_time": 544.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9585999999999999,
+      "timestamp": "2026-05-26T21:39:05.265370"
+    },
+    {
+      "text": "Uh, recently, I uh, worked on uh, medical uh, chatboard, like I, I used uh, pre-train model from hugging face and uh, also data set, uh, the medical data set is there.",
+      "start_time": 546.06,
+      "end_time": 562.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6831249999999999,
+      "timestamp": "2026-05-26T21:39:23.611700"
+    },
+    {
+      "text": "So I trained, I mean, I fine tune the particular model.",
+      "start_time": 562.68,
+      "end_time": 567.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8238181818181818,
+      "timestamp": "2026-05-26T21:39:28.288410"
+    },
+    {
+      "text": "Uh, uh, from, in the, I mean, uh, using Google Collab, uh, I use that uh, notebook based structure, and uh, And I, after training the model, I evaluated uh, with the inputs and uh, I, uh, initially I was, uh, it was not that good at responses.",
+      "start_time": 567.48,
+      "end_time": 591.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7278749999999999,
+      "timestamp": "2026-05-26T21:39:52.618636"
+    },
+    {
+      "text": "Uh, but later on I retried with uh, uh, another data, uh, with a more efficient uh, data than I got good responses for that.",
+      "start_time": 591.54,
+      "end_time": 603.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7458800000000001,
+      "timestamp": "2026-05-26T21:40:04.818593"
+    },
+    {
+      "text": "Here in terms of fine tuning, I would say most of the enterprises use rag.",
+      "start_time": 611.28,
+      "end_time": 616.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9037333333333334,
+      "timestamp": "2026-05-26T21:40:17.287339"
+    },
+    {
+      "text": "For on between the LLM.",
+      "start_time": 616.74,
+      "end_time": 620.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7332,
+      "timestamp": "2026-05-26T21:40:21.056121"
+    },
+    {
+      "text": "So, Yeah.",
+      "start_time": 620.28,
+      "end_time": 624.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5825,
+      "timestamp": "2026-05-26T21:40:24.891123"
+    },
+    {
+      "text": "Can you tell me, like, how would you monitor and manage model drift in a production ML system and what automated mechanism would you implement to address it proactively?",
+      "start_time": 629.64,
+      "end_time": 640.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8619999999999999,
+      "timestamp": "2026-05-26T21:40:41.392127"
+    },
+    {
+      "text": "So, uh, Moral re- or or data rift, uh, is like, I worked on data rift, and, uh, a model reflect, we have a monitor, uh, model metrics like in the ML flow.",
+      "start_time": 642.42,
+      "end_time": 662.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.656,
+      "timestamp": "2026-05-26T21:41:03.489147"
+    },
+    {
+      "text": "Uh, we have the metrics section there.",
+      "start_time": 662.52,
+      "end_time": 665.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6921428571428571,
+      "timestamp": "2026-05-26T21:41:06.172238"
+    },
+    {
+      "text": "There, we have certain metrics like precision, accuracy, and uh, FN score these, so this, uh, by observing these, uh, we can detect the model drift, uh,",
+      "start_time": 665.4,
+      "end_time": 677.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6604814814814813,
+      "timestamp": "2026-05-26T21:41:18.796463"
+    },
+    {
+      "text": "And that gift drift skip runs every on the scheduled timeline, every one hour, we can schedule to run it, and it continuously monitors the feature data, incoming data, and also the data which trained a model is trained earlier.",
+      "start_time": 695.16,
+      "end_time": 717.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8261499999999998,
+      "timestamp": "2026-05-26T21:41:58.228639"
+    },
+    {
+      "text": "So, This is how I implement data refrend or observe this model rift.",
+      "start_time": 717.3,
+      "end_time": 724.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8046923076923077,
+      "timestamp": "2026-05-26T21:42:04.787147"
+    },
+    {
+      "text": "Can you explain me what is data drifters?",
+      "start_time": 726.36,
+      "end_time": 729.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.835375,
+      "timestamp": "2026-05-26T21:42:09.574716"
+    },
+    {
+      "text": "Data drift is like when, if we train the model for by taking some data, right?",
+      "start_time": 730.02,
+      "end_time": 737.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8773125,
+      "timestamp": "2026-05-26T21:42:18.202605"
+    },
+    {
+      "text": "So, After training the model, model learns the parameters and accordingly, the data which we provide while training, and in the production, when we deploy, model has to work on the production data or the live data which is coming.",
+      "start_time": 737.76,
+      "end_time": 755.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9072250000000001,
+      "timestamp": "2026-05-26T21:42:36.589960"
+    },
+    {
+      "text": "So after, and it has to evaluate whatever their data it learned or the parameters it learned, it compares, and That's how the prediction works here.",
+      "start_time": 755.64,
+      "end_time": 769.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8903461538461538,
+      "timestamp": "2026-05-26T21:42:49.989500"
+    },
+    {
+      "text": "Uh, data if, like, I can say, if the production data or the live data is more uh, mismatching or it's high or too low, that which model has model data, uh, uh, the model has trained on such some data, that is not matching with the, or the, uh, it's inaccurate or it's not uh, in the uh, trained data.",
+      "start_time": 769.44,
+      "end_time": 796.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7709836065573771,
+      "timestamp": "2026-05-26T21:43:17.178619"
+    },
+    {
+      "text": "So that's how we can define as a data drift.",
+      "start_time": 796.14,
+      "end_time": 800.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.914,
+      "timestamp": "2026-05-26T21:43:20.574043"
+    },
+    {
+      "text": "Okay, and May I know, like, how do you set up, uh, features store integration in an ML Ops pipeline?",
+      "start_time": 799.2,
+      "end_time": 808.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7063499999999998,
+      "timestamp": "2026-05-26T21:43:29.327469"
+    },
+    {
+      "text": "And can you discuss its impact on collaboration and model reproducibility?",
+      "start_time": 808.44,
+      "end_time": 812.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8682727272727273,
+      "timestamp": "2026-05-26T21:43:33.124264"
+    },
+    {
+      "text": "So basically, uh, uh, data breaks uh, used for a feature store.",
+      "start_time": 815.16,
+      "end_time": 821.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6773333333333333,
+      "timestamp": "2026-05-26T21:43:42.661957"
+    },
+    {
+      "text": "So like, Uh, Data, initially, uh, gather the data, uh, sources, um, from the data sources. And, uh, And in the database, we have the feature store there, and it's acts as a centralized uh, repository for features.",
+      "start_time": 821.88,
+      "end_time": 845.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.724894736842105,
+      "timestamp": "2026-05-26T21:44:05.989508"
+    },
+    {
+      "text": "What are the 4 main component which is present in ML Flow?",
+      "start_time": 861.0,
+      "end_time": 865.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8765833333333334,
+      "timestamp": "2026-05-26T21:44:25.906133"
+    },
+    {
+      "text": "Are you aware about them?",
+      "start_time": 865.68,
+      "end_time": 867.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.945,
+      "timestamp": "2026-05-26T21:44:27.796335"
+    },
+    {
+      "text": "4 main components.",
+      "start_time": 867.6,
+      "end_time": 869.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8803333333333333,
+      "timestamp": "2026-05-26T21:44:30.633427"
+    },
+    {
+      "text": "In ML flu library.",
+      "start_time": 870.06,
+      "end_time": 872.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.71275,
+      "timestamp": "2026-05-26T21:44:32.601393"
+    },
+    {
+      "text": "Did he work up on ML flow library?",
+      "start_time": 872.1,
+      "end_time": 874.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8017499999999999,
+      "timestamp": "2026-05-26T21:44:34.532683"
+    },
+    {
+      "text": "Oh yeah.",
+      "start_time": 874.26,
+      "end_time": 875.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6045,
+      "timestamp": "2026-05-26T21:44:35.470293"
+    },
+    {
+      "text": "What are the 4?",
+      "start_time": 875.4,
+      "end_time": 876.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.79925,
+      "timestamp": "2026-05-26T21:44:37.417880"
+    },
+    {
+      "text": "Huh? Uh-huh.",
+      "start_time": 876.96,
+      "end_time": 879.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.40049999999999997,
+      "timestamp": "2026-05-26T21:44:40.297907"
+    },
+    {
+      "text": "And uh, We have the matrix and uh, Yeah, these are the main components.",
+      "start_time": 896.76,
+      "end_time": 907.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.707,
+      "timestamp": "2026-05-26T21:45:08.145780"
+    },
+    {
+      "text": "I would say.",
+      "start_time": 907.32,
+      "end_time": 908.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9273333333333333,
+      "timestamp": "2026-05-26T21:45:09.041971"
+    },
+    {
+      "text": "Uh, can you describe me a time when a technical miscommunication between team? Cost of project setback and how did you identify the shoe and communicate the solution and prevent similar problem in the future?",
+      "start_time": 912.96,
+      "end_time": 925.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8595714285714282,
+      "timestamp": "2026-05-26T21:45:26.539334"
+    },
+    {
+      "text": "Uh, Like, I would say, it's sometime, uh, once we face 2 dependency issues, uh, between the, uh, uh, Dev teams and uh, when we are uh, deploying the production in model and uh, uh, we do have issues, uh,",
+      "start_time": 929.58,
+      "end_time": 956.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6439999999999999,
+      "timestamp": "2026-05-26T21:45:57.322671"
+    },
+    {
+      "text": "frequent very often on multiple things, and on data side also, we do have issues.",
+      "start_time": 956.58,
+      "end_time": 965.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9091333333333332,
+      "timestamp": "2026-05-26T21:46:05.722329"
+    },
+    {
+      "text": "Uh, only these these issues are like, uh, can be resolved by analyzing the locks and uh, monitoring the complete, uh, um, metrics on dashboards.",
+      "start_time": 965.16,
+      "end_time": 982.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6749199999999999,
+      "timestamp": "2026-05-26T21:46:23.102083"
+    },
+    {
+      "text": "And uh, Yeah.",
+      "start_time": 982.26,
+      "end_time": 985.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.33866666666666667,
+      "timestamp": "2026-05-26T21:46:25.864582"
+    },
+    {
+      "text": "And permissions and secret related issues also.",
+      "start_time": 1005.84,
+      "end_time": 1011.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8724285714285713,
+      "timestamp": "2026-05-26T21:46:51.813563"
+    },
+    {
+      "text": "So these are like some issues uh gone through.",
+      "start_time": 1011.0,
+      "end_time": 1016.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8377777777777778,
+      "timestamp": "2026-05-26T21:46:56.588831"
+    },
+    {
+      "text": "And it's all about communication.",
+      "start_time": 1016.16,
+      "end_time": 1018.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8904,
+      "timestamp": "2026-05-26T21:46:59.452610"
+    },
+    {
+      "text": "We approach them and uh, involve in call or Set up the timeline for identifying and resolving and moving further recordingly.",
+      "start_time": 1018.68,
+      "end_time": 1032.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8770476190476192,
+      "timestamp": "2026-05-26T21:47:13.005373"
+    },
+    {
+      "text": "Okay, okay, yeah, that is fine.",
+      "start_time": 1033.08,
+      "end_time": 1035.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5855,
+      "timestamp": "2026-05-26T21:47:15.821024"
+    },
+    {
+      "text": "Okay, uh, so, yeah, Akil, I'm done with the interview process.",
+      "start_time": 1035.18,
+      "end_time": 1039.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7542727272727273,
+      "timestamp": "2026-05-26T21:47:19.680647"
+    },
+    {
+      "text": "If you have any questions you can ask.",
+      "start_time": 1039.08,
+      "end_time": 1040.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9300000000000002,
+      "timestamp": "2026-05-26T21:47:20.601878"
+    },
+    {
+      "text": "Yeah, I mean, um, okay, uh, as of now, yeah.",
+      "start_time": 1047.24,
+      "end_time": 1050.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6364000000000001,
+      "timestamp": "2026-05-26T21:47:31.176113"
+    },
+    {
+      "text": "Okay okay.",
+      "start_time": 1050.9,
+      "end_time": 1051.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.3675,
+      "timestamp": "2026-05-26T21:47:32.109860"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 1053.66,
+      "end_time": 1054.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7855000000000001,
+      "timestamp": "2026-05-26T21:47:35.018221"
+    },
+    {
+      "text": "Have a good day as well.",
+      "start_time": 1054.44,
+      "end_time": 1055.46,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9351666666666668,
+      "timestamp": "2026-05-26T21:47:35.962645"
+    },
+    {
+      "text": "Yeah, thank you, obviously.",
+      "start_time": 1053.78,
+      "end_time": 1056.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.68525,
+      "timestamp": "2026-05-26T21:47:36.905278"
+    },
+    {
+      "text": "Yeah, bye-bye.",
+      "start_time": 1055.46,
+      "end_time": 1056.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7055,
+      "timestamp": "2026-05-26T21:47:36.917049"
+    }
+  ]
+}

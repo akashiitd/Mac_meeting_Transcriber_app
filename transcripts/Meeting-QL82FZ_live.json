@@ -1,0 +1,1500 @@
+{
+  "session_name": "Meeting-QL82FZ",
+  "started": "2026-04-30T16:29:00.297608",
+  "segments": [
+    {
+      "text": "Yeah, yeah, I mean, there's my voice audible to you.",
+      "start_time": 13.08,
+      "end_time": 16.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:02.716629"
+    },
+    {
+      "text": "Yes, my voice horrible to you.",
+      "start_time": 23.94,
+      "end_time": 26.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:13.271056"
+    },
+    {
+      "text": "hello, yes, yes, it's audible now.",
+      "start_time": 24.3,
+      "end_time": 28.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:15.155305"
+    },
+    {
+      "text": "Uh, yeah, Harmit, I'm Akashir, uh,",
+      "start_time": 29.52,
+      "end_time": 33.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:20.948774"
+    },
+    {
+      "text": "Can you briefly introduce yourself?",
+      "start_time": 33.72,
+      "end_time": 35.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:22.869432"
+    },
+    {
+      "text": "Apologies for joining our little list.",
+      "start_time": 35.64,
+      "end_time": 37.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:24.778694"
+    },
+    {
+      "text": "Good evening.",
+      "start_time": 39.72,
+      "end_time": 40.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:27.604589"
+    },
+    {
+      "text": "So I'll start with a brief introduction about myself.",
+      "start_time": 40.44,
+      "end_time": 43.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:30.525837"
+    },
+    {
+      "text": "So myself, Harmit Kaur, I, I've been brought and brought up at Bukara Steel City, Charkin.",
+      "start_time": 43.32,
+      "end_time": 49.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:36.338132"
+    },
+    {
+      "text": "I did my 10 +2 in Del Public School, Bakarasi itself, and in 2020, 18, I moved on doing my BT graduations from NIT Shinagar.",
+      "start_time": 49.5,
+      "end_time": 59.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:46.942714"
+    },
+    {
+      "text": "I was in metallurgical material science engineering branch, and I was a departmental doctor of my branch, and in 2022, I got an internship offer from Sigvoy Analytics as an intern.",
+      "start_time": 59.7,
+      "end_time": 71.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:08:58.514243"
+    },
+    {
+      "text": "So I joined it and after a regular 6 months training internship, I was converted as a full-time employee over there at Segmoid.",
+      "start_time": 71.1,
+      "end_time": 77.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:04.164050"
+    },
+    {
+      "text": "So then I was a part of Sigmoid for the last 3 years. And recently, like I had been a part of the math company.",
+      "start_time": 77.7,
+      "end_time": 88.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:14.750529"
+    },
+    {
+      "text": "So I was a senior data scientist over there at the Matho.",
+      "start_time": 88.02,
+      "end_time": 90.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:17.555374"
+    },
+    {
+      "text": "So like last week I resigned from the math company.",
+      "start_time": 90.84,
+      "end_time": 95.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:22.363107"
+    },
+    {
+      "text": "And this is all my data science journey and it had been holy and solely on your traditional ML modeling.",
+      "start_time": 95.52,
+      "end_time": 104.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:31.064839"
+    },
+    {
+      "text": "Uh, time series forecast, and they went forecasting, uh, Gen AI and, uh, like my domain has basically ranged from CPG, retail, food services, beverage company.",
+      "start_time": 104.1,
+      "end_time": 115.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:42.628192"
+    },
+    {
+      "text": "Okay, yeah, yeah.",
+      "start_time": 115.62,
+      "end_time": 117.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:44.443646"
+    },
+    {
+      "text": "So yeah, that's a trip in production with myself.",
+      "start_time": 115.44,
+      "end_time": 118.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:45.401145"
+    },
+    {
+      "text": "So, yeah, Harmit, regarding the interview process, right, I will try to cover some section.",
+      "start_time": 117.66,
+      "end_time": 123.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:51.217728"
+    },
+    {
+      "text": "Uh, like related to Jenny, I coding data breaks, machine learning, ML flow, all of this.",
+      "start_time": 123.96,
+      "end_time": 131.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:09:57.947955"
+    },
+    {
+      "text": "So did you work up on CICD Pipeline as well?",
+      "start_time": 131.58,
+      "end_time": 135.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:10:02.717202"
+    },
+    {
+      "text": "CACD pipelines, like I have a experience in working for ML flu, where like we used it regularly in our time series, forecasting models to see that model versioning and tracking of the various parameters that have been used in the model purpose.",
+      "start_time": 136.38,
+      "end_time": 152.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:10:20.174636"
+    },
+    {
+      "text": "So yeah.",
+      "start_time": 152.94,
+      "end_time": 154.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:10:21.853014"
+    },
+    {
+      "text": "Okay, uh, you noticed, like if you have built in your CICT pipeline, if it is taking significantly longer time, after adding new stages.",
+      "start_time": 153.48,
+      "end_time": 163.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:10:30.618936"
+    },
+    {
+      "text": "So how would you identify bottlenecks and optimize?",
+      "start_time": 163.44,
+      "end_time": 166.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:10:33.431280"
+    },
+    {
+      "text": "Any pipeline execution time?",
+      "start_time": 166.32,
+      "end_time": 169.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:10:36.296983"
+    },
+    {
+      "text": "Uh, yeah.",
+      "start_time": 169.68,
+      "end_time": 171.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:10:38.179904"
+    },
+    {
+      "text": "So, like, in perspective of ML flow, like, uh, it was the basic architecture that we followed.",
+      "start_time": 171.06,
+      "end_time": 177.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:10:44.024257"
+    },
+    {
+      "text": "So there was a step by step process in MLPro, like that helped us in tracking the models that we are using and also versioning.",
+      "start_time": 177.24,
+      "end_time": 185.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:10:52.650942"
+    },
+    {
+      "text": "So there are various parameters inside that ML Pro that we had to define it beforehand in order to like see what is the difference.",
+      "start_time": 185.76,
+      "end_time": 195.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:11:02.263562"
+    },
+    {
+      "text": "The model is making in the current scenario and which was run beforehand.",
+      "start_time": 195.12,
+      "end_time": 200.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:11:07.023070"
+    },
+    {
+      "text": "So this helps us to track the artifacts, the time scams, the parameters that are undergoing in the model and how they are affecting.",
+      "start_time": 200.1,
+      "end_time": 208.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:11:15.703053"
+    },
+    {
+      "text": "We are getting.",
+      "start_time": 217.68,
+      "end_time": 218.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:11:25.226386"
+    },
+    {
+      "text": "while versioning or like uh, Checking for the differences, for example, in there are 2 cases, for example, a simple LLM model and the 2nd one is the RAC model.",
+      "start_time": 218.28,
+      "end_time": 230.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:11:37.823795"
+    },
+    {
+      "text": "So the difference in output that we are getting.",
+      "start_time": 230.7,
+      "end_time": 233.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:11:40.600703"
+    },
+    {
+      "text": "So that can be tracked very well using the laxwidth, okay, this is the output that we are getting and this is how the processing is working out.",
+      "start_time": 233.64,
+      "end_time": 241.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:11:48.368866"
+    },
+    {
+      "text": "So this is a very good clear cut picture that shows, okay, we are good to go with the models.",
+      "start_time": 241.2,
+      "end_time": 248.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:11:55.034481"
+    },
+    {
+      "text": "Are we utilizing all the parameters and how much times how much time it is taking for a job to run?",
+      "start_time": 248.16,
+      "end_time": 254.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:12:01.780455"
+    },
+    {
+      "text": "So it gives us a clear picture of like how whole working of the model inside work.",
+      "start_time": 254.94,
+      "end_time": 261.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:12:07.493717"
+    },
+    {
+      "text": "Can you also let me know, like, what is our data bricks note focus and what is the use case of it?",
+      "start_time": 260.28,
+      "end_time": 269.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:12:16.206348"
+    },
+    {
+      "text": "Yeah, so, uh, yeah, so database is widely used in the situations in which, like we have a wide variety of data.",
+      "start_time": 267.18,
+      "end_time": 276.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:12:23.872944"
+    },
+    {
+      "text": "So, um, the database fetches the datas in the form of tables and posts.",
+      "start_time": 276.72,
+      "end_time": 282.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:12:29.601876"
+    },
+    {
+      "text": "So, uh, like normal Jupiter notebook, a normal uh, computings or VS sports that we are using, then we take the CSV file and we are processing our data set or whatever ED or whatever.",
+      "start_time": 282.42,
+      "end_time": 295.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:12:43.106036"
+    },
+    {
+      "text": "Um, modeling we are trying to achieve.",
+      "start_time": 295.86,
+      "end_time": 298.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:12:45.855575"
+    },
+    {
+      "text": "But in the case of data bricks, the data set that we are getting is used, it's bulky, it's 1000000s of rules over present over there.",
+      "start_time": 298.74,
+      "end_time": 306.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:12:53.658433"
+    },
+    {
+      "text": "That is very easy to parallelly process it or batch process it so that a large chunk of data is broken down into tables, a specified, you can say chunks so that it can be bash processed and also parallel it can be run in order to save time.",
+      "start_time": 306.36,
+      "end_time": 323.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:13:11.011703"
+    },
+    {
+      "text": "And yeah, so like a vast variety of data can be tweeted over there in the data thing.",
+      "start_time": 323.64,
+      "end_time": 328.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:13:15.679850"
+    },
+    {
+      "text": "And on top of that, it initially provides us with tracking.",
+      "start_time": 328.8,
+      "end_time": 334.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:13:21.437213"
+    },
+    {
+      "text": "It also provides us with dash boating.",
+      "start_time": 334.56,
+      "end_time": 337.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:13:24.270206"
+    },
+    {
+      "text": "So there are various applications inside database only in which like we are, we can tweak into those functions and we can go for the dashboarding purpose also.",
+      "start_time": 337.08,
+      "end_time": 346.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:13:33.975510"
+    },
+    {
+      "text": "So visualizations can also be seen over there.",
+      "start_time": 346.86,
+      "end_time": 350.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:13:37.735125"
+    },
+    {
+      "text": "And you are, if your team need to collaborate on a long running feature branch, that regularly falls beyond the main branch.",
+      "start_time": 351.42,
+      "end_time": 359.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:13:46.451412"
+    },
+    {
+      "text": "What get a strategy would you use to keep feature branch up to date and minimize integration issue?",
+      "start_time": 359.88,
+      "end_time": 364.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:13:51.201959"
+    },
+    {
+      "text": "So there are various good features that we are using in order to collab and put in together all the court pieces that a particular model ready code pieces. And so for that, like we push and pull the latest available codes that the team has put into. And also on top of that, before merging our piece of code, we should resolve the merch conflicts by either our self-checking it through human evaluation or we can like assign people as well in order to like check their",
+      "start_time": 365.94,
+      "end_time": 396.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:14:24.429179"
+    },
+    {
+      "text": "part and see the merge conflicts and so that whole team can pull the new latest ramp code and there should not be any version problems or you can say application problems or most importantly, the import errors that we keep on getting because of the motioning issues, that or could be resolved and everyone should be on the same page.",
+      "start_time": 396.66,
+      "end_time": 417.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:14:45.217761"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 439.2,
+      "end_time": 439.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:15:06.975554"
+    },
+    {
+      "text": "And if you are tasked with improving the performance of a deployed ML model, that is underperforming in production compared to palutation.",
+      "start_time": 433.68,
+      "end_time": 442.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:15:09.985757"
+    },
+    {
+      "text": "I mean, to diagnose and address the issue.",
+      "start_time": 445.56,
+      "end_time": 447.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:15:13.737936"
+    },
+    {
+      "text": "It's a.",
+      "start_time": 447.24,
+      "end_time": 448.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:15:15.642029"
+    },
+    {
+      "text": "So I, I must say that for addressing such situations in which like we can see that the model performance can be enhanced, we can see the hyper parameters that are currently being used in the model.",
+      "start_time": 448.08,
+      "end_time": 461.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:15:28.266736"
+    },
+    {
+      "text": "What are the artifacts that are currently being used and what all versions that are compatible with our new versions which can be used in our modeling and that can reduce that runtime. All some kind of, you can say, parallel processing operations can be brought into pictures so that uh, whole of the data is not fit into ones, but it is in the form of chunks and that can improve the runtime.",
+      "start_time": 461.46,
+      "end_time": 484.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:15:51.576701"
+    },
+    {
+      "text": "Or there are many optimization techniques as well.",
+      "start_time": 484.32,
+      "end_time": 487.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:15:55.006259"
+    },
+    {
+      "text": "For example, like Instead of downloading and like using the things from top to bottom, we can use optimized packages that are available.",
+      "start_time": 487.8,
+      "end_time": 499.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:16:06.604361"
+    },
+    {
+      "text": "And through that, like we can ensure that the run time is. A list is on the list.",
+      "start_time": 499.5,
+      "end_time": 507.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:16:14.248482"
+    },
+    {
+      "text": "And, uh, in a motional link system, uh, how did you adapt a data trip like if you are working for any customer BVR prediction task?",
+      "start_time": 505.68,
+      "end_time": 517.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:16:23.898406"
+    },
+    {
+      "text": "How would you design the monitoring and Retraining strategy to ensure like it is sustainable model?",
+      "start_time": 517.02,
+      "end_time": 523.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:16:30.606077"
+    },
+    {
+      "text": "I mean, it should have sustainable performance over time.",
+      "start_time": 523.68,
+      "end_time": 526.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:16:33.436538"
+    },
+    {
+      "text": "Uh, yeah.",
+      "start_time": 527.1,
+      "end_time": 529.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:16:36.266357"
+    },
+    {
+      "text": "So, like in machine running models, in order to have a sustainable performance, I must say that we must employ some cross validation techniques, some hyperparametric tuning so that it gives us best set of parameters or the during parameters that can be employed in our modeling.",
+      "start_time": 529.08,
+      "end_time": 545.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:16:52.901469"
+    },
+    {
+      "text": "And we can get enhanced results using that.",
+      "start_time": 545.88,
+      "end_time": 549.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:16:56.460613"
+    },
+    {
+      "text": "And How do you use ML flow project I mean to standardize and a skill, the execution of any machine learning workflow across different environment and teams?",
+      "start_time": 550.5,
+      "end_time": 561.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:17:09.015503"
+    },
+    {
+      "text": "And so like I said, versioning can be one of the thing model versioning and model tracking.",
+      "start_time": 589.56,
+      "end_time": 596.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:17:43.508543"
+    },
+    {
+      "text": "So I think that can be very well supervised in order to check like, okay, what all changes can be made on top of the already existing money in order to get good results?",
+      "start_time": 596.58,
+      "end_time": 608.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:17:56.062964"
+    },
+    {
+      "text": "And how would you optimize a slow data transformation workflow using Python Pies Park and partners when working with large data set?",
+      "start_time": 606.84,
+      "end_time": 615.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:18:02.775119"
+    },
+    {
+      "text": "What factor would you consider to improve performance and resource utilization?",
+      "start_time": 615.84,
+      "end_time": 619.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:18:06.569591"
+    },
+    {
+      "text": "So I must say that in case of like Pice Park and all like when we have the data set.",
+      "start_time": 620.88,
+      "end_time": 627.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:18:15.190246"
+    },
+    {
+      "text": "And use it now and then, like in Pice Park, we have the capability of like joining into various clusters and taking like which one is the most speedy one.",
+      "start_time": 655.8,
+      "end_time": 667.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:18:54.601335"
+    },
+    {
+      "text": "And getting a task done.",
+      "start_time": 667.62,
+      "end_time": 669.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:18:56.425322"
+    },
+    {
+      "text": "So I must say that uh, normalization, or you can say the chunkings that are done.",
+      "start_time": 669.48,
+      "end_time": 674.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:01.261686"
+    },
+    {
+      "text": "That's wise processing, which is done that helps us to like optimize the right time at all.",
+      "start_time": 674.4,
+      "end_time": 681.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:08.965239"
+    },
+    {
+      "text": "Okay, uh,",
+      "start_time": 680.82,
+      "end_time": 682.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:09.888144"
+    },
+    {
+      "text": "Let us suppose during any high state client call our colleague unexpectedly misrepresent a key project detail.",
+      "start_time": 682.98,
+      "end_time": 691.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:18.595364"
+    },
+    {
+      "text": "How would you tackle this situation in real time to present, to preserve your client trust without undermining their colleague?",
+      "start_time": 691.8,
+      "end_time": 699.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:26.258318"
+    },
+    {
+      "text": "Okay, could you please come again?",
+      "start_time": 699.84,
+      "end_time": 701.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:28.105735"
+    },
+    {
+      "text": "I just lost that.",
+      "start_time": 701.22,
+      "end_time": 702.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:30.037274"
+    },
+    {
+      "text": "Okay, during a high stake client call, our colleague of yours, unexpectedly misrepresent a key project detail.",
+      "start_time": 702.18,
+      "end_time": 710.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:36.857025"
+    },
+    {
+      "text": "Misrepresented.",
+      "start_time": 711.84,
+      "end_time": 713.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:40.574418"
+    },
+    {
+      "text": "How would, Yeah, misrepresented our key project details.",
+      "start_time": 710.94,
+      "end_time": 715.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:42.537569"
+    },
+    {
+      "text": "So how would you address this situation in real time to preserve client trust without undermining your colleague?",
+      "start_time": 715.44,
+      "end_time": 722.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:49.286098"
+    },
+    {
+      "text": "So I must say that whatever project we are entitled into, it's a teamwork, it's not an individual responsibility that we have to maintain.",
+      "start_time": 722.94,
+      "end_time": 730.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:19:57.957255"
+    },
+    {
+      "text": "our own identity over there and give the deliberatables.",
+      "start_time": 730.92,
+      "end_time": 735.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:20:02.668676"
+    },
+    {
+      "text": "So we as a team should work together in order to whatever like we are presenting, the kind client, it should be very well managed and you can say presented amongst the team members 1st in order to grab or see any problems that it may cause in front of the client.",
+      "start_time": 735.48,
+      "end_time": 754.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:20:22.116036"
+    },
+    {
+      "text": "Okay, yeah.",
+      "start_time": 784.32,
+      "end_time": 785.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:20:52.612055"
+    },
+    {
+      "text": "and on top of that, these are implementations can be done in order to get this results.",
+      "start_time": 781.38,
+      "end_time": 786.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:20:53.594278"
+    },
+    {
+      "text": "You are good in writing sequel queries, right?",
+      "start_time": 785.58,
+      "end_time": 789.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:20:56.486356"
+    },
+    {
+      "text": "Oh, yes.",
+      "start_time": 786.66,
+      "end_time": 791.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:20:58.352989"
+    },
+    {
+      "text": "Can you share me your screen?",
+      "start_time": 789.78,
+      "end_time": 792.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:20:59.329092"
+    },
+    {
+      "text": "Uh, yeah.",
+      "start_time": 791.88,
+      "end_time": 794.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:01.215542"
+    },
+    {
+      "text": "I'm giving you one problem in the chat itself.",
+      "start_time": 792.24,
+      "end_time": 796.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:04.152556"
+    },
+    {
+      "text": "So 1st share me, I had also shared with a question as well.",
+      "start_time": 796.92,
+      "end_time": 800.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:07.991804"
+    },
+    {
+      "text": "You are given a table employee.",
+      "start_time": 800.76,
+      "end_time": 803.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:10.838878"
+    },
+    {
+      "text": "You need to write a secle query to display each manager name along with the count of direct reports they have.",
+      "start_time": 803.64,
+      "end_time": 810.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:17.628445"
+    },
+    {
+      "text": "Just share me our screen ones.",
+      "start_time": 813.36,
+      "end_time": 814.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:21.418888"
+    },
+    {
+      "text": "After Mike, you can see uh share what.",
+      "start_time": 817.8,
+      "end_time": 821.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:28.136499"
+    },
+    {
+      "text": "Yeah, I got it, got it.",
+      "start_time": 822.0,
+      "end_time": 823.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:30.033862"
+    },
+    {
+      "text": "Is my screen available now?",
+      "start_time": 826.14,
+      "end_time": 828.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:34.819660"
+    },
+    {
+      "text": "So you can see the question in the chat.",
+      "start_time": 836.34,
+      "end_time": 839.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:46.384681"
+    },
+    {
+      "text": "There is one after a screenshot button.",
+      "start_time": 839.64,
+      "end_time": 843.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:50.213321"
+    },
+    {
+      "text": "So you are given one employee table.",
+      "start_time": 843.9,
+      "end_time": 848.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:55.002560"
+    },
+    {
+      "text": "You need to write a cycle Q to display each manager name.",
+      "start_time": 848.04,
+      "end_time": 850.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:21:57.912632"
+    },
+    {
+      "text": "Along with account of direct reports they have.",
+      "start_time": 850.8,
+      "end_time": 853.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:22:00.791138"
+    },
+    {
+      "text": "They want a table employee, embroidery, I should manage your ID name, writers, people query to display each manager's name, along with the counter direct report, they have. Insure managed it with 0 votes are also listed with counter 0.",
+      "start_time": 855.36,
+      "end_time": 870.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:22:18.258039"
+    },
+    {
+      "text": "Just explain your approach regarding this, what you.",
+      "start_time": 874.68,
+      "end_time": 877.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:22:24.792330"
+    },
+    {
+      "text": "I think, so in this kind of situation in which we are given employee ID manager ID name, uh, we can do self-join.",
+      "start_time": 877.2,
+      "end_time": 886.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:22:33.489161"
+    },
+    {
+      "text": "So by doing self-join, what will happen, uh, We will be replicating the, uh, this employer, the manager ID and name.",
+      "start_time": 886.2,
+      "end_time": 896.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:22:44.041179"
+    },
+    {
+      "text": "The whole table employees table, and like against each manager's name.",
+      "start_time": 896.82,
+      "end_time": 904.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:22:51.666851"
+    },
+    {
+      "text": "So after all, we have to get in the final output, manager name, and the count of our employees under him.",
+      "start_time": 904.44,
+      "end_time": 913.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:23:00.322690"
+    },
+    {
+      "text": "Uh, did you work up on Python and Pice Park?",
+      "start_time": 931.02,
+      "end_time": 934.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:23:21.425171"
+    },
+    {
+      "text": "So, um, What we'll be doing is we'll group by, uh, manager name, and count the number of employees under that, and I think by that we can get the, Yes, I have.",
+      "start_time": 914.7,
+      "end_time": 938.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:23:26.374852"
+    },
+    {
+      "text": "Uh, so, like, if you need to ride a Python or Pice Barcode to implement a pipeline, that include feature selection using mutual information, model training with X Goost, and automatic logging of artifact and model worsening using an ML flow.",
+      "start_time": 935.1,
+      "end_time": 953.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:23:40.882681"
+    },
+    {
+      "text": "Can you explain how would you ensure reproducible outcome across runs?",
+      "start_time": 953.94,
+      "end_time": 960.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:23:47.353491"
+    },
+    {
+      "text": "I'm pasting the question in the chat as well.",
+      "start_time": 960.36,
+      "end_time": 962.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:23:49.275879"
+    },
+    {
+      "text": "Okay, sure. 20 minute pipeline that includes feature selection using uh... I think that includes feature selection using mutual information model training with exit boost and automatic logging of article as a model version using ML flow.",
+      "start_time": 961.68,
+      "end_time": 985.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:24:12.540429"
+    },
+    {
+      "text": "Explain how you ensure it producibility across runs.",
+      "start_time": 985.08,
+      "end_time": 988.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:24:16.122305"
+    },
+    {
+      "text": "that includes features which using user information.",
+      "start_time": 991.92,
+      "end_time": 995.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:24:22.830566"
+    },
+    {
+      "text": "It features election.",
+      "start_time": 996.24,
+      "end_time": 998.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:24:25.718104"
+    },
+    {
+      "text": "Um, Okay, so coming to the selection part, 1st of all.",
+      "start_time": 1003.32,
+      "end_time": 1011.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:24:39.174323"
+    },
+    {
+      "text": "So whenever we are implementing any Python coat and using, for example, SC boost and we have, for example, 10 features available in our data set.",
+      "start_time": 1011.96,
+      "end_time": 1021.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:24:48.862975"
+    },
+    {
+      "text": "So in that 10 features, we have to see that, okay, which are the top 5 features that we can use in our modeling perspective in order to enhance our modeling results?",
+      "start_time": 1021.56,
+      "end_time": 1029.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:24:56.526977"
+    },
+    {
+      "text": "So for that, what we can do is the very good example is doing the cross validation.",
+      "start_time": 1029.96,
+      "end_time": 1036.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:25:03.183249"
+    },
+    {
+      "text": "So, uh, in cross validation, um, Or hyperparametric tuning.",
+      "start_time": 1036.38,
+      "end_time": 1042.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:25:09.919225"
+    },
+    {
+      "text": "So in hyper-parameter turing, what we are doing is that we train across all of these models, we train across all of these features.",
+      "start_time": 1042.68,
+      "end_time": 1052.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:25:19.550279"
+    },
+    {
+      "text": "We keep all the features and our training data set.",
+      "start_time": 1052.46,
+      "end_time": 1055.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:25:22.366916"
+    },
+    {
+      "text": "And we figure out, okay, which are the set of features that is most impacting our modeling?",
+      "start_time": 1055.28,
+      "end_time": 1061.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:25:28.145318"
+    },
+    {
+      "text": "And uh, like when we train on whole data set, whole features, then for each of the features, we are getting, okay, these are the set of hyper parameters that suits best for each of the features.",
+      "start_time": 1061.76,
+      "end_time": 1075.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:25:42.656035"
+    },
+    {
+      "text": "Out of that now, what is the 2nd task that we'll be doing?",
+      "start_time": 1076.1,
+      "end_time": 1080.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:25:47.339992"
+    },
+    {
+      "text": "Is uh, the feature selection part.",
+      "start_time": 1080.78,
+      "end_time": 1084.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:25:51.155819"
+    },
+    {
+      "text": "So in the feature selection part, we can either use lasso regularization.",
+      "start_time": 1084.14,
+      "end_time": 1088.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:25:55.973990"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 1094.52,
+      "end_time": 1095.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:26:02.679280"
+    },
+    {
+      "text": "in which like it, um, minimizes the, it keeps the coefficient 0 that are not a good, uh, not that you're not giving a good input in our mode.",
+      "start_time": 1088.94,
+      "end_time": 1103.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:26:10.494955"
+    },
+    {
+      "text": "So those features are penalized and minimize to zero.",
+      "start_time": 1103.46,
+      "end_time": 1108.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:26:15.161581"
+    },
+    {
+      "text": "So we can use that type of technique for the feature selection part.",
+      "start_time": 1108.14,
+      "end_time": 1112.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:26:19.956822"
+    },
+    {
+      "text": "Um, Also, Like for model, um, automatic logging of artifacts and all, which you had mentioned in model versioning, Um, They can, uh, like, hold of this um, modeling can be divided into 4 layers for architectural layers, data storage layer, data preprocessing layer, modeling layer and last is the output or the visualization layer or the",
+      "start_time": 1113.36,
+      "end_time": 1142.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:26:49.277379"
+    },
+    {
+      "text": "metrices in which we do the evolution.",
+      "start_time": 1142.22,
+      "end_time": 1144.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:26:51.635663"
+    },
+    {
+      "text": "So these were 4 layered architecture can be triggered in ML flow.",
+      "start_time": 1144.56,
+      "end_time": 1149.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:26:56.462025"
+    },
+    {
+      "text": "And Each time the model runs during the training period, We are having for each of the features features, what are the selected set of hyper parameters that gets locked?",
+      "start_time": 1149.36,
+      "end_time": 1161.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:27:09.026175"
+    },
+    {
+      "text": "On top of that, we can also use model versioning, for example, like uh,",
+      "start_time": 1161.84,
+      "end_time": 1169.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:27:16.623046"
+    },
+    {
+      "text": "This was the set of features or the set of hyper parameters we were using earlier.",
+      "start_time": 1169.4,
+      "end_time": 1174.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:27:21.425600"
+    },
+    {
+      "text": "If we change it now to this, what are the uplifts that are coming in our results part?",
+      "start_time": 1174.14,
+      "end_time": 1180.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:27:27.161668"
+    },
+    {
+      "text": "Right.",
+      "start_time": 1189.8,
+      "end_time": 1190.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:27:37.710677"
+    },
+    {
+      "text": "And this get automatically logged in our ML flow when we try to trace it back.",
+      "start_time": 1190.94,
+      "end_time": 1199.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:27:46.397576"
+    },
+    {
+      "text": "And the menu, like, why you are looking for a change?",
+      "start_time": 1201.74,
+      "end_time": 1205.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:27:52.163435"
+    },
+    {
+      "text": "Okay, so I'm looking for a change because currently I'm appearing for interviews because I designed from the math company last week.",
+      "start_time": 1207.2,
+      "end_time": 1215.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:02.741309"
+    },
+    {
+      "text": "And I resigned because the purpose that I think from a data science perspective was not being served over there.",
+      "start_time": 1215.48,
+      "end_time": 1224.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:11.358582"
+    },
+    {
+      "text": "They were not having projects and they kept on moving from one team to another.",
+      "start_time": 1224.18,
+      "end_time": 1229.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:17.128900"
+    },
+    {
+      "text": "And I saw that as a major hindrance to my learning in the data science domain.",
+      "start_time": 1229.88,
+      "end_time": 1236.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:22.877861"
+    },
+    {
+      "text": "So I think of quitting and moving on to new challenges you can hear.",
+      "start_time": 1236.24,
+      "end_time": 1241.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:28.630762"
+    },
+    {
+      "text": "Uh, yeah, I'm done with the interview process. Like, if you have any question, you can ask.",
+      "start_time": 1241.82,
+      "end_time": 1247.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:34.417737"
+    },
+    {
+      "text": "I think, uh, her from the rules in his birthday perspective, I am good to go.",
+      "start_time": 1248.48,
+      "end_time": 1254.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:41.134707"
+    },
+    {
+      "text": "Only if you can provide me a feedback about the interview.",
+      "start_time": 1254.12,
+      "end_time": 1258.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:45.899750"
+    },
+    {
+      "text": "Uh, that would help me manage it up and that, uh, employ me because.",
+      "start_time": 1258.68,
+      "end_time": 1263.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:50.707224"
+    },
+    {
+      "text": "Yeah, I mean, to Japan.",
+      "start_time": 1263.54,
+      "end_time": 1264.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:51.659071"
+    },
+    {
+      "text": "I mean to the my chat website.",
+      "start_time": 1264.86,
+      "end_time": 1266.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:53.571936"
+    },
+    {
+      "text": "Oh, sure, Akash.",
+      "start_time": 1266.96,
+      "end_time": 1269.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:28:56.442234"
+    },
+    {
+      "text": "Bye-bye.",
+      "start_time": 1272.18,
+      "end_time": 1273.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-04-30T16:29:00.297310"
+    }
+  ]
+}

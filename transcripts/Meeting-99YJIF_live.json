@@ -1,0 +1,1500 @@
+{
+  "session_name": "Meeting-99YJIF",
+  "started": "2026-06-10T10:58:51.559309",
+  "segments": [
+    {
+      "text": "Good morning.",
+      "start_time": 23.28,
+      "end_time": 24.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6675,
+      "timestamp": "2026-06-10T10:59:17.602077"
+    },
+    {
+      "text": "Hi, Vineet, is my voice Audible?",
+      "start_time": 22.5,
+      "end_time": 25.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.661,
+      "timestamp": "2026-06-10T10:59:18.604746"
+    },
+    {
+      "text": "Yeah, you are audible.",
+      "start_time": 25.14,
+      "end_time": 27.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7395,
+      "timestamp": "2026-06-10T10:59:20.487042"
+    },
+    {
+      "text": "Yeah, Vineet, good morning.",
+      "start_time": 28.08,
+      "end_time": 30.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.746,
+      "timestamp": "2026-06-10T10:59:23.390835"
+    },
+    {
+      "text": "Uh, I'm Akash here.",
+      "start_time": 30.06,
+      "end_time": 32.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.69325,
+      "timestamp": "2026-06-10T10:59:25.293727"
+    },
+    {
+      "text": "Can you briefly introduce yourself, then we will get started, yeah.",
+      "start_time": 32.1,
+      "end_time": 36.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8340000000000001,
+      "timestamp": "2026-06-10T10:59:29.169479"
+    },
+    {
+      "text": "Yeah, sure.",
+      "start_time": 36.3,
+      "end_time": 37.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.736,
+      "timestamp": "2026-06-10T10:59:30.061018"
+    },
+    {
+      "text": "Hi, Akash.",
+      "start_time": 37.02,
+      "end_time": 38.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.441,
+      "timestamp": "2026-06-10T10:59:31.980991"
+    },
+    {
+      "text": "So my name is Vineet, so I'm currently working as a lead data engineer with Extria, which provides consulting analytic services within the former commercial space.",
+      "start_time": 38.52,
+      "end_time": 47.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.868923076923077,
+      "timestamp": "2026-06-10T10:59:40.743210"
+    },
+    {
+      "text": "I have around 5 years of experience within data engineering. Prior to that, I've completed my bachelor's and master's for my ITBHUR Nasi.",
+      "start_time": 47.28,
+      "end_time": 55.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8534347826086958,
+      "timestamp": "2026-06-10T10:59:49.383585"
+    },
+    {
+      "text": "My expertise includes designing and developing scalability of plants and data analytic solutions, and proficient in sequel, Python, Pice Park, and have hands-on experience on data bricks, material.",
+      "start_time": 57.36,
+      "end_time": 70.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8129642857142855,
+      "timestamp": "2026-06-10T11:00:03.876264"
+    },
+    {
+      "text": "AW is another data tools and technologies.",
+      "start_time": 70.2,
+      "end_time": 73.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8678571428571429,
+      "timestamp": "2026-06-10T11:00:06.577617"
+    },
+    {
+      "text": "So in my day-to-day work, I work closely with cross-munctional teams and business stakeholders.",
+      "start_time": 73.38,
+      "end_time": 78.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9275,
+      "timestamp": "2026-06-10T11:00:12.376398"
+    },
+    {
+      "text": "to build robust data products that drive addition making within the farmer domain.",
+      "start_time": 78.84,
+      "end_time": 83.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8448461538461536,
+      "timestamp": "2026-06-10T11:00:17.133756"
+    },
+    {
+      "text": "So this is a little about my diagram.",
+      "start_time": 83.82,
+      "end_time": 86.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.861,
+      "timestamp": "2026-06-10T11:00:19.989979"
+    },
+    {
+      "text": "Regarding interview process, right?",
+      "start_time": 88.92,
+      "end_time": 93.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.89475,
+      "timestamp": "2026-06-10T11:00:26.741305"
+    },
+    {
+      "text": "I will try to cover section related to, uh, coding Jenny, I, Itabrics, Python, LLM, okay.",
+      "start_time": 93.3,
+      "end_time": 100.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7011249999999999,
+      "timestamp": "2026-06-10T11:00:33.538123"
+    },
+    {
+      "text": "Sure.",
+      "start_time": 100.08,
+      "end_time": 101.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.469,
+      "timestamp": "2026-06-10T11:00:35.342195"
+    },
+    {
+      "text": "So can you tell me like, if you can briefly explain, how would you use Python to implement robust access control and data security? With an AI analytics pipeline, handling sensitive insurance data, and what libraries are practiced, do you consider essential for this?",
+      "start_time": 100.32,
+      "end_time": 117.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8728409090909093,
+      "timestamp": "2026-06-10T11:00:51.006900"
+    },
+    {
+      "text": "So, uh, for uh, regarding the security aspect, so there would be uh, different aspects to it, like uh, we can have a role level, a security or a, uh, field level, since uh, let's say, um, If there are any sales teams, they should not be, uh,",
+      "start_time": 118.56,
+      "end_time": 143.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7396458333333332,
+      "timestamp": "2026-06-10T11:01:16.922840"
+    },
+    {
+      "text": "So I we can implement role level and also column level access controls.",
+      "start_time": 161.4,
+      "end_time": 166.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9048461538461539,
+      "timestamp": "2026-06-10T11:01:39.706591"
+    },
+    {
+      "text": "So he doesn't require write access.",
+      "start_time": 182.52,
+      "end_time": 185.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8781666666666667,
+      "timestamp": "2026-06-10T11:01:57.948578"
+    },
+    {
+      "text": "He would only require read access.",
+      "start_time": 185.1,
+      "end_time": 187.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8064999999999999,
+      "timestamp": "2026-06-10T11:02:00.802502"
+    },
+    {
+      "text": "So BI users would have a separate user group wherein we can assign only the read access to them.",
+      "start_time": 187.8,
+      "end_time": 195.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9432631578947369,
+      "timestamp": "2026-06-10T11:02:08.523563"
+    },
+    {
+      "text": "And there might be few users like who are developers and they would be reading both the read and write access.",
+      "start_time": 195.0,
+      "end_time": 201.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9392857142857145,
+      "timestamp": "2026-06-10T11:02:14.308481"
+    },
+    {
+      "text": "So overall, level access, full access, they can be granted.",
+      "start_time": 201.42,
+      "end_time": 205.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8819000000000001,
+      "timestamp": "2026-06-10T11:02:19.073513"
+    },
+    {
+      "text": "So, This is how I would implement the implement data security and access controls.",
+      "start_time": 205.8,
+      "end_time": 215.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8850714285714286,
+      "timestamp": "2026-06-10T11:02:28.657650"
+    },
+    {
+      "text": "Okay, and how do you use Python to design a semantic layer for insurance data, ensuring accurate, consistent fact tables and metrics for downstream AI or PIE application.",
+      "start_time": 214.26,
+      "end_time": 227.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8823928571428572,
+      "timestamp": "2026-06-10T11:02:41.301925"
+    },
+    {
+      "text": "No, no, semantically.",
+      "start_time": 238.14,
+      "end_time": 240.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5393333333333333,
+      "timestamp": "2026-06-10T11:02:53.617249"
+    },
+    {
+      "text": "Using Python, like, uh, you mean designing a semantic layer or a data model?",
+      "start_time": 231.54,
+      "end_time": 240.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8472142857142858,
+      "timestamp": "2026-06-10T11:02:53.666795"
+    },
+    {
+      "text": "Or if you wanted to use fact and dimension table here.",
+      "start_time": 249.48,
+      "end_time": 253.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9434545454545454,
+      "timestamp": "2026-06-10T11:03:07.073230"
+    },
+    {
+      "text": "Factable and metrics were downstreamier application.",
+      "start_time": 253.98,
+      "end_time": 257.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6763333333333333,
+      "timestamp": "2026-06-10T11:03:09.945526"
+    },
+    {
+      "text": "How do you do that?",
+      "start_time": 257.22,
+      "end_time": 258.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8846,
+      "timestamp": "2026-06-10T11:03:11.848235"
+    },
+    {
+      "text": "I had pasted the question as well in the chat.",
+      "start_time": 258.72,
+      "end_time": 260.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9249,
+      "timestamp": "2026-06-10T11:03:13.777905"
+    },
+    {
+      "text": "Sure.",
+      "start_time": 262.5,
+      "end_time": 264.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.565,
+      "timestamp": "2026-06-10T11:03:17.610243"
+    },
+    {
+      "text": "Healthcare insurance, you can take.",
+      "start_time": 291.78,
+      "end_time": 294.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7316,
+      "timestamp": "2026-06-10T11:03:47.401950"
+    },
+    {
+      "text": "So, like, if you are saying insurance data, like, can you let me know, like, what kind of data or what kind of like home?",
+      "start_time": 282.18,
+      "end_time": 294.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8462000000000001,
+      "timestamp": "2026-06-10T11:03:48.419478"
+    },
+    {
+      "text": "So, like, I would, I can think of it as a, uh, having a central fact table, which contains, uh, the insurance sales or insurance information.",
+      "start_time": 307.2,
+      "end_time": 321.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7941153846153846,
+      "timestamp": "2026-06-10T11:04:15.302978"
+    },
+    {
+      "text": "Apart from that, like I can have different dimension tables, one related to the uh, uh, different fields of insurance like uh, one related to the uh, insurance details.",
+      "start_time": 321.72,
+      "end_time": 333.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8334827586206898,
+      "timestamp": "2026-06-10T11:04:26.825859"
+    },
+    {
+      "text": "I would have be having a primary insurance ID, which would be linking to all the descriptive descriptive information of that insurance.",
+      "start_time": 333.54,
+      "end_time": 342.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9498636363636362,
+      "timestamp": "2026-06-10T11:04:36.377263"
+    },
+    {
+      "text": "Other would be the other entity would be the person like who person or the object that is insured.",
+      "start_time": 342.84,
+      "end_time": 348.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9458421052631579,
+      "timestamp": "2026-06-10T11:04:41.140554"
+    },
+    {
+      "text": "Like they would, they would the other factable, the other dimension table would include all the details, like the person or the object ID that has been insured.",
+      "start_time": 348.42,
+      "end_time": 356.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7866785714285714,
+      "timestamp": "2026-06-10T11:04:49.839387"
+    },
+    {
+      "text": "And all the descriptive data related to that.",
+      "start_time": 356.58,
+      "end_time": 360.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.899625,
+      "timestamp": "2026-06-10T11:04:53.631328"
+    },
+    {
+      "text": "So I can think of it as a.",
+      "start_time": 360.24,
+      "end_time": 363.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.916125,
+      "timestamp": "2026-06-10T11:04:57.445633"
+    },
+    {
+      "text": "And if we further wanted to, if we further warrant wanted to have more data related to that particular insurance policy or insure, or the entity, we could further go into a snowflake model where we can divide the dimension tables further into multiple related tables.",
+      "start_time": 363.96,
+      "end_time": 384.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9241304347826089,
+      "timestamp": "2026-06-10T11:05:17.850806"
+    },
+    {
+      "text": "And can you briefly describe how would you use Spice Park to implement lineage tracking for insurance data pipeline?",
+      "start_time": 384.6,
+      "end_time": 393.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8945263157894736,
+      "timestamp": "2026-06-10T11:05:26.319607"
+    },
+    {
+      "text": "Ensuring traceability, auditability, and compliance with a regulated environment.",
+      "start_time": 393.0,
+      "end_time": 398.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8287777777777778,
+      "timestamp": "2026-06-10T11:05:31.123470"
+    },
+    {
+      "text": "Also, we need, we can share me our screen.",
+      "start_time": 407.28,
+      "end_time": 411.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6311111111111112,
+      "timestamp": "2026-06-10T11:05:44.504119"
+    },
+    {
+      "text": "It would be great.",
+      "start_time": 411.06,
+      "end_time": 411.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7945,
+      "timestamp": "2026-06-10T11:05:45.445613"
+    },
+    {
+      "text": "Sure.",
+      "start_time": 412.38,
+      "end_time": 414.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.731,
+      "timestamp": "2026-06-10T11:05:47.335884"
+    },
+    {
+      "text": "So there is a share screen button not on mic button.",
+      "start_time": 426.9,
+      "end_time": 430.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7474545454545456,
+      "timestamp": "2026-06-10T11:06:03.718927"
+    },
+    {
+      "text": "So for lineage, tracking as such, like I have not implemented within Python as such, but in my experience, I have used DBT.",
+      "start_time": 448.14,
+      "end_time": 459.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8478260869565217,
+      "timestamp": "2026-06-10T11:06:32.583794"
+    },
+    {
+      "text": "So I have used DBT to create a lineage graph as such.",
+      "start_time": 481.56,
+      "end_time": 487.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.948,
+      "timestamp": "2026-06-10T11:07:00.362961"
+    },
+    {
+      "text": "But using Python, I haven't, uh, worked on ETH.",
+      "start_time": 487.02,
+      "end_time": 492.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.665,
+      "timestamp": "2026-06-10T11:07:06.124933"
+    },
+    {
+      "text": "Okay, okay, no problem.",
+      "start_time": 493.14,
+      "end_time": 494.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.4525,
+      "timestamp": "2026-06-10T11:07:07.058051"
+    },
+    {
+      "text": "Can you also explain me like, how would you use pandas to track and document sensitive data like any PII related information and through each stage of processing in large insurance data, ensuring compliance and auditability.",
+      "start_time": 494.22,
+      "end_time": 512.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9127222222222221,
+      "timestamp": "2026-06-10T11:07:25.494350"
+    },
+    {
+      "text": "How do you track and, I mean, do the documentation of the sensitive data?",
+      "start_time": 516.12,
+      "end_time": 522.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8858571428571428,
+      "timestamp": "2026-06-10T11:07:35.881549"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 529.86,
+      "end_time": 531.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7095,
+      "timestamp": "2026-06-10T11:07:44.499943"
+    },
+    {
+      "text": "So by tracking, you mean like what, what do we need to track and from compliance aspects like what all?",
+      "start_time": 524.94,
+      "end_time": 533.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8936,
+      "timestamp": "2026-06-10T11:07:46.476103"
+    },
+    {
+      "text": "So 1st you need to track all of these PII thing and then you need to see how you can further use it after tracking them.",
+      "start_time": 531.54,
+      "end_time": 540.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8980769230769234,
+      "timestamp": "2026-06-10T11:07:53.217457"
+    },
+    {
+      "text": "So that the sensitive information should not be parsed while processed.",
+      "start_time": 540.12,
+      "end_time": 544.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8722727272727275,
+      "timestamp": "2026-06-10T11:07:57.953188"
+    },
+    {
+      "text": "So, like, uh, Basically, there might be a few information which uh, related to any person or any identification, like numbers, like, the content details and other identification numbers.",
+      "start_time": 545.04,
+      "end_time": 564.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8114137931034481,
+      "timestamp": "2026-06-10T11:08:18.210692"
+    },
+    {
+      "text": "So for the complaints aspects related to GDPR and DPDP, so these need to be redacted or like they need to be so that the sensitive information is not accessible to any downstream users.",
+      "start_time": 564.6,
+      "end_time": 582.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9342647058823527,
+      "timestamp": "2026-06-10T11:08:35.547321"
+    },
+    {
+      "text": "So, Basically, what I would do is like, uh, I would, uh, there any sensitive information like contact information or any IDs.",
+      "start_time": 582.18,
+      "end_time": 592.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.804727272727273,
+      "timestamp": "2026-06-10T11:08:46.018074"
+    },
+    {
+      "text": "I can use any hash function to generate a to generate a particular unique value for each identifier.",
+      "start_time": 592.44,
+      "end_time": 602.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8798888888888889,
+      "timestamp": "2026-06-10T11:08:55.593904"
+    },
+    {
+      "text": "So in that way, I can, uh, I can, make the data, complain to various regulations and also.",
+      "start_time": 602.04,
+      "end_time": 616.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7861111111111111,
+      "timestamp": "2026-06-10T11:09:10.015522"
+    },
+    {
+      "text": "Okay, and how would you structure our data brakes or a snowflake data pipeline to support near near real time?",
+      "start_time": 613.44,
+      "end_time": 621.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8324,
+      "timestamp": "2026-06-10T11:09:14.823980"
+    },
+    {
+      "text": "Analytics on insurance claim, events, ensuring scalability and low latency.",
+      "start_time": 621.24,
+      "end_time": 627.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8863,
+      "timestamp": "2026-06-10T11:09:21.506260"
+    },
+    {
+      "text": "And tracking as well.",
+      "start_time": 627.96,
+      "end_time": 630.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8412499999999999,
+      "timestamp": "2026-06-10T11:09:23.374238"
+    },
+    {
+      "text": "Yeah, it is the same question, which I had asked.",
+      "start_time": 641.16,
+      "end_time": 644.46,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8535,
+      "timestamp": "2026-06-10T11:09:37.800080"
+    },
+    {
+      "text": "So again, there are 2 parts, 2 parts, like if we are working on Yeah.",
+      "start_time": 635.94,
+      "end_time": 646.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8635999999999999,
+      "timestamp": "2026-06-10T11:09:39.727135"
+    },
+    {
+      "text": "So, like, if we are implementing a batch, batch, pipeline, that's in ingestion or transformation pipeline.",
+      "start_time": 647.46,
+      "end_time": 655.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8019999999999999,
+      "timestamp": "2026-06-10T11:09:48.384339"
+    },
+    {
+      "text": "So, We, we should make sure that uh, There is no downtime and also like we, we would, we shouldn't.",
+      "start_time": 655.32,
+      "end_time": 668.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7115500000000001,
+      "timestamp": "2026-06-10T11:10:01.874895"
+    },
+    {
+      "text": "So to ensure scalability, like so that the pipeline doesn't break when there is a lodge when we are working with a huge amount of data.",
+      "start_time": 674.82,
+      "end_time": 684.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9706538461538462,
+      "timestamp": "2026-06-10T11:10:17.193612"
+    },
+    {
+      "text": "So this would reduce the downtime of the pipeline.",
+      "start_time": 699.66,
+      "end_time": 703.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9555555555555555,
+      "timestamp": "2026-06-10T11:10:37.283741"
+    },
+    {
+      "text": "Okay, uh, can you also tell me, like, how do you structure fact and dimension table and data brakes or a snowflake?",
+      "start_time": 737.76,
+      "end_time": 744.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7791818181818182,
+      "timestamp": "2026-06-10T11:11:17.682283"
+    },
+    {
+      "text": "To handle evolving insurance product definition and regulatory changes without disrupting downstream analytics.",
+      "start_time": 744.96,
+      "end_time": 753.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8923076923076922,
+      "timestamp": "2026-06-10T11:11:26.341938"
+    },
+    {
+      "text": "So first, we would need, uh, based on the use case.",
+      "start_time": 760.74,
+      "end_time": 765.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8107272727272729,
+      "timestamp": "2026-06-10T11:11:38.725245"
+    },
+    {
+      "text": "So we would need to, um, identify the changing and non-changing data.",
+      "start_time": 765.24,
+      "end_time": 773.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.81675,
+      "timestamp": "2026-06-10T11:11:47.425824"
+    },
+    {
+      "text": "So if the data keeps on changing, let's say we have sales table.",
+      "start_time": 773.88,
+      "end_time": 777.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9057692307692307,
+      "timestamp": "2026-06-10T11:11:51.253127"
+    },
+    {
+      "text": "So it's better to have sales data.",
+      "start_time": 777.72,
+      "end_time": 780.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9075714285714286,
+      "timestamp": "2026-06-10T11:11:53.138678"
+    },
+    {
+      "text": "It's better to have fact, fact, it's better to have the data in the fact table and the data which it does, which doesn't change or changes very, doesn't change very frequently.",
+      "start_time": 780.24,
+      "end_time": 794.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8811249999999999,
+      "timestamp": "2026-06-10T11:12:07.676894"
+    },
+    {
+      "text": "We can have them in the dimension demos.",
+      "start_time": 794.76,
+      "end_time": 796.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8817500000000001,
+      "timestamp": "2026-06-10T11:12:09.464566"
+    },
+    {
+      "text": "Let's say they are related to the insurance description information of the insurance insurance policy or let's say there are any contact details or demographic information of the users or any other identities related to the data.",
+      "start_time": 796.5,
+      "end_time": 812.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9699189189189188,
+      "timestamp": "2026-06-10T11:12:25.929225"
+    },
+    {
+      "text": "We can have them in the dimension tables.",
+      "start_time": 812.28,
+      "end_time": 814.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.939625,
+      "timestamp": "2026-06-10T11:12:27.691795"
+    },
+    {
+      "text": "Do you know what a slowly changing dimension is?",
+      "start_time": 819.6,
+      "end_time": 822.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7542222222222222,
+      "timestamp": "2026-06-10T11:12:35.410851"
+    },
+    {
+      "text": "Again, using data breaks like, uh, Like basically, uh, I mostly worked on.",
+      "start_time": 814.86,
+      "end_time": 823.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7112307692307691,
+      "timestamp": "2026-06-10T11:12:37.319394"
+    },
+    {
+      "text": "Yeah, I'm aware of it, yeah.",
+      "start_time": 824.7,
+      "end_time": 827.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8355,
+      "timestamp": "2026-06-10T11:12:40.178799"
+    },
+    {
+      "text": "Do you know what is slowly changing dimensions?",
+      "start_time": 823.68,
+      "end_time": 826.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9255,
+      "timestamp": "2026-06-10T11:12:40.189348"
+    },
+    {
+      "text": "What it is?",
+      "start_time": 827.64,
+      "end_time": 829.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7866666666666666,
+      "timestamp": "2026-06-10T11:12:42.085958"
+    },
+    {
+      "text": "Yes, I am aware of SCD, yeah.",
+      "start_time": 828.48,
+      "end_time": 831.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8348571428571427,
+      "timestamp": "2026-06-10T11:12:44.000171"
+    },
+    {
+      "text": "So, SCD, it is a, basically, It is a, uh, feature in data warehosing, which helps us to, uh, in which the dimensions change slowly rather than frequently.",
+      "start_time": 831.3,
+      "end_time": 846.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7548571428571428,
+      "timestamp": "2026-06-10T11:13:00.466775"
+    },
+    {
+      "text": "There are basically there are 4 types of SUDs in type 0, they once the data enters the data warehouse, it doesn't chain in type one.",
+      "start_time": 846.84,
+      "end_time": 857.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8679230769230768,
+      "timestamp": "2026-06-10T11:13:10.999184"
+    },
+    {
+      "text": "Like whenever there is a data change, the data is overwritten with and we lose the history of the changes. In type 2, what happens is for every change, we insert a new record, thereby keeping a history of the changes.",
+      "start_time": 857.4,
+      "end_time": 876.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8857804878048781,
+      "timestamp": "2026-06-10T11:13:30.252218"
+    },
+    {
+      "text": "And this can be implemented using, let's say, address of a address of a user changes.",
+      "start_time": 876.96,
+      "end_time": 885.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8857499999999999,
+      "timestamp": "2026-06-10T11:13:38.783188"
+    },
+    {
+      "text": "wherein we would be updating any new address that has been added, like the we can update the from column. And in type 3, what we do is like we just keep one previous value.",
+      "start_time": 899.1,
+      "end_time": 913.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8713428571428571,
+      "timestamp": "2026-06-10T11:14:06.695486"
+    },
+    {
+      "text": "It just, it just keeps, helps us keep a limited history and not track the entire history as such.",
+      "start_time": 913.08,
+      "end_time": 919.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9085789473684212,
+      "timestamp": "2026-06-10T11:14:13.302892"
+    },
+    {
+      "text": "So these are different types of SUD.",
+      "start_time": 919.98,
+      "end_time": 924.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9587142857142857,
+      "timestamp": "2026-06-10T11:14:17.124518"
+    },
+    {
+      "text": "Can you also, uh, tell me like, how would you design an evaluation frame, flavor to mint to monitor the accuracy and drift of a Gen AI powered insurance assistant in production environment?",
+      "start_time": 933.36,
+      "end_time": 944.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.792060606060606,
+      "timestamp": "2026-06-10T11:14:38.429716"
+    },
+    {
+      "text": "What kind of key metrics you will use and how do you regularly check them?",
+      "start_time": 945.42,
+      "end_time": 950.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8888666666666665,
+      "timestamp": "2026-06-10T11:14:44.057971"
+    },
+    {
+      "text": "Oh, you mean implementing data validation or data quality checks, right?",
+      "start_time": 954.0,
+      "end_time": 958.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8947272727272728,
+      "timestamp": "2026-06-10T11:14:51.696777"
+    },
+    {
+      "text": "Evaluation framework, evaluation framework, a mask.",
+      "start_time": 956.82,
+      "end_time": 960.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6816666666666666,
+      "timestamp": "2026-06-10T11:14:53.630661"
+    },
+    {
+      "text": "Invation.",
+      "start_time": 961.68,
+      "end_time": 963.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.414,
+      "timestamp": "2026-06-10T11:14:57.421417"
+    },
+    {
+      "text": "Like, what exactly, like, are we evaluating the data community or the?",
+      "start_time": 963.96,
+      "end_time": 968.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7096666666666667,
+      "timestamp": "2026-06-10T11:15:02.275414"
+    },
+    {
+      "text": "I had twisted the question on the chat.",
+      "start_time": 967.44,
+      "end_time": 969.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.771375,
+      "timestamp": "2026-06-10T11:15:03.236061"
+    },
+    {
+      "text": "And about insurance institute and production.",
+      "start_time": 971.82,
+      "end_time": 975.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.38883333333333336,
+      "timestamp": "2026-06-10T11:15:08.966988"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 990.96,
+      "end_time": 991.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6470000000000001,
+      "timestamp": "2026-06-10T11:15:25.309048"
+    },
+    {
+      "text": "So, I have not worked most, like, more on Gen A or this textual data, implement, or, Evacuation of genuine model.",
+      "start_time": 981.54,
+      "end_time": 993.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6996666666666668,
+      "timestamp": "2026-06-10T11:15:26.358390"
+    },
+    {
+      "text": "So I don't have much idea of it.",
+      "start_time": 993.3,
+      "end_time": 995.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.89025,
+      "timestamp": "2026-06-10T11:15:28.188931"
+    },
+    {
+      "text": "But I have worked on data quality and data validation from it, uh, within the data engineering purview, like I have used uh, uh, colibra platform for developing data quality or data validation jobs.",
+      "start_time": 995.04,
+      "end_time": 1011.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8516176470588235,
+      "timestamp": "2026-06-10T11:15:45.621828"
+    },
+    {
+      "text": "So that's what I've used, but I'm not, I'm not worked on LLM accuracy and all these things.",
+      "start_time": 1011.96,
+      "end_time": 1019.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8421666666666667,
+      "timestamp": "2026-06-10T11:15:53.204069"
+    },
+    {
+      "text": "And how do you uh, design our rack pipeline to to power a chat button, answer, regulatory ins- insurance cured.",
+      "start_time": 1020.3,
+      "end_time": 1030.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6598999999999998,
+      "timestamp": "2026-06-10T11:16:03.765286"
+    },
+    {
+      "text": "I mean, curious using both the structure and unstructured data.",
+      "start_time": 1030.38,
+      "end_time": 1033.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8719999999999999,
+      "timestamp": "2026-06-10T11:16:06.620412"
+    },
+    {
+      "text": "Did you work upon rack, retrieval and augment generation?",
+      "start_time": 1033.74,
+      "end_time": 1037.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8194444444444445,
+      "timestamp": "2026-06-10T11:16:10.452766"
+    },
+    {
+      "text": "Or not?",
+      "start_time": 1037.64,
+      "end_time": 1038.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.4605,
+      "timestamp": "2026-06-10T11:16:12.341458"
+    },
+    {
+      "text": "Heads.",
+      "start_time": 1041.84,
+      "end_time": 1043.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.327,
+      "timestamp": "2026-06-10T11:16:17.129639"
+    },
+    {
+      "text": "Mm-hmm. Okay.",
+      "start_time": 1043.7,
+      "end_time": 1044.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.4755,
+      "timestamp": "2026-06-10T11:16:18.092941"
+    },
+    {
+      "text": "Like, I have idea of Iraq, but hands-on, like I have very little experience, yeah.",
+      "start_time": 1038.12,
+      "end_time": 1045.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8197333333333333,
+      "timestamp": "2026-06-10T11:16:18.128790"
+    },
+    {
+      "text": "But I do have knowledge of Rambia.",
+      "start_time": 1045.32,
+      "end_time": 1048.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8228571428571428,
+      "timestamp": "2026-06-10T11:16:21.924849"
+    },
+    {
+      "text": "No problem.",
+      "start_time": 1048.98,
+      "end_time": 1050.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7645,
+      "timestamp": "2026-06-10T11:16:22.885886"
+    },
+    {
+      "text": "And uh, uh, how good you are in Python, Maino?",
+      "start_time": 1050.0,
+      "end_time": 1054.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5838,
+      "timestamp": "2026-06-10T11:16:27.730719"
+    },
+    {
+      "text": "Yeah, I'm good.",
+      "start_time": 1055.94,
+      "end_time": 1057.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8500000000000001,
+      "timestamp": "2026-06-10T11:16:30.576199"
+    },
+    {
+      "text": "I'm proficient and of any python.",
+      "start_time": 1057.8,
+      "end_time": 1059.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5949999999999999,
+      "timestamp": "2026-06-10T11:16:32.506497"
+    },
+    {
+      "text": "I can say 8 out of 10.",
+      "start_time": 1059.72,
+      "end_time": 1060.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9661428571428571,
+      "timestamp": "2026-06-10T11:16:34.405097"
+    },
+    {
+      "text": "Okay, so, If you are given a panda's data frame with columns like policy, uh, policy ID claim text.",
+      "start_time": 1058.04,
+      "end_time": 1069.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8123684210526315,
+      "timestamp": "2026-06-10T11:16:43.140451"
+    },
+    {
+      "text": "How do you write a Python code to extract all numbers, amount dates, or policy number from claim tax and add a new column extracted number as a list of string for each rose?",
+      "start_time": 1069.8,
+      "end_time": 1081.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8996176470588236,
+      "timestamp": "2026-06-10T11:16:54.726209"
+    },
+    {
+      "text": "Did you understand the question or not?",
+      "start_time": 1117.38,
+      "end_time": 1119.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.878857142857143,
+      "timestamp": "2026-06-10T11:17:32.990155"
+    },
+    {
+      "text": "I got the question.",
+      "start_time": 1120.08,
+      "end_time": 1122.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6025,
+      "timestamp": "2026-06-10T11:17:35.831756"
+    },
+    {
+      "text": "Basically, I can use some text processing or some NLP library to get the specific, let's say, if I wanted to get any date column, like, let's say.",
+      "start_time": 1122.36,
+      "end_time": 1138.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8976071428571427,
+      "timestamp": "2026-06-10T11:17:51.328831"
+    },
+    {
+      "text": "So I can use some NLP or text processing library to extract the date, specific date, specific date, date, dates from the text.",
+      "start_time": 1138.14,
+      "end_time": 1151.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8286086956521739,
+      "timestamp": "2026-06-10T11:18:04.723107"
+    },
+    {
+      "text": "And Again, append it into a list and have separate columns are hit.",
+      "start_time": 1151.28,
+      "end_time": 1158.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.851923076923077,
+      "timestamp": "2026-06-10T11:18:11.377526"
+    },
+    {
+      "text": "And for other policy or if we have any alpha numeric characters, let's say for policy numbers.",
+      "start_time": 1158.0,
+      "end_time": 1164.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8990588235294117,
+      "timestamp": "2026-06-10T11:18:18.137032"
+    },
+    {
+      "text": "Like I can specify some rejects, uh, like the policy numbers would be having some, uh, some format or some they would be footing into some rejects expression, right?",
+      "start_time": 1164.6,
+      "end_time": 1175.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8780689655172415,
+      "timestamp": "2026-06-10T11:18:28.744027"
+    },
+    {
+      "text": "So I can specify that rejects and get the policy numbers as well.",
+      "start_time": 1175.7,
+      "end_time": 1179.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9670769230769231,
+      "timestamp": "2026-06-10T11:18:32.499834"
+    },
+    {
+      "text": "And only for um, And getting only the numeric values for the amounts.",
+      "start_time": 1179.6,
+      "end_time": 1187.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8533076923076924,
+      "timestamp": "2026-06-10T11:18:41.162329"
+    },
+    {
+      "text": "So I can use to get, I can use the NLB function to get only the numeric values.",
+      "start_time": 1187.94,
+      "end_time": 1196.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9024444444444444,
+      "timestamp": "2026-06-10T11:18:49.817065"
+    },
+    {
+      "text": "And how would you?",
+      "start_time": 1198.5,
+      "end_time": 1200.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.64675,
+      "timestamp": "2026-06-10T11:18:53.617994"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1206.06,
+      "end_time": 1206.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.794,
+      "timestamp": "2026-06-10T11:18:59.348546"
+    },
+    {
+      "text": "And if you are given a panda's data frame with column, like policy, ID and regulation text, okay?",
+      "start_time": 1203.78,
+      "end_time": 1210.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8492222222222221,
+      "timestamp": "2026-06-10T11:19:03.286257"
+    },
+    {
+      "text": "Uh, how would you write Python code to extract all US state abbreviation like uh, NYCAA for Texas, TX, found in our regulation text, into a new column state mentioned as a list of unique abbreviation purpose.",
+      "start_time": 1210.02,
+      "end_time": 1226.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7995945945945946,
+      "timestamp": "2026-06-10T11:19:19.753015"
+    },
+    {
+      "text": "So, like, since the states are only a limited number, let's say there are around 50 or 51 states. So I can, I can have a list of all the abbreviations of the 50 states in one list.",
+      "start_time": 1255.02,
+      "end_time": 1271.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9087894736842105,
+      "timestamp": "2026-06-10T11:20:04.792340"
+    },
+    {
+      "text": "And in that way I can get.",
+      "start_time": 1296.12,
+      "end_time": 1299.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8344285714285714,
+      "timestamp": "2026-06-10T11:20:32.488196"
+    },
+    {
+      "text": "I can traverse to the entire text and get all the states that are presenting that unique, unique states leads that we have.",
+      "start_time": 1299.0,
+      "end_time": 1308.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.879304347826087,
+      "timestamp": "2026-06-10T11:20:42.146076"
+    },
+    {
+      "text": "That's one thing, one way I can think of.",
+      "start_time": 1308.6,
+      "end_time": 1310.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.883888888888889,
+      "timestamp": "2026-06-10T11:20:43.997950"
+    },
+    {
+      "text": "Okay, and can you let me know, like, how we can apply a Python function to a Panda column?",
+      "start_time": 1313.64,
+      "end_time": 1323.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8061052631578948,
+      "timestamp": "2026-06-10T11:20:56.590285"
+    },
+    {
+      "text": "So it depends on how we are defining the function.",
+      "start_time": 1331.82,
+      "end_time": 1336.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9776000000000001,
+      "timestamp": "2026-06-10T11:21:09.933751"
+    },
+    {
+      "text": "to the function and get and have it, have the function written a column more data frame, respectively.",
+      "start_time": 1353.96,
+      "end_time": 1362.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8390555555555557,
+      "timestamp": "2026-06-10T11:21:34.959637"
+    },
+    {
+      "text": "Okay, yeah.",
+      "start_time": 1366.92,
+      "end_time": 1368.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.573,
+      "timestamp": "2026-06-10T11:21:41.625630"
+    },
+    {
+      "text": "So these are the 2 ways that we can Use functions with penders.",
+      "start_time": 1362.0,
+      "end_time": 1368.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9236153846153846,
+      "timestamp": "2026-06-10T11:21:41.659855"
+    },
+    {
+      "text": "Okay, we need, I'm done with the interview process.",
+      "start_time": 1368.72,
+      "end_time": 1372.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7494444444444444,
+      "timestamp": "2026-06-10T11:21:45.495377"
+    },
+    {
+      "text": "Do you have any questions like we wanted to ask?",
+      "start_time": 1372.2,
+      "end_time": 1373.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8713000000000001,
+      "timestamp": "2026-06-10T11:21:47.390791"
+    },
+    {
+      "text": "So I wanted to know more about the role, like the, like I, like going through the job description, like uh, it is more of a AI engineer role and rather than data engineering.",
+      "start_time": 1377.12,
+      "end_time": 1390.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8639117647058823,
+      "timestamp": "2026-06-10T11:22:03.832549"
+    },
+    {
+      "text": "No, no, so this role is senior.",
+      "start_time": 1394.88,
+      "end_time": 1397.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7462857142857143,
+      "timestamp": "2026-06-10T11:22:11.389958"
+    },
+    {
+      "text": "So I wanted to know what part of it would be AI engineering and what what part of it would be pure data engineering.",
+      "start_time": 1390.68,
+      "end_time": 1398.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8994999999999997,
+      "timestamp": "2026-06-10T11:22:11.419304"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 1397.88,
+      "end_time": 1398.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7335,
+      "timestamp": "2026-06-10T11:22:12.325762"
+    },
+    {
+      "text": "So for this role, like, we are looking for someone who has experience and building machine learning, generative AI solution, with strong emphasis on conversational interfaces.",
+      "start_time": 1398.9,
+      "end_time": 1411.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8202692307692305,
+      "timestamp": "2026-06-10T11:22:24.947157"
+    },
+    {
+      "text": "Uh to include rag-based solution, chat assistance, all of this.",
+      "start_time": 1411.92,
+      "end_time": 1416.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7989,
+      "timestamp": "2026-06-10T11:22:29.656623"
+    },
+    {
+      "text": "And someone who has experience and CICT and someone who has experienced in doing any form of OCR for insurance document, advanced free ranker, all of these processes we are looking at.",
+      "start_time": 1416.84,
+      "end_time": 1433.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8331249999999998,
+      "timestamp": "2026-06-10T11:22:46.099952"
+    },
+    {
+      "text": "Yeah",
+      "start_time": 1436.16,
+      "end_time": 1439.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.435,
+      "timestamp": "2026-06-10T11:22:52.652561"
+    },
+    {
+      "text": "Okay. And the tech stack, what about the tech stack?",
+      "start_time": 1436.88,
+      "end_time": 1440.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5259,
+      "timestamp": "2026-06-10T11:22:53.628620"
+    },
+    {
+      "text": "Uh, for AWS side, we are using, I mean, for cloud side, we are using Google or tech CIEWSH maker.",
+      "start_time": 1439.76,
+      "end_time": 1447.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7583500000000001,
+      "timestamp": "2026-06-10T11:23:01.387196"
+    },
+    {
+      "text": "As your AI services, someone who has experience and get snowflake, spark, all of these tests there.",
+      "start_time": 1447.8,
+      "end_time": 1455.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.746764705882353,
+      "timestamp": "2026-06-10T11:23:08.095223"
+    },
+    {
+      "text": "Do you have any other questions?",
+      "start_time": 1459.08,
+      "end_time": 1461.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9356666666666666,
+      "timestamp": "2026-06-10T11:23:14.745256"
+    },
+    {
+      "text": "No, I think we are going.",
+      "start_time": 1461.18,
+      "end_time": 1463.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8458333333333332,
+      "timestamp": "2026-06-10T11:23:16.621599"
+    },
+    {
+      "text": "Yeah, thank you.",
+      "start_time": 1466.46,
+      "end_time": 1467.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7853333333333334,
+      "timestamp": "2026-06-10T11:23:20.472557"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1467.3,
+      "end_time": 1468.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.709,
+      "timestamp": "2026-06-10T11:23:21.443412"
+    }
+  ]
+}

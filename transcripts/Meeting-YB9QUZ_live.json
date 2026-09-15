@@ -1,0 +1,1104 @@
+{
+  "session_name": "Meeting-YB9QUZ",
+  "started": "2026-06-08T20:03:29.294075",
+  "segments": [
+    {
+      "text": "So receiving the question.",
+      "start_time": 0.0,
+      "end_time": 2.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.83075,
+      "timestamp": "2026-06-08T20:03:33.115111"
+    },
+    {
+      "text": "And you are able to understand what I'm trying to say.",
+      "start_time": 2.04,
+      "end_time": 4.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9134545454545453,
+      "timestamp": "2026-06-08T20:03:34.990206"
+    },
+    {
+      "text": "Uh-huh.",
+      "start_time": 4.98,
+      "end_time": 6.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.577,
+      "timestamp": "2026-06-08T20:03:37.765894"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 6.48,
+      "end_time": 7.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.428,
+      "timestamp": "2026-06-08T20:03:38.807071"
+    },
+    {
+      "text": "Can you share me on a screen and visit the link which I had shared with you?",
+      "start_time": 7.98,
+      "end_time": 11.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9177058823529413,
+      "timestamp": "2026-06-08T20:03:42.682238"
+    },
+    {
+      "text": "Should I share my screen?",
+      "start_time": 29.46,
+      "end_time": 31.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9582,
+      "timestamp": "2026-06-08T20:04:01.772999"
+    },
+    {
+      "text": "A little bit.",
+      "start_time": 53.64,
+      "end_time": 55.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.367,
+      "timestamp": "2026-06-08T20:04:26.731727"
+    },
+    {
+      "text": "See, after the video button, there is a share screen button.",
+      "start_time": 52.92,
+      "end_time": 57.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8606363636363636,
+      "timestamp": "2026-06-08T20:04:27.793937"
+    },
+    {
+      "text": "What it is saying?",
+      "start_time": 60.0,
+      "end_time": 60.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.76325,
+      "timestamp": "2026-06-08T20:04:31.612175"
+    },
+    {
+      "text": "Yes, but I. Mm, that's the 2nd.",
+      "start_time": 59.4,
+      "end_time": 65.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.63,
+      "timestamp": "2026-06-08T20:04:36.373871"
+    },
+    {
+      "text": "So, I don't know, for some reason, I'm, Not the security of my computer doesn't allow me.",
+      "start_time": 71.58,
+      "end_time": 81.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8444117647058823,
+      "timestamp": "2026-06-08T20:04:51.757382"
+    },
+    {
+      "text": "Okay, that is fine.",
+      "start_time": 80.04,
+      "end_time": 82.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.867,
+      "timestamp": "2026-06-08T20:04:52.733807"
+    },
+    {
+      "text": "Okay, so let us suppose like you are reviewing Python training is script, and you noticed heavily nested loops for pre-processing large data set.",
+      "start_time": 82.2,
+      "end_time": 91.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8891249999999999,
+      "timestamp": "2026-06-08T20:05:02.475524"
+    },
+    {
+      "text": "It work, but training takes hours.",
+      "start_time": 91.98,
+      "end_time": 95.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8263333333333334,
+      "timestamp": "2026-06-08T20:05:06.185896"
+    },
+    {
+      "text": "What refactoring approach would you consider in Python to improve performance before changing any hardware?",
+      "start_time": 95.16,
+      "end_time": 100.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8758666666666668,
+      "timestamp": "2026-06-08T20:05:11.025894"
+    },
+    {
+      "text": "I'd also pasted the question there in the quarter pattern.",
+      "start_time": 103.26,
+      "end_time": 106.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8034000000000001,
+      "timestamp": "2026-06-08T20:05:17.748755"
+    },
+    {
+      "text": "Many python, training, you scan was heavy nested slopes book, off the same car, it works.",
+      "start_time": 118.32,
+      "end_time": 124.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3103125,
+      "timestamp": "2026-06-08T20:05:34.960221"
+    },
+    {
+      "text": "But training takes over.",
+      "start_time": 124.2,
+      "end_time": 126.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.66,
+      "timestamp": "2026-06-08T20:05:37.791521"
+    },
+    {
+      "text": "So, there are a lot of approaches, such as the pyalism, uh, using some pythonic way.",
+      "start_time": 128.46,
+      "end_time": 137.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.80625,
+      "timestamp": "2026-06-08T20:05:48.453645"
+    },
+    {
+      "text": "So there are, um, tons of approaches to speed up the process.",
+      "start_time": 137.52,
+      "end_time": 145.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7952499999999999,
+      "timestamp": "2026-06-08T20:05:56.075535"
+    },
+    {
+      "text": "There are many.",
+      "start_time": 148.08,
+      "end_time": 149.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.762,
+      "timestamp": "2026-06-08T20:06:00.841767"
+    },
+    {
+      "text": "Okay, and what are those made?",
+      "start_time": 151.68,
+      "end_time": 154.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6255000000000001,
+      "timestamp": "2026-06-08T20:06:04.763897"
+    },
+    {
+      "text": "Titonic ways, intrigues. Hmm.",
+      "start_time": 150.48,
+      "end_time": 158.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5785,
+      "timestamp": "2026-06-08T20:06:09.472480"
+    },
+    {
+      "text": "I did this.",
+      "start_time": 158.52,
+      "end_time": 160.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8210000000000001,
+      "timestamp": "2026-06-08T20:06:10.407663"
+    },
+    {
+      "text": "I mean, Sometimes ago, but It's just a simple search for me, so yeah, I'm actually a university professor.",
+      "start_time": 160.32,
+      "end_time": 169.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8160526315789473,
+      "timestamp": "2026-06-08T20:06:20.112017"
+    },
+    {
+      "text": "I think is really easy for me to, uh,",
+      "start_time": 169.02,
+      "end_time": 173.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7536666666666666,
+      "timestamp": "2026-06-08T20:06:24.861700"
+    },
+    {
+      "text": "quickly diggle to these things if I see the actual problems and if I see the actual Uh.",
+      "start_time": 176.88,
+      "end_time": 184.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9237222222222221,
+      "timestamp": "2026-06-08T20:06:35.421865"
+    },
+    {
+      "text": "CPU Clark.",
+      "start_time": 184.68,
+      "end_time": 186.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6865,
+      "timestamp": "2026-06-08T20:06:37.298272"
+    },
+    {
+      "text": "The format, so. It's not a big deal.",
+      "start_time": 186.96,
+      "end_time": 190.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7618750000000001,
+      "timestamp": "2026-06-08T20:06:41.151274"
+    },
+    {
+      "text": "I don't remember at this point.",
+      "start_time": 190.86,
+      "end_time": 192.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9658333333333333,
+      "timestamp": "2026-06-08T20:06:43.083328"
+    },
+    {
+      "text": "Let us suppose a teammate wrought a data pipeline using Plain Python Liston 2.",
+      "start_time": 194.04,
+      "end_time": 199.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7348571428571429,
+      "timestamp": "2026-06-08T20:06:49.929922"
+    },
+    {
+      "text": "But the input size has grown significantly and memory issues start appearing.",
+      "start_time": 199.5,
+      "end_time": 203.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8825000000000002,
+      "timestamp": "2026-06-08T20:06:54.691948"
+    },
+    {
+      "text": "So how would you decide when to move part of the logic to number your partners and buy?",
+      "start_time": 203.88,
+      "end_time": 208.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8963333333333333,
+      "timestamp": "2026-06-08T20:06:59.496372"
+    },
+    {
+      "text": "Can you repeat the question?",
+      "start_time": 213.54,
+      "end_time": 215.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9377999999999999,
+      "timestamp": "2026-06-08T20:07:06.117061"
+    },
+    {
+      "text": "Oh, teammate.",
+      "start_time": 215.46,
+      "end_time": 217.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.47950000000000004,
+      "timestamp": "2026-06-08T20:07:08.048623"
+    },
+    {
+      "text": "I had I had already pasted there.",
+      "start_time": 214.8,
+      "end_time": 217.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7948571428571428,
+      "timestamp": "2026-06-08T20:07:08.098811"
+    },
+    {
+      "text": "Please unload.",
+      "start_time": 218.88,
+      "end_time": 221.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.62,
+      "timestamp": "2026-06-08T20:07:11.877168"
+    },
+    {
+      "text": "But the input has grown significant in our issue.",
+      "start_time": 221.94,
+      "end_time": 227.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7975555555555556,
+      "timestamp": "2026-06-08T20:07:18.603850"
+    },
+    {
+      "text": "How would you decide when to make parts of the? Yeah, I don't know.",
+      "start_time": 227.82,
+      "end_time": 236.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8362142857142857,
+      "timestamp": "2026-06-08T20:07:27.294478"
+    },
+    {
+      "text": "I, I didn't expect actually these kind of, Technical question.",
+      "start_time": 236.7,
+      "end_time": 243.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8289,
+      "timestamp": "2026-06-08T20:07:33.991396"
+    },
+    {
+      "text": "I'm educator.",
+      "start_time": 243.0,
+      "end_time": 244.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8005,
+      "timestamp": "2026-06-08T20:07:35.866861"
+    },
+    {
+      "text": "I'm actually direct, uh, AI lab, so I don't expect actually this kind of, you know, specifying and actuality.",
+      "start_time": 244.92,
+      "end_time": 256.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7129473684210527,
+      "timestamp": "2026-06-08T20:07:47.474362"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 256.44,
+      "end_time": 257.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.838,
+      "timestamp": "2026-06-08T20:07:48.343283"
+    },
+    {
+      "text": "And let us suppose, like, during model training, loss suddenly became N A N after a few epochs.",
+      "start_time": 257.64,
+      "end_time": 265.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7540555555555555,
+      "timestamp": "2026-06-08T20:07:56.181348"
+    },
+    {
+      "text": "Without assuming framework box, how would you debug this from data, pre-processing, gradient, learning rate, and implementation perspectives?",
+      "start_time": 265.08,
+      "end_time": 273.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8102222222222221,
+      "timestamp": "2026-06-08T20:08:03.884651"
+    },
+    {
+      "text": "There are many ways, so...",
+      "start_time": 275.46,
+      "end_time": 277.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7934,
+      "timestamp": "2026-06-08T20:08:08.509589"
+    },
+    {
+      "text": "Check the laws and I mean, uh, see if there are some uh, infinite things in, uh, that's some part of, uh, the objective function has some kind of regularizer or, you know, uh, change, um,",
+      "start_time": 277.98,
+      "end_time": 295.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7075277777777778,
+      "timestamp": "2026-06-08T20:08:25.963879"
+    },
+    {
+      "text": "Um, So many things, I think.",
+      "start_time": 295.5,
+      "end_time": 299.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6795,
+      "timestamp": "2026-06-08T20:08:30.592664"
+    },
+    {
+      "text": "So these are really, broad questions.",
+      "start_time": 299.64,
+      "end_time": 303.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7851666666666667,
+      "timestamp": "2026-06-08T20:08:33.482552"
+    },
+    {
+      "text": "I mean, uh, there are a lot of ways.",
+      "start_time": 303.06,
+      "end_time": 306.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8058888888888889,
+      "timestamp": "2026-06-08T20:08:37.342221"
+    },
+    {
+      "text": "to deal with a non-issue, uh,",
+      "start_time": 306.54,
+      "end_time": 310.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6575,
+      "timestamp": "2026-06-08T20:08:41.155322"
+    },
+    {
+      "text": "In the training objectives.",
+      "start_time": 310.56,
+      "end_time": 313.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.71875,
+      "timestamp": "2026-06-08T20:08:44.032964"
+    },
+    {
+      "text": "And if you inherit a neural network implementation, where accuracy look goods on training data, but validation performance is poor.",
+      "start_time": 315.06,
+      "end_time": 325.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8637499999999999,
+      "timestamp": "2026-06-08T20:08:55.726205"
+    },
+    {
+      "text": "So what part of the code and training pipeline would you inspect 1st before changing the model architecture?",
+      "start_time": 325.32,
+      "end_time": 331.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8868888888888891,
+      "timestamp": "2026-06-08T20:09:01.465554"
+    },
+    {
+      "text": "So, um, In terms of overfitting, so, um,",
+      "start_time": 334.86,
+      "end_time": 342.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.47662499999999997,
+      "timestamp": "2026-06-08T20:09:13.797198"
+    },
+    {
+      "text": "What parts of the code and training part?",
+      "start_time": 343.74,
+      "end_time": 347.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8112499999999999,
+      "timestamp": "2026-06-08T20:09:18.617611"
+    },
+    {
+      "text": "So there are We're training changing the modern architecture.",
+      "start_time": 347.7,
+      "end_time": 353.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.783888888888889,
+      "timestamp": "2026-06-08T20:09:24.404831"
+    },
+    {
+      "text": "I don't remember.",
+      "start_time": 362.4,
+      "end_time": 363.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.862,
+      "timestamp": "2026-06-08T20:09:33.939181"
+    },
+    {
+      "text": "These are really, really.",
+      "start_time": 363.42,
+      "end_time": 364.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6977500000000001,
+      "timestamp": "2026-06-08T20:09:34.901075"
+    },
+    {
+      "text": "Tiny questions.",
+      "start_time": 364.38,
+      "end_time": 366.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6875,
+      "timestamp": "2026-06-08T20:09:36.820336"
+    },
+    {
+      "text": "So these are for my students, but I can find it, you know, uh, I don't know.",
+      "start_time": 366.54,
+      "end_time": 372.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8573529411764705,
+      "timestamp": "2026-06-08T20:09:43.615806"
+    },
+    {
+      "text": "I don't remember at this time.",
+      "start_time": 372.84,
+      "end_time": 374.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9729999999999999,
+      "timestamp": "2026-06-08T20:09:44.504881"
+    },
+    {
+      "text": "While reviewing our Python notebook or Python Code Base, you see generator used heavily in the data loading layer.",
+      "start_time": 380.46,
+      "end_time": 387.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8194736842105262,
+      "timestamp": "2026-06-08T20:09:58.090527"
+    },
+    {
+      "text": "And then AI workflow, when would you prefer generator overloading everything into memory and what trade-off would you watch for?",
+      "start_time": 387.18,
+      "end_time": 395.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9103,
+      "timestamp": "2026-06-08T20:10:05.790497"
+    },
+    {
+      "text": "So I don't like to answer this kind of question, frankly, you know, I'm educated.",
+      "start_time": 398.22,
+      "end_time": 403.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8971333333333333,
+      "timestamp": "2026-06-08T20:10:14.317681"
+    },
+    {
+      "text": "I thought that this rule needs to guide and actual mentoring the people, uh, who take, you know, a nanodegree program and find questions, really.",
+      "start_time": 403.56,
+      "end_time": 413.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7773599999999999,
+      "timestamp": "2026-06-08T20:10:23.992869"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 415.08,
+      "end_time": 416.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.774,
+      "timestamp": "2026-06-08T20:10:27.800497"
+    },
+    {
+      "text": "So I don't.",
+      "start_time": 415.44,
+      "end_time": 417.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.886,
+      "timestamp": "2026-06-08T20:10:28.672996"
+    },
+    {
+      "text": "Like, no, yeah, yeah.",
+      "start_time": 416.94,
+      "end_time": 418.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.44525000000000003,
+      "timestamp": "2026-06-08T20:10:28.737398"
+    },
+    {
+      "text": "So that is no, no problem.",
+      "start_time": 418.26,
+      "end_time": 419.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7078333333333333,
+      "timestamp": "2026-06-08T20:10:30.657256"
+    },
+    {
+      "text": "Like if you are, if you are not comfortable with the question, you can just say, you can pause this question.",
+      "start_time": 419.64,
+      "end_time": 425.46,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8534761904761904,
+      "timestamp": "2026-06-08T20:10:36.460234"
+    },
+    {
+      "text": "Okay, then I will give you that another question.",
+      "start_time": 425.46,
+      "end_time": 427.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9077777777777778,
+      "timestamp": "2026-06-08T20:10:38.346428"
+    },
+    {
+      "text": "Will it work for you?",
+      "start_time": 427.98,
+      "end_time": 429.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9151999999999999,
+      "timestamp": "2026-06-08T20:10:40.253545"
+    },
+    {
+      "text": "Yeah, of course.",
+      "start_time": 428.28,
+      "end_time": 430.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8103333333333333,
+      "timestamp": "2026-06-08T20:10:41.129070"
+    },
+    {
+      "text": "So, Can you tell me like if a model is learning very slowly, even through the code run correctly?",
+      "start_time": 432.3,
+      "end_time": 440.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9313157894736842,
+      "timestamp": "2026-06-08T20:10:51.854477"
+    },
+    {
+      "text": "So how would you investigate whether the issue is related to feature scaling learning rate?",
+      "start_time": 440.94,
+      "end_time": 445.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9135333333333334,
+      "timestamp": "2026-06-08T20:10:56.616352"
+    },
+    {
+      "text": "Initialization or the math implementation itself.",
+      "start_time": 445.92,
+      "end_time": 450.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9678333333333334,
+      "timestamp": "2026-06-08T20:11:01.391776"
+    },
+    {
+      "text": "So again, I think these are technical questions.",
+      "start_time": 454.32,
+      "end_time": 458.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8845000000000001,
+      "timestamp": "2026-06-08T20:11:09.026993"
+    },
+    {
+      "text": "Okay, you...",
+      "start_time": 456.42,
+      "end_time": 458.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5685,
+      "timestamp": "2026-06-08T20:11:09.054360"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 458.04,
+      "end_time": 459.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8936666666666667,
+      "timestamp": "2026-06-08T20:11:10.012168"
+    },
+    {
+      "text": "Yeah, so, I can tell the student where to have to, I mean, uh, I actually have, you know.",
+      "start_time": 458.46,
+      "end_time": 466.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.823842105263158,
+      "timestamp": "2026-06-08T20:11:17.675017"
+    },
+    {
+      "text": "If she's student, a couple of the maths that I not got undergrad student.",
+      "start_time": 468.24,
+      "end_time": 473.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7451428571428572,
+      "timestamp": "2026-06-08T20:11:24.390908"
+    },
+    {
+      "text": "So when I face the issue, we have a lot of mechanism that helps to find the issue by themselves.",
+      "start_time": 473.52,
+      "end_time": 481.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8633000000000001,
+      "timestamp": "2026-06-08T20:11:32.115177"
+    },
+    {
+      "text": "So, uh, I would have a pipeline, uh, as a guideline in my lab, that, uh, I will point out where they have to find issues.",
+      "start_time": 481.08,
+      "end_time": 494.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8092307692307691,
+      "timestamp": "2026-06-08T20:11:45.565137"
+    },
+    {
+      "text": "Is there any great way to?",
+      "start_time": 494.7,
+      "end_time": 498.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8173333333333334,
+      "timestamp": "2026-06-08T20:11:49.315811"
+    },
+    {
+      "text": "I find the problem, but I don't micromanage them.",
+      "start_time": 498.54,
+      "end_time": 503.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.732111111111111,
+      "timestamp": "2026-06-08T20:11:54.121231"
+    },
+    {
+      "text": "I don't specifically exp-",
+      "start_time": 503.46,
+      "end_time": 506.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.81125,
+      "timestamp": "2026-06-08T20:11:57.018433"
+    },
+    {
+      "text": "I mean, explicitly tell them, hey, uh, in order to solve the overfitting issue, you need to go to this part of the court.",
+      "start_time": 506.52,
+      "end_time": 515.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7951666666666665,
+      "timestamp": "2026-06-08T20:12:06.667268"
+    },
+    {
+      "text": "I will try to manage them or handle them.",
+      "start_time": 515.88,
+      "end_time": 519.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9778888888888889,
+      "timestamp": "2026-06-08T20:12:10.428703"
+    },
+    {
+      "text": "I mean, handle the questions.",
+      "start_time": 519.48,
+      "end_time": 521.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9203999999999999,
+      "timestamp": "2026-06-08T20:12:12.381621"
+    },
+    {
+      "text": "So yeah, I think That's my strategy.",
+      "start_time": 521.4,
+      "end_time": 525.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9600000000000001,
+      "timestamp": "2026-06-08T20:12:16.227785"
+    },
+    {
+      "text": "Okay, so suppose, uh, in a real project, when would you choose to implement a custom training loop and pie torch instead of using a high level trainer abstraction and water tricks comes with it?",
+      "start_time": 525.18,
+      "end_time": 539.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8372571428571427,
+      "timestamp": "2026-06-08T20:12:29.844518"
+    },
+    {
+      "text": "So again, so I don't want to answer these kind of tiny questions.",
+      "start_time": 543.24,
+      "end_time": 547.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9213076923076924,
+      "timestamp": "2026-06-08T20:12:38.317919"
+    },
+    {
+      "text": "A general question regarding my mentoring ability or guiding the project, I would be happy to answer.",
+      "start_time": 547.38,
+      "end_time": 555.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9193529411764706,
+      "timestamp": "2026-06-08T20:12:45.997973"
+    },
+    {
+      "text": "So let us suppose you join our project where the training notebook works in a Jupiter notebook, but fields when converted into a production pipeline.",
+      "start_time": 556.14,
+      "end_time": 563.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8382799999999999,
+      "timestamp": "2026-06-08T20:12:54.738393"
+    },
+    {
+      "text": "So what common engineering issues do you usually see in such transition and how would you clean it up?",
+      "start_time": 563.76,
+      "end_time": 570.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9512631578947366,
+      "timestamp": "2026-06-08T20:13:01.438311"
+    },
+    {
+      "text": "Yeah, I would skip this, kind of, the questions.",
+      "start_time": 573.12,
+      "end_time": 576.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6714444444444445,
+      "timestamp": "2026-06-08T20:13:07.067598"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 575.4,
+      "end_time": 576.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6643333333333333,
+      "timestamp": "2026-06-08T20:13:07.134285"
+    },
+    {
+      "text": "no problem.",
+      "start_time": 576.84,
+      "end_time": 577.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.875,
+      "timestamp": "2026-06-08T20:13:08.094693"
+    },
+    {
+      "text": "Uh, so, yeah.",
+      "start_time": 577.56,
+      "end_time": 580.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.3746666666666667,
+      "timestamp": "2026-06-08T20:13:10.976028"
+    },
+    {
+      "text": "So what kind of role you are looking for, may I know?",
+      "start_time": 580.02,
+      "end_time": 582.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8762500000000001,
+      "timestamp": "2026-06-08T20:13:12.912987"
+    },
+    {
+      "text": "I am happy to work with the young and, you know, uh, people, I mean, I'm an educator.",
+      "start_time": 585.12,
+      "end_time": 593.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7938333333333334,
+      "timestamp": "2026-06-08T20:13:23.460666"
+    },
+    {
+      "text": "I actually a mentor at university and I work with the undergraduate student and also graduate student.",
+      "start_time": 593.04,
+      "end_time": 601.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.906764705882353,
+      "timestamp": "2026-06-08T20:13:32.088866"
+    },
+    {
+      "text": "I have also been.",
+      "start_time": 601.08,
+      "end_time": 603.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.875,
+      "timestamp": "2026-06-08T20:13:33.945395"
+    },
+    {
+      "text": "You know, a couple of years ago, I participated in autonomous driving, uh, uh, coach at Udosity.",
+      "start_time": 603.0,
+      "end_time": 610.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6930588235294118,
+      "timestamp": "2026-06-08T20:13:41.721201"
+    },
+    {
+      "text": "And I had a mentor and I learned how to interact with the people from that.",
+      "start_time": 610.74,
+      "end_time": 617.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9275,
+      "timestamp": "2026-06-08T20:13:48.413936"
+    },
+    {
+      "text": "Part of the things.",
+      "start_time": 617.82,
+      "end_time": 620.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.707,
+      "timestamp": "2026-06-08T20:13:51.222397"
+    },
+    {
+      "text": "But when I see a question in online platform, I can point out where they need to go and what are the possible options to find out by themselves instead of just directly providing the right answers.",
+      "start_time": 620.28,
+      "end_time": 639.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9487837837837837,
+      "timestamp": "2026-06-08T20:14:10.576492"
+    },
+    {
+      "text": "So, uh, a key rule of the mentor is not provided direct solution, but somehow encourage them to figure out by themselves in order to reinforce in their minds.",
+      "start_time": 639.54,
+      "end_time": 652.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9078620689655172,
+      "timestamp": "2026-06-08T20:14:24.035571"
+    },
+    {
+      "text": "So, I don't want to explicitly, hey, for example, line 85 of your code has some issues, but I can provide some guidance of, What are the best resources to search for the issues and especially, I mean, in the age of the Gen AI, so it doesn't make sense too much to,",
+      "start_time": 652.92,
+      "end_time": 679.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9053207547169811,
+      "timestamp": "2026-06-08T20:14:50.157085"
+    },
+    {
+      "text": "Micromanage people in terms of the programming and coding.",
+      "start_time": 679.44,
+      "end_time": 683.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9070000000000003,
+      "timestamp": "2026-06-08T20:14:54.619736"
+    },
+    {
+      "text": "So it doesn't make sense at all.",
+      "start_time": 683.82,
+      "end_time": 685.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8984285714285714,
+      "timestamp": "2026-06-08T20:14:56.509630"
+    },
+    {
+      "text": "But I can help them encourage them and motivate them to continue.",
+      "start_time": 685.74,
+      "end_time": 692.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9179166666666664,
+      "timestamp": "2026-06-08T20:15:03.259203"
+    },
+    {
+      "text": "Uh, and figure it out by themselves and that's my, no, yeah.",
+      "start_time": 692.28,
+      "end_time": 700.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7856666666666667,
+      "timestamp": "2026-06-08T20:15:10.965101"
+    },
+    {
+      "text": "Yeah, it is fine.",
+      "start_time": 702.42,
+      "end_time": 703.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.778,
+      "timestamp": "2026-06-08T20:15:13.873389"
+    },
+    {
+      "text": "So if you have any questions you can ask to me, otherwise I'm good to close this call.",
+      "start_time": 704.34,
+      "end_time": 707.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7987222222222221,
+      "timestamp": "2026-06-08T20:15:18.698310"
+    },
+    {
+      "text": "Thank you so much.",
+      "start_time": 709.32,
+      "end_time": 710.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.91075,
+      "timestamp": "2026-06-08T20:15:20.502217"
+    },
+    {
+      "text": "I don't have any questions.",
+      "start_time": 710.28,
+      "end_time": 711.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9756,
+      "timestamp": "2026-06-08T20:15:21.455899"
+    },
+    {
+      "text": "Yeah, thank you.",
+      "start_time": 710.82,
+      "end_time": 712.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7010000000000001,
+      "timestamp": "2026-06-08T20:15:23.453721"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 712.44,
+      "end_time": 713.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.85775,
+      "timestamp": "2026-06-08T20:15:23.463990"
+    },
+    {
+      "text": "Have a good head as well.",
+      "start_time": 713.1,
+      "end_time": 714.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8915000000000001,
+      "timestamp": "2026-06-08T20:15:24.417469"
+    },
+    {
+      "text": "Bye-bye.",
+      "start_time": 714.0,
+      "end_time": 714.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.789,
+      "timestamp": "2026-06-08T20:15:25.372403"
+    }
+  ]
+}

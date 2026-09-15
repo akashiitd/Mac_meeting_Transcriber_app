@@ -1,0 +1,1797 @@
+{
+  "session_name": "Meeting-TSQS33",
+  "started": "2026-08-16T08:14:24.286254",
+  "segments": [
+    {
+      "text": "in the data and designing the useful in the futures and slighting an appropriate model and validating whether the result actually creates business value.",
+      "start_time": 0.0,
+      "end_time": 9.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7338749999999999,
+      "timestamp": "2026-08-16T08:14:35.712515"
+    },
+    {
+      "text": "So, Yeah, that's a little about myself.",
+      "start_time": 9.18,
+      "end_time": 12.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7480000000000001,
+      "timestamp": "2026-08-16T08:14:38.492615"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 13.08,
+      "end_time": 14.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8867499999999999,
+      "timestamp": "2026-08-16T08:14:40.493818"
+    },
+    {
+      "text": "Uh, so, uh, Uh, regarding the interview process, right, I will try to cover section related to data science and uh, interpersonal skills, okay?",
+      "start_time": 14.22,
+      "end_time": 25.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7785000000000002,
+      "timestamp": "2026-08-16T08:14:52.144809"
+    },
+    {
+      "text": "So, I had shared you one link here in the chat.",
+      "start_time": 25.68,
+      "end_time": 31.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9082727272727275,
+      "timestamp": "2026-08-16T08:14:57.796681"
+    },
+    {
+      "text": "You can open that link as well as share me your screen as well.",
+      "start_time": 34.02,
+      "end_time": 37.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9201428571428572,
+      "timestamp": "2026-08-16T08:15:04.516630"
+    },
+    {
+      "text": "I will page the question there as well so that you will have an understanding like what it is all about.",
+      "start_time": 38.58,
+      "end_time": 46.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9196666666666666,
+      "timestamp": "2026-08-16T08:15:13.212207"
+    },
+    {
+      "text": "All right.",
+      "start_time": 48.0,
+      "end_time": 49.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.622,
+      "timestamp": "2026-08-16T08:15:15.932893"
+    },
+    {
+      "text": "Can you share me on a screen after opening the link?",
+      "start_time": 64.32,
+      "end_time": 67.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7919999999999999,
+      "timestamp": "2026-08-16T08:15:34.291456"
+    },
+    {
+      "text": "The link is there in the chat.",
+      "start_time": 73.62,
+      "end_time": 75.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9554285714285713,
+      "timestamp": "2026-08-16T08:15:41.938558"
+    },
+    {
+      "text": "Okay, so the 1st question is, like, if we train a model that perform well during experiment, but after release the business teams, his protection are not helping real decision.",
+      "start_time": 88.26,
+      "end_time": 101.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8449333333333334,
+      "timestamp": "2026-08-16T08:16:07.985867"
+    },
+    {
+      "text": "How would you investigate where the gap is?",
+      "start_time": 101.04,
+      "end_time": 104.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.91925,
+      "timestamp": "2026-08-16T08:16:10.746455"
+    },
+    {
+      "text": "It's from the bell.",
+      "start_time": 108.78,
+      "end_time": 111.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.31,
+      "timestamp": "2026-08-16T08:16:18.354527"
+    },
+    {
+      "text": "We are trying to improve.",
+      "start_time": 130.68,
+      "end_time": 131.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8474,
+      "timestamp": "2026-08-16T08:16:38.501507"
+    },
+    {
+      "text": "For example, a model can have a strong AUC, but that doesn't mean it's, you know, top predictions are precise enough for the team to act on.",
+      "start_time": 131.64,
+      "end_time": 141.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9036666666666667,
+      "timestamp": "2026-08-16T08:16:48.186660"
+    },
+    {
+      "text": "And I would check for training, serving skill, and did a drift and missing pressure features and differences between experimental and real world populations.",
+      "start_time": 141.24,
+      "end_time": 151.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8281666666666667,
+      "timestamp": "2026-08-16T08:16:57.820979"
+    },
+    {
+      "text": "So I also break down performers by customers, take email, and geography, and time period, and other important slices because the overall metric can hide, you know, a career performance in high value groups.",
+      "start_time": 151.14,
+      "end_time": 164.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7582352941176472,
+      "timestamp": "2026-08-16T08:17:11.283370"
+    },
+    {
+      "text": "And the next I would look at the calibration and decision thrashers to see whether the scores are being translated into access correctly.",
+      "start_time": 164.28,
+      "end_time": 173.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8581739130434781,
+      "timestamp": "2026-08-16T08:17:19.858656"
+    },
+    {
+      "text": "So I would say to it, the business users and observe how they actually consume the predictions because sometimes the model is accurate, but the opera arrives too late or it doesn't provide enough contest to support the decision. I've then defined a business metric, like conversion lift, and time saved or redist operational cost, and gonna control the pilot or AV test.",
+      "start_time": 173.04,
+      "end_time": 196.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8382063492063494,
+      "timestamp": "2026-08-16T08:17:43.259757"
+    },
+    {
+      "text": "So, you know, the global be to identify whether the gap comes from the data, and the model, and the structure, the way the operation is integrated into the box, sorry.",
+      "start_time": 196.08,
+      "end_time": 205.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8026129032258064,
+      "timestamp": "2026-08-16T08:17:51.570255"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 205.38,
+      "end_time": 205.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.762,
+      "timestamp": "2026-08-16T08:17:52.393007"
+    },
+    {
+      "text": "And if you receive a data set from multiple teams, and after a few weeks, you realize many fields are inconsistent missing or duplicated.",
+      "start_time": 206.28,
+      "end_time": 217.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.879625,
+      "timestamp": "2026-08-16T08:18:04.139641"
+    },
+    {
+      "text": "So before training anything, water step would you take and buy?",
+      "start_time": 217.8,
+      "end_time": 222.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8480000000000001,
+      "timestamp": "2026-08-16T08:18:08.856585"
+    },
+    {
+      "text": "Mm, all right, that's a correct question.",
+      "start_time": 224.1,
+      "end_time": 227.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6127142857142857,
+      "timestamp": "2026-08-16T08:18:14.497582"
+    },
+    {
+      "text": "So, uh, in a case, uh, we just do, Probably just to receive the data set for much for years, people trying anything, I propose and do a structure that a quality assessment.",
+      "start_time": 227.7,
+      "end_time": 239.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6640909090909092,
+      "timestamp": "2026-08-16T08:18:26.175402"
+    },
+    {
+      "text": "So 1st of all, I want to ask to profile every data set for schema differences, missing value rates, and duplicates, and inducted ranges, inconsistent categories, and touch them or kind of identify your mismatches. And they will meet the source teams to understand what trifle actually means and agree on, you know, financial definitions because, you know, chickalooms with the same name way represent the different business concepts.",
+      "start_time": 239.46,
+      "end_time": 266.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8098260869565218,
+      "timestamp": "2026-08-16T08:18:53.560445"
+    },
+    {
+      "text": "Subway establish a level primary key and duplicate records using exact match 5 1st and followed by the diminesti or fraud matching, you know, where necessary.",
+      "start_time": 266.16,
+      "end_time": 277.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7710384615384615,
+      "timestamp": "2026-08-16T08:19:03.573026"
+    },
+    {
+      "text": "So for missing values, I would investigate whether their render may cost by a pipeline issue, or means for business and signals, before deciding whether to impute their food lag or exclude them.",
+      "start_time": 277.08,
+      "end_time": 289.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7444848484848485,
+      "timestamp": "2026-08-16T08:19:16.106884"
+    },
+    {
+      "text": "And I've also checked for target leakage and correct upstairs and inconsistent, you know, training versus direction availability.",
+      "start_time": 289.08,
+      "end_time": 297.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7909444444444444,
+      "timestamp": "2026-08-16T08:19:24.650639"
+    },
+    {
+      "text": "After that, I would, you know, build reputable validation rules for schema, and uniqueness, completeness, and ranges, and about referential activity, and run those checks automatically in the pipeline.",
+      "start_time": 297.72,
+      "end_time": 309.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7426896551724137,
+      "timestamp": "2026-08-16T08:19:36.311616"
+    },
+    {
+      "text": "So finally, I would maybe diversion kind of the clean the data set and document every transformation.",
+      "start_time": 309.3,
+      "end_time": 315.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8747058823529411,
+      "timestamp": "2026-08-16T08:19:42.850851"
+    },
+    {
+      "text": "So the triming purchase is slowly, I think, reproducible and auditable.",
+      "start_time": 315.96,
+      "end_time": 319.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8504545454545455,
+      "timestamp": "2026-08-16T08:19:46.692248"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 329.64,
+      "end_time": 329.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.789,
+      "timestamp": "2026-08-16T08:19:56.414182"
+    },
+    {
+      "text": "And if a model shows a strong accuracy during during the training part, but when tested on fresh data from production.",
+      "start_time": 334.68,
+      "end_time": 343.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9104761904761903,
+      "timestamp": "2026-08-16T08:20:09.835097"
+    },
+    {
+      "text": "Performance drops a lot of how would you debug and whether the issue is data quality, feature design, or training strategy?",
+      "start_time": 343.44,
+      "end_time": 351.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8792857142857142,
+      "timestamp": "2026-08-16T08:20:17.536442"
+    },
+    {
+      "text": "Uh, actually, when it comes to taking off, uh, about, uh, use cases, actually, uh, 1st of all, our debug is systematically instead of just assuming the model is simply able footing.",
+      "start_time": 354.48,
+      "end_time": 367.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7263437499999998,
+      "timestamp": "2026-08-16T08:20:34.827053"
+    },
+    {
+      "text": "So 1st of all, I want us to confirm that the training and personal evaluation pipeline is the same prep processing and feature definitioners and units and category mappings and missing value head handling.",
+      "start_time": 367.74,
+      "end_time": 379.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8545588235294117,
+      "timestamp": "2026-08-16T08:20:46.344141"
+    },
+    {
+      "text": "And they have compared feature distributors using metrics like PSI or the KS statistic to identify the data drift and schema changes or unusual null rates.",
+      "start_time": 379.38,
+      "end_time": 392.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7765000000000002,
+      "timestamp": "2026-08-16T08:20:58.796375"
+    },
+    {
+      "text": "And I also validate the Prussian laborers because delayed and incomplete or incorrectly, joint outcomes can make performers appear worse that it really is.",
+      "start_time": 392.04,
+      "end_time": 401.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8478333333333331,
+      "timestamp": "2026-08-16T08:21:08.402429"
+    },
+    {
+      "text": "And then I would check for a leakage by conforming that every training feature would actually have been available at pretty soon time.",
+      "start_time": 401.52,
+      "end_time": 408.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8289999999999998,
+      "timestamp": "2026-08-16T08:21:15.029394"
+    },
+    {
+      "text": "So to evaluate the training process, I would use time-based personal editioning compared trading evolution clips and look for a large generalization gap.",
+      "start_time": 408.24,
+      "end_time": 419.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8193478260869567,
+      "timestamp": "2026-08-16T08:21:25.658930"
+    },
+    {
+      "text": "So I've also run future about Appalachian tests to identify features that perform value historically, but became as double impression.",
+      "start_time": 419.1,
+      "end_time": 428.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7743999999999999,
+      "timestamp": "2026-08-16T08:21:35.213037"
+    },
+    {
+      "text": "So, and then I would slash the others by time period and social system and customers segment and prediction confidence range to locate, you know, where the degradation is concentrated.",
+      "start_time": 428.64,
+      "end_time": 441.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8238666666666666,
+      "timestamp": "2026-08-16T08:21:47.786583"
+    },
+    {
+      "text": "So, you know, that purchase helps me separate the data quality programs from unstable feature, design, and training, serving secure, and generating model overfitting.",
+      "start_time": 441.18,
+      "end_time": 450.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6890833333333334,
+      "timestamp": "2026-08-16T08:21:57.332912"
+    },
+    {
+      "text": "yeah",
+      "start_time": 450.72,
+      "end_time": 450.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.616,
+      "timestamp": "2026-08-16T08:21:57.333734"
+    },
+    {
+      "text": "And if you join a project where multiple pre-processing scripts are written separately by different engineers. And no one trusts the output anymore.",
+      "start_time": 458.58,
+      "end_time": 469.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8926956521739129,
+      "timestamp": "2026-08-16T08:22:16.624976"
+    },
+    {
+      "text": "How would you improve the overall pipeline design?",
+      "start_time": 469.56,
+      "end_time": 471.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.844,
+      "timestamp": "2026-08-16T08:22:18.445440"
+    },
+    {
+      "text": "Um, all right.",
+      "start_time": 474.9,
+      "end_time": 476.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.45,
+      "timestamp": "2026-08-16T08:22:23.121224"
+    },
+    {
+      "text": "Uh, so I think, uh, just to, in order to adapt this kind of, uh, environments, um, uh, actually, in order to just to move the invert apartment design, our 1st map, the existing scripts, and they were able to appear and armor sheet, and where the results start to divorce.",
+      "start_time": 476.28,
+      "end_time": 494.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.678921568627451,
+      "timestamp": "2026-08-16T08:22:41.713315"
+    },
+    {
+      "text": "So, and then I thought, uh, financial schemer and clear, kind of, what, uh, data in a contract for each pipeline stage, including tires and required feelers and uniqueness rules and acceptable value ranges.",
+      "start_time": 494.7,
+      "end_time": 509.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7413235294117646,
+      "timestamp": "2026-08-16T08:22:56.004865"
+    },
+    {
+      "text": "And I've moved shared paper sassing larger into virgin and reasonable motors instead of allowing every engineer to maintain a separate implementation.",
+      "start_time": 509.1,
+      "end_time": 518.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.838090909090909,
+      "timestamp": "2026-08-16T08:23:05.496458"
+    },
+    {
+      "text": "So it would make each stage longer and either attempt.",
+      "start_time": 518.52,
+      "end_time": 521.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.585,
+      "timestamp": "2026-08-16T08:23:08.272617"
+    },
+    {
+      "text": "So you're not in the same data, you know, procedures produces the kind of statement results without threading duplicates.",
+      "start_time": 521.88,
+      "end_time": 529.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6963157894736842,
+      "timestamp": "2026-08-16T08:23:16.028639"
+    },
+    {
+      "text": "And also I will add it here, unit tests for individual transformations, and our integration tests across the stages, and automatic data quality tests for schema in arts and duplicates, and what the financial, uh, you know, integrity.",
+      "start_time": 529.02,
+      "end_time": 543.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7564473684210525,
+      "timestamp": "2026-08-16T08:23:29.621410"
+    },
+    {
+      "text": "So I'm actually virtually the code and kind of, you know, what configuration and input data sets and transformation metadata.",
+      "start_time": 543.24,
+      "end_time": 551.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8058,
+      "timestamp": "2026-08-16T08:23:38.113663"
+    },
+    {
+      "text": "We could actually reproduce any output and understand its lineage.",
+      "start_time": 551.28,
+      "end_time": 555.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8399999999999999,
+      "timestamp": "2026-08-16T08:23:41.890340"
+    },
+    {
+      "text": "And as for orchestration, I would use something like airflow or data police book floors to with explicit dependencies and retries a logging and failure alerts.",
+      "start_time": 555.36,
+      "end_time": 565.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7771538461538461,
+      "timestamp": "2026-08-16T08:23:51.567476"
+    },
+    {
+      "text": "Now, I also would connect those tests to CSCD.",
+      "start_time": 565.2,
+      "end_time": 569.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8892222222222222,
+      "timestamp": "2026-08-16T08:23:56.274919"
+    },
+    {
+      "text": "So, an engineer could not, you know, merge and change that silently bridge the stream leaders.",
+      "start_time": 569.58,
+      "end_time": 576.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7620625000000001,
+      "timestamp": "2026-08-16T08:24:03.044028"
+    },
+    {
+      "text": "I would, you know, watch, uh, migrate.",
+      "start_time": 576.18,
+      "end_time": 580.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6781428571428572,
+      "timestamp": "2026-08-16T08:24:06.852816"
+    },
+    {
+      "text": "I want mostly at a time and compare the new output against the existing baseline before switching portion upward.",
+      "start_time": 580.08,
+      "end_time": 586.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8491578947368419,
+      "timestamp": "2026-08-16T08:24:13.589413"
+    },
+    {
+      "text": "So that way, you know, the trust comes back to reproducibility in automatic validation and clear ownership than just people manually inspecting fires.",
+      "start_time": 586.68,
+      "end_time": 595.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8841304347826086,
+      "timestamp": "2026-08-16T08:24:22.286123"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 595.5,
+      "end_time": 595.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.721,
+      "timestamp": "2026-08-16T08:24:22.288530"
+    },
+    {
+      "text": "Uh, and if you are building any recommendation system, what users keep saying recommendation feel repetitive?",
+      "start_time": 602.22,
+      "end_time": 609.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8776875,
+      "timestamp": "2026-08-16T08:24:36.716328"
+    },
+    {
+      "text": "And not useful after sometimes.",
+      "start_time": 609.96,
+      "end_time": 612.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6996,
+      "timestamp": "2026-08-16T08:24:39.543315"
+    },
+    {
+      "text": "So how would you evaluate and improve such a system?",
+      "start_time": 612.9,
+      "end_time": 615.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9337,
+      "timestamp": "2026-08-16T08:24:42.435145"
+    },
+    {
+      "text": "All right, uh, actually, in regards to what, in case kind of, uh, if I'm building kind of recommendation system, um, 1st of all, our ability is more than just to click through the way rates because I think they're a repetitive recommendation system can still generate clicks while crediting our or long-term experience.",
+      "start_time": 617.4,
+      "end_time": 639.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7810185185185186,
+      "timestamp": "2026-08-16T08:25:06.743236"
+    },
+    {
+      "text": "So 1st of all, I will measure reverse metrics, like precision AK, and, you know, end this year, along with the diversity, and novelty, and, you know, catalog, and catalog coverage, and reputation rate, and user rotation.",
+      "start_time": 639.66,
+      "end_time": 653.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6642432432432432,
+      "timestamp": "2026-08-16T08:25:20.001841"
+    },
+    {
+      "text": "And I also segment the results by new versus returning users, because the coldest that probably is different from recommendation fatigue.",
+      "start_time": 653.4,
+      "end_time": 662.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.794904761904762,
+      "timestamp": "2026-08-16T08:25:29.472835"
+    },
+    {
+      "text": "Then I will review the candidate generation and the ranking stages to see whether popularity bias or the stale use of which are costing the same items to dominate.",
+      "start_time": 662.52,
+      "end_time": 673.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7871034482758622,
+      "timestamp": "2026-08-16T08:25:40.062599"
+    },
+    {
+      "text": "Uh, I would improve the jury presentation using recent behavior and time decorate a decade or negative feedback and certain contexts.",
+      "start_time": 673.08,
+      "end_time": 681.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6513333333333333,
+      "timestamp": "2026-08-16T08:25:48.684675"
+    },
+    {
+      "text": "So, actually, more too.",
+      "start_time": 681.78,
+      "end_time": 683.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.37649999999999995,
+      "timestamp": "2026-08-16T08:25:50.504344"
+    },
+    {
+      "text": "So this is the, or that ask the users a more interests change.",
+      "start_time": 683.82,
+      "end_time": 688.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6323076923076923,
+      "timestamp": "2026-08-16T08:25:55.349680"
+    },
+    {
+      "text": "And I was said, diversity overranking here and it kind of rules that limit the recently displayed or kind of highly similar items.",
+      "start_time": 688.44,
+      "end_time": 696.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8084347826086957,
+      "timestamp": "2026-08-16T08:26:03.052495"
+    },
+    {
+      "text": "So there are also for a controlled exploration, I might use a contextual band, you know, band-id approach.",
+      "start_time": 696.18,
+      "end_time": 703.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8301666666666665,
+      "timestamp": "2026-08-16T08:26:10.745192"
+    },
+    {
+      "text": "So, the system occasionally tastes new, uh, but in still relevant recommendations.",
+      "start_time": 703.8,
+      "end_time": 708.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7211666666666666,
+      "timestamp": "2026-08-16T08:26:15.521446"
+    },
+    {
+      "text": "And if I don't really have a renowned AB test using both short-term engagement and longer-term interests, such as, uh, repair, UC and conversion and retention.",
+      "start_time": 708.96,
+      "end_time": 719.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6373461538461538,
+      "timestamp": "2026-08-16T08:26:26.148944"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 727.32,
+      "end_time": 727.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.811,
+      "timestamp": "2026-08-16T08:26:34.664635"
+    },
+    {
+      "text": "And A lot of suppose, like, if your team created many feature for a supervised model, but no one is sure which one are actually contributing.",
+      "start_time": 736.68,
+      "end_time": 748.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8491538461538463,
+      "timestamp": "2026-08-16T08:26:54.995630"
+    },
+    {
+      "text": "So how would you approach understanding feature impact and improve model trust?",
+      "start_time": 748.68,
+      "end_time": 753.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9267499999999999,
+      "timestamp": "2026-08-16T08:26:59.733625"
+    },
+    {
+      "text": "All right.",
+      "start_time": 754.92,
+      "end_time": 756.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.52,
+      "timestamp": "2026-08-16T08:27:03.452489"
+    },
+    {
+      "text": "Uh, actually, uh, in this kind of, um, cases, uh, actually, it refers to what, uh, I understand the future impact, and upper style is a simple baseline, and comparing it against a useful,",
+      "start_time": 756.72,
+      "end_time": 772.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6061176470588235,
+      "timestamp": "2026-08-16T08:27:19.003806"
+    },
+    {
+      "text": "I mean, the full model.",
+      "start_time": 772.2,
+      "end_time": 773.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8696000000000002,
+      "timestamp": "2026-08-16T08:27:19.765027"
+    },
+    {
+      "text": "So we know how much value the additional features actually provide.",
+      "start_time": 773.4,
+      "end_time": 777.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9388181818181818,
+      "timestamp": "2026-08-16T08:27:23.652241"
+    },
+    {
+      "text": "And I would check for leakage and high collation and unstable, you know, missing needs and redundant features before interpreting importance.",
+      "start_time": 777.18,
+      "end_time": 786.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7998571428571429,
+      "timestamp": "2026-08-16T08:27:33.301035"
+    },
+    {
+      "text": "So for global impact, I will use our, you know, permutation, uh, importance and, you know, it's AP summary values to understood which features influence the model overall.",
+      "start_time": 786.48,
+      "end_time": 797.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7567500000000001,
+      "timestamp": "2026-08-16T08:27:43.936826"
+    },
+    {
+      "text": "So for individual traditions, I would use local SSAP explanations to show why the model produced a particular result.",
+      "start_time": 797.52,
+      "end_time": 805.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8259473684210527,
+      "timestamp": "2026-08-16T08:27:52.482743"
+    },
+    {
+      "text": "Uh, but, yeah, that kind of, Plan feature or feature group.",
+      "start_time": 813.24,
+      "end_time": 818.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7077272727272728,
+      "timestamp": "2026-08-16T08:28:04.942025"
+    },
+    {
+      "text": "at the time and measuring the change in validation performers.",
+      "start_time": 818.22,
+      "end_time": 822.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9304,
+      "timestamp": "2026-08-16T08:28:08.777931"
+    },
+    {
+      "text": "I would, I think it's really important to repeat the analysis across the constellation fields and time periods and customers seguments because, uh, you know, future importance can look very strong, but you still be unstable.",
+      "start_time": 822.36,
+      "end_time": 835.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8269722222222221,
+      "timestamp": "2026-08-16T08:28:22.357148"
+    },
+    {
+      "text": "As I would also review, you know, partial dependence or ICE plots to confirm the models and relationship with important features makes, uh, in a business sense.",
+      "start_time": 835.5,
+      "end_time": 846.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7397777777777778,
+      "timestamp": "2026-08-16T08:28:32.846912"
+    },
+    {
+      "text": "So if a feature adds very little, you know, value, duplicates another signal that will behave, like, inconsistently in production.",
+      "start_time": 846.0,
+      "end_time": 853.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.72345,
+      "timestamp": "2026-08-16T08:28:39.529642"
+    },
+    {
+      "text": "I will remove it and return a simpler model.",
+      "start_time": 853.32,
+      "end_time": 855.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8088888888888889,
+      "timestamp": "2026-08-16T08:28:41.395502"
+    },
+    {
+      "text": "And then I would document their selective features there in technicians and limitations and predation results in the model documentation. So the combination also statistical evidence and domain review and traditional level explanations usually improves in both model quality and stakeholders trust.",
+      "start_time": 855.3,
+      "end_time": 872.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.876166666666667,
+      "timestamp": "2026-08-16T08:28:58.906307"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 872.46,
+      "end_time": 872.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.784,
+      "timestamp": "2026-08-16T08:28:59.606409"
+    },
+    {
+      "text": "Can you also tell me like?",
+      "start_time": 879.3,
+      "end_time": 882.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8893333333333334,
+      "timestamp": "2026-08-16T08:29:09.309336"
+    },
+    {
+      "text": "We built an NLP pipeline for text classification, but the user generated content has spelling issues, mixed, mixed languages, and noisy input.",
+      "start_time": 883.26,
+      "end_time": 894.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8459545454545453,
+      "timestamp": "2026-08-16T08:29:20.950386"
+    },
+    {
+      "text": "How would you improve robustness in such cases?",
+      "start_time": 894.18,
+      "end_time": 896.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.936375,
+      "timestamp": "2026-08-16T08:29:22.759181"
+    },
+    {
+      "text": "Um, actually, in regards to, um, improved robustness in, you know, kind of the kind of, um, specifications of both again, by profiling the production, 1st to understand the carmen missing, uh, misspollings and languages and abbreviations, uh, emojis, and coded switching patterns.",
+      "start_time": 899.88,
+      "end_time": 919.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6261860465116278,
+      "timestamp": "2026-08-16T08:29:46.053376"
+    },
+    {
+      "text": "I would use language identification at the message and at sentence level, because, you know, mixed language content may require a metilingual purchasing path.",
+      "start_time": 932.82,
+      "end_time": 942.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7723749999999999,
+      "timestamp": "2026-08-16T08:30:09.821813"
+    },
+    {
+      "text": "So for the model, I'll prefer sub word-based transformer Transformers, such as a multilingual bird, or XMML R, because they handle misspalings are in unfamiliar words, better than, you know, world level, you know, motors.",
+      "start_time": 942.84,
+      "end_time": 956.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6858285714285716,
+      "timestamp": "2026-08-16T08:30:23.372416"
+    },
+    {
+      "text": "Oh, yeah.",
+      "start_time": 960.24,
+      "end_time": 960.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5095000000000001,
+      "timestamp": "2026-08-16T08:30:27.078202"
+    },
+    {
+      "text": "And I was really at their cap level features for highlight noise or done in specific tests.",
+      "start_time": 956.58,
+      "end_time": 964.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6609411764705884,
+      "timestamp": "2026-08-16T08:30:30.846252"
+    },
+    {
+      "text": "I will maintain separate evolution of fires.",
+      "start_time": 981.36,
+      "end_time": 984.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7054285714285714,
+      "timestamp": "2026-08-16T08:30:50.991081"
+    },
+    {
+      "text": "I mean, that kind of slices for each language, and noise category instead of lying only on one over a 5 score. For low competition producers, I would brought the text to your fallback model, or human review, rather than just forcing and potentially incorrect, you know, what classification.",
+      "start_time": 984.12,
+      "end_time": 1000.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7377346938775513,
+      "timestamp": "2026-08-16T08:31:06.631719"
+    },
+    {
+      "text": "And then our monitor language mix are out of vocabulary patterns and covers and per segment permer.",
+      "start_time": 1000.08,
+      "end_time": 1006.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7560588235294117,
+      "timestamp": "2026-08-16T08:31:13.135091"
+    },
+    {
+      "text": "So, they could retain, uh, train kind of when the input distribution changes.",
+      "start_time": 1006.74,
+      "end_time": 1011.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.634076923076923,
+      "timestamp": "2026-08-16T08:31:17.887951"
+    },
+    {
+      "text": "So the main idea is that it's true, you know, make the pipeline robots to realize the behavior without overcleaning the test and removing important signals.",
+      "start_time": 1011.24,
+      "end_time": 1019.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8602307692307691,
+      "timestamp": "2026-08-16T08:31:26.604476"
+    },
+    {
+      "text": "And uh, If you are asked to design a machine learning pipeline that can be reused by multiple team, what would you focus on to make it maintainable, testable, and easier to dework over time?",
+      "start_time": 1022.52,
+      "end_time": 1037.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8658571428571428,
+      "timestamp": "2026-08-16T08:31:44.986824"
+    },
+    {
+      "text": "Um, actually, uh, uh, actually, either to, uh, just to design a machine in popcorn, they can be just to conduced, uh, by, you know, multiple teams, of designing as a set of kind of small and modular stages of for industry and validation, if each engineering and chatting, a religion deployment.",
+      "start_time": 1040.88,
+      "end_time": 1059.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6433846153846154,
+      "timestamp": "2026-08-16T08:32:06.222344"
+    },
+    {
+      "text": "So it just that you will have a clear input and offered contract.",
+      "start_time": 1059.3,
+      "end_time": 1062.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7293846153846152,
+      "timestamp": "2026-08-16T08:32:09.757350"
+    },
+    {
+      "text": "So teams could replace the one component without breaking the entire parking lot.",
+      "start_time": 1062.84,
+      "end_time": 1066.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7696153846153846,
+      "timestamp": "2026-08-16T08:32:13.589824"
+    },
+    {
+      "text": "So I would just experiment tracking such as ML flooring to capture perimeters and metrics and artifacts and lineage.",
+      "start_time": 1095.54,
+      "end_time": 1103.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8354736842105265,
+      "timestamp": "2026-08-16T08:32:50.112360"
+    },
+    {
+      "text": "And as for debugging up at a structure logging and stage level metrics, and data snatures, include error messages, and loads that identify exactly where the pipeline will fail.",
+      "start_time": 1103.16,
+      "end_time": 1113.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7979655172413792,
+      "timestamp": "2026-08-16T08:33:00.747712"
+    },
+    {
+      "text": "And I also make their jobs identical tunes and support checkpointing so we could rerun only the failure stage instead of rebuilding everything.",
+      "start_time": 1113.72,
+      "end_time": 1121.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8083913043478262,
+      "timestamp": "2026-08-16T08:33:08.350254"
+    },
+    {
+      "text": "And then I would provide a documentation, example, configurations, and ownership guidelines, so the teams could adapt a pipeline consistently.",
+      "start_time": 1121.82,
+      "end_time": 1130.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8115499999999999,
+      "timestamp": "2026-08-16T08:33:17.034143"
+    },
+    {
+      "text": "So, you know, the key here is to crediting reusable interfaces while keeping every stage independently testable and of zotal and reproducible.",
+      "start_time": 1130.16,
+      "end_time": 1139.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7993636363636365,
+      "timestamp": "2026-08-16T08:33:25.644954"
+    },
+    {
+      "text": "Can you tell me a situation where you had to work with a group of uh, with a group to get a job done and what was it and what was your approach regarding it?",
+      "start_time": 1152.06,
+      "end_time": 1161.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9199142857142856,
+      "timestamp": "2026-08-16T08:33:48.772879"
+    },
+    {
+      "text": "Um, no, okay, so to talk about a time uh where actually I had to break with you kind of get kind of a job.",
+      "start_time": 1166.22,
+      "end_time": 1174.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.78992,
+      "timestamp": "2026-08-16T08:34:01.161042"
+    },
+    {
+      "text": "For example, with an interpressive rag and agent's 1st average on as such first.",
+      "start_time": 1174.2,
+      "end_time": 1179.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5389999999999999,
+      "timestamp": "2026-08-16T08:34:05.929516"
+    },
+    {
+      "text": "So the 1st day did quite a collaboration between data scientists, background engineers, and data engineers, and current managers, and security specialists, and CRU dominant experts.",
+      "start_time": 1179.18,
+      "end_time": 1189.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6837307692307694,
+      "timestamp": "2026-08-16T08:34:15.576170"
+    },
+    {
+      "text": "So one challenge was that each girl had a different priority and like retrieve quality and system latency and data permishers and other easier experience.",
+      "start_time": 1189.32,
+      "end_time": 1197.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.83852,
+      "timestamp": "2026-08-16T08:34:24.202492"
+    },
+    {
+      "text": "So my purchase was to 1st align everyone around one clear outcome, which was really, has been service agents find accurate and not authorized information faster.",
+      "start_time": 1197.84,
+      "end_time": 1208.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9077692307692308,
+      "timestamp": "2026-08-16T08:34:34.765390"
+    },
+    {
+      "text": "So then I divided the work into clear components and define their interfaces between them and then make sure each component had an owner.",
+      "start_time": 1208.1,
+      "end_time": 1215.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8989583333333333,
+      "timestamp": "2026-08-16T08:34:42.433441"
+    },
+    {
+      "text": "So I worked directly on the Python of Fashion API retrieval services like, well, you know, kind of coordinating this, or in a Russian, and did a pipeline in front and a security brick.",
+      "start_time": 1215.72,
+      "end_time": 1226.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6975588235294118,
+      "timestamp": "2026-08-16T08:34:53.060674"
+    },
+    {
+      "text": "So we held a short technical booking stations to dissolve the bookers, and I used to regulate damage to get feedback before they moved too far in the wrong direction.",
+      "start_time": 1226.16,
+      "end_time": 1235.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9049666666666666,
+      "timestamp": "2026-08-16T08:35:02.605759"
+    },
+    {
+      "text": "So my major issue was ensuring that the system never retrieved the records, they couldn't use the risk, not authorized to access.",
+      "start_time": 1235.64,
+      "end_time": 1242.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7050454545454545,
+      "timestamp": "2026-08-16T08:35:09.322665"
+    },
+    {
+      "text": "So I worked with the security and CRM teams to, you know, propagate the usual permission into the retrieval year, invalidate them through automated tests.",
+      "start_time": 1242.78,
+      "end_time": 1252.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7885199999999999,
+      "timestamp": "2026-08-16T08:35:18.913450"
+    },
+    {
+      "text": "So by working in it, it's relatively and keeping ownership clear, we deliver the reliable workflow that, you know, meets both their business and governance requirements that experience refers to for me that the festival timber is really about clear communication and shared accountability and addressing disagreements with evidence firm tests and usual feedback.",
+      "start_time": 1252.08,
+      "end_time": 1272.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8350370370370368,
+      "timestamp": "2026-08-16T08:35:39.381670"
+    },
+    {
+      "text": "And what is the last thing you have learned or taught yourself?",
+      "start_time": 1286.4,
+      "end_time": 1291.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9614166666666667,
+      "timestamp": "2026-08-16T08:35:58.314155"
+    },
+    {
+      "text": "Um, actually, um, to talk about things, um, things I have learned, uh, what, uh, I mean, From my experience, so the most recently I taught myself more deeply was how to evaluate, you know, authentic air workflers, not just to individual bond responses.",
+      "start_time": 1293.84,
+      "end_time": 1314.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7108636363636364,
+      "timestamp": "2026-08-16T08:36:20.571697"
+    },
+    {
+      "text": "So I already had experienced evaluating their system, but agents introduced additional failure points like incorrect tool selection and bed routing and repeated actions and incomplete task execution.",
+      "start_time": 1314.12,
+      "end_time": 1326.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8535714285714285,
+      "timestamp": "2026-08-16T08:36:32.911568"
+    },
+    {
+      "text": "So I studied by reviewing the frameworks and and then built a small language of folkflore with controller test cases and mocked tours and detroits and failures, nettiers.",
+      "start_time": 1326.3,
+      "end_time": 1335.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7745714285714287,
+      "timestamp": "2026-08-16T08:36:42.502097"
+    },
+    {
+      "text": "So I major things like task completion, rate, and toucal accuracy, and grandness, and letters and costs instead of just relying on one a little skirt.",
+      "start_time": 1335.9,
+      "end_time": 1345.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7714230769230769,
+      "timestamp": "2026-08-16T08:36:52.049069"
+    },
+    {
+      "text": "I understand it, translative logging, so I could see exactly, why are an agent to make the wrong decision?",
+      "start_time": 1345.8,
+      "end_time": 1351.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5926315789473684,
+      "timestamp": "2026-08-16T08:36:58.743683"
+    },
+    {
+      "text": "So I learned best by building something small and intentionally breaking it and then turning, you know, what I found into a reasonable task and design patterns.",
+      "start_time": 1351.86,
+      "end_time": 1362.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.921222222222222,
+      "timestamp": "2026-08-16T08:37:09.308955"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1362.36,
+      "end_time": 1362.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.458,
+      "timestamp": "2026-08-16T08:37:09.310943"
+    },
+    {
+      "text": "And can you tell me, like, what is your teaching experience still now?",
+      "start_time": 1369.44,
+      "end_time": 1374.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8232307692307693,
+      "timestamp": "2026-08-16T08:37:20.875338"
+    },
+    {
+      "text": "Um... Check about to change first, but I were speaking as a, um, personal image of engineering, I just to, you know, what's, I just drew you through kind of, you know, what, technical mentoring and applied, projected.",
+      "start_time": 1377.78,
+      "end_time": 1393.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6026842105263156,
+      "timestamp": "2026-08-16T08:37:40.191870"
+    },
+    {
+      "text": "So, uh, and also, before the average as a technical advice, right, inside data science, where I mental sellers and building machine learning and AR applications.",
+      "start_time": 1393.2,
+      "end_time": 1402.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6543461538461538,
+      "timestamp": "2026-08-16T08:37:48.697033"
+    },
+    {
+      "text": "So actually, they have them, by problem, framing and fish engineering and motor selection, and illnesses, and evaluation, tuning into search, approach and ready applications, and also review the data price and code, and API, time, and data pipelines, and deployment approach, and taking the pressure teachers.",
+      "start_time": 1402.2,
+      "end_time": 1421.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6379361702127662,
+      "timestamp": "2026-08-16T08:38:08.111447"
+    },
+    {
+      "text": "In my engineering rules, I've mentored our junior data scientists and software engineers through the code debuters and architecture seizures and hands on debugging.",
+      "start_time": 1421.16,
+      "end_time": 1430.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7375833333333333,
+      "timestamp": "2026-08-16T08:38:17.513413"
+    },
+    {
+      "text": "So much teaching style is really practical.",
+      "start_time": 1430.52,
+      "end_time": 1432.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8927142857142857,
+      "timestamp": "2026-08-16T08:38:19.303479"
+    },
+    {
+      "text": "So I usually explain their concept briefly and demonstrate it with a real example and then left their, well, let the person implement it while I provided guidance.",
+      "start_time": 1432.86,
+      "end_time": 1443.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8699285714285713,
+      "timestamp": "2026-08-16T08:38:29.970366"
+    },
+    {
+      "text": "And also, just a level of detail based on the person's background, because, you know, someone knew to person needs a different explanation than an engineer learning advice about evolution.",
+      "start_time": 1443.12,
+      "end_time": 1455.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7773,
+      "timestamp": "2026-08-16T08:38:42.462125"
+    },
+    {
+      "text": "So as for me, the coalition not just to solve the immediate issue, but to help the person understand their reasoning well enough to handle, you know, our smaller, uh, similar problem independently.",
+      "start_time": 1455.48,
+      "end_time": 1467.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8147878787878788,
+      "timestamp": "2026-08-16T08:38:54.028165"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1467.3,
+      "end_time": 1467.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.645,
+      "timestamp": "2026-08-16T08:38:54.029681"
+    },
+    {
+      "text": "Okay, can you tell us about any conflict at work and how did you resolve it?",
+      "start_time": 1472.46,
+      "end_time": 1477.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9614375,
+      "timestamp": "2026-08-16T08:39:04.545733"
+    },
+    {
+      "text": "Resolved that as well.",
+      "start_time": 1477.92,
+      "end_time": 1479.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7509999999999999,
+      "timestamp": "2026-08-16T08:39:05.466973"
+    },
+    {
+      "text": "Um, so, actually, during uh, my work in uh, when I just face kind of uh, conflicts, uh, one example, it happened that during our test 1st uh, rate person with the data science team and the security team disagreed about retrieval access.",
+      "start_time": 1482.6,
+      "end_time": 1499.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.673232558139535,
+      "timestamp": "2026-08-16T08:39:25.751477"
+    },
+    {
+      "text": "So, the data test team, when they brought a retrieval because it improved recall, and while the security was concerned to that, the model might expose records outside a, you know, user's commissions.",
+      "start_time": 1499.28,
+      "end_time": 1509.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6586969696969697,
+      "timestamp": "2026-08-16T08:39:36.265279"
+    },
+    {
+      "text": "So instead of trading it as a personal disagreement, I've heard, you know, both teams together and clarify that retrieval quality and data security were equally important requirements.",
+      "start_time": 1509.48,
+      "end_time": 1521.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8497142857142856,
+      "timestamp": "2026-08-16T08:39:48.705149"
+    },
+    {
+      "text": "So I prepared the passing the user's CRM permissions into the retrievalator and applying, you know, record level methodata filters before symmetric ranking.",
+      "start_time": 1521.72,
+      "end_time": 1531.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8463478260869566,
+      "timestamp": "2026-08-16T08:39:58.325445"
+    },
+    {
+      "text": "So we built a small prototype and tested with different roles and including intentionally, unauthorized, unauthorized the curiates.",
+      "start_time": 1531.38,
+      "end_time": 1539.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7907777777777778,
+      "timestamp": "2026-08-16T08:40:05.965734"
+    },
+    {
+      "text": "So the testing showed us where broad retrieval created risk and we're overly restrictive filtering, redistered useful results.",
+      "start_time": 1539.48,
+      "end_time": 1548.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8409444444444443,
+      "timestamp": "2026-08-16T08:40:14.592814"
+    },
+    {
+      "text": "So based on the evidence, we agreed on permission of your retrieval, and other logging and automatic access control test as to release requirements.",
+      "start_time": 1548.06,
+      "end_time": 1556.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.733625,
+      "timestamp": "2026-08-16T08:40:23.242399"
+    },
+    {
+      "text": "So I documented the decision and assigned in a clear ownership for maintaining their commission mappings and test cases.",
+      "start_time": 1556.34,
+      "end_time": 1564.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9031052631578946,
+      "timestamp": "2026-08-16T08:40:30.876697"
+    },
+    {
+      "text": "So the result of their conflicts because they're, because neither group had to simply, you know, give up its concern and the final design and support it, actually, that's supporting, you know, both the retrieval closer and security.",
+      "start_time": 1564.32,
+      "end_time": 1577.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.716157894736842,
+      "timestamp": "2026-08-16T08:40:44.461841"
+    },
+    {
+      "text": "So, yeah.",
+      "start_time": 1577.46,
+      "end_time": 1577.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.627,
+      "timestamp": "2026-08-16T08:40:44.465826"
+    },
+    {
+      "text": "Uh, one more question I have.",
+      "start_time": 1579.68,
+      "end_time": 1583.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7758333333333333,
+      "timestamp": "2026-08-16T08:40:50.118960"
+    },
+    {
+      "text": "Can you tell me like I describe?",
+      "start_time": 1583.16,
+      "end_time": 1584.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7648571428571429,
+      "timestamp": "2026-08-16T08:40:51.075181"
+    },
+    {
+      "text": "I mean, can you describe me a time when you had to give a personal, a personal difficult feedback?",
+      "start_time": 1584.84,
+      "end_time": 1589.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8973157894736842,
+      "timestamp": "2026-08-16T08:40:55.909516"
+    },
+    {
+      "text": "All right.",
+      "start_time": 1591.44,
+      "end_time": 1593.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.569,
+      "timestamp": "2026-08-16T08:40:59.632117"
+    },
+    {
+      "text": "That's a great question.",
+      "start_time": 1593.24,
+      "end_time": 1594.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.74075,
+      "timestamp": "2026-08-16T08:41:01.560511"
+    },
+    {
+      "text": "Very good show.",
+      "start_time": 1594.74,
+      "end_time": 1595.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5533333333333333,
+      "timestamp": "2026-08-16T08:41:02.487339"
+    },
+    {
+      "text": "So, um, To talk about the time when I just do, I got a chance to give uh, the average scan of really uh, difficult feedback.",
+      "start_time": 1595.76,
+      "end_time": 1604.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7074615384615387,
+      "timestamp": "2026-08-16T08:41:11.220436"
+    },
+    {
+      "text": "Actually, once, uh, um, you know what?",
+      "start_time": 1604.88,
+      "end_time": 1608.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5801428571428572,
+      "timestamp": "2026-08-16T08:41:14.988474"
+    },
+    {
+      "text": "I actually had a chance to give it back to the engineer 1st week, 1st really technically creative, but the code was difficult for the rest of the team to maintain.",
+      "start_time": 1608.12,
+      "end_time": 1616.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.743741935483871,
+      "timestamp": "2026-08-16T08:41:23.745331"
+    },
+    {
+      "text": "So, They're, you know, peppers, as logic was, as spirit occurs there, several northwests, and there were very few tests, and other engineers couldn't reliably reproduce the mole resorts.",
+      "start_time": 1616.82,
+      "end_time": 1628.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6400344827586205,
+      "timestamp": "2026-08-16T08:41:35.291152"
+    },
+    {
+      "text": "So I spoke with the person, you know, privately because I didn't want the feedback to feel embrassing or personal.",
+      "start_time": 1628.28,
+      "end_time": 1634.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8861000000000001,
+      "timestamp": "2026-08-16T08:41:40.957795"
+    },
+    {
+      "text": "So at 1st a close to what was working well, and especially the model about the approach and the speed at, which prototype it had been developed.",
+      "start_time": 1634.58,
+      "end_time": 1642.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6665555555555556,
+      "timestamp": "2026-08-16T08:41:49.647157"
+    },
+    {
+      "text": "And I explained the specific impact of the problem, including field handers, and inconsistent results, and the risk of freshing defects.",
+      "start_time": 1642.68,
+      "end_time": 1650.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8258571428571428,
+      "timestamp": "2026-08-16T08:41:57.309662"
+    },
+    {
+      "text": "So I used a concrete and a cut exam, and focused on the work industry, saying anything about the person's ability, and also asked for their perspective, and I learned that they have been, you know, kind of under pressure to deliver the initial prototype quickly.",
+      "start_time": 1650.54,
+      "end_time": 1668.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7858478260869566,
+      "timestamp": "2026-08-16T08:42:15.736557"
+    },
+    {
+      "text": "So we agreed on the plan to move the shared processing into reusable modules and out of tests and document the pipeline.",
+      "start_time": 1668.6,
+      "end_time": 1675.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8640454545454547,
+      "timestamp": "2026-08-16T08:42:22.233548"
+    },
+    {
+      "text": "So I paired with them on the 1st refactoring task and flood up, you know, through the cositive years, everything just to giving criticism and working away.",
+      "start_time": 1675.92,
+      "end_time": 1684.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7262962962962964,
+      "timestamp": "2026-08-16T08:42:30.941610"
+    },
+    {
+      "text": "So the result was a much more repreducible pipeline. And the engineer later, you know, what, apply the same structure to have the outer process.",
+      "start_time": 1684.38,
+      "end_time": 1692.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.76516,
+      "timestamp": "2026-08-16T08:42:38.601124"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1692.06,
+      "end_time": 1692.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.812,
+      "timestamp": "2026-08-16T08:42:39.438725"
+    },
+    {
+      "text": "And also, can you tell me about a time when you need to explain a complex topic to someone?",
+      "start_time": 1691.52,
+      "end_time": 1697.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9567368421052632,
+      "timestamp": "2026-08-16T08:42:44.390280"
+    },
+    {
+      "text": "Okay, uh, so to take about time, uh, it should be a need to explain their college to someone, um, actually, it depends on kind of cases.",
+      "start_time": 1700.04,
+      "end_time": 1711.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6843703703703705,
+      "timestamp": "2026-08-16T08:42:57.828259"
+    },
+    {
+      "text": "So, one example, one is where I explained the regular-based assistance to business and customer service state hurts as serves, who is really not technical.",
+      "start_time": 1711.14,
+      "end_time": 1719.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6504399999999998,
+      "timestamp": "2026-08-16T08:43:06.427099"
+    },
+    {
+      "text": "So they understood the business problem, but the cost is like, you know, embeddings and victory retrieval and ranking and grounded generation were unfamiliar with that.",
+      "start_time": 1719.72,
+      "end_time": 1728.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7929615384615384,
+      "timestamp": "2026-08-16T08:43:15.114705"
+    },
+    {
+      "text": "So I explained it using a library analog and launch instead of just starting with a mild architecture.",
+      "start_time": 1728.96,
+      "end_time": 1734.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8116666666666668,
+      "timestamp": "2026-08-16T08:43:21.787871"
+    },
+    {
+      "text": "So I said the language model is likely a long, in knowledgeable writer, but the refers to give is that writer, Most relevant and authorized the pages from our company library because we're asking people asking it to answer.",
+      "start_time": 1734.84,
+      "end_time": 1750.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8663589743589745,
+      "timestamp": "2026-08-16T08:43:37.334073"
+    },
+    {
+      "text": "So I then demonstrate one customer question ensured how the system searched the CRM records and knowledge articres, and filtered unauthorized the content and you kind of rank the results and generate the answer rate supporting soldiers.",
+      "start_time": 1750.5,
+      "end_time": 1763.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7899459459459459,
+      "timestamp": "2026-08-16T08:43:50.692861"
+    },
+    {
+      "text": "And also explain their limitations, including what happens when the source information is missing or the retrieval cost is really low.",
+      "start_time": 1763.64,
+      "end_time": 1771.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7647142857142856,
+      "timestamp": "2026-08-16T08:43:58.254724"
+    },
+    {
+      "text": "So after the explanation, the state holders were able to provide a useful feedback about the bookstore and cite teachers and escalation behavior.",
+      "start_time": 1771.56,
+      "end_time": 1779.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8250000000000001,
+      "timestamp": "2026-08-16T08:44:06.930188"
+    },
+    {
+      "text": "So my purchase to sell with our audiences problem in your familiar, familiar, and launch, and then introduce the technical details only when they help a person make the decision.",
+      "start_time": 1779.96,
+      "end_time": 1792.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7800333333333334,
+      "timestamp": "2026-08-16T08:44:19.435863"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1792.8,
+      "end_time": 1793.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.653,
+      "timestamp": "2026-08-16T08:44:19.437757"
+    },
+    {
+      "text": "Okay, so yeah, I'm done with the interview process.",
+      "start_time": 1793.94,
+      "end_time": 1797.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8873333333333332,
+      "timestamp": "2026-08-16T08:44:24.230966"
+    },
+    {
+      "text": "Do you have any questions like if you wanted to ask?",
+      "start_time": 1797.36,
+      "end_time": 1799.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9142727272727273,
+      "timestamp": "2026-08-16T08:44:26.142127"
+    },
+    {
+      "text": "So, uh, to talk about the, you know, we purchased how many rounds of, uh, NIVS will be expected for this position, how similar get the pick from your side?",
+      "start_time": 1799.82,
+      "end_time": 1809.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6955000000000002,
+      "timestamp": "2026-08-16T08:44:35.731619"
+    },
+    {
+      "text": "Oh, so I will provide the feedback today and there might be a couple of round of interviews moves after Congress.",
+      "start_time": 1808.22,
+      "end_time": 1816.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8436190476190477,
+      "timestamp": "2026-08-16T08:44:43.453990"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1819.86,
+      "end_time": 1821.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.736,
+      "timestamp": "2026-08-16T08:44:48.191469"
+    },
+    {
+      "text": "Okay, thank you.",
+      "start_time": 1821.3,
+      "end_time": 1822.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7026666666666667,
+      "timestamp": "2026-08-16T08:44:49.065532"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1822.62,
+      "end_time": 1823.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.719,
+      "timestamp": "2026-08-16T08:44:50.009404"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 1823.4,
+      "end_time": 1824.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.76125,
+      "timestamp": "2026-08-16T08:44:51.065854"
+    },
+    {
+      "text": "Bye- bye.",
+      "start_time": 1824.18,
+      "end_time": 1824.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.72,
+      "timestamp": "2026-08-16T08:44:51.074714"
+    },
+    {
+      "text": "Yeah, bye bye.",
+      "start_time": 1824.78,
+      "end_time": 1826.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6923333333333334,
+      "timestamp": "2026-08-16T08:44:52.899307"
+    },
+    {
+      "text": "Uh, so after this, uh, right, you will get one uh, feedback form, please fill that as well.",
+      "start_time": 1826.04,
+      "end_time": 1832.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7504444444444444,
+      "timestamp": "2026-08-16T08:44:58.798590"
+    }
+  ]
+}

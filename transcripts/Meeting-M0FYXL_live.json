@@ -1,0 +1,1275 @@
+{
+  "session_name": "Meeting-M0FYXL",
+  "started": "2026-06-19T15:02:54.024332",
+  "segments": [
+    {
+      "text": "audible.",
+      "start_time": 0.0,
+      "end_time": 1.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.688,
+      "timestamp": "2026-06-19T15:02:57.109532"
+    },
+    {
+      "text": "Can you please come on WebCam?",
+      "start_time": 1.14,
+      "end_time": 3.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.944,
+      "timestamp": "2026-06-19T15:02:58.986211"
+    },
+    {
+      "text": "Um, yeah, uh.",
+      "start_time": 3.66,
+      "end_time": 6.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5223333333333333,
+      "timestamp": "2026-06-19T15:03:02.823239"
+    },
+    {
+      "text": "Your. This is new for me, kind of, uh, just a second.",
+      "start_time": 8.4,
+      "end_time": 14.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6540833333333332,
+      "timestamp": "2026-06-19T15:03:10.521696"
+    },
+    {
+      "text": "Video, Canada.",
+      "start_time": 14.76,
+      "end_time": 16.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4065,
+      "timestamp": "2026-06-19T15:03:12.387537"
+    },
+    {
+      "text": "Am I visible to you?",
+      "start_time": 23.4,
+      "end_time": 25.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6874,
+      "timestamp": "2026-06-19T15:03:21.052145"
+    },
+    {
+      "text": "Not yet.",
+      "start_time": 26.64,
+      "end_time": 27.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.565,
+      "timestamp": "2026-06-19T15:03:22.992535"
+    },
+    {
+      "text": "If you will share me your screen, I think you might be visible to me.",
+      "start_time": 39.0,
+      "end_time": 42.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9376666666666665,
+      "timestamp": "2026-06-19T15:03:37.404965"
+    },
+    {
+      "text": "Okay, we know an entire screen.",
+      "start_time": 45.9,
+      "end_time": 50.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7538333333333332,
+      "timestamp": "2026-06-19T15:03:46.019344"
+    },
+    {
+      "text": "Show system audio.",
+      "start_time": 50.16,
+      "end_time": 52.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.781,
+      "timestamp": "2026-06-19T15:03:48.877808"
+    },
+    {
+      "text": "Uh, Meer, can you introduce yourself? Just click on return to full the screen.",
+      "start_time": 58.2,
+      "end_time": 63.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6740714285714285,
+      "timestamp": "2026-06-19T15:03:59.503410"
+    },
+    {
+      "text": "Yeah, um, I am a, a data science professional with uh, 5 plus years of experience, uh, building cross tab, uh, analytics, uh, end to end tool, then KPI-based dash goals, implementing machine learning model algorithms also.",
+      "start_time": 65.52,
+      "end_time": 82.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6894864864864867,
+      "timestamp": "2026-06-19T15:04:18.857157"
+    },
+    {
+      "text": "I have also worked on advanced analytic projects such as Marco chain-based customer journey projects.",
+      "start_time": 82.68,
+      "end_time": 90.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8930666666666665,
+      "timestamp": "2026-06-19T15:04:26.398276"
+    },
+    {
+      "text": "Then sentiment-based analysis on the social media platforms.",
+      "start_time": 90.66,
+      "end_time": 97.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.90225,
+      "timestamp": "2026-06-19T15:04:33.087922"
+    },
+    {
+      "text": "Uh, then I have all, I'm also working on uh, question and answer a retrieval project using uh, lang chain and track.",
+      "start_time": 97.08,
+      "end_time": 107.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7346363636363636,
+      "timestamp": "2026-06-19T15:04:42.717919"
+    },
+    {
+      "text": "I have completed post-graduation in machine learning and artificial intelligence.",
+      "start_time": 107.34,
+      "end_time": 113.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9564,
+      "timestamp": "2026-06-19T15:04:49.412987"
+    },
+    {
+      "text": "Uh, from Triple IT Bangalore and uh, BE in electronics and telecommunications from Mumbai University.",
+      "start_time": 113.7,
+      "end_time": 121.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7824666666666668,
+      "timestamp": "2026-06-19T15:04:57.125697"
+    },
+    {
+      "text": "Overall, I can say that I enjoy building machine learning and AI systems that generate business insights, visualizations that help the business take better decisions.",
+      "start_time": 121.38,
+      "end_time": 135.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.95656,
+      "timestamp": "2026-06-19T15:05:10.624259"
+    },
+    {
+      "text": "Okay okay.",
+      "start_time": 136.98,
+      "end_time": 137.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.34199999999999997,
+      "timestamp": "2026-06-19T15:05:13.390296"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 138.24,
+      "end_time": 138.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.659,
+      "timestamp": "2026-06-19T15:05:14.312383"
+    },
+    {
+      "text": "Okay, so we need regarding the interview process, right?",
+      "start_time": 140.58,
+      "end_time": 145.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7675555555555555,
+      "timestamp": "2026-06-19T15:05:21.100583"
+    },
+    {
+      "text": "I will try to go section it to sequel Python data science AI, everything.",
+      "start_time": 145.2,
+      "end_time": 149.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7895714285714286,
+      "timestamp": "2026-06-19T15:05:24.938662"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 150.48,
+      "end_time": 151.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.505,
+      "timestamp": "2026-06-19T15:05:26.790594"
+    },
+    {
+      "text": "Okay, so can you tell me like if your organization is considering integrating external data sources such as social media profile or public record to improve fraud detection capabilities?",
+      "start_time": 150.78,
+      "end_time": 162.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9673448275862069,
+      "timestamp": "2026-06-19T15:05:38.507590"
+    },
+    {
+      "text": "How do you approve this integration and what challenges you might face?",
+      "start_time": 162.9,
+      "end_time": 167.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8882499999999999,
+      "timestamp": "2026-06-19T15:05:43.180449"
+    },
+    {
+      "text": "Uh, like, um, uh, like in which system, like to be specific, uh, if I can ask.",
+      "start_time": 169.8,
+      "end_time": 178.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6725294117647058,
+      "timestamp": "2026-06-19T15:05:53.747202"
+    },
+    {
+      "text": "The system means.",
+      "start_time": 179.28,
+      "end_time": 180.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5483333333333332,
+      "timestamp": "2026-06-19T15:05:56.588547"
+    },
+    {
+      "text": "All I did, I did not get the question actually.",
+      "start_time": 181.26,
+      "end_time": 184.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8189,
+      "timestamp": "2026-06-19T15:06:00.424639"
+    },
+    {
+      "text": "Okay, so the question is, You are organization is considering integrating external data sources.",
+      "start_time": 184.44,
+      "end_time": 193.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9255000000000001,
+      "timestamp": "2026-06-19T15:06:09.117853"
+    },
+    {
+      "text": "Such as social media profile or public record, if proof fraud detection capabilities.",
+      "start_time": 193.44,
+      "end_time": 198.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8096923076923077,
+      "timestamp": "2026-06-19T15:06:13.900202"
+    },
+    {
+      "text": "How would you approve this integration and what challenges you might face?",
+      "start_time": 198.36,
+      "end_time": 202.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9156666666666665,
+      "timestamp": "2026-06-19T15:06:18.712281"
+    },
+    {
+      "text": "Uh, now, uh, basically the data sources that are, uh, uh, that needs to be considered, that we need to see now, uh, as of my experience, I have worked with uh, Twitter.",
+      "start_time": 205.44,
+      "end_time": 222.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7615454545454544,
+      "timestamp": "2026-06-19T15:06:37.999635"
+    },
+    {
+      "text": "I have extracted Twitter data, and Facebook data also.",
+      "start_time": 222.36,
+      "end_time": 227.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8648888888888888,
+      "timestamp": "2026-06-19T15:06:42.676812"
+    },
+    {
+      "text": "Then after bringing the to the data to the system, then we need to do the next processing.",
+      "start_time": 242.04,
+      "end_time": 250.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8647222222222223,
+      "timestamp": "2026-06-19T15:07:05.738655"
+    },
+    {
+      "text": "Okay, so can you tell me like if you need to?",
+      "start_time": 251.7,
+      "end_time": 255.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9185454545454547,
+      "timestamp": "2026-06-19T15:07:11.490134"
+    },
+    {
+      "text": "Enhance your fraud detection model by engineering. By future engineering from the existing transaction data.",
+      "start_time": 256.08,
+      "end_time": 264.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9064,
+      "timestamp": "2026-06-19T15:07:20.160017"
+    },
+    {
+      "text": "Can you describe some feature you would create and how they might improve model performance?",
+      "start_time": 264.3,
+      "end_time": 269.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9618,
+      "timestamp": "2026-06-19T15:07:24.957426"
+    },
+    {
+      "text": "Uh, no, basically the fraud detection case that you are telling that uh, in that, Art, uh, we need to uh, detect the fraud as more as possible and there should be no compromise in that.",
+      "start_time": 271.56,
+      "end_time": 289.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8373055555555555,
+      "timestamp": "2026-06-19T15:07:45.238381"
+    },
+    {
+      "text": "And for that, Case, uh, like we need to, um, like, uh, do the basic, um, this, uh, feature engineering that is uh, used in the machine learning.",
+      "start_time": 289.26,
+      "end_time": 306.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6883571428571428,
+      "timestamp": "2026-06-19T15:08:02.446258"
+    },
+    {
+      "text": "But after that, we need to 1st check whether the data is balanced or imbalanced in nature.",
+      "start_time": 306.66,
+      "end_time": 312.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9355882352941174,
+      "timestamp": "2026-06-19T15:08:08.141951"
+    },
+    {
+      "text": "Okay, what do you mean by data is balanced and balance and?",
+      "start_time": 311.82,
+      "end_time": 315.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7912500000000001,
+      "timestamp": "2026-06-19T15:08:11.989782"
+    },
+    {
+      "text": "Then, uh, Yeah, um, like, uh, when we have the target variable is in the imbalanced in nature, then we need to evaluate and process it differently, as compared to the ones, uh, which are normal in nature.",
+      "start_time": 312.42,
+      "end_time": 334.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8404210526315788,
+      "timestamp": "2026-06-19T15:08:30.398112"
+    },
+    {
+      "text": "So anyhow, like we need to detect the, uh, now this is the type of data where the target variable is the imbalanced in nature.",
+      "start_time": 352.38,
+      "end_time": 361.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9197199999999998,
+      "timestamp": "2026-06-19T15:08:57.142080"
+    },
+    {
+      "text": "So you're in this case, the evaluation metric accuracy won't be helpful in that case because it will show good accuracy above 90%.",
+      "start_time": 361.74,
+      "end_time": 373.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9464347826086958,
+      "timestamp": "2026-06-19T15:09:09.603178"
+    },
+    {
+      "text": "Uh, as the uh, the transactions are more of non-fraudulent in nature.",
+      "start_time": 373.56,
+      "end_time": 381.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7321666666666667,
+      "timestamp": "2026-06-19T15:09:17.251438"
+    },
+    {
+      "text": "As compared to the fraudulent.",
+      "start_time": 381.3,
+      "end_time": 383.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8042,
+      "timestamp": "2026-06-19T15:09:19.127413"
+    },
+    {
+      "text": "So we.",
+      "start_time": 383.52,
+      "end_time": 390.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.492,
+      "timestamp": "2026-06-19T15:09:25.821156"
+    },
+    {
+      "text": "And how old do you communicate, like, like a critical part of your role involved communicating complex fraud detection, which you have find, right?",
+      "start_time": 383.34,
+      "end_time": 392.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8447499999999998,
+      "timestamp": "2026-06-19T15:09:27.873489"
+    },
+    {
+      "text": "to a non-technicalist stakeholder.",
+      "start_time": 392.52,
+      "end_time": 394.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.852,
+      "timestamp": "2026-06-19T15:09:29.714285"
+    },
+    {
+      "text": "How would you present and explain your finding to ensure they are understood and actionable as well?",
+      "start_time": 394.5,
+      "end_time": 400.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9445294117647061,
+      "timestamp": "2026-06-19T15:09:36.490750"
+    },
+    {
+      "text": "And using that, along with the, I will get the coefficients from it.",
+      "start_time": 431.52,
+      "end_time": 437.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8798461538461539,
+      "timestamp": "2026-06-19T15:10:12.896670"
+    },
+    {
+      "text": "Now, the coefficients basically determine individually, which parameters are helping, or which parameters are actually, uh, uh, basically uh, not helping the, uh, fraudulent cases or uh, basically they are, um, what we can say.",
+      "start_time": 437.64,
+      "end_time": 460.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7583714285714288,
+      "timestamp": "2026-06-19T15:10:36.146809"
+    },
+    {
+      "text": "That is fine.",
+      "start_time": 463.5,
+      "end_time": 464.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.429,
+      "timestamp": "2026-06-19T15:10:39.790248"
+    },
+    {
+      "text": "Um, The case.",
+      "start_time": 460.86,
+      "end_time": 464.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.45766666666666667,
+      "timestamp": "2026-06-19T15:10:40.723310"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 464.76,
+      "end_time": 465.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.615,
+      "timestamp": "2026-06-19T15:10:40.734293"
+    },
+    {
+      "text": "And so since transaction, these occur at some unusual hour, these fraudland transaction, right?",
+      "start_time": 464.1,
+      "end_time": 472.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8447142857142855,
+      "timestamp": "2026-06-19T15:10:48.503153"
+    },
+    {
+      "text": "So can you tell me like how do you, uh, like if you have a transaction table in a database, how would you write a sickle query to find transaction made between midnight and 4 AM?",
+      "start_time": 472.98,
+      "end_time": 485.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8989722222222222,
+      "timestamp": "2026-06-19T15:11:01.042882"
+    },
+    {
+      "text": "Like from 12 AM to 4 AM.",
+      "start_time": 485.34,
+      "end_time": 487.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7998571428571429,
+      "timestamp": "2026-06-19T15:11:02.848895"
+    },
+    {
+      "text": "Uh, like there will be uh, this uh, timestamp column uh, uh, for the uh, transactions, right?",
+      "start_time": 489.36,
+      "end_time": 497.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6109411764705882,
+      "timestamp": "2026-06-19T15:11:13.439153"
+    },
+    {
+      "text": "Pay the transaction has happened.",
+      "start_time": 497.76,
+      "end_time": 499.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.825,
+      "timestamp": "2026-06-19T15:11:15.267224"
+    },
+    {
+      "text": "Okay, uh, This one.",
+      "start_time": 533.04,
+      "end_time": 538.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.39925,
+      "timestamp": "2026-06-19T15:11:54.680564"
+    },
+    {
+      "text": "Okay, uh,",
+      "start_time": 544.86,
+      "end_time": 546.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.4585,
+      "timestamp": "2026-06-19T15:12:02.336895"
+    },
+    {
+      "text": "Can you tell me like, Since I'm in transactions are occurring, right?",
+      "start_time": 546.42,
+      "end_time": 552.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8923333333333333,
+      "timestamp": "2026-06-19T15:12:08.156857"
+    },
+    {
+      "text": "So how would you analyze the transaction frequency?",
+      "start_time": 552.66,
+      "end_time": 557.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.95075,
+      "timestamp": "2026-06-19T15:12:12.931897"
+    },
+    {
+      "text": "So what I mean by it, like a common fraud indicator is an unusually high transaction frequency, right?",
+      "start_time": 557.34,
+      "end_time": 564.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9092222222222222,
+      "timestamp": "2026-06-19T15:12:20.651531"
+    },
+    {
+      "text": "So how do you write a sequel query to find user who have made more than 10 transaction in a single day using the transaction table?",
+      "start_time": 564.72,
+      "end_time": 572.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9358076923076925,
+      "timestamp": "2026-06-19T15:12:28.332004"
+    },
+    {
+      "text": "10 transaction.",
+      "start_time": 578.7,
+      "end_time": 579.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.817,
+      "timestamp": "2026-06-19T15:12:34.995414"
+    },
+    {
+      "text": "Using transaction table more than?",
+      "start_time": 575.16,
+      "end_time": 584.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7732,
+      "timestamp": "2026-06-19T15:12:39.790909"
+    },
+    {
+      "text": "A single user who have moved made more than 10 transactions in a single day.",
+      "start_time": 579.96,
+      "end_time": 585.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9146000000000001,
+      "timestamp": "2026-06-19T15:12:40.786748"
+    },
+    {
+      "text": "How would you write the sequel query for it?",
+      "start_time": 585.12,
+      "end_time": 588.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9556666666666666,
+      "timestamp": "2026-06-19T15:12:43.642022"
+    },
+    {
+      "text": "Yeah, only the account.",
+      "start_time": 606.12,
+      "end_time": 607.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7242500000000001,
+      "timestamp": "2026-06-19T15:13:02.840479"
+    },
+    {
+      "text": "Like, um, 10 transactions a day, then the, I will use, um, uh, no, only the, um, the count is expected over year, then, uh, the transaction takes, right?",
+      "start_time": 595.02,
+      "end_time": 608.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5963448275862068,
+      "timestamp": "2026-06-19T15:13:03.895797"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 607.5,
+      "end_time": 609.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6915,
+      "timestamp": "2026-06-19T15:13:04.737993"
+    },
+    {
+      "text": "User detail in the transaction detail.",
+      "start_time": 609.12,
+      "end_time": 611.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7961666666666667,
+      "timestamp": "2026-06-19T15:13:06.672472"
+    },
+    {
+      "text": "Okay, so then if the basic details, such as username and name then transaction, uh, uh, amount and uh, everything will be there.",
+      "start_time": 611.46,
+      "end_time": 624.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.826695652173913,
+      "timestamp": "2026-06-19T15:13:20.193360"
+    },
+    {
+      "text": "And I will be using Um, wear condition and um, I will limit it to 10 transactions and wear condition will include transaction equal to the day of the transaction when I want it.",
+      "start_time": 624.12,
+      "end_time": 645.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8920588235294116,
+      "timestamp": "2026-06-19T15:13:41.355700"
+    },
+    {
+      "text": "How good you are in Python, may I know?",
+      "start_time": 652.38,
+      "end_time": 654.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.856111111111111,
+      "timestamp": "2026-06-19T15:13:49.883461"
+    },
+    {
+      "text": "No, I have good skills.",
+      "start_time": 655.56,
+      "end_time": 658.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7966,
+      "timestamp": "2026-06-19T15:13:53.681868"
+    },
+    {
+      "text": "I have like good experience, yeah.",
+      "start_time": 658.26,
+      "end_time": 660.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8466666666666666,
+      "timestamp": "2026-06-19T15:13:55.586025"
+    },
+    {
+      "text": "Okay, can you write a Python code for this?",
+      "start_time": 663.3,
+      "end_time": 668.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8383333333333333,
+      "timestamp": "2026-06-19T15:14:04.314993"
+    },
+    {
+      "text": "You need to write a simple, uh, flask AP or you can also write fast API.",
+      "start_time": 668.28,
+      "end_time": 674.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8013125,
+      "timestamp": "2026-06-19T15:14:10.074912"
+    },
+    {
+      "text": "That predictive a transaction is fraud or not, using a pre-tain mush learning model, stored in a pickle format like fraud dot underscore model.",
+      "start_time": 674.76,
+      "end_time": 684.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7276666666666665,
+      "timestamp": "2026-06-19T15:14:19.758880"
+    },
+    {
+      "text": "I had pasted the question in the chart.",
+      "start_time": 684.06,
+      "end_time": 685.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9145,
+      "timestamp": "2026-06-19T15:14:21.568219"
+    },
+    {
+      "text": "On the left hand side, if you will see.",
+      "start_time": 685.68,
+      "end_time": 687.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7804444444444444,
+      "timestamp": "2026-06-19T15:14:23.493109"
+    },
+    {
+      "text": "There is one number, right?",
+      "start_time": 688.14,
+      "end_time": 690.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9458,
+      "timestamp": "2026-06-19T15:14:25.408562"
+    },
+    {
+      "text": "After the screenshot button.",
+      "start_time": 691.14,
+      "end_time": 694.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.82425,
+      "timestamp": "2026-06-19T15:14:30.205173"
+    },
+    {
+      "text": "And API should accept post request with transaction detail and written up prediction as well.",
+      "start_time": 703.56,
+      "end_time": 712.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8526666666666666,
+      "timestamp": "2026-06-19T15:14:48.501741"
+    },
+    {
+      "text": "Create a simple flask, PI that predicts if transaction is broadlent.",
+      "start_time": 714.96,
+      "end_time": 720.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6248181818181819,
+      "timestamp": "2026-06-19T15:14:56.113039"
+    },
+    {
+      "text": "Use a pre-trained machine learning model stored more.",
+      "start_time": 720.72,
+      "end_time": 730.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.731625,
+      "timestamp": "2026-06-19T15:15:06.685959"
+    },
+    {
+      "text": "and return on prediction.",
+      "start_time": 730.92,
+      "end_time": 733.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8694999999999999,
+      "timestamp": "2026-06-19T15:15:09.531286"
+    },
+    {
+      "text": "Did you work upon flask or fast API?",
+      "start_time": 742.86,
+      "end_time": 746.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.739375,
+      "timestamp": "2026-06-19T15:15:22.038006"
+    },
+    {
+      "text": "Yeah, I work on flask.",
+      "start_time": 746.88,
+      "end_time": 750.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8358000000000001,
+      "timestamp": "2026-06-19T15:15:25.852153"
+    },
+    {
+      "text": "Oh, not fast APA.",
+      "start_time": 750.06,
+      "end_time": 752.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.58475,
+      "timestamp": "2026-06-19T15:15:27.780519"
+    },
+    {
+      "text": "Like, should I write a function or a code for it?",
+      "start_time": 756.3,
+      "end_time": 761.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.806909090909091,
+      "timestamp": "2026-06-19T15:15:37.394931"
+    },
+    {
+      "text": "You can explain me your approach.",
+      "start_time": 760.44,
+      "end_time": 762.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9305,
+      "timestamp": "2026-06-19T15:15:38.362833"
+    },
+    {
+      "text": "No problem.",
+      "start_time": 762.42,
+      "end_time": 762.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.659,
+      "timestamp": "2026-06-19T15:15:38.370518"
+    },
+    {
+      "text": "Yeah, now, um, the, I, we have written a fraud model dot TKL.",
+      "start_time": 768.54,
+      "end_time": 775.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5784615384615384,
+      "timestamp": "2026-06-19T15:15:50.878712"
+    },
+    {
+      "text": "So, uh, while training our data and uh, when we we finalize, we, you, we, we save the model uh, into the PKL file.",
+      "start_time": 775.38,
+      "end_time": 784.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6635833333333333,
+      "timestamp": "2026-06-19T15:16:00.487048"
+    },
+    {
+      "text": "Like scaling and then if we want to fill or fill with null values or anything, that we can do.",
+      "start_time": 813.24,
+      "end_time": 822.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8893000000000002,
+      "timestamp": "2026-06-19T15:16:37.880545"
+    },
+    {
+      "text": "And how would you write a Python function using K means clustering to group transaction into cluster, assuming data frame include feature like transaction amount, merchandise and transaction type.",
+      "start_time": 844.32,
+      "end_time": 858.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9155862068965516,
+      "timestamp": "2026-06-19T15:17:14.493935"
+    },
+    {
+      "text": "Okay, means custering.",
+      "start_time": 861.96,
+      "end_time": 864.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.574,
+      "timestamp": "2026-06-19T15:17:20.094654"
+    },
+    {
+      "text": "Have you worked upon KB's clustering?",
+      "start_time": 864.42,
+      "end_time": 867.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7548333333333334,
+      "timestamp": "2026-06-19T15:17:23.014012"
+    },
+    {
+      "text": "No, like I know the concept of it, but like I haven't worked practically yet.",
+      "start_time": 867.36,
+      "end_time": 873.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9321333333333333,
+      "timestamp": "2026-06-19T15:17:29.734311"
+    },
+    {
+      "text": "Uh, like, decreasing from like steep to uh, uh, to uh, like uh, uh, to normal, and that point where we get that is called the uh, elbow point, uh, we take that number of clusters into consideration.",
+      "start_time": 903.06,
+      "end_time": 922.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7388157894736842,
+      "timestamp": "2026-06-19T15:18:17.869618"
+    },
+    {
+      "text": "And can you tell me, like, how would you write and sequel query to find merchant with a high rate of fraudulent transaction?",
+      "start_time": 934.68,
+      "end_time": 942.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8491739130434783,
+      "timestamp": "2026-06-19T15:18:37.943411"
+    },
+    {
+      "text": "Assuming you have a table named merchant transaction with call a merchandise transaction ID, and there is a is fraud column in terms of binary value, 0 and one.",
+      "start_time": 942.24,
+      "end_time": 953.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9074137931034479,
+      "timestamp": "2026-06-19T15:18:49.545398"
+    },
+    {
+      "text": "Might as equal query to find merchants with high rate of rudland transactions.",
+      "start_time": 958.26,
+      "end_time": 964.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6806153846153845,
+      "timestamp": "2026-06-19T15:18:59.942145"
+    },
+    {
+      "text": "High rate of fraudulent transactions.",
+      "start_time": 1000.38,
+      "end_time": 1003.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.899,
+      "timestamp": "2026-06-19T15:19:39.279839"
+    },
+    {
+      "text": "Merchant ID and transaction ID and uh, Like, uh, do we have, we will, we having a column, they, a column right for that?",
+      "start_time": 1010.64,
+      "end_time": 1023.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7556666666666666,
+      "timestamp": "2026-06-19T15:19:58.615011"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 1022.88,
+      "end_time": 1023.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.62,
+      "timestamp": "2026-06-19T15:19:59.463081"
+    },
+    {
+      "text": "We have this column, right?",
+      "start_time": 1023.78,
+      "end_time": 1026.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7516,
+      "timestamp": "2026-06-19T15:20:01.400074"
+    },
+    {
+      "text": "Is fraud 0 and one.",
+      "start_time": 1026.0,
+      "end_time": 1027.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7379999999999999,
+      "timestamp": "2026-06-19T15:20:03.319863"
+    },
+    {
+      "text": "0 means it is not abroad and one means it is a problem.",
+      "start_time": 1028.88,
+      "end_time": 1033.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8736923076923078,
+      "timestamp": "2026-06-19T15:20:09.091470"
+    },
+    {
+      "text": "What column you are asking for?",
+      "start_time": 1036.32,
+      "end_time": 1038.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9213333333333332,
+      "timestamp": "2026-06-19T15:20:13.886081"
+    },
+    {
+      "text": "Like high rate of fraudulent transaction, like I thought that there will be like a numerical column involved.",
+      "start_time": 1045.2,
+      "end_time": 1053.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9165555555555556,
+      "timestamp": "2026-06-19T15:20:29.255537"
+    },
+    {
+      "text": "So you can, yeah, so there is one categorical column, right?",
+      "start_time": 1051.02,
+      "end_time": 1056.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8713636363636365,
+      "timestamp": "2026-06-19T15:20:32.142823"
+    },
+    {
+      "text": "Is fraud form that you can see like which merchant ID have done the fraudulent transaction mode?",
+      "start_time": 1056.18,
+      "end_time": 1062.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8614117647058823,
+      "timestamp": "2026-06-19T15:20:37.926401"
+    },
+    {
+      "text": "Yeah, this, then, in this case, if we just want to, like, find uh, uh, which, uh, IDs are fraudulent and we can use this query directly.",
+      "start_time": 1062.24,
+      "end_time": 1073.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7373333333333331,
+      "timestamp": "2026-06-19T15:20:49.479658"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 1072.5,
+      "end_time": 1074.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5385,
+      "timestamp": "2026-06-19T15:20:50.346180"
+    },
+    {
+      "text": "So maybe you are working for which organization, maybe?",
+      "start_time": 1078.38,
+      "end_time": 1082.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8938888888888891,
+      "timestamp": "2026-06-19T15:20:58.054177"
+    },
+    {
+      "text": "Brand skips worldwide.",
+      "start_time": 1082.7,
+      "end_time": 1084.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.581,
+      "timestamp": "2026-06-19T15:20:59.928177"
+    },
+    {
+      "text": "Okay, so, uh, Mehir, I mean, and why you are looking?",
+      "start_time": 1088.34,
+      "end_time": 1093.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6819999999999999,
+      "timestamp": "2026-06-19T15:21:09.582555"
+    },
+    {
+      "text": "For a change, may I know?",
+      "start_time": 1093.56,
+      "end_time": 1095.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8069999999999999,
+      "timestamp": "2026-06-19T15:21:11.474559"
+    },
+    {
+      "text": "Yeah, like, I have like 5.5 years of experience over here, and like, I thought that I need to, like, switch into a company where I get more exposure in the field of like AI and data science, because frankly speaking, like here, I felt that my learning curve is being stopped over here.",
+      "start_time": 1096.5,
+      "end_time": 1126.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8806666666666664,
+      "timestamp": "2026-06-19T15:21:42.521206"
+    },
+    {
+      "text": "And another also for a good package.",
+      "start_time": 1126.86,
+      "end_time": 1129.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9494285714285713,
+      "timestamp": "2026-06-19T15:21:45.065245"
+    },
+    {
+      "text": "Because like, uh, I am like a type of person who likes to work on the recent technologies.",
+      "start_time": 1131.36,
+      "end_time": 1140.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9001111111111112,
+      "timestamp": "2026-06-19T15:21:55.637205"
+    },
+    {
+      "text": "And for that reason, I decided to finally switch.",
+      "start_time": 1140.3,
+      "end_time": 1146.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8746666666666667,
+      "timestamp": "2026-06-19T15:22:02.342165"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1146.96,
+      "end_time": 1148.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.824,
+      "timestamp": "2026-06-19T15:22:04.221848"
+    },
+    {
+      "text": "Like if you have any questions you can ask too.",
+      "start_time": 1151.22,
+      "end_time": 1153.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8747,
+      "timestamp": "2026-06-19T15:22:09.084639"
+    },
+    {
+      "text": "Yeah, like, um, like, just wanted to know, like my feedback or any kind of, uh, This we can give so that I can improve.",
+      "start_time": 1157.4,
+      "end_time": 1168.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7715999999999998,
+      "timestamp": "2026-06-19T15:22:24.496665"
+    },
+    {
+      "text": "Uh, see, I would go through the job description and Nothing else, I mean.",
+      "start_time": 1169.04,
+      "end_time": 1176.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.853,
+      "timestamp": "2026-06-19T15:22:32.170655"
+    },
+    {
+      "text": "I've been prepared for everything.",
+      "start_time": 1177.74,
+      "end_time": 1180.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8998000000000002,
+      "timestamp": "2026-06-19T15:22:35.970773"
+    },
+    {
+      "text": "I mean what, I mean, see interviewer can ask you anything.",
+      "start_time": 1180.32,
+      "end_time": 1183.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8877272727272728,
+      "timestamp": "2026-06-19T15:22:38.851719"
+    },
+    {
+      "text": "It is not structured and a format, right?",
+      "start_time": 1183.44,
+      "end_time": 1188.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.873375,
+      "timestamp": "2026-06-19T15:22:43.646447"
+    },
+    {
+      "text": "So just and just take it as an advice, nothing else.",
+      "start_time": 1188.3,
+      "end_time": 1192.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8272727272727273,
+      "timestamp": "2026-06-19T15:22:48.450230"
+    },
+    {
+      "text": "Prepare everything like, which is there in the job description.",
+      "start_time": 1192.74,
+      "end_time": 1197.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9118999999999999,
+      "timestamp": "2026-06-19T15:22:53.256084"
+    },
+    {
+      "text": "Okay, yeah, sure.",
+      "start_time": 1199.1,
+      "end_time": 1201.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6016666666666666,
+      "timestamp": "2026-06-19T15:22:57.054067"
+    },
+    {
+      "text": "Okay, thank you.",
+      "start_time": 1200.96,
+      "end_time": 1203.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.907,
+      "timestamp": "2026-06-19T15:22:58.993056"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 1203.06,
+      "end_time": 1203.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.87525,
+      "timestamp": "2026-06-19T15:22:59.953459"
+    },
+    {
+      "text": "Bye bye.",
+      "start_time": 1203.96,
+      "end_time": 1204.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.701,
+      "timestamp": "2026-06-19T15:22:59.963016"
+    },
+    {
+      "text": "Yeah, bye.",
+      "start_time": 1205.58,
+      "end_time": 1206.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.532,
+      "timestamp": "2026-06-19T15:23:01.820302"
+    }
+  ]
+}

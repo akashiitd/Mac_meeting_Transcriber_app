@@ -1,0 +1,1293 @@
+{
+  "session_name": "Meeting-C7WGD9",
+  "started": "2026-06-18T19:34:29.811520",
+  "segments": [
+    {
+      "text": "What is Pharma Sandos?",
+      "start_time": 80.76,
+      "end_time": 82.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.74075,
+      "timestamp": "2026-06-18T19:35:53.907785"
+    },
+    {
+      "text": "Yeah, yeah, Prabhat, is my voice audible?",
+      "start_time": 210.48,
+      "end_time": 212.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5082857142857142,
+      "timestamp": "2026-06-18T19:38:03.521654"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 213.36,
+      "end_time": 214.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.578,
+      "timestamp": "2026-06-18T19:38:05.398346"
+    },
+    {
+      "text": "Hi Prabhat, good evening.",
+      "start_time": 214.8,
+      "end_time": 217.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.62925,
+      "timestamp": "2026-06-18T19:38:08.292180"
+    },
+    {
+      "text": "Is my voice notable, right?",
+      "start_time": 217.14,
+      "end_time": 218.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7468,
+      "timestamp": "2026-06-18T19:38:09.252819"
+    },
+    {
+      "text": "So, Provath, can you briefly introduce yourself? Then you'll get started.",
+      "start_time": 218.82,
+      "end_time": 222.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7238181818181818,
+      "timestamp": "2026-06-18T19:38:14.085540"
+    },
+    {
+      "text": "So it's been 4 years, as in, your voice is not a little shaken, you a little like hazy.",
+      "start_time": 222.96,
+      "end_time": 229.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7993684210526316,
+      "timestamp": "2026-06-18T19:38:20.808900"
+    },
+    {
+      "text": "Yeah, yeah, just, is it?",
+      "start_time": 228.84,
+      "end_time": 230.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6336,
+      "timestamp": "2026-06-18T19:38:21.730784"
+    },
+    {
+      "text": "Now tell me it is loud and clear.",
+      "start_time": 232.08,
+      "end_time": 234.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.969875,
+      "timestamp": "2026-06-18T19:38:25.584438"
+    },
+    {
+      "text": "So I was saying that it's been a long 4 years as a year, engineer, and air personative India.",
+      "start_time": 235.8,
+      "end_time": 240.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7717894736842105,
+      "timestamp": "2026-06-18T19:38:31.350291"
+    },
+    {
+      "text": "You know, I have worked with vector search, LLM apps, regenerative AI, apps, and Lang Chain, and Fast APA Microservices, Doc containers, and deployment using, I mean, is AWS, GCP, Ajore.",
+      "start_time": 240.36,
+      "end_time": 255.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6860322580645161,
+      "timestamp": "2026-06-18T19:38:46.919795"
+    },
+    {
+      "text": "And apart from it, vector search and cross and goodery ranking and hybrid retrieval.",
+      "start_time": 255.72,
+      "end_time": 261.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7931428571428573,
+      "timestamp": "2026-06-18T19:38:52.471946"
+    },
+    {
+      "text": "So these are my forte, what I have developed, and recently I've been working on a knowledge-based rag assistant system, which I've developed, and currently it is serving around like a 10 K plus daily queries in my current organization.",
+      "start_time": 261.24,
+      "end_time": 272.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8847499999999998,
+      "timestamp": "2026-06-18T19:39:04.131829"
+    },
+    {
+      "text": "Apart from it, I have done my education from a bit nice stuff technology. And yeah, that's all about a brief intro about me.",
+      "start_time": 272.94,
+      "end_time": 281.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8029583333333332,
+      "timestamp": "2026-06-18T19:39:11.729739"
+    },
+    {
+      "text": "So you are currently in airport authority of, right?",
+      "start_time": 282.54,
+      "end_time": 287.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8252222222222224,
+      "timestamp": "2026-06-18T19:39:18.385424"
+    },
+    {
+      "text": "Correct, correct.",
+      "start_time": 287.16,
+      "end_time": 288.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.843,
+      "timestamp": "2026-06-18T19:39:19.300353"
+    },
+    {
+      "text": "Okay. Okay, so regarding the interview process, right, I will try to cover section related to AI backend and coding.",
+      "start_time": 287.76,
+      "end_time": 298.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8779499999999999,
+      "timestamp": "2026-06-18T19:39:29.998787"
+    },
+    {
+      "text": "Python and some rest TPA as well.",
+      "start_time": 298.98,
+      "end_time": 302.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8418571428571429,
+      "timestamp": "2026-06-18T19:39:32.804695"
+    },
+    {
+      "text": "Okay, so can you tell me like how would you?",
+      "start_time": 305.4,
+      "end_time": 308.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9224000000000002,
+      "timestamp": "2026-06-18T19:39:39.503412"
+    },
+    {
+      "text": "Just, just wanted to let you know that from 815, like I have a office meeting, so, uh, at 815 only I have time.",
+      "start_time": 306.54,
+      "end_time": 313.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8064999999999999,
+      "timestamp": "2026-06-18T19:39:44.334684"
+    },
+    {
+      "text": "No, no, I will I will close it.",
+      "start_time": 311.82,
+      "end_time": 314.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9057500000000002,
+      "timestamp": "2026-06-18T19:39:45.255418"
+    },
+    {
+      "text": "Before it.",
+      "start_time": 314.28,
+      "end_time": 315.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.3835,
+      "timestamp": "2026-06-18T19:39:46.204630"
+    },
+    {
+      "text": "Okay, so can you briefly outline, how would you design a python back and pipeline for a Gen AI service to efficiently handle a synchronous request from multiple teams, ensuring both performance and it should be responsible to AI guidelines as well.",
+      "start_time": 316.08,
+      "end_time": 335.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8910238095238094,
+      "timestamp": "2026-06-18T19:40:06.659791"
+    },
+    {
+      "text": "I will pay the question in the chat as well, so that you can.",
+      "start_time": 338.34,
+      "end_time": 341.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.726857142857143,
+      "timestamp": "2026-06-18T19:40:13.127128"
+    },
+    {
+      "text": "Okay, uh, so, Okay.",
+      "start_time": 336.96,
+      "end_time": 343.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5760000000000001,
+      "timestamp": "2026-06-18T19:40:14.044439"
+    },
+    {
+      "text": "Have a look into it as well.",
+      "start_time": 341.94,
+      "end_time": 343.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.846857142857143,
+      "timestamp": "2026-06-18T19:40:15.009189"
+    },
+    {
+      "text": "Yeah, I got your question.",
+      "start_time": 343.26,
+      "end_time": 345.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9349999999999999,
+      "timestamp": "2026-06-18T19:40:15.943022"
+    },
+    {
+      "text": "So, okay, let me.",
+      "start_time": 345.36,
+      "end_time": 348.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.79025,
+      "timestamp": "2026-06-18T19:40:19.774947"
+    },
+    {
+      "text": "So let me explain, you know.",
+      "start_time": 348.66,
+      "end_time": 350.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8393333333333333,
+      "timestamp": "2026-06-18T19:40:21.716316"
+    },
+    {
+      "text": "Like, if I, like, you know, designed this, so, I, the 1st thing you use is a fast API.",
+      "start_time": 350.94,
+      "end_time": 354.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6196842105263157,
+      "timestamp": "2026-06-18T19:40:25.599335"
+    },
+    {
+      "text": "With a UVCore, man, for like a sync request handling.",
+      "start_time": 354.96,
+      "end_time": 358.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6649,
+      "timestamp": "2026-06-18T19:40:29.417105"
+    },
+    {
+      "text": "And like, which is like scale well for like multiple teams. And I would also structure the pipeline with like modular and points and like, you know, document ingestion and queries and feedback.",
+      "start_time": 358.26,
+      "end_time": 369.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8746666666666665,
+      "timestamp": "2026-06-18T19:40:41.060609"
+    },
+    {
+      "text": "So like all asynchronous, shrill drilling all asynchronous, but performance, everything is back to database, like quadrant, and uh, and like um, frequent, which cache the frequent varies with radis.",
+      "start_time": 369.72,
+      "end_time": 381.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6341666666666668,
+      "timestamp": "2026-06-18T19:40:52.604393"
+    },
+    {
+      "text": "And I show you the, you know, AI guidance compliance, I would like to add guardrails for like the output validations and loggings for like tracability.",
+      "start_time": 381.54,
+      "end_time": 390.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8263846153846154,
+      "timestamp": "2026-06-18T19:41:02.171261"
+    },
+    {
+      "text": "For example, like in my like airport certif India project, I have like we have enforced the citation checks and structured loggings.",
+      "start_time": 390.84,
+      "end_time": 399.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.833590909090909,
+      "timestamp": "2026-06-18T19:41:10.743956"
+    },
+    {
+      "text": "Uh, and monitor like um, everything in the, like the Prometheus and Grafana dashboards to like cash issue early.",
+      "start_time": 399.48,
+      "end_time": 406.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.786,
+      "timestamp": "2026-06-18T19:41:17.493478"
+    },
+    {
+      "text": "And we have also using like a fast API and UVicon for scalable and sink operations and quadrant for fast picture search, and that is for like cashing frequent queries.",
+      "start_time": 406.8,
+      "end_time": 419.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.885833333333333,
+      "timestamp": "2026-06-18T19:41:30.951762"
+    },
+    {
+      "text": "What is the TTL you have used for reddish?",
+      "start_time": 418.92,
+      "end_time": 421.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8265555555555555,
+      "timestamp": "2026-06-18T19:41:32.780012"
+    },
+    {
+      "text": "And uh, and that is for like AI compliance.",
+      "start_time": 419.76,
+      "end_time": 423.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5963333333333334,
+      "timestamp": "2026-06-18T19:41:34.685025"
+    },
+    {
+      "text": "What TTL you have used for radish?",
+      "start_time": 422.7,
+      "end_time": 426.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9214285714285714,
+      "timestamp": "2026-06-18T19:41:36.620696"
+    },
+    {
+      "text": "Yeah, so for the TTL, we basically get 10 to 15 minute only for like most square result.",
+      "start_time": 427.74,
+      "end_time": 434.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8410555555555556,
+      "timestamp": "2026-06-18T19:41:45.269143"
+    },
+    {
+      "text": "Okay, and can you tell me, like, how would you ensure the reliability and maintainability of our python-based Gen AI back and pipeline?",
+      "start_time": 435.24,
+      "end_time": 444.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8065217391304348,
+      "timestamp": "2026-06-18T19:41:55.917698"
+    },
+    {
+      "text": "Particularly when integrating frequent update from upstream AI models.",
+      "start_time": 444.78,
+      "end_time": 450.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9345555555555555,
+      "timestamp": "2026-06-18T19:42:01.633595"
+    },
+    {
+      "text": "Um, yeah, so, so that ensured that like the reliability and maintainability, I would use like talker to the container, the entire vacant, and making the deployment consistent, like different environments, and like set up the CICD pipelines, like with different guitar actions for like automated texting.",
+      "start_time": 452.46,
+      "end_time": 470.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8085957446808508,
+      "timestamp": "2026-06-18T19:42:22.066735"
+    },
+    {
+      "text": "And like linking and deployment.",
+      "start_time": 470.7,
+      "end_time": 473.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.764,
+      "timestamp": "2026-06-18T19:42:24.589790"
+    },
+    {
+      "text": "So any code changes, you know, are verified before it goes to goes life.",
+      "start_time": 473.46,
+      "end_time": 478.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8374285714285714,
+      "timestamp": "2026-06-18T19:42:29.442849"
+    },
+    {
+      "text": "For monitoring, I would like integrate Prometheus and Grafana to track API health and latency and Anna in real time.",
+      "start_time": 478.5,
+      "end_time": 488.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9148,
+      "timestamp": "2026-06-18T19:42:39.067574"
+    },
+    {
+      "text": "I know you also go for like structured logging, that will help in the debugging their restability.",
+      "start_time": 488.16,
+      "end_time": 494.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8687647058823529,
+      "timestamp": "2026-06-18T19:42:45.774689"
+    },
+    {
+      "text": "And I would also like modernize the cold waste and spreading, and so separating the concern, like ingestion, or like retrieval, and feedback, which makes like updates and like skinny easier.",
+      "start_time": 494.52,
+      "end_time": 508.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8708387096774192,
+      "timestamp": "2026-06-18T19:42:59.286983"
+    },
+    {
+      "text": "Okay, yeah.",
+      "start_time": 516.78,
+      "end_time": 517.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5585,
+      "timestamp": "2026-06-18T19:43:08.783139"
+    },
+    {
+      "text": "So in my project, uh, like that approach helps us to like cash issues early and uh, onboard like a new departments quickly without like uh, major, you know, redesigns in the entire code piece.",
+      "start_time": 508.26,
+      "end_time": 521.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8439142857142857,
+      "timestamp": "2026-06-18T19:43:12.762894"
+    },
+    {
+      "text": "Ah, Prabhat, can you also share me our screen as well?",
+      "start_time": 521.04,
+      "end_time": 524.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8024545454545454,
+      "timestamp": "2026-06-18T19:43:15.508097"
+    },
+    {
+      "text": "Let me show the screen.",
+      "start_time": 530.22,
+      "end_time": 532.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6502,
+      "timestamp": "2026-06-18T19:43:24.092196"
+    },
+    {
+      "text": "And how do you design prompt for a Gen AI chatpot?",
+      "start_time": 533.64,
+      "end_time": 538.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6924545454545455,
+      "timestamp": "2026-06-18T19:43:28.973004"
+    },
+    {
+      "text": "Okay, yeah.",
+      "start_time": 538.92,
+      "end_time": 542.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.449,
+      "timestamp": "2026-06-18T19:43:33.730235"
+    },
+    {
+      "text": "Okay, you can, uh, I mean, How would you design?",
+      "start_time": 538.32,
+      "end_time": 543.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.701,
+      "timestamp": "2026-06-18T19:43:34.711156"
+    },
+    {
+      "text": "A prompt for a GenI chatpot that must comply with responsible AI guideline while providing accurate Insurance advice.",
+      "start_time": 543.72,
+      "end_time": 554.46,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8633333333333333,
+      "timestamp": "2026-06-18T19:43:45.333913"
+    },
+    {
+      "text": "Insurance advice.",
+      "start_time": 556.2,
+      "end_time": 558.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8205,
+      "timestamp": "2026-06-18T19:43:50.041142"
+    },
+    {
+      "text": "So like for that particular case, like when designing a like prompt for an insurance like chatboard, I would like make sure it is like clear and like natural and include like uh disclaimers to like um the comply with the all the responsible AI guidelines.",
+      "start_time": 558.84,
+      "end_time": 575.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8904565217391301,
+      "timestamp": "2026-06-18T19:44:06.562119"
+    },
+    {
+      "text": "For example, like you start with the prompt with like you, like an AI assistant, providing the general insurance information, and to not give like personalized financial or like legal advices.",
+      "start_time": 575.46,
+      "end_time": 588.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8791935483870966,
+      "timestamp": "2026-06-18T19:44:19.909239"
+    },
+    {
+      "text": "Always, you know, recommend the users like consult or like licensed insurance advisors for like getting into the final decisions. And like also like instruct the AI to like, uh, like cite it, the resources and avoid the sensitive or like discriminately language.",
+      "start_time": 588.6,
+      "end_time": 607.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8776046511627906,
+      "timestamp": "2026-06-18T19:44:39.290358"
+    },
+    {
+      "text": "And in my, you know, airport authority to like similar guardrails, like enforcing citation validations and structured outputs.",
+      "start_time": 607.8,
+      "end_time": 616.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8076111111111114,
+      "timestamp": "2026-06-18T19:44:46.761044"
+    },
+    {
+      "text": "So ensure that the response are like very accurate and transparent.",
+      "start_time": 616.02,
+      "end_time": 620.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8924545454545456,
+      "timestamp": "2026-06-18T19:44:51.489930"
+    },
+    {
+      "text": "And which aligns with the like compliance standards or the organization.",
+      "start_time": 620.7,
+      "end_time": 624.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8160909090909091,
+      "timestamp": "2026-06-18T19:44:55.329853"
+    },
+    {
+      "text": "So that approach we can build a user stress as well.",
+      "start_time": 624.54,
+      "end_time": 628.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8975454545454546,
+      "timestamp": "2026-06-18T19:44:59.182324"
+    },
+    {
+      "text": "And how do you use get to handle urgent hot fixes and production while multiple feature branches are in directive development?",
+      "start_time": 628.08,
+      "end_time": 637.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8910952380952383,
+      "timestamp": "2026-06-18T19:45:08.841245"
+    },
+    {
+      "text": "Uh, so for that, I would say the hot pix is like, um, like with like a, um, I would like a branch of like Maine to clear the hot pix branch and apply the fix and like merge it back to the like the main and the developer.",
+      "start_time": 640.32,
+      "end_time": 655.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8070612244897958,
+      "timestamp": "2026-06-18T19:45:27.202423"
+    },
+    {
+      "text": "So this way, I think products is get the gin fixed immediately, and like ongoing features is like 1st like extin and interrupted. Like, for example, in my project also there was where we are doing this the cap live, the service table with like new features.",
+      "start_time": 655.8,
+      "end_time": 672.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8283829787234044,
+      "timestamp": "2026-06-18T19:45:43.570056"
+    },
+    {
+      "text": "We're like still being developed.",
+      "start_time": 672.12,
+      "end_time": 674.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9081999999999999,
+      "timestamp": "2026-06-18T19:45:45.219928"
+    },
+    {
+      "text": "Okay, and how do you structure our CICD pipeline to enable seamless AB testing and gradual rollout for any Gen AI models and multiple device.",
+      "start_time": 682.92,
+      "end_time": 699.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8714800000000001,
+      "timestamp": "2026-06-18T19:46:10.356458"
+    },
+    {
+      "text": "And multi-device production environment.",
+      "start_time": 699.0,
+      "end_time": 701.46,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7685000000000001,
+      "timestamp": "2026-06-18T19:46:12.133030"
+    },
+    {
+      "text": "Yes. So, like for that, I would say set up the CICD pipeline to like deploy a new model version.",
+      "start_time": 702.54,
+      "end_time": 711.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8514499999999998,
+      "timestamp": "2026-06-18T19:46:22.733297"
+    },
+    {
+      "text": "Uh, like 1st to like a smaller user group, like AB testing, using like a feature flag.",
+      "start_time": 711.48,
+      "end_time": 716.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8139411764705882,
+      "timestamp": "2026-06-18T19:46:27.513680"
+    },
+    {
+      "text": "So if results are like positive, I would like gradually increase the rollout or like across like different devices.",
+      "start_time": 716.52,
+      "end_time": 723.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9011052631578946,
+      "timestamp": "2026-06-18T19:46:34.229777"
+    },
+    {
+      "text": "So, like my project, you know, let us say the safety test updates, like on like select a kiosk and before the, you know, full deployment.",
+      "start_time": 723.0,
+      "end_time": 731.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7950769230769231,
+      "timestamp": "2026-06-18T19:46:42.911892"
+    },
+    {
+      "text": "And what kind of metrics you have chosen for?",
+      "start_time": 734.64,
+      "end_time": 737.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.89,
+      "timestamp": "2026-06-18T19:46:48.627961"
+    },
+    {
+      "text": "AP testing?",
+      "start_time": 737.82,
+      "end_time": 739.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.745,
+      "timestamp": "2026-06-18T19:46:49.556138"
+    },
+    {
+      "text": "Uh, for like, for AB testing, like, uh, I was like focused on like the user engagement rate and error rate and response time.",
+      "start_time": 740.94,
+      "end_time": 751.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8076250000000001,
+      "timestamp": "2026-06-18T19:47:02.127130"
+    },
+    {
+      "text": "So this helped me to like compare the how modern model performed, what does the old one performance?",
+      "start_time": 751.14,
+      "end_time": 757.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7979999999999999,
+      "timestamp": "2026-06-18T19:47:08.800906"
+    },
+    {
+      "text": "So in my project also, like a 10% increase in the engagement and like a few where they're on the update kiosk.",
+      "start_time": 757.8,
+      "end_time": 766.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9109545454545457,
+      "timestamp": "2026-06-18T19:47:17.462627"
+    },
+    {
+      "text": "So that happened in my project.",
+      "start_time": 766.32,
+      "end_time": 769.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8953333333333333,
+      "timestamp": "2026-06-18T19:47:20.257781"
+    },
+    {
+      "text": "And how do you collaborate with business analyst and security team to ensure an end to end AI workflow meet, both miserables, Okay, ours and strict security standards, yeah.",
+      "start_time": 769.14,
+      "end_time": 785.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7872413793103449,
+      "timestamp": "2026-06-18T19:47:35.821956"
+    },
+    {
+      "text": "So I was. So I, yeah, I was like closely with a business analyst to design the requirements and ensure our solutions are kind of like business schools of our team.",
+      "start_time": 781.44,
+      "end_time": 794.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.786064516129032,
+      "timestamp": "2026-06-18T19:47:45.366135"
+    },
+    {
+      "text": "So security coordinate on like data governments and like compliance to making sure that the deployments are like secure.",
+      "start_time": 794.76,
+      "end_time": 802.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9571052631578949,
+      "timestamp": "2026-06-18T19:47:52.974945"
+    },
+    {
+      "text": "So, for example, like in my project, um, the collaborations helped us like, um, set up the like proper data policies and like a smooth adoption.",
+      "start_time": 802.26,
+      "end_time": 812.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7869230769230767,
+      "timestamp": "2026-06-18T19:48:03.546189"
+    },
+    {
+      "text": "I close different departments.",
+      "start_time": 812.28,
+      "end_time": 813.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8407499999999999,
+      "timestamp": "2026-06-18T19:48:04.403972"
+    },
+    {
+      "text": "Okay, and uh, can you tell me like, uh, how would you design up uh, Python backend service to integrate?",
+      "start_time": 819.12,
+      "end_time": 827.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.81335,
+      "timestamp": "2026-06-18T19:48:18.938500"
+    },
+    {
+      "text": "With a JAI.",
+      "start_time": 827.64,
+      "end_time": 829.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6026666666666667,
+      "timestamp": "2026-06-18T19:48:20.758078"
+    },
+    {
+      "text": "Image generation API, ensuring reliable error handling and monitoring across multiple devices.",
+      "start_time": 829.74,
+      "end_time": 837.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9101666666666666,
+      "timestamp": "2026-06-18T19:48:28.500927"
+    },
+    {
+      "text": "So for that particular case, uh, I would like to take fast API to build a backend service, exposing like endpoints for like image requests, from, uh, the devices and the service which called the GenI image, API, and uh, handle the error gracefully, and then log all the routes the requests to like for monitoring purpose.",
+      "start_time": 840.48,
+      "end_time": 861.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8072456140350877,
+      "timestamp": "2026-06-18T19:48:52.802679"
+    },
+    {
+      "text": "I would like the authentication and rate limiting for the security.",
+      "start_time": 861.6,
+      "end_time": 865.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9359090909090909,
+      "timestamp": "2026-06-18T19:48:56.283900"
+    },
+    {
+      "text": "And like, for example, like in my project, you know, height has a setup, uh, had a kiosk realability generated, uh, and like which, we like, uh, We are black users and the and the real time.",
+      "start_time": 865.26,
+      "end_time": 878.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7098918918918917,
+      "timestamp": "2026-06-18T19:49:09.886770"
+    },
+    {
+      "text": "Okay, and how good you are in Python?",
+      "start_time": 885.18,
+      "end_time": 888.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9089999999999999,
+      "timestamp": "2026-06-18T19:49:19.333883"
+    },
+    {
+      "text": "Meno?",
+      "start_time": 888.18,
+      "end_time": 888.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.521,
+      "timestamp": "2026-06-18T19:49:19.340285"
+    },
+    {
+      "text": "Oh, I am, I'm good in Python, since like, like 4 years, I've been using Python only.",
+      "start_time": 888.84,
+      "end_time": 895.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7563529411764707,
+      "timestamp": "2026-06-18T19:49:26.118720"
+    },
+    {
+      "text": "So I'm good in Python.",
+      "start_time": 895.32,
+      "end_time": 896.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8800000000000001,
+      "timestamp": "2026-06-18T19:49:27.943986"
+    },
+    {
+      "text": "I'm just giving you some questions, okay?",
+      "start_time": 895.56,
+      "end_time": 897.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.935142857142857,
+      "timestamp": "2026-06-18T19:49:28.929760"
+    },
+    {
+      "text": "I just need to know your approach, okay?",
+      "start_time": 897.96,
+      "end_time": 899.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.935875,
+      "timestamp": "2026-06-18T19:49:30.848529"
+    },
+    {
+      "text": "Can you tell me, like, how would you integrate clot code or code X into a multi-device web application?",
+      "start_time": 899.58,
+      "end_time": 905.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8619473684210526,
+      "timestamp": "2026-06-18T19:49:36.656416"
+    },
+    {
+      "text": "For secure automated backend documentation generation while ensuring responsible AI principles.",
+      "start_time": 905.76,
+      "end_time": 913.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8970909090909089,
+      "timestamp": "2026-06-18T19:49:44.351393"
+    },
+    {
+      "text": "I'm sharing it here in that chat.",
+      "start_time": 916.68,
+      "end_time": 919.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8929999999999999,
+      "timestamp": "2026-06-18T19:49:50.064641"
+    },
+    {
+      "text": "Well. Uh.",
+      "start_time": 918.06,
+      "end_time": 924.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3305,
+      "timestamp": "2026-06-18T19:49:55.764740"
+    },
+    {
+      "text": "So, 1st of all, I would, like, try to, like, um, connect to the Codex to, like, my back end using the secure API calls.",
+      "start_time": 926.16,
+      "end_time": 933.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7585999999999999,
+      "timestamp": "2026-06-18T19:50:04.536600"
+    },
+    {
+      "text": "And letting it do like auto-generated documentations from like code changes.",
+      "start_time": 933.24,
+      "end_time": 938.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7914545454545455,
+      "timestamp": "2026-06-18T19:50:09.266841"
+    },
+    {
+      "text": "And I would like set up the authentication and restrict access control, like protect the sensitive data.",
+      "start_time": 938.1,
+      "end_time": 943.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8661764705882353,
+      "timestamp": "2026-06-18T19:50:15.020763"
+    },
+    {
+      "text": "For example, like in my project, I used a similar automation with the role-based access control and loggings to ensure like only authorized users collect trigger the documentation update.",
+      "start_time": 943.98,
+      "end_time": 955.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9373103448275864,
+      "timestamp": "2026-06-18T19:50:26.650028"
+    },
+    {
+      "text": "So, Yeah.",
+      "start_time": 955.38,
+      "end_time": 957.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.483,
+      "timestamp": "2026-06-18T19:50:28.400729"
+    },
+    {
+      "text": "And also, you know, output where like a review for like accuracy and bias.",
+      "start_time": 957.48,
+      "end_time": 963.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8142857142857143,
+      "timestamp": "2026-06-18T19:50:34.223681"
+    },
+    {
+      "text": "And how would you write a Python Fast API endpoint?",
+      "start_time": 969.6,
+      "end_time": 975.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8835,
+      "timestamp": "2026-06-18T19:50:45.751797"
+    },
+    {
+      "text": "I'm pasting the question that in the chart.",
+      "start_time": 975.0,
+      "end_time": 977.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.843625,
+      "timestamp": "2026-06-18T19:50:47.651176"
+    },
+    {
+      "text": "It's a long mission.",
+      "start_time": 977.1,
+      "end_time": 978.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5752499999999999,
+      "timestamp": "2026-06-18T19:50:49.562014"
+    },
+    {
+      "text": "So, So you need to write a Python fast API endpoint.",
+      "start_time": 978.6,
+      "end_time": 984.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8272727272727274,
+      "timestamp": "2026-06-18T19:50:55.367457"
+    },
+    {
+      "text": "I mean, endpoint is also given, that accept a post request with a GSON pillow, containing a sentence field, and you need to return a GSON response, listing all unique word in the sentence.",
+      "start_time": 984.12,
+      "end_time": 994.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8549705882352941,
+      "timestamp": "2026-06-18T19:51:05.071682"
+    },
+    {
+      "text": "Sorted alphabetically, excluding common English.",
+      "start_time": 994.5,
+      "end_time": 998.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7984,
+      "timestamp": "2026-06-18T19:51:08.780082"
+    },
+    {
+      "text": "Stop words.",
+      "start_time": 998.34,
+      "end_time": 999.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.3905,
+      "timestamp": "2026-06-18T19:51:09.718283"
+    },
+    {
+      "text": "Do you also need to validate the input place for you?",
+      "start_time": 999.18,
+      "end_time": 1003.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9082727272727272,
+      "timestamp": "2026-06-18T19:51:14.562758"
+    },
+    {
+      "text": "You just need to tell me your approach.",
+      "start_time": 1003.8,
+      "end_time": 1005.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9282499999999999,
+      "timestamp": "2026-06-18T19:51:16.446444"
+    },
+    {
+      "text": "Okay, so, what I'm thinking here is, like, uh, I would like, uh,",
+      "start_time": 1007.16,
+      "end_time": 1012.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7059230769230769,
+      "timestamp": "2026-06-18T19:51:24.127330"
+    },
+    {
+      "text": "My brother would like to define like fast API and post end points that would take the DGSN payload and with like a sentence, uh, sentence field and, you know, avid user, like a pyedantic model and like for like input validations.",
+      "start_time": 1012.92,
+      "end_time": 1025.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7967142857142853,
+      "timestamp": "2026-06-18T19:51:36.824537"
+    },
+    {
+      "text": "So, for example, I feeling missing or like not a string.",
+      "start_time": 1025.94,
+      "end_time": 1029.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8563636363636363,
+      "timestamp": "2026-06-18T19:51:40.433163"
+    },
+    {
+      "text": "So it will return like a clear error.",
+      "start_time": 1029.6,
+      "end_time": 1031.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8720000000000001,
+      "timestamp": "2026-06-18T19:51:42.345936"
+    },
+    {
+      "text": "So, yeah, that this approach I would follow.",
+      "start_time": 1051.92,
+      "end_time": 1055.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.858875,
+      "timestamp": "2026-06-18T19:52:06.347852"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 1057.2,
+      "end_time": 1058.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.52325,
+      "timestamp": "2026-06-18T19:52:09.240236"
+    },
+    {
+      "text": "Okay, so, Prabata, I'm done with the interview process.",
+      "start_time": 1058.52,
+      "end_time": 1061.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7701111111111112,
+      "timestamp": "2026-06-18T19:52:12.142393"
+    },
+    {
+      "text": "If you have any questions you can ask, otherwise I'm good to close this call.",
+      "start_time": 1061.04,
+      "end_time": 1063.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9065999999999999,
+      "timestamp": "2026-06-18T19:52:15.033599"
+    },
+    {
+      "text": "Oh, yeah, I understand, like, the, what are the expectation from this rule?",
+      "start_time": 1065.36,
+      "end_time": 1071.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7185384615384615,
+      "timestamp": "2026-06-18T19:52:22.714162"
+    },
+    {
+      "text": "And why you are looking for change, may I know?",
+      "start_time": 1070.64,
+      "end_time": 1073.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7535999999999999,
+      "timestamp": "2026-06-18T19:52:24.611296"
+    },
+    {
+      "text": "Uh, particularly, I believe that uh, it will give me better opportunity and a new challenges and work in environment will be a little more dynamic and scales I would grow further.",
+      "start_time": 1074.66,
+      "end_time": 1089.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8905937499999997,
+      "timestamp": "2026-06-18T19:52:40.115500"
+    },
+    {
+      "text": "like in this AI integrations and cloud technologies.",
+      "start_time": 1089.48,
+      "end_time": 1092.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9805,
+      "timestamp": "2026-06-18T19:52:43.812953"
+    },
+    {
+      "text": "So my current role, I have like learned a lot, but like, and be ready to like, feel like more responsibilities, more challenging roles, like more contribution to projects, for a bigger impact.",
+      "start_time": 1092.78,
+      "end_time": 1104.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.854636363636364,
+      "timestamp": "2026-06-18T19:52:55.459282"
+    },
+    {
+      "text": "So the NAA automation work.",
+      "start_time": 1104.24,
+      "end_time": 1106.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7438,
+      "timestamp": "2026-06-18T19:52:57.221607"
+    },
+    {
+      "text": "And like I described earlier as well, and I also like a, I also want to like join a team, like like collaborate with other teams, which are like passionate about like innovation or like continuous learning.",
+      "start_time": 1106.28,
+      "end_time": 1116.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8494324324324325,
+      "timestamp": "2026-06-18T19:53:07.924688"
+    },
+    {
+      "text": "So that's more like I'm looking for a change.",
+      "start_time": 1116.6,
+      "end_time": 1119.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8848888888888891,
+      "timestamp": "2026-06-18T19:53:09.728479"
+    },
+    {
+      "text": "Okay, okay, thank you.",
+      "start_time": 1121.04,
+      "end_time": 1122.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.54625,
+      "timestamp": "2026-06-18T19:53:13.562366"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1122.72,
+      "end_time": 1123.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.537,
+      "timestamp": "2026-06-18T19:53:14.514620"
+    },
+    {
+      "text": "If you have any, if you have any questions you can ask, otherwise I'm good.",
+      "start_time": 1123.56,
+      "end_time": 1126.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8207333333333334,
+      "timestamp": "2026-06-18T19:53:17.429455"
+    },
+    {
+      "text": "Um, no, I haven't, when till when, can I, like, get a feedback on this?",
+      "start_time": 1128.24,
+      "end_time": 1132.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7033333333333334,
+      "timestamp": "2026-06-18T19:53:24.156980"
+    },
+    {
+      "text": "I mean, I will provide feedback to the team and they will reach out to you.",
+      "start_time": 1132.62,
+      "end_time": 1136.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9580000000000001,
+      "timestamp": "2026-06-18T19:53:27.055202"
+    },
+    {
+      "text": "Okay, fine with me.",
+      "start_time": 1136.58,
+      "end_time": 1138.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9232499999999999,
+      "timestamp": "2026-06-18T19:53:29.859976"
+    },
+    {
+      "text": "Yeah, thank you.",
+      "start_time": 1139.52,
+      "end_time": 1140.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6413333333333334,
+      "timestamp": "2026-06-18T19:53:31.798291"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 1140.6,
+      "end_time": 1141.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.82625,
+      "timestamp": "2026-06-18T19:53:31.811687"
+    },
+    {
+      "text": "Bye bye.",
+      "start_time": 1141.08,
+      "end_time": 1141.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.609,
+      "timestamp": "2026-06-18T19:53:31.820237"
+    },
+    {
+      "text": "Bye-bye.",
+      "start_time": 1141.56,
+      "end_time": 1142.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.701,
+      "timestamp": "2026-06-18T19:53:33.702076"
+    }
+  ]
+}

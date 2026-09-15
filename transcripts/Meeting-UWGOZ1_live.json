@@ -1,0 +1,1383 @@
+{
+  "session_name": "Meeting-UWGOZ1",
+  "started": "2026-05-09T21:19:36.733525",
+  "segments": [
+    {
+      "text": "The old Nivit Vinodan, right?",
+      "start_time": 0.0,
+      "end_time": 3.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:02:28.644302"
+    },
+    {
+      "text": "Yes, maybe.",
+      "start_time": 3.0,
+      "end_time": 5.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:02:30.497681"
+    },
+    {
+      "text": "Yeah, uh, yeah, so my name is Akash and overall I have 10 year of experience in data science and machine learning.",
+      "start_time": 3.24,
+      "end_time": 11.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:02:37.322434"
+    },
+    {
+      "text": "Can you briefly introduce yourself?",
+      "start_time": 11.64,
+      "end_time": 13.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:02:39.176802"
+    },
+    {
+      "text": "Sure, my name is Niveetanodan.",
+      "start_time": 14.34,
+      "end_time": 16.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:02:42.033165"
+    },
+    {
+      "text": "I have 4.7 of years of experience as a devobson, MLOPS engineer.",
+      "start_time": 16.5,
+      "end_time": 21.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:02:46.838827"
+    },
+    {
+      "text": "Currently, I'm working at Kellon Global Solution, and my day-to-day task looks like working on the Copernetis platform, uh, building, uh, Tekton pipelines, working with the refund fresructure, and working on the data doc and monitoring and the observability part.",
+      "start_time": 21.54,
+      "end_time": 39.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:03:05.406687"
+    },
+    {
+      "text": "So, uh, regarding the interview, right, I will try to cover some of the section related to cloud services, CICT, ML ops, problem solving, and infrastructure related question and python.",
+      "start_time": 42.12,
+      "end_time": 53.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:03:18.702210"
+    },
+    {
+      "text": "Can you describe me a situation where Critical process or system failed unexpectedly and how did you analyze the failure?",
+      "start_time": 54.66,
+      "end_time": 64.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:03:30.116160"
+    },
+    {
+      "text": "What immediate action did you take and how did you ensure long term prevention of similar issues?",
+      "start_time": 64.44,
+      "end_time": 69.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:03:34.901214"
+    },
+    {
+      "text": "Right, um, so that was an issue where I faced in Tektown Pipeline, where, uh, there are 2 ways to mount the workspaces.",
+      "start_time": 70.38,
+      "end_time": 80.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:03:46.444484"
+    },
+    {
+      "text": "There is a general workspaces and the other one is by default.",
+      "start_time": 80.76,
+      "end_time": 84.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:03:50.186187"
+    },
+    {
+      "text": "will give you one non-persistent volume.",
+      "start_time": 84.84,
+      "end_time": 87.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:03:53.084918"
+    },
+    {
+      "text": "So for the east age, which it will, by default, you can use that.",
+      "start_time": 87.66,
+      "end_time": 91.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:03:56.933805"
+    },
+    {
+      "text": "And what's the stage project that volume would be deleted?",
+      "start_time": 91.68,
+      "end_time": 94.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:03:59.792903"
+    },
+    {
+      "text": "So in our case, the teleports wanted us to run a particular file in one particular stage and to pass on to the next one.",
+      "start_time": 94.74,
+      "end_time": 103.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:04:09.456320"
+    },
+    {
+      "text": "But as uh, we had a framework where it was not uh, being utilized.",
+      "start_time": 103.8,
+      "end_time": 109.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:04:15.183142"
+    },
+    {
+      "text": "So due to that, it used to fade.",
+      "start_time": 109.8,
+      "end_time": 111.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:04:17.081256"
+    },
+    {
+      "text": "So, as for my rule, uh, I travel suited that and I fix it, I fix that issue using a workspace.",
+      "start_time": 111.84,
+      "end_time": 118.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:04:23.861289"
+    },
+    {
+      "text": "By mounting that, and using it in the next stage.",
+      "start_time": 118.74,
+      "end_time": 122.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:04:27.651570"
+    },
+    {
+      "text": "So that the issue was resolved.",
+      "start_time": 122.34,
+      "end_time": 124.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:04:29.546885"
+    },
+    {
+      "text": "Um, can you also let me know, like, if you need to implement a blue green deployment strategy for any critical application using either terraform or bulumy?",
+      "start_time": 131.94,
+      "end_time": 145.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:04:50.809353"
+    },
+    {
+      "text": "What stuff would you take to design this and how would you uh, minimize downtime and roll back risk during deployment?",
+      "start_time": 145.14,
+      "end_time": 152.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:04:57.449147"
+    },
+    {
+      "text": "Right. In this case, we need to have 2 different deployments in place at the same time, and in the service, right?",
+      "start_time": 152.76,
+      "end_time": 160.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:06.106985"
+    },
+    {
+      "text": "We have to specify which one is going to be utilized at first.",
+      "start_time": 160.86,
+      "end_time": 165.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:10.852958"
+    },
+    {
+      "text": "And if you are using a blue green.",
+      "start_time": 165.24,
+      "end_time": 167.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:12.757811"
+    },
+    {
+      "text": "So let's say at 1st the blue is the current deployment, and with green, we have our new application code that has to be deployed.",
+      "start_time": 167.52,
+      "end_time": 176.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:21.481786"
+    },
+    {
+      "text": "So we can divert the traffic.",
+      "start_time": 176.04,
+      "end_time": 178.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:24.278108"
+    },
+    {
+      "text": "So there is another deployment called cannery and trolling update.",
+      "start_time": 178.74,
+      "end_time": 183.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:29.105934"
+    },
+    {
+      "text": "In canary plant, you can specify the percentage of the traffic that you can tie with.",
+      "start_time": 183.48,
+      "end_time": 188.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:33.905833"
+    },
+    {
+      "text": "Let's say, uh, I want to have 75% of traffic in the view deployment.",
+      "start_time": 188.64,
+      "end_time": 194.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:39.651758"
+    },
+    {
+      "text": "The existing one, and just 25% of traffic that has to be moved to the green one.",
+      "start_time": 194.04,
+      "end_time": 198.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:43.501390"
+    },
+    {
+      "text": "Then you are the new application code.",
+      "start_time": 198.6,
+      "end_time": 201.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:46.354496"
+    },
+    {
+      "text": "So that we can test it.",
+      "start_time": 201.06,
+      "end_time": 202.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:48.267657"
+    },
+    {
+      "text": "If there is any failure, the impacted user base would be way lower and we can troubleshoot way quicker.",
+      "start_time": 202.68,
+      "end_time": 209.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:05:54.109802"
+    },
+    {
+      "text": "by checking the locks and, um, um, the application code, uh, by eating the URL.",
+      "start_time": 209.28,
+      "end_time": 215.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:06:00.786471"
+    },
+    {
+      "text": "So once this is done, uh, we would get to know like, uh, If it is working fine or not, and if it is, then we can promote it to take up the 100% off topic.",
+      "start_time": 222.48,
+      "end_time": 233.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:06:19.132609"
+    },
+    {
+      "text": "And uh, If a client need to implement secure centralized secret management for multiple azure application, which, as your service would, would you recommend and how would you integrate it with application to ensure secret rotation and access control?",
+      "start_time": 236.28,
+      "end_time": 253.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:06:39.403439"
+    },
+    {
+      "text": "Um, so as your fault, it is one of them, but, uh, what we are using currently is, uh, Tajiko, Taraform.",
+      "start_time": 255.18,
+      "end_time": 264.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:06:49.788005"
+    },
+    {
+      "text": "not terror from the Hashiko Fall.",
+      "start_time": 264.24,
+      "end_time": 266.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:06:51.645915"
+    },
+    {
+      "text": "So what it does is it keeps you an option to rotate the password and also securely map whatever secrets you have into your deployment through an annotation.",
+      "start_time": 266.04,
+      "end_time": 276.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:07:02.297494"
+    },
+    {
+      "text": "So we'll have to create a service account for that and map the service ID, which which is going to be connected to our hashcock fall.",
+      "start_time": 276.6,
+      "end_time": 283.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:07:08.009156"
+    },
+    {
+      "text": "Once that is configured.",
+      "start_time": 294.96,
+      "end_time": 296.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:07:21.394306"
+    },
+    {
+      "text": "So it would be available inside the pod, inside that specific variable.",
+      "start_time": 296.22,
+      "end_time": 302.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:07:27.180471"
+    },
+    {
+      "text": "Did you work up on this or not?",
+      "start_time": 305.7,
+      "end_time": 309.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:07:33.908481"
+    },
+    {
+      "text": "Yes, I have.",
+      "start_time": 313.26,
+      "end_time": 314.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:07:39.628284"
+    },
+    {
+      "text": "So in our current project, we are using Hashikov called. Previously, we're using the EKL or the Kubratis native secrets, but now we are moving away from that and we wanted more secure and reliable source of secret, secret management service.",
+      "start_time": 314.58,
+      "end_time": 329.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:07:54.238015"
+    },
+    {
+      "text": "Okay okay.",
+      "start_time": 329.76,
+      "end_time": 330.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:07:55.963504"
+    },
+    {
+      "text": "And if your team want to enable blue green deployment using a CICD pipeline for a high traffic web application, can you give me the steps and what design consideration and inclement strategy you will take into constration for this?",
+      "start_time": 333.24,
+      "end_time": 348.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:08:14.386953"
+    },
+    {
+      "text": "All right, so, uh, uh, it all, it depends on what kind of python you're going to use, like if it is tecton, right?",
+      "start_time": 350.04,
+      "end_time": 357.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:08:21.964581"
+    },
+    {
+      "text": "And so technology is for the CIPad and for the CD, we are going to use Sargo CD.",
+      "start_time": 357.06,
+      "end_time": 361.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:08:26.730382"
+    },
+    {
+      "text": "And if it tanks, the consideration would differ.",
+      "start_time": 361.5,
+      "end_time": 364.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:08:29.563382"
+    },
+    {
+      "text": "But I'll take an example of Tecton along with the aircose.",
+      "start_time": 364.32,
+      "end_time": 368.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:08:33.420564"
+    },
+    {
+      "text": "Either it's going to be degrained, rolling update or canary.",
+      "start_time": 380.4,
+      "end_time": 384.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:08:49.744803"
+    },
+    {
+      "text": "And in our case, we want to use the blueberry tray.",
+      "start_time": 384.24,
+      "end_time": 386.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:08:51.657710"
+    },
+    {
+      "text": "So for that, we need to create 2 different deployments.",
+      "start_time": 386.52,
+      "end_time": 389.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:08:54.521180"
+    },
+    {
+      "text": "And once that has been created, in the service, we have to specify which particular deployment has to be the traffic to be diverted to.",
+      "start_time": 389.34,
+      "end_time": 399.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:09:04.197210"
+    },
+    {
+      "text": "Let's say, from ingress, we, uh, so from URL, we'll get hits from the user side.",
+      "start_time": 399.18,
+      "end_time": 404.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:09:09.904756"
+    },
+    {
+      "text": "And once we get any traffic, it will be passed through ingress to our service and service will decide for which particular deployment and pod it should point to.",
+      "start_time": 404.46,
+      "end_time": 413.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:09:18.583589"
+    },
+    {
+      "text": "And here, let's say A is the award department for you, and greets the plane. Uh, cream is the B deployment.",
+      "start_time": 413.04,
+      "end_time": 420.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:09:26.266047"
+    },
+    {
+      "text": "So in this case, we would 1st uh, our existing would be the A department, the D1, and once the deployment has been completed, we will divert the traffic to B1, and this can be automated using ergosity. And uh, this is ergor rollout.",
+      "start_time": 420.54,
+      "end_time": 435.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:09:41.774164"
+    },
+    {
+      "text": "It's the one term we use, and if you want to do it dynamic, and that's possible, and if you want to do it manually, increase of production, we generally tends to use a manual department rather than having an auto automated one.",
+      "start_time": 435.96,
+      "end_time": 449.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:09:54.249102"
+    },
+    {
+      "text": "But for the lower environments, we can always do automate, automate it.",
+      "start_time": 449.1,
+      "end_time": 453.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:09:58.871632"
+    },
+    {
+      "text": "And if you notice your doctor, continuize app is running slower than expected.",
+      "start_time": 455.34,
+      "end_time": 459.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:10:04.630669"
+    },
+    {
+      "text": "Can you walk me through, how would you diagnose and resolve potential performance issues related to docker configuration or container resource limits as well?",
+      "start_time": 459.6,
+      "end_time": 470.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:10:15.300199"
+    },
+    {
+      "text": "So, um, so 1st thing, uh, we can go and check the resource utilization, the memory and the speed CPU one.",
+      "start_time": 471.3,
+      "end_time": 479.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:10:24.825648"
+    },
+    {
+      "text": "And if it underutilized, right?",
+      "start_time": 479.34,
+      "end_time": 481.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:10:26.661248"
+    },
+    {
+      "text": "Then uh, if it's an API code, uh, the back end code, uh, which is uh, maybe, uh, it would be back end off front time either, but if it is trying to call an API, right?",
+      "start_time": 481.14,
+      "end_time": 492.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:10:37.379840"
+    },
+    {
+      "text": "And if you're taking up more time.",
+      "start_time": 492.24,
+      "end_time": 493.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:10:39.153333"
+    },
+    {
+      "text": "So in this case, what we can do is we can set up a APM monitoring system, attrition, monitoring.",
+      "start_time": 493.92,
+      "end_time": 500.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:10:45.925846"
+    },
+    {
+      "text": "What it's going to do, we will check our uh, the code base and the uh, article parts of support with the application training inside the part and it will check for each of the API calls.",
+      "start_time": 500.28,
+      "end_time": 510.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:10:56.556620"
+    },
+    {
+      "text": "What's the time duration for calling each of the players?",
+      "start_time": 510.84,
+      "end_time": 515.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:11:00.314212"
+    },
+    {
+      "text": "And if it if it's not in the millisecond,",
+      "start_time": 515.22,
+      "end_time": 517.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:11:02.204126"
+    },
+    {
+      "text": "Then that could be the cause why our board is running slow.",
+      "start_time": 517.38,
+      "end_time": 521.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:11:06.057560"
+    },
+    {
+      "text": "And if it is because of the memory of the CPU, then we can increase it.",
+      "start_time": 521.28,
+      "end_time": 526.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:11:11.799466"
+    },
+    {
+      "text": "Okay, and can you let me know, like, how would you set up proactive alerting for resource, utilization, either CPU, memory disk, and a hybrid environment using any cloud monitor like azure monitor app insights or from with us or Grafana?",
+      "start_time": 525.12,
+      "end_time": 543.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:11:29.388866"
+    },
+    {
+      "text": "Okay, so.",
+      "start_time": 544.26,
+      "end_time": 545.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:11:30.974896"
+    },
+    {
+      "text": "You need to ensure like minimal fall +and actionable alerts as well.",
+      "start_time": 543.6,
+      "end_time": 548.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:11:33.908229"
+    },
+    {
+      "text": "Krafana dashboard, which has been configured.",
+      "start_time": 579.3,
+      "end_time": 582.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:12:07.484517"
+    },
+    {
+      "text": "And then we can see the CPU and the MVD utilizers.",
+      "start_time": 582.06,
+      "end_time": 585.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:12:11.355370"
+    },
+    {
+      "text": "And uh, if your team need to trans, uh, I mean, I need to transition an ML worker from research notebook to a reproducible auditable production ready pipeline.",
+      "start_time": 589.68,
+      "end_time": 602.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:12:27.783005"
+    },
+    {
+      "text": "What are the steps would you take? To ensure like it is reproducible and you can also do the traceability part as well.",
+      "start_time": 602.34,
+      "end_time": 609.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:12:35.398078"
+    },
+    {
+      "text": "All right, so, uh, for the ML flow part, what I would do, what we are doing right now, I'm working in the Airtel.",
+      "start_time": 610.62,
+      "end_time": 618.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:12:44.050675"
+    },
+    {
+      "text": "So I'm working on 2 different products, one is prepare, and the other one is auto cash post-up.",
+      "start_time": 618.78,
+      "end_time": 623.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:12:48.819457"
+    },
+    {
+      "text": "In that, we have a posture model.",
+      "start_time": 623.52,
+      "end_time": 625.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:12:50.687780"
+    },
+    {
+      "text": "So what we generally tend to do is once the data science team has walked on that and they want to move to the production.",
+      "start_time": 625.38,
+      "end_time": 632.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:12:58.416085"
+    },
+    {
+      "text": "Uh, what we do is we create a Technon-Bandam, uh, and here, we are going to authorize that image, and along with the mortal versioning, and store it into the our queera process. And from there, it will be fresh, and it will be flawed to our uh, EKS department.",
+      "start_time": 632.76,
+      "end_time": 649.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:14.994393"
+    },
+    {
+      "text": "Because, also, we are using EPS, but right now, we migrated from EPS to IKEAS.",
+      "start_time": 649.5,
+      "end_time": 653.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:19.516497"
+    },
+    {
+      "text": "So children are, we are using them.",
+      "start_time": 653.94,
+      "end_time": 656.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:21.384523"
+    },
+    {
+      "text": "Can you share me on the screen?",
+      "start_time": 660.18,
+      "end_time": 662.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:27.176223"
+    },
+    {
+      "text": "I wanted to give you on Python problem?",
+      "start_time": 662.04,
+      "end_time": 663.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:29.108113"
+    },
+    {
+      "text": "So you need to write a python function to merge 2 sorted, a traitor into a single sorted traitor.",
+      "start_time": 663.78,
+      "end_time": 670.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:35.889241"
+    },
+    {
+      "text": "And you need to yield element in sorted water without loading all data into memory.",
+      "start_time": 670.38,
+      "end_time": 676.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:42.571877"
+    },
+    {
+      "text": "You can write your port here.",
+      "start_time": 681.72,
+      "end_time": 683.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:48.277156"
+    },
+    {
+      "text": "I'm pasting the question in the chat itself.",
+      "start_time": 683.22,
+      "end_time": 685.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:51.184454"
+    },
+    {
+      "text": "Okay, look at your website.",
+      "start_time": 689.28,
+      "end_time": 690.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:55.957198"
+    },
+    {
+      "text": "No, no, from the page where you have joined the Internet, right?",
+      "start_time": 689.1,
+      "end_time": 693.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:13:58.875617"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 696.66,
+      "end_time": 696.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:14:01.751061"
+    },
+    {
+      "text": "So you can see there is a question in the chat itself.",
+      "start_time": 696.9,
+      "end_time": 700.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:14:05.581575"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 705.36,
+      "end_time": 705.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:14:11.327403"
+    },
+    {
+      "text": "inside?",
+      "start_time": 711.0,
+      "end_time": 712.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:14:17.059053"
+    },
+    {
+      "text": "You can write on the right hand side.",
+      "start_time": 710.34,
+      "end_time": 712.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:14:18.063943"
+    },
+    {
+      "text": "Oh okay.",
+      "start_time": 713.04,
+      "end_time": 714.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:14:19.945691"
+    },
+    {
+      "text": "You can also tell me your approach regarding the problem.",
+      "start_time": 744.0,
+      "end_time": 748.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:14:53.579144"
+    },
+    {
+      "text": "Uh, so I was thinking of creating 2 lists here and um, using 2 different variables and merging that.",
+      "start_time": 748.56,
+      "end_time": 757.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:03.213088"
+    },
+    {
+      "text": "Like, uh, concretic, uh, concretation, using the concretation.",
+      "start_time": 757.68,
+      "end_time": 762.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:07.992813"
+    },
+    {
+      "text": "I'm going to like a variable A and variable B.",
+      "start_time": 762.6,
+      "end_time": 765.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:10.836283"
+    },
+    {
+      "text": "But I do not want you to load them into the memory.",
+      "start_time": 763.14,
+      "end_time": 767.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:12.784910"
+    },
+    {
+      "text": "Okay, so start loading time to memory.",
+      "start_time": 768.9,
+      "end_time": 773.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:18.518755"
+    },
+    {
+      "text": "Am I allowed to use any Google or anything else?",
+      "start_time": 773.1,
+      "end_time": 776.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:22.371656"
+    },
+    {
+      "text": "I have to do it by myself.",
+      "start_time": 776.94,
+      "end_time": 778.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:24.276371"
+    },
+    {
+      "text": "No, you have to do it by yourself.",
+      "start_time": 777.66,
+      "end_time": 780.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:25.266416"
+    },
+    {
+      "text": "Start loading to memory.",
+      "start_time": 782.52,
+      "end_time": 785.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:30.989873"
+    },
+    {
+      "text": "Does it have to be beautiful or invitable is fine?",
+      "start_time": 786.66,
+      "end_time": 790.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:35.776509"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 792.0,
+      "end_time": 794.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:39.655983"
+    },
+    {
+      "text": "Including to Monday.",
+      "start_time": 797.22,
+      "end_time": 799.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:15:45.387345"
+    },
+    {
+      "text": "I'm not exactly sure how to do this, but, uh, using list, I can create one. Using the, using loading into the memory, if that's fine.",
+      "start_time": 808.86,
+      "end_time": 819.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:16:04.703667"
+    },
+    {
+      "text": "Let's see one, two, three.",
+      "start_time": 821.1,
+      "end_time": 823.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:16:08.436833"
+    },
+    {
+      "text": "And the PR code. And that is, well, five, six.",
+      "start_time": 823.32,
+      "end_time": 830.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:16:16.138434"
+    },
+    {
+      "text": "The C.",
+      "start_time": 830.52,
+      "end_time": 832.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:16:18.018945"
+    },
+    {
+      "text": "Is there an option to run this?",
+      "start_time": 847.44,
+      "end_time": 849.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:16:34.345579"
+    },
+    {
+      "text": "Only you need to write it.",
+      "start_time": 850.5,
+      "end_time": 851.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:16:37.236900"
+    },
+    {
+      "text": "Do you know what is decorator in Pythonus?",
+      "start_time": 888.9,
+      "end_time": 892.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:17:17.587734"
+    },
+    {
+      "text": "Decorate, uh, uh, nutshell.",
+      "start_time": 893.1,
+      "end_time": 896.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:17:21.411354"
+    },
+    {
+      "text": "And do you know the difference between pandas, joint, merge, and quant cat operation?",
+      "start_time": 897.42,
+      "end_time": 902.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:17:27.191445"
+    },
+    {
+      "text": "Um, but you will directly merge it, uh, You know, it depends on what kind of elements you're using.",
+      "start_time": 903.18,
+      "end_time": 912.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:17:37.790958"
+    },
+    {
+      "text": "so that it would be in a sorted order or uh, it would be mixed up.",
+      "start_time": 912.6,
+      "end_time": 917.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:17:42.540100"
+    },
+    {
+      "text": "And concretation just will, uh, concrete in our sorted order.",
+      "start_time": 917.52,
+      "end_time": 923.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:17:48.281788"
+    },
+    {
+      "text": "Merge will just append at the end.",
+      "start_time": 923.28,
+      "end_time": 925.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:17:51.151887"
+    },
+    {
+      "text": "A concrete would be a band in the end and March will. In a sorted order.",
+      "start_time": 925.56,
+      "end_time": 930.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:17:55.992969"
+    },
+    {
+      "text": "Okay okay.",
+      "start_time": 931.8,
+      "end_time": 932.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:17:57.887863"
+    },
+    {
+      "text": "Okay, fine.",
+      "start_time": 940.5,
+      "end_time": 941.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:06.531201"
+    },
+    {
+      "text": "Uh, Menu, why you are looking for a change?",
+      "start_time": 941.28,
+      "end_time": 944.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:10.363343"
+    },
+    {
+      "text": "Uh, it's mainly for the growth.",
+      "start_time": 945.48,
+      "end_time": 948.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:13.241798"
+    },
+    {
+      "text": "And where are you currently working in?",
+      "start_time": 948.66,
+      "end_time": 951.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:17.095123"
+    },
+    {
+      "text": "I'm working at Caroline Global Solution, which is a GCC for element health.",
+      "start_time": 951.54,
+      "end_time": 957.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:22.878818"
+    },
+    {
+      "text": "Do you have any question for me if you wanted to ask?",
+      "start_time": 962.46,
+      "end_time": 965.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:30.537321"
+    },
+    {
+      "text": "Yeah, uh, so, uh, what exactly this role is about and what all task does this particular role involve in?",
+      "start_time": 965.58,
+      "end_time": 972.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:38.261233"
+    },
+    {
+      "text": "So this rule is for MLOF's engineers.",
+      "start_time": 972.66,
+      "end_time": 976.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:41.095039"
+    },
+    {
+      "text": "So we are looking for someone who has experience in cloud services, preferably we, I mean, we are looking for usure, uh, in cloud, docker, tariff home, CICT, infrastructure.",
+      "start_time": 976.26,
+      "end_time": 987.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:52.750457"
+    },
+    {
+      "text": "Application monitoring, all of this, using parameters as your app insights or as your want.",
+      "start_time": 987.3,
+      "end_time": 994.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:18:59.375916"
+    },
+    {
+      "text": "They're looking for these services.",
+      "start_time": 994.26,
+      "end_time": 996.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:02.213012"
+    },
+    {
+      "text": "I mean, experience in these areas.",
+      "start_time": 996.66,
+      "end_time": 998.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:04.145344"
+    },
+    {
+      "text": "Do you have any other question?",
+      "start_time": 1000.44,
+      "end_time": 1002.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:07.015342"
+    },
+    {
+      "text": "I don't know um any feedback for me.",
+      "start_time": 1002.9,
+      "end_time": 1005.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:10.842260"
+    },
+    {
+      "text": "Like what all?",
+      "start_time": 1005.72,
+      "end_time": 1008.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:13.694630"
+    },
+    {
+      "text": "I will, I think you should work upon Python actually.",
+      "start_time": 1005.0,
+      "end_time": 1010.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:15.659215"
+    },
+    {
+      "text": "Do you know what is iterator?",
+      "start_time": 1010.28,
+      "end_time": 1012.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:17.570157"
+    },
+    {
+      "text": "Did you work upon iterator in Python?",
+      "start_time": 1012.8,
+      "end_time": 1014.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:19.510695"
+    },
+    {
+      "text": "Uh, I'm mostly work on past scripting rather than Python, but right now I started to use Python a bit.",
+      "start_time": 1014.96,
+      "end_time": 1021.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:27.238360"
+    },
+    {
+      "text": "No problem.",
+      "start_time": 1022.22,
+      "end_time": 1022.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:28.130294"
+    },
+    {
+      "text": "Bye-bye.",
+      "start_time": 1029.84,
+      "end_time": 1030.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:35.789654"
+    },
+    {
+      "text": "Bye-bye.",
+      "start_time": 1030.92,
+      "end_time": 1031.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.0,
+      "timestamp": "2026-05-09T21:19:36.732449"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "session_name": "Meeting-NO460G",
+  "started": "2026-08-11T16:38:51.505354",
+  "segments": [
+    {
+      "text": "And can you tell me, like, how do you design a fraud prevention strategy using machine learning model?",
+      "start_time": 11.82,
+      "end_time": 19.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8848333333333334,
+      "timestamp": "2026-08-11T16:39:12.941480"
+    },
+    {
+      "text": "What feature engineering would you engineer and which model would you consider using for early detection?",
+      "start_time": 19.32,
+      "end_time": 25.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9361249999999999,
+      "timestamp": "2026-08-11T16:39:18.686586"
+    },
+    {
+      "text": "You can take this uh like for the banking transaction case.",
+      "start_time": 31.32,
+      "end_time": 35.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8992727272727272,
+      "timestamp": "2026-08-11T16:39:29.237742"
+    },
+    {
+      "text": "I would also...",
+      "start_time": 31.08,
+      "end_time": 38.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3123333333333333,
+      "timestamp": "2026-08-11T16:39:31.077334"
+    },
+    {
+      "text": "For traditional prevention, we can go with early detection viewers before settlement for that purpose.",
+      "start_time": 42.24,
+      "end_time": 49.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7920666666666666,
+      "timestamp": "2026-08-11T16:39:42.671668"
+    },
+    {
+      "text": "Uh, We can perform the, in a layering-based approach, like uh, real-time scoring a transaction diamond, offline pattern mining particularly.",
+      "start_time": 49.5,
+      "end_time": 59.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.76325,
+      "timestamp": "2026-08-11T16:39:52.305662"
+    },
+    {
+      "text": "You know, offline particular patterns, you can find out. And in the 2nd stage, we can go feature engineering.",
+      "start_time": 59.1,
+      "end_time": 65.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8460526315789473,
+      "timestamp": "2026-08-11T16:39:58.974755"
+    },
+    {
+      "text": "Uh, sometime new uh devices is to be there, they are willing mismatch or anything we can check with that.",
+      "start_time": 81.96,
+      "end_time": 89.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7341499999999999,
+      "timestamp": "2026-08-11T16:40:22.974398"
+    },
+    {
+      "text": "Also, in the sense that we can go with merchant category.",
+      "start_time": 89.4,
+      "end_time": 95.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9394545454545454,
+      "timestamp": "2026-08-11T16:40:28.732605"
+    },
+    {
+      "text": "And in a, in the sense of model selection, we can uh, go with the uh, boosting techniques like uh, exiboost or light BGM.",
+      "start_time": 103.92,
+      "end_time": 113.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7495416666666666,
+      "timestamp": "2026-08-11T16:40:47.053584"
+    },
+    {
+      "text": "GBM, you can go with and handle in particularly handling imbalance in particular.",
+      "start_time": 113.94,
+      "end_time": 120.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9144615384615384,
+      "timestamp": "2026-08-11T16:40:53.701384"
+    },
+    {
+      "text": "Uh, it's a protestant, not a one-like record.",
+      "start_time": 120.12,
+      "end_time": 123.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.410625,
+      "timestamp": "2026-08-11T16:40:56.563053"
+    },
+    {
+      "text": "There will be only one record is to be a proton there, so you can also handle the imbalance in data set.",
+      "start_time": 123.0,
+      "end_time": 128.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6918636363636362,
+      "timestamp": "2026-08-11T16:41:01.366643"
+    },
+    {
+      "text": "How would you write a sequel guilty to find either whose average transaction amount is significantly higher?",
+      "start_time": 149.16,
+      "end_time": 154.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8178235294117646,
+      "timestamp": "2026-08-11T16:41:27.324041"
+    },
+    {
+      "text": "I'm pasting the question in the chat.",
+      "start_time": 154.26,
+      "end_time": 156.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8971428571428571,
+      "timestamp": "2026-08-11T16:41:30.168254"
+    },
+    {
+      "text": "You can see it.",
+      "start_time": 156.72,
+      "end_time": 157.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7955,
+      "timestamp": "2026-08-11T16:41:31.118269"
+    },
+    {
+      "text": "Can you also share me your screen as well, please?",
+      "start_time": 193.92,
+      "end_time": 197.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8860999999999999,
+      "timestamp": "2026-08-11T16:42:10.487390"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 197.76,
+      "end_time": 199.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7455,
+      "timestamp": "2026-08-11T16:42:12.360978"
+    },
+    {
+      "text": "What I have to do?",
+      "start_time": 208.38,
+      "end_time": 210.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.845,
+      "timestamp": "2026-08-11T16:42:23.897320"
+    },
+    {
+      "text": "I had pasted the question there in the chat, you can see it.",
+      "start_time": 209.52,
+      "end_time": 213.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.901076923076923,
+      "timestamp": "2026-08-11T16:42:26.839976"
+    },
+    {
+      "text": "Is it?",
+      "start_time": 218.04,
+      "end_time": 220.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.767,
+      "timestamp": "2026-08-11T16:42:33.460073"
+    },
+    {
+      "text": "Can you tell me, no, no, just tell me your approach.",
+      "start_time": 280.32,
+      "end_time": 283.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8297272727272726,
+      "timestamp": "2026-08-11T16:43:36.898534"
+    },
+    {
+      "text": "Uh, in that approach, uh, you can go with, uh, particularly, uh, find out the average amount, uh, uh, From transactions.",
+      "start_time": 284.58,
+      "end_time": 298.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5740476190476191,
+      "timestamp": "2026-08-11T16:43:52.298458"
+    },
+    {
+      "text": "Both on, uh, And, uh, We can go with the pro giancy here.",
+      "start_time": 298.86,
+      "end_time": 308.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5804615384615385,
+      "timestamp": "2026-08-11T16:44:01.832870"
+    },
+    {
+      "text": "To a particularly global average and uh, It will be towards the goodbye approach, we can go in, uh, trans user ID and average amount.",
+      "start_time": 309.3,
+      "end_time": 319.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7471999999999999,
+      "timestamp": "2026-08-11T16:44:13.426931"
+    },
+    {
+      "text": "You can 1st select the user ID and over average, particularly the, uh, amount of average.",
+      "start_time": 324.3,
+      "end_time": 335.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.795125,
+      "timestamp": "2026-08-11T16:44:28.762855"
+    },
+    {
+      "text": "Can I write?",
+      "start_time": 344.16,
+      "end_time": 345.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8386666666666667,
+      "timestamp": "2026-08-11T16:44:38.286913"
+    },
+    {
+      "text": "Yeah, you can, uh, I will, I will give you one more question regarding Python.",
+      "start_time": 345.48,
+      "end_time": 351.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8529333333333332,
+      "timestamp": "2026-08-11T16:44:44.124427"
+    },
+    {
+      "text": "If you need to implement a Python function using gaming clustering to group transaction into cluster, assuming data frame include features like transaction amount, merchand ID, and transaction type.",
+      "start_time": 352.2,
+      "end_time": 364.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8890344827586205,
+      "timestamp": "2026-08-11T16:44:58.642518"
+    },
+    {
+      "text": "How would you do that in Python?",
+      "start_time": 364.98,
+      "end_time": 367.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9545714285714286,
+      "timestamp": "2026-08-11T16:45:00.418661"
+    },
+    {
+      "text": "I'm pasting the question here in the chat.",
+      "start_time": 367.14,
+      "end_time": 368.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9481249999999999,
+      "timestamp": "2026-08-11T16:45:02.336877"
+    },
+    {
+      "text": "There are no call.",
+      "start_time": 422.94,
+      "end_time": 423.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.52925,
+      "timestamp": "2026-08-11T16:45:57.053801"
+    }
+  ]
+}

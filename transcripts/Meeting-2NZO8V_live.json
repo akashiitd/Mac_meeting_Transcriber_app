@@ -1,0 +1,1806 @@
+{
+  "session_name": "Meeting-2NZO8V",
+  "started": "2026-06-04T12:01:53.015474",
+  "segments": [
+    {
+      "text": "And I have been working in healthcare data and listed a healthcare data professional for the last 5 years.",
+      "start_time": 0.0,
+      "end_time": 7.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8310526315789475,
+      "timestamp": "2026-06-04T12:02:02.888440"
+    },
+    {
+      "text": "My last company was Extria, where I have been looking care of. Commercial and litics, patient analytics, and my project, my work was mostly dependent on working on dashboard, make a scalable solution to the business requirements, for sales need, for uh, content need available to that uh, client specific need.",
+      "start_time": 7.86,
+      "end_time": 33.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8893529411764705,
+      "timestamp": "2026-06-04T12:02:29.104564"
+    },
+    {
+      "text": "So from reperment gathering to delivering the scalable solution and usable solution to the client that was a part of job.",
+      "start_time": 33.96,
+      "end_time": 44.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8680952380952381,
+      "timestamp": "2026-06-04T12:02:39.361142"
+    },
+    {
+      "text": "And uh, presently, I'm looking for new opportunities and I like uh, I have got interested in stay, stray when I applied for it.",
+      "start_time": 44.4,
+      "end_time": 54.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8473333333333334,
+      "timestamp": "2026-06-04T12:02:49.942215"
+    },
+    {
+      "text": "Okay, so regarding the interview process, I will try to cover section 82 Python's sequel machine, I think.",
+      "start_time": 56.16,
+      "end_time": 62.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7537777777777778,
+      "timestamp": "2026-06-04T12:02:56.699063"
+    },
+    {
+      "text": "And deep learning as well.",
+      "start_time": 62.82,
+      "end_time": 65.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8300000000000001,
+      "timestamp": "2026-06-04T12:02:59.497127"
+    },
+    {
+      "text": "So let us suppose like you are working on a classification problem where the data had contained numerous categorical and numerical features.",
+      "start_time": 65.22,
+      "end_time": 74.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8909090909090907,
+      "timestamp": "2026-06-04T12:03:09.211462"
+    },
+    {
+      "text": "Can you describe me your approach to feature engineering to improve mortal performance?",
+      "start_time": 74.16,
+      "end_time": 78.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9122307692307692,
+      "timestamp": "2026-06-04T12:03:12.989949"
+    },
+    {
+      "text": "Oh, okay.",
+      "start_time": 81.9,
+      "end_time": 82.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.42000000000000004,
+      "timestamp": "2026-06-04T12:03:17.667769"
+    },
+    {
+      "text": "So we have to do the featuring gearing for the numerical phase, we can create 1st style check. Uh, once the data is loaded, 1st we'll check for the missing value.",
+      "start_time": 82.98,
+      "end_time": 94.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8201935483870967,
+      "timestamp": "2026-06-04T12:03:29.346093"
+    },
+    {
+      "text": "For correlation analysis.",
+      "start_time": 94.5,
+      "end_time": 97.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.636,
+      "timestamp": "2026-06-04T12:03:32.099681"
+    },
+    {
+      "text": "And if we see that missing value is having more values, we can do data amputation. And if you have huge missing value and which is not affecting to the target variable, then we can drop that as well.",
+      "start_time": 97.2,
+      "end_time": 110.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9376153846153844,
+      "timestamp": "2026-06-04T12:03:45.661999"
+    },
+    {
+      "text": "And uh, for culinary, we have to check culinary with Correlation analysis, basically, with a target variable, and we can see that whether target variable is uh, let's say, highly correlated, negatively correlated or positively correlated.",
+      "start_time": 110.58,
+      "end_time": 130.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7779722222222223,
+      "timestamp": "2026-06-04T12:04:04.963417"
+    },
+    {
+      "text": "Also, we need to check for multicolinity between the independent variables.",
+      "start_time": 130.02,
+      "end_time": 133.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9210909090909092,
+      "timestamp": "2026-06-04T12:04:08.591465"
+    },
+    {
+      "text": "This is all I'm talking about, the numerical variables right now.",
+      "start_time": 133.74,
+      "end_time": 136.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9273636363636364,
+      "timestamp": "2026-06-04T12:04:10.534476"
+    },
+    {
+      "text": "So for these new medical variables, we can.",
+      "start_time": 136.08,
+      "end_time": 141.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9108750000000001,
+      "timestamp": "2026-06-04T12:04:16.257469"
+    },
+    {
+      "text": "Use the sorry, whereas I?",
+      "start_time": 141.96,
+      "end_time": 147.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7545999999999999,
+      "timestamp": "2026-06-04T12:04:22.018570"
+    },
+    {
+      "text": "Numerical variable, you are talking about.",
+      "start_time": 146.4,
+      "end_time": 148.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8380000000000001,
+      "timestamp": "2026-06-04T12:04:23.998872"
+    },
+    {
+      "text": "Yeah, new medical, uh, variable, uh, missing value imputation we can do, and uh, we can check also the outlet and this is because outlet is very important while doing a classification problem because, uh, since the range is going out of the way, so using, um, Using that that outlet with outlier, data can be, your model can be behaved abnormally.",
+      "start_time": 147.72,
+      "end_time": 174.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.804983870967742,
+      "timestamp": "2026-06-04T12:04:49.292888"
+    },
+    {
+      "text": "So that's also a part of need to check and then we have this.",
+      "start_time": 174.54,
+      "end_time": 179.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9286428571428572,
+      "timestamp": "2026-06-04T12:04:54.684559"
+    },
+    {
+      "text": "So I was into multicolinating, so you have to check the I have to check the multi-community as well, since uh, if some variables are doing high multicolinity, and we can check it by variation, VIF actually, VIEF is very high, like, near about 10, then we can drop that variable.",
+      "start_time": 179.76,
+      "end_time": 196.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8447058823529412,
+      "timestamp": "2026-06-04T12:05:11.231380"
+    },
+    {
+      "text": "So that is a part of EDA for the numerical variable. And for the categorical variable, since if it is a classic version problem, then that must be a category because it will be yes or no, 0 or one.",
+      "start_time": 196.2,
+      "end_time": 208.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8862250000000002,
+      "timestamp": "2026-06-04T12:05:23.634098"
+    },
+    {
+      "text": "Okay. Mm-hmm.",
+      "start_time": 207.42,
+      "end_time": 210.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5035000000000001,
+      "timestamp": "2026-06-04T12:05:24.478631"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 210.12,
+      "end_time": 211.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.756,
+      "timestamp": "2026-06-04T12:05:26.385287"
+    },
+    {
+      "text": "So if it is limb, I mean, by video classical analysis.",
+      "start_time": 208.62,
+      "end_time": 213.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7552727272727272,
+      "timestamp": "2026-06-04T12:05:28.265433"
+    },
+    {
+      "text": "So then we have to convert the classical valuable into numeric, like 01 or if there is 4 or 5 classes, then according to the 01234.",
+      "start_time": 213.66,
+      "end_time": 222.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8991923076923078,
+      "timestamp": "2026-06-04T12:05:36.985258"
+    },
+    {
+      "text": "For that, this is the part of the, uh, EDA.",
+      "start_time": 222.36,
+      "end_time": 227.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7115,
+      "timestamp": "2026-06-04T12:05:41.723267"
+    },
+    {
+      "text": "I can say, and we can get over our idea of the data set.",
+      "start_time": 227.1,
+      "end_time": 231.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8934285714285713,
+      "timestamp": "2026-06-04T12:05:46.521204"
+    },
+    {
+      "text": "What is the relationship?",
+      "start_time": 231.66,
+      "end_time": 233.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7895,
+      "timestamp": "2026-06-04T12:05:48.409045"
+    },
+    {
+      "text": "What is the meaning?",
+      "start_time": 233.58,
+      "end_time": 234.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8765000000000001,
+      "timestamp": "2026-06-04T12:05:49.347976"
+    },
+    {
+      "text": "What's the mean median mode of this numerical variables?",
+      "start_time": 234.42,
+      "end_time": 238.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.778888888888889,
+      "timestamp": "2026-06-04T12:05:53.202480"
+    },
+    {
+      "text": "A lot of suppose you are working on a classification problem with an imbalanced data set.",
+      "start_time": 239.4,
+      "end_time": 244.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8793749999999999,
+      "timestamp": "2026-06-04T12:05:59.056166"
+    },
+    {
+      "text": "So how would you address this issue using Python?",
+      "start_time": 244.02,
+      "end_time": 246.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9523333333333335,
+      "timestamp": "2026-06-04T12:06:00.971960"
+    },
+    {
+      "text": "And what kind of technique you will use here to handle this class imbalance problem?",
+      "start_time": 246.72,
+      "end_time": 252.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8920666666666667,
+      "timestamp": "2026-06-04T12:06:07.714841"
+    },
+    {
+      "text": "To get an imbalanced.",
+      "start_time": 256.2,
+      "end_time": 259.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7702500000000001,
+      "timestamp": "2026-06-04T12:06:14.319931"
+    },
+    {
+      "text": "Sorry, I'm just opening it.",
+      "start_time": 259.32,
+      "end_time": 260.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6412000000000001,
+      "timestamp": "2026-06-04T12:06:15.263280"
+    },
+    {
+      "text": "To get an imbalance, classification data 1st we have to balance it, so we have to normalize the data.",
+      "start_time": 260.4,
+      "end_time": 267.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8662105263157894,
+      "timestamp": "2026-06-04T12:06:22.075014"
+    },
+    {
+      "text": "You have to see that in which time you are saying it called imbalanced.",
+      "start_time": 267.0,
+      "end_time": 271.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9092142857142856,
+      "timestamp": "2026-06-04T12:06:25.875307"
+    },
+    {
+      "text": "If there is outlier, then you have to do the outlier detection with this typical outlier formula with IQR and this.",
+      "start_time": 271.26,
+      "end_time": 279.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8602857142857142,
+      "timestamp": "2026-06-04T12:06:34.571424"
+    },
+    {
+      "text": "And if there is extremely outly saying we can do, uh, log transformation, to keep maintained a range because uh, again, you have to check that uh, if suppose uh, for example, someone's age is saying uh 200 that we can drop that because that is practically impossible.",
+      "start_time": 279.48,
+      "end_time": 296.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8326666666666666,
+      "timestamp": "2026-06-04T12:06:52.020012"
+    },
+    {
+      "text": "But if someone income is saying, uh, 1000000000 and whereas uh, the income range lies between uh, 10 to uh, 10 lakhs.",
+      "start_time": 296.88,
+      "end_time": 309.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7599545454545453,
+      "timestamp": "2026-06-04T12:07:04.350539"
+    },
+    {
+      "text": "I mean, 10,000 to 10 lags, then that is a outlier.",
+      "start_time": 309.54,
+      "end_time": 312.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8765454545454545,
+      "timestamp": "2026-06-04T12:07:07.162416"
+    },
+    {
+      "text": "So we have to think that how can we bring that data into the table by taking normalization or log transformation?",
+      "start_time": 312.66,
+      "end_time": 320.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9521904761904761,
+      "timestamp": "2026-06-04T12:07:15.833411"
+    },
+    {
+      "text": "It all deployment.",
+      "start_time": 320.76,
+      "end_time": 321.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6483333333333333,
+      "timestamp": "2026-06-04T12:07:16.731897"
+    },
+    {
+      "text": "No, no, I'm talking about class imbalance problem.",
+      "start_time": 318.78,
+      "end_time": 323.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8340000000000001,
+      "timestamp": "2026-06-04T12:07:17.787266"
+    },
+    {
+      "text": "What about how class, but? Do you know what is class imbalance problem?",
+      "start_time": 323.22,
+      "end_time": 330.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6626923076923077,
+      "timestamp": "2026-06-04T12:07:25.447516"
+    },
+    {
+      "text": "And uh, Yes, can you explain me the question a little more that what what are you trying to mention by classing?",
+      "start_time": 328.56,
+      "end_time": 336.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8544090909090909,
+      "timestamp": "2026-06-04T12:07:31.190893"
+    },
+    {
+      "text": "Yes. Okay, okay, I'm I'm pasting the question there in that chart.",
+      "start_time": 330.36,
+      "end_time": 339.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.807,
+      "timestamp": "2026-06-04T12:07:34.124224"
+    },
+    {
+      "text": "So you are working on a classification problem with imbalanced data set.",
+      "start_time": 339.84,
+      "end_time": 344.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9578333333333332,
+      "timestamp": "2026-06-04T12:07:39.867714"
+    },
+    {
+      "text": "How would you address this issue using Python?",
+      "start_time": 344.88,
+      "end_time": 347.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9082500000000001,
+      "timestamp": "2026-06-04T12:07:41.757585"
+    },
+    {
+      "text": "Yeah, so I'm uh saying that uh, you are saying class imbalance means suppose uh, if there is uh, ES value is uh, like 95% years value and 5% is no value.",
+      "start_time": 348.78,
+      "end_time": 363.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.81659375,
+      "timestamp": "2026-06-04T12:07:58.155779"
+    },
+    {
+      "text": "Yes, yeah, yeah.",
+      "start_time": 362.34,
+      "end_time": 364.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6303333333333334,
+      "timestamp": "2026-06-04T12:07:59.025375"
+    },
+    {
+      "text": "Is this invention about? So in that case, we can go for, if we are talking about healthcare data set, we can go for precision and recall.",
+      "start_time": 363.6,
+      "end_time": 374.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8845925925925927,
+      "timestamp": "2026-06-04T12:08:09.632035"
+    },
+    {
+      "text": "And again, you have to check what is the type of data set? In case of healthcare diseases, we always go for recall, where we can see that out of uh, all positive uh patients.",
+      "start_time": 374.82,
+      "end_time": 386.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8384,
+      "timestamp": "2026-06-04T12:08:21.187302"
+    },
+    {
+      "text": "How many we are able to capture, out of all positivity, how many we all kept able to capture?",
+      "start_time": 386.4,
+      "end_time": 391.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.873,
+      "timestamp": "2026-06-04T12:08:26.849868"
+    },
+    {
+      "text": "That was precision.",
+      "start_time": 391.98,
+      "end_time": 392.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8069999999999999,
+      "timestamp": "2026-06-04T12:08:27.745347"
+    },
+    {
+      "text": "But in case of recall, we can see that out of all positive, we are actually how many we are correctly identified.",
+      "start_time": 392.82,
+      "end_time": 400.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9465454545454545,
+      "timestamp": "2026-06-04T12:08:34.570933"
+    },
+    {
+      "text": "The difference between these is, In case of recall, we,",
+      "start_time": 400.02,
+      "end_time": 405.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8074999999999999,
+      "timestamp": "2026-06-04T12:08:40.258448"
+    },
+    {
+      "text": "We cannot miss a diseased patient in case of healthcare data, whereas if we consider someone who is not prone to that disease, but we have considered them positive.",
+      "start_time": 405.24,
+      "end_time": 415.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8575862068965517,
+      "timestamp": "2026-06-04T12:08:50.905821"
+    },
+    {
+      "text": "So the cost is more on the, Recall.",
+      "start_time": 415.8,
+      "end_time": 419.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.85475,
+      "timestamp": "2026-06-04T12:08:53.696777"
+    },
+    {
+      "text": "Sorry, cost is more on the we are losing rather than we lose a patient, we can take one more into it.",
+      "start_time": 419.16,
+      "end_time": 425.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.891,
+      "timestamp": "2026-06-04T12:09:00.467481"
+    },
+    {
+      "text": "Okay, okay, yeah, that is fine.",
+      "start_time": 440.94,
+      "end_time": 443.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8221666666666666,
+      "timestamp": "2026-06-04T12:09:17.767655"
+    },
+    {
+      "text": "Okay, and we can use more analysis where uh, we can add some, um, synthetic data because our uh, no variable, no number, a number of noise very low, and if we train a model on top of these, then uh,",
+      "start_time": 425.4,
+      "end_time": 448.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8038048780487802,
+      "timestamp": "2026-06-04T12:09:23.670123"
+    },
+    {
+      "text": "So let us suppose you are given a data set containing customers or customer reviews with various issues such as missing values out there and inconsistent data type.",
+      "start_time": 443.82,
+      "end_time": 454.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9329642857142856,
+      "timestamp": "2026-06-04T12:09:29.376291"
+    },
+    {
+      "text": "Can you describe me?",
+      "start_time": 454.74,
+      "end_time": 455.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9112499999999999,
+      "timestamp": "2026-06-04T12:09:30.239594"
+    },
+    {
+      "text": "How would you clean and transform this data using Python?",
+      "start_time": 455.82,
+      "end_time": 458.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9254,
+      "timestamp": "2026-06-04T12:09:33.117888"
+    },
+    {
+      "text": "Can you just question, reform the question again?",
+      "start_time": 461.7,
+      "end_time": 464.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7528750000000001,
+      "timestamp": "2026-06-04T12:09:38.823852"
+    },
+    {
+      "text": "I was thinking about, well, sported.",
+      "start_time": 464.46,
+      "end_time": 466.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6863333333333334,
+      "timestamp": "2026-06-04T12:09:41.696684"
+    },
+    {
+      "text": "Okay, I had pasted the question in the chart.",
+      "start_time": 464.52,
+      "end_time": 468.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8771111111111111,
+      "timestamp": "2026-06-04T12:09:43.683711"
+    },
+    {
+      "text": "Facebook chat.",
+      "start_time": 475.68,
+      "end_time": 476.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.36800000000000005,
+      "timestamp": "2026-06-04T12:09:51.268763"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 476.64,
+      "end_time": 478.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.638,
+      "timestamp": "2026-06-04T12:09:53.176702"
+    },
+    {
+      "text": "Okay, man, does it contain customer reviews with various issues?",
+      "start_time": 478.32,
+      "end_time": 483.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7699,
+      "timestamp": "2026-06-04T12:09:58.010353"
+    },
+    {
+      "text": "Sweatcher missing value, outclers, in the sooner we go, how do you clean the data?",
+      "start_time": 483.42,
+      "end_time": 489.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.46546666666666664,
+      "timestamp": "2026-06-04T12:10:04.787640"
+    },
+    {
+      "text": "Uh for missing value.",
+      "start_time": 489.84,
+      "end_time": 492.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5585,
+      "timestamp": "2026-06-04T12:10:07.598883"
+    },
+    {
+      "text": "Can you also share me your screen, please, Anuja?",
+      "start_time": 493.2,
+      "end_time": 496.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8485555555555555,
+      "timestamp": "2026-06-04T12:10:11.537600"
+    },
+    {
+      "text": "Atcha, I, Yeah.",
+      "start_time": 493.44,
+      "end_time": 498.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5356666666666666,
+      "timestamp": "2026-06-04T12:10:13.373674"
+    },
+    {
+      "text": "Can you see it?",
+      "start_time": 510.36,
+      "end_time": 511.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8997499999999999,
+      "timestamp": "2026-06-04T12:10:25.838557"
+    },
+    {
+      "text": "Yep.",
+      "start_time": 511.74,
+      "end_time": 512.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.559,
+      "timestamp": "2026-06-04T12:10:27.832909"
+    },
+    {
+      "text": "Just click on return to full screen, yeah.",
+      "start_time": 513.9,
+      "end_time": 517.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.822125,
+      "timestamp": "2026-06-04T12:10:31.690651"
+    },
+    {
+      "text": "Can I see it now?",
+      "start_time": 517.32,
+      "end_time": 519.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8493999999999999,
+      "timestamp": "2026-06-04T12:10:33.520403"
+    },
+    {
+      "text": "For missing value.",
+      "start_time": 522.48,
+      "end_time": 525.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6806666666666666,
+      "timestamp": "2026-06-04T12:10:40.218307"
+    },
+    {
+      "text": "But we can do.",
+      "start_time": 525.84,
+      "end_time": 528.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.88225,
+      "timestamp": "2026-06-04T12:10:43.115434"
+    },
+    {
+      "text": "No, you do not need to write anything.",
+      "start_time": 526.68,
+      "end_time": 528.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.91125,
+      "timestamp": "2026-06-04T12:10:43.180005"
+    },
+    {
+      "text": "You just need to say it.",
+      "start_time": 528.3,
+      "end_time": 529.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8433333333333333,
+      "timestamp": "2026-06-04T12:10:44.134454"
+    },
+    {
+      "text": "So for missing value, what we can do is if it is pneumatical variable, then we can do it, mean or median.",
+      "start_time": 530.46,
+      "end_time": 538.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8947727272727275,
+      "timestamp": "2026-06-04T12:10:53.773696"
+    },
+    {
+      "text": "If it is a categorical variable, we can use it mode.",
+      "start_time": 538.86,
+      "end_time": 541.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8925454545454545,
+      "timestamp": "2026-06-04T12:10:56.588855"
+    },
+    {
+      "text": "For outlier, we can put normalization, lock transformation can be happened so that outlier remain unchanged, or if it is huge.",
+      "start_time": 541.92,
+      "end_time": 551.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8869999999999999,
+      "timestamp": "2026-06-04T12:11:06.271238"
+    },
+    {
+      "text": "Like name, just a case lowercase.",
+      "start_time": 581.88,
+      "end_time": 584.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.43616666666666665,
+      "timestamp": "2026-06-04T12:11:39.784627"
+    },
+    {
+      "text": "These things needed to be done to make your data have a clean and clear loop, remove the unwanted, uh, symbols like dash or a space which is not required, uh, 1st place or last waste after a before a word, that is also can be done for Python using, for missing values.",
+      "start_time": 584.82,
+      "end_time": 605.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8533018867924529,
+      "timestamp": "2026-06-04T12:12:00.220292"
+    },
+    {
+      "text": "We can use missing missing well imputation.",
+      "start_time": 605.7,
+      "end_time": 607.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7645714285714286,
+      "timestamp": "2026-06-04T12:12:02.834171"
+    },
+    {
+      "text": "Okay, okay, yeah.",
+      "start_time": 631.5,
+      "end_time": 634.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.49033333333333334,
+      "timestamp": "2026-06-04T12:12:29.741068"
+    },
+    {
+      "text": "Which mean, mean median mood, whatever needed, but outliers, we directly use inter quarter range, uh, or uh, lock transformation, for inconsistent, inconsistent data type. If it is different for all the columns, then you have, or you have to go with the individual column and make the data types accordingly. If it is sub, how inconsistent, then we can take columns together and just transform them.",
+      "start_time": 607.98,
+      "end_time": 635.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7525373134328358,
+      "timestamp": "2026-06-04T12:12:30.227970"
+    },
+    {
+      "text": "Okay, so, as a data scientist, if you are asked to detect anomalies in a transaction amount, the transaction, they will include transaction ID, customer ID, transaction, data, and amount.",
+      "start_time": 634.92,
+      "end_time": 647.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8454333333333335,
+      "timestamp": "2026-06-04T12:12:42.374473"
+    },
+    {
+      "text": "So how would you write your cycle query to identify transaction that are significantly higher than the average transaction amount of each customer?",
+      "start_time": 647.22,
+      "end_time": 656.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.946391304347826,
+      "timestamp": "2026-06-04T12:12:50.935828"
+    },
+    {
+      "text": "Hello, my name is Bill, you're talking about Animated detection, which would be considered.",
+      "start_time": 659.28,
+      "end_time": 664.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5815,
+      "timestamp": "2026-06-04T12:12:59.501014"
+    },
+    {
+      "text": "Unfortunately, I'm also transaction, table influenced on the.",
+      "start_time": 664.68,
+      "end_time": 668.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.303375,
+      "timestamp": "2026-06-04T12:13:03.314050"
+    },
+    {
+      "text": "Mhm, mm-hmm.",
+      "start_time": 671.34,
+      "end_time": 673.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3125,
+      "timestamp": "2026-06-04T12:13:08.093790"
+    },
+    {
+      "text": "It's transaction.",
+      "start_time": 703.74,
+      "end_time": 706.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.31,
+      "timestamp": "2026-06-04T12:13:40.735428"
+    },
+    {
+      "text": "No, you do not need to write, you just explain your approach.",
+      "start_time": 714.66,
+      "end_time": 718.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8600833333333336,
+      "timestamp": "2026-06-04T12:13:53.309452"
+    },
+    {
+      "text": "So, we can do.",
+      "start_time": 710.22,
+      "end_time": 719.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6950000000000001,
+      "timestamp": "2026-06-04T12:13:54.173180"
+    },
+    {
+      "text": "So here we can do what we can just a 2nd.",
+      "start_time": 719.76,
+      "end_time": 723.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.868,
+      "timestamp": "2026-06-04T12:13:58.005589"
+    },
+    {
+      "text": "So we can create the average amount.",
+      "start_time": 726.66,
+      "end_time": 732.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9287142857142856,
+      "timestamp": "2026-06-04T12:14:07.615060"
+    },
+    {
+      "text": "From the data set, And we're questioning significantly higher than average transaction amount for each customer.",
+      "start_time": 732.6,
+      "end_time": 741.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8840625,
+      "timestamp": "2026-06-04T12:14:16.287157"
+    },
+    {
+      "text": "Yeah, so we are having group by here at customer level, and we are trying to see who are having more than average transaction.",
+      "start_time": 741.72,
+      "end_time": 751.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9073749999999997,
+      "timestamp": "2026-06-04T12:14:26.894147"
+    },
+    {
+      "text": "And then we can you can see actually average transition would be even same for all the table, but you can see that whichever the customer lists are getting going more than average transaction.",
+      "start_time": 779.28,
+      "end_time": 790.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8678823529411765,
+      "timestamp": "2026-06-04T12:15:04.329079"
+    },
+    {
+      "text": "Understanding somewhat.",
+      "start_time": 793.08,
+      "end_time": 794.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.669,
+      "timestamp": "2026-06-04T12:15:09.048080"
+    },
+    {
+      "text": "Yes, sorry.",
+      "start_time": 799.44,
+      "end_time": 801.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.821,
+      "timestamp": "2026-06-04T12:15:15.768083"
+    },
+    {
+      "text": "And if you are given a task with aggregating a report that combine customer detail with their order history, The customer table include customer ID, customer name and city.",
+      "start_time": 800.88,
+      "end_time": 812.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9083793103448276,
+      "timestamp": "2026-06-04T12:15:27.432509"
+    },
+    {
+      "text": "The order team will include order IT customer ID and order amount.",
+      "start_time": 812.76,
+      "end_time": 816.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.67525,
+      "timestamp": "2026-06-04T12:15:31.193307"
+    },
+    {
+      "text": "How would you write your SQL query to list each customer with total order amount?",
+      "start_time": 816.12,
+      "end_time": 820.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9148,
+      "timestamp": "2026-06-04T12:15:36.031391"
+    },
+    {
+      "text": "Sorted by the highest spending customers.",
+      "start_time": 820.92,
+      "end_time": 826.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8683333333333333,
+      "timestamp": "2026-06-04T12:15:40.816852"
+    },
+    {
+      "text": "I'm pasting the problem here as well so that you can have a look into it.",
+      "start_time": 826.38,
+      "end_time": 830.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.957875,
+      "timestamp": "2026-06-04T12:15:44.650479"
+    },
+    {
+      "text": "And the opportunity for gumble, customer details, we can order this book.",
+      "start_time": 831.12,
+      "end_time": 835.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.32108333333333333,
+      "timestamp": "2026-06-04T12:15:50.338762"
+    },
+    {
+      "text": "The customer table in close one.",
+      "start_time": 835.68,
+      "end_time": 837.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4798333333333334,
+      "timestamp": "2026-06-04T12:15:52.233908"
+    },
+    {
+      "text": "The order.",
+      "start_time": 837.84,
+      "end_time": 840.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4375,
+      "timestamp": "2026-06-04T12:15:55.130937"
+    },
+    {
+      "text": "Entrance order ID customer will be in order.",
+      "start_time": 841.14,
+      "end_time": 845.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.700375,
+      "timestamp": "2026-06-04T12:16:00.907887"
+    },
+    {
+      "text": "Total order amount.",
+      "start_time": 849.48,
+      "end_time": 852.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8763333333333333,
+      "timestamp": "2026-06-04T12:16:07.590514"
+    },
+    {
+      "text": "I'm just getting a rough writing.",
+      "start_time": 855.72,
+      "end_time": 858.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8915000000000001,
+      "timestamp": "2026-06-04T12:16:13.360744"
+    },
+    {
+      "text": "See it.",
+      "start_time": 859.02,
+      "end_time": 860.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.363,
+      "timestamp": "2026-06-04T12:16:15.275033"
+    },
+    {
+      "text": "Order.",
+      "start_time": 870.48,
+      "end_time": 871.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.652,
+      "timestamp": "2026-06-04T12:16:26.813611"
+    },
+    {
+      "text": "Gust.",
+      "start_time": 880.92,
+      "end_time": 882.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.399,
+      "timestamp": "2026-06-04T12:16:37.368477"
+    },
+    {
+      "text": "Able, uh, Lift joint.",
+      "start_time": 882.96,
+      "end_time": 888.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.32375000000000004,
+      "timestamp": "2026-06-04T12:16:43.147048"
+    },
+    {
+      "text": "Sorry.",
+      "start_time": 888.18,
+      "end_time": 888.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.559,
+      "timestamp": "2026-06-04T12:16:43.155522"
+    },
+    {
+      "text": "Left join.",
+      "start_time": 889.08,
+      "end_time": 891.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5660000000000001,
+      "timestamp": "2026-06-04T12:16:45.997869"
+    },
+    {
+      "text": "Or, order table.",
+      "start_time": 891.66,
+      "end_time": 894.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5633333333333334,
+      "timestamp": "2026-06-04T12:16:48.865489"
+    },
+    {
+      "text": "Uh, just tell me your approach, uh, Anuj. Yeah.",
+      "start_time": 893.28,
+      "end_time": 897.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6006666666666667,
+      "timestamp": "2026-06-04T12:16:52.812811"
+    },
+    {
+      "text": "Okay, so approach will be select those columns which are needed.",
+      "start_time": 897.54,
+      "end_time": 902.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8746363636363637,
+      "timestamp": "2026-06-04T12:16:56.563409"
+    },
+    {
+      "text": "Okay, uh, and uh, if you need to, uh, how good you are in Python, Maino?",
+      "start_time": 934.8,
+      "end_time": 941.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7637500000000002,
+      "timestamp": "2026-06-04T12:17:36.041088"
+    },
+    {
+      "text": "Uh, Python, I will say intermediate.",
+      "start_time": 941.88,
+      "end_time": 945.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6221666666666666,
+      "timestamp": "2026-06-04T12:17:39.764737"
+    },
+    {
+      "text": "I'm giving you one question.",
+      "start_time": 945.42,
+      "end_time": 947.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9458,
+      "timestamp": "2026-06-04T12:17:41.737338"
+    },
+    {
+      "text": "You need to write a Python function.",
+      "start_time": 947.1,
+      "end_time": 948.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8668571428571428,
+      "timestamp": "2026-06-04T12:17:43.672021"
+    },
+    {
+      "text": "Okay, to construct a data pipeline to treat patient data from a sequel database and process it to calculate the time between each patient diagnosis.",
+      "start_time": 948.96,
+      "end_time": 958.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.88464,
+      "timestamp": "2026-06-04T12:17:53.385999"
+    },
+    {
+      "text": "And the start of treatment.",
+      "start_time": 958.74,
+      "end_time": 961.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7208,
+      "timestamp": "2026-06-04T12:17:56.147338"
+    },
+    {
+      "text": "Okay, I'm pasting the question here in the chart so that you can have a look into it.",
+      "start_time": 961.08,
+      "end_time": 965.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9436111111111113,
+      "timestamp": "2026-06-04T12:18:00.019249"
+    },
+    {
+      "text": "And Assume the database has 2 table diagnose and treatment, the diagnose table has these columns, patient ID diagnose, state, and diagnosis code.",
+      "start_time": 965.34,
+      "end_time": 976.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8351304347826087,
+      "timestamp": "2026-06-04T12:18:11.651550"
+    },
+    {
+      "text": "The treatment table has column, like treatment, started and treatment good.",
+      "start_time": 976.38,
+      "end_time": 980.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8788181818181818,
+      "timestamp": "2026-06-04T12:18:15.393864"
+    },
+    {
+      "text": "So you, you need to write a python function to construct a data pipeline that read patient data from the sequel database and process it to calculate the time between HPT.",
+      "start_time": 980.64,
+      "end_time": 989.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.884225806451613,
+      "timestamp": "2026-06-04T12:18:24.091553"
+    },
+    {
+      "text": "Each patient diagnosis and the start of treatment.",
+      "start_time": 989.4,
+      "end_time": 992.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8862500000000001,
+      "timestamp": "2026-06-04T12:18:26.876972"
+    },
+    {
+      "text": "Turn off.",
+      "start_time": 1014.18,
+      "end_time": 1015.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4065,
+      "timestamp": "2026-06-04T12:18:50.816469"
+    },
+    {
+      "text": "Can I explain it?",
+      "start_time": 1049.58,
+      "end_time": 1052.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7530000000000001,
+      "timestamp": "2026-06-04T12:19:27.260848"
+    },
+    {
+      "text": "So, uh, for this query, uh, we have to extract the table, march the table from that path as a data frame.",
+      "start_time": 1055.28,
+      "end_time": 1063.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8010454545454544,
+      "timestamp": "2026-06-04T12:19:38.892870"
+    },
+    {
+      "text": "And then uh, we can create a new column, which will be uh, like, suppose DF time between.",
+      "start_time": 1063.8,
+      "end_time": 1071.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8360555555555557,
+      "timestamp": "2026-06-04T12:19:46.560133"
+    },
+    {
+      "text": "And in between the time, uh, it's you have to use. Each vision diagonosis and start of treatment.",
+      "start_time": 1071.9,
+      "end_time": 1083.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7465555555555556,
+      "timestamp": "2026-06-04T12:19:58.091625"
+    },
+    {
+      "text": "So there must be a diagonysis date.",
+      "start_time": 1083.0,
+      "end_time": 1086.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8367142857142856,
+      "timestamp": "2026-06-04T12:20:00.896210"
+    },
+    {
+      "text": "Yes, that is that is there and in the diagnosis.",
+      "start_time": 1086.06,
+      "end_time": 1089.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7326999999999999,
+      "timestamp": "2026-06-04T12:20:04.761826"
+    },
+    {
+      "text": "8 and Start of treatment.",
+      "start_time": 1089.72,
+      "end_time": 1095.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8732000000000001,
+      "timestamp": "2026-06-04T12:20:10.493414"
+    },
+    {
+      "text": "Treatment tables have collaboration, edit, treatment.",
+      "start_time": 1096.26,
+      "end_time": 1100.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5403333333333334,
+      "timestamp": "2026-06-04T12:20:15.285702"
+    },
+    {
+      "text": "Yeah, treatment started.",
+      "start_time": 1100.64,
+      "end_time": 1101.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.73,
+      "timestamp": "2026-06-04T12:20:16.241664"
+    },
+    {
+      "text": "So we can use the daytime function and using the data function, we can get a difference between that.",
+      "start_time": 1101.78,
+      "end_time": 1107.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9112105263157896,
+      "timestamp": "2026-06-04T12:20:23.013462"
+    },
+    {
+      "text": "So we can get a minus of that of in days format.",
+      "start_time": 1133.7,
+      "end_time": 1138.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9011666666666666,
+      "timestamp": "2026-06-04T12:20:52.749441"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1156.62,
+      "end_time": 1158.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.848,
+      "timestamp": "2026-06-04T12:21:12.869139"
+    },
+    {
+      "text": "Hello, can you also write a Python function to implement a simple clinical event algorithm that identify patients who experience a specific clinical event, as you have our data frame with column, patient IT, vent it, and even type.",
+      "start_time": 1154.76,
+      "end_time": 1170.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8262564102564104,
+      "timestamp": "2026-06-04T12:21:25.662361"
+    },
+    {
+      "text": "The function should written a list of patient idea of explain their specific event type.",
+      "start_time": 1170.6,
+      "end_time": 1175.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8374666666666664,
+      "timestamp": "2026-06-04T12:21:30.261496"
+    },
+    {
+      "text": "Okay, can you write the question, please?",
+      "start_time": 1177.2,
+      "end_time": 1180.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8787142857142858,
+      "timestamp": "2026-06-04T12:21:34.975609"
+    },
+    {
+      "text": "Yeah, I had returned.",
+      "start_time": 1178.82,
+      "end_time": 1181.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.72925,
+      "timestamp": "2026-06-04T12:21:35.997590"
+    },
+    {
+      "text": "As long as you have the dig of him, it's gonna.",
+      "start_time": 1204.2,
+      "end_time": 1207.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4528181818181818,
+      "timestamp": "2026-06-04T12:22:02.819940"
+    },
+    {
+      "text": "The function.",
+      "start_time": 1207.98,
+      "end_time": 1210.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3845,
+      "timestamp": "2026-06-04T12:22:04.708763"
+    },
+    {
+      "text": "should",
+      "start_time": 1225.86,
+      "end_time": 1227.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.496,
+      "timestamp": "2026-06-04T12:22:21.987464"
+    },
+    {
+      "text": "We just tell me your approach and nothing else.",
+      "start_time": 1263.6,
+      "end_time": 1266.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9001111111111112,
+      "timestamp": "2026-06-04T12:23:01.454602"
+    },
+    {
+      "text": "Yeah, so I'll, I'll write uh up.",
+      "start_time": 1266.66,
+      "end_time": 1271.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.71,
+      "timestamp": "2026-06-04T12:23:06.189594"
+    },
+    {
+      "text": "I'll take out of that specific patience where, um,",
+      "start_time": 1271.16,
+      "end_time": 1277.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8157777777777777,
+      "timestamp": "2026-06-04T12:23:11.946495"
+    },
+    {
+      "text": "Who have? Experience that fits so even type double equals to that specific event, or if it is a multiple events, then make a list of that multiple events, which meets the criteria, and then create a patient flag or create a patient column, which will mention about those specific event types for those specific patients.",
+      "start_time": 1277.52,
+      "end_time": 1304.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9186249999999998,
+      "timestamp": "2026-06-04T12:23:40.114395"
+    },
+    {
+      "text": "Okay okay.",
+      "start_time": 1305.84,
+      "end_time": 1306.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5834999999999999,
+      "timestamp": "2026-06-04T12:23:41.751007"
+    },
+    {
+      "text": "Book it.",
+      "start_time": 1312.74,
+      "end_time": 1313.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.45799999999999996,
+      "timestamp": "2026-06-04T12:23:48.460133"
+    },
+    {
+      "text": "Uh, so yeah, I'm done with the interview process.",
+      "start_time": 1313.52,
+      "end_time": 1316.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8301111111111111,
+      "timestamp": "2026-06-04T12:23:51.355785"
+    },
+    {
+      "text": "Do you have any questions, like, if you wanted to ask?",
+      "start_time": 1316.34,
+      "end_time": 1317.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8370909090909092,
+      "timestamp": "2026-06-04T12:23:52.312370"
+    },
+    {
+      "text": "Oh, yes.",
+      "start_time": 1319.76,
+      "end_time": 1322.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.583,
+      "timestamp": "2026-06-04T12:23:57.048662"
+    },
+    {
+      "text": "So the criteria, the job description I studied was mostly on, it is on healthcare data set.",
+      "start_time": 1322.04,
+      "end_time": 1328.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8461764705882354,
+      "timestamp": "2026-06-04T12:24:03.839002"
+    },
+    {
+      "text": "Is it?",
+      "start_time": 1328.7,
+      "end_time": 1329.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5854999999999999,
+      "timestamp": "2026-06-04T12:24:03.844129"
+    },
+    {
+      "text": "So you are directly from Strave, I believe.",
+      "start_time": 1329.0,
+      "end_time": 1331.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.779875,
+      "timestamp": "2026-06-04T12:24:06.668464"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 1329.78,
+      "end_time": 1332.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6165,
+      "timestamp": "2026-06-04T12:24:06.695403"
+    },
+    {
+      "text": "Yeah, so it is on uh, uh, you watch.",
+      "start_time": 1332.54,
+      "end_time": 1337.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.611111111111111,
+      "timestamp": "2026-06-04T12:24:12.410980"
+    },
+    {
+      "text": "Healthcare data set, yeah, it's rule is for that.",
+      "start_time": 1335.18,
+      "end_time": 1338.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7984444444444445,
+      "timestamp": "2026-06-04T12:24:12.479533"
+    },
+    {
+      "text": "Right.",
+      "start_time": 1341.06,
+      "end_time": 1342.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.917,
+      "timestamp": "2026-06-04T12:24:17.247057"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1342.32,
+      "end_time": 1343.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.773,
+      "timestamp": "2026-06-04T12:24:18.211175"
+    },
+    {
+      "text": "Yeah, it's not healthcare, datasis, it's consisting of all kind of healthcare data, it like HRDMR claims everything.",
+      "start_time": 1337.4,
+      "end_time": 1344.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7228888888888889,
+      "timestamp": "2026-06-04T12:24:19.243658"
+    },
+    {
+      "text": "Correct, correct.",
+      "start_time": 1343.7,
+      "end_time": 1345.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.724,
+      "timestamp": "2026-06-04T12:24:20.154967"
+    },
+    {
+      "text": "And even using lab notes, clinical notes as well, the unstructured format of data.",
+      "start_time": 1344.48,
+      "end_time": 1351.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8872142857142856,
+      "timestamp": "2026-06-04T12:24:25.889405"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 1351.32,
+      "end_time": 1351.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.873,
+      "timestamp": "2026-06-04T12:24:26.873034"
+    },
+    {
+      "text": "So I have seen, I have gone through some studies.",
+      "start_time": 1352.52,
+      "end_time": 1356.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9281,
+      "timestamp": "2026-06-04T12:24:31.619652"
+    },
+    {
+      "text": "I was doing a research.",
+      "start_time": 1356.54,
+      "end_time": 1357.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9315999999999999,
+      "timestamp": "2026-06-04T12:24:32.550322"
+    },
+    {
+      "text": "I was saying that you are using this data to get some kind of outcome.",
+      "start_time": 1357.56,
+      "end_time": 1362.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9704666666666668,
+      "timestamp": "2026-06-04T12:24:37.373999"
+    },
+    {
+      "text": "So I want to know more about who is your targeted?",
+      "start_time": 1362.66,
+      "end_time": 1366.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9460909090909091,
+      "timestamp": "2026-06-04T12:24:41.222875"
+    },
+    {
+      "text": "Uh, for that outcome.",
+      "start_time": 1366.98,
+      "end_time": 1369.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.67875,
+      "timestamp": "2026-06-04T12:24:44.070833"
+    },
+    {
+      "text": "I mean, uh,",
+      "start_time": 1369.44,
+      "end_time": 1371.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7453333333333333,
+      "timestamp": "2026-06-04T12:24:46.010688"
+    },
+    {
+      "text": "See, I cannot disclose those information right now, once you are part of the team, then you will get to know.",
+      "start_time": 1369.92,
+      "end_time": 1375.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8507142857142856,
+      "timestamp": "2026-06-04T12:24:49.962558"
+    },
+    {
+      "text": "But, uh, like, uh, my question is not very specific to it.",
+      "start_time": 1376.4,
+      "end_time": 1383.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7729166666666667,
+      "timestamp": "2026-06-04T12:24:58.509350"
+    },
+    {
+      "text": "Who are your targets?",
+      "start_time": 1383.48,
+      "end_time": 1384.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9580000000000001,
+      "timestamp": "2026-06-04T12:24:59.429483"
+    },
+    {
+      "text": "Like, it's the HCP, the patients, or business international, whom are we serving with this?",
+      "start_time": 1384.5,
+      "end_time": 1390.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8472000000000001,
+      "timestamp": "2026-06-04T12:25:05.260189"
+    },
+    {
+      "text": "So mostly we are serving these SCPs and the patient data itself.",
+      "start_time": 1390.5,
+      "end_time": 1396.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9001666666666668,
+      "timestamp": "2026-06-04T12:25:11.078491"
+    },
+    {
+      "text": "And we are serving to HCPN patients.",
+      "start_time": 1396.92,
+      "end_time": 1400.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8358571428571429,
+      "timestamp": "2026-06-04T12:25:15.787025"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1399.8,
+      "end_time": 1401.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.784,
+      "timestamp": "2026-06-04T12:25:15.808865"
+    },
+    {
+      "text": "Mostly, because I am talking about here commercial analytics where I have worked, where we usually talk with the medicine companies who are manufacturer units.",
+      "start_time": 1401.0,
+      "end_time": 1414.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9256799999999998,
+      "timestamp": "2026-06-04T12:25:29.324386"
+    },
+    {
+      "text": "That's what my question is.",
+      "start_time": 1414.2,
+      "end_time": 1415.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9478,
+      "timestamp": "2026-06-04T12:25:30.184878"
+    },
+    {
+      "text": "Okay, no, no, we are mostly dealing with SCP and patient level data.",
+      "start_time": 1414.86,
+      "end_time": 1419.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8287692307692307,
+      "timestamp": "2026-06-04T12:25:34.120711"
+    },
+    {
+      "text": "Okay, yeah. Okay then.",
+      "start_time": 1422.54,
+      "end_time": 1425.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.39475,
+      "timestamp": "2026-06-04T12:25:39.827163"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 1425.9,
+      "end_time": 1426.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.877,
+      "timestamp": "2026-06-04T12:25:41.739578"
+    },
+    {
+      "text": "Bye-bye.",
+      "start_time": 1426.8,
+      "end_time": 1427.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.699,
+      "timestamp": "2026-06-04T12:25:42.694936"
+    },
+    {
+      "text": "Thank you for your time.",
+      "start_time": 1425.36,
+      "end_time": 1428.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9724,
+      "timestamp": "2026-06-04T12:25:43.586257"
+    },
+    {
+      "text": "Have a good day.",
+      "start_time": 1428.96,
+      "end_time": 1429.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8532500000000001,
+      "timestamp": "2026-06-04T12:25:44.537548"
+    }
+  ]
+}

@@ -1,0 +1,924 @@
+{
+  "session_name": "Meeting-T2BQP3",
+  "started": "2026-05-13T17:11:03.048604",
+  "segments": [
+    {
+      "text": "Yeah, yeah, Jyoti is my voice audible to you.",
+      "start_time": 10.8,
+      "end_time": 13.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8054444444444444,
+      "timestamp": "2026-05-13T17:11:18.059504"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 15.3,
+      "end_time": 16.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.701,
+      "timestamp": "2026-05-13T17:11:20.886665"
+    },
+    {
+      "text": "My name is Akash.",
+      "start_time": 19.92,
+      "end_time": 22.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.85975,
+      "timestamp": "2026-05-13T17:11:26.669905"
+    },
+    {
+      "text": "Are you comfortable giving the entry or not?",
+      "start_time": 22.5,
+      "end_time": 25.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7484999999999999,
+      "timestamp": "2026-05-13T17:11:29.568300"
+    },
+    {
+      "text": "Uh, yes, I.",
+      "start_time": 26.7,
+      "end_time": 29.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5179999999999999,
+      "timestamp": "2026-05-13T17:11:33.348846"
+    },
+    {
+      "text": "But I have joined through mobile.",
+      "start_time": 29.22,
+      "end_time": 31.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8936666666666667,
+      "timestamp": "2026-05-13T17:11:36.249241"
+    },
+    {
+      "text": "Is it fine?",
+      "start_time": 31.98,
+      "end_time": 32.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7000000000000001,
+      "timestamp": "2026-05-13T17:11:37.192100"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 31.74,
+      "end_time": 33.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.87375,
+      "timestamp": "2026-05-13T17:11:38.204326"
+    },
+    {
+      "text": "No problem.",
+      "start_time": 33.96,
+      "end_time": 34.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.644,
+      "timestamp": "2026-05-13T17:11:38.213738"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 35.88,
+      "end_time": 36.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.728,
+      "timestamp": "2026-05-13T17:11:41.036504"
+    },
+    {
+      "text": "Uh, so, Jyoti, my name is Akash and I have 10 year of experience in data science and machine learning.",
+      "start_time": 37.14,
+      "end_time": 43.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.80705,
+      "timestamp": "2026-05-13T17:11:46.881706"
+    },
+    {
+      "text": "Regarding the interview, I will try to cover some of the section related to Python Generator VI, length, chain, and length.",
+      "start_time": 43.08,
+      "end_time": 49.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8081428571428569,
+      "timestamp": "2026-05-13T17:11:53.641597"
+    },
+    {
+      "text": "Uh, can you briefly introduce yourself?",
+      "start_time": 49.14,
+      "end_time": 52.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7416666666666667,
+      "timestamp": "2026-05-13T17:11:56.431707"
+    },
+    {
+      "text": "Yeah, that's, like, uh, I enjoy chicken party.",
+      "start_time": 55.02,
+      "end_time": 58.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.43887499999999996,
+      "timestamp": "2026-05-13T17:12:02.215414"
+    },
+    {
+      "text": "I have around 8 years of experience in ITP.",
+      "start_time": 58.2,
+      "end_time": 61.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.794,
+      "timestamp": "2026-05-13T17:12:06.031536"
+    },
+    {
+      "text": "So initially, I have started my career with software SD. And from past 3 years, I have been working as AAM engineer.",
+      "start_time": 61.92,
+      "end_time": 69.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8374545454545456,
+      "timestamp": "2026-05-13T17:12:13.761943"
+    },
+    {
+      "text": "And coming to my technical skills, I have done Gene, machine learning, and deep learning projects as well.",
+      "start_time": 69.72,
+      "end_time": 76.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7940555555555558,
+      "timestamp": "2026-05-13T17:12:20.449818"
+    },
+    {
+      "text": "So my recent project is on now, Jenei, which is like compass.",
+      "start_time": 76.2,
+      "end_time": 80.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8021666666666666,
+      "timestamp": "2026-05-13T17:12:25.254242"
+    },
+    {
+      "text": "So, uh, Like, yeah, it is a, like, uh, healthcare domain.",
+      "start_time": 80.76,
+      "end_time": 87.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5478181818181818,
+      "timestamp": "2026-05-13T17:12:31.986740"
+    },
+    {
+      "text": "So where, um, the objective for this, like the requirement, but this is, uh, like creating the summary for each patient, whoever they have listed as a home case service.",
+      "start_time": 87.9,
+      "end_time": 100.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7349666666666668,
+      "timestamp": "2026-05-13T17:12:44.548940"
+    },
+    {
+      "text": "And here we have used Ajene with a GPT 3.5 model with a prompting technique to summarize the patient history.",
+      "start_time": 100.2,
+      "end_time": 110.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8800000000000001,
+      "timestamp": "2026-05-13T17:12:55.080224"
+    },
+    {
+      "text": "Uh, yeah, that's a quick entry about me.",
+      "start_time": 110.76,
+      "end_time": 113.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.622,
+      "timestamp": "2026-05-13T17:12:57.851132"
+    },
+    {
+      "text": "Oh, yeah.",
+      "start_time": 113.88,
+      "end_time": 115.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.352,
+      "timestamp": "2026-05-13T17:12:59.746826"
+    },
+    {
+      "text": "Okay, and uh, okay, so how do you use Langchen and Langgraph to design a Gen AI work float that support seamless multi-tern conversation, ensuring agent estate is maintained, and transitions are auditable across each user tons.",
+      "start_time": 117.3,
+      "end_time": 136.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7548108108108109,
+      "timestamp": "2026-05-13T17:13:21.160515"
+    },
+    {
+      "text": "Yeah, I like, uh, we don't know land change, so we have, it is a framework consisting of the sequence of library that we can, uh, use some, uh, like unloading the text, that, uh, creating the chunks and uh, waiting them buddies.",
+      "start_time": 137.4,
+      "end_time": 156.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6880465116279068,
+      "timestamp": "2026-05-13T17:13:41.323826"
+    },
+    {
+      "text": "And accessing like a.",
+      "start_time": 156.6,
+      "end_time": 159.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6539999999999999,
+      "timestamp": "2026-05-13T17:13:43.918897"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 174.3,
+      "end_time": 175.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.772,
+      "timestamp": "2026-05-13T17:13:59.298722"
+    },
+    {
+      "text": "Like it is a sequence of steps from text loading to text generation.",
+      "start_time": 175.38,
+      "end_time": 180.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9284615384615383,
+      "timestamp": "2026-05-13T17:14:05.064319"
+    },
+    {
+      "text": "And how would you use lang chain and lang graph to ensure seamless recovery and minimal data loss when a Jenny agent fail, mid task due to Due to any external API outages in a production pipeline.",
+      "start_time": 182.58,
+      "end_time": 199.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8234324324324322,
+      "timestamp": "2026-05-13T17:14:23.538186"
+    },
+    {
+      "text": "Oh, can you repeat the question, uh, first?",
+      "start_time": 201.84,
+      "end_time": 205.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6361249999999999,
+      "timestamp": "2026-05-13T17:14:29.999702"
+    },
+    {
+      "text": "I mean, how would you use lang chain or langrup to ensure seamless recovery and minimal data loss when a AI agent fail in our mid task due to external API outages and a production pipeline?",
+      "start_time": 204.06,
+      "end_time": 218.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8945833333333333,
+      "timestamp": "2026-05-13T17:14:42.732741"
+    },
+    {
+      "text": "Like to travel or data, so as we have, like, whatever, um, like, go back and, Like, we are writing some models.",
+      "start_time": 221.94,
+      "end_time": 236.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6173636363636362,
+      "timestamp": "2026-05-13T17:15:00.823308"
+    },
+    {
+      "text": "So whenever the text is generated, So we are directly saving that to the model.",
+      "start_time": 236.28,
+      "end_time": 243.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8856666666666668,
+      "timestamp": "2026-05-13T17:15:07.502281"
+    },
+    {
+      "text": "Like if you take the uh, Django as a project structure, so we all like we have the files consisting of a, um, new details, use, models, and uh, text pass, and it is like all these photos we have.",
+      "start_time": 243.12,
+      "end_time": 259.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.745125,
+      "timestamp": "2026-05-13T17:15:23.979192"
+    },
+    {
+      "text": "So specifically for model section, like whatever the, The text we have generator.",
+      "start_time": 259.74,
+      "end_time": 267.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8383076923076923,
+      "timestamp": "2026-05-13T17:15:31.489240"
+    },
+    {
+      "text": "Those will be uh, like uh, saved into the models.",
+      "start_time": 267.18,
+      "end_time": 272.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7821999999999999,
+      "timestamp": "2026-05-13T17:15:37.218600"
+    },
+    {
+      "text": "And as a backup, so we can, without any data loss.",
+      "start_time": 272.76,
+      "end_time": 277.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7899999999999999,
+      "timestamp": "2026-05-13T17:15:42.035209"
+    },
+    {
+      "text": "So we can get the data from the from those models. Yeah.",
+      "start_time": 277.56,
+      "end_time": 283.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8904166666666667,
+      "timestamp": "2026-05-13T17:15:47.803895"
+    },
+    {
+      "text": "After generating the text, so we directly save that from backing.",
+      "start_time": 283.32,
+      "end_time": 288.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8924545454545455,
+      "timestamp": "2026-05-13T17:15:52.604372"
+    },
+    {
+      "text": "Um, because, like, uh, flow models, we can get the data recovered.",
+      "start_time": 288.42,
+      "end_time": 294.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6483333333333333,
+      "timestamp": "2026-05-13T17:15:58.347961"
+    },
+    {
+      "text": "And how do you use lang chain or langcraft track and audit to user interaction in a GenI chat box?",
+      "start_time": 299.76,
+      "end_time": 308.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7862000000000001,
+      "timestamp": "2026-05-13T17:16:11.882484"
+    },
+    {
+      "text": "Ensuring transparency and compliance and production environment.",
+      "start_time": 308.1,
+      "end_time": 312.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9492857142857142,
+      "timestamp": "2026-05-13T17:16:16.617210"
+    },
+    {
+      "text": "Sorry, can you repeat the question?",
+      "start_time": 316.32,
+      "end_time": 319.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8649999999999999,
+      "timestamp": "2026-05-13T17:16:23.300698"
+    },
+    {
+      "text": "How would you use lang chain and lang graph to track and order user interaction in a GenI chat wot, ensuring transparency and compliance in production?",
+      "start_time": 318.96,
+      "end_time": 327.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7946923076923078,
+      "timestamp": "2026-05-13T17:16:32.076608"
+    },
+    {
+      "text": "environment.",
+      "start_time": 327.96,
+      "end_time": 328.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.937,
+      "timestamp": "2026-05-13T17:16:32.920570"
+    },
+    {
+      "text": "So using chat booking production environment.",
+      "start_time": 334.14,
+      "end_time": 338.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7413333333333333,
+      "timestamp": "2026-05-13T17:16:42.490751"
+    },
+    {
+      "text": "So, we can give you some like uh, uh, role based.",
+      "start_time": 338.04,
+      "end_time": 343.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7334545454545456,
+      "timestamp": "2026-05-13T17:16:48.293399"
+    },
+    {
+      "text": "You can give some authentication.",
+      "start_time": 343.8,
+      "end_time": 345.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.746,
+      "timestamp": "2026-05-13T17:16:50.189172"
+    },
+    {
+      "text": "Where sex with lorals can interact.",
+      "start_time": 346.44,
+      "end_time": 349.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.49249999999999994,
+      "timestamp": "2026-05-13T17:16:54.021993"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 352.56,
+      "end_time": 353.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.832,
+      "timestamp": "2026-05-13T17:16:57.849246"
+    },
+    {
+      "text": "And how do you use Langcraft to design a Gen AI pipeline where you need to dynamically insert or skip subgraph at runtime based upon user input or model output?",
+      "start_time": 353.1,
+      "end_time": 365.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8299666666666667,
+      "timestamp": "2026-05-13T17:17:09.536017"
+    },
+    {
+      "text": "Sorry, Lang Graph, I didn't work on.",
+      "start_time": 366.96,
+      "end_time": 370.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5822857142857144,
+      "timestamp": "2026-05-13T17:17:14.209989"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 370.2,
+      "end_time": 370.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.602,
+      "timestamp": "2026-05-13T17:17:15.129103"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 368.7,
+      "end_time": 370.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8676666666666666,
+      "timestamp": "2026-05-13T17:17:15.149621"
+    },
+    {
+      "text": "Yeah, no problem.",
+      "start_time": 370.92,
+      "end_time": 371.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8226666666666667,
+      "timestamp": "2026-05-13T17:17:16.101367"
+    },
+    {
+      "text": "And how do you use Minecraft to ensure data, privacy, and compliance man, orchestering multiple agent that process, sensitive user data, and AI workflow.",
+      "start_time": 375.48,
+      "end_time": 387.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7230833333333333,
+      "timestamp": "2026-05-13T17:17:31.614867"
+    },
+    {
+      "text": "So, like, for Jene, what flow, so we can use land graph for a agentic purpose.",
+      "start_time": 389.76,
+      "end_time": 397.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.55975,
+      "timestamp": "2026-05-13T17:17:42.079765"
+    },
+    {
+      "text": "Like if you want to take automatic questions.",
+      "start_time": 397.56,
+      "end_time": 401.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.714875,
+      "timestamp": "2026-05-13T17:17:45.851682"
+    },
+    {
+      "text": "Um, um, like, um, to follow the workflow.",
+      "start_time": 401.4,
+      "end_time": 405.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6260000000000001,
+      "timestamp": "2026-05-13T17:17:49.685615"
+    },
+    {
+      "text": "So we can use land rock for the agentic purpose.",
+      "start_time": 405.78,
+      "end_time": 409.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8287000000000001,
+      "timestamp": "2026-05-13T17:17:53.555010"
+    },
+    {
+      "text": "And how would you structure observability and monitoring for a length chain powered system that uses multiple agent and subgraph and production environment?",
+      "start_time": 410.16,
+      "end_time": 420.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8276086956521739,
+      "timestamp": "2026-05-13T17:18:04.249755"
+    },
+    {
+      "text": "Yeah, so, sorry, yeah.",
+      "start_time": 422.4,
+      "end_time": 425.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.44425,
+      "timestamp": "2026-05-13T17:18:09.847544"
+    },
+    {
+      "text": "You're not aware about this?",
+      "start_time": 424.68,
+      "end_time": 426.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8775999999999999,
+      "timestamp": "2026-05-13T17:18:10.826677"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 427.08,
+      "end_time": 428.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9413333333333332,
+      "timestamp": "2026-05-13T17:18:12.739699"
+    },
+    {
+      "text": "Uh, can you let me know, like, how would you design a line chain workload at dynamically select and or just straight, different subcraft based upon user intent and ensuring error handling and minimal latency?",
+      "start_time": 430.08,
+      "end_time": 444.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8182571428571429,
+      "timestamp": "2026-05-13T17:18:29.243773"
+    },
+    {
+      "text": "So to improve the latency and letter handling, so we can follow some template consisting of the parameter, such as like uh, uh, temperature and the management tokens that we can give.",
+      "start_time": 448.08,
+      "end_time": 463.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8591875,
+      "timestamp": "2026-05-13T17:18:48.419395"
+    },
+    {
+      "text": "And like the stop sequences we can give.",
+      "start_time": 463.86,
+      "end_time": 468.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9273750000000001,
+      "timestamp": "2026-05-13T17:18:53.046168"
+    },
+    {
+      "text": "yeah",
+      "start_time": 478.44,
+      "end_time": 478.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.503,
+      "timestamp": "2026-05-13T17:19:02.730271"
+    },
+    {
+      "text": "Okay, uh, can you walk me through, how do you write a Python function using Glen Graph that define a simple state graph with 2 state patch data?",
+      "start_time": 486.18,
+      "end_time": 497.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8415714285714287,
+      "timestamp": "2026-05-13T17:19:22.009546"
+    },
+    {
+      "text": "Will call an API and summarize is another one that will summarize that text and handling error, retries and fast data and logging transition.",
+      "start_time": 497.4,
+      "end_time": 507.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8767499999999999,
+      "timestamp": "2026-05-13T17:19:31.597064"
+    },
+    {
+      "text": "I'm giving you the problem in the chat itself if you can see it and just walk me through the process of it.",
+      "start_time": 507.78,
+      "end_time": 513.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9739565217391304,
+      "timestamp": "2026-05-13T17:19:38.233079"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 514.62,
+      "end_time": 515.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.574,
+      "timestamp": "2026-05-13T17:19:39.115138"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 515.34,
+      "end_time": 516.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.642,
+      "timestamp": "2026-05-13T17:19:41.054973"
+    },
+    {
+      "text": "Did you understand the problem?",
+      "start_time": 576.78,
+      "end_time": 578.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9046,
+      "timestamp": "2026-05-13T17:20:42.510439"
+    },
+    {
+      "text": "Yes, sir, that's right, uh, to write a Python function using land.",
+      "start_time": 579.6,
+      "end_time": 585.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5867500000000001,
+      "timestamp": "2026-05-13T17:20:49.277350"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 590.4,
+      "end_time": 592.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.592,
+      "timestamp": "2026-05-13T17:20:55.961802"
+    },
+    {
+      "text": "Can you just shape?",
+      "start_time": 592.68,
+      "end_time": 594.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.845,
+      "timestamp": "2026-05-13T17:20:58.819029"
+    },
+    {
+      "text": "Using England.",
+      "start_time": 592.74,
+      "end_time": 594.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6425000000000001,
+      "timestamp": "2026-05-13T17:20:58.828254"
+    },
+    {
+      "text": "Using line graph.",
+      "start_time": 594.48,
+      "end_time": 597.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.45533333333333337,
+      "timestamp": "2026-05-13T17:21:01.720224"
+    },
+    {
+      "text": "Using landlots.",
+      "start_time": 597.84,
+      "end_time": 600.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5745,
+      "timestamp": "2026-05-13T17:21:04.562476"
+    },
+    {
+      "text": "Oh, yeah, like I mentioned previously, I'm not avoiding it.",
+      "start_time": 600.3,
+      "end_time": 605.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7754000000000001,
+      "timestamp": "2026-05-13T17:21:09.384219"
+    },
+    {
+      "text": "You are not comfortable.",
+      "start_time": 603.24,
+      "end_time": 605.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.91525,
+      "timestamp": "2026-05-13T17:21:09.385164"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 605.46,
+      "end_time": 606.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.664,
+      "timestamp": "2026-05-13T17:21:10.302407"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 605.04,
+      "end_time": 605.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7903333333333333,
+      "timestamp": "2026-05-13T17:21:10.338600"
+    },
+    {
+      "text": "Can you try to solve this?",
+      "start_time": 605.88,
+      "end_time": 607.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9341666666666666,
+      "timestamp": "2026-05-13T17:21:12.292562"
+    },
+    {
+      "text": "You need to write a Python function using Lang Chain.",
+      "start_time": 607.8,
+      "end_time": 610.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8484,
+      "timestamp": "2026-05-13T17:21:14.230635"
+    },
+    {
+      "text": "And line graph that implement a state graph with retrieved context state.",
+      "start_time": 610.08,
+      "end_time": 614.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7249166666666667,
+      "timestamp": "2026-05-13T17:21:19.034028"
+    },
+    {
+      "text": "And the general answer is straight at observability log state transition, input output, and error for each state.",
+      "start_time": 615.6,
+      "end_time": 623.46,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7414444444444445,
+      "timestamp": "2026-05-13T17:21:27.683833"
+    },
+    {
+      "text": "Yes, uh...",
+      "start_time": 625.68,
+      "end_time": 627.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3145,
+      "timestamp": "2026-05-13T17:21:32.405956"
+    },
+    {
+      "text": "Yeah. Yeah, gosh, like, 1st we need to access stuff, my SDB.",
+      "start_time": 627.96,
+      "end_time": 633.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5651666666666666,
+      "timestamp": "2026-05-13T17:21:37.270418"
+    },
+    {
+      "text": "And after that, uh, we need to, uh, Call the sentence transformers at the end, but it's not that.",
+      "start_time": 633.12,
+      "end_time": 640.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5564210526315789,
+      "timestamp": "2026-05-13T17:21:44.967577"
+    },
+    {
+      "text": "Okay, it is fine.",
+      "start_time": 669.3,
+      "end_time": 671.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.744,
+      "timestamp": "2026-05-13T17:22:15.623154"
+    },
+    {
+      "text": "Uh, so, Jyoti, I'm done with the interview process of any question you can ask.",
+      "start_time": 671.4,
+      "end_time": 675.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7884,
+      "timestamp": "2026-05-13T17:22:19.539887"
+    },
+    {
+      "text": "Yeah, um, like, basically, like, uh, which you don't mind, like, uh, what is the role of this?",
+      "start_time": 679.02,
+      "end_time": 684.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6631666666666667,
+      "timestamp": "2026-05-13T17:22:29.121052"
+    },
+    {
+      "text": "Like, which.",
+      "start_time": 685.2,
+      "end_time": 687.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4275,
+      "timestamp": "2026-05-13T17:22:31.920898"
+    },
+    {
+      "text": "So, yeah, we are looking for someone who has experience in line chain line graph and generative AI.",
+      "start_time": 684.42,
+      "end_time": 692.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8391111111111109,
+      "timestamp": "2026-05-13T17:22:36.807129"
+    },
+    {
+      "text": "And having experience in reactors and advantage.",
+      "start_time": 692.28,
+      "end_time": 696.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8031428571428573,
+      "timestamp": "2026-05-13T17:22:40.614938"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 699.96,
+      "end_time": 701.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.542,
+      "timestamp": "2026-05-13T17:22:45.380543"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 702.78,
+      "end_time": 703.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7527499999999999,
+      "timestamp": "2026-05-13T17:22:47.312042"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 702.96,
+      "end_time": 703.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.305,
+      "timestamp": "2026-05-13T17:22:48.238453"
+    },
+    {
+      "text": "Have a good day as well.",
+      "start_time": 703.38,
+      "end_time": 704.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9256666666666665,
+      "timestamp": "2026-05-13T17:22:48.266821"
+    },
+    {
+      "text": "Bye bye.",
+      "start_time": 704.34,
+      "end_time": 704.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.75,
+      "timestamp": "2026-05-13T17:22:49.221006"
+    }
+  ]
+}

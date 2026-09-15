@@ -1,0 +1,159 @@
+{
+  "session_name": "Meeting-QHKM8D",
+  "started": "2026-06-12T16:06:41.071596",
+  "segments": [
+    {
+      "text": "An AA engineer.",
+      "start_time": 0.0,
+      "end_time": 1.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7629999999999999,
+      "timestamp": "2026-06-12T16:06:44.920386"
+    },
+    {
+      "text": "So in that, I'm I simply used Python with past API rest framework and built the multiple projects using uh, agent AA and the genet AA.",
+      "start_time": 1.26,
+      "end_time": 10.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7083076923076923,
+      "timestamp": "2026-06-12T16:06:54.597762"
+    },
+    {
+      "text": "And my recent projects are basically on, I have used AWS Baddrop for the secure security purpose and save the client security data so that data will be isn't used for the training part.",
+      "start_time": 10.86,
+      "end_time": 22.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9062647058823529,
+      "timestamp": "2026-06-12T16:07:06.112825"
+    },
+    {
+      "text": "So in that, I have done the multiple projects.",
+      "start_time": 22.92,
+      "end_time": 25.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8996666666666666,
+      "timestamp": "2026-06-12T16:07:09.858448"
+    },
+    {
+      "text": "The recent projects I have worked on is a AI voice assistant and a LLT dashboard system. In that, I have created an agent which worked as a agent and generator website contained and will directly directly post that live website.",
+      "start_time": 25.98,
+      "end_time": 42.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8173658536585366,
+      "timestamp": "2026-06-12T16:07:25.417961"
+    },
+    {
+      "text": "And another positive 360 chatbot.",
+      "start_time": 42.0,
+      "end_time": 44.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7016000000000001,
+      "timestamp": "2026-06-12T16:07:28.076227"
+    },
+    {
+      "text": "In that, I have used the MCP server and the LLM models to generate the query and given the retrive the answer to that particular website.",
+      "start_time": 44.94,
+      "end_time": 52.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9200384615384614,
+      "timestamp": "2026-06-12T16:07:35.830064"
+    },
+    {
+      "text": "So this is my overall projects and my journey so far as an AI engineer.",
+      "start_time": 52.08,
+      "end_time": 57.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9628666666666665,
+      "timestamp": "2026-06-12T16:07:40.583799"
+    },
+    {
+      "text": "So regarding the interview, right, I will try to go section related to coding ML Ops, Python, system design, and LLM as well.",
+      "start_time": 57.78,
+      "end_time": 66.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7839565217391303,
+      "timestamp": "2026-06-12T16:07:50.298210"
+    },
+    {
+      "text": "So can you tell me, can you describe the architecture of scalable online ticket booking system supporting 1000000000s of user and handling high concurrence real-time seat availability and whatever the key component and how do you ensure our consistency and performance?",
+      "start_time": 67.98,
+      "end_time": 86.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9286341463414632,
+      "timestamp": "2026-06-12T16:08:10.635472"
+    },
+    {
+      "text": "Yes, uh, so if I, if I creating that uh, system, so in that, uh, we 1st follow the 1st uh, we have to follow the microservice architecture for that, and we use the fast API rest framework for that, because it used as asynchronous, so heavily tasks will be run in the background.",
+      "start_time": 87.42,
+      "end_time": 103.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7953333333333331,
+      "timestamp": "2026-06-12T16:08:27.936898"
+    },
+    {
+      "text": "So for that, the architecture system will follow the microservice, and in that, we will create the multiple apps with calling every apps have the different database connectivity.",
+      "start_time": 103.8,
+      "end_time": 113.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9028928571428574,
+      "timestamp": "2026-06-12T16:08:36.352628"
+    },
+    {
+      "text": "So if one app got failed, so another app will not be disturbed by that particular thing.",
+      "start_time": 113.16,
+      "end_time": 118.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9718823529411764,
+      "timestamp": "2026-06-12T16:08:42.018516"
+    },
+    {
+      "text": "So this is the all architecture we follow if we are going to the scalable part and after committing that, if we want to deploy that particular application to a server.",
+      "start_time": 118.38,
+      "end_time": 128.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8967096774193548,
+      "timestamp": "2026-06-12T16:08:52.663093"
+    },
+    {
+      "text": "So in that, we will use a docker for that for the continization and then pots will be maintained in the humidity.",
+      "start_time": 128.76,
+      "end_time": 135.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8995454545454545,
+      "timestamp": "2026-06-12T16:08:59.360925"
+    },
+    {
+      "text": "So for the scalability, if one doctor got phased, then we again spin up that particular docker instance.",
+      "start_time": 135.84,
+      "end_time": 141.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8642222222222222,
+      "timestamp": "2026-06-12T16:09:05.083634"
+    },
+    {
+      "text": "So the system is fully scalable and loaded and multiple users can use.",
+      "start_time": 141.78,
+      "end_time": 146.539625,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8725384615384615,
+      "timestamp": "2026-06-12T16:09:09.476401"
+    }
+  ]
+}

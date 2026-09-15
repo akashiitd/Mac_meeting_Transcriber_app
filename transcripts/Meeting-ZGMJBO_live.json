@@ -1,0 +1,1140 @@
+{
+  "session_name": "Meeting-ZGMJBO",
+  "started": "2026-08-14T11:04:39.657728",
+  "segments": [
+    {
+      "text": "worked with that.",
+      "start_time": 0.0,
+      "end_time": 1.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8036666666666666,
+      "timestamp": "2026-08-14T11:04:42.777054"
+    },
+    {
+      "text": "But, uh, I hadn't heard the terms like Jenkins and Dr. and uh, make containers and then this containers would be deployed using that uh, Cuban Edison run helps to run the applications, right?",
+      "start_time": 1.14,
+      "end_time": 11.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6807941176470588,
+      "timestamp": "2026-08-14T11:04:53.479551"
+    },
+    {
+      "text": "So something like this, I know it too.",
+      "start_time": 11.82,
+      "end_time": 14.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8109999999999999,
+      "timestamp": "2026-08-14T11:04:56.189263"
+    },
+    {
+      "text": "And uh, can you tell me like how would you implement uh, and enforce API versioning in our production, grade, fast API, or flask application, and what challenges might arise, and how would you address them?",
+      "start_time": 13.38,
+      "end_time": 27.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8510555555555555,
+      "timestamp": "2026-08-14T11:05:08.911737"
+    },
+    {
+      "text": "First thing, please, sorry, can you repeat this?",
+      "start_time": 32.58,
+      "end_time": 34.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.673125,
+      "timestamp": "2026-08-14T11:05:15.380266"
+    },
+    {
+      "text": "I can't hear.",
+      "start_time": 34.32,
+      "end_time": 35.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6193333333333334,
+      "timestamp": "2026-08-14T11:05:17.296923"
+    },
+    {
+      "text": "I didn't understand from it.",
+      "start_time": 35.7,
+      "end_time": 36.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8096,
+      "timestamp": "2026-08-14T11:05:18.271570"
+    },
+    {
+      "text": "Okay, if you are tasked with migrating a legacy, rest API, built-in flask or fast API, or node GS to support a synchronous processing for better throughput.",
+      "start_time": 36.48,
+      "end_time": 47.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8368518518518518,
+      "timestamp": "2026-08-14T11:05:29.002969"
+    },
+    {
+      "text": "What key challenges would you implement and how would you ensure backward compatibility?",
+      "start_time": 47.4,
+      "end_time": 52.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9425384615384614,
+      "timestamp": "2026-08-14T11:05:33.714076"
+    },
+    {
+      "text": "Uh, so backward compact, let me still be care.",
+      "start_time": 54.06,
+      "end_time": 58.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4965555555555556,
+      "timestamp": "2026-08-14T11:05:39.395029"
+    },
+    {
+      "text": "We should have the original version over there itself, whatever the working we should have, they're over itself.",
+      "start_time": 58.08,
+      "end_time": 62.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8449444444444444,
+      "timestamp": "2026-08-14T11:05:44.217057"
+    },
+    {
+      "text": "And then we can have Microsart migrating within our local systems and everything.",
+      "start_time": 62.82,
+      "end_time": 67.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9138461538461538,
+      "timestamp": "2026-08-14T11:05:49.004138"
+    },
+    {
+      "text": "Yeah, we can start migrating module paying module. So if you have conserving multiple modules like the MM module, UA module, or smelting, some things like that, we can just modulate, migrate my audio module and then test with existing systems.",
+      "start_time": 67.32,
+      "end_time": 82.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7730731707317071,
+      "timestamp": "2026-08-14T11:06:03.625411"
+    },
+    {
+      "text": "Like a UIT server or staging server or something like that.",
+      "start_time": 82.02,
+      "end_time": 84.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7121818181818181,
+      "timestamp": "2026-08-14T11:06:06.289144"
+    },
+    {
+      "text": "And then continue that live by one continuously, continuously.",
+      "start_time": 84.96,
+      "end_time": 90.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8424444444444444,
+      "timestamp": "2026-08-14T11:06:11.074885"
+    },
+    {
+      "text": "Okay, and if you need to migrate a legacy, yeah, yeah, go ahead, go ahead.",
+      "start_time": 89.28,
+      "end_time": 95.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7517333333333335,
+      "timestamp": "2026-08-14T11:06:15.954841"
+    },
+    {
+      "text": "And while, Yeah.",
+      "start_time": 91.74,
+      "end_time": 95.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.709,
+      "timestamp": "2026-08-14T11:06:16.818604"
+    },
+    {
+      "text": "So, yeah, so if for the versioning in a sense, I can release by module big model versions, and then in Kit also we have an option to set the tax.",
+      "start_time": 95.58,
+      "end_time": 104.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8818709677419354,
+      "timestamp": "2026-08-14T11:06:26.515242"
+    },
+    {
+      "text": "Okay, and if you need to migrate our legacy, angular GSR, react GS application to the latest version.",
+      "start_time": 122.28,
+      "end_time": 129.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8450555555555556,
+      "timestamp": "2026-08-14T11:06:50.513095"
+    },
+    {
+      "text": "Of the chosen framework, what challenges you might face and how would you plan and execute a seamless migration?",
+      "start_time": 129.48,
+      "end_time": 136.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9197894736842105,
+      "timestamp": "2026-08-14T11:06:57.258032"
+    },
+    {
+      "text": "While minimizing user disruption.",
+      "start_time": 136.02,
+      "end_time": 139.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7947500000000001,
+      "timestamp": "2026-08-14T11:07:00.083903"
+    },
+    {
+      "text": "Okay, so when migrating an angler, if it is specifically, specifically within an angular, with an angler versions, for example, let's consider a angular 16 to 17 or something like that.",
+      "start_time": 140.94,
+      "end_time": 151.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8304193548387098,
+      "timestamp": "2026-08-14T11:07:12.630859"
+    },
+    {
+      "text": "We have some dark ones over there, where order other things has been newly updated, and within apple itself gives us an update, upgrade sheet, the sheet sheet, where I can just go and see the risk of whatever they have migrated, and then they might give some commands to run this, and then start migrating over there. Within angler versions, this is possible, easily possible.",
+      "start_time": 151.44,
+      "end_time": 171.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.789121212121212,
+      "timestamp": "2026-08-14T11:07:34.016055"
+    },
+    {
+      "text": "Just improve improvising the node versions and compatible mode versions and original angler versions or migrate commands, whatever they give, we can use with them.",
+      "start_time": 171.96,
+      "end_time": 181.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.88752,
+      "timestamp": "2026-08-14T11:07:43.346070"
+    },
+    {
+      "text": "But when it comes to the different frameworks, angler to react, react to you or something like that, we have to take, again, as you said before earlier, we have to migrate module B modules and then start working with that.",
+      "start_time": 181.92,
+      "end_time": 195.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8873170731707316,
+      "timestamp": "2026-08-14T11:07:56.823290"
+    },
+    {
+      "text": "If it is a very time, we have very limited time.",
+      "start_time": 195.42,
+      "end_time": 199.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8697272727272728,
+      "timestamp": "2026-08-14T11:08:01.477406"
+    },
+    {
+      "text": "Uh, and we have the access like uh, agent A's, like, lot of chat, ChatGPT.",
+      "start_time": 199.8,
+      "end_time": 205.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5979333333333334,
+      "timestamp": "2026-08-14T11:08:06.342832"
+    },
+    {
+      "text": "We can go with the help of that and start migrating one by one and with known all the business logics and test cases and everything, we have to test it one by one and then we can go with that.",
+      "start_time": 205.44,
+      "end_time": 215.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9231707317073169,
+      "timestamp": "2026-08-14T11:08:16.936076"
+    },
+    {
+      "text": "And can you tell me, like, how would you design a database schema to support both the historical data tracking and efficiently curing for a financial transaction table?",
+      "start_time": 220.44,
+      "end_time": 230.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9163214285714286,
+      "timestamp": "2026-08-14T11:08:32.354367"
+    },
+    {
+      "text": "What SQL feature or strategy would you use for it?",
+      "start_time": 230.76,
+      "end_time": 234.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8408,
+      "timestamp": "2026-08-14T11:08:36.084807"
+    },
+    {
+      "text": "Sure. So... So when when it comes to those executive SQ optimizations, in my case, what I'll do is in Django and I'll let me explain with the Django because I am familiar with that.",
+      "start_time": 231.36,
+      "end_time": 246.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7035714285714286,
+      "timestamp": "2026-08-14T11:08:47.767484"
+    },
+    {
+      "text": "So I'll in in Chango I'll create some models.",
+      "start_time": 246.12,
+      "end_time": 249.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8044444444444445,
+      "timestamp": "2026-08-14T11:08:50.457917"
+    },
+    {
+      "text": "So that is an, it is also an object. It works on the object relational mapping, right?",
+      "start_time": 249.18,
+      "end_time": 253.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8461764705882353,
+      "timestamp": "2026-08-14T11:08:55.282213"
+    },
+    {
+      "text": "So I just need to create all the schemas using the class models.",
+      "start_time": 253.56,
+      "end_time": 257.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9873846153846153,
+      "timestamp": "2026-08-14T11:08:59.077410"
+    },
+    {
+      "text": "Maybe I'll create all the models.",
+      "start_time": 266.22,
+      "end_time": 267.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8171666666666666,
+      "timestamp": "2026-08-14T11:09:09.630266"
+    },
+    {
+      "text": "And when it comes to querying the data.",
+      "start_time": 267.96,
+      "end_time": 270.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.907375,
+      "timestamp": "2026-08-14T11:09:11.566048"
+    },
+    {
+      "text": "So yeah, I'm taking listed.",
+      "start_time": 270.06,
+      "end_time": 272.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6557999999999999,
+      "timestamp": "2026-08-14T11:09:13.480869"
+    },
+    {
+      "text": "So when after getting this models, I need to migrate run 2 comments.",
+      "start_time": 272.22,
+      "end_time": 276.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9223846153846152,
+      "timestamp": "2026-08-14T11:09:18.313542"
+    },
+    {
+      "text": "One is my neck migrations, and another one is a migrate command.",
+      "start_time": 276.6,
+      "end_time": 279.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9219999999999998,
+      "timestamp": "2026-08-14T11:09:21.176596"
+    },
+    {
+      "text": "Just make migration take all the context, all the my models and converts into, yeah, Just a ROS equals something like not an exact ROS equal code.",
+      "start_time": 279.48,
+      "end_time": 290.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7837777777777776,
+      "timestamp": "2026-08-14T11:09:31.815384"
+    },
+    {
+      "text": "It's something like an adjacent readable format for the Django.",
+      "start_time": 290.34,
+      "end_time": 293.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9272,
+      "timestamp": "2026-08-14T11:09:34.638867"
+    },
+    {
+      "text": "It will convert into some files and have the details.",
+      "start_time": 293.58,
+      "end_time": 296.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9413,
+      "timestamp": "2026-08-14T11:09:38.429339"
+    },
+    {
+      "text": "When I run the migrate command, it takes that migration files and converts into an R sequel and creates all the database data routes and everything.",
+      "start_time": 296.76,
+      "end_time": 302.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8339230769230765,
+      "timestamp": "2026-08-14T11:09:44.273400"
+    },
+    {
+      "text": "DBs or whatever may be, the conflicts I provided, the settings start by, with that help, I, you will create on the tables in that.",
+      "start_time": 302.7,
+      "end_time": 309.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6778399999999999,
+      "timestamp": "2026-08-14T11:09:50.973128"
+    },
+    {
+      "text": "After when it's done, we need to, we are adding the data and querying the retrival in case of retrivals.",
+      "start_time": 309.24,
+      "end_time": 315.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.84895,
+      "timestamp": "2026-08-14T11:09:57.699803"
+    },
+    {
+      "text": "We may have a huge number of data, like 10,000, 20,000, like the data.",
+      "start_time": 315.96,
+      "end_time": 320.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8349285714285714,
+      "timestamp": "2026-08-14T11:10:02.470561"
+    },
+    {
+      "text": "So at that time we can't query everything and then update or something like that.",
+      "start_time": 320.82,
+      "end_time": 324.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9597999999999998,
+      "timestamp": "2026-08-14T11:10:05.318876"
+    },
+    {
+      "text": "We need to optimize our queries.",
+      "start_time": 324.06,
+      "end_time": 326.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9444999999999998,
+      "timestamp": "2026-08-14T11:10:08.182807"
+    },
+    {
+      "text": "So you miss nothing, but we are scanning all the retriving all the data, +one is nothing, but which we are going to perform a particular operation, like update on delete or something like that.",
+      "start_time": 339.96,
+      "end_time": 351.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8481999999999998,
+      "timestamp": "2026-08-14T11:10:32.304755"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 351.9,
+      "end_time": 353.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.77025,
+      "timestamp": "2026-08-14T11:10:34.124840"
+    },
+    {
+      "text": "So y +one, which comes to 100, something like that.",
+      "start_time": 351.36,
+      "end_time": 354.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8064,
+      "timestamp": "2026-08-14T11:10:36.025043"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 354.42,
+      "end_time": 354.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.763,
+      "timestamp": "2026-08-14T11:10:36.029767"
+    },
+    {
+      "text": "And Can you also tell me like, uh, can you describe me a time when you had to communicate a complex technical information?",
+      "start_time": 353.1,
+      "end_time": 364.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8789130434782607,
+      "timestamp": "2026-08-14T11:10:45.730160"
+    },
+    {
+      "text": "To a non-technical stakeholder, how did you ensure your message was clear and effective?",
+      "start_time": 364.2,
+      "end_time": 369.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8752857142857141,
+      "timestamp": "2026-08-14T11:10:50.508113"
+    },
+    {
+      "text": "Sorry, I can't get it properly.",
+      "start_time": 372.78,
+      "end_time": 374.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.826,
+      "timestamp": "2026-08-14T11:10:56.180702"
+    },
+    {
+      "text": "Uh, can you describe me a time when you when you had to communicate complex technical information to a non-technical stakeholder?",
+      "start_time": 374.16,
+      "end_time": 381.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8745714285714289,
+      "timestamp": "2026-08-14T11:11:03.037882"
+    },
+    {
+      "text": "We will decide in that time itself, we will review the task, and then add some complexity, what is a complexity?",
+      "start_time": 397.26,
+      "end_time": 402.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7708095238095238,
+      "timestamp": "2026-08-14T11:11:24.082398"
+    },
+    {
+      "text": "analyze you all, unless all this complexity. And before starting the task is tasks, this sprint itself, we'll discuss with stakeholders or what, whoever may be there, in the refuge, we'll discuss with them, this task which are going to taken, and this will be quite complex, and we'll explain, we can explain them. This might be causing some more time, and we have to focus on this completely for this sprint, and then we can explain them.",
+      "start_time": 402.42,
+      "end_time": 426.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8102179487179485,
+      "timestamp": "2026-08-14T11:11:48.602277"
+    },
+    {
+      "text": "Based on that scenario, whatever the task is going to say.",
+      "start_time": 426.36,
+      "end_time": 430.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9239999999999998,
+      "timestamp": "2026-08-14T11:11:51.903669"
+    },
+    {
+      "text": "So we can explain them like that.",
+      "start_time": 430.32,
+      "end_time": 432.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9714285714285714,
+      "timestamp": "2026-08-14T11:11:53.797682"
+    },
+    {
+      "text": "And then with their permissions, we can take a take more time if required or else we can just get some ideas from them if needed.",
+      "start_time": 432.24,
+      "end_time": 442.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9217692307692308,
+      "timestamp": "2026-08-14T11:12:03.446186"
+    },
+    {
+      "text": "Non-technical, non-technical.",
+      "start_time": 445.44,
+      "end_time": 448.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.623,
+      "timestamp": "2026-08-14T11:12:10.168783"
+    },
+    {
+      "text": "If he is a technical, since your mention is a technical stakeholder, we can say we can, if we had some ideas, we he will make up his understand.",
+      "start_time": 442.02,
+      "end_time": 449.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7385172413793103,
+      "timestamp": "2026-08-14T11:12:11.153078"
+    },
+    {
+      "text": "I'm saying non-technical stakeholder, not technique.",
+      "start_time": 448.8,
+      "end_time": 451.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8251666666666666,
+      "timestamp": "2026-08-14T11:12:13.057831"
+    },
+    {
+      "text": "Okay, not technical, we can just expect them, at least we can explain them.",
+      "start_time": 449.7,
+      "end_time": 454.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8759285714285715,
+      "timestamp": "2026-08-14T11:12:15.910228"
+    },
+    {
+      "text": "This is very similar chances we have.",
+      "start_time": 454.32,
+      "end_time": 456.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.711857142857143,
+      "timestamp": "2026-08-14T11:12:17.791170"
+    },
+    {
+      "text": "We need more some more time like that, we can explain them.",
+      "start_time": 456.12,
+      "end_time": 458.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8584999999999998,
+      "timestamp": "2026-08-14T11:12:19.697789"
+    },
+    {
+      "text": "Okay, uh, can you tell me, like, how would you design a multi-region, high available and cost optimized web application architecture in any major cloud provider?",
+      "start_time": 458.76,
+      "end_time": 472.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8339230769230769,
+      "timestamp": "2026-08-14T11:12:33.330902"
+    },
+    {
+      "text": "What key services and strategy would you use to ensure resilience, scalability, and minimal downtime?",
+      "start_time": 472.2,
+      "end_time": 478.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8709333333333334,
+      "timestamp": "2026-08-14T11:12:39.963327"
+    },
+    {
+      "text": "So, when it comes to cloud flat ones, we most, most of, as we use in azure and AWS, I feel.",
+      "start_time": 480.0,
+      "end_time": 488.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7330952380952381,
+      "timestamp": "2026-08-14T11:12:50.516200"
+    },
+    {
+      "text": "So AWS is casting news for us, our hourly rate, under a number of requests and all.",
+      "start_time": 488.76,
+      "end_time": 495.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7446470588235293,
+      "timestamp": "2026-08-14T11:12:57.208340"
+    },
+    {
+      "text": "Whereas in Azure, I'm not sure how they are building exactly.",
+      "start_time": 495.54,
+      "end_time": 498.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8970909090909092,
+      "timestamp": "2026-08-14T11:13:00.043629"
+    },
+    {
+      "text": "But we can use this some pricing values and then gives them analysis like this and then we can deceive.",
+      "start_time": 498.36,
+      "end_time": 505.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9280999999999999,
+      "timestamp": "2026-08-14T11:13:06.791489"
+    },
+    {
+      "text": "Okay, and uh, uh, how comfortable you are with Python Mayo?",
+      "start_time": 507.6,
+      "end_time": 513.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.759,
+      "timestamp": "2026-08-14T11:13:14.500649"
+    },
+    {
+      "text": "Okay, I'm I have shared one question in the chat.",
+      "start_time": 517.86,
+      "end_time": 521.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9161000000000001,
+      "timestamp": "2026-08-14T11:13:23.117929"
+    },
+    {
+      "text": "Yeah, I'm very much comfortable because I currently work with Python Projects only, so I can UC the manager.",
+      "start_time": 514.32,
+      "end_time": 521.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.772421052631579,
+      "timestamp": "2026-08-14T11:13:23.131838"
+    },
+    {
+      "text": "Can you also share me your screen?",
+      "start_time": 521.76,
+      "end_time": 523.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9571428571428573,
+      "timestamp": "2026-08-14T11:13:25.013927"
+    },
+    {
+      "text": "Sure, right.",
+      "start_time": 524.34,
+      "end_time": 525.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7525,
+      "timestamp": "2026-08-14T11:13:26.891917"
+    },
+    {
+      "text": "I don't know, there is a scram.",
+      "start_time": 525.72,
+      "end_time": 527.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3445714285714286,
+      "timestamp": "2026-08-14T11:13:28.826742"
+    },
+    {
+      "text": "You need to after mic button, right?",
+      "start_time": 525.0,
+      "end_time": 529.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8685714285714285,
+      "timestamp": "2026-08-14T11:13:30.779972"
+    },
+    {
+      "text": "There is a share screen button.",
+      "start_time": 529.62,
+      "end_time": 530.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.826,
+      "timestamp": "2026-08-14T11:13:31.729429"
+    },
+    {
+      "text": "Yes, yes, yeah, I saw.",
+      "start_time": 530.64,
+      "end_time": 532.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6856,
+      "timestamp": "2026-08-14T11:13:33.621490"
+    },
+    {
+      "text": "I think screen is visible.",
+      "start_time": 535.8,
+      "end_time": 538.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8997999999999999,
+      "timestamp": "2026-08-14T11:13:39.387063"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 543.12,
+      "end_time": 544.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.481,
+      "timestamp": "2026-08-14T11:13:46.134210"
+    },
+    {
+      "text": "So what do you need to do?",
+      "start_time": 544.86,
+      "end_time": 547.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8177142857142856,
+      "timestamp": "2026-08-14T11:13:49.016905"
+    },
+    {
+      "text": "You need to write a Python function that uh, queries, uh, sequel database or product sales by month, aggregate the data, and I return a Jason object.",
+      "start_time": 547.68,
+      "end_time": 556.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6737407407407409,
+      "timestamp": "2026-08-14T11:13:57.792129"
+    },
+    {
+      "text": "And then you need to implement a react GS component to with the result as a bar chart using the charge GS library.",
+      "start_time": 556.62,
+      "end_time": 563.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7299565217391304,
+      "timestamp": "2026-08-14T11:14:04.467499"
+    },
+    {
+      "text": "Definitely should. It's SQI database.",
+      "start_time": 570.18,
+      "end_time": 573.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.32480000000000003,
+      "timestamp": "2026-08-14T11:14:14.915181"
+    },
+    {
+      "text": "Cricket, the date, written, Jason.",
+      "start_time": 576.6,
+      "end_time": 580.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3216,
+      "timestamp": "2026-08-14T11:14:21.633968"
+    },
+    {
+      "text": "Just like pseudo code or complete code is needed.",
+      "start_time": 580.56,
+      "end_time": 583.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.816,
+      "timestamp": "2026-08-14T11:14:24.537437"
+    },
+    {
+      "text": "Just explain me your approach.",
+      "start_time": 587.28,
+      "end_time": 589.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9042,
+      "timestamp": "2026-08-14T11:14:30.299283"
+    },
+    {
+      "text": "So in my case, what I'll do is, if we might have, let me consider, we all have this tape product, related tables, product sales on tables, tables, whatever, related tables we have.",
+      "start_time": 591.48,
+      "end_time": 603.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8578484848484849,
+      "timestamp": "2026-08-14T11:14:45.739309"
+    },
+    {
+      "text": "So there is a function to an in-built function in Chango, which has an annotate group by an annotate values by this with a date rate, I can group all the datas and then aggregate and find some research based on the month actually.",
+      "start_time": 603.96,
+      "end_time": 618.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8391136363636363,
+      "timestamp": "2026-08-14T11:15:00.223760"
+    },
+    {
+      "text": "We can provide some month.",
+      "start_time": 618.9,
+      "end_time": 620.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8615999999999999,
+      "timestamp": "2026-08-14T11:15:01.946816"
+    },
+    {
+      "text": "Based on this month, I can create all the data and sales, value, sales, price amount only, right?",
+      "start_time": 620.28,
+      "end_time": 625.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8242777777777777,
+      "timestamp": "2026-08-14T11:15:06.801642"
+    },
+    {
+      "text": "So we can just calculate them by aggregating, grouping them into a month, and then you'll get a result specifically recently for January, March, March and everything.",
+      "start_time": 625.08,
+      "end_time": 635.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8633333333333334,
+      "timestamp": "2026-08-14T11:15:17.415477"
+    },
+    {
+      "text": "Each and every month you'll get the result, that will be will return into a Jason response, like an response of that Jason, whatever the generated values, and we can send it as a response value.",
+      "start_time": 635.64,
+      "end_time": 649.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8716666666666666,
+      "timestamp": "2026-08-14T11:15:30.899636"
+    },
+    {
+      "text": "So that access isn't what near AP endpoint, but can be called into the react application.",
+      "start_time": 649.14,
+      "end_time": 653.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7850624999999999,
+      "timestamp": "2026-08-14T11:15:34.664237"
+    },
+    {
+      "text": "using the fetch method or an axios 3rd party, like axios cut kit on axios cut, put something like whatever the required method, which we are going to use here.",
+      "start_time": 653.76,
+      "end_time": 664.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7795000000000001,
+      "timestamp": "2026-08-14T11:15:46.257423"
+    },
+    {
+      "text": "For example, I'm considering as we are going to use get method.",
+      "start_time": 664.44,
+      "end_time": 667.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9357500000000001,
+      "timestamp": "2026-08-14T11:15:49.013136"
+    },
+    {
+      "text": "So inside fetch itself, we can add a method name as kit and then use this endpoint.",
+      "start_time": 667.62,
+      "end_time": 672.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8553529411764708,
+      "timestamp": "2026-08-14T11:15:53.848092"
+    },
+    {
+      "text": "If any headers are required by authorization or something like whatever, the context time application adjacent, something, whatever needed, we can just provide it to the headers.",
+      "start_time": 672.12,
+      "end_time": 682.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8428518518518521,
+      "timestamp": "2026-08-14T11:16:03.477911"
+    },
+    {
+      "text": "And then we can just send a get request.",
+      "start_time": 682.14,
+      "end_time": 684.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7985555555555556,
+      "timestamp": "2026-08-14T11:16:05.292333"
+    },
+    {
+      "text": "It's the server and then returns the response in a JC format.",
+      "start_time": 684.42,
+      "end_time": 687.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8790000000000001,
+      "timestamp": "2026-08-14T11:16:09.192807"
+    },
+    {
+      "text": "Whatever, then we have already shared it from the endpoint, we know that from the postman collection, we know that this will be the output.",
+      "start_time": 687.66,
+      "end_time": 694.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9063999999999999,
+      "timestamp": "2026-08-14T11:16:15.961938"
+    },
+    {
+      "text": "So yeah, if the required output is got, we are met with the solution, Jason response.",
+      "start_time": 694.2,
+      "end_time": 699.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7775000000000001,
+      "timestamp": "2026-08-14T11:16:20.693073"
+    },
+    {
+      "text": "We can just send it to the react J's components to generate live chart.",
+      "start_time": 699.18,
+      "end_time": 705.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9017857142857143,
+      "timestamp": "2026-08-14T11:16:26.452190"
+    },
+    {
+      "text": "So charts can be generated with multiple libraries we have in NPM packages like chart JAS or Apex charts, something like that.",
+      "start_time": 705.06,
+      "end_time": 713.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8762272727272726,
+      "timestamp": "2026-08-14T11:16:34.212641"
+    },
+    {
+      "text": "We have more charge libraries.",
+      "start_time": 713.04,
+      "end_time": 714.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7874,
+      "timestamp": "2026-08-14T11:16:36.026863"
+    },
+    {
+      "text": "Which one we are comfortable or we are very expected to do with that?",
+      "start_time": 714.84,
+      "end_time": 717.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8741428571428571,
+      "timestamp": "2026-08-14T11:16:38.925961"
+    },
+    {
+      "text": "Proceed with that.",
+      "start_time": 717.84,
+      "end_time": 719.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7643333333333334,
+      "timestamp": "2026-08-14T11:16:40.835017"
+    },
+    {
+      "text": "We can just continue with that.",
+      "start_time": 719.22,
+      "end_time": 720.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8396666666666669,
+      "timestamp": "2026-08-14T11:16:41.777854"
+    },
+    {
+      "text": "Provide the inputs to the chart and then we can just go with it, display the charts.",
+      "start_time": 720.18,
+      "end_time": 724.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8842941176470589,
+      "timestamp": "2026-08-14T11:16:46.640485"
+    },
+    {
+      "text": "Okay, yeah, that is fine.",
+      "start_time": 738.54,
+      "end_time": 740.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7872,
+      "timestamp": "2026-08-14T11:17:01.982471"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 741.84,
+      "end_time": 743.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.691,
+      "timestamp": "2026-08-14T11:17:04.814057"
+    },
+    {
+      "text": "Uh, so yeah, I'm done with the interview processor.",
+      "start_time": 740.94,
+      "end_time": 744.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7807777777777779,
+      "timestamp": "2026-08-14T11:17:05.833247"
+    },
+    {
+      "text": "Do you have any questions like if you wanted to ask?",
+      "start_time": 744.18,
+      "end_time": 746.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9328181818181818,
+      "timestamp": "2026-08-14T11:17:07.743912"
+    },
+    {
+      "text": "So, uh, let me ask you one.",
+      "start_time": 747.72,
+      "end_time": 751.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8038571428571428,
+      "timestamp": "2026-08-14T11:17:12.503184"
+    },
+    {
+      "text": "So if I'm, if I'm not selected right, what nature of works will be there? Because I'm not sure where it is, because when I read the JD, I saw, it is Nampai Python's Cubonets and everything was listed.",
+      "start_time": 751.2,
+      "end_time": 763.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8135384615384615,
+      "timestamp": "2026-08-14T11:17:25.189664"
+    },
+    {
+      "text": "But what will be my role in this?",
+      "start_time": 763.56,
+      "end_time": 766.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.858875,
+      "timestamp": "2026-08-14T11:17:27.872261"
+    },
+    {
+      "text": "You will be working as a fullest tech developer here, front and and back and both of them.",
+      "start_time": 767.34,
+      "end_time": 773.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8807222222222222,
+      "timestamp": "2026-08-14T11:17:34.650864"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 773.28,
+      "end_time": 773.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.651,
+      "timestamp": "2026-08-14T11:17:34.654304"
+    },
+    {
+      "text": "Because I saw the record once as an Nampai landers, AI and not right, so that's why you just wanted to clarify.",
+      "start_time": 775.44,
+      "end_time": 781.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6868181818181817,
+      "timestamp": "2026-08-14T11:17:43.311308"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 780.96,
+      "end_time": 782.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9133333333333334,
+      "timestamp": "2026-08-14T11:17:44.210887"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 790.2,
+      "end_time": 790.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7375,
+      "timestamp": "2026-08-14T11:17:51.904527"
+    },
+    {
+      "text": "Bye bye.",
+      "start_time": 790.86,
+      "end_time": 791.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5355,
+      "timestamp": "2026-08-14T11:17:52.848205"
+    }
+  ]
+}

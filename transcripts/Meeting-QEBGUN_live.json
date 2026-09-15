@@ -1,0 +1,33 @@
+{
+  "session_name": "Meeting-QEBGUN",
+  "started": "2026-06-21T11:00:28.633955",
+  "segments": [
+    {
+      "text": "Yeah, is my voice audible to you?",
+      "start_time": 33.96,
+      "end_time": 36.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7358571428571429,
+      "timestamp": "2026-06-21T11:01:07.700284"
+    },
+    {
+      "text": "Yeah, it's audible.",
+      "start_time": 37.68,
+      "end_time": 39.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7479999999999999,
+      "timestamp": "2026-06-21T11:01:10.497907"
+    },
+    {
+      "text": "And you?",
+      "start_time": 39.48,
+      "end_time": 39.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.635,
+      "timestamp": "2026-06-21T11:01:10.505640"
+    }
+  ]
+}

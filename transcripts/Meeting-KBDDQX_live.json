@@ -1,0 +1,591 @@
+{
+  "session_name": "Meeting-KBDDQX",
+  "started": "2026-05-29T16:05:58.499804",
+  "segments": [
+    {
+      "text": "Or did you deploy at any project using length of?",
+      "start_time": 6.54,
+      "end_time": 10.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7838999999999999,
+      "timestamp": "2026-05-29T16:06:09.857320"
+    },
+    {
+      "text": "Um, not actually, um, uh, I have understanding about land graph on, uh, on some personal projects, but didn't really deploy any, any of the production level projects.",
+      "start_time": 12.0,
+      "end_time": 25.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7556071428571431,
+      "timestamp": "2026-05-29T16:06:25.303089"
+    },
+    {
+      "text": "And can you describe how would you use categorization of agent within a line graph based rag architecture to balance rapid prototyping with robust production deployment and what design trait of would you consider?",
+      "start_time": 32.22,
+      "end_time": 48.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8825294117647058,
+      "timestamp": "2026-05-29T16:06:48.452112"
+    },
+    {
+      "text": "Sorry, can I repeat actually your voice?",
+      "start_time": 52.44,
+      "end_time": 54.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6930000000000002,
+      "timestamp": "2026-05-29T16:06:53.930583"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 59.28,
+      "end_time": 60.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6745000000000001,
+      "timestamp": "2026-05-29T16:07:00.731589"
+    },
+    {
+      "text": "See from my side, my internet connection is good.",
+      "start_time": 61.2,
+      "end_time": 64.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9099999999999999,
+      "timestamp": "2026-05-29T16:07:04.594462"
+    },
+    {
+      "text": "Everything is fine.",
+      "start_time": 64.5,
+      "end_time": 66.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9113333333333333,
+      "timestamp": "2026-05-29T16:07:06.493820"
+    },
+    {
+      "text": "Yeah, maybe there's some issue from my side.",
+      "start_time": 66.96,
+      "end_time": 70.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.858375,
+      "timestamp": "2026-05-29T16:07:10.269856"
+    },
+    {
+      "text": "I'm pasting the problem there in the chat so that you can see the question in the chat.",
+      "start_time": 70.86,
+      "end_time": 75.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9503888888888888,
+      "timestamp": "2026-05-29T16:07:15.153694"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 128.94,
+      "end_time": 130.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5835,
+      "timestamp": "2026-05-29T16:08:10.760499"
+    },
+    {
+      "text": "Uh, if you're not comfortable, I can give you another question.",
+      "start_time": 128.46,
+      "end_time": 132.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8739090909090909,
+      "timestamp": "2026-05-29T16:08:12.765788"
+    },
+    {
+      "text": "Yeah, sure.",
+      "start_time": 134.28,
+      "end_time": 136.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6325000000000001,
+      "timestamp": "2026-05-29T16:08:15.532335"
+    },
+    {
+      "text": "Okay, uh, can you explain me, how would you leverage data wars within a line chain drag workflow? to enhance data governance and ensure traceable document categorization.",
+      "start_time": 136.14,
+      "end_time": 149.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8083703703703704,
+      "timestamp": "2026-05-29T16:08:29.227443"
+    },
+    {
+      "text": "Have you work upon any traces part?",
+      "start_time": 152.88,
+      "end_time": 156.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8135714285714286,
+      "timestamp": "2026-05-29T16:08:35.786538"
+    },
+    {
+      "text": "Or data versus?",
+      "start_time": 156.3,
+      "end_time": 158.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.556,
+      "timestamp": "2026-05-29T16:08:38.647070"
+    },
+    {
+      "text": "Not actually.",
+      "start_time": 160.44,
+      "end_time": 162.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8935,
+      "timestamp": "2026-05-29T16:08:42.411355"
+    },
+    {
+      "text": "Have you heard about Lang Fuse or Lang Smith?",
+      "start_time": 163.38,
+      "end_time": 168.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7891111111111111,
+      "timestamp": "2026-05-29T16:08:48.251685"
+    },
+    {
+      "text": "Oh, yeah.",
+      "start_time": 169.2,
+      "end_time": 171.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3175,
+      "timestamp": "2026-05-29T16:08:52.041374"
+    },
+    {
+      "text": "I heard about Lance Smith.",
+      "start_time": 171.96,
+      "end_time": 173.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7322,
+      "timestamp": "2026-05-29T16:08:53.955759"
+    },
+    {
+      "text": "Okay, so can you explain me how llama and deck support observability when integrating line graph and language smith and a multi-agent track setup, which llama decks feature enable prompt lineage and context debugging across agent categories?",
+      "start_time": 177.0,
+      "end_time": 194.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.817135135135135,
+      "timestamp": "2026-05-29T16:09:14.456988"
+    },
+    {
+      "text": "Sorry, I'm not able to think about.",
+      "start_time": 217.08,
+      "end_time": 221.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8568571428571428,
+      "timestamp": "2026-05-29T16:09:41.967110"
+    },
+    {
+      "text": "Do you know what is span traces session?",
+      "start_time": 221.16,
+      "end_time": 224.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.90625,
+      "timestamp": "2026-05-29T16:09:44.899069"
+    },
+    {
+      "text": "Okay, okay. Uh,",
+      "start_time": 228.3,
+      "end_time": 231.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.3173333333333333,
+      "timestamp": "2026-05-29T16:09:51.595304"
+    },
+    {
+      "text": "Can you let me know, like, how would you implement observability for an autogen-based track system using Langa Smith and discuss the benefit and possible limitation?",
+      "start_time": 231.6,
+      "end_time": 243.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8788461538461539,
+      "timestamp": "2026-05-29T16:10:03.263664"
+    },
+    {
+      "text": "This provide for monitoring any AI quality output.",
+      "start_time": 243.0,
+      "end_time": 247.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.893875,
+      "timestamp": "2026-05-29T16:10:07.942207"
+    },
+    {
+      "text": "Actually, uh, working on, like, I have never, uh, This I don't have any working experience on these famous.",
+      "start_time": 259.56,
+      "end_time": 270.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6360526315789473,
+      "timestamp": "2026-05-29T16:10:30.969185"
+    },
+    {
+      "text": "I am still learning it.",
+      "start_time": 270.84,
+      "end_time": 271.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7213999999999999,
+      "timestamp": "2026-05-29T16:10:31.844666"
+    },
+    {
+      "text": "So only frameworks like lava and X-lang, um, autogen or, uh, crewware.",
+      "start_time": 271.8,
+      "end_time": 276.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5245000000000001,
+      "timestamp": "2026-05-29T16:10:36.717555"
+    },
+    {
+      "text": "These things are still in my way of learning.",
+      "start_time": 276.96,
+      "end_time": 279.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8872222222222221,
+      "timestamp": "2026-05-29T16:10:39.554369"
+    },
+    {
+      "text": "Uh, so, uh, maybe I'm not able to uh, think about it uh, right now.",
+      "start_time": 279.84,
+      "end_time": 286.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7126666666666668,
+      "timestamp": "2026-05-29T16:10:46.311646"
+    },
+    {
+      "text": "Okay, no problem.",
+      "start_time": 286.2,
+      "end_time": 287.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.827,
+      "timestamp": "2026-05-29T16:10:47.278061"
+    },
+    {
+      "text": "Okay, so.",
+      "start_time": 290.7,
+      "end_time": 292.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6930000000000001,
+      "timestamp": "2026-05-29T16:10:53.033044"
+    },
+    {
+      "text": "How good you are in Python programming language?",
+      "start_time": 294.54,
+      "end_time": 297.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9604999999999998,
+      "timestamp": "2026-05-29T16:10:57.849339"
+    },
+    {
+      "text": "So yeah, I have like good hands-on experience in Python, working on Python since last 4 years ago.",
+      "start_time": 301.32,
+      "end_time": 307.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.884888888888889,
+      "timestamp": "2026-05-29T16:11:07.466153"
+    },
+    {
+      "text": "I'm giving you one Python problem.",
+      "start_time": 310.56,
+      "end_time": 312.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9593333333333334,
+      "timestamp": "2026-05-29T16:11:12.262747"
+    },
+    {
+      "text": "Can you share me your screen as well?",
+      "start_time": 312.72,
+      "end_time": 314.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9043749999999999,
+      "timestamp": "2026-05-29T16:11:14.166684"
+    },
+    {
+      "text": "So what you need to do is like, you need to write a python function that take a list of PDF file path.",
+      "start_time": 320.22,
+      "end_time": 327.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.938,
+      "timestamp": "2026-05-29T16:11:27.693881"
+    },
+    {
+      "text": "And it should extract text from each using PYPDF and then return our dictionary mapping, each file part to its extracted text, as mentioned in the problem.",
+      "start_time": 330.48,
+      "end_time": 342.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.913074074074074,
+      "timestamp": "2026-05-29T16:11:42.108429"
+    },
+    {
+      "text": "Also, you need to handle missing files and unreadable PDF as well.",
+      "start_time": 342.06,
+      "end_time": 347.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9568333333333333,
+      "timestamp": "2026-05-29T16:11:46.853811"
+    },
+    {
+      "text": "You can take your time and then...",
+      "start_time": 350.22,
+      "end_time": 353.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8938571428571429,
+      "timestamp": "2026-05-29T16:11:52.584036"
+    },
+    {
+      "text": "Hello, uh, I think call got disconnected from your end.",
+      "start_time": 423.6,
+      "end_time": 428.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8126,
+      "timestamp": "2026-05-29T16:13:08.418886"
+    },
+    {
+      "text": "I think it's fine now.",
+      "start_time": 445.92,
+      "end_time": 447.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7422,
+      "timestamp": "2026-05-29T16:13:27.527950"
+    },
+    {
+      "text": "You can tell me your approach.",
+      "start_time": 449.1,
+      "end_time": 450.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8828333333333335,
+      "timestamp": "2026-05-29T16:13:30.477964"
+    },
+    {
+      "text": "Um, so firstly, uh, uh, like I have a function, I'm making a function that will have the argument of a list of the file paths.",
+      "start_time": 466.08,
+      "end_time": 478.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8309615384615383,
+      "timestamp": "2026-05-29T16:13:58.385775"
+    },
+    {
+      "text": "Then trading over all the file paths and reading the files, uh, by using abdrop read.",
+      "start_time": 478.32,
+      "end_time": 485.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7416250000000001,
+      "timestamp": "2026-05-29T16:14:05.052643"
+    },
+    {
+      "text": "No, actually, we have to do it with library of tools.",
+      "start_time": 493.14,
+      "end_time": 496.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6865454545454545,
+      "timestamp": "2026-05-29T16:14:16.532538"
+    },
+    {
+      "text": "So, uh, yeah, so like trading over this file path. And for each file, uh, no.",
+      "start_time": 496.56,
+      "end_time": 505.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6550625,
+      "timestamp": "2026-05-29T16:14:25.218943"
+    },
+    {
+      "text": "Just tell me your approach, uh, properly.",
+      "start_time": 564.24,
+      "end_time": 568.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6367142857142857,
+      "timestamp": "2026-05-29T16:15:27.635173"
+    },
+    {
+      "text": "Um, yeah, like, uh.",
+      "start_time": 569.16,
+      "end_time": 573.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.51425,
+      "timestamp": "2026-05-29T16:15:33.314452"
+    },
+    {
+      "text": "If you have a function that will be getting the list of the file path and trading over those file paths and reading, uh, the PDF files, uh, using the PDF 2.",
+      "start_time": 577.68,
+      "end_time": 590.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7939687499999998,
+      "timestamp": "2026-05-29T16:15:50.720841"
+    },
+    {
+      "text": "So, uh, it will, um, Like, before that we can actually have some records that will, uh, Or we can split the file path and check whether we are having the PDF, uh, PDF file or not.",
+      "start_time": 590.52,
+      "end_time": 608.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8184054054054051,
+      "timestamp": "2026-05-29T16:16:09.051089"
+    },
+    {
+      "text": "Like if we have new video files, then we can pass it to the library of 2 to extract the text. And um, we will be having a dictionary as well.",
+      "start_time": 608.88,
+      "end_time": 617.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7859032258064514,
+      "timestamp": "2026-05-29T16:16:17.579476"
+    },
+    {
+      "text": "So for each file path that we are trading here, after that, we are checking for the PDF.",
+      "start_time": 617.52,
+      "end_time": 624.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9086666666666667,
+      "timestamp": "2026-05-29T16:16:24.237206"
+    },
+    {
+      "text": "Since we can't process the files that are not produced.",
+      "start_time": 640.44,
+      "end_time": 643.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8924999999999998,
+      "timestamp": "2026-05-29T16:16:43.400476"
+    },
+    {
+      "text": "So, uh, Um, also for the files that we are processing using the PDF 2, so we can have the uh, key as the file path and the value from uh, that we are getting uh, by parsing through by video of 2.",
+      "start_time": 643.98,
+      "end_time": 663.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7539302325581395,
+      "timestamp": "2026-05-29T16:17:03.752525"
+    },
+    {
+      "text": "So so that we can have the fight path and the text that we are ready for that beauty of file.",
+      "start_time": 663.6,
+      "end_time": 672.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8322857142857142,
+      "timestamp": "2026-05-29T16:17:12.253312"
+    },
+    {
+      "text": "Did you work up on anything apart from PYPDF, like OCR related lang extract, something else, well?",
+      "start_time": 673.68,
+      "end_time": 681.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8815294117647059,
+      "timestamp": "2026-05-29T16:17:20.963167"
+    },
+    {
+      "text": "Or any cloud services you have used.",
+      "start_time": 681.48,
+      "end_time": 684.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.921142857142857,
+      "timestamp": "2026-05-29T16:17:24.738258"
+    },
+    {
+      "text": "Okay, uh, Prapti, where are you currently working? In which organization?",
+      "start_time": 689.22,
+      "end_time": 694.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7193636363636363,
+      "timestamp": "2026-05-29T16:17:34.349780"
+    },
+    {
+      "text": "Okay, Pratti, I'm done with the interview process.",
+      "start_time": 698.46,
+      "end_time": 701.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.872375,
+      "timestamp": "2026-05-29T16:17:41.066301"
+    },
+    {
+      "text": "If you have any questions you can ask to me.",
+      "start_time": 701.1,
+      "end_time": 702.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9593999999999999,
+      "timestamp": "2026-05-29T16:17:42.010349"
+    },
+    {
+      "text": "No, I don't think that I have any questions of now.",
+      "start_time": 705.54,
+      "end_time": 709.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5945454545454545,
+      "timestamp": "2026-05-29T16:17:48.678861"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 710.94,
+      "end_time": 711.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9084999999999999,
+      "timestamp": "2026-05-29T16:17:51.591602"
+    },
+    {
+      "text": "Have a good day ahead as well.",
+      "start_time": 711.6,
+      "end_time": 712.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9480000000000001,
+      "timestamp": "2026-05-29T16:17:52.560418"
+    },
+    {
+      "text": "Bye- bye.",
+      "start_time": 712.68,
+      "end_time": 713.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6785,
+      "timestamp": "2026-05-29T16:17:52.568943"
+    }
+  ]
+}

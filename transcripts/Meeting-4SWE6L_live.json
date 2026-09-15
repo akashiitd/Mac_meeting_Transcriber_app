@@ -1,0 +1,2121 @@
+{
+  "session_name": "Meeting-4SWE6L",
+  "started": "2026-06-10T12:03:06.842829",
+  "segments": [
+    {
+      "text": "Uh, good afternoon.",
+      "start_time": 28.5,
+      "end_time": 30.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5456666666666666,
+      "timestamp": "2026-06-10T12:03:39.053546"
+    },
+    {
+      "text": "Sorry, are you, can you repeat once?",
+      "start_time": 30.0,
+      "end_time": 33.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5677142857142857,
+      "timestamp": "2026-06-10T12:03:40.987178"
+    },
+    {
+      "text": "Alpha, right?",
+      "start_time": 34.74,
+      "end_time": 36.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5855,
+      "timestamp": "2026-06-10T12:03:44.780416"
+    },
+    {
+      "text": "Okay, my name is Akash.",
+      "start_time": 36.84,
+      "end_time": 39.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6924,
+      "timestamp": "2026-06-10T12:03:46.740601"
+    },
+    {
+      "text": "Okay, good afternoon.",
+      "start_time": 39.06,
+      "end_time": 39.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.695,
+      "timestamp": "2026-06-10T12:03:47.690960"
+    },
+    {
+      "text": "Akash, yeah, good afternoon, Akash.",
+      "start_time": 39.66,
+      "end_time": 42.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.35419999999999996,
+      "timestamp": "2026-06-10T12:03:50.567618"
+    },
+    {
+      "text": "Yeah, can you please come on WebCam?",
+      "start_time": 40.26,
+      "end_time": 43.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8465714285714288,
+      "timestamp": "2026-06-10T12:03:51.545195"
+    },
+    {
+      "text": "WebCam.",
+      "start_time": 44.1,
+      "end_time": 46.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.386,
+      "timestamp": "2026-06-10T12:03:54.383007"
+    },
+    {
+      "text": "I'm on webcam only.",
+      "start_time": 46.2,
+      "end_time": 47.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.71275,
+      "timestamp": "2026-06-10T12:03:55.339995"
+    },
+    {
+      "text": "Am I available to you?",
+      "start_time": 47.82,
+      "end_time": 49.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5928,
+      "timestamp": "2026-06-10T12:03:57.270949"
+    },
+    {
+      "text": "No, I'm not able to see you actually.",
+      "start_time": 46.98,
+      "end_time": 49.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9078750000000001,
+      "timestamp": "2026-06-10T12:03:57.303374"
+    },
+    {
+      "text": "Is it?",
+      "start_time": 49.26,
+      "end_time": 50.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.778,
+      "timestamp": "2026-06-10T12:03:58.226522"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 49.92,
+      "end_time": 51.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.835,
+      "timestamp": "2026-06-10T12:03:59.206477"
+    },
+    {
+      "text": "I'm able to see myself.",
+      "start_time": 50.88,
+      "end_time": 52.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9634,
+      "timestamp": "2026-06-10T12:04:01.103506"
+    },
+    {
+      "text": "Can you rejoin the call once?",
+      "start_time": 52.98,
+      "end_time": 55.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9498333333333333,
+      "timestamp": "2026-06-10T12:04:03.061261"
+    },
+    {
+      "text": "Um, so top right, exit intro, you know.",
+      "start_time": 57.12,
+      "end_time": 60.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.52925,
+      "timestamp": "2026-06-10T12:04:07.852538"
+    },
+    {
+      "text": "Mhm.",
+      "start_time": 58.8,
+      "end_time": 60.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.465,
+      "timestamp": "2026-06-10T12:04:07.853220"
+    },
+    {
+      "text": "Hmm, okay, I will return.",
+      "start_time": 60.48,
+      "end_time": 63.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6678,
+      "timestamp": "2026-06-10T12:04:11.664803"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 81.48,
+      "end_time": 82.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5055000000000001,
+      "timestamp": "2026-06-10T12:04:29.929887"
+    },
+    {
+      "text": "Drop and rejoin the call, okay?",
+      "start_time": 80.76,
+      "end_time": 83.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7824999999999999,
+      "timestamp": "2026-06-10T12:04:31.868373"
+    },
+    {
+      "text": "asking a few questions to me.",
+      "start_time": 85.02,
+      "end_time": 86.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8835000000000001,
+      "timestamp": "2026-06-10T12:04:34.708113"
+    },
+    {
+      "text": "Feedback, how it is asking.",
+      "start_time": 87.3,
+      "end_time": 89.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5818,
+      "timestamp": "2026-06-10T12:04:37.598275"
+    },
+    {
+      "text": "One.",
+      "start_time": 91.08,
+      "end_time": 93.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.347,
+      "timestamp": "2026-06-10T12:04:41.414708"
+    },
+    {
+      "text": "I'm just saying drop from the call and rejoin.",
+      "start_time": 90.96,
+      "end_time": 94.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9750000000000001,
+      "timestamp": "2026-06-10T12:04:42.432809"
+    },
+    {
+      "text": "Oh, got it, got it.",
+      "start_time": 94.14,
+      "end_time": 96.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4202,
+      "timestamp": "2026-06-10T12:04:44.318950"
+    },
+    {
+      "text": "Close the link and rejoin the call.",
+      "start_time": 95.28,
+      "end_time": 97.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9035714285714286,
+      "timestamp": "2026-06-10T12:04:45.300217"
+    },
+    {
+      "text": "It is asking for feedback.",
+      "start_time": 108.42,
+      "end_time": 110.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8347999999999999,
+      "timestamp": "2026-06-10T12:04:58.706895"
+    },
+    {
+      "text": "Okay, leave it.",
+      "start_time": 113.82,
+      "end_time": 114.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6496666666666666,
+      "timestamp": "2026-06-10T12:05:02.574201"
+    },
+    {
+      "text": "Hello, hi.",
+      "start_time": 155.64,
+      "end_time": 158.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.46299999999999997,
+      "timestamp": "2026-06-10T12:05:45.742444"
+    },
+    {
+      "text": "Okay, so I do not want you to waste time.",
+      "start_time": 160.44,
+      "end_time": 163.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8647,
+      "timestamp": "2026-06-10T12:05:51.561840"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 164.04,
+      "end_time": 164.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.663,
+      "timestamp": "2026-06-10T12:05:52.454112"
+    },
+    {
+      "text": "So regarding the interview, right, I will try to go our section related to cloud services, database, state engineering, sequel development, system migration, and all of the things.",
+      "start_time": 163.38,
+      "end_time": 173.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8418214285714284,
+      "timestamp": "2026-06-10T12:06:01.278771"
+    },
+    {
+      "text": "Just briefly introduce yourself and then we will get started.",
+      "start_time": 173.34,
+      "end_time": 176.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9642000000000002,
+      "timestamp": "2026-06-10T12:06:04.993506"
+    },
+    {
+      "text": "Yeah, sure.",
+      "start_time": 176.7,
+      "end_time": 178.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5960000000000001,
+      "timestamp": "2026-06-10T12:06:05.912731"
+    },
+    {
+      "text": "First of all, thank you, Akash, for giving me this opportunity to introduce myself.",
+      "start_time": 178.32,
+      "end_time": 182.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8635714285714285,
+      "timestamp": "2026-06-10T12:06:10.742404"
+    },
+    {
+      "text": "So my name is Sabin Abhin Kumar.",
+      "start_time": 182.94,
+      "end_time": 185.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.806,
+      "timestamp": "2026-06-10T12:06:13.605312"
+    },
+    {
+      "text": "You can call me Naveen.",
+      "start_time": 185.4,
+      "end_time": 186.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8086,
+      "timestamp": "2026-06-10T12:06:14.557590"
+    },
+    {
+      "text": "I have overall 5 years of IT experience with more than 4 years of experience in data engineering field.",
+      "start_time": 186.42,
+      "end_time": 193.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9664736842105265,
+      "timestamp": "2026-06-10T12:06:21.345772"
+    },
+    {
+      "text": "So currently I'm working as a data engineer in CapGerman.",
+      "start_time": 193.5,
+      "end_time": 196.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8275,
+      "timestamp": "2026-06-10T12:06:25.122051"
+    },
+    {
+      "text": "So throughout my career, right, I have primarily worked in the banking domain, supporting ANZ bank risk and fraud data hub platforms.",
+      "start_time": 196.92,
+      "end_time": 204.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9040454545454544,
+      "timestamp": "2026-06-10T12:06:32.869849"
+    },
+    {
+      "text": "My expertise is mainly building scalable LLT pipelines using DBT, JCP, Bickery, Apache, Flo, SQL, and the Python.",
+      "start_time": 204.6,
+      "end_time": 212.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8212777777777778,
+      "timestamp": "2026-06-10T12:06:40.602055"
+    },
+    {
+      "text": "So over the years, right, I have been involved in designing and developing entry and data pipelines, data warehouse solutions, data models, incremental processing, remember.",
+      "start_time": 212.82,
+      "end_time": 222.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8581200000000001,
+      "timestamp": "2026-06-10T12:06:51.144027"
+    },
+    {
+      "text": "Automated deployment pipelines.",
+      "start_time": 222.84,
+      "end_time": 225.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.856,
+      "timestamp": "2026-06-10T12:06:53.923381"
+    },
+    {
+      "text": "Apart from that, I have work extensively with both structured and semi-structured data such as Avro, CSV, adjacent files.",
+      "start_time": 225.72,
+      "end_time": 233.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8555263157894736,
+      "timestamp": "2026-06-10T12:07:00.749652"
+    },
+    {
+      "text": "Yeah, yeah, that is fine.",
+      "start_time": 245.58,
+      "end_time": 246.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7448,
+      "timestamp": "2026-06-10T12:07:15.060735"
+    },
+    {
+      "text": "From coming to the technical perspective, right, I have strong expertise in DVD transformations, incremental model, napshots, SCD implementations, be very optimization, airflow artistration, Yeah.",
+      "start_time": 233.04,
+      "end_time": 247.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8382000000000002,
+      "timestamp": "2026-06-10T12:07:15.228265"
+    },
+    {
+      "text": "Can you tell me, like, how would you approach troubleshooting a sudden slowdown in our productions equal data pipeline, that process risk data for credit assessment in a banking environment?",
+      "start_time": 247.56,
+      "end_time": 259.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8350333333333331,
+      "timestamp": "2026-06-10T12:07:27.697056"
+    },
+    {
+      "text": "Say, sorry, can you repeat once?",
+      "start_time": 259.92,
+      "end_time": 262.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5351666666666667,
+      "timestamp": "2026-06-10T12:07:30.393218"
+    },
+    {
+      "text": "I'm pasting the question in the chat so that you can see it.",
+      "start_time": 263.34,
+      "end_time": 266.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8071538461538462,
+      "timestamp": "2026-06-10T12:07:34.277797"
+    },
+    {
+      "text": "Okay, from here we can access it.",
+      "start_time": 269.94,
+      "end_time": 273.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.793142857142857,
+      "timestamp": "2026-06-10T12:07:40.979825"
+    },
+    {
+      "text": "1st time I have been joining through this.",
+      "start_time": 273.48,
+      "end_time": 274.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8217500000000001,
+      "timestamp": "2026-06-10T12:07:42.907690"
+    },
+    {
+      "text": "So we were asking how would you approach doubleshooting a sudden slowdown in the production sequel data pipeline?",
+      "start_time": 274.98,
+      "end_time": 283.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8450000000000001,
+      "timestamp": "2026-06-10T12:07:51.572799"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 287.76,
+      "end_time": 289.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.548,
+      "timestamp": "2026-06-10T12:07:57.291556"
+    },
+    {
+      "text": "That process require that offer great assessments in a banking engine government.",
+      "start_time": 283.68,
+      "end_time": 289.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7190833333333334,
+      "timestamp": "2026-06-10T12:07:57.302094"
+    },
+    {
+      "text": "So troubleshooting.",
+      "start_time": 290.04,
+      "end_time": 291.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.723,
+      "timestamp": "2026-06-10T12:08:00.147210"
+    },
+    {
+      "text": "Okay, sun is loaded under production sequel.",
+      "start_time": 291.96,
+      "end_time": 293.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5082857142857143,
+      "timestamp": "2026-06-10T12:08:02.083498"
+    },
+    {
+      "text": "So, uh, in this scenario, That may close this question.",
+      "start_time": 294.54,
+      "end_time": 300.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6939,
+      "timestamp": "2026-06-10T12:08:07.876166"
+    },
+    {
+      "text": "So 1st of all, what I will do in this scenario, right?",
+      "start_time": 300.42,
+      "end_time": 304.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9652499999999998,
+      "timestamp": "2026-06-10T12:08:12.671312"
+    },
+    {
+      "text": "I will check the airflow logs, and bickery job history, and I identify where the slowdown is occurring actually.",
+      "start_time": 304.56,
+      "end_time": 311.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7703684210526316,
+      "timestamp": "2026-06-10T12:08:19.394350"
+    },
+    {
+      "text": "Why the why it is happening?",
+      "start_time": 311.52,
+      "end_time": 312.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6844999999999999,
+      "timestamp": "2026-06-10T12:08:20.313467"
+    },
+    {
+      "text": "So then what I will do is I will compare current execution metrics with them, historical runs, unchecked for changes in Disney data volumes.",
+      "start_time": 312.72,
+      "end_time": 321.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7990416666666667,
+      "timestamp": "2026-06-10T12:08:29.070286"
+    },
+    {
+      "text": "any data volumes have included or not, and query plan, and source data patterns.",
+      "start_time": 321.18,
+      "end_time": 325.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7805714285714285,
+      "timestamp": "2026-06-10T12:08:33.795681"
+    },
+    {
+      "text": "I will like to compare.",
+      "start_time": 325.8,
+      "end_time": 327.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8939999999999999,
+      "timestamp": "2026-06-10T12:08:35.658310"
+    },
+    {
+      "text": "So in my project, right, I have seen some, sometimes slowdown has caused a big by missing partitions, partition filters, and increase the data volumes, which result, which resulted right, since the partition is missing, it went for large table scanners.",
+      "start_time": 327.54,
+      "end_time": 343.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8091219512195121,
+      "timestamp": "2026-06-10T12:08:51.256962"
+    },
+    {
+      "text": "So like this, I will approach in this scenario.",
+      "start_time": 343.08,
+      "end_time": 347.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8988888888888888,
+      "timestamp": "2026-06-10T12:08:54.907741"
+    },
+    {
+      "text": "Okay, and how do you assassin mitigate risk when migrating data pipeline from legacy risk system like ELCM to a new platform and a corporate banking environment?",
+      "start_time": 347.52,
+      "end_time": 362.16,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9016666666666666,
+      "timestamp": "2026-06-10T12:09:10.435360"
+    },
+    {
+      "text": "No, so to mitigate a risk right up.",
+      "start_time": 362.4,
+      "end_time": 368.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.63075,
+      "timestamp": "2026-06-10T12:09:16.995611"
+    },
+    {
+      "text": "1st of all, what I will do, Miss, I will start with the detailed impact assessment.",
+      "start_time": 368.76,
+      "end_time": 374.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8831874999999999,
+      "timestamp": "2026-06-10T12:09:22.748585"
+    },
+    {
+      "text": "1st of all, because that is crucial by identifying source systems, source systems and dependencies, and we need to verify the data volumes as well here.",
+      "start_time": 374.64,
+      "end_time": 384.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9038846153846153,
+      "timestamp": "2026-06-10T12:09:32.448483"
+    },
+    {
+      "text": "And who is our downstream consumers?",
+      "start_time": 384.06,
+      "end_time": 386.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8275,
+      "timestamp": "2026-06-10T12:09:34.245263"
+    },
+    {
+      "text": "We need to, I would start with this kind of detailed impact analysis first.",
+      "start_time": 386.46,
+      "end_time": 390.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7894285714285714,
+      "timestamp": "2026-06-10T12:09:38.125437"
+    },
+    {
+      "text": "Then what I will do means I would perform data mapping and ensure all business logic from the legacy platform is documented before migration itself, because this is the crucial for us to document it.",
+      "start_time": 390.42,
+      "end_time": 402.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9268285714285714,
+      "timestamp": "2026-06-10T12:09:50.688355"
+    },
+    {
+      "text": "And coming to our point to mitigate risk, right, I would run the parallel, I would use a parallel answer, with both legacy and new pipelines together, and outputs are reconciled.",
+      "start_time": 402.6,
+      "end_time": 414.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8369999999999999,
+      "timestamp": "2026-06-10T12:10:02.221360"
+    },
+    {
+      "text": "So, I would implement, like raw count validations, data, reconciliation, and business validation checks at every stage, not only at the end of the end of the target, at every stage, I will do it before cutover itself.",
+      "start_time": 414.24,
+      "end_time": 427.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8374736842105266,
+      "timestamp": "2026-06-10T12:10:15.723209"
+    },
+    {
+      "text": "Only after successful execution, right, and validation, I will sign off to the stakeholders, and I will perform the final final migration.",
+      "start_time": 427.92,
+      "end_time": 437.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8703181818181819,
+      "timestamp": "2026-06-10T12:10:25.190932"
+    },
+    {
+      "text": "So in this way, we can mitigate risk going forward.",
+      "start_time": 437.34,
+      "end_time": 440.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9221999999999998,
+      "timestamp": "2026-06-10T12:10:28.975785"
+    },
+    {
+      "text": "And how would you design a sequel-based data pipeline to ensure both high performance and auditability when transferring sensitive risk data between banking system.",
+      "start_time": 440.16,
+      "end_time": 451.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9407500000000001,
+      "timestamp": "2026-06-10T12:10:39.665936"
+    },
+    {
+      "text": "Okay, how did design the data pipeline, right?",
+      "start_time": 453.06,
+      "end_time": 456.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6868749999999999,
+      "timestamp": "2026-06-10T12:10:44.350596"
+    },
+    {
+      "text": "Yeah, sequel-based data pipeline.",
+      "start_time": 456.72,
+      "end_time": 459.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.72575,
+      "timestamp": "2026-06-10T12:10:47.206305"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 458.7,
+      "end_time": 460.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.881,
+      "timestamp": "2026-06-10T12:10:48.168213"
+    },
+    {
+      "text": "In this scenario, right?",
+      "start_time": 459.6,
+      "end_time": 461.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.76625,
+      "timestamp": "2026-06-10T12:10:50.072216"
+    },
+    {
+      "text": "In my mind, what is coming right?",
+      "start_time": 461.94,
+      "end_time": 464.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8357142857142856,
+      "timestamp": "2026-06-10T12:10:52.961966"
+    },
+    {
+      "text": "I would like to design the pipeline using the staging validation and the curator layers.",
+      "start_time": 464.88,
+      "end_time": 470.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9027999999999999,
+      "timestamp": "2026-06-10T12:10:57.796707"
+    },
+    {
+      "text": "Instead of moving data directly between the systems.",
+      "start_time": 470.1,
+      "end_time": 473.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8847499999999999,
+      "timestamp": "2026-06-10T12:11:01.634179"
+    },
+    {
+      "text": "Okay, and for performance, right, I would use partitioning and clustering.",
+      "start_time": 473.76,
+      "end_time": 478.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8836363636363637,
+      "timestamp": "2026-06-10T12:11:06.434769"
+    },
+    {
+      "text": "And incremental processing and optimized is equal for is to minimize data cancer. Instead of going to all large table scans, I would use partition and clustering.",
+      "start_time": 478.62,
+      "end_time": 487.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7731111111111112,
+      "timestamp": "2026-06-10T12:11:15.130313"
+    },
+    {
+      "text": "For audit purpose, right?",
+      "start_time": 487.62,
+      "end_time": 489.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8845000000000001,
+      "timestamp": "2026-06-10T12:11:16.955593"
+    },
+    {
+      "text": "I would capture low timestamp, source system, batch ID, and record tones in the audit tables.",
+      "start_time": 489.36,
+      "end_time": 495.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8359375000000001,
+      "timestamp": "2026-06-10T12:11:23.734202"
+    },
+    {
+      "text": "Yeah, in this way, I would I would like to design.",
+      "start_time": 495.96,
+      "end_time": 499.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8027272727272727,
+      "timestamp": "2026-06-10T12:11:27.548070"
+    },
+    {
+      "text": "And how do you structure sequel access control to ensure only authorizers can view or modify sensitive risk data during a corporate banking system migration?",
+      "start_time": 505.86,
+      "end_time": 515.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9116399999999999,
+      "timestamp": "2026-06-10T12:11:43.998826"
+    },
+    {
+      "text": "Okay, so if you, they ask me how to control right up.",
+      "start_time": 517.56,
+      "end_time": 522.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.743,
+      "timestamp": "2026-06-10T12:11:50.591374"
+    },
+    {
+      "text": "I would like to implement this using a role-based access control.",
+      "start_time": 522.72,
+      "end_time": 527.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9341818181818181,
+      "timestamp": "2026-06-10T12:11:55.363296"
+    },
+    {
+      "text": "where characters are back, are back and follows them, least privilege principle.",
+      "start_time": 527.82,
+      "end_time": 532.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6881666666666667,
+      "timestamp": "2026-06-10T12:12:00.176032"
+    },
+    {
+      "text": "Users who only condemn reports, right?",
+      "start_time": 532.38,
+      "end_time": 535.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8708333333333332,
+      "timestamp": "2026-06-10T12:12:03.037209"
+    },
+    {
+      "text": "Get read access only.",
+      "start_time": 535.02,
+      "end_time": 536.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.61025,
+      "timestamp": "2026-06-10T12:12:03.971392"
+    },
+    {
+      "text": "While developers unsupport team get access only to them.",
+      "start_time": 536.1,
+      "end_time": 539.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8294444444444444,
+      "timestamp": "2026-06-10T12:12:07.869704"
+    },
+    {
+      "text": "Data sets required for their role.",
+      "start_time": 539.88,
+      "end_time": 541.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7261666666666667,
+      "timestamp": "2026-06-10T12:12:09.756191"
+    },
+    {
+      "text": "And in GCP, we use IM roles.",
+      "start_time": 541.92,
+      "end_time": 544.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7858571428571429,
+      "timestamp": "2026-06-10T12:12:12.665136"
+    },
+    {
+      "text": "data set level permissions and service accounts to control access.",
+      "start_time": 544.68,
+      "end_time": 549.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9416,
+      "timestamp": "2026-06-10T12:12:17.447519"
+    },
+    {
+      "text": "In this way, we will do the access control.",
+      "start_time": 549.18,
+      "end_time": 554.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9162222222222223,
+      "timestamp": "2026-06-10T12:12:22.251060"
+    },
+    {
+      "text": "And how would you use sequel to monitor and alert on unauthorized changes to sensitive risk data tables in a corporate banking environment?",
+      "start_time": 553.68,
+      "end_time": 565.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8291304347826087,
+      "timestamp": "2026-06-10T12:12:32.951732"
+    },
+    {
+      "text": "Okay, um, download the sequel, right?",
+      "start_time": 567.84,
+      "end_time": 571.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3205,
+      "timestamp": "2026-06-10T12:12:39.514184"
+    },
+    {
+      "text": "Yeah, in this situation, right?",
+      "start_time": 571.32,
+      "end_time": 573.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7424000000000002,
+      "timestamp": "2026-06-10T12:12:41.425729"
+    },
+    {
+      "text": "I would like to maintain an audit table that captures the inset update and delete activity is non-sensitive tables.",
+      "start_time": 573.3,
+      "end_time": 579.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8205789473684211,
+      "timestamp": "2026-06-10T12:12:47.258775"
+    },
+    {
+      "text": "And push that what I will do means, I would run a scheduled sequel variation for this, to compare current data with previous, previous snapshots and identify unexpected changes, anything happened.",
+      "start_time": 579.24,
+      "end_time": 589.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7892580645161291,
+      "timestamp": "2026-06-10T12:12:57.878503"
+    },
+    {
+      "text": "I'm coming to our portion, right? For critical tables, I would track metadata such as modified by our modified timestamp and record counts.",
+      "start_time": 589.8,
+      "end_time": 598.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.842,
+      "timestamp": "2026-06-10T12:13:06.478643"
+    },
+    {
+      "text": "If any unauthorized changes are detected, right, the validation curry would trigger the alert through airflow.",
+      "start_time": 598.38,
+      "end_time": 604.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8404375000000003,
+      "timestamp": "2026-06-10T12:13:12.241178"
+    },
+    {
+      "text": "Are the monitoring framework?",
+      "start_time": 604.5,
+      "end_time": 606.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7455,
+      "timestamp": "2026-06-10T12:13:14.072992"
+    },
+    {
+      "text": "In this way, I would like to take this situation.",
+      "start_time": 606.48,
+      "end_time": 609.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8876,
+      "timestamp": "2026-06-10T12:13:17.949790"
+    },
+    {
+      "text": "And if there is a data field critical to credit scoring is missing in the target risk platform during migration.",
+      "start_time": 614.16,
+      "end_time": 621.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9626500000000002,
+      "timestamp": "2026-06-10T12:13:29.516935"
+    },
+    {
+      "text": "How do you identify escalate and resolve the issue to minimize business disruption?",
+      "start_time": 621.42,
+      "end_time": 628.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8733846153846153,
+      "timestamp": "2026-06-10T12:13:36.251449"
+    },
+    {
+      "text": "Yeah, basically, it will come right to mitigate the basis. So in this scenario, I would like to identify the issue through reconciliation checks between the source and target systems, because that is the crucial step for us to compare the source and target.",
+      "start_time": 630.18,
+      "end_time": 647.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8834545454545453,
+      "timestamp": "2026-06-10T12:13:55.592180"
+    },
+    {
+      "text": "Then I would, I would perform the impact analysis, to understand which security scoring process and downstream reports are affected.",
+      "start_time": 647.52,
+      "end_time": 655.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8373999999999999,
+      "timestamp": "2026-06-10T12:14:03.099057"
+    },
+    {
+      "text": "to know this is the crucial and which downstream reports are affected to us.",
+      "start_time": 655.2,
+      "end_time": 659.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9375714285714284,
+      "timestamp": "2026-06-10T12:14:06.907320"
+    },
+    {
+      "text": "Then I would trace the field through the pipeline to determine whether the issue is in ingestion, or transformation, or of the mapping logic, where the issue occurred to this, and of identifying the root cause, right?",
+      "start_time": 659.28,
+      "end_time": 672.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8399189189189188,
+      "timestamp": "2026-06-10T12:14:20.492172"
+    },
+    {
+      "text": "I would backfill only the impacted data and validated the results with business users.",
+      "start_time": 672.96,
+      "end_time": 677.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9510714285714286,
+      "timestamp": "2026-06-10T12:14:26.100925"
+    },
+    {
+      "text": "Again, once the rerun is completed.",
+      "start_time": 677.88,
+      "end_time": 679.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7691666666666667,
+      "timestamp": "2026-06-10T12:14:27.983395"
+    },
+    {
+      "text": "To minimize a disruption, right?",
+      "start_time": 679.98,
+      "end_time": 682.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.682,
+      "timestamp": "2026-06-10T12:14:29.924184"
+    },
+    {
+      "text": "I would use a temporary workaround from the source system while the permanent fix is being deployed.",
+      "start_time": 682.2,
+      "end_time": 687.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9585294117647057,
+      "timestamp": "2026-06-10T12:14:34.754971"
+    },
+    {
+      "text": "In this way, I would like to tackle this situation.",
+      "start_time": 687.12,
+      "end_time": 689.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9353000000000001,
+      "timestamp": "2026-06-10T12:14:37.637264"
+    },
+    {
+      "text": "Okay, and what stuff would you take to validate and reconcile migrated risk data between a legacy system and a new platform like? ELCM ensuring all credit risk fields are accurate.",
+      "start_time": 691.38,
+      "end_time": 706.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8751290322580644,
+      "timestamp": "2026-06-10T12:14:54.103533"
+    },
+    {
+      "text": "Okay. Mm-hmm.",
+      "start_time": 709.26,
+      "end_time": 712.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.431,
+      "timestamp": "2026-06-10T12:14:59.716347"
+    },
+    {
+      "text": "Here, what I will do is, hmm.",
+      "start_time": 710.52,
+      "end_time": 712.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7114285714285715,
+      "timestamp": "2026-06-10T12:15:00.642025"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 712.44,
+      "end_time": 713.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.688,
+      "timestamp": "2026-06-10T12:15:01.588030"
+    },
+    {
+      "text": "Yeah, yeah, right.",
+      "start_time": 712.2,
+      "end_time": 713.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7093333333333334,
+      "timestamp": "2026-06-10T12:15:01.614376"
+    },
+    {
+      "text": "So here, 1st step, what I will do means I will perform the row count reconciliation between our legacy system and the new platform to ensure all recurs are migrated successfully.",
+      "start_time": 713.4,
+      "end_time": 725.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8638387096774193,
+      "timestamp": "2026-06-10T12:15:13.239844"
+    },
+    {
+      "text": "That is the crucial chef because all regards migrating is important to us.",
+      "start_time": 725.58,
+      "end_time": 729.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8517692307692308,
+      "timestamp": "2026-06-10T12:15:16.988132"
+    },
+    {
+      "text": "Then I would validate the critical field, such as customer ID, account ID, risk creating under credit exposure, using data reconcellation parties.",
+      "start_time": 729.48,
+      "end_time": 739.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7864545454545453,
+      "timestamp": "2026-06-10T12:15:26.675123"
+    },
+    {
+      "text": "Push that I would like to compare key business metrics on the key on the credit risk reports between both both systems, the parallel run.",
+      "start_time": 739.08,
+      "end_time": 748.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8049200000000001,
+      "timestamp": "2026-06-10T12:15:36.224351"
+    },
+    {
+      "text": "Any mismatches, right?",
+      "start_time": 748.44,
+      "end_time": 750.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.777,
+      "timestamp": "2026-06-10T12:15:38.065636"
+    },
+    {
+      "text": "It would be traced using data lineage analysis.",
+      "start_time": 750.18,
+      "end_time": 752.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.883375,
+      "timestamp": "2026-06-10T12:15:40.972288"
+    },
+    {
+      "text": "to identify whether any disciplines are done or not during the process.",
+      "start_time": 752.88,
+      "end_time": 756.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7335833333333334,
+      "timestamp": "2026-06-10T12:15:44.837259"
+    },
+    {
+      "text": "Only after successful reconciliation and business sign off, right, I would proceed with the final cutover.",
+      "start_time": 756.9,
+      "end_time": 763.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.88625,
+      "timestamp": "2026-06-10T12:15:51.563696"
+    },
+    {
+      "text": "Otherwise, until then I would not proceed with the final cutover.",
+      "start_time": 763.68,
+      "end_time": 766.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8686363636363637,
+      "timestamp": "2026-06-10T12:15:54.404735"
+    },
+    {
+      "text": "And can you also explain to me what step would you take to validate?",
+      "start_time": 768.6,
+      "end_time": 774.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8862857142857142,
+      "timestamp": "2026-06-10T12:16:03.087176"
+    },
+    {
+      "text": "I mean, I mean, how do you SSN prioritize technical debt in a legacy risk system when planning a modernization project in a corporate banking environment?",
+      "start_time": 774.84,
+      "end_time": 784.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9119615384615384,
+      "timestamp": "2026-06-10T12:16:12.793617"
+    },
+    {
+      "text": "Again, so if you ask me what steps to take, right? Uh, in 10 minutes, 1st I would start with the technical depth assessment by identifying uh, outdated components, and manual process, and unsupported technology, any, it finished there, unperformance bottlenecks, and recurring the production issues.",
+      "start_time": 785.4,
+      "end_time": 806.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7500217391304346,
+      "timestamp": "2026-06-10T12:16:34.110558"
+    },
+    {
+      "text": "These kind of things I would start with the technical assessment.",
+      "start_time": 806.04,
+      "end_time": 808.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8596363636363636,
+      "timestamp": "2026-06-10T12:16:36.658450"
+    },
+    {
+      "text": "Then push this, right?",
+      "start_time": 808.68,
+      "end_time": 811.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.70875,
+      "timestamp": "2026-06-10T12:16:38.555223"
+    },
+    {
+      "text": "I would like to prioritize based on the business impact and risk.",
+      "start_time": 811.08,
+      "end_time": 815.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8814166666666666,
+      "timestamp": "2026-06-10T12:16:43.360577"
+    },
+    {
+      "text": "Then fixing everything at your answer.",
+      "start_time": 815.4,
+      "end_time": 818.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6781666666666667,
+      "timestamp": "2026-06-10T12:16:46.238109"
+    },
+    {
+      "text": "Based on impact, I will go through first.",
+      "start_time": 818.22,
+      "end_time": 820.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.819,
+      "timestamp": "2026-06-10T12:16:49.144084"
+    },
+    {
+      "text": "For modernization, right?",
+      "start_time": 820.92,
+      "end_time": 822.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6926666666666667,
+      "timestamp": "2026-06-10T12:16:51.027250"
+    },
+    {
+      "text": "I would break the work into bases, into multiple phases, on target, high risk and high impact components first.",
+      "start_time": 822.84,
+      "end_time": 830.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8598421052631581,
+      "timestamp": "2026-06-10T12:16:58.777962"
+    },
+    {
+      "text": "Because that is crucial for us in the process, right?",
+      "start_time": 830.58,
+      "end_time": 833.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.943,
+      "timestamp": "2026-06-10T12:17:01.609776"
+    },
+    {
+      "text": "I would also create a roadmap with quick winds and long-term improvements to ensure delivery within timeline.",
+      "start_time": 833.64,
+      "end_time": 839.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9175294117647059,
+      "timestamp": "2026-06-10T12:17:07.391423"
+    },
+    {
+      "text": "Because the timeline is crucial in our in our risk systems, right?",
+      "start_time": 839.64,
+      "end_time": 844.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8116666666666666,
+      "timestamp": "2026-06-10T12:17:12.201798"
+    },
+    {
+      "text": "So in my experience, right, prioritization is important because not all technical debt creates the same business risk.",
+      "start_time": 844.38,
+      "end_time": 852.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9206666666666669,
+      "timestamp": "2026-06-10T12:17:19.888165"
+    },
+    {
+      "text": "So prioritization is crucial for us.",
+      "start_time": 852.0,
+      "end_time": 853.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9271666666666666,
+      "timestamp": "2026-06-10T12:17:21.753707"
+    },
+    {
+      "text": "Basic on that we need to move forward.",
+      "start_time": 853.98,
+      "end_time": 856.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.885875,
+      "timestamp": "2026-06-10T12:17:24.642275"
+    },
+    {
+      "text": "And if you inherit undocumented sequel-based data pipelines during our risk system moderation,",
+      "start_time": 856.08,
+      "end_time": 865.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7854615384615383,
+      "timestamp": "2026-06-10T12:17:33.384016"
+    },
+    {
+      "text": "How do you assess optimize and document these pipeline insurers, mood migration?",
+      "start_time": 865.08,
+      "end_time": 869.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7590000000000002,
+      "timestamp": "2026-06-10T12:17:37.211264"
+    },
+    {
+      "text": "Okay, so in this situation, right, what I will do means.",
+      "start_time": 871.68,
+      "end_time": 875.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7024545454545454,
+      "timestamp": "2026-06-10T12:17:43.852343"
+    },
+    {
+      "text": "First, I would like to perform down, pipeline discovery, by understanding them, source tables and target tables, dependencies on business logic, from the existing sequel.",
+      "start_time": 875.88,
+      "end_time": 886.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7848400000000001,
+      "timestamp": "2026-06-10T12:17:54.538461"
+    },
+    {
+      "text": "Then I would like to create a data flow map and identify performance bottlenecks or any redundant transformations, or we have any unused objects like that.",
+      "start_time": 886.62,
+      "end_time": 897.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9112692307692307,
+      "timestamp": "2026-06-10T12:18:05.053425"
+    },
+    {
+      "text": "So before migration itself, right?",
+      "start_time": 897.0,
+      "end_time": 899.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9364000000000001,
+      "timestamp": "2026-06-10T12:18:07.829635"
+    },
+    {
+      "text": "I would implement reconciliation validated validation checks up to ensure the migrated pipeline produces the same output.",
+      "start_time": 899.82,
+      "end_time": 908.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9478823529411765,
+      "timestamp": "2026-06-10T12:18:16.578335"
+    },
+    {
+      "text": "I would document the data lineage, and business rules, and daily dependencies, and operational operational procedures for future maintenance.",
+      "start_time": 908.28,
+      "end_time": 916.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8523684210526316,
+      "timestamp": "2026-06-10T12:18:24.248922"
+    },
+    {
+      "text": "If anything is comes in the future.",
+      "start_time": 916.26,
+      "end_time": 917.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.876,
+      "timestamp": "2026-06-10T12:18:25.107115"
+    },
+    {
+      "text": "So, I follow this approach, right?",
+      "start_time": 917.52,
+      "end_time": 920.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9041666666666667,
+      "timestamp": "2026-06-10T12:18:27.984513"
+    },
+    {
+      "text": "This approach reduces migration risk, and issues, the knowledge is not lost due to the missing documentation.",
+      "start_time": 920.46,
+      "end_time": 927.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8698235294117648,
+      "timestamp": "2026-06-10T12:18:35.713165"
+    },
+    {
+      "text": "So this is the reason I follow this approach, basically.",
+      "start_time": 927.9,
+      "end_time": 930.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9138,
+      "timestamp": "2026-06-10T12:18:38.592014"
+    },
+    {
+      "text": "And when modernizing corporate banking system, how do you collaborate with a cross-functional team to ensure business requirement are accurately captured and data solutions remain scalable.",
+      "start_time": 932.52,
+      "end_time": 945.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8750769230769232,
+      "timestamp": "2026-06-10T12:18:53.129823"
+    },
+    {
+      "text": "Yeah, collaboration is a very crucial for us, since we need to be collaborate with other cross-function teams, then only we can process quickly.",
+      "start_time": 946.08,
+      "end_time": 956.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9104583333333335,
+      "timestamp": "2026-06-10T12:19:04.586928"
+    },
+    {
+      "text": "So, 1st what I will do is I will closely work with business analyst.",
+      "start_time": 956.58,
+      "end_time": 961.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8588571428571429,
+      "timestamp": "2026-06-10T12:19:09.318538"
+    },
+    {
+      "text": "Then architects and source system teams under reporting to me, sir.",
+      "start_time": 961.5,
+      "end_time": 965.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6532727272727272,
+      "timestamp": "2026-06-10T12:19:14.095153"
+    },
+    {
+      "text": "Finally, they will consume our data, right, reporting thems from the requirement gathering stage itself.",
+      "start_time": 965.88,
+      "end_time": 970.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7328666666666667,
+      "timestamp": "2026-06-10T12:19:17.966514"
+    },
+    {
+      "text": "So I conduct discussions to understand business rules.",
+      "start_time": 970.56,
+      "end_time": 975.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9624999999999999,
+      "timestamp": "2026-06-10T12:19:23.702528"
+    },
+    {
+      "text": "What is the data, what data definitions we have unsourced to target mappings and reporting expectations?",
+      "start_time": 975.42,
+      "end_time": 980.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8624375,
+      "timestamp": "2026-06-10T12:19:28.532558"
+    },
+    {
+      "text": "How the reporting team is expecting the data to be transformed.",
+      "start_time": 980.88,
+      "end_time": 984.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9186363636363635,
+      "timestamp": "2026-06-10T12:19:32.334192"
+    },
+    {
+      "text": "So before development itself, right, I added my understanding through mapping documents and walkthrough sessions to avoid any requirement gaps.",
+      "start_time": 984.24,
+      "end_time": 993.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.92455,
+      "timestamp": "2026-06-10T12:19:41.051750"
+    },
+    {
+      "text": "I will, before developing itself, I would understand clearly what is the requirement, how the transformations to be happened.",
+      "start_time": 993.06,
+      "end_time": 999.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9356315789473685,
+      "timestamp": "2026-06-10T12:19:47.740881"
+    },
+    {
+      "text": "On the reporting team expectations.",
+      "start_time": 999.72,
+      "end_time": 1001.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7872000000000001,
+      "timestamp": "2026-06-10T12:19:49.601324"
+    },
+    {
+      "text": "During implementation, right?",
+      "start_time": 1001.58,
+      "end_time": 1003.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7913333333333333,
+      "timestamp": "2026-06-10T12:19:51.508325"
+    },
+    {
+      "text": "I provide regular updates and involve stakeholders in validation on UIT.",
+      "start_time": 1003.44,
+      "end_time": 1007.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.908090909090909,
+      "timestamp": "2026-06-10T12:19:55.372348"
+    },
+    {
+      "text": "I will show them the results.",
+      "start_time": 1007.4,
+      "end_time": 1009.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9878333333333332,
+      "timestamp": "2026-06-10T12:19:57.276456"
+    },
+    {
+      "text": "So in this way, it helps it helps me to solution which the business expectations and the reporting team expectations and reduces a network during deployment.",
+      "start_time": 1009.08,
+      "end_time": 1018.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8863461538461539,
+      "timestamp": "2026-06-10T12:20:06.037552"
+    },
+    {
+      "text": "So in this way, I would like to approach.",
+      "start_time": 1018.44,
+      "end_time": 1020.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9178888888888888,
+      "timestamp": "2026-06-10T12:20:08.821202"
+    },
+    {
+      "text": "Okay, yeah, that is fine.",
+      "start_time": 1025.1,
+      "end_time": 1027.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6546000000000001,
+      "timestamp": "2026-06-10T12:20:15.547122"
+    },
+    {
+      "text": "My last question is like, uh,",
+      "start_time": 1027.38,
+      "end_time": 1030.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7401666666666668,
+      "timestamp": "2026-06-10T12:20:18.419155"
+    },
+    {
+      "text": "If there is a regulatory change required and rapid schema updates across cloud hostess, a risk rate NEWSRGR and TCP.",
+      "start_time": 1030.32,
+      "end_time": 1041.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8590500000000002,
+      "timestamp": "2026-06-10T12:20:29.110979"
+    },
+    {
+      "text": "How do you coordinate and execute these changes to ensure data consistency and minimal downtime?",
+      "start_time": 1041.06,
+      "end_time": 1045.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9012666666666668,
+      "timestamp": "2026-06-10T12:20:33.848866"
+    },
+    {
+      "text": "Yeah, so minimal downtime maintaining is crucial for us, right?",
+      "start_time": 1047.06,
+      "end_time": 1052.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7781,
+      "timestamp": "2026-06-10T12:20:40.509980"
+    },
+    {
+      "text": "So in this situation, right, 1st I would like to perform an impact assessment, to identify affected tables, uh, pipelines on which reports are affected and on which downstream consumers across AWS Algerian JCP, who affected her, uh, I will perform the impact assessment.",
+      "start_time": 1053.12,
+      "end_time": 1070.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8512954545454545,
+      "timestamp": "2026-06-10T12:20:58.040386"
+    },
+    {
+      "text": "Then I would align all teams on a common schema version.",
+      "start_time": 1070.16,
+      "end_time": 1073.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9457272727272726,
+      "timestamp": "2026-06-10T12:21:01.613162"
+    },
+    {
+      "text": "An implementation plan to avoid inconsistencies.",
+      "start_time": 1073.82,
+      "end_time": 1076.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7735,
+      "timestamp": "2026-06-10T12:21:04.483073"
+    },
+    {
+      "text": "I would use a basic deployment approach with backward compatible changes, right?",
+      "start_time": 1076.82,
+      "end_time": 1082.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8691666666666668,
+      "timestamp": "2026-06-10T12:21:10.271438"
+    },
+    {
+      "text": "Wherever possible, such as adding new columns before depreciation, the world ones.",
+      "start_time": 1082.04,
+      "end_time": 1086.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8960833333333333,
+      "timestamp": "2026-06-10T12:21:15.075809"
+    },
+    {
+      "text": "So before production deployment, right, I would perform data reconciliation validation across all platforms.",
+      "start_time": 1086.84,
+      "end_time": 1092.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9342857142857143,
+      "timestamp": "2026-06-10T12:21:20.848128"
+    },
+    {
+      "text": "And to minimize downtime, right?",
+      "start_time": 1093.2,
+      "end_time": 1095.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.883,
+      "timestamp": "2026-06-10T12:21:23.662907"
+    },
+    {
+      "text": "I would use parallel runs and switch traffic only after successful validation.",
+      "start_time": 1095.66,
+      "end_time": 1099.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9555000000000001,
+      "timestamp": "2026-06-10T12:21:27.531014"
+    },
+    {
+      "text": "In this way, I will I will go through in this situation.",
+      "start_time": 1099.56,
+      "end_time": 1102.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.91125,
+      "timestamp": "2026-06-10T12:21:30.398253"
+    },
+    {
+      "text": "And production data breaks, job integrating with RS systems, whose inconsistent data load.",
+      "start_time": 1104.3,
+      "end_time": 1110.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.785076923076923,
+      "timestamp": "2026-06-10T12:21:38.172288"
+    },
+    {
+      "text": "So how would you investigate and resolve this while maintaining regulatory compliance?",
+      "start_time": 1110.18,
+      "end_time": 1115.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9521666666666665,
+      "timestamp": "2026-06-10T12:21:43.901262"
+    },
+    {
+      "text": "The data breaks is so entering across, right? In this situation, 1st I would like to check the job blocks, and the source for target accounts, and identify where the inconsistency is occurring.",
+      "start_time": 1117.44,
+      "end_time": 1132.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7304242424242426,
+      "timestamp": "2026-06-10T12:22:00.326518"
+    },
+    {
+      "text": "Then what I will do is I would perform data reconciliation between source system, data breaks output, and downstream tables.",
+      "start_time": 1132.32,
+      "end_time": 1140.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9009499999999999,
+      "timestamp": "2026-06-10T12:22:07.892379"
+    },
+    {
+      "text": "So I solate the issue.",
+      "start_time": 1140.18,
+      "end_time": 1141.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5702,
+      "timestamp": "2026-06-10T12:22:09.744116"
+    },
+    {
+      "text": "Post that, I would verify recent code changes, any schema changes are happened under any late arriving or duplicate data that could impact the load.",
+      "start_time": 1141.62,
+      "end_time": 1151.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8931999999999999,
+      "timestamp": "2026-06-10T12:22:19.450052"
+    },
+    {
+      "text": "I will check this one.",
+      "start_time": 1151.16,
+      "end_time": 1151.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9808,
+      "timestamp": "2026-06-10T12:22:19.459531"
+    },
+    {
+      "text": "After identifying the root cause, right, I would correct the issue, and backfill only the impact data while maintaining a complete audit trial.",
+      "start_time": 1151.82,
+      "end_time": 1160.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8879565217391303,
+      "timestamp": "2026-06-10T12:22:29.036755"
+    },
+    {
+      "text": "Since it is a regulated environment, right?",
+      "start_time": 1160.82,
+      "end_time": 1163.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9228571428571428,
+      "timestamp": "2026-06-10T12:22:30.891803"
+    },
+    {
+      "text": "Every fix under validation. I've got a free tool that will make videos for you, according to the change management procedures.",
+      "start_time": 1163.4,
+      "end_time": 1170.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6943809523809522,
+      "timestamp": "2026-06-10T12:22:38.642921"
+    },
+    {
+      "text": "So in this way, I would handle this scenario.",
+      "start_time": 1170.36,
+      "end_time": 1172.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9002222222222223,
+      "timestamp": "2026-06-10T12:22:40.487438"
+    },
+    {
+      "text": "Uh, I'm done with the interview process, like if you have any questions you can ask.",
+      "start_time": 1177.74,
+      "end_time": 1181.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8728125,
+      "timestamp": "2026-06-10T12:22:50.130139"
+    },
+    {
+      "text": "Yeah, I have, I have a couple of questions to ask.",
+      "start_time": 1182.06,
+      "end_time": 1186.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8440909090909091,
+      "timestamp": "2026-06-10T12:22:54.901751"
+    },
+    {
+      "text": "So, uh, I have a, what kind of things we are using in our current project and what will be the impact of tools and technologies we are using, especially in our current project?",
+      "start_time": 1186.74,
+      "end_time": 1199.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8901176470588236,
+      "timestamp": "2026-06-10T12:23:07.457700"
+    },
+    {
+      "text": "Okay, we are using SQL for development and for data processing.",
+      "start_time": 1198.62,
+      "end_time": 1203.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8364545454545453,
+      "timestamp": "2026-06-10T12:23:11.247324"
+    },
+    {
+      "text": "And someone who has understanding of this system such as credit lens, ELCM, or similar banking is platform.",
+      "start_time": 1203.36,
+      "end_time": 1212.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7416111111111112,
+      "timestamp": "2026-06-10T12:23:19.920384"
+    },
+    {
+      "text": "And someone who has exposed her to cloud services is AWSR Zhar, or GCP, it is good.",
+      "start_time": 1212.18,
+      "end_time": 1218.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.694529411764706,
+      "timestamp": "2026-06-10T12:23:25.696585"
+    },
+    {
+      "text": "And family, family are with tools and platform that supports equal based development.",
+      "start_time": 1218.06,
+      "end_time": 1222.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7303076923076924,
+      "timestamp": "2026-06-10T12:23:30.469955"
+    },
+    {
+      "text": "So we are looking for someone who has this experience.",
+      "start_time": 1222.92,
+      "end_time": 1225.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9589000000000001,
+      "timestamp": "2026-06-10T12:23:33.312070"
+    },
+    {
+      "text": "Mostly it turned into a risk system for corporate bank.",
+      "start_time": 1225.44,
+      "end_time": 1229.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7538,
+      "timestamp": "2026-06-10T12:23:37.154753"
+    },
+    {
+      "text": "Oh, okay.",
+      "start_time": 1228.8,
+      "end_time": 1230.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.486,
+      "timestamp": "2026-06-10T12:23:38.060407"
+    },
+    {
+      "text": "Um, and one more thing is, from your perspective, right?",
+      "start_time": 1230.48,
+      "end_time": 1234.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7876999999999998,
+      "timestamp": "2026-06-10T12:23:41.937957"
+    },
+    {
+      "text": "What would be the biggest challenge for someone joining into this team or project in the 1st 3 to 6 months? What will be the biggest challenge they might face in their perspective?",
+      "start_time": 1234.44,
+      "end_time": 1243.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8899696969696969,
+      "timestamp": "2026-06-10T12:23:51.632551"
+    },
+    {
+      "text": "I mean, since it is a sensitive work environment, right?",
+      "start_time": 1244.34,
+      "end_time": 1247.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8880000000000001,
+      "timestamp": "2026-06-10T12:23:55.404798"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 1254.3,
+      "end_time": 1255.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4575,
+      "timestamp": "2026-06-10T12:24:03.023214"
+    },
+    {
+      "text": "So we need to make sure like whatever we are doing, we are not exposing any sensitive information to any other.",
+      "start_time": 1247.4,
+      "end_time": 1254.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9569047619047618,
+      "timestamp": "2026-06-10T12:24:03.115573"
+    },
+    {
+      "text": "Yeah, that is crucial.",
+      "start_time": 1255.2,
+      "end_time": 1257.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.829,
+      "timestamp": "2026-06-10T12:24:04.965974"
+    },
+    {
+      "text": "Right, right.",
+      "start_time": 1260.78,
+      "end_time": 1261.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8895,
+      "timestamp": "2026-06-10T12:24:08.825069"
+    },
+    {
+      "text": "sensitive information, but just related information, right?",
+      "start_time": 1257.42,
+      "end_time": 1260.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5890000000000001,
+      "timestamp": "2026-06-10T12:24:08.827056"
+    },
+    {
+      "text": "Correct.",
+      "start_time": 1261.2,
+      "end_time": 1264.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.888,
+      "timestamp": "2026-06-10T12:24:11.694565"
+    },
+    {
+      "text": "We need to be very careful. Yeah, based on our discussion, right?",
+      "start_time": 1262.76,
+      "end_time": 1266.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8589166666666666,
+      "timestamp": "2026-06-10T12:24:14.587107"
+    },
+    {
+      "text": "Currently, I'm also working with NZ Bank, Pariskan, fraud data only.",
+      "start_time": 1266.48,
+      "end_time": 1270.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8055454545454545,
+      "timestamp": "2026-06-10T12:24:18.431534"
+    },
+    {
+      "text": "So I have experience in this kind of isolated work environment itself.",
+      "start_time": 1270.56,
+      "end_time": 1274.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.92625,
+      "timestamp": "2026-06-10T12:24:22.262231"
+    },
+    {
+      "text": "Yeah, thank you for your discussion.",
+      "start_time": 1274.52,
+      "end_time": 1276.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9525,
+      "timestamp": "2026-06-10T12:24:25.112101"
+    },
+    {
+      "text": "That's it from mine.",
+      "start_time": 1276.92,
+      "end_time": 1278.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.84475,
+      "timestamp": "2026-06-10T12:24:26.065532"
+    },
+    {
+      "text": "Mm-hmm. Okay, yeah, that is fine.",
+      "start_time": 1273.68,
+      "end_time": 1278.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7926666666666667,
+      "timestamp": "2026-06-10T12:24:26.117294"
+    },
+    {
+      "text": "Okay, I'm done with the interview process.",
+      "start_time": 1278.66,
+      "end_time": 1280.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8577142857142857,
+      "timestamp": "2026-06-10T12:24:28.988330"
+    },
+    {
+      "text": "Like if you have any questions, you can ask otherwise I'm good to close this call.",
+      "start_time": 1280.88,
+      "end_time": 1283.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.91675,
+      "timestamp": "2026-06-10T12:24:31.909864"
+    },
+    {
+      "text": "Yeah, I have asked my questions on my dot, so I'm good.",
+      "start_time": 1284.06,
+      "end_time": 1287.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7958333333333334,
+      "timestamp": "2026-06-10T12:24:35.694397"
+    },
+    {
+      "text": "Thank you very much for the discussion, Akash.",
+      "start_time": 1287.72,
+      "end_time": 1290.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.865375,
+      "timestamp": "2026-06-10T12:24:38.573020"
+    },
+    {
+      "text": "It went.",
+      "start_time": 1290.36,
+      "end_time": 1291.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7030000000000001,
+      "timestamp": "2026-06-10T12:24:39.504037"
+    },
+    {
+      "text": "Thank you, bye-bye.",
+      "start_time": 1289.16,
+      "end_time": 1291.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8576666666666667,
+      "timestamp": "2026-06-10T12:24:39.541775"
+    },
+    {
+      "text": "Have a great day, as well.",
+      "start_time": 1291.32,
+      "end_time": 1292.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6996666666666668,
+      "timestamp": "2026-06-10T12:24:40.499260"
+    }
+  ]
+}

@@ -1,0 +1,1680 @@
+{
+  "session_name": "Meeting-IW1DYP",
+  "started": "2026-05-27T10:06:41.706424",
+  "segments": [
+    {
+      "text": "Hello, I noticed my voice audible.",
+      "start_time": 4.62,
+      "end_time": 7.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.627,
+      "timestamp": "2026-05-27T10:06:51.250057"
+    },
+    {
+      "text": "Yeah, yeah, I will hear you.",
+      "start_time": 7.02,
+      "end_time": 9.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7111666666666666,
+      "timestamp": "2026-05-27T10:06:53.102765"
+    },
+    {
+      "text": "Uh, Vinod, you are, any certain, uh, environment where they're not background wise?",
+      "start_time": 8.4,
+      "end_time": 15.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5262307692307693,
+      "timestamp": "2026-05-27T10:06:58.013546"
+    },
+    {
+      "text": "Uh, sorry.",
+      "start_time": 15.72,
+      "end_time": 17.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.40650000000000003,
+      "timestamp": "2026-05-27T10:07:00.759135"
+    },
+    {
+      "text": "There is a lot of background noise from your end.",
+      "start_time": 18.06,
+      "end_time": 19.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8965000000000002,
+      "timestamp": "2026-05-27T10:07:02.775734"
+    },
+    {
+      "text": "One second.",
+      "start_time": 20.64,
+      "end_time": 21.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.45499999999999996,
+      "timestamp": "2026-05-27T10:07:04.612932"
+    },
+    {
+      "text": "Yeah, no.",
+      "start_time": 42.0,
+      "end_time": 44.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5615,
+      "timestamp": "2026-05-27T10:07:27.652056"
+    },
+    {
+      "text": "Yeah, now it's out.",
+      "start_time": 43.92,
+      "end_time": 45.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.589,
+      "timestamp": "2026-05-27T10:07:28.680587"
+    },
+    {
+      "text": "Yeah, Widow, can you briefly introduce yourself? Then we will get started.",
+      "start_time": 46.44,
+      "end_time": 52.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5305000000000001,
+      "timestamp": "2026-05-27T10:07:35.443860"
+    },
+    {
+      "text": "I'm not Mark Kupusami and I have total 9 plus years of experience in software Disney.",
+      "start_time": 56.16,
+      "end_time": 60.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6470625,
+      "timestamp": "2026-05-27T10:07:44.026382"
+    },
+    {
+      "text": "I started my career in 2016 in Gainville Technology, and I worked over 5 years over there in the insurance domain.",
+      "start_time": 60.54,
+      "end_time": 67.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9496190476190476,
+      "timestamp": "2026-05-27T10:07:49.816069"
+    },
+    {
+      "text": "So about the project, so in the US we have 2 insurance, like government insurance, which is called Medicaid and Medicare.",
+      "start_time": 67.14,
+      "end_time": 75.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8747142857142856,
+      "timestamp": "2026-05-27T10:07:58.450849"
+    },
+    {
+      "text": "I worked for Medicaid, so the insurance, which is covering people who are living below pottery line in the US.",
+      "start_time": 75.0,
+      "end_time": 80.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.82785,
+      "timestamp": "2026-05-27T10:08:04.181587"
+    },
+    {
+      "text": "Uh, so yeah, and my 2nd company is the Fedelity Information Service, and I worked over there for 2 less years and for the payment domains.",
+      "start_time": 80.76,
+      "end_time": 89.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.816730769230769,
+      "timestamp": "2026-05-27T10:08:12.901530"
+    },
+    {
+      "text": "So in the UK, there is the payment called, sorry, there was the merchant called World Pay.",
+      "start_time": 89.52,
+      "end_time": 94.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8708823529411764,
+      "timestamp": "2026-05-27T10:08:17.614638"
+    },
+    {
+      "text": "So who is acting as intermediate between the customers and the banking?",
+      "start_time": 94.38,
+      "end_time": 97.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8983333333333334,
+      "timestamp": "2026-05-27T10:08:20.471038"
+    },
+    {
+      "text": "So what are the orders or refund everything?",
+      "start_time": 97.5,
+      "end_time": 101.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.76925,
+      "timestamp": "2026-05-27T10:08:24.302887"
+    },
+    {
+      "text": "So they, through the customers, through the merchant, they will be, the process will be taken care.",
+      "start_time": 101.16,
+      "end_time": 107.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8481764705882353,
+      "timestamp": "2026-05-27T10:08:30.141333"
+    },
+    {
+      "text": "And my current company is Thermoficial Scientific, and here I'm working for 3 plus years, and for health and science.",
+      "start_time": 107.04,
+      "end_time": 113.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8297500000000001,
+      "timestamp": "2026-05-27T10:08:36.845774"
+    },
+    {
+      "text": "So the project, uh, which I'm working here is like, uh, an instrument called rapid heat instrument.",
+      "start_time": 113.64,
+      "end_time": 119.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7471176470588234,
+      "timestamp": "2026-05-27T10:08:42.588132"
+    },
+    {
+      "text": "So the main purpose of the instrument is to generate the DNA profile within 90 minutes.",
+      "start_time": 119.34,
+      "end_time": 123.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9644375000000001,
+      "timestamp": "2026-05-27T10:08:47.379374"
+    },
+    {
+      "text": "This is the world fastest instrument, uh, which will generate the DNA profile, like uh, less than um, uh, 90 minutes.",
+      "start_time": 123.96,
+      "end_time": 130.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7837142857142856,
+      "timestamp": "2026-05-27T10:08:54.171424"
+    },
+    {
+      "text": "And so when we give the sample and if we insert the cottage based on the workflow, uh, on the instrument settings.",
+      "start_time": 130.8,
+      "end_time": 138.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8288636363636364,
+      "timestamp": "2026-05-27T10:09:01.818239"
+    },
+    {
+      "text": "So it will generate the DNA profile.",
+      "start_time": 138.96,
+      "end_time": 140.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9048571428571428,
+      "timestamp": "2026-05-27T10:09:03.663522"
+    },
+    {
+      "text": "So this is about the project, and if you see my roles and rustbuns pretty, uh, we are following Ajal methodology in our project, like all Ajal ceremonies, like uh, sprint planning session, retrospective, back to age calls, and plus on grooming session, all of these activities.",
+      "start_time": 140.64,
+      "end_time": 154.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7971276595744682,
+      "timestamp": "2026-05-27T10:09:18.396471"
+    },
+    {
+      "text": "So day one starts with SPS.",
+      "start_time": 154.68,
+      "end_time": 157.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9011666666666667,
+      "timestamp": "2026-05-27T10:09:20.944995"
+    },
+    {
+      "text": "So in our project like sprint contains one sprint contains 10 days, 10 working days.",
+      "start_time": 157.62,
+      "end_time": 162.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9163333333333334,
+      "timestamp": "2026-05-27T10:09:25.790380"
+    },
+    {
+      "text": "Oh, so day one starts with SPS sprint planning session.",
+      "start_time": 162.6,
+      "end_time": 166.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7592000000000001,
+      "timestamp": "2026-05-27T10:09:29.597856"
+    },
+    {
+      "text": "So in this meeting, we'll be discussing about the stories and who is going to take work on which stories and based on the complexity of the stories will be ascending the story point.",
+      "start_time": 166.68,
+      "end_time": 177.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9396470588235293,
+      "timestamp": "2026-05-27T10:09:40.271990"
+    },
+    {
+      "text": "So all of these activities will be taken care in the spring planning session.",
+      "start_time": 177.42,
+      "end_time": 180.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9262857142857144,
+      "timestamp": "2026-05-27T10:09:43.057879"
+    },
+    {
+      "text": "So all uh, uh, scrummasters, business unlist, and developers test us, everyone will be involved in this meeting.",
+      "start_time": 180.3,
+      "end_time": 186.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8063333333333333,
+      "timestamp": "2026-05-27T10:09:49.815367"
+    },
+    {
+      "text": "And if we have any queries on the acceptance criteria of the user stories, we'll discuss in that spring planning session with the team and we'll be concluding all our doubts or there.",
+      "start_time": 186.96,
+      "end_time": 196.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8952727272727274,
+      "timestamp": "2026-05-27T10:09:59.519023"
+    },
+    {
+      "text": "And following with that, uh, once the development team send the, Like a new build, so we'll be 1stly applying those uh, uh, build in our test environment and we'll start with uh, sanity.",
+      "start_time": 196.14,
+      "end_time": 208.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7243235294117647,
+      "timestamp": "2026-05-27T10:10:11.022986"
+    },
+    {
+      "text": "So we are using Jenkins here to run our sanity suits and the regression suits.",
+      "start_time": 208.02,
+      "end_time": 212.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8745333333333335,
+      "timestamp": "2026-05-27T10:10:15.694490"
+    },
+    {
+      "text": "So once ant is done, if there is no any P1 issues, so we'll accept the build, if any P1 issues we found.",
+      "start_time": 212.28,
+      "end_time": 218.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7963913043478261,
+      "timestamp": "2026-05-27T10:10:21.518586"
+    },
+    {
+      "text": "So we'll reject the bill and we'll be sending mail to the NTA team.",
+      "start_time": 218.22,
+      "end_time": 221.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7975714285714286,
+      "timestamp": "2026-05-27T10:10:24.346947"
+    },
+    {
+      "text": "About the issue which we have found.",
+      "start_time": 221.46,
+      "end_time": 223.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8338571428571429,
+      "timestamp": "2026-05-27T10:10:27.182019"
+    },
+    {
+      "text": "And uh, the following by the sanity, so once the sanity is good, we'll start with the regression and we'll generate the report and send it to the team.",
+      "start_time": 223.92,
+      "end_time": 232.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7857931034482758,
+      "timestamp": "2026-05-27T10:10:34.960584"
+    },
+    {
+      "text": "And if you come to our, uh, like uh, script creation, so following with that, we'll start our uh, user story, descript uh, creation for new test cases.",
+      "start_time": 232.14,
+      "end_time": 242.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7152857142857144,
+      "timestamp": "2026-05-27T10:10:45.574196"
+    },
+    {
+      "text": "Uh, we are using page object model over here, uh, with um, uh, playwriter, uh, as well as Python, and we are, uh, I upgraded our new framework, uh, in our, using the, sorry.",
+      "start_time": 242.28,
+      "end_time": 257.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6143235294117648,
+      "timestamp": "2026-05-27T10:11:00.965554"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 254.7,
+      "end_time": 258.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8667499999999999,
+      "timestamp": "2026-05-27T10:11:01.800731"
+    },
+    {
+      "text": "That is fine.",
+      "start_time": 258.42,
+      "end_time": 258.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.828,
+      "timestamp": "2026-05-27T10:11:01.810111"
+    },
+    {
+      "text": "Okay, uh, so regarding the interview process, I will try to cover section related to uh, Jenny I Python, okay?",
+      "start_time": 260.04,
+      "end_time": 270.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8182,
+      "timestamp": "2026-05-27T10:11:13.402994"
+    },
+    {
+      "text": "Okay, sure, sure.",
+      "start_time": 269.28,
+      "end_time": 271.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5286666666666667,
+      "timestamp": "2026-05-27T10:11:14.216664"
+    },
+    {
+      "text": "Coding LLM.",
+      "start_time": 270.12,
+      "end_time": 271.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.645,
+      "timestamp": "2026-05-27T10:11:15.240214"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 277.86,
+      "end_time": 278.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.781,
+      "timestamp": "2026-05-27T10:11:21.950498"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 278.04,
+      "end_time": 280.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.742,
+      "timestamp": "2026-05-27T10:11:23.812422"
+    },
+    {
+      "text": "Yeah, we are using that agent.",
+      "start_time": 286.44,
+      "end_time": 290.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8823333333333334,
+      "timestamp": "2026-05-27T10:11:33.449364"
+    },
+    {
+      "text": "Can you let me know, like, during a journey, I No, no, just listen.",
+      "start_time": 282.42,
+      "end_time": 291.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7362142857142858,
+      "timestamp": "2026-05-27T10:11:34.486954"
+    },
+    {
+      "text": "I'm asking you something.",
+      "start_time": 291.0,
+      "end_time": 292.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7705,
+      "timestamp": "2026-05-27T10:11:35.402077"
+    },
+    {
+      "text": "Uh, during a journey, I... Tell your team is pressurized to shorten the sprint test.",
+      "start_time": 292.2,
+      "end_time": 299.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5158,
+      "timestamp": "2026-05-27T10:11:42.175092"
+    },
+    {
+      "text": "Your voice is breaking.",
+      "start_time": 299.28,
+      "end_time": 301.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.89275,
+      "timestamp": "2026-05-27T10:11:44.940280"
+    },
+    {
+      "text": "I like very people.",
+      "start_time": 301.62,
+      "end_time": 304.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7037499999999999,
+      "timestamp": "2026-05-27T10:11:47.828258"
+    },
+    {
+      "text": "Okay, North is coming fine.",
+      "start_time": 303.12,
+      "end_time": 305.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7226000000000001,
+      "timestamp": "2026-05-27T10:11:48.841206"
+    },
+    {
+      "text": "Ah, yeah, now everything.",
+      "start_time": 305.16,
+      "end_time": 307.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.66675,
+      "timestamp": "2026-05-27T10:11:50.711802"
+    },
+    {
+      "text": "Okay, so during a journey, I project your team is pressurized to shorten the sprint testing phases due to tight deadline. As I qualid, how do you ensure comprehensive LLM quality assurance while still supporting rapid delivery?",
+      "start_time": 306.18,
+      "end_time": 321.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8743513513513513,
+      "timestamp": "2026-05-27T10:12:04.440203"
+    },
+    {
+      "text": "Like, uh, I'm not getting your cushion exactly.",
+      "start_time": 325.56,
+      "end_time": 329.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7635000000000001,
+      "timestamp": "2026-05-27T10:12:11.837196"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 330.12,
+      "end_time": 331.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.725,
+      "timestamp": "2026-05-27T10:12:14.700232"
+    },
+    {
+      "text": "I will, I will page the question, the chart.",
+      "start_time": 328.38,
+      "end_time": 331.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7772222222222223,
+      "timestamp": "2026-05-27T10:12:14.784348"
+    },
+    {
+      "text": "So, like, um, we will be uh, focusing on the uh, P1 test cases 1st.",
+      "start_time": 352.5,
+      "end_time": 357.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6864000000000001,
+      "timestamp": "2026-05-27T10:12:40.656559"
+    },
+    {
+      "text": "Uh, and uh, we have, um, like, uh, we are using the Rakas, uh, framework, uh, just to ensure the quality of that what output you are generating, whether it is uh, correct to our uh, actual result, everything.",
+      "start_time": 357.48,
+      "end_time": 372.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.732948717948718,
+      "timestamp": "2026-05-27T10:12:55.263374"
+    },
+    {
+      "text": "So based on that, we'll be giving the insurance like all the test cases and whatever it's executed and whatever the LLM is produced.",
+      "start_time": 372.0,
+      "end_time": 380.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9028333333333332,
+      "timestamp": "2026-05-27T10:13:03.741620"
+    },
+    {
+      "text": "So it is good enough to go.",
+      "start_time": 380.58,
+      "end_time": 382.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9332857142857144,
+      "timestamp": "2026-05-27T10:13:05.579938"
+    },
+    {
+      "text": "And if your team is tasked with QA for a Gen AI powered chatport, being deployed in a regulated industry like pharmaceutical or banking,",
+      "start_time": 385.38,
+      "end_time": 394.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8512916666666667,
+      "timestamp": "2026-05-27T10:13:18.254315"
+    },
+    {
+      "text": "Can you describe me or approach to ensure compliance, reliability, and ethical output throughout the testing process?",
+      "start_time": 394.68,
+      "end_time": 400.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9437058823529412,
+      "timestamp": "2026-05-27T10:13:23.955381"
+    },
+    {
+      "text": "So all of these things will be make sure that it is reliable.",
+      "start_time": 437.34,
+      "end_time": 440.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9682307692307692,
+      "timestamp": "2026-05-27T10:14:03.225895"
+    },
+    {
+      "text": "And as a Gen AIQA lead, if you notice your large language model struggle with prompt injection attack, found by security tester.",
+      "start_time": 442.56,
+      "end_time": 452.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.878772727272727,
+      "timestamp": "2026-05-27T10:14:15.810298"
+    },
+    {
+      "text": "So how would you identify vulnerable areas and collaborate with engineering and design and QA team?",
+      "start_time": 452.34,
+      "end_time": 458.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9345624999999999,
+      "timestamp": "2026-05-27T10:14:21.545426"
+    },
+    {
+      "text": "You attest to ensure prompt injection racks are minimized.",
+      "start_time": 458.76,
+      "end_time": 463.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7714444444444445,
+      "timestamp": "2026-05-27T10:14:27.302385"
+    },
+    {
+      "text": "I mean, before the release process, pre-release itself.",
+      "start_time": 463.92,
+      "end_time": 466.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.863,
+      "timestamp": "2026-05-27T10:14:29.176242"
+    },
+    {
+      "text": "Oh, I'm currently I'm not using in the production, so we are using in our local test environment only for test case development.",
+      "start_time": 467.4,
+      "end_time": 475.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8725217391304345,
+      "timestamp": "2026-05-27T10:14:38.793725"
+    },
+    {
+      "text": "So, I need to go through this, uh, for uh, kyboretic things.",
+      "start_time": 475.32,
+      "end_time": 479.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6363333333333334,
+      "timestamp": "2026-05-27T10:14:42.598317"
+    },
+    {
+      "text": "And on a Gen AI QA project, if you noticed, automated regression test often misses issues got an exploratory manual testing.",
+      "start_time": 480.3,
+      "end_time": 491.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8319047619047618,
+      "timestamp": "2026-05-27T10:14:54.223280"
+    },
+    {
+      "text": "How would you identify gaps and enhance both manual and automation process to ensure comprehensive JAI model validation?",
+      "start_time": 491.04,
+      "end_time": 498.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9352777777777779,
+      "timestamp": "2026-05-27T10:15:01.878144"
+    },
+    {
+      "text": "So, like, uh, we have, we are, uh, like manual test cases, we know the output, I expected an actual output.",
+      "start_time": 499.32,
+      "end_time": 507.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.761952380952381,
+      "timestamp": "2026-05-27T10:15:10.500412"
+    },
+    {
+      "text": "So same like that, we are executing the same manual test cases and we are verifying the output for that manual test cases.",
+      "start_time": 507.6,
+      "end_time": 514.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9289565217391306,
+      "timestamp": "2026-05-27T10:15:17.161670"
+    },
+    {
+      "text": "So this is actual and this is expected.",
+      "start_time": 514.38,
+      "end_time": 516.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.971,
+      "timestamp": "2026-05-27T10:15:19.037783"
+    },
+    {
+      "text": "So if it's uh, if the response which is given by the LLM is not met that expected result, so then the, uh, then we can find out there is a mismatch between the actual and expected.",
+      "start_time": 516.12,
+      "end_time": 526.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8791351351351349,
+      "timestamp": "2026-05-27T10:15:29.752115"
+    },
+    {
+      "text": "And yeah, like that, so we are using the re-ranking approach and fine-tuning based on our framework.",
+      "start_time": 529.8,
+      "end_time": 537.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9061176470588235,
+      "timestamp": "2026-05-27T10:15:41.154896"
+    },
+    {
+      "text": "So based on those things will be ensured like we're getting the proper output from the response, like LLM response.",
+      "start_time": 537.96,
+      "end_time": 544.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8844000000000001,
+      "timestamp": "2026-05-27T10:15:47.905544"
+    },
+    {
+      "text": "And as a Gen AIQ elite, how would you approach integrating Python-based monitoring to proactively detect data, drift, or model performance degradation, and production AI system, and what key metrics and alerting strategy would you take into concentration?",
+      "start_time": 551.04,
+      "end_time": 567.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8752894736842104,
+      "timestamp": "2026-05-27T10:16:11.231006"
+    },
+    {
+      "text": "Uh, so. First of all, like, uh, we should make sure that we are uh, getting the proper uh, output uh, like LLM.",
+      "start_time": 568.74,
+      "end_time": 579.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.720391304347826,
+      "timestamp": "2026-05-27T10:16:23.437131"
+    },
+    {
+      "text": "Uh, like uh, faithfulness and context values, uh, like context precision values, all those things.",
+      "start_time": 579.96,
+      "end_time": 585.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7825333333333334,
+      "timestamp": "2026-05-27T10:16:29.146690"
+    },
+    {
+      "text": "So if it is like the score level is more, so we can ensure like we are getting the proper output for the LLMs.",
+      "start_time": 585.96,
+      "end_time": 592.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9598749999999999,
+      "timestamp": "2026-05-27T10:16:35.901762"
+    },
+    {
+      "text": "Uh, so uh, based on that, we can uh, ensure that.",
+      "start_time": 595.8,
+      "end_time": 600.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7265454545454545,
+      "timestamp": "2026-05-27T10:16:43.517132"
+    },
+    {
+      "text": "And if you are working as a lead right for a journey, I content moderation tool.",
+      "start_time": 617.46,
+      "end_time": 624.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.874,
+      "timestamp": "2026-05-27T10:17:07.607437"
+    },
+    {
+      "text": "A critical production bug split slips past your automated and manual test.",
+      "start_time": 624.48,
+      "end_time": 630.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8684166666666666,
+      "timestamp": "2026-05-27T10:17:13.362193"
+    },
+    {
+      "text": "How do you analyze the root cause and then how would you update QA process and prevent similar issue in future releases?",
+      "start_time": 630.54,
+      "end_time": 637.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9106363636363636,
+      "timestamp": "2026-05-27T10:17:21.099911"
+    },
+    {
+      "text": "So, mostly, like, uh, 1st of all, what process we are following is like uh, once a story comes to testing team, 1st we'll write the scenarios for those stories.",
+      "start_time": 639.12,
+      "end_time": 649.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7789666666666666,
+      "timestamp": "2026-05-27T10:17:32.572724"
+    },
+    {
+      "text": "All past you, each case has Bondi Valley analyzes everything.",
+      "start_time": 649.74,
+      "end_time": 652.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.4721,
+      "timestamp": "2026-05-27T10:17:35.361784"
+    },
+    {
+      "text": "So, and we get the approval from the business analyst.",
+      "start_time": 652.38,
+      "end_time": 657.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9154,
+      "timestamp": "2026-05-27T10:17:40.182402"
+    },
+    {
+      "text": "So he's the requirement giver and he knows what kind is expecting from the developer development and the testing team.",
+      "start_time": 657.36,
+      "end_time": 664.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.91645,
+      "timestamp": "2026-05-27T10:17:46.931475"
+    },
+    {
+      "text": "for the product.",
+      "start_time": 664.08,
+      "end_time": 665.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9653333333333333,
+      "timestamp": "2026-05-27T10:17:48.765722"
+    },
+    {
+      "text": "So once the approval we'll get from the business analyst, so he knows like very well about the product and how like a real-time application, how it should work on when it goes to like.",
+      "start_time": 665.4,
+      "end_time": 676.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.920142857142857,
+      "timestamp": "2026-05-27T10:18:00.457702"
+    },
+    {
+      "text": "So we'll get that approval 1st then we'll start with writing the test cases for that test scenarios.",
+      "start_time": 676.92,
+      "end_time": 683.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9412222222222221,
+      "timestamp": "2026-05-27T10:18:07.094865"
+    },
+    {
+      "text": "After that, we'll start with the automation for the same thing.",
+      "start_time": 683.82,
+      "end_time": 687.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9306363636363636,
+      "timestamp": "2026-05-27T10:18:10.883389"
+    },
+    {
+      "text": "So most are more like, moreover, in automation, we can't able to achieve under percentage automations.",
+      "start_time": 687.6,
+      "end_time": 693.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8522499999999998,
+      "timestamp": "2026-05-27T10:18:16.675354"
+    },
+    {
+      "text": "Uh, like automation discripts.",
+      "start_time": 693.24,
+      "end_time": 695.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.62625,
+      "timestamp": "2026-05-27T10:18:18.548203"
+    },
+    {
+      "text": "So manual is must needed.",
+      "start_time": 695.34,
+      "end_time": 698.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8336,
+      "timestamp": "2026-05-27T10:18:21.441986"
+    },
+    {
+      "text": "So during the production, so all P1 P2 P3 will run, like apart from that, automation will start with, uh, uh, aggressive manual test, manual test execution to ensure the product is a bug free.",
+      "start_time": 698.04,
+      "end_time": 710.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7855428571428571,
+      "timestamp": "2026-05-27T10:18:34.089673"
+    },
+    {
+      "text": "And as a Jenny, I quickly, if you notice like inconsistency in model output due to evolving sequel data schemas, what process would you establish to manage a schema change and schema changes and ensure continuous reliable QA coverage?",
+      "start_time": 714.18,
+      "end_time": 731.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8662051282051281,
+      "timestamp": "2026-05-27T10:18:54.396118"
+    },
+    {
+      "text": "Uh, so more, uh, like uh, what I did in project, like uh, when, when I started, uh, like developing that, uh, Gen A automation.",
+      "start_time": 731.82,
+      "end_time": 739.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5784000000000001,
+      "timestamp": "2026-05-27T10:19:02.818713"
+    },
+    {
+      "text": "So I found a lot of issues when I created the model.",
+      "start_time": 739.98,
+      "end_time": 743.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8987499999999998,
+      "timestamp": "2026-05-27T10:19:06.579657"
+    },
+    {
+      "text": "Like a model in the science, like for each and every time I was like repeatedly getting a different output for my LLMs output.",
+      "start_time": 743.22,
+      "end_time": 750.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8170833333333335,
+      "timestamp": "2026-05-27T10:19:13.357673"
+    },
+    {
+      "text": "based on my prompt message.",
+      "start_time": 750.24,
+      "end_time": 752.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9698,
+      "timestamp": "2026-05-27T10:19:16.132144"
+    },
+    {
+      "text": "So what I did like, I have fine tuned that quarry again and again to get my reliable output.",
+      "start_time": 752.76,
+      "end_time": 759.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9064736842105264,
+      "timestamp": "2026-05-27T10:19:21.957405"
+    },
+    {
+      "text": "So I have created the skill me, uh, skill files.",
+      "start_time": 759.18,
+      "end_time": 762.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6268,
+      "timestamp": "2026-05-27T10:19:25.779024"
+    },
+    {
+      "text": "So when I get the same output for like a fine tune that MD file.",
+      "start_time": 772.92,
+      "end_time": 777.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8475999999999999,
+      "timestamp": "2026-05-27T10:19:40.158191"
+    },
+    {
+      "text": "So when I get that proper output for that response, so then I started using that prompt.",
+      "start_time": 777.18,
+      "end_time": 782.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.956294117647059,
+      "timestamp": "2026-05-27T10:19:44.977321"
+    },
+    {
+      "text": "Can you share me your screen?",
+      "start_time": 784.62,
+      "end_time": 786.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8463333333333334,
+      "timestamp": "2026-05-27T10:19:49.806882"
+    },
+    {
+      "text": "I wanted to give you some Python questions.",
+      "start_time": 786.96,
+      "end_time": 789.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9535,
+      "timestamp": "2026-05-27T10:19:52.730905"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 788.58,
+      "end_time": 790.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.748,
+      "timestamp": "2026-05-27T10:19:53.571070"
+    },
+    {
+      "text": "Yeah, you able to see my screen?",
+      "start_time": 799.2,
+      "end_time": 801.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.791,
+      "timestamp": "2026-05-27T10:20:04.134968"
+    },
+    {
+      "text": "Yeah, so in this problem, you need to write a python function.",
+      "start_time": 801.54,
+      "end_time": 805.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9184999999999998,
+      "timestamp": "2026-05-27T10:20:09.032330"
+    },
+    {
+      "text": "Uh, it is there in the chat that take a list of sentences and return the top 3 most frequent pie grounds.",
+      "start_time": 806.4,
+      "end_time": 814.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8677727272727274,
+      "timestamp": "2026-05-27T10:20:17.723926"
+    },
+    {
+      "text": "Pair of consecutive work, words across all sentences, and you need to ignore case and punctuition.",
+      "start_time": 814.8,
+      "end_time": 822.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7091250000000001,
+      "timestamp": "2026-05-27T10:20:25.384409"
+    },
+    {
+      "text": "Can you just walk me through and provide the code for it?",
+      "start_time": 822.18,
+      "end_time": 825.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9411666666666667,
+      "timestamp": "2026-05-27T10:20:28.218752"
+    },
+    {
+      "text": "Uh, like, um, Pygram Smiths, like, Pair of meat.",
+      "start_time": 825.36,
+      "end_time": 832.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.318,
+      "timestamp": "2026-05-27T10:20:35.878744"
+    },
+    {
+      "text": "Biagram means to pair of comms, consecutive words.",
+      "start_time": 828.48,
+      "end_time": 833.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7466250000000001,
+      "timestamp": "2026-05-27T10:20:36.869100"
+    },
+    {
+      "text": "Across all sentence and ignore case and punctuations and.",
+      "start_time": 833.1,
+      "end_time": 837.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7492222222222222,
+      "timestamp": "2026-05-27T10:20:40.670882"
+    },
+    {
+      "text": "Can I get some input for this?",
+      "start_time": 837.48,
+      "end_time": 840.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9422857142857143,
+      "timestamp": "2026-05-27T10:20:43.501142"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 840.84,
+      "end_time": 842.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5865,
+      "timestamp": "2026-05-27T10:20:45.482273"
+    },
+    {
+      "text": "I mean, you can consider any of the sentences.",
+      "start_time": 842.7,
+      "end_time": 844.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9514444444444445,
+      "timestamp": "2026-05-27T10:20:48.372531"
+    },
+    {
+      "text": "This is the one you want like consecutive word which is coming.",
+      "start_time": 855.48,
+      "end_time": 859.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.781,
+      "timestamp": "2026-05-27T10:21:02.757176"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 860.16,
+      "end_time": 862.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7144999999999999,
+      "timestamp": "2026-05-27T10:21:05.652922"
+    },
+    {
+      "text": "No, it's not sentence.",
+      "start_time": 863.76,
+      "end_time": 866.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.914,
+      "timestamp": "2026-05-27T10:21:09.489336"
+    },
+    {
+      "text": "It is word.",
+      "start_time": 866.28,
+      "end_time": 867.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7113333333333333,
+      "timestamp": "2026-05-27T10:21:10.438143"
+    },
+    {
+      "text": "No, no, yeah, this word, uh, you return the top 3 most frequent, uh, okay.",
+      "start_time": 866.94,
+      "end_time": 873.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6870666666666667,
+      "timestamp": "2026-05-27T10:21:16.172446"
+    },
+    {
+      "text": "So if I will give you one example, if you can correlate, okay?",
+      "start_time": 873.54,
+      "end_time": 880.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9065384615384615,
+      "timestamp": "2026-05-27T10:21:23.941004"
+    },
+    {
+      "text": "So if this is the sentence, right, see the brown fox jumps over the lazy dog like this.",
+      "start_time": 880.5,
+      "end_time": 886.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9174444444444442,
+      "timestamp": "2026-05-27T10:21:29.697529"
+    },
+    {
+      "text": "The top 3 biagrams are quick brown, brown fox, lazy dog.",
+      "start_time": 886.8,
+      "end_time": 891.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.795818181818182,
+      "timestamp": "2026-05-27T10:21:34.470551"
+    },
+    {
+      "text": "You want from the sentence, this word, how many times it is occurred?",
+      "start_time": 915.84,
+      "end_time": 920.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9209230769230771,
+      "timestamp": "2026-05-27T10:22:03.239557"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 918.6,
+      "end_time": 920.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5805,
+      "timestamp": "2026-05-27T10:22:03.242743"
+    },
+    {
+      "text": "bike rams.",
+      "start_time": 920.4,
+      "end_time": 921.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.346,
+      "timestamp": "2026-05-27T10:22:04.200668"
+    },
+    {
+      "text": "Frequency.",
+      "start_time": 921.54,
+      "end_time": 922.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.571,
+      "timestamp": "2026-05-27T10:22:06.117655"
+    },
+    {
+      "text": "Yeah",
+      "start_time": 924.36,
+      "end_time": 927.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.444,
+      "timestamp": "2026-05-27T10:22:10.854169"
+    },
+    {
+      "text": "Just tell me your approach.",
+      "start_time": 940.92,
+      "end_time": 943.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9,
+      "timestamp": "2026-05-27T10:22:26.312699"
+    },
+    {
+      "text": "So 1st I will collect all this sentence in the list. And uh, using comma, I am getting in the list.",
+      "start_time": 944.28,
+      "end_time": 951.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7733809523809524,
+      "timestamp": "2026-05-27T10:22:34.928363"
+    },
+    {
+      "text": "After that using the split method, I will remove all the uh, using a split method by Kama.",
+      "start_time": 951.84,
+      "end_time": 958.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8469444444444444,
+      "timestamp": "2026-05-27T10:22:41.634020"
+    },
+    {
+      "text": "I will get all the sentence into one like, array.",
+      "start_time": 958.2,
+      "end_time": 962.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.898,
+      "timestamp": "2026-05-27T10:22:45.449796"
+    },
+    {
+      "text": "Uh, sorry, using the index, I will get all the things line by line.",
+      "start_time": 962.04,
+      "end_time": 966.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9039285714285715,
+      "timestamp": "2026-05-27T10:22:50.264726"
+    },
+    {
+      "text": "So 1st the quick brown fox jump for the lazy dog.",
+      "start_time": 966.84,
+      "end_time": 971.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8466363636363637,
+      "timestamp": "2026-05-27T10:22:55.078688"
+    },
+    {
+      "text": "So that will be in 0 index and the quick down fox in very quick.",
+      "start_time": 971.82,
+      "end_time": 976.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8160000000000002,
+      "timestamp": "2026-05-27T10:22:58.883259"
+    },
+    {
+      "text": "So that is in the 2nd index, like that, I will 1st split it out using Kama.",
+      "start_time": 976.02,
+      "end_time": 979.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8256470588235295,
+      "timestamp": "2026-05-27T10:23:02.749095"
+    },
+    {
+      "text": "Okay, yeah, that is fine.",
+      "start_time": 1003.92,
+      "end_time": 1006.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8146000000000001,
+      "timestamp": "2026-05-27T10:23:29.646306"
+    },
+    {
+      "text": "And if you need to write a python function that take a list of Gen AI model output and set off forbidden words, and then flag and written all output containing any forbidden word, case sensitive, insensitive partial matches.",
+      "start_time": 1009.2,
+      "end_time": 1024.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8834871794871796,
+      "timestamp": "2026-05-27T10:23:48.095757"
+    },
+    {
+      "text": "Can you explain how would your code efficiently handle large input volumes?",
+      "start_time": 1024.56,
+      "end_time": 1028.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9085833333333332,
+      "timestamp": "2026-05-27T10:23:51.755017"
+    },
+    {
+      "text": "I'm giving you the problem here in that chat.",
+      "start_time": 1028.58,
+      "end_time": 1031.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.932888888888889,
+      "timestamp": "2026-05-27T10:23:54.638489"
+    },
+    {
+      "text": "forbidden words.",
+      "start_time": 1038.66,
+      "end_time": 1040.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.479,
+      "timestamp": "2026-05-27T10:24:04.127383"
+    },
+    {
+      "text": "Uh, forbidden words, uh, like, uh, uh,",
+      "start_time": 1040.76,
+      "end_time": 1045.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.39671428571428574,
+      "timestamp": "2026-05-27T10:24:08.959952"
+    },
+    {
+      "text": "That's the title output containing any.",
+      "start_time": 1047.12,
+      "end_time": 1050.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6623333333333333,
+      "timestamp": "2026-05-27T10:24:13.767800"
+    },
+    {
+      "text": "Let me explain how coach handles large input volumes.",
+      "start_time": 1050.96,
+      "end_time": 1055.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5456666666666667,
+      "timestamp": "2026-05-27T10:24:18.594751"
+    },
+    {
+      "text": "Hmm, okay.",
+      "start_time": 1055.76,
+      "end_time": 1057.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.39,
+      "timestamp": "2026-05-27T10:24:20.444671"
+    },
+    {
+      "text": "So forbidden words means like uh, any like pre-defined words we have, uh, like we know already or how it is.",
+      "start_time": 1061.82,
+      "end_time": 1069.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8272857142857143,
+      "timestamp": "2026-05-27T10:24:32.053782"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 1068.36,
+      "end_time": 1070.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.497,
+      "timestamp": "2026-05-27T10:24:32.998940"
+    },
+    {
+      "text": "So forbidden means this should not be coming there.",
+      "start_time": 1070.1,
+      "end_time": 1072.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8004444444444445,
+      "timestamp": "2026-05-27T10:24:35.895894"
+    },
+    {
+      "text": "In the output part.",
+      "start_time": 1072.86,
+      "end_time": 1074.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.65825,
+      "timestamp": "2026-05-27T10:24:37.803160"
+    },
+    {
+      "text": "Um, Okay, yeah, we can get it out.",
+      "start_time": 1073.28,
+      "end_time": 1079.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.800875,
+      "timestamp": "2026-05-27T10:24:42.585730"
+    },
+    {
+      "text": "So 1st I will be getting the list of all the words.",
+      "start_time": 1079.58,
+      "end_time": 1082.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9011666666666667,
+      "timestamp": "2026-05-27T10:24:45.452951"
+    },
+    {
+      "text": "Then I will be having one more list, empty list. After that time, uh, itating those lists and uh, I'm getting that whether this uh, data is, uh, I am checking whether this forbidden words is present in that world, in each condition.",
+      "start_time": 1082.52,
+      "end_time": 1095.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7854651162790696,
+      "timestamp": "2026-05-27T10:24:58.101924"
+    },
+    {
+      "text": "Like this, if you will see likes, forward and word like hate, harmful, offensive words should not be there.",
+      "start_time": 1092.96,
+      "end_time": 1101.6,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8873157894736843,
+      "timestamp": "2026-05-27T10:25:04.779383"
+    },
+    {
+      "text": "Hmm, yeah, same thing.",
+      "start_time": 1108.14,
+      "end_time": 1110.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.53825,
+      "timestamp": "2026-05-27T10:25:13.262529"
+    },
+    {
+      "text": "So as I said, I will be creating one empty list.",
+      "start_time": 1110.6,
+      "end_time": 1115.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.818090909090909,
+      "timestamp": "2026-05-27T10:25:19.054534"
+    },
+    {
+      "text": "After that, I'm irritating that list and I will be checking all these words is available in air condition.",
+      "start_time": 1115.64,
+      "end_time": 1120.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7946315789473684,
+      "timestamp": "2026-05-27T10:25:23.896837"
+    },
+    {
+      "text": "validating whether this earth is available in the our listed list.",
+      "start_time": 1120.44,
+      "end_time": 1124.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8651818181818183,
+      "timestamp": "2026-05-27T10:25:27.698261"
+    },
+    {
+      "text": "If it is not there, then I will print only the like non forbidden words alone in that empty list and I will print it out.",
+      "start_time": 1124.4,
+      "end_time": 1132.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9375769230769228,
+      "timestamp": "2026-05-27T10:25:35.415968"
+    },
+    {
+      "text": "Okay, yeah, it is fine.",
+      "start_time": 1137.42,
+      "end_time": 1140.06,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7781999999999999,
+      "timestamp": "2026-05-27T10:25:43.089299"
+    },
+    {
+      "text": "Uh, so I'm done with the interview process, uh, um,",
+      "start_time": 1140.06,
+      "end_time": 1144.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6537,
+      "timestamp": "2026-05-27T10:25:47.925774"
+    },
+    {
+      "text": "May I know like, uh, if you have any questions you can ask to me?",
+      "start_time": 1144.44,
+      "end_time": 1147.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8142,
+      "timestamp": "2026-05-27T10:25:50.800684"
+    },
+    {
+      "text": "Like what kind of project we have?",
+      "start_time": 1148.16,
+      "end_time": 1151.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.904,
+      "timestamp": "2026-05-27T10:25:54.547117"
+    },
+    {
+      "text": "Uh, what kind of project you are asking?",
+      "start_time": 1153.86,
+      "end_time": 1156.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.81975,
+      "timestamp": "2026-05-27T10:25:59.412434"
+    },
+    {
+      "text": "Like a domain. Mm-hmm.",
+      "start_time": 1151.28,
+      "end_time": 1163.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.56125,
+      "timestamp": "2026-05-27T10:26:06.116888"
+    },
+    {
+      "text": "So, this is for a, I mean, QA lead itself, so, You need to work upon automated, eval ops pipeline.",
+      "start_time": 1157.22,
+      "end_time": 1168.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7318499999999999,
+      "timestamp": "2026-05-27T10:26:12.007793"
+    },
+    {
+      "text": "CICT, you need to take into construction.",
+      "start_time": 1168.92,
+      "end_time": 1172.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8198571428571428,
+      "timestamp": "2026-05-27T10:26:15.742761"
+    },
+    {
+      "text": "Very great data quality, retrieval accuracy.",
+      "start_time": 1172.28,
+      "end_time": 1175.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6625,
+      "timestamp": "2026-05-27T10:26:18.614551"
+    },
+    {
+      "text": "in rack-based system.",
+      "start_time": 1175.58,
+      "end_time": 1177.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6269999999999999,
+      "timestamp": "2026-05-27T10:26:20.525151"
+    },
+    {
+      "text": "All of these things we are looking in.",
+      "start_time": 1177.5,
+      "end_time": 1179.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.909,
+      "timestamp": "2026-05-27T10:26:22.447427"
+    },
+    {
+      "text": "Okay. Yeah.",
+      "start_time": 1179.24,
+      "end_time": 1181.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5415000000000001,
+      "timestamp": "2026-05-27T10:26:24.361203"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1180.26,
+      "end_time": 1181.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.78,
+      "timestamp": "2026-05-27T10:26:25.258647"
+    },
+    {
+      "text": "Okay then, thank you.",
+      "start_time": 1184.4,
+      "end_time": 1185.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.90975,
+      "timestamp": "2026-05-27T10:26:28.206559"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 1185.24,
+      "end_time": 1186.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8855,
+      "timestamp": "2026-05-27T10:26:29.161459"
+    },
+    {
+      "text": "Have a good day as well.",
+      "start_time": 1186.02,
+      "end_time": 1187.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9441666666666667,
+      "timestamp": "2026-05-27T10:26:30.127112"
+    },
+    {
+      "text": "Like if you have any other questions you can ask.",
+      "start_time": 1187.1,
+      "end_time": 1188.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9540000000000001,
+      "timestamp": "2026-05-27T10:26:32.053662"
+    },
+    {
+      "text": "I know, fine.",
+      "start_time": 1188.42,
+      "end_time": 1190.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5579999999999999,
+      "timestamp": "2026-05-27T10:26:32.937696"
+    },
+    {
+      "text": "Thanks for that.",
+      "start_time": 1190.22,
+      "end_time": 1191.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7803333333333334,
+      "timestamp": "2026-05-27T10:26:34.861226"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1190.76,
+      "end_time": 1191.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.724,
+      "timestamp": "2026-05-27T10:26:34.917524"
+    }
+  ]
+}

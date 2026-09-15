@@ -1,0 +1,1284 @@
+{
+  "session_name": "Meeting-BMAEL6",
+  "started": "2026-08-17T16:00:53.305357",
+  "segments": [
+    {
+      "text": "Hello, yeah, is my voice audible to you?",
+      "start_time": 67.92,
+      "end_time": 70.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6463750000000001,
+      "timestamp": "2026-08-17T16:02:04.970041"
+    },
+    {
+      "text": "Yes, yes, clearly.",
+      "start_time": 71.4,
+      "end_time": 72.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6926666666666668,
+      "timestamp": "2026-08-17T16:02:06.839019"
+    },
+    {
+      "text": "Good evening.",
+      "start_time": 72.6,
+      "end_time": 74.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.711,
+      "timestamp": "2026-08-17T16:02:08.752518"
+    },
+    {
+      "text": "Okay, uh, yeah, Kishanai Makashi are, uh, good afternoon.",
+      "start_time": 71.94,
+      "end_time": 76.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6232222222222223,
+      "timestamp": "2026-08-17T16:02:11.712923"
+    },
+    {
+      "text": "Can you introduce yourself in brief?",
+      "start_time": 76.92,
+      "end_time": 78.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9156666666666667,
+      "timestamp": "2026-08-17T16:02:12.640096"
+    },
+    {
+      "text": "Then we will get started.",
+      "start_time": 78.48,
+      "end_time": 79.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8709999999999999,
+      "timestamp": "2026-08-17T16:02:13.591903"
+    },
+    {
+      "text": "Sure, sure.",
+      "start_time": 80.04,
+      "end_time": 81.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.46900000000000003,
+      "timestamp": "2026-08-17T16:02:15.475801"
+    },
+    {
+      "text": "Thank you for taking time.",
+      "start_time": 81.3,
+      "end_time": 82.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8071999999999999,
+      "timestamp": "2026-08-17T16:02:16.433869"
+    },
+    {
+      "text": "interviewing me.",
+      "start_time": 82.32,
+      "end_time": 83.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9390000000000001,
+      "timestamp": "2026-08-17T16:02:17.392226"
+    },
+    {
+      "text": "Myself, Kishan Kumar.",
+      "start_time": 83.16,
+      "end_time": 85.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5096666666666666,
+      "timestamp": "2026-08-17T16:02:19.305918"
+    },
+    {
+      "text": "I'm from Uripi Gundapra, currently based in Bangalore.",
+      "start_time": 85.02,
+      "end_time": 88.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8187500000000001,
+      "timestamp": "2026-08-17T16:02:22.224133"
+    },
+    {
+      "text": "Academically, I have batches in commerce from Mango University and completed my MBA in data science from Amity Inner City. Alongside, I'm a certified machine learning.",
+      "start_time": 88.02,
+      "end_time": 97.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6889615384615386,
+      "timestamp": "2026-08-17T16:02:31.942952"
+    },
+    {
+      "text": "I am detailing finding from the articles learning.",
+      "start_time": 97.08,
+      "end_time": 99.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5975,
+      "timestamp": "2026-08-17T16:02:34.677938"
+    },
+    {
+      "text": "Professionally, I carry around 3.5 years of experience, across 2 organization pieces, and Jampa, both in analytics and data driven roofs.",
+      "start_time": 99.96,
+      "end_time": 108.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8492857142857143,
+      "timestamp": "2026-08-17T16:02:42.443161"
+    },
+    {
+      "text": "At thesis, I worked as a procurement analyst, where I did supply performance school cars.",
+      "start_time": 108.12,
+      "end_time": 113.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7886000000000001,
+      "timestamp": "2026-08-17T16:02:48.170176"
+    },
+    {
+      "text": "I go to +200 plus vendors accounts, conducted root costs, analysis on operational data and delivered a weekly reporting framework to the leadership.",
+      "start_time": 113.4,
+      "end_time": 122.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.752391304347826,
+      "timestamp": "2026-08-17T16:02:56.884576"
+    },
+    {
+      "text": "I was recognized there with the star of quite a award, currently at Gen Plus, where I moved more advanced analytics road.",
+      "start_time": 122.4,
+      "end_time": 132.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7772727272727272,
+      "timestamp": "2026-08-17T16:03:07.404214"
+    },
+    {
+      "text": "I have built end-to-end Python and Escalator pipeline, developed ML model to predict process cycle time and flag HL lyrics before they happen.",
+      "start_time": 132.54,
+      "end_time": 143.16,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8689999999999998,
+      "timestamp": "2026-08-17T16:03:18.018490"
+    },
+    {
+      "text": "And that's what that gave leadership real time.",
+      "start_time": 143.16,
+      "end_time": 146.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.769,
+      "timestamp": "2026-08-17T16:03:20.774671"
+    },
+    {
+      "text": "Uh, we simply saving roughly around like 10.5 hours uh, weekly in manual reporting.",
+      "start_time": 146.34,
+      "end_time": 151.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7487857142857145,
+      "timestamp": "2026-08-17T16:03:26.564798"
+    },
+    {
+      "text": "The impact of work has recognized and seen a leadership level, and I also got... Part is getting...",
+      "start_time": 151.8,
+      "end_time": 159.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6622777777777776,
+      "timestamp": "2026-08-17T16:03:34.273258"
+    },
+    {
+      "text": "Okay, okay, yeah, that is fine.",
+      "start_time": 172.98,
+      "end_time": 175.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.623,
+      "timestamp": "2026-08-17T16:03:49.601738"
+    },
+    {
+      "text": "On the project side, my flagship, achievement is content pilot A, a full stock ML like product, which I've built independently, ranked top 5 national out of like 1000 plus student cinematical.",
+      "start_time": 159.6,
+      "end_time": 175.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7522812499999997,
+      "timestamp": "2026-08-17T16:03:49.759161"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 175.44,
+      "end_time": 176.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.544,
+      "timestamp": "2026-08-17T16:03:50.552607"
+    },
+    {
+      "text": "Yeah",
+      "start_time": 175.86,
+      "end_time": 178.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.458,
+      "timestamp": "2026-08-17T16:03:52.428009"
+    },
+    {
+      "text": "Okay, so regarding the interview, right, I will try to cover section related to cloud coding capabilities by them.",
+      "start_time": 176.34,
+      "end_time": 182.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8381052631578946,
+      "timestamp": "2026-08-17T16:03:57.341386"
+    },
+    {
+      "text": "SQL, supervised, unsupervised learning, okay?",
+      "start_time": 183.3,
+      "end_time": 186.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6761999999999999,
+      "timestamp": "2026-08-17T16:04:01.136238"
+    },
+    {
+      "text": "So got it.",
+      "start_time": 182.7,
+      "end_time": 189.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.3913333333333333,
+      "timestamp": "2026-08-17T16:04:03.946323"
+    },
+    {
+      "text": "Did you have experience in CICD as well?",
+      "start_time": 187.92,
+      "end_time": 190.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9806249999999999,
+      "timestamp": "2026-08-17T16:04:04.967015"
+    },
+    {
+      "text": "Sorry?",
+      "start_time": 192.96,
+      "end_time": 193.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.709,
+      "timestamp": "2026-08-17T16:04:07.796635"
+    },
+    {
+      "text": "Do you have experience in setting up CICD pipeline?",
+      "start_time": 193.86,
+      "end_time": 196.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9734444444444446,
+      "timestamp": "2026-08-17T16:04:10.731591"
+    },
+    {
+      "text": "As well?",
+      "start_time": 196.68,
+      "end_time": 197.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5105,
+      "timestamp": "2026-08-17T16:04:12.626733"
+    },
+    {
+      "text": "Pipeline?",
+      "start_time": 199.32,
+      "end_time": 201.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.634,
+      "timestamp": "2026-08-17T16:04:15.475153"
+    },
+    {
+      "text": "Yeah, I have bit over in like one of my projects, not actually in the production level.",
+      "start_time": 201.54,
+      "end_time": 208.44,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8721176470588236,
+      "timestamp": "2026-08-17T16:04:23.201294"
+    },
+    {
+      "text": "So, can you tell me, like, if you need to set up a secure CICD pipeline that deploy continued to managed key, managed Cubanet services on your chosen cloud platform.",
+      "start_time": 210.42,
+      "end_time": 223.8,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7994666666666668,
+      "timestamp": "2026-08-17T16:04:38.716441"
+    },
+    {
+      "text": "What services and security measure would you implement to ensure a safe and automated deployment process?",
+      "start_time": 223.8,
+      "end_time": 229.86,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9183749999999998,
+      "timestamp": "2026-08-17T16:04:44.362374"
+    },
+    {
+      "text": "Okay, let's CNCD 5+ in ML like, uh, continued integration, like develop, pushes to go to it and automatically test, run, like, codest, uh, independent instruct will happen back then.",
+      "start_time": 230.7,
+      "end_time": 244.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6486333333333333,
+      "timestamp": "2026-08-17T16:04:58.864041"
+    },
+    {
+      "text": "So if everything pass, we will like build a created and CD like delivery, continues delivery, where like deployment, this application like model is completely packaged and like we can use the doctor image and images like pushed to the container sign.",
+      "start_time": 244.14,
+      "end_time": 260.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.865833333333333,
+      "timestamp": "2026-08-17T16:05:14.228927"
+    },
+    {
+      "text": "For a MLE, get CI test, builder, dog image, and registered in like deploy after that, great train, and we can redeploy if we wanted.",
+      "start_time": 260.28,
+      "end_time": 268.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.674,
+      "timestamp": "2026-08-17T16:05:23.723262"
+    },
+    {
+      "text": "Basically, pipeline like deploys the image, the target environment and uh, such as like cloud run or like uh, sobernetics will like after deployment, like complete monitoring tracks application and for promise will be done.",
+      "start_time": 278.52,
+      "end_time": 294.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7714571428571428,
+      "timestamp": "2026-08-17T16:05:49.767703"
+    },
+    {
+      "text": "Uh, if there is any like uh, uh, significant uh, model for performance or data, uh, issues, uh, the model can go through the retaining and validation process and like then the uh, redeployed through the same fiat and CD pipeline.",
+      "start_time": 294.96,
+      "end_time": 310.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7430731707317073,
+      "timestamp": "2026-08-17T16:06:05.150384"
+    },
+    {
+      "text": "Okay, and if you inherit a mortal debt report, high accuracy, but the business complaint about real, I mean, poor, real world outcome.",
+      "start_time": 309.72,
+      "end_time": 321.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8281739130434785,
+      "timestamp": "2026-08-17T16:06:15.651170"
+    },
+    {
+      "text": "Uh, can you describe your approach to evaluating the model, uh, identifying the issues with current metrics and selecting better performance measures for it?",
+      "start_time": 321.3,
+      "end_time": 332.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8511250000000001,
+      "timestamp": "2026-08-17T16:06:27.140984"
+    },
+    {
+      "text": "Like, if the model has, like, accuracy on the, like, benchmark of poor real world performance, I would like, 1st question, whether accuracy or right for business metrics or what, and I would start by looking at the, like, confusion metrics and checking precision, recall, offense scores, and all.",
+      "start_time": 335.94,
+      "end_time": 355.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7646938775510204,
+      "timestamp": "2026-08-17T16:06:49.419099"
+    },
+    {
+      "text": "If the target class are like imbalanced, our accuracy could be misleading.",
+      "start_time": 355.08,
+      "end_time": 360.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9118333333333332,
+      "timestamp": "2026-08-17T16:06:54.871688"
+    },
+    {
+      "text": "So for example, like model could be like perform very well known simple by predicting the majority class.",
+      "start_time": 360.12,
+      "end_time": 366.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9098333333333333,
+      "timestamp": "2026-08-17T16:07:00.659730"
+    },
+    {
+      "text": "Then I would compare the basemots, like test the data with the real production data and missing values, outliers, and feature difference and possibly the data trips and all.",
+      "start_time": 366.3,
+      "end_time": 381.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8690689655172411,
+      "timestamp": "2026-08-17T16:07:16.070773"
+    },
+    {
+      "text": "Also, investigation whether like there was any data leakage during the training and whether the test set was represented or actual business cases and whether the train test split on the appropriate and all. Yeah.",
+      "start_time": 381.42,
+      "end_time": 396.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8824285714285712,
+      "timestamp": "2026-08-17T16:07:31.457461"
+    },
+    {
+      "text": "And can you tell me, like, how would you handle our data set with highly skewed numerical features and imbalance categorical variables during Exploratory data analysis and pre-processing in Python.",
+      "start_time": 404.94,
+      "end_time": 422.52,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9066000000000002,
+      "timestamp": "2026-08-17T16:07:57.494234"
+    },
+    {
+      "text": "What a strategy and tools would you have please to ensure?",
+      "start_time": 422.52,
+      "end_time": 425.04,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7903636363636363,
+      "timestamp": "2026-08-17T16:07:59.214063"
+    },
+    {
+      "text": "Meaningful analysis and model performance.",
+      "start_time": 425.04,
+      "end_time": 427.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9199999999999999,
+      "timestamp": "2026-08-17T16:08:02.082413"
+    },
+    {
+      "text": "Dude, I didn't get your exactly question, like, you mean uh, outlets or?",
+      "start_time": 429.84,
+      "end_time": 435.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6417692307692308,
+      "timestamp": "2026-08-17T16:08:10.708822"
+    },
+    {
+      "text": "Yeah, so there is a highly skewed numerical feature as well as imbalanced categorical data set.",
+      "start_time": 434.7,
+      "end_time": 442.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9044374999999999,
+      "timestamp": "2026-08-17T16:08:16.542488"
+    },
+    {
+      "text": "So how would you check all of these during exploratory data analysis and pre-processing in Python?",
+      "start_time": 442.02,
+      "end_time": 449.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9528749999999999,
+      "timestamp": "2026-08-17T16:08:24.219583"
+    },
+    {
+      "text": "What a strategy would you love is to ensure meaningful analysis and model performance?",
+      "start_time": 449.4,
+      "end_time": 454.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9102857142857143,
+      "timestamp": "2026-08-17T16:08:29.025210"
+    },
+    {
+      "text": "Like, in this 2 parts, like, 1st uh, understand the numeric features and then uh, investigates the category can target in balance for which, like, numerary future, I will start with the, like, uh, uh, we have the descriptive statistic using, like, described, checking all the values.",
+      "start_time": 456.96,
+      "end_time": 476.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7277659574468085,
+      "timestamp": "2026-08-17T16:08:51.324066"
+    },
+    {
+      "text": "I look at the, all the distribution using Instagrams of, like, both flats we can use. And I would calculate less giveness using SKU and identifying like whether the IQ is a percentage based on like analysis.",
+      "start_time": 476.28,
+      "end_time": 489.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8278918918918919,
+      "timestamp": "2026-08-17T16:09:03.654439"
+    },
+    {
+      "text": "Can you please switch off your phone or keep it silent, please?",
+      "start_time": 521.04,
+      "end_time": 527.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9652499999999998,
+      "timestamp": "2026-08-17T16:09:41.940761"
+    },
+    {
+      "text": "I'm really sorry, Akash.",
+      "start_time": 530.1,
+      "end_time": 532.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7817500000000001,
+      "timestamp": "2026-08-17T16:09:46.672845"
+    },
+    {
+      "text": "Hey, what's up?",
+      "start_time": 532.5,
+      "end_time": 534.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.793,
+      "timestamp": "2026-08-17T16:09:48.586236"
+    },
+    {
+      "text": "Feel free to ask me.",
+      "start_time": 534.18,
+      "end_time": 535.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9007999999999999,
+      "timestamp": "2026-08-17T16:09:50.517091"
+    },
+    {
+      "text": "Okay, and can you tell me like if a client model suffer from overfitting when using 3-based method, but underperform with linear models?",
+      "start_time": 539.4,
+      "end_time": 549.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8980434782608696,
+      "timestamp": "2026-08-17T16:10:04.094996"
+    },
+    {
+      "text": "How would you approach model selection and what advanced techniques?",
+      "start_time": 549.48,
+      "end_time": 552.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8852,
+      "timestamp": "2026-08-17T16:10:06.901469"
+    },
+    {
+      "text": "Will you apply to address both of these issues?",
+      "start_time": 552.66,
+      "end_time": 555.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9327777777777777,
+      "timestamp": "2026-08-17T16:10:09.765314"
+    },
+    {
+      "text": "So, like, underfitting and overfitting, we used to like check, like, the data, like if model is uh, uh, able to identify the data, but not performing on the real desk data, like able to identify well on the test data, but not well performing also like unseen or well data.",
+      "start_time": 556.86,
+      "end_time": 575.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8552156862745098,
+      "timestamp": "2026-08-17T16:10:30.155269"
+    },
+    {
+      "text": "So used to check like it causes the accuracy, appreciation, and solve.",
+      "start_time": 575.58,
+      "end_time": 580.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8815833333333334,
+      "timestamp": "2026-08-17T16:10:34.700214"
+    },
+    {
+      "text": "So I will use like models category on feature analysis so we can use the better scores and precision as for that.",
+      "start_time": 580.02,
+      "end_time": 587.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9092727272727273,
+      "timestamp": "2026-08-17T16:10:41.480985"
+    },
+    {
+      "text": "Do you mean inner regression?",
+      "start_time": 590.46,
+      "end_time": 593.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7146,
+      "timestamp": "2026-08-17T16:10:47.163891"
+    },
+    {
+      "text": "Linear models I was talking about.",
+      "start_time": 595.62,
+      "end_time": 597.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.805,
+      "timestamp": "2026-08-17T16:10:52.005803"
+    },
+    {
+      "text": "Can you also?",
+      "start_time": 603.96,
+      "end_time": 605.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6043333333333334,
+      "timestamp": "2026-08-17T16:11:00.636834"
+    },
+    {
+      "text": "Describe a situation where model interpretability was was essential for a business decision and how did you approach ensuring interpretability when comparing 3-based and non-tree-based supervised model and what tools or technique did you use for it?",
+      "start_time": 606.3,
+      "end_time": 625.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.940864864864865,
+      "timestamp": "2026-08-17T16:11:20.082020"
+    },
+    {
+      "text": "Yeah, it can be any.",
+      "start_time": 632.1,
+      "end_time": 634.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8664,
+      "timestamp": "2026-08-17T16:11:28.502172"
+    },
+    {
+      "text": "You mean, interpreting the tree based models, like decision and random forest, like, we can go, like, Okay.",
+      "start_time": 626.94,
+      "end_time": 636.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7703888888888889,
+      "timestamp": "2026-08-17T16:11:31.393896"
+    },
+    {
+      "text": "One situation like interpretedly is like essentially like when the modest prediction is directly influenced with the business decisions for likely default, whether transaction should be flagged in risk or snow. When comparing like linear model victory-based model lights are told, 1st compare like they're predictive performance using the appropriate business like metrics, but I would also compare like how easily prediction can be explained or not.",
+      "start_time": 636.96,
+      "end_time": 665.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8671343283582087,
+      "timestamp": "2026-08-17T16:12:00.737220"
+    },
+    {
+      "text": "And for linear models such as logistics and regressions, I can interpret the coefficient and odds ratio to understand like their directs and magnitude of each features and impact.",
+      "start_time": 665.7,
+      "end_time": 681.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9114137931034482,
+      "timestamp": "2026-08-17T16:12:15.631947"
+    },
+    {
+      "text": "others.",
+      "start_time": 681.18,
+      "end_time": 682.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.873,
+      "timestamp": "2026-08-17T16:12:16.429353"
+    },
+    {
+      "text": "And can you describe as a situation where you identified that clustering results were misleading due to the curse of dimensionality?",
+      "start_time": 690.66,
+      "end_time": 700.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9141428571428571,
+      "timestamp": "2026-08-17T16:12:35.778376"
+    },
+    {
+      "text": "So how did you detect the issue and what technique did you use to mitigate it while preserving meaningful structure in the data?",
+      "start_time": 700.98,
+      "end_time": 708.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9694347826086954,
+      "timestamp": "2026-08-17T16:12:43.439051"
+    },
+    {
+      "text": "In clustering, like where we used to use the analyst, I noticed like that one of the cluster initially like looked reasonable, but while we are building the projects like for our own portfolio, like separation between cluster as we, and the results were like unstable, like since the data sets had the large numbers of features, and I suspect like because of maybe dimensional issues or something like that.",
+      "start_time": 712.44,
+      "end_time": 739.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9060714285714283,
+      "timestamp": "2026-08-17T16:13:14.537741"
+    },
+    {
+      "text": "Um, I checked the feature dimension overall, like pair wise, distance and like cluster uh, metrics and all, such as like solitary score we have in uh, clustering.",
+      "start_time": 739.8,
+      "end_time": 752.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7723214285714286,
+      "timestamp": "2026-08-17T16:13:26.653242"
+    },
+    {
+      "text": "I also like compared the clustering result across the different feature subset.",
+      "start_time": 752.22,
+      "end_time": 757.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9650833333333333,
+      "timestamp": "2026-08-17T16:13:32.298225"
+    },
+    {
+      "text": "So one feature, like, is it different from the another?",
+      "start_time": 757.68,
+      "end_time": 760.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8759,
+      "timestamp": "2026-08-17T16:13:35.168852"
+    },
+    {
+      "text": "Like how like distinguished changes in within the cluster and cluster to cluster, like high dimension, distance maybe between like obsession can be like less meaning, meaningless or meaningful. Like, so algorithms such as like gaming, many struggles would be identifying means of meaning of groups and all.",
+      "start_time": 760.74,
+      "end_time": 779.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.878375,
+      "timestamp": "2026-08-17T16:13:54.667729"
+    },
+    {
+      "text": "How comfortable you are in sequelent, Python, you know?",
+      "start_time": 798.54,
+      "end_time": 802.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7415555555555556,
+      "timestamp": "2026-08-17T16:14:16.508816"
+    },
+    {
+      "text": "As I guess, like, I'm, I'm from a complete, like, uh, non-tech background where, like, I started my journey in the commerce.",
+      "start_time": 803.76,
+      "end_time": 813.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6712272727272726,
+      "timestamp": "2026-08-17T16:14:28.055062"
+    },
+    {
+      "text": "Okay, just tell me, I will give you the question.",
+      "start_time": 810.12,
+      "end_time": 814.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8823000000000001,
+      "timestamp": "2026-08-17T16:14:28.973940"
+    },
+    {
+      "text": "Just tell me, like, if you are comfortable answering it or not, okay?",
+      "start_time": 814.26,
+      "end_time": 816.96,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8371538461538464,
+      "timestamp": "2026-08-17T16:14:30.908849"
+    },
+    {
+      "text": "So how would you write a sequel query to find the top 3 product with the highest total sales amount for each region from a sales table, with column product ID, region, and amount, and you need to show region product ID and total sales?",
+      "start_time": 817.02,
+      "end_time": 835.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9045111111111108,
+      "timestamp": "2026-08-17T16:14:50.311777"
+    },
+    {
+      "text": "I had also pasted the question in the chat.",
+      "start_time": 835.26,
+      "end_time": 837.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9763333333333334,
+      "timestamp": "2026-08-17T16:14:52.007409"
+    },
+    {
+      "text": "Can you also share me your screen as well?",
+      "start_time": 837.78,
+      "end_time": 839.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9574444444444445,
+      "timestamp": "2026-08-17T16:14:53.925586"
+    },
+    {
+      "text": "Sure, sure, I will love to share with you.",
+      "start_time": 839.28,
+      "end_time": 842.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7807777777777777,
+      "timestamp": "2026-08-17T16:14:56.769155"
+    },
+    {
+      "text": "I love, I love...",
+      "start_time": 846.48,
+      "end_time": 850.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.412,
+      "timestamp": "2026-08-17T16:15:04.443757"
+    },
+    {
+      "text": "I hope my screen is visible, Akash.",
+      "start_time": 859.92,
+      "end_time": 863.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.773,
+      "timestamp": "2026-08-17T16:15:17.885661"
+    },
+    {
+      "text": "Yeah, yeah.",
+      "start_time": 862.02,
+      "end_time": 863.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5075000000000001,
+      "timestamp": "2026-08-17T16:15:17.918248"
+    },
+    {
+      "text": "Just tell me your approach for this question.",
+      "start_time": 863.64,
+      "end_time": 867.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8853750000000001,
+      "timestamp": "2026-08-17T16:15:21.769934"
+    },
+    {
+      "text": "I had pasted the question in the chat.",
+      "start_time": 867.12,
+      "end_time": 869.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9047499999999999,
+      "timestamp": "2026-08-17T16:15:23.685833"
+    },
+    {
+      "text": "Could you please repeat the question, Akash, for?",
+      "start_time": 866.88,
+      "end_time": 871.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5613750000000001,
+      "timestamp": "2026-08-17T16:15:25.582860"
+    },
+    {
+      "text": "Yeah, I had pasted the question in the chat. After a screenshot button, there is a chat button.",
+      "start_time": 869.82,
+      "end_time": 875.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.844,
+      "timestamp": "2026-08-17T16:15:30.448105"
+    },
+    {
+      "text": "Here, we can, uh, like select the table from sales, like we can use the dense rank or like partition by the, um, uh,",
+      "start_time": 906.54,
+      "end_time": 917.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7777500000000002,
+      "timestamp": "2026-08-17T16:16:11.752561"
+    },
+    {
+      "text": "Partition by any like categories or broad tidy and order by the sums in sales in descending. After that, we group by the product ID and category where rank is equal to less than or equal to 3 and we get a exact like product ID.",
+      "start_time": 921.36,
+      "end_time": 938.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8967826086956521,
+      "timestamp": "2026-08-17T16:16:33.008518"
+    },
+    {
+      "text": "Uh, sales regions column of top top three.",
+      "start_time": 938.04,
+      "end_time": 941.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.719,
+      "timestamp": "2026-08-17T16:16:35.641629"
+    },
+    {
+      "text": "Dense rank we can use here.",
+      "start_time": 941.46,
+      "end_time": 943.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7728333333333333,
+      "timestamp": "2026-08-17T16:16:38.525278"
+    },
+    {
+      "text": "Okay okay.",
+      "start_time": 947.82,
+      "end_time": 948.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.5765,
+      "timestamp": "2026-08-17T16:16:43.353004"
+    },
+    {
+      "text": "And if you, how would you write a Python function that given a data frame with time series data?",
+      "start_time": 952.68,
+      "end_time": 959.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9156842105263155,
+      "timestamp": "2026-08-17T16:16:53.971361"
+    },
+    {
+      "text": "Will fill any missing time is time.",
+      "start_time": 959.16,
+      "end_time": 963.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7358571428571429,
+      "timestamp": "2026-08-17T16:16:57.769863"
+    },
+    {
+      "text": "I mean, if there is a time series data and it has a missing value, how would you incorporate that missing value?",
+      "start_time": 963.0,
+      "end_time": 970.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9328636363636363,
+      "timestamp": "2026-08-17T16:17:04.542714"
+    },
+    {
+      "text": "In it?",
+      "start_time": 970.32,
+      "end_time": 971.7,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.3615,
+      "timestamp": "2026-08-17T16:17:06.393855"
+    },
+    {
+      "text": "And add a new feature representing the rolling 70 mean for a specified numerical column.",
+      "start_time": 971.7,
+      "end_time": 977.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8673333333333332,
+      "timestamp": "2026-08-17T16:17:12.204584"
+    },
+    {
+      "text": "Okay, for time, Siri, 1st I will convert like, um, timestamp column to like date time and solve that date, uh, date frame by like time stamps.",
+      "start_time": 979.8,
+      "end_time": 989.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.682925925925926,
+      "timestamp": "2026-08-17T16:17:24.703979"
+    },
+    {
+      "text": "Uh, then I would use uh, uh, we have resample or frequency like with the expected, uh, identify missing timestones.",
+      "start_time": 989.88,
+      "end_time": 998.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7196499999999999,
+      "timestamp": "2026-08-17T16:17:33.329429"
+    },
+    {
+      "text": "So once we're missing timestamps are created, I would like, decide how the associate value, based on the nature of like time savings.",
+      "start_time": 998.82,
+      "end_time": 1008.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8390869565217391,
+      "timestamp": "2026-08-17T16:17:42.958752"
+    },
+    {
+      "text": "For example, like um, um, like forward field and backward field and yeah, these are a lot of us.",
+      "start_time": 1008.12,
+      "end_time": 1015.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6568947368421053,
+      "timestamp": "2026-08-17T16:17:49.625405"
+    },
+    {
+      "text": "Okay okay.",
+      "start_time": 1014.72,
+      "end_time": 1016.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.505,
+      "timestamp": "2026-08-17T16:17:51.515342"
+    },
+    {
+      "text": "Okay, and a menu, like why you are looking for a change?",
+      "start_time": 1020.78,
+      "end_time": 1025.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8165833333333334,
+      "timestamp": "2026-08-17T16:18:00.184231"
+    },
+    {
+      "text": "I just told you, August, like, um, I want, I am satisfied, machine learning, learning analyst, where, like, past one.",
+      "start_time": 1027.92,
+      "end_time": 1036.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5860500000000001,
+      "timestamp": "2026-08-17T16:18:10.752130"
+    },
+    {
+      "text": "5 year, I'm consistently into this like day and night.",
+      "start_time": 1036.26,
+      "end_time": 1039.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8836999999999999,
+      "timestamp": "2026-08-17T16:18:13.590811"
+    },
+    {
+      "text": "I am going like work and able to manage my, um, continuous dates into learning this, building, the projects and off.",
+      "start_time": 1039.62,
+      "end_time": 1047.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8047142857142857,
+      "timestamp": "2026-08-17T16:18:21.317943"
+    },
+    {
+      "text": "So I want to upgrade my career into ML and DL and I also had a prayer experience in this. So I would love to do as much my potential have and also able to learn and give the team where like this is exactly where my um, uh, the JD and uh, growth and learning capacity and what I can give 100%.",
+      "start_time": 1047.0,
+      "end_time": 1070.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8694920634920632,
+      "timestamp": "2026-08-17T16:18:45.613841"
+    },
+    {
+      "text": "So looking forward to you, my protection.",
+      "start_time": 1070.82,
+      "end_time": 1074.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7697142857142857,
+      "timestamp": "2026-08-17T16:18:49.094165"
+    },
+    {
+      "text": "Okay, uh, do you have any question, like, if you wanted to ask to me?",
+      "start_time": 1077.9,
+      "end_time": 1082.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7756666666666666,
+      "timestamp": "2026-08-17T16:18:56.837582"
+    },
+    {
+      "text": "Sure, because, like, I would just want to ask, like, how my, like, uh, after once I joined, how my 90 days will be looked like, like,",
+      "start_time": 1083.6,
+      "end_time": 1091.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7288888888888887,
+      "timestamp": "2026-08-17T16:19:06.442580"
+    },
+    {
+      "text": "How getting the car?",
+      "start_time": 1091.64,
+      "end_time": 1094.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6155,
+      "timestamp": "2026-08-17T16:19:08.272429"
+    },
+    {
+      "text": "Yeah, so you will be working as an data scientist.",
+      "start_time": 1091.34,
+      "end_time": 1096.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9269999999999999,
+      "timestamp": "2026-08-17T16:19:11.221202"
+    },
+    {
+      "text": "You will be working on crowd platform like GCP SUR, WS.",
+      "start_time": 1096.44,
+      "end_time": 1101.42,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8493636363636363,
+      "timestamp": "2026-08-17T16:19:16.039095"
+    },
+    {
+      "text": "And doing mushy learning and deep planning task building API endpoints, all of these things using Python. Or, yeah.",
+      "start_time": 1101.96,
+      "end_time": 1111.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.804421052631579,
+      "timestamp": "2026-08-17T16:19:25.691757"
+    },
+    {
+      "text": "All of these things.",
+      "start_time": 1111.5,
+      "end_time": 1112.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.76775,
+      "timestamp": "2026-08-17T16:19:27.518390"
+    },
+    {
+      "text": "Okay, that's cool, and one more, like, how much do you currently, like, uh, team capacity, like, working in the field right now?",
+      "start_time": 1113.84,
+      "end_time": 1122.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6688260869565217,
+      "timestamp": "2026-08-17T16:19:37.172017"
+    },
+    {
+      "text": "It's 9 hour RD.",
+      "start_time": 1122.54,
+      "end_time": 1124.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7042499999999999,
+      "timestamp": "2026-08-17T16:19:39.044874"
+    },
+    {
+      "text": "Sorry?",
+      "start_time": 1126.38,
+      "end_time": 1128.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.738,
+      "timestamp": "2026-08-17T16:19:42.827930"
+    },
+    {
+      "text": "It's 9 hour a day, 9 hours.",
+      "start_time": 1127.94,
+      "end_time": 1130.64,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7561428571428571,
+      "timestamp": "2026-08-17T16:19:44.811248"
+    },
+    {
+      "text": "I mean, like how much people are like currently supporting for this project like in the same position?",
+      "start_time": 1131.12,
+      "end_time": 1135.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9552222222222224,
+      "timestamp": "2026-08-17T16:19:50.565320"
+    },
+    {
+      "text": "So we are building, I mean, we are currently hiring for this particular project.",
+      "start_time": 1133.64,
+      "end_time": 1140.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9284999999999999,
+      "timestamp": "2026-08-17T16:19:55.431400"
+    },
+    {
+      "text": "Got it.",
+      "start_time": 1140.24,
+      "end_time": 1142.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.437,
+      "timestamp": "2026-08-17T16:19:56.269156"
+    },
+    {
+      "text": "No, currently I'm in Bangalore.",
+      "start_time": 1142.04,
+      "end_time": 1143.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7722,
+      "timestamp": "2026-08-17T16:19:58.211571"
+    },
+    {
+      "text": "Okay, I will move on, you know, to.",
+      "start_time": 1143.78,
+      "end_time": 1146.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.55725,
+      "timestamp": "2026-08-17T16:20:01.092621"
+    },
+    {
+      "text": "Thank you, Opesh.",
+      "start_time": 1148.1,
+      "end_time": 1150.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7513333333333333,
+      "timestamp": "2026-08-17T16:20:03.948258"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 1148.28,
+      "end_time": 1149.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.80925,
+      "timestamp": "2026-08-17T16:20:04.000823"
+    },
+    {
+      "text": "Have a good day.",
+      "start_time": 1149.24,
+      "end_time": 1149.84,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7975,
+      "timestamp": "2026-08-17T16:20:04.011270"
+    },
+    {
+      "text": "Have a great day",
+      "start_time": 1150.08,
+      "end_time": 1150.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.89925,
+      "timestamp": "2026-08-17T16:20:04.923356"
+    },
+    {
+      "text": "Bye-bye.",
+      "start_time": 1149.84,
+      "end_time": 1150.44,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.729,
+      "timestamp": "2026-08-17T16:20:04.956861"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1150.44,
+      "end_time": 1150.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.711,
+      "timestamp": "2026-08-17T16:20:04.962513"
+    },
+    {
+      "text": "Bye-bye.",
+      "start_time": 1150.62,
+      "end_time": 1151.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.617,
+      "timestamp": "2026-08-17T16:20:05.873493"
+    }
+  ]
+}

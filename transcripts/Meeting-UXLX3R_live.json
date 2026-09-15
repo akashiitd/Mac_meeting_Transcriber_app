@@ -1,0 +1,1797 @@
+{
+  "session_name": "Meeting-UXLX3R",
+  "started": "2026-06-09T11:05:40.836179",
+  "segments": [
+    {
+      "text": "Yeah, it's my wife.",
+      "start_time": 12.48,
+      "end_time": 15.18,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.83275,
+      "timestamp": "2026-06-09T11:05:57.694159"
+    },
+    {
+      "text": "Yeah, yeah, you are audible as well.",
+      "start_time": 17.4,
+      "end_time": 19.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6662857142857143,
+      "timestamp": "2026-06-09T11:06:02.495932"
+    },
+    {
+      "text": "Okay, Samar, I am Akash here.",
+      "start_time": 19.74,
+      "end_time": 21.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.65,
+      "timestamp": "2026-06-09T11:06:04.406349"
+    },
+    {
+      "text": "Yeah, I'm out of it.",
+      "start_time": 14.82,
+      "end_time": 23.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.549,
+      "timestamp": "2026-06-09T11:06:06.198043"
+    },
+    {
+      "text": "Good afternoon.",
+      "start_time": 21.66,
+      "end_time": 23.4,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7275,
+      "timestamp": "2026-06-09T11:06:06.309530"
+    },
+    {
+      "text": "Can you briefly introduce yourself?",
+      "start_time": 23.4,
+      "end_time": 25.14,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.876,
+      "timestamp": "2026-06-09T11:06:08.240138"
+    },
+    {
+      "text": "Good morning, sorry.",
+      "start_time": 25.14,
+      "end_time": 26.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7833333333333333,
+      "timestamp": "2026-06-09T11:06:09.189580"
+    },
+    {
+      "text": "Can you deeply introduce yourself?",
+      "start_time": 26.58,
+      "end_time": 28.92,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8532,
+      "timestamp": "2026-06-09T11:06:12.100007"
+    },
+    {
+      "text": "Then you'll get started.",
+      "start_time": 28.92,
+      "end_time": 29.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.71575,
+      "timestamp": "2026-06-09T11:06:13.053312"
+    },
+    {
+      "text": "Excuse me.",
+      "start_time": 31.2,
+      "end_time": 32.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.35850000000000004,
+      "timestamp": "2026-06-09T11:06:15.802242"
+    },
+    {
+      "text": "Uh, I'm Samar and I'm from Odisha.",
+      "start_time": 39.66,
+      "end_time": 43.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6768571428571428,
+      "timestamp": "2026-06-09T11:06:25.407068"
+    },
+    {
+      "text": "I did my graduation in DCA from BBSR.",
+      "start_time": 43.02,
+      "end_time": 48.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9072499999999999,
+      "timestamp": "2026-06-09T11:06:31.192117"
+    },
+    {
+      "text": "After that, I got an opportunity as a kiwe.",
+      "start_time": 48.36,
+      "end_time": 51.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8637777777777776,
+      "timestamp": "2026-06-09T11:06:34.073874"
+    },
+    {
+      "text": "I joined as a K in Kolkata, Kotai lieutenants.",
+      "start_time": 51.54,
+      "end_time": 54.9,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7040000000000001,
+      "timestamp": "2026-06-09T11:06:37.909738"
+    },
+    {
+      "text": "Then in same company, I transitioned into as a male engineer.",
+      "start_time": 54.9,
+      "end_time": 59.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7194545454545456,
+      "timestamp": "2026-06-09T11:06:41.747477"
+    },
+    {
+      "text": "After giving an interview, I joined the J Jr. ML engineer.",
+      "start_time": 59.1,
+      "end_time": 63.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8121818181818181,
+      "timestamp": "2026-06-09T11:06:46.539577"
+    },
+    {
+      "text": "Primarily, I worked on DL-based project.",
+      "start_time": 63.48,
+      "end_time": 66.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8346666666666667,
+      "timestamp": "2026-06-09T11:06:49.398564"
+    },
+    {
+      "text": "They have a product called ATCC automatic traffic counter in classification.",
+      "start_time": 66.72,
+      "end_time": 71.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7932727272727272,
+      "timestamp": "2026-06-09T11:06:54.239443"
+    },
+    {
+      "text": "My job, primary job was to collect data and retrain the model.",
+      "start_time": 71.52,
+      "end_time": 75.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9375833333333333,
+      "timestamp": "2026-06-09T11:06:59.023955"
+    },
+    {
+      "text": "They have already trained the model.",
+      "start_time": 75.96,
+      "end_time": 77.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9250000000000002,
+      "timestamp": "2026-06-09T11:07:00.923383"
+    },
+    {
+      "text": "My job was to improve accuracy and meet the client demands accordingly.",
+      "start_time": 77.88,
+      "end_time": 82.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.948,
+      "timestamp": "2026-06-09T11:07:05.769099"
+    },
+    {
+      "text": "After that, I put their job in 2023.",
+      "start_time": 82.86,
+      "end_time": 86.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8531250000000001,
+      "timestamp": "2026-06-09T11:07:08.584689"
+    },
+    {
+      "text": "I did my MCA till 2025. And my 4th SIM, I got an opportunity from Lima, as a AML engineer.",
+      "start_time": 86.04,
+      "end_time": 94.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8063,
+      "timestamp": "2026-06-09T11:07:17.322541"
+    },
+    {
+      "text": "I joined AAML Engineer 2025, January, Gen 20.",
+      "start_time": 94.86,
+      "end_time": 99.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.715875,
+      "timestamp": "2026-06-09T11:07:22.071811"
+    },
+    {
+      "text": "Uh, and I worked as primarily uh, on a DS pike line.",
+      "start_time": 99.3,
+      "end_time": 104.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7351666666666666,
+      "timestamp": "2026-06-09T11:07:26.882643"
+    },
+    {
+      "text": "They have a intuin DS pipeline from data pre-processing, data injection data pre-processing to feature evaluation, featured extraction to all the way to prediction, like model training to prediction.",
+      "start_time": 104.28,
+      "end_time": 119.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8192413793103447,
+      "timestamp": "2026-06-09T11:07:42.389343"
+    },
+    {
+      "text": "These are the, they are the, it is their DS pipeline or top of it, uh, uh, project set, uh, called chat lima.",
+      "start_time": 119.22,
+      "end_time": 129.18,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6528260869565218,
+      "timestamp": "2026-06-09T11:07:51.878194"
+    },
+    {
+      "text": "Okay, yeah, that is, yeah, that is fine.",
+      "start_time": 126.18,
+      "end_time": 129.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.42212500000000003,
+      "timestamp": "2026-06-09T11:07:52.910912"
+    },
+    {
+      "text": "Okay, so regarding the interview process, right, I will try to cover section later to AIEML, okay?",
+      "start_time": 129.78,
+      "end_time": 136.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7896470588235294,
+      "timestamp": "2026-06-09T11:07:59.648806"
+    },
+    {
+      "text": "Coding Jenny, I, language, and graph, and python, okay?",
+      "start_time": 136.62,
+      "end_time": 139.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.4425555555555556,
+      "timestamp": "2026-06-09T11:08:02.532006"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 140.88,
+      "end_time": 141.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.547,
+      "timestamp": "2026-06-09T11:08:04.265632"
+    },
+    {
+      "text": "So can you tell me, like, how would you implement and manage feature flagging in Python-based Jenny I production back and to safely rule out new machine learning model version and collect metrics for rapid roll package.",
+      "start_time": 139.98,
+      "end_time": 155.28,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8441081081081077,
+      "timestamp": "2026-06-09T11:08:18.000014"
+    },
+    {
+      "text": "A particular issues are detected.",
+      "start_time": 155.28,
+      "end_time": 158.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.658,
+      "timestamp": "2026-06-09T11:08:21.677157"
+    },
+    {
+      "text": "Like, can you go through the question I didn't like?",
+      "start_time": 160.32,
+      "end_time": 164.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8423999999999999,
+      "timestamp": "2026-06-09T11:08:27.336649"
+    },
+    {
+      "text": "Okay, I'm pasting in that chat, okay?",
+      "start_time": 162.54,
+      "end_time": 165.66,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8304285714285713,
+      "timestamp": "2026-06-09T11:08:28.424789"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 165.9,
+      "end_time": 167.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.893,
+      "timestamp": "2026-06-09T11:08:30.200980"
+    },
+    {
+      "text": "Just...",
+      "start_time": 170.34,
+      "end_time": 171.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.503,
+      "timestamp": "2026-06-09T11:08:34.036877"
+    },
+    {
+      "text": "Okay, so chart is, yes, support.",
+      "start_time": 174.72,
+      "end_time": 178.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.547,
+      "timestamp": "2026-06-09T11:08:40.754139"
+    },
+    {
+      "text": "Chatting.",
+      "start_time": 178.5,
+      "end_time": 180.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.314,
+      "timestamp": "2026-06-09T11:08:43.625024"
+    },
+    {
+      "text": "Okay, I will repeat the question.",
+      "start_time": 183.66,
+      "end_time": 186.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8641666666666667,
+      "timestamp": "2026-06-09T11:08:49.542253"
+    },
+    {
+      "text": "Uh, just got this.",
+      "start_time": 186.18,
+      "end_time": 188.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.35625,
+      "timestamp": "2026-06-09T11:08:51.301965"
+    },
+    {
+      "text": "Can you see, like, there is a chat symbol, right?",
+      "start_time": 186.36,
+      "end_time": 190.5,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8302000000000002,
+      "timestamp": "2026-06-09T11:08:53.409549"
+    },
+    {
+      "text": "Can you share me your screen as well?",
+      "start_time": 193.98,
+      "end_time": 196.62,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9463750000000001,
+      "timestamp": "2026-06-09T11:08:59.134245"
+    },
+    {
+      "text": "please?",
+      "start_time": 196.62,
+      "end_time": 197.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.685,
+      "timestamp": "2026-06-09T11:09:00.072498"
+    },
+    {
+      "text": "Yeah, I will just, I got it.",
+      "start_time": 197.16,
+      "end_time": 200.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7492857142857143,
+      "timestamp": "2026-06-09T11:09:03.811634"
+    },
+    {
+      "text": "Summer, can you share?",
+      "start_time": 210.0,
+      "end_time": 212.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.734,
+      "timestamp": "2026-06-09T11:09:15.453168"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 212.34,
+      "end_time": 212.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.595,
+      "timestamp": "2026-06-09T11:09:15.459850"
+    },
+    {
+      "text": "Visible, right?",
+      "start_time": 211.38,
+      "end_time": 213.24,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.327,
+      "timestamp": "2026-06-09T11:09:16.253983"
+    },
+    {
+      "text": "So, this was the question, which?",
+      "start_time": 215.16,
+      "end_time": 217.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6871666666666666,
+      "timestamp": "2026-06-09T11:09:20.248841"
+    },
+    {
+      "text": "Yeah, explain how your deck, uh, implement and manage feature flagging in a Python-based Gen A production back then.",
+      "start_time": 214.98,
+      "end_time": 224.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6352105263157894,
+      "timestamp": "2026-06-09T11:09:26.940399"
+    },
+    {
+      "text": "To safety, rule love, new ML models, versions and collect matches for rapid role where the wages are updated.",
+      "start_time": 224.04,
+      "end_time": 233.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6332105263157896,
+      "timestamp": "2026-06-09T11:09:36.522985"
+    },
+    {
+      "text": "Okay, so, uh, So 1st of all, if it is a Gen A project, I will like to know what is the project and according to it, I will add guardrails, like some flag detection system, like it is a simple ML-based Gen A project.",
+      "start_time": 234.54,
+      "end_time": 253.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8583777777777777,
+      "timestamp": "2026-06-09T11:09:55.879253"
+    },
+    {
+      "text": "I will add some accuracy over some risk management system beyond that, it will raise a plug.",
+      "start_time": 253.32,
+      "end_time": 258.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.867235294117647,
+      "timestamp": "2026-06-09T11:10:01.448671"
+    },
+    {
+      "text": "Mm hmm.",
+      "start_time": 257.34,
+      "end_time": 259.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6655,
+      "timestamp": "2026-06-09T11:10:01.512915"
+    },
+    {
+      "text": "Um, uh, uh, If, uh, then the fallback method, like if the alarm is ra- uh, if the uh, like flag is raised, like the model in the production is uh, giving something wrong or is not working as expected.",
+      "start_time": 258.6,
+      "end_time": 274.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.76235,
+      "timestamp": "2026-06-09T11:10:16.958755"
+    },
+    {
+      "text": "Then we'll fall back with the callback method, where we'll already implement it, like roll back to the previous method. Or we have a stable version on something, go back to that backup button.",
+      "start_time": 274.26,
+      "end_time": 286.38,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7741470588235293,
+      "timestamp": "2026-06-09T11:10:29.366541"
+    },
+    {
+      "text": "Like in ML, uh, ML flow, there is the, uh, in wheel functions.",
+      "start_time": 286.38,
+      "end_time": 290.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6089230769230769,
+      "timestamp": "2026-06-09T11:10:33.136790"
+    },
+    {
+      "text": "You can just monitor the models if the accuracy is gone below this point, you can roll back to it or something like that.",
+      "start_time": 290.46,
+      "end_time": 298.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7857500000000001,
+      "timestamp": "2026-06-09T11:10:41.806692"
+    },
+    {
+      "text": "And in production, JGI system, using Python Ward strategies, you use to handle transient error and retries when integrating with external API, like vortex, A, endpoint, via length change agent.",
+      "start_time": 298.32,
+      "end_time": 311.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6842666666666669,
+      "timestamp": "2026-06-09T11:10:54.520183"
+    },
+    {
+      "text": "What, I am not worked on in production, the nation system, the fight, and what strategy would do you used to handle brands?",
+      "start_time": 316.98,
+      "end_time": 326.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5432608695652175,
+      "timestamp": "2026-06-09T11:11:09.615184"
+    },
+    {
+      "text": "If you're not aware about this question, you can just pass it, okay?",
+      "start_time": 327.78,
+      "end_time": 334.32,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8805384615384615,
+      "timestamp": "2026-06-09T11:11:17.389125"
+    },
+    {
+      "text": "No problem.",
+      "start_time": 334.32,
+      "end_time": 334.74,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.711,
+      "timestamp": "2026-06-09T11:11:17.395918"
+    },
+    {
+      "text": "Like, I have never worked on what takes AI as such, like, I have worked in Lang Chain.",
+      "start_time": 337.62,
+      "end_time": 342.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7626666666666666,
+      "timestamp": "2026-06-09T11:11:25.928773"
+    },
+    {
+      "text": "Mm hmm.",
+      "start_time": 341.58,
+      "end_time": 343.26,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8240000000000001,
+      "timestamp": "2026-06-09T11:11:25.991523"
+    },
+    {
+      "text": "Uh, so if anything uh, in Langshen goes wrong, uh, usually we have a uh, monitoring system in Langsmith, as Langsmith, where you can monitor and uh, flag the system if anything goes wrong.",
+      "start_time": 342.84,
+      "end_time": 356.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7895000000000001,
+      "timestamp": "2026-06-09T11:11:39.501672"
+    },
+    {
+      "text": "Usually, while designing the lang chain, like agenting-based system or engine-based system, usually we have guardrails or a fallback method to handle the fault on length, like in lang, lang, graph, there is a in-build, uh, falterlance method.",
+      "start_time": 356.28,
+      "end_time": 373.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7126052631578947,
+      "timestamp": "2026-06-09T11:11:55.911316"
+    },
+    {
+      "text": "We can use that also.",
+      "start_time": 373.02,
+      "end_time": 373.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8282,
+      "timestamp": "2026-06-09T11:11:56.573448"
+    },
+    {
+      "text": "Or yeah, the, that, that's it, like, uh, from Lang, if you're using Langra, then there is a, I can use that faulter lens method.",
+      "start_time": 373.92,
+      "end_time": 382.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.63348,
+      "timestamp": "2026-06-09T11:12:05.328134"
+    },
+    {
+      "text": "And... And how do you use Python lamb chain at vertex here to evaluate the factual accuracy of a light generated answer using any of the Ratha's flavor?",
+      "start_time": 376.26,
+      "end_time": 393.78,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7445357142857141,
+      "timestamp": "2026-06-09T11:12:17.063165"
+    },
+    {
+      "text": "And how would we accept our theory and our context and generate announcer, and return the Ragasis code?",
+      "start_time": 393.78,
+      "end_time": 399.3,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7936111111111113,
+      "timestamp": "2026-06-09T11:12:21.728039"
+    },
+    {
+      "text": "Fast is, uh, Precision and vehicle.",
+      "start_time": 406.38,
+      "end_time": 410.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5105,
+      "timestamp": "2026-06-09T11:12:33.106736"
+    },
+    {
+      "text": "We'll check if the retrieval and data we're getting is correct line.",
+      "start_time": 410.04,
+      "end_time": 417.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8337500000000001,
+      "timestamp": "2026-06-09T11:12:39.819004"
+    },
+    {
+      "text": "We check the accuracy, increases and recall, or we can do some manual checking like faithfulness or groundedness.",
+      "start_time": 417.0,
+      "end_time": 425.52,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8743333333333332,
+      "timestamp": "2026-06-09T11:12:48.518557"
+    },
+    {
+      "text": "Is it really giving the data from our knowledge base or not?",
+      "start_time": 425.52,
+      "end_time": 429.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.91325,
+      "timestamp": "2026-06-09T11:12:52.299379"
+    },
+    {
+      "text": "Or is the data, it is providing us, uh, is it, uh, is it correct or not? Like the manual testing on some, uh, some precision vehicles.",
+      "start_time": 429.66,
+      "end_time": 440.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.676148148148148,
+      "timestamp": "2026-06-09T11:13:02.944752"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 440.46,
+      "end_time": 440.82,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.678,
+      "timestamp": "2026-06-09T11:13:03.777685"
+    },
+    {
+      "text": "And how do you use Python, I mean, using?",
+      "start_time": 438.9,
+      "end_time": 448.38,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8104444444444444,
+      "timestamp": "2026-06-09T11:13:11.651226"
+    },
+    {
+      "text": "Just give me one minute, okay?",
+      "start_time": 448.38,
+      "end_time": 449.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7991666666666667,
+      "timestamp": "2026-06-09T11:13:12.574072"
+    },
+    {
+      "text": "I will put up these question data.",
+      "start_time": 449.94,
+      "end_time": 451.56,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8045714285714285,
+      "timestamp": "2026-06-09T11:13:14.505798"
+    },
+    {
+      "text": "So, you know, production, drag system using land chain and vertex AI, how would you implement end-to-end testing to ensure pipeline, robustness across chunking retrieval, reranking, and observability component?",
+      "start_time": 451.56,
+      "end_time": 465.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8293448275862069,
+      "timestamp": "2026-06-09T11:13:28.130997"
+    },
+    {
+      "text": "In a in twin pipeline, I would like to go in a hybrid system like after chunking or embedding method, uh, in, in, uh, after retrieval, I would as, add a LLM magic judge to check, uh, is the, uh, retrieval.",
+      "start_time": 468.54,
+      "end_time": 488.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7028536585365853,
+      "timestamp": "2026-06-09T11:13:51.129156"
+    },
+    {
+      "text": "It just itself is correct or not.",
+      "start_time": 488.1,
+      "end_time": 490.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8387142857142856,
+      "timestamp": "2026-06-09T11:13:52.771296"
+    },
+    {
+      "text": "And I added another just after the merging of the data we collected and just query.",
+      "start_time": 490.02,
+      "end_time": 496.92,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.855875,
+      "timestamp": "2026-06-09T11:13:59.531384"
+    },
+    {
+      "text": "I would another job as LLM, uh, the data we're generating is cross validated.",
+      "start_time": 496.92,
+      "end_time": 503.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.785142857142857,
+      "timestamp": "2026-06-09T11:14:06.234241"
+    },
+    {
+      "text": "It's from the knowledge base or not.",
+      "start_time": 503.7,
+      "end_time": 505.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.862,
+      "timestamp": "2026-06-09T11:14:08.113406"
+    },
+    {
+      "text": "This will prevent the, like, uh, uh, accuracy, accuracy thing like it is going, the data we're giving is uh, right or not, at the end will also try to add a human in the loop, uh, cross check the anything, it is really important.",
+      "start_time": 505.32,
+      "end_time": 520.5,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8018000000000001,
+      "timestamp": "2026-06-09T11:14:23.697219"
+    },
+    {
+      "text": "Like in some cases, the data were getting maybe from different documents, not in from not all the available information from one document.",
+      "start_time": 520.5,
+      "end_time": 530.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9086521739130435,
+      "timestamp": "2026-06-09T11:14:33.135787"
+    },
+    {
+      "text": "So the data have to prevent data, not to checking the data hopping, although LLM just can be helpful.",
+      "start_time": 530.22,
+      "end_time": 537.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8304736842105265,
+      "timestamp": "2026-06-09T11:14:39.869526"
+    },
+    {
+      "text": "Mm hmm.",
+      "start_time": 537.48,
+      "end_time": 539.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.3255,
+      "timestamp": "2026-06-09T11:14:41.854028"
+    },
+    {
+      "text": "Like it can be costly, but it is prevent the accuracy and like it will handle the accuracy.",
+      "start_time": 537.0,
+      "end_time": 543.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9180555555555556,
+      "timestamp": "2026-06-09T11:14:46.597208"
+    },
+    {
+      "text": "accuracy concerns when the end to end pipeline.",
+      "start_time": 543.84,
+      "end_time": 547.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7963749999999999,
+      "timestamp": "2026-06-09T11:14:50.354772"
+    },
+    {
+      "text": "And how would you ensure secure auditable and scalable access control when deploying a Gen A, Iraq system using land chain vortexia, you know vector database in production.",
+      "start_time": 546.18,
+      "end_time": 557.76,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.80325,
+      "timestamp": "2026-06-09T11:15:00.252867"
+    },
+    {
+      "text": "We have langsmith to monitor these everything going.",
+      "start_time": 573.0,
+      "end_time": 576.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.713625,
+      "timestamp": "2026-06-09T11:15:19.196560"
+    },
+    {
+      "text": "Are you aware about any implementation of rollback, access control, or IEM policies?",
+      "start_time": 573.48,
+      "end_time": 581.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8054615384615385,
+      "timestamp": "2026-06-09T11:15:25.119796"
+    },
+    {
+      "text": "Uh no.",
+      "start_time": 582.12,
+      "end_time": 583.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6234999999999999,
+      "timestamp": "2026-06-09T11:15:25.860058"
+    },
+    {
+      "text": "Okay okay.",
+      "start_time": 582.48,
+      "end_time": 584.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.721,
+      "timestamp": "2026-06-09T11:15:26.968040"
+    },
+    {
+      "text": "And how would you design a robust line chain by pipeline using agent, retries, and observability for high traffic production, and also describe your key design choices?",
+      "start_time": 584.22,
+      "end_time": 597.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8610740740740739,
+      "timestamp": "2026-06-09T11:15:40.521899"
+    },
+    {
+      "text": "So I will go with Langra, uh, uh, because of its, uh, uh, support for agents. And uh, it has like uh, for, um, like it has a state to handle the current state, if anything goes wrong, it will go back to the current, just just the previous state.",
+      "start_time": 598.2,
+      "end_time": 618.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7745599999999999,
+      "timestamp": "2026-06-09T11:16:01.648652"
+    },
+    {
+      "text": "Not restart the model, so it will cater the whole restarting pipeline and it has for fault in this matter, it has a in-built fault tunnelance method.",
+      "start_time": 618.42,
+      "end_time": 630.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7405555555555556,
+      "timestamp": "2026-06-09T11:16:13.040752"
+    },
+    {
+      "text": "Um, to monitoring high pipeline, it can set up flags in Langsmith to monitor our pipeline and cost and security, everything going on or not.",
+      "start_time": 630.06,
+      "end_time": 640.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8338399999999999,
+      "timestamp": "2026-06-09T11:16:23.579307"
+    },
+    {
+      "text": "Uh, we can add flags in Langsmith, like, if it goes beyond anything, you can pause the project, you can pause the project or close the service or uh, cut down the service, something like that in Langsmith, and um, Yeah, for observability, I will go with Langsmith, and for, um, for Faulter learns to handle all these queries, I will go to Langdra.",
+      "start_time": 640.8,
+      "end_time": 665.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8197656249999999,
+      "timestamp": "2026-06-09T11:16:48.928549"
+    },
+    {
+      "text": "And Minecraft has an in-build agent supporting system.",
+      "start_time": 666.96,
+      "end_time": 671.22,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.683875,
+      "timestamp": "2026-06-09T11:16:54.241375"
+    },
+    {
+      "text": "So, uh, in agents, we, we get in build like, uh, uh, reasoning method like, um, reasoning capability, so it will plan, execute everything.",
+      "start_time": 671.22,
+      "end_time": 682.86,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6434166666666666,
+      "timestamp": "2026-06-09T11:17:05.826735"
+    },
+    {
+      "text": "So, um, to anything goes wrong, we can add another loop.",
+      "start_time": 682.86,
+      "end_time": 687.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8386363636363636,
+      "timestamp": "2026-06-09T11:17:10.555911"
+    },
+    {
+      "text": "It goes back to the previous tape until it gets correctly and it gets the correct answer.",
+      "start_time": 687.54,
+      "end_time": 693.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8373529411764706,
+      "timestamp": "2026-06-09T11:17:16.322980"
+    },
+    {
+      "text": "It will go through the roop again and again until it gets the curry answer.",
+      "start_time": 693.72,
+      "end_time": 697.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8744000000000001,
+      "timestamp": "2026-06-09T11:17:20.157485"
+    },
+    {
+      "text": "Like this, we can design the pipeline to like give the correct answer or and not compromise an app racing.",
+      "start_time": 697.32,
+      "end_time": 705.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8841999999999999,
+      "timestamp": "2026-06-09T11:17:27.849242"
+    },
+    {
+      "text": "Okay, and, uh, if you need to evaluate and monitor our production, journey, Iraq system using Raga's handline Smith, can you describe your eval vision pipeline, key metrics strategic?",
+      "start_time": 706.8,
+      "end_time": 720.48,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7401379310344829,
+      "timestamp": "2026-06-09T11:17:43.488515"
+    },
+    {
+      "text": "How would you act on negative trends in retrieval or generation quality?",
+      "start_time": 720.48,
+      "end_time": 724.2,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8595833333333335,
+      "timestamp": "2026-06-09T11:17:47.156966"
+    },
+    {
+      "text": "First I will, for retrieval quality, will check, precision, recall, or M&R, uh, to, uh, to check, uh, if the retrieval quality is good or not.",
+      "start_time": 726.0,
+      "end_time": 738.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.638230769230769,
+      "timestamp": "2026-06-09T11:18:01.520941"
+    },
+    {
+      "text": "First of all, I will check with the embedding also, like embedding is the key part here, what model we're using, uh, like it's open source model, closer model, and then the retrieval, how, what is the accuracy of the model? If the editable goes wrong, everything is goes wrong in the head of the pipeline.",
+      "start_time": 738.36,
+      "end_time": 755.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8068214285714284,
+      "timestamp": "2026-06-09T11:18:18.059071"
+    },
+    {
+      "text": "So I will check the retrieval itself with the retrieval itself when not getting the accuracy.",
+      "start_time": 755.28,
+      "end_time": 760.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9129999999999999,
+      "timestamp": "2026-06-09T11:18:22.577855"
+    },
+    {
+      "text": "I will send back to the data again.",
+      "start_time": 760.08,
+      "end_time": 761.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9513750000000001,
+      "timestamp": "2026-06-09T11:18:24.454176"
+    },
+    {
+      "text": "Mm hmm.",
+      "start_time": 802.2,
+      "end_time": 803.34,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6799999999999999,
+      "timestamp": "2026-06-09T11:19:05.846054"
+    },
+    {
+      "text": "LLMA just to correctly check the the data, the generated data we created are from the knowledge stores and correct only, then you can pass it to the next steps.",
+      "start_time": 792.42,
+      "end_time": 805.2,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8935333333333332,
+      "timestamp": "2026-06-09T11:19:07.752101"
+    },
+    {
+      "text": "So it will be the, for every step, like for the these main, for these main base, basic step, it will check, the data is correct or not.",
+      "start_time": 805.2,
+      "end_time": 815.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8139999999999998,
+      "timestamp": "2026-06-09T11:19:18.281764"
+    },
+    {
+      "text": "Then it will pass on and um,",
+      "start_time": 815.7,
+      "end_time": 818.1,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7567142857142858,
+      "timestamp": "2026-06-09T11:19:21.096434"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 818.1,
+      "end_time": 819.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.797,
+      "timestamp": "2026-06-09T11:19:22.037679"
+    },
+    {
+      "text": "What is the other part of the question?",
+      "start_time": 820.08,
+      "end_time": 822.54,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.83425,
+      "timestamp": "2026-06-09T11:19:24.931458"
+    },
+    {
+      "text": "I mean, uh, how would you act on negative trends and retrieval or generation quality?",
+      "start_time": 822.54,
+      "end_time": 828.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8937333333333334,
+      "timestamp": "2026-06-09T11:19:31.818816"
+    },
+    {
+      "text": "Yep.",
+      "start_time": 828.9,
+      "end_time": 830.58,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.511,
+      "timestamp": "2026-06-09T11:19:33.537970"
+    },
+    {
+      "text": "Uh, so I, if I find uh, I will check the faithfulness and the groundedness, if it is like giving a wrong uh, a wrong data or they're doing wrong data again and again, I will add a flag to go back to the uh, data generation check. Is the data all is present or not actually present or not?",
+      "start_time": 830.58,
+      "end_time": 848.88,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8363166666666666,
+      "timestamp": "2026-06-09T11:19:52.093037"
+    },
+    {
+      "text": "Uh, or I will try to change uh, switch between another retrieval method, some advancable method.",
+      "start_time": 848.88,
+      "end_time": 855.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8033125,
+      "timestamp": "2026-06-09T11:19:57.593969"
+    },
+    {
+      "text": "If then I will try it again.",
+      "start_time": 855.12,
+      "end_time": 858.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.859,
+      "timestamp": "2026-06-09T11:20:01.394163"
+    },
+    {
+      "text": "If the quality is past, whether LLM just, like, certain 78% or 90%, then it will pass. Otherwise, it will only go back to the knowledge source to edit the data again.",
+      "start_time": 858.36,
+      "end_time": 870.42,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8087812500000001,
+      "timestamp": "2026-06-09T11:20:13.056076"
+    },
+    {
+      "text": "And how do you implement observability in a Gen AI pipeline using language, language, and open telemetry, and what key metrics, art races, who do you monitor in production?",
+      "start_time": 870.72,
+      "end_time": 881.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7826551724137932,
+      "timestamp": "2026-06-09T11:20:24.693930"
+    },
+    {
+      "text": "Uh, I am only familiar with Lang Smith, uh, for in P production.",
+      "start_time": 882.96,
+      "end_time": 889.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6931538461538461,
+      "timestamp": "2026-06-09T11:20:32.180435"
+    },
+    {
+      "text": "I will check the latency of the, my pipeline is the, is the pipeline working correctly on when the loads come, how it is handled, and the, If the model start hallucinating, it will, it will like, uh, create, it is consuming crazy tokens.",
+      "start_time": 889.14,
+      "end_time": 905.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8479545454545453,
+      "timestamp": "2026-06-09T11:20:48.693993"
+    },
+    {
+      "text": "I will try to avoid that LLM call unnecessarily, or if it is any queries, it's, uh, like keep looping inside, uh, keep looping and not getting fixed.",
+      "start_time": 905.76,
+      "end_time": 917.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8405000000000002,
+      "timestamp": "2026-06-09T11:21:01.056074"
+    },
+    {
+      "text": "It will like the cost of tokens will go crazy.",
+      "start_time": 917.94,
+      "end_time": 921.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9164999999999999,
+      "timestamp": "2026-06-09T11:21:04.760582"
+    },
+    {
+      "text": "I will add some flags, this amount of token.",
+      "start_time": 921.72,
+      "end_time": 924.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8864444444444444,
+      "timestamp": "2026-06-09T11:21:07.629636"
+    },
+    {
+      "text": "This is the latency and this is some like hard-coded numbers.",
+      "start_time": 924.84,
+      "end_time": 929.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8618181818181817,
+      "timestamp": "2026-06-09T11:21:12.472641"
+    },
+    {
+      "text": "It goes beyond that race plaque and I will check manually or I try to handle it like.",
+      "start_time": 929.4,
+      "end_time": 942.6,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8060555555555555,
+      "timestamp": "2026-06-09T11:21:24.959955"
+    },
+    {
+      "text": "Okay, and how would you use Minecraft tool and state graph to, or just straighter, like pipeline, that seamless, seamlessly integrate multiple vector database and handle fallback retrieval strategies.",
+      "start_time": 936.0,
+      "end_time": 950.1,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7530689655172416,
+      "timestamp": "2026-06-09T11:21:32.898513"
+    },
+    {
+      "text": "So, in Langra, where I have additional feature called state, like it is kind like a memory, running memory, it will pass on every a bit data, note to note basis.",
+      "start_time": 951.6,
+      "end_time": 965.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7572258064516129,
+      "timestamp": "2026-06-09T11:21:48.057686"
+    },
+    {
+      "text": "So what each node is doing in pass and to next node.",
+      "start_time": 965.28,
+      "end_time": 968.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.83575,
+      "timestamp": "2026-06-09T11:21:51.804236"
+    },
+    {
+      "text": "So, So if anything goes wrong or any node failed to execute, it will stop there only and we'll fix the error and we'll read on the read on the project.",
+      "start_time": 968.7,
+      "end_time": 981.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8966774193548387,
+      "timestamp": "2026-06-09T11:22:04.401535"
+    },
+    {
+      "text": "So we will not, we don't have to restart the whole pipeline.",
+      "start_time": 986.4,
+      "end_time": 990.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8505833333333334,
+      "timestamp": "2026-06-09T11:22:12.919590"
+    },
+    {
+      "text": "So the fall toll and this is the fault and lens method of Lang Chin. And what is the next part of the questions?",
+      "start_time": 990.12,
+      "end_time": 997.8,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7312916666666666,
+      "timestamp": "2026-06-09T11:22:20.659894"
+    },
+    {
+      "text": "Yep, okay.",
+      "start_time": 1003.8,
+      "end_time": 1005.48,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.49250000000000005,
+      "timestamp": "2026-06-09T11:22:28.256362"
+    },
+    {
+      "text": "Oh, I mean, how would you integrate multiple vector database and handle fallback retrievalist strategies?",
+      "start_time": 998.1,
+      "end_time": 1005.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9049333333333335,
+      "timestamp": "2026-06-09T11:22:28.473593"
+    },
+    {
+      "text": "It has like, you know, in-wield function, we can call the database and store our data as accordingly.",
+      "start_time": 1017.66,
+      "end_time": 1025.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.77,
+      "timestamp": "2026-06-09T11:22:48.521400"
+    },
+    {
+      "text": "Can you also let me know, like, how would you implement a personing control back for prompts and retrieval models in a production rack system built with land chain and vertex A?",
+      "start_time": 1038.48,
+      "end_time": 1051.02,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7908437499999998,
+      "timestamp": "2026-06-09T11:23:13.687674"
+    },
+    {
+      "text": "products, syndrome system, you will take that.",
+      "start_time": 1067.22,
+      "end_time": 1070.7,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.35885714285714293,
+      "timestamp": "2026-06-09T11:23:33.563843"
+    },
+    {
+      "text": "Yeah, so for a prompt rollback, I would like to use or like in build method, um, prompt template.",
+      "start_time": 1070.7,
+      "end_time": 1081.08,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7552631578947369,
+      "timestamp": "2026-06-09T11:23:44.203133"
+    },
+    {
+      "text": "Uh, I will, while designing the pipeline, I will add, uh, the versioning of the prompts, like this is the version one or version 2 using prompt template method.",
+      "start_time": 1081.08,
+      "end_time": 1092.3,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7972758620689655,
+      "timestamp": "2026-06-09T11:23:54.812852"
+    },
+    {
+      "text": "Mm hmm.",
+      "start_time": 1091.34,
+      "end_time": 1093.08,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.54,
+      "timestamp": "2026-06-09T11:23:55.771146"
+    },
+    {
+      "text": "So it will cater the, um, a versioning of, um, um, prompts and further rollbacks of the prawn from, uh, like, I will add a manual loop, like, edges, um, Um, if anything goes wrong in this, uh, this pipeline, go back to another, uh, another version, like adding a condition, conditional, uh, method, conditional node, if anything goes wrong, if this method,",
+      "start_time": 1092.3,
+      "end_time": 1123.02,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7123809523809523,
+      "timestamp": "2026-06-09T11:24:25.952142"
+    },
+    {
+      "text": "go back to this note, then it will handle the like in the conditional load, I will add a rollback like this is the table version. If anything goes wrong, come back to this version only in executor pipeline.",
+      "start_time": 1123.02,
+      "end_time": 1135.62,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8950512820512819,
+      "timestamp": "2026-06-09T11:24:38.039202"
+    },
+    {
+      "text": "So it it shouldn't we fail, the pipeline, you always wear the impact of version of it.",
+      "start_time": 1135.62,
+      "end_time": 1139.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6955882352941176,
+      "timestamp": "2026-06-09T11:24:41.756216"
+    },
+    {
+      "text": "Mm hmm.",
+      "start_time": 1138.44,
+      "end_time": 1140.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.746,
+      "timestamp": "2026-06-09T11:24:42.816060"
+    },
+    {
+      "text": "And, um, in the retrieval models and the products, and, uh, Yeah, for for retrieval models, same also, like if any irritable model is failing, I will try to switch to add a conditional load, uh, 1st uh, retrieval with semantic sort or something, if it is failing, go back to the hybrid mode.",
+      "start_time": 1139.4,
+      "end_time": 1159.14,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7683148148148148,
+      "timestamp": "2026-06-09T11:25:02.243188"
+    },
+    {
+      "text": "Uh, check uh, uh, it is working or not.",
+      "start_time": 1159.14,
+      "end_time": 1162.68,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6395555555555555,
+      "timestamp": "2026-06-09T11:25:05.723443"
+    },
+    {
+      "text": "I will add like some evolution evolution node in between them.",
+      "start_time": 1162.68,
+      "end_time": 1167.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8813636363636363,
+      "timestamp": "2026-06-09T11:25:10.534706"
+    },
+    {
+      "text": "How is it working?",
+      "start_time": 1167.66,
+      "end_time": 1170.84,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8909999999999999,
+      "timestamp": "2026-06-09T11:25:13.399999"
+    },
+    {
+      "text": "If it is working correctly, then go this way.",
+      "start_time": 1170.84,
+      "end_time": 1175.34,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8863333333333334,
+      "timestamp": "2026-06-09T11:25:18.214868"
+    },
+    {
+      "text": "It is not.",
+      "start_time": 1175.34,
+      "end_time": 1176.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.621,
+      "timestamp": "2026-06-09T11:25:19.155522"
+    },
+    {
+      "text": "The conditional load is sent them to another way to execute.",
+      "start_time": 1176.12,
+      "end_time": 1179.96,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9009090909090908,
+      "timestamp": "2026-06-09T11:25:23.027977"
+    },
+    {
+      "text": "And how good you are in Python?",
+      "start_time": 1179.18,
+      "end_time": 1180.98,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7254285714285714,
+      "timestamp": "2026-06-09T11:25:24.110500"
+    },
+    {
+      "text": "I want you to write a python function using lank chain and lank graph to build an agent that retries, document, uh, triggle up to 2 times on empty reset, logging each attempt via language, and use any vector database like fices and open AIM betting, and provide concise food for it.",
+      "start_time": 1180.98,
+      "end_time": 1200.36,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8091730769230769,
+      "timestamp": "2026-06-09T11:25:43.653134"
+    },
+    {
+      "text": "You can also explain your approach.",
+      "start_time": 1200.36,
+      "end_time": 1203.0,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.9541666666666666,
+      "timestamp": "2026-06-09T11:25:46.199073"
+    },
+    {
+      "text": "So, like, um, exact syntaxes, I'm not, uh, I will go through the message.",
+      "start_time": 1205.1,
+      "end_time": 1211.28,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6539999999999999,
+      "timestamp": "2026-06-09T11:25:53.758377"
+    },
+    {
+      "text": "I, I confirm, change your luncheon and la glove, build an agent that retires, documentatable up to 2 times on an empty research.",
+      "start_time": 1211.28,
+      "end_time": 1220.46,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6009130434782609,
+      "timestamp": "2026-06-09T11:26:03.417018"
+    },
+    {
+      "text": "Good morning. Yeah, yeah, tell me.",
+      "start_time": 1218.12,
+      "end_time": 1220.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.40066666666666667,
+      "timestamp": "2026-06-09T11:26:03.456958"
+    },
+    {
+      "text": "Okay, so, okay.",
+      "start_time": 1220.46,
+      "end_time": 1222.56,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.637,
+      "timestamp": "2026-06-09T11:26:05.241057"
+    },
+    {
+      "text": "One o'clock, you can do it at 4 PM, okay?",
+      "start_time": 1224.18,
+      "end_time": 1229.94,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6374000000000001,
+      "timestamp": "2026-06-09T11:26:13.094308"
+    },
+    {
+      "text": "Log in each app and via Langsmith, use any vector TV faces, example, or open a embedding, provide concise code, provide your concise code.",
+      "start_time": 1222.56,
+      "end_time": 1233.0,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5982500000000001,
+      "timestamp": "2026-06-09T11:26:15.894923"
+    },
+    {
+      "text": "So I will explain the like method, exact method, what I'm going to do.",
+      "start_time": 1233.0,
+      "end_time": 1237.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8604285714285715,
+      "timestamp": "2026-06-09T11:26:20.628741"
+    },
+    {
+      "text": "I will go with Langra, so Langra is the updated version of Langra, so I'll go with Langra.",
+      "start_time": 1237.74,
+      "end_time": 1244.04,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.839611111111111,
+      "timestamp": "2026-06-09T11:26:26.433380"
+    },
+    {
+      "text": "So 1st I will, uh, there are some in-build, uh, uh, data loader, uh, available in Lang chain, both Lang chain and Langrup.",
+      "start_time": 1247.04,
+      "end_time": 1255.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6883913043478261,
+      "timestamp": "2026-06-09T11:26:37.961776"
+    },
+    {
+      "text": "It will load the data accordingly, like from PTA or CSP.",
+      "start_time": 1255.26,
+      "end_time": 1259.64,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8384545454545453,
+      "timestamp": "2026-06-09T11:26:42.710555"
+    },
+    {
+      "text": "Can I move it or something?",
+      "start_time": 1260.84,
+      "end_time": 1263.66,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.9076666666666666,
+      "timestamp": "2026-06-09T11:26:46.519794"
+    },
+    {
+      "text": "Oh, I will use that.",
+      "start_time": 1269.84,
+      "end_time": 1272.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7718,
+      "timestamp": "2026-06-09T11:26:55.159518"
+    },
+    {
+      "text": "He just explained me your approach.",
+      "start_time": 1270.44,
+      "end_time": 1272.12,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8415,
+      "timestamp": "2026-06-09T11:26:55.293977"
+    },
+    {
+      "text": "Yeah.",
+      "start_time": 1272.12,
+      "end_time": 1272.54,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.741,
+      "timestamp": "2026-06-09T11:26:55.302127"
+    },
+    {
+      "text": "Mm hmm.",
+      "start_time": 1275.54,
+      "end_time": 1276.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6930000000000001,
+      "timestamp": "2026-06-09T11:26:59.131638"
+    },
+    {
+      "text": "Yeah, I will use the data loader to load the data, and I will go with the usual pipeline. So the problem is retrieval is too time interim.",
+      "start_time": 1272.36,
+      "end_time": 1282.98,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8075000000000001,
+      "timestamp": "2026-06-09T11:27:05.840634"
+    },
+    {
+      "text": "Okay, I will use the usual pipeline with, um, um, chunking the data, um, correct chunking method can be recursive chunking or um, paragraph based chunking and, And embedded it using a good embedding model like, you know, likely open air or something.",
+      "start_time": 1282.98,
+      "end_time": 1302.06,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7409999999999999,
+      "timestamp": "2026-06-09T11:27:25.197977"
+    },
+    {
+      "text": "And then after the query comes in the retrieval, I would add a conditional load.",
+      "start_time": 1302.06,
+      "end_time": 1307.94,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8932000000000002,
+      "timestamp": "2026-06-09T11:27:30.725965"
+    },
+    {
+      "text": "If the, and the conditional node have, if the retrieval is up to, uh, a retrieval, document retrieval up to 2 times on empty digits.",
+      "start_time": 1307.94,
+      "end_time": 1319.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.7771600000000002,
+      "timestamp": "2026-06-09T11:27:42.292977"
+    },
+    {
+      "text": "So if the retrieval is empty, uh, loop through the pipeline, if uh, like go back to the previous node where, where uh, doing the retrieval, go back to the uh, previous note, again, only for 2 times, like uh, if it is failed, then the pipeline, like if it go beyond 2, it will fail.",
+      "start_time": 1319.7,
+      "end_time": 1338.78,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8156964285714287,
+      "timestamp": "2026-06-09T11:28:01.724590"
+    },
+    {
+      "text": "Otherwise, if we get any region, go through the pipeline.",
+      "start_time": 1338.78,
+      "end_time": 1343.4,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8655000000000002,
+      "timestamp": "2026-06-09T11:28:06.218537"
+    },
+    {
+      "text": "Otherwise, um, uh, it will fail.",
+      "start_time": 1343.4,
+      "end_time": 1346.76,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6393333333333334,
+      "timestamp": "2026-06-09T11:28:09.103754"
+    },
+    {
+      "text": "So the pipeline is like this data chunking, data chunking, then data embedding, then a conditional load, check if the retrieval data is empty or not.",
+      "start_time": 1346.76,
+      "end_time": 1359.72,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8436153846153847,
+      "timestamp": "2026-06-09T11:28:22.639268"
+    },
+    {
+      "text": "If not empty, go is the usual way.",
+      "start_time": 1359.72,
+      "end_time": 1362.36,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8701249999999999,
+      "timestamp": "2026-06-09T11:28:25.397102"
+    },
+    {
+      "text": "If it is empty, go back to the previous note, try to retrieve some data.",
+      "start_time": 1362.36,
+      "end_time": 1368.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8621333333333332,
+      "timestamp": "2026-06-09T11:28:31.221926"
+    },
+    {
+      "text": "If it is still failed, then there is some, like error, I will throw custom errors, like there are some error in the river or something.",
+      "start_time": 1368.12,
+      "end_time": 1375.26,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8266923076923077,
+      "timestamp": "2026-06-09T11:28:37.964657"
+    },
+    {
+      "text": "Okay, yeah, that is fine.",
+      "start_time": 1389.36,
+      "end_time": 1391.22,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.7906,
+      "timestamp": "2026-06-09T11:28:54.336014"
+    },
+    {
+      "text": "Yeah, that is fine.",
+      "start_time": 1391.22,
+      "end_time": 1392.24,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.819,
+      "timestamp": "2026-06-09T11:28:55.290394"
+    },
+    {
+      "text": "No problem.",
+      "start_time": 1392.24,
+      "end_time": 1392.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.753,
+      "timestamp": "2026-06-09T11:28:55.296960"
+    },
+    {
+      "text": "Okay, so, summer, I am done with the interview process.",
+      "start_time": 1392.72,
+      "end_time": 1395.72,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8184999999999999,
+      "timestamp": "2026-06-09T11:28:58.216767"
+    },
+    {
+      "text": "And here I will add a, I, RD Langsmith, like Langsmith has, uh,",
+      "start_time": 1384.74,
+      "end_time": 1396.74,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.6461538461538462,
+      "timestamp": "2026-06-09T11:28:59.054834"
+    },
+    {
+      "text": "Do you have any question, like, if you wanted to ask?",
+      "start_time": 1395.72,
+      "end_time": 1397.82,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8421818181818183,
+      "timestamp": "2026-06-09T11:29:01.080915"
+    },
+    {
+      "text": "Uh, no, I'm fine.",
+      "start_time": 1398.0,
+      "end_time": 1401.12,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.5325,
+      "timestamp": "2026-06-09T11:29:03.802112"
+    },
+    {
+      "text": "Okay, thank you.",
+      "start_time": 1400.82,
+      "end_time": 1401.9,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.8489999999999999,
+      "timestamp": "2026-06-09T11:29:04.886499"
+    },
+    {
+      "text": "Thanks for your time.",
+      "start_time": 1401.9,
+      "end_time": 1402.68,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.73925,
+      "timestamp": "2026-06-09T11:29:05.873124"
+    },
+    {
+      "text": "Have a good day, as well.",
+      "start_time": 1402.68,
+      "end_time": 1403.58,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6341666666666667,
+      "timestamp": "2026-06-09T11:29:06.836709"
+    },
+    {
+      "text": "Bye bye.",
+      "start_time": 1403.58,
+      "end_time": 1403.88,
+      "speaker": "You",
+      "source": "microphone",
+      "confidence": 0.6355,
+      "timestamp": "2026-06-09T11:29:06.845390"
+    },
+    {
+      "text": "Yeah, thank you.",
+      "start_time": 1404.12,
+      "end_time": 1405.32,
+      "speaker": "Other",
+      "source": "system",
+      "confidence": 0.8130000000000001,
+      "timestamp": "2026-06-09T11:29:07.614217"
+    }
+  ]
+}
