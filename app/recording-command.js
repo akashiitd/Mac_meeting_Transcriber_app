@@ -10,6 +10,7 @@ function waitForRecordingReady(child, timeoutMs = 125000) {
     const finish = (result) => {
       clearTimeout(timer);
       lines.close();
+      child.stdout.resume();
       child.removeListener('error', onError);
       child.removeListener('close', onClose);
       resolve(result);

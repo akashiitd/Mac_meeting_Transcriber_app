@@ -37,6 +37,21 @@ test('startup waits for actual readiness and handles fragmented output without a
   assert.equal(child.listenerCount('close'), 0);
 });
 
+test('startup readiness leaves stdout flowing for recording output', async () => {
+  const child = new EventEmitter();
+  child.stdout = new PassThrough();
+  const ready = waitForRecordingReady(child);
+  let output = '';
+  child.stdout.on('data', (chunk) => { output += chunk; });
+
+  child.stdout.write('{"event":"recording-ready"}\n');
+  assert.deepEqual(await ready, { success: true });
+  child.stdout.write('after-ready\n');
+  await new Promise(setImmediate);
+
+  assert.match(output, /after-ready/);
+});
+
 test('startup reports early exit, spawn failure, and timeout', async () => {
   for (const failure of ['close', 'error', 'timeout']) {
     const child = new EventEmitter();
